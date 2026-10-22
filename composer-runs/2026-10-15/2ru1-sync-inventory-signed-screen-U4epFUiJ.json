@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-10-15T21:25:40.434Z",
+  "program": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+  "sourceSignature": "U4epFUiJBQ9HHLQJTCr2cV9j6c1fbfaEUgFRfkdnCKvd4BCAft5B1jsS2AtEVCNWRW2BHsVCLytcpZN95wJ9vLq",
+  "sourceSlot": 457379560,
+  "attacker": "B8wwNa5MLq2qMVqweNYjEktfyS3mcE5vanci5kBKTBnk",
+  "sigVerify": true,
+  "mainnetSubmitted": false,
+  "forkSubmitted": false,
+  "pool": "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb",
+  "results": [
+    {
+      "label": "historical_accounts_fresh_signer",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6047
+          }
+        ]
+      },
+      "bytes": 1104,
+      "accountKeys": 30,
+      "unitsConsumed": 31849,
+      "poolDiff": null,
+      "logs": [
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: SyncInventory",
+        "Program log: AnchorError thrown in programs/liquid-unstaker/src/price.rs:86. Error Code: InvalidStakePoolState. Error Number: 6047. Error Message: Invalid stake pool state.",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 31849 of 200000 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x179f"
+      ]
+    },
+    {
+      "label": "omit_inventory_accounts",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6054
+          }
+        ]
+      },
+      "bytes": 312,
+      "accountKeys": 6,
+      "unitsConsumed": 15630,
+      "poolDiff": null,
+      "logs": [
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: SyncInventory",
+        "Program log: AnchorError thrown in programs/liquid-unstaker/src/instructions/sync_inventory.rs:193. Error Code: MissingInventoryAccounts. Error Number: 6054. Error Message: Missing required inventory accounts.",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 15630 of 200000 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x17a6"
+      ]
+    },
+    {
+      "label": "single_inventory_account",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "bytes": 345,
+      "accountKeys": 7,
+      "unitsConsumed": 14388,
+      "poolDiff": null,
+      "logs": [
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: SyncInventory",
+        "Program log: AnchorError thrown in programs/liquid-unstaker/src/instructions/sync_inventory.rs:82. Error Code: InvalidRemainingAccounts. Error Number: 6014. Error Message: Remaining accounts passed are not valid.",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 14388 of 200000 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x177e"
+      ]
+    },
+    {
+      "label": "duplicate_first_inventory_account",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "bytes": 346,
+      "accountKeys": 7,
+      "unitsConsumed": 14472,
+      "poolDiff": null,
+      "logs": [
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: SyncInventory",
+        "Program log: AnchorError thrown in programs/liquid-unstaker/src/instructions/sync_inventory.rs:82. Error Code: InvalidRemainingAccounts. Error Number: 6014. Error Message: Remaining accounts passed are not valid.",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 14472 of 200000 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x177e"
+      ]
+    }
+  ]
+}

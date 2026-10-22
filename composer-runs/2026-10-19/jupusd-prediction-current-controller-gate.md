@@ -1,0 +1,16 @@
+# JupUSD prediction market: current value and signed outflow gate
+
+Read-only observation on 2026-10-19, approximately 09:09 UTC. No transaction was sent.
+
+| Item | Verified evidence |
+| --- | --- |
+| Executable controller | `3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp` is executable, owned by the upgradeable BPF loader at finalized slot `458777917`. Its ProgramData `Ck9wWWkTrbeQD2B22Xo5N1zLQ7FQcxtvHnpdHmNC1dyM` records last deployment slot `450279404`. |
+| Spendable major/stable vault | SPL Token vault `8zNYCcMUSm4JgTCAYp9JQCAth5Dx8BotpTNcRWGZJnfy` held `143097894733` raw JupUSD (`143,097.894733`, six decimals) at finalized slot `458777448`. Its mint is `JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD`, and token owner/authority is `2y9Ad2GD7gwiMkkMu4bBK5216Pv9YJsBkSHAGwN3rBuJ`. This authority account itself is owned by the controller program (space `2000`) at finalized slot `458777917`. |
+| USD mark | Dexscreener's highest-liquidity JupUSD/USDC pair quoted `0.9995` USD with about `$3.90m` liquidity; two other JupUSD/USDC pairs quoted `0.9996` with about `$3.87m` and `$3.85m`. The first quote values the observed vault at about **$143,026**. Quote is a spot observation, not a liquidation guarantee. |
+| Actual post-deploy outflow | [Finalized transaction `4qQGJw5...`](https://solscan.io/tx/4qQGJw5F9H7macZ3pPsnn4uihFSPGYXSzXFNbUXNYFV3HhU7Jq4xn4LKgGS2BYu5LZD77aSoLHRcE1EvYPEhjkya), slot `458777300`, block time `2026-10-19T09:06:08Z`, succeeded. Top-level controller instruction logged `FillSellOrder`. Its inner SPL Token `transfer` sourced this exact vault, sent `835860` raw JupUSD to `HzBfHAsmjRwAeanHggu6pArFzTGEsEQj8QiTPcHCdtPN`, and named `2y9Ad2...` as authority. The authority was absent from transaction signer keys. The immediate parent of the token CPI was this controller, establishing program-signed outflow rather than an address mention. |
+
+Source method: public Solana mainnet-beta JSON-RPC `getAccountInfo`, `getMultipleAccounts`, `getSignaturesForAddress`, and `getTransaction`, all with `finalized` commitment; public [Dexscreener token feed](https://api.dexscreener.com/latest/dex/tokens/JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD). No private RPC URL or credential was used. The finalized transaction slot exceeds the current ProgramData last-deploy slot.
+
+This is a user-order prediction-market escrow, evidenced by live `FillSellOrder` and the saved handler index in [`recent-handler-index-3ZZuTbwC.json`](../2026-10-15/recent-handler-index-3ZZuTbwC.json). Its exact controller ID has no match in the October 19 audit reports or [`current-audit-ledger.md`](current-audit-ledger.md); it is distinct from the audited Jupiter YOLO `yoLov...` program. It is **under-reviewed**, not entirely untouched: an October 15 fresh-signer `ClaimPayout` mutation failed `ConstraintSeeds` on an already-claimed position ([prior receipt](../2026-10-15/jupusd-claim-outsider-signed-screen.json)).
+
+Open validation gaps: recover the current `FillSellOrder`/`FillBuyOrder` account schema and outcome-state checks, then test adversarial account substitution and accounting on a local fork. The custody and CPI evidence establishes an audit target, **not a vulnerability or accessible drain**. Current balances and quotes may change after the observation slot.

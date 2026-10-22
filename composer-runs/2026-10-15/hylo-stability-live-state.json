@@ -1,0 +1,538 @@
+{
+  "generatedAt": "2026-10-15T19:51:19.051Z",
+  "method": "Read-only confirmed getMultipleAccounts/getBlockTime; no transaction constructed, signed, or submitted",
+  "rpcEndpointRedacted": true,
+  "observation": {
+    "initialSlot": 457360537,
+    "dependentSlot": 457360537,
+    "blockTime": 1792093877,
+    "blockTimeIso": "2026-10-15T19:51:17.000Z"
+  },
+  "program": {
+    "id": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+    "expectedId": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+    "idMatchesIdl": true,
+    "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "programDataAddress": "9Zzs2JU8kA3odcwGBkXYSw9e39UpTAGgYnkhbmpY3p26",
+    "deployedSlot": "434128362",
+    "upgradeAuthority": "GzyhwK4y7EKPEevAMc2TEpgi1Y3znwj14FUzkHmCMiNP",
+    "elfBytes": 584944,
+    "elfSha256": "0fc5ee1613b9f3e8aeeceee25a3cd53d3fb586d22f5a6d598a10b3e74d5e5976"
+  },
+  "sdk": {
+    "repository": "hylo-so/sdk",
+    "commit": "d5a989e1862b467d69e7f5b2e7d2ecc2aae966b0",
+    "workspaceVersion": "2.6.5",
+    "idlPath": "hylo-stability-sdk-source/hylo-idl/idls/hylo_earn_pool.json",
+    "idlName": "hylo_earn_pool",
+    "idlVersion": "2.0.5",
+    "idlSha256": "53e3a84258f6060f18d75f8836af5a4ee55fc24865bda85c805ed3dbdd5bd11d",
+    "onchainLegacyIdlAddress": "AWArpXp31bh4i9AtZBXiCoAN5a6k6doYrBYVurrqCRzK",
+    "onchainLegacyIdlExists": true,
+    "onchainLegacyIdlDecoded": true,
+    "onchainLegacyIdlDiscriminatorHex": "184662bf3a907b9e",
+    "onchainLegacyIdlAuthority": "AqjVRKbksVmjftXgNYesou5uVHNvR9xvMneTrmA6sbLU",
+    "onchainLegacyIdlCompressedBytes": 3639,
+    "onchainLegacyIdlPath": "hylo-stability-onchain-idl.json",
+    "onchainLegacyIdlSha256": "8b982b3b9bc9ab8a53b2ea36f1b41d7cba847a0a57629ba45246a5bf465fe8fa",
+    "sdkAndOnchainIdlStructurallyEqual": false,
+    "sdkAndOnchainInstructionSchemasEqual": true,
+    "sdkAndOnchainAccountSchemasEqual": true,
+    "observedSdkOnchainDifference": "One non-instruction type-field label differs: YieldHarvestConfig.allocation on chain versus YieldHarvestConfig.ceil_mult in the SDK IDL; serialized layout is unchanged.",
+    "instructionDiscriminatorEvidence": [
+      {
+        "name": "absorb_loss",
+        "discriminatorHex": "2a2e747364feb05f",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "deprecate_levercoin_pool",
+        "discriminatorHex": "8864418f9725f338",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "initialize_earn_pool",
+        "discriminatorHex": "eed4366b49fdd5a7",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "initialize_lp_token_mint",
+        "discriminatorHex": "bc20a828a6989f9c",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "pause_earn_pool",
+        "discriminatorHex": "a10eac9bed0d250a",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "unpause_earn_pool",
+        "discriminatorHex": "72704b5adee7ffc7",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "update_deposit_limit",
+        "discriminatorHex": "b57341a90401606d",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "update_withdrawal_fee",
+        "discriminatorHex": "a5ebe7197f63f485",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "update_withdrawal_limit",
+        "discriminatorHex": "9299a2141357f30b",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "user_deposit",
+        "discriminatorHex": "bac68ce981276299",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "user_withdraw",
+        "discriminatorHex": "35fe1af277ed4921",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      }
+    ],
+    "accountDiscriminatorEvidence": [
+      {
+        "name": "Hylo",
+        "discriminatorHex": "72a1a9d2ccaf95ae",
+        "elfOccurrences": 0,
+        "elfOffsets": []
+      },
+      {
+        "name": "PoolConfig",
+        "discriminatorHex": "1a6c0e7b74e6812b",
+        "elfOccurrences": 1,
+        "elfOffsets": [
+          459824
+        ]
+      }
+    ],
+    "rawDiscriminatorScanCaveat": "A compiled SBF ELF need not contain each 8-byte discriminator contiguously; live dispatch simulations are the authoritative deployed-binary compatibility check."
+  },
+  "pdas": {
+    "poolConfig": {
+      "address": "2jk7miWrsTbt5hUSaCXPkEQPvuUMgbFLpgMzMQw3Z6ar",
+      "bump": 253
+    },
+    "poolAuth": {
+      "address": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+      "bump": 253
+    },
+    "lpMint": {
+      "address": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+      "bump": 255
+    },
+    "lpMintAuth": {
+      "address": "5YWerkcqAXTSCzKC1X52BXtfv2aoNCB6wzv7wEXuGWpq",
+      "bump": 254
+    },
+    "hylo": {
+      "address": "9cd2sAfbBvKs4SX9YKo4dcjwP3TgTVQ8dT5koshGcDND",
+      "bump": 255,
+      "program": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn"
+    },
+    "feeAuth": {
+      "address": "3HT6dD6APJh89XJs9rkn3BmsvkXE9jPG9dWJmUjWu6TS",
+      "bump": 251,
+      "program": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn"
+    },
+    "eventAuthority": {
+      "address": "8fjUWoZTb8ox8JFRJTb7WznL1V8oJT9o21kQKHJzbTS8",
+      "bump": 255
+    },
+    "stablecoinPool": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+    "feeVault": "Hh8N3Fdauxgq1jjcKdzGBR3D8cdkpLZrFEVumL1tYQLp"
+  },
+  "decoded": {
+    "poolConfig": {
+      "_dead_admin": "AqjVRKbksVmjftXgNYesou5uVHNvR9xvMneTrmA6sbLU",
+      "pool_auth_bump": 253,
+      "lp_token_auth_bump": 254,
+      "lp_token_mint_bump": 255,
+      "withdrawal_fee": {
+        "bits": "10",
+        "exp": -4
+      },
+      "paused": false,
+      "withdrawal_limiter": {
+        "limit": {
+          "bits": "1000000000000",
+          "exp": -6
+        },
+        "withdrawal_ledger": {
+          "supply": {
+            "bits": "219545965863",
+            "exp": -6
+          }
+        },
+        "epoch": "1058"
+      },
+      "deposit_limiter": {
+        "limit": {
+          "bits": "25000000000000",
+          "exp": -6
+        }
+      },
+      "_reserved": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "hylo": {
+      "admin": "12DAP8y5XemtK1pJFNMVVnQugt3PUAbZZr9SmyVvy4Ce",
+      "treasury": "mAQQ9BphDL82kcA5unrA5PJ6ekYh5PxKVh7UBwtgVyV",
+      "lst_registry": "9Mb2Mt76AN7eNY3BBA4LgfTicARXhcEEokTBfsN47noK",
+      "stablecoin_mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "levercoin_mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+      "pause_authority": "H6qRPNvLnuQSZHAWzKDwv2bokBBupC99aJMV4u5FpCC5",
+      "stablecoin_mint_bump": 255,
+      "stablecoin_auth_bump": 254,
+      "levercoin_mint_bump": 254,
+      "levercoin_auth_bump": 255,
+      "registry_auth_bump": 255,
+      "total_sol_cache_bump": 0,
+      "oracle_interval_secs": "10",
+      "stablecoin_fees": {
+        "normal": {
+          "mint": {
+            "bits": "10",
+            "exp": -4
+          },
+          "redeem": {
+            "bits": "30",
+            "exp": -4
+          }
+        },
+        "mode_1": {
+          "mint": {
+            "bits": "50",
+            "exp": -4
+          },
+          "redeem": {
+            "bits": "30",
+            "exp": -4
+          }
+        }
+      },
+      "levercoin_fees": {
+        "normal": {
+          "mint": {
+            "bits": "100",
+            "exp": -4
+          },
+          "redeem": {
+            "bits": "100",
+            "exp": -4
+          }
+        },
+        "sell_zone_1": {
+          "mint": {
+            "bits": "50",
+            "exp": -4
+          },
+          "redeem": {
+            "bits": "400",
+            "exp": -4
+          }
+        },
+        "sell_zone_2": {
+          "mint": {
+            "bits": "0",
+            "exp": -4
+          },
+          "redeem": {
+            "bits": "800",
+            "exp": -4
+          }
+        }
+      },
+      "total_sol_cache": {
+        "current_update_epoch": "1058",
+        "total_sol": {
+          "bits": "325094525290886",
+          "exp": -9
+        }
+      },
+      "yield_harvest_cache": {
+        "epoch": "1058",
+        "stability_pool_cap": {
+          "bits": "21086021578568",
+          "exp": -6
+        },
+        "stablecoin_to_pool": {
+          "bits": "4358451585",
+          "exp": -6
+        }
+      },
+      "yield_harvest_config": {
+        "ceil_mult": {
+          "bits": "2000000000",
+          "exp": -9
+        },
+        "fee": {
+          "bits": "500",
+          "exp": -4
+        }
+      },
+      "stablecoin_mint_threshold": {
+        "bits": "1500000000",
+        "exp": -9
+      },
+      "_unused_1": {
+        "bits": "130",
+        "exp": -2
+      },
+      "oracle_conf_tolerance": {
+        "bits": "10000000",
+        "exp": -9
+      },
+      "sol_usd_oracle": "7AviUf9nL62mcxNbQGKm4nKDQnPjswo6c5MX4D57HmyE",
+      "lst_swap_fee": {
+        "bits": "10",
+        "exp": -4
+      },
+      "virtual_stablecoin": {
+        "supply": {
+          "bits": "21843069383005",
+          "exp": -6
+        }
+      },
+      "lst_buy_curve_config": {
+        "floor_pct": {
+          "bits": "1000000",
+          "exp": -9
+        },
+        "ceil_pct": {
+          "bits": "1000000",
+          "exp": -9
+        }
+      },
+      "lst_sell_curve_config": {
+        "floor_pct": {
+          "bits": "2000000",
+          "exp": -9
+        },
+        "ceil_pct": {
+          "bits": "1000000",
+          "exp": -9
+        }
+      },
+      "protocol_paused": false,
+      "lst_pair_paused": false,
+      "_unused_2": {
+        "bits": "0",
+        "exp": 0
+      },
+      "pool_drawdown": {
+        "ledger": {
+          "supply": {
+            "bits": "0",
+            "exp": -6
+          }
+        }
+      },
+      "_reserved": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "hyusdMint": {
+      "address": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "mintAuthority": "CfuSViqf6wvUKEprLhtuCsSanvfAsMbDmkAW92FP95qe",
+      "supplyRaw": "25446783768317",
+      "decimals": 6,
+      "initialized": true,
+      "freezeAuthority": null
+    },
+    "shareMint": {
+      "address": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+      "mintAuthority": "5YWerkcqAXTSCzKC1X52BXtfv2aoNCB6wzv7wEXuGWpq",
+      "supplyRaw": "13912890538928",
+      "decimals": 6,
+      "initialized": true,
+      "freezeAuthority": null
+    },
+    "stablecoinPool": {
+      "address": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+      "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "authority": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+      "amountRaw": "20892513245095",
+      "state": 1,
+      "isNativeOption": 0,
+      "delegatedAmountRaw": "0",
+      "closeAuthorityOption": 0
+    },
+    "feeVault": {
+      "address": "Hh8N3Fdauxgq1jjcKdzGBR3D8cdkpLZrFEVumL1tYQLp",
+      "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "authority": "3HT6dD6APJh89XJs9rkn3BmsvkXE9jPG9dWJmUjWu6TS",
+      "amountRaw": "1720193416",
+      "state": 1,
+      "isNativeOption": 0,
+      "delegatedAmountRaw": "0",
+      "closeAuthorityOption": 0
+    },
+    "priorQueueVault": {
+      "address": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+      "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "authority": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+      "amountRaw": "20892513245095",
+      "state": 1,
+      "isNativeOption": 0,
+      "delegatedAmountRaw": "0",
+      "closeAuthorityOption": 0
+    }
+  },
+  "identityChecks": {
+    "priorQueueAuthorityIsPoolAuth": true,
+    "priorQueueVaultIsDerivedStablecoinPool": true,
+    "stablecoinPoolAuthorityMatches": true,
+    "stablecoinPoolMintMatches": true,
+    "lpMintAuthorityMatches": true,
+    "hyloStablecoinMintMatches": true,
+    "poolConfigBumpMatches": true,
+    "lpMintBumpMatches": true,
+    "lpMintAuthorityBumpMatches": true
+  },
+  "accounting": {
+    "poolHyusdRaw": "20892513245095",
+    "shareSupplyRaw": "13912890538928",
+    "hyusdPerShareScaled1e12": "1501665896575",
+    "hyusdPerShare": "1.501665896575"
+  },
+  "accounts": {
+    "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ": {
+      "address": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "lamports": 1141440,
+      "dataLength": 36,
+      "dataSha256": "cbfda868b63989d5464912ce837f02ec9c235b7ece6f0a8ecd96dcd3e827b16e"
+    },
+    "2jk7miWrsTbt5hUSaCXPkEQPvuUMgbFLpgMzMQw3Z6ar": {
+      "address": "2jk7miWrsTbt5hUSaCXPkEQPvuUMgbFLpgMzMQw3Z6ar",
+      "exists": true,
+      "owner": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+      "executable": false,
+      "lamports": 1635600,
+      "dataLength": 107,
+      "dataSha256": "2d4b6f8b580b7fd9744bee56875d8647922aac30f65522da08fdc6a118f68f63"
+    },
+    "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd": {
+      "address": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+      "exists": false
+    },
+    "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz": {
+      "address": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 1461600,
+      "dataLength": 82,
+      "dataSha256": "915bce4a9943651b85e8f025fe0a95dfa5ed83a59dedc59b9528348a212c58f7"
+    },
+    "5YWerkcqAXTSCzKC1X52BXtfv2aoNCB6wzv7wEXuGWpq": {
+      "address": "5YWerkcqAXTSCzKC1X52BXtfv2aoNCB6wzv7wEXuGWpq",
+      "exists": false
+    },
+    "9cd2sAfbBvKs4SX9YKo4dcjwP3TgTVQ8dT5koshGcDND": {
+      "address": "9cd2sAfbBvKs4SX9YKo4dcjwP3TgTVQ8dT5koshGcDND",
+      "exists": true,
+      "owner": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn",
+      "executable": false,
+      "lamports": 4447440,
+      "dataLength": 511,
+      "dataSha256": "859e64f8e372b8064d3f9056aff6f05c0d605125ae7883f38f032dcf0b17e2ac"
+    },
+    "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E": {
+      "address": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 1461600,
+      "dataLength": 82,
+      "dataSha256": "e5eec3e74e72195a809146e4510827c1737c9a6e7ea4e2c8a4ad043451164fca"
+    },
+    "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9": {
+      "address": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "3c53d5890b61809b9ef69b114dacc34112360b594e9e9ca8174f1260933ebd74"
+    },
+    "3HT6dD6APJh89XJs9rkn3BmsvkXE9jPG9dWJmUjWu6TS": {
+      "address": "3HT6dD6APJh89XJs9rkn3BmsvkXE9jPG9dWJmUjWu6TS",
+      "exists": false
+    },
+    "Hh8N3Fdauxgq1jjcKdzGBR3D8cdkpLZrFEVumL1tYQLp": {
+      "address": "Hh8N3Fdauxgq1jjcKdzGBR3D8cdkpLZrFEVumL1tYQLp",
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "executable": false,
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "384104e60c624843094b31188c5c2205ff0fbbe59e4bc3213d38964bdb6da371"
+    },
+    "8fjUWoZTb8ox8JFRJTb7WznL1V8oJT9o21kQKHJzbTS8": {
+      "address": "8fjUWoZTb8ox8JFRJTb7WznL1V8oJT9o21kQKHJzbTS8",
+      "exists": false
+    },
+    "AWArpXp31bh4i9AtZBXiCoAN5a6k6doYrBYVurrqCRzK": {
+      "address": "AWArpXp31bh4i9AtZBXiCoAN5a6k6doYrBYVurrqCRzK",
+      "exists": true,
+      "owner": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+      "executable": false,
+      "lamports": 61665600,
+      "dataLength": 8732,
+      "dataSha256": "04f065e69edbf2ae6d4292be49cc0d0c70e6c93415941ce635d0cb0049d28342"
+    }
+  }
+}

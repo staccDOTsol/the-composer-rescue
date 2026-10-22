@@ -1,0 +1,152 @@
+{
+  "schema": "orca-pr1396-mainnet-liquidity-scan/v1",
+  "checkedAtUtc": "2026-10-19T14:40:53.054490+00:00",
+  "finalizedSlotBeforeScan": 458870001,
+  "finalizedSlotAfterScan": 458870012,
+  "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+  "query": {
+    "method": "getProgramAccounts",
+    "options": {
+      "commitment": "finalized",
+      "encoding": "base64",
+      "filters": [
+        {
+          "dataSize": 653
+        },
+        {
+          "memcmp": {
+            "offset": 0,
+            "bytes": "BdrfaPg3xM6"
+          }
+        }
+      ],
+      "dataSlice": {
+        "offset": 49,
+        "length": 16
+      }
+    },
+    "liquidityFieldOffset": 49,
+    "liquidityFieldBytes": 16,
+    "sourceLayout": "Whirlpool account discriminator8 + config32 + bump1 + spacing2 + feeTierSeed2 + feeRate2 + protocolFeeRate2"
+  },
+  "whirlpoolDiscriminatorHex": "3f95d10ce1806309",
+  "rpcCredentialPersisted": false,
+  "q64": "18446744073709551616",
+  "poolCount": 164243,
+  "activePositiveLiquidity": 78864,
+  "liquidityGteQ": 6668,
+  "liquidityGteHalfQ": 11176,
+  "liquidityGteTenthQ": 27197,
+  "liquidityBetweenQAnd2Q": 3829,
+  "liquidityGte10Q": 366,
+  "topTen": [
+    {
+      "pool": "949myKpLQJn2G9x22FBWUa33JA4fiEspz3sKNumGiz1v",
+      "liquidity": "111149959254518952912914"
+    },
+    {
+      "pool": "51Hv8FuUcoHeaDArVSziPmUihKkNyvffXnfVu5uGEmQx",
+      "liquidity": "19991502235032814362111"
+    },
+    {
+      "pool": "2tEQ9yJ8KG3P1etGTvXpefo1gHXne76iN72ZmtYJBJae",
+      "liquidity": "7066101076840017942455"
+    },
+    {
+      "pool": "GhzgVGjDcDLaHYEZKwqReomHwmJ68Z2r9ncczepCLyn4",
+      "liquidity": "6928960718224448855193"
+    },
+    {
+      "pool": "2fGVg6ttAymvZ1AdU72tZjE3sjpk7HKVCjcYFsYuY17J",
+      "liquidity": "6431303470088847409948"
+    },
+    {
+      "pool": "6LncZuHYBGLgfSupGPuCXpBqSRj3JdhSgrLiFMEreQKj",
+      "liquidity": "6134496329220464598521"
+    },
+    {
+      "pool": "BB9RTXhg322BTrnVArLb8tBcNdjWFw5frRTTqGCALcY6",
+      "liquidity": "3320814426971333759712"
+    },
+    {
+      "pool": "D4WEZfUahDq4BmFM2gSsznxV7zaAG8Z3pAwACukwAgvY",
+      "liquidity": "3277433739367551722247"
+    },
+    {
+      "pool": "AJNHY6yrgZarj9M5sbskxn2EKaUw7HqUSjua48kX34kY",
+      "liquidity": "3226221076884496287441"
+    },
+    {
+      "pool": "62Fv27cKnEBbjLiEsR5q9nsujB7BPtZ9ATDuUdtirvTn",
+      "liquidity": "3098640678262751782031"
+    }
+  ],
+  "nearestQ": [
+    {
+      "pool": "gnKp4bFrPKbqzSLLivJyHbCMY1BPYvvBbNNqruAryVC",
+      "liquidity": "18450870024361436993",
+      "ratioToQ": 1.000223668
+    },
+    {
+      "pool": "9ohodqLB6xcsG3ZF8uk9BL2vPH2X8HsAddhpM1KEhtVb",
+      "liquidity": "18450870024361436993",
+      "ratioToQ": 1.000223668
+    },
+    {
+      "pool": "478r35b8cKMuj3HzxkwqWsx8vBfFLP5YhbkUEsWt2jfo",
+      "liquidity": "18439611894805844217",
+      "ratioToQ": 0.999613364
+    },
+    {
+      "pool": "J1Ef93KAn4i7zR8zpuJrdNWRVfm5vv7eujCDE5JBViQM",
+      "liquidity": "18438996263280406856",
+      "ratioToQ": 0.99957999
+    },
+    {
+      "pool": "AHSC94abDidNRoJtqWVXsqaF1fj4iGxvfApYTRuc7KeG",
+      "liquidity": "18430593331638572041",
+      "ratioToQ": 0.999124467
+    }
+  ],
+  "inspectedPools": [
+    {
+      "pool": "949myKpLQJn2G9x22FBWUa33JA4fiEspz3sKNumGiz1v",
+      "liquidity": "111149959254518952912914",
+      "tickSpacing": 1,
+      "feeRate": 100,
+      "currentTick": 46055,
+      "mintA": "555XtgMJYBefyiJWdvSj5yPqEtTBN6WRuAuPfKcob2ux",
+      "mintB": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "vaultA": "8oA9cDd236ztLQ2ka7AyJ2HhATTcrAUEGibsHhR4ys8P",
+      "vaultB": "AmqPa63sRT2GCpi4pBf79Pn2fznr6Z7VhDTkojd3Eg9E",
+      "mintADecimals": 4,
+      "mintBDecimals": 6
+    },
+    {
+      "pool": "gnKp4bFrPKbqzSLLivJyHbCMY1BPYvvBbNNqruAryVC",
+      "liquidity": "18450870024361436993",
+      "tickSpacing": 1,
+      "feeRate": 100,
+      "currentTick": 47667,
+      "mintA": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "mintB": "FQZ4v5rqVPjZFPZAisBV6sS7TKs4dzaFSwAkEFkaihkU",
+      "vaultA": "48ZQbwnYv72BCaF5fhq3SVQC1qBe3cnQn5EVhtLAhFco",
+      "vaultB": "25dHwXWthfxH1khEfqaeEBFiiEqoyiSRnybpwBxr4GoJ",
+      "mintADecimals": 6,
+      "mintBDecimals": 6
+    },
+    {
+      "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+      "liquidity": "715040181533024",
+      "tickSpacing": 4,
+      "feeRate": 400,
+      "currentTick": -22654,
+      "mintA": "So11111111111111111111111111111111111111112",
+      "mintB": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "vaultA": "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9",
+      "vaultB": "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP",
+      "mintADecimals": 9,
+      "mintBDecimals": 6
+    }
+  ]
+}

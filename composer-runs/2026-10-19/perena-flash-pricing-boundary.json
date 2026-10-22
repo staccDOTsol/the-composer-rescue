@@ -1,0 +1,40 @@
+{
+  "schema": "perena-flash-pricing-boundary/v1",
+  "observedDateUtc": "2026-10-19",
+  "network": "solana-mainnet-beta",
+  "quoteSource": "Jupiter Lite direct ExactIn quotes",
+  "target": {
+    "program": "NUMERUNsFCP3kuNmWZuXtm1AaQCPj9uw6Guv2Ekoi5P",
+    "pool": "2w4A1eGyjRutakyFdmVyBiLPf98qKxNTC2LpuwhaCruZ",
+    "usdcVault": "6B8k8At9879r5EsZAWg8W6DEpxzJ798Cwj48twu3pq4b",
+    "usdtVault": "DJfYbGicp4AFXWsragNWv1baugqcdFhw6eFTcK2YWdyK"
+  },
+  "forward": {
+    "vector": "USDC flash -> exact Perena USDC/USDT -> independent USDT/USDC exit",
+    "highestAcceptedWholeThousandUsdInputRaw": "113000000000",
+    "perenaOutputRaw": "112400766912",
+    "independentExitInputRaw": "112389526835",
+    "independentExitOutputRaw": "112280456782",
+    "quotedResidualUsdtRaw": "11240077",
+    "grossQuotedWalletStableDeltaRaw": "-708303141",
+    "nextWholeThousandUsdInputRaw": "114000000000",
+    "nextQuoteResult": "HTTP 400 No routes found"
+  },
+  "reverse": {
+    "vector": "independent USDC/USDT entry -> exact Perena USDT/USDC -> USDC repayment",
+    "highestAcceptedWholeThousandUsdInputRaw": "87000000000",
+    "bestIndependentEntryOutputRaw": "87080375186",
+    "perenaInputRaw": "87071667148",
+    "perenaOutputRaw": "86526478984",
+    "grossQuotedWalletStableDeltaRaw": "-464812978",
+    "nextWholeThousandUsdInputRaw": "88000000000",
+    "nextPerenaInputRaw": "88072490909",
+    "nextQuoteResult": "HTTP 400 No routes found",
+    "executionNote": "The small $2k reverse vector executed with Deriverse as the independent venue. At the quoted upper band the best independent venue was different; the fixed executable Deriverse route had prohibitive depth and did not provide a comparable high-edge packet. This is recorded as a blocker, not substituted with synthetic profit."
+  },
+  "limitations": [
+    "Whole-$1k quote boundary, not an integer-raw binary search.",
+    "Quotes are adjacent-slot observations; signed fork simulations provide the execution evidence.",
+    "No transaction was submitted or broadcast."
+  ]
+}

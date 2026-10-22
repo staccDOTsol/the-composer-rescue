@@ -1,0 +1,29 @@
+{
+  "observedSlot": 457348693,
+  "observedBlockTime": "2026-10-15T19:08:40Z",
+  "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "decodedFromCurrentReserveAccounts": true,
+  "feeField": "reserve.config.fees.flashLoanFeeSf",
+  "sameMintCandidate": {
+    "mint": "So11111111111111111111111111111111111111112",
+    "reserve": "4oigbthMAgjTMPyw8dBxhxU59YMtvNDHqhpR3W4HAzBM",
+    "market": "C7h9YnjPrDvNhe2cWWDhCu4CZEB1XTTH4RzjmsHuengV",
+    "supply": "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR",
+    "feeVault": "DW718KwF5d9URykynv8dcmHSQNXKTv7V5VxW5ozckbGS",
+    "supplyRaw": "6583112759818",
+    "flashLoanFeeSf": "0",
+    "interpretation": "Configured fee rate is exactly zero; this is not a dust amount rounding to zero."
+  },
+  "usdcControlReserve": {
+    "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "flashLoanFeeSf": "0"
+  },
+  "nonzeroFeeCounterexample": {
+    "mint": "So11111111111111111111111111111111111111112",
+    "reserve": "d4A2prbA2whesmvHaL88BH6Ewn5N4bTSU2Ze8P6Bc4Q",
+    "flashLoanFeeSf": "11529215046068",
+    "interpretation": "Not every KLend reserve is fee-free."
+  },
+  "compositionBlocker": "The public mainnet simulation runtime rejected every manually serialized transaction-v1 message as invalid message version. A 64-inline-account v1 wire was also rejected under the active 1232-byte raw transaction limit. Therefore the requested 4096-byte v1 KLend-to-Save atomic composition could not reach either program on this runtime; it was not replaced with a claimed v1 result."
+}

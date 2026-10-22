@@ -1,0 +1,23 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "secretsfun",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd secretsfun && npx next start -p 3011"],
+      "port": 3011
+    },
+    {
+      "name": "secretsfun-dev",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd secretsfun && npx next dev -p 3013"],
+      "port": 3013
+    },
+    {
+      "name": "secretsfun-start-3012",
+      "runtimeExecutable": "sh",
+      "runtimeArgs": ["-c", "cd secretsfun && npx next start -p 3012"],
+      "port": 3012
+    }
+  ]
+}

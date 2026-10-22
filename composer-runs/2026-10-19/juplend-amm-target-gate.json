@@ -1,0 +1,583 @@
+{
+  "observedAtUtc": "2026-10-19T07:58:14.709Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "readOnly": true,
+  "routeSource": "volume-route-discovery.json",
+  "liquidityAuthority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+  "programs": {
+    "dex": {
+      "key": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+      "slot": 458758434,
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataLength": 36,
+      "stateTag": 2,
+      "programData": {
+        "key": "E4TqU7cqaKuAmpHZt2RZ6W4zPKqbC5K5muE3M2T5ZL1S",
+        "slot": 458758435,
+        "exists": true,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "dataLength": 1238109,
+        "stateTag": 3,
+        "lastDeploySlot": 449990119,
+        "upgradeAuthority": "4MsgBB5VPoTrUSp5XnfbViV386C1UnsTdifLBw33ZMSJ",
+        "binarySha256": "b259bef25bd37ce21a8bff502877a243d3e0663253523b5d4ceb447abde57646"
+      }
+    },
+    "liquidity": {
+      "key": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+      "slot": 458758436,
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "dataLength": 36,
+      "stateTag": 2,
+      "programData": {
+        "key": "J6Ry5yuy4Vp4kNa1PTGASiHJxZ8x4pgRPaJ18SmnqtW5",
+        "slot": 458758437,
+        "exists": true,
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "dataLength": 791209,
+        "stateTag": 3,
+        "lastDeploySlot": 453953579,
+        "upgradeAuthority": "4MsgBB5VPoTrUSp5XnfbViV386C1UnsTdifLBw33ZMSJ",
+        "binarySha256": "f7be679179291c719b204eb031cc134fe94a5299cd4bfdf705ba632863cffafe"
+      }
+    }
+  },
+  "rows": [
+    {
+      "pair": "USDC/USDT",
+      "pool": {
+        "key": "FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy",
+        "slot": 458758438,
+        "exists": true,
+        "owner": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "executable": false,
+        "dataLength": 329
+      },
+      "dex": {
+        "token0": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "token1": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+        "smartCollateralEnabled": null,
+        "smartDebtEnabled": 1,
+        "totalSupplyShares": "0",
+        "totalBorrowShares": "1500007229532922"
+      },
+      "poolKeyTokenAccounts": [],
+      "poolKeyTokenAccountQueries": [
+        {
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "contextSlot": 458758439,
+          "accountCount": 0
+        },
+        {
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "contextSlot": 458758440,
+          "accountCount": 0
+        }
+      ],
+      "positions": [
+        {
+          "account": {
+            "key": "4NB8MfVbDzZEEKAda5kxChxPSqJJ2vjTb7hRFZyJ5EWr",
+            "slot": 458758438,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 120
+          },
+          "type": "UserBorrowPosition",
+          "value": {
+            "protocol": "FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "with_interest": 1,
+            "amount": "2361535439313",
+            "debt_ceiling": "3542303158969",
+            "last_update": "1792396660",
+            "expand_pct": 5000,
+            "expand_duration": 3600,
+            "base_debt_ceiling": "3000000000000",
+            "max_debt_ceiling": "6000000000000",
+            "status": 0
+          }
+        },
+        {
+          "account": {
+            "key": "37PKKRw8Jv6sXUWi16hjj4TsCmXGugZejsRpWmGzf2PZ",
+            "slot": 458758439,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 120
+          },
+          "type": "UserBorrowPosition",
+          "value": {
+            "protocol": "FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy",
+            "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "with_interest": 1,
+            "amount": "515359836947",
+            "debt_ceiling": "3000000000000",
+            "last_update": "1792396660",
+            "expand_pct": 5000,
+            "expand_duration": 3600,
+            "base_debt_ceiling": "3000000000000",
+            "max_debt_ceiling": "6000000000000",
+            "status": 0
+          }
+        }
+      ],
+      "reserves": [
+        {
+          "account": {
+            "key": "94vK29npVbyRHXH63rRcTiSr26SFhrQTzbpNJuhQEDu",
+            "slot": 458758439,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 192
+          },
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "vault": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+          "totalSupplyWithInterest": "465269530419309",
+          "totalBorrowWithInterest": "425609388645370",
+          "vaultToken": {
+            "key": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "slot": 458758439,
+            "exists": true,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "amount": "35277620623911",
+            "decimals": 6,
+            "uiAmount": "35277620.623911"
+          }
+        },
+        {
+          "account": {
+            "key": "Enao27EWUV2fv3rUqwknJ1eRaM5aAeN5ijeCrM9tayRX",
+            "slot": 458758440,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 192
+          },
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "vault": "4HTRHjdgy4VSVRcsumuzVFCgWywNhjGsD5oG3kqAt5vo",
+          "totalSupplyWithInterest": "16451125181937",
+          "totalBorrowWithInterest": "14232552735467",
+          "vaultToken": {
+            "key": "4HTRHjdgy4VSVRcsumuzVFCgWywNhjGsD5oG3kqAt5vo",
+            "slot": 458758440,
+            "exists": true,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "amount": "2063793872130",
+            "decimals": 6,
+            "uiAmount": "2063793.87213"
+          }
+        }
+      ],
+      "receipt": {
+        "signature": "5GBqn6wZ5sEimAmm8uaBzhKePxpz8kAo4T7RhyDBVMrsGx8HR9tpKdk68GzRWr1bnr1jxRh8wmfQv3PqtKqGABnK",
+        "exists": true,
+        "slot": 458757019,
+        "postDeploy": true,
+        "error": null,
+        "outerSignerKeys": [
+          "HHHJTk2pdPSCoAcFRxkapVdDRprR7Wo1tpXyB8LcVb4s"
+        ],
+        "directDexTokenCpis": [
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+            "type": "transferChecked",
+            "source": "38yabfgCER1af5z3scDZXobNjXs5es9sfo2oc2CaCYhk",
+            "destination": "4HTRHjdgy4VSVRcsumuzVFCgWywNhjGsD5oG3kqAt5vo",
+            "authority": "HHHJTk2pdPSCoAcFRxkapVdDRprR7Wo1tpXyB8LcVb4s",
+            "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "amount": "1576242195",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          }
+        ],
+        "sharedVaultOutflows": [
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 4,
+            "parent": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "type": "transferChecked",
+            "source": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "destination": "CBfhZf2YbYy3tgXxv4WVcn2W2QHgXTWJpize78ZbuibA",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "amount": "1574723513",
+            "sourceIsSharedLiquidityVault": true,
+            "authorityOuterSigner": false
+          }
+        ],
+        "transfers": [
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+            "type": "transfer",
+            "source": "CBfhZf2YbYy3tgXxv4WVcn2W2QHgXTWJpize78ZbuibA",
+            "destination": "ARWaajRJyF6PKQryJ4HLzLBfTWM2qmVQUQVtBjk6PgPc",
+            "authority": "HHHJTk2pdPSCoAcFRxkapVdDRprR7Wo1tpXyB8LcVb4s",
+            "mint": null,
+            "amount": "1574719919",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          },
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+            "type": "transfer",
+            "source": "5bHD9xdEzJdkVuhs54mGPC9BZgUshqgMg4tqmTwhWggc",
+            "destination": "38yabfgCER1af5z3scDZXobNjXs5es9sfo2oc2CaCYhk",
+            "authority": "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32",
+            "mint": null,
+            "amount": "1576242195",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": false
+          },
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+            "type": "transferChecked",
+            "source": "38yabfgCER1af5z3scDZXobNjXs5es9sfo2oc2CaCYhk",
+            "destination": "4HTRHjdgy4VSVRcsumuzVFCgWywNhjGsD5oG3kqAt5vo",
+            "authority": "HHHJTk2pdPSCoAcFRxkapVdDRprR7Wo1tpXyB8LcVb4s",
+            "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+            "amount": "1576242195",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          },
+          {
+            "outerIndex": 2,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 4,
+            "parent": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "type": "transferChecked",
+            "source": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "destination": "CBfhZf2YbYy3tgXxv4WVcn2W2QHgXTWJpize78ZbuibA",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "amount": "1574723513",
+            "sourceIsSharedLiquidityVault": true,
+            "authorityOuterSigner": false
+          }
+        ]
+      }
+    },
+    {
+      "pair": "USDC/USDG",
+      "pool": {
+        "key": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+        "slot": 458758441,
+        "exists": true,
+        "owner": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "executable": false,
+        "dataLength": 329
+      },
+      "dex": {
+        "token0": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "token1": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "smartCollateralEnabled": 1,
+        "smartDebtEnabled": null,
+        "totalSupplyShares": "22737125893784",
+        "totalBorrowShares": "0"
+      },
+      "poolKeyTokenAccounts": [],
+      "poolKeyTokenAccountQueries": [
+        {
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "contextSlot": 458758443,
+          "accountCount": 0
+        },
+        {
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "contextSlot": 458758443,
+          "accountCount": 0
+        }
+      ],
+      "positions": [
+        {
+          "account": {
+            "key": "5nWhfcZipZ6acCn3JjnkYyLM1ZwfvkLNcMFrxJNX13bq",
+            "slot": 458758441,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 124
+          },
+          "type": "UserSupplyPosition",
+          "value": {
+            "protocol": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+            "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+            "with_interest": 1,
+            "amount": "21225361331",
+            "withdrawal_limit": "0",
+            "decay_amount": "0",
+            "last_update": "1792388354",
+            "expand_pct": 5000,
+            "expand_duration": 3600,
+            "decay_duration": 0,
+            "base_withdrawal_limit": "9000000000000",
+            "status": 0
+          }
+        },
+        {
+          "account": {
+            "key": "J8WWASwhyLzEwRjJjrTwtnJLv6PQw1r9cvMGskqV8Gcn",
+            "slot": 458758442,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 124
+          },
+          "type": "UserSupplyPosition",
+          "value": {
+            "protocol": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "with_interest": 1,
+            "amount": "22639484727",
+            "withdrawal_limit": "0",
+            "decay_amount": "0",
+            "last_update": "1792388354",
+            "expand_pct": 5000,
+            "expand_duration": 3600,
+            "decay_duration": 0,
+            "base_withdrawal_limit": "9000000000000",
+            "status": 0
+          }
+        }
+      ],
+      "reserves": [
+        {
+          "account": {
+            "key": "G4KAenCBfybnZLtVe4LdNrmEtQoW3x93oTowFJUPSvx6",
+            "slot": 458758442,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 192
+          },
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "vault": "E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm",
+          "totalSupplyWithInterest": "2471359381799",
+          "totalBorrowWithInterest": "2232573742737",
+          "vaultToken": {
+            "key": "E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm",
+            "slot": 458758442,
+            "exists": true,
+            "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "amount": "209896956170",
+            "decimals": 6,
+            "uiAmount": "209896.95617"
+          }
+        },
+        {
+          "account": {
+            "key": "94vK29npVbyRHXH63rRcTiSr26SFhrQTzbpNJuhQEDu",
+            "slot": 458758443,
+            "exists": true,
+            "owner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "executable": false,
+            "dataLength": 192
+          },
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "vault": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+          "totalSupplyWithInterest": "465269530419309",
+          "totalBorrowWithInterest": "425609388645370",
+          "vaultToken": {
+            "key": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "slot": 458758443,
+            "exists": true,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "amount": "35277620623911",
+            "decimals": 6,
+            "uiAmount": "35277620.623911"
+          }
+        }
+      ],
+      "receipt": {
+        "signature": "jsemUWepbqFJxBjaANRNBZQn1mLvVRHNQ5y5LiShW38wtnm2ZuEzX8VqgkUMr4shsKnjuYCwWYQTLbroiUnPCzz",
+        "exists": true,
+        "slot": 458719969,
+        "postDeploy": true,
+        "error": null,
+        "outerSignerKeys": [
+          "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51",
+          "DQBZUCgVE4df2svrd3dDa1DtYBqCtUxp5DPuotnb3eYA"
+        ],
+        "directDexTokenCpis": [
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "stackHeight": 3,
+            "parent": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+            "type": "transferChecked",
+            "source": "2s5piALFRW2tCNG7oj8goagFwC8yiyjrhupcNjVrVaTK",
+            "destination": "E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm",
+            "authority": "DQBZUCgVE4df2svrd3dDa1DtYBqCtUxp5DPuotnb3eYA",
+            "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+            "amount": "3994624",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          }
+        ],
+        "sharedVaultOutflows": [
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 4,
+            "parent": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "type": "transferChecked",
+            "source": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "destination": "DZuFea2QUo7cMRD83pdeR43KkWT7mTVTeoCo8HaSZeTx",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "amount": "3994537",
+            "sourceIsSharedLiquidityVault": true,
+            "authorityOuterSigner": false
+          }
+        ],
+        "transfers": [
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "stackHeight": 3,
+            "parent": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+            "type": "transferChecked",
+            "source": "256WSjuDk6H5SHRLFKmMNaCzsGZbMxKVSu6D7B162BhA",
+            "destination": "CPGVKLZhso9RyD91KQxAP7Y86yh1Y8YVHC2uoiS1Jhhj",
+            "authority": "DQBZUCgVE4df2svrd3dDa1DtYBqCtUxp5DPuotnb3eYA",
+            "mint": "t9bnCGiZVUYsRKvx4d5dPcoDCSyuBM9C33ZNGNULARP",
+            "amount": "3580041903",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+            "type": "transferChecked",
+            "source": "4xzVdUhVVCk47XxW1wun5rMRgo3desBxn7i7HAU5aU8z",
+            "destination": "2nhDsKw6wVqRrziRsSUXKy8TsneaF6bmGdEgfJ1oEAiV",
+            "authority": "FJ1Gf7yYZQnpjAd2Go6Rws14WmStjZyo8XgxmLPHHaEU",
+            "mint": "So11111111111111111111111111111111111111112",
+            "amount": "37853919",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": false
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+            "type": "transferChecked",
+            "source": "4xzVdUhVVCk47XxW1wun5rMRgo3desBxn7i7HAU5aU8z",
+            "destination": "GAFuhgcd328SkkBYHpfadzmef9hTGAFRCi9QoCnsZQug",
+            "authority": "FJ1Gf7yYZQnpjAd2Go6Rws14WmStjZyo8XgxmLPHHaEU",
+            "mint": "So11111111111111111111111111111111111111112",
+            "amount": "9554",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": false
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 3,
+            "parent": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+            "type": "transferChecked",
+            "source": "2nhDsKw6wVqRrziRsSUXKy8TsneaF6bmGdEgfJ1oEAiV",
+            "destination": "BRt57kfTs25FGujVD97U4mnttfN3MrgBD1ut5JzquYBW",
+            "authority": "DQBZUCgVE4df2svrd3dDa1DtYBqCtUxp5DPuotnb3eYA",
+            "mint": "So11111111111111111111111111111111111111112",
+            "amount": "37853919",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "stackHeight": 3,
+            "parent": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+            "type": "transferChecked",
+            "source": "Cac4BoBedu9hsNo1RtgfKEomHmQ3HYKQ2gXYzqSz2KpG",
+            "destination": "2s5piALFRW2tCNG7oj8goagFwC8yiyjrhupcNjVrVaTK",
+            "authority": "5KqohoeGjTjyHAFJJywK4J7fkFuK82PfMyuseGgLKZu2",
+            "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+            "amount": "3994624",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": false
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+            "stackHeight": 3,
+            "parent": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+            "type": "transferChecked",
+            "source": "2s5piALFRW2tCNG7oj8goagFwC8yiyjrhupcNjVrVaTK",
+            "destination": "E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm",
+            "authority": "DQBZUCgVE4df2svrd3dDa1DtYBqCtUxp5DPuotnb3eYA",
+            "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+            "amount": "3994624",
+            "sourceIsSharedLiquidityVault": false,
+            "authorityOuterSigner": true
+          },
+          {
+            "outerIndex": 3,
+            "outerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+            "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "stackHeight": 4,
+            "parent": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+            "type": "transferChecked",
+            "source": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+            "destination": "DZuFea2QUo7cMRD83pdeR43KkWT7mTVTeoCo8HaSZeTx",
+            "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+            "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+            "amount": "3994537",
+            "sourceIsSharedLiquidityVault": true,
+            "authorityOuterSigner": false
+          }
+        ]
+      }
+    }
+  ],
+  "caveat": "Liquidity vault balances are shared across protocols and DEX pools; they are not per-pool custody balances."
+}

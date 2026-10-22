@@ -1,0 +1,173 @@
+{
+  "observedAt": "2026-10-19T07:21:09.876Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "program": "3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU",
+  "pool": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+  "testWallet": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "method": "signed simulateTransaction only; sigVerify=true; no broadcast",
+  "composer": {
+    "endpoint": "/learn/3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU?limit=150",
+    "evidence": {
+      "discriminatorBytes": 8,
+      "distinctDiscriminators": 2,
+      "encoding": "anchor",
+      "encodingConfident": true,
+      "instructionSamples": 250,
+      "instructionsNamed": 1,
+      "rainbowEntries": 23302,
+      "seedBudgetExhausted": true,
+      "seedCandidates": 4121,
+      "seedDerivationsTried": 3152089,
+      "seedDictionary": 3868,
+      "seedLiteralsFromBinary": 258,
+      "signaturesScanned": 250,
+      "transactionsParsed": 250
+    },
+    "recoveredSwapName": "swap_v3",
+    "recoveredSwapNameSource": "openzoo sonar rainbow table — this discriminator is declared by 2 published IDL(s); the name is theirs, the shape below is this program's",
+    "discriminatorHex": "f0e02621b01ff1af",
+    "accountCount": 15,
+    "holdoutFloorSlot": 458748184,
+    "heldOut": {
+      "signature": "oc7NG9JiTUTK2iUd5M1PAXnn3ttywF4Yzro7WQQaShCp9hPw8hnuiB2gmJNzuGrW1ev3FsqpP3CzNMm3aPxQgei",
+      "slot": 458748186,
+      "source": "inner:5:20",
+      "discriminatorHex": "f0e02621b01ff1af",
+      "accountCount": 15,
+      "constantsMatch": {
+        "pool": true,
+        "wsolVault": true,
+        "usdcVault": true,
+        "wsolMint": true,
+        "usdcMint": true,
+        "tokenProgram": true,
+        "systemProgram": true,
+        "sysvarInstructions": true
+      }
+    }
+  },
+  "quote": {
+    "contextSlot": 458748185,
+    "inAmount": "5000000",
+    "outAmount": "528288",
+    "otherAmountThreshold": "525647"
+  },
+  "manipulation": {
+    "type": "raw WSOL-vault lamport donation followed by SyncNative before swap",
+    "donationLamports": 1000000,
+    "cases": [
+      {
+        "donated": false,
+        "donationLamports": 0,
+        "slot": 458748186,
+        "err": null,
+        "unitsConsumed": 75655,
+        "feeLamports": 105000,
+        "wireBytes": 589,
+        "accountKeys": 18,
+        "pre": {
+          "walletLamports": 19677787,
+          "walletUsdcRaw": "10492",
+          "poolWsolRaw": "506813141070",
+          "poolUsdcRaw": "292788434615"
+        },
+        "post": {
+          "walletLamports": 14572787,
+          "walletUsdcRaw": "538736",
+          "poolWsolRaw": "506458367045",
+          "poolUsdcRaw": "292825948315"
+        },
+        "reconciliation": {
+          "walletLamports": "-5105000",
+          "walletUsdcRaw": "528244",
+          "poolWsolRaw": "-354774025",
+          "poolUsdcRaw": "37513700",
+          "combinedSolRawDelta": "-359879025",
+          "combinedUsdcRawDelta": "38041944",
+          "expectedCombinedSolRawDeltaFromFee": "-105000"
+        },
+        "logs": [
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU invoke [2]",
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU consumed 53582 of 1380625 compute units",
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU success"
+        ]
+      },
+      {
+        "donated": true,
+        "donationLamports": 1000000,
+        "slot": 458748186,
+        "err": null,
+        "unitsConsumed": 78461,
+        "feeLamports": 105000,
+        "wireBytes": 611,
+        "accountKeys": 18,
+        "pre": {
+          "walletLamports": 19677787,
+          "walletUsdcRaw": "10492",
+          "poolWsolRaw": "506813141070",
+          "poolUsdcRaw": "292788434615"
+        },
+        "post": {
+          "walletLamports": 13572787,
+          "walletUsdcRaw": "538736",
+          "poolWsolRaw": "506460680578",
+          "poolUsdcRaw": "292825948315"
+        },
+        "reconciliation": {
+          "walletLamports": "-6105000",
+          "walletUsdcRaw": "528244",
+          "poolWsolRaw": "-352460492",
+          "poolUsdcRaw": "37513700",
+          "combinedSolRawDelta": "-358565492",
+          "combinedUsdcRawDelta": "38041944",
+          "expectedCombinedSolRawDeltaFromFee": "-105000"
+        },
+        "logs": [
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU invoke [2]",
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU consumed 56037 of 1380274 compute units",
+          "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU success"
+        ]
+      }
+    ],
+    "outputDifferenceRaw": "0",
+    "priceSensitiveToDonation": false
+  },
+  "independentExit": {
+    "method": "time-separated ExactIn quotes; second leg excludes Kipseli and TesseraV",
+    "first": {
+      "contextSlot": 458748187,
+      "inAmount": "100000000000",
+      "outAmount": "10565888783",
+      "route": [
+        {
+          "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+          "label": "Kipseli",
+          "percent": 100
+        }
+      ]
+    },
+    "second": {
+      "contextSlot": 458748186,
+      "inAmount": "10565888783",
+      "outAmount": "99977804441",
+      "route": [
+        {
+          "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+          "label": "BisonFi",
+          "percent": 100
+        }
+      ]
+    },
+    "preFeeNetLamports": "-22195559",
+    "conservativeTwoTransactionFeeLamports": "210000",
+    "feeAdjustedNetLamports": "-22405559",
+    "lender": null,
+    "lenderRepayment": "not applicable: this bounded control is self-funded and does not claim a flash route",
+    "atomicExecutionClaim": false
+  },
+  "safety": {
+    "mainnetSubmission": false,
+    "secretMaterialPersisted": false
+  }
+}

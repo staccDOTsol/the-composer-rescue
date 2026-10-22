@@ -1,0 +1,67 @@
+{
+  "observedAt": "2026-10-19T07:02:16.293Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "program": "yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA",
+  "position": "6fKnSCwzKPUFFATXGtxiXrUR9L7qkm2i4pe58JgaBv68",
+  "positionSlot": 458742951,
+  "positionOwner": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "method": "simulateTransaction",
+  "sigVerify": true,
+  "broadcast": false,
+  "fixtureSignature": "ZFgcNGjsfZxmANaDe8Ndo23diEubVezxfPZv9BuyqPfR6dFxuWcqz1ZVk6pgdgabVHgpkHNNq7bMj9nFKo3wWU5",
+  "fixtureSlot": 458739820,
+  "probes": [
+    {
+      "variant": "original_destinations",
+      "ata": "8LLthKhJbcQ5CLHP9QEUPJkP8cPmk87CmWu2gifN37NV",
+      "slot": 458742951,
+      "wireBytes": 584,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3012
+          }
+        ]
+      },
+      "computeUnits": 8190,
+      "logs": [
+        "Program log: Instruction: ClosePosition",
+        "Program log: AnchorError caused by account: destination. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbc4"
+      ]
+    },
+    {
+      "variant": "own_ata_both",
+      "ata": "8LLthKhJbcQ5CLHP9QEUPJkP8cPmk87CmWu2gifN37NV",
+      "slot": 458742952,
+      "wireBytes": 594,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "computeUnits": 30485,
+      "logs": [
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: ClosePosition",
+        "Program log: AnchorError caused by account: keeper. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program log: Left:",
+        "Program log: 331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+        "Program log: Right:",
+        "Program log: A2rCQdCqQB4wu72x9Q7iq1QugtdZmcyWsiSPfgfZzu2u",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0x7dc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "observedAtUtc": "2026-10-15T22:37:31.216Z",
+  "chain": "Solana mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "sourceArtifacts": [
+    "propamm-live-census.json",
+    "new-amm-pool-owner-balances.json",
+    "project0-v1-pricing.json",
+    "obric-v2-current-screen.json"
+  ],
+  "excluded": ["GoonFi V2", "Byreal", "Kipseli", "BisonFi", "AlphaQ", "Obsidian", "HumidiFi", "Orca", "Raydium", "Meteora"],
+  "candidateSelection": {
+    "result": "no qualifying liquid-major vault established in the bounded saved samples",
+    "censusRemaining": [
+      {"name": "Obric V2", "program": "obriQD1zbpyLz95G5n7nJe6a4DPjpFwa5XYPoNm113y", "sampledDirectOutflows": 0, "sampledSources": 0, "separateFortyTransactionScreen": {"successful": 36, "topLevelProgramCalls": 0, "directOutflows": 0}},
+      {"name": "BisonPredict", "program": "2DNbzPochEcyCcWMbL4d9S3u9QqQEj5bbe6cSZFvKsbh", "sampledDirectOutflows": 0, "sampledSources": 0}
+    ],
+    "newPoolBalanceRemaining": [
+      {"name": "TesseraV", "sampledPool": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n", "sampledMajorTokenAccounts": 0, "sampledNonmajorTokenAccounts": 1},
+      {"name": "Scorch", "sampledPool": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU", "sampledMajorTokenAccounts": 0, "sampledNonmajorTokenAccounts": 0}
+    ]
+  },
+  "targetedTesseraPoolCheck": {
+    "pool": "BDqQBspbipXxnTX2kw4FPM9pzfcf9kwieGCy4yUZ9tCC",
+    "source": "pool key in project0-v1-pricing.json",
+    "confirmedSlot": 457406517,
+    "accountOwnerProgram": "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH",
+    "confirmedRecheckSlot": 457406836,
+    "programExecutable": true,
+    "poolStateDataBytes": 1264,
+    "splTokenAccountsWithPoolAsAuthority": 0,
+    "limitation": "No statement about other pool state or other vault authorities. A program-controlled liquid-major vault was not proved."
+  },
+  "quoteScreen": {
+    "source": "Jupiter Lite ExactIn quote API, onlyDirectRoutes=true; route labels verified in each routePlan",
+    "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "intermediateMint": "Dz9mQ9NzkBcCsuGPFJ3r1bS4wgqKMHBPiVuniW8Mbonk",
+    "units": "USDC raw units, 6 decimals",
+    "rows": [
+      {"direction": "TesseraV then Scorch", "inputRaw": "100000000", "intermediateRaw": "571295344", "outputRaw": "99881200", "netRaw": "-118800", "slot": 457406598, "firstPool": "BDqQBspbipXxnTX2kw4FPM9pzfcf9kwieGCy4yUZ9tCC", "secondPool": "4dq41RcFMJxQokzmSmE8dv2284ZayJTfFzWJ9r6zJFQm"},
+      {"direction": "TesseraV then Scorch", "inputRaw": "1000000000", "intermediateRaw": "5711384591", "outputRaw": "998296900", "netRaw": "-1703100", "slot": 457406599, "firstPool": "BDqQBspbipXxnTX2kw4FPM9pzfcf9kwieGCy4yUZ9tCC", "secondPool": "4dq41RcFMJxQokzmSmE8dv2284ZayJTfFzWJ9r6zJFQm"},
+      {"direction": "Scorch then TesseraV", "inputRaw": "100000000", "intermediateRaw": "571670000", "outputRaw": "99918299", "netRaw": "-81701", "slot": 457406633, "firstPool": "4dq41RcFMJxQokzmSmE8dv2284ZayJTfFzWJ9r6zJFQm", "secondPool": "BDqQBspbipXxnTX2kw4FPM9pzfcf9kwieGCy4yUZ9tCC"},
+      {"direction": "Scorch then TesseraV", "inputRaw": "1000000000", "intermediateRaw": "5715330000", "outputRaw": "998669373", "netRaw": "-1330627", "slot": 457406634, "firstPool": "4dq41RcFMJxQokzmSmE8dv2284ZayJTfFzWJ9r6zJFQm", "secondPool": "BDqQBspbipXxnTX2kw4FPM9pzfcf9kwieGCy4yUZ9tCC"}
+    ],
+    "limitation": "Quotes are read-only estimates, not executed swaps or full atomic equity; other pairs, trade sizes, or later state could differ."
+  },
+  "signedMainnetSimulation": "not run: the saved samples did not establish an eligible liquid-major vault and the tested public direct route loses USDC before transaction and flash fees",
+  "transactionSubmitted": false,
+  "profitClaim": false
+}

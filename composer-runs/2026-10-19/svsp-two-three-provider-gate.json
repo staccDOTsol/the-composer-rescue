@@ -1,0 +1,3627 @@
+{
+  "schema": "svsp-two-three-provider-gate/v1",
+  "generatedAt": "2026-10-19T08:00:20.052Z",
+  "network": "mainnet-beta finalized state receipts",
+  "readOnly": true,
+  "transactionsBuilt": 0,
+  "signedSimulationsRun": 0,
+  "transactionsSubmitted": 0,
+  "constraints": {
+    "maximumSerializedBytes": 4096,
+    "maximumAccountKeys": 64
+  },
+  "inputArtifacts": [
+    {
+      "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-19/svsp-live-finalized-evidence.json",
+      "sha256": "ac92fb2021261ccdcb044715d85e41e5bce27d00a59e24aadaf846dc2c88f9ec",
+      "observation": {
+        "startSlot": 458754539,
+        "endSlot": 458754586,
+        "contextSlotMin": 458754539,
+        "contextSlotMax": 458754585,
+        "programSlot": 458754539,
+        "programDataSlot": 458754539,
+        "poolScanSlot": 458754539,
+        "epochInfo": {
+          "absoluteSlot": 458754538,
+          "blockHeight": 436789768,
+          "epoch": 1061,
+          "slotIndex": 402538,
+          "slotsInEpoch": 432000,
+          "transactionCount": 562065668471
+        },
+        "linkedAccountSlots": [
+          458754540,
+          458754541
+        ],
+        "stakeAuthorityScanSlotMin": 458754540,
+        "stakeAuthorityScanSlotMax": 458754584,
+        "tokenMintScanSlotMin": 458754542,
+        "tokenMintScanSlotMax": 458754584,
+        "positiveStakeCrossCheckSlots": [
+          458754585
+        ],
+        "positiveTokenCrossCheckSlots": [
+          458754585
+        ]
+      }
+    },
+    {
+      "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-19/svsp-flash-provider-crosswalk.json",
+      "sha256": "ee46bfca5bb485f7b4ff13ad4bb5ad20047a30c7383904f69055ff0096b5478d",
+      "observationSlots": {
+        "minimum": 458757573,
+        "maximum": 458757580,
+        "reads": [
+          {
+            "label": "programIdentities:0",
+            "slot": 458757574
+          },
+          {
+            "label": "save.reserveInventory",
+            "slot": 458757573
+          },
+          {
+            "label": "klend.reserveInventory",
+            "slot": 458757575
+          },
+          {
+            "label": "project0.bankInventory",
+            "slot": 458757575
+          },
+          {
+            "label": "project0.positiveBankCrossCheck:0",
+            "slot": 458757577
+          },
+          {
+            "label": "project0.positiveVaults:0",
+            "slot": 458757578
+          },
+          {
+            "label": "jupiterMain.reserveInventory",
+            "slot": 458757578
+          },
+          {
+            "label": "jupiterMain.borrowPositionInventory",
+            "slot": 458757578
+          },
+          {
+            "label": "jupiterMain.flashAdmin:0",
+            "slot": 458757579
+          },
+          {
+            "label": "jupiterMain.targetVaults:0",
+            "slot": 458757579
+          },
+          {
+            "label": "jupiterIsolatedEthena.reserveInventory",
+            "slot": 458757579
+          },
+          {
+            "label": "jupiterIsolatedEthena.borrowPositionInventory",
+            "slot": 458757579
+          },
+          {
+            "label": "jupiterIsolatedEthena.flashAdmin:0",
+            "slot": 458757580
+          },
+          {
+            "label": "jupiterMain.targetCustodyCrossCheck:0",
+            "slot": 458757580
+          },
+          {
+            "label": "mango.bankInventory",
+            "slot": 458757580
+          }
+        ]
+      }
+    },
+    {
+      "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-19/svsp-delegated-source-combine-fork.json",
+      "sha256": "d938ca617ed61534cef17d7f497696bf76eb0b875aac23084da6a2d8d81cde25",
+      "purpose": "fresh signed exact-fork source-combination authority controls"
+    }
+  ],
+  "providerReceipt": {
+    "saveSolend": {
+      "inventoryCount": 1829,
+      "targetCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "gate": "no SVSP mint reserve"
+    },
+    "kaminoLend": {
+      "inventoryCount": 620,
+      "targetCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "gate": "no SVSP mint reserve"
+    },
+    "project0Marginfi": {
+      "inventoryCount": 165,
+      "targetCount": 26,
+      "targetWithPositiveVaultCount": 18,
+      "targetWithHardZeroBorrowLimitCount": 26,
+      "positiveCapacityTargetCount": 0,
+      "maximumTargetVaultBalanceRaw": "32183277560267",
+      "gate": "all target banks have borrow_limit=0, a hard zero-liability ceiling"
+    },
+    "jupiterMain": {
+      "reserveInventoryCount": 47,
+      "borrowPositionInventoryCount": 163,
+      "targetReserveCount": 11,
+      "targetWithPositiveVaultCount": 10,
+      "flashAdminBoundTargetPositionCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "targetVaultBalanceSumRaw": "2139809945697",
+      "gate": "target reserves/custody exist, but no target UserBorrowPosition is bound to the flash-admin PDA"
+    },
+    "jupiterIsolatedEthena": {
+      "reserveInventoryCount": 5,
+      "borrowPositionInventoryCount": 17,
+      "targetReserveCount": 0,
+      "flashAdminBoundTargetPositionCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "gate": "no SVSP mint reserve or bound flash position"
+    },
+    "mangoV4": {
+      "inventoryCount": 80,
+      "targetCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "gate": "no SVSP mint bank"
+    },
+    "directActiveStake": {
+      "targetCount": 0,
+      "positiveCapacityTargetCount": 0,
+      "gate": "enumerated flash primitives transfer SPL tokens, not ownership of validator-matched active Stake accounts"
+    }
+  },
+  "aggregateGate": {
+    "targetMintCount": 57,
+    "positiveProviderCapacityEntryCount": 0,
+    "sourceableMintCount": 0,
+    "activeOnrampSourceableMintCount": 0,
+    "exactValidatorActiveStakeDirectProviderCount": 0,
+    "maximalTwoProviderPrincipalAcrossEveryTargetMintRaw": "0",
+    "maximalThreeProviderPrincipalAcrossEveryTargetMintRaw": "0",
+    "conclusion": "No exact-mint or validator-matched active-stake provider allocation exists. The maximal two-provider and three-provider principals are both zero, so no honest lender borrow/repay envelope can be constructed or simulated."
+  },
+  "delegatedWithdrawalCases": [
+    {
+      "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+      "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+      "exposedTokenAccount": "BwL8cWnaT1htTdq66bC7K7DEadjk64HcoZRQQhCA7mFB",
+      "tokenOwner": "BrKT3YEXDEXVGpgCN3aPgeMHNpj5goy8yFkZoWeZHLbD",
+      "burnableAmountRaw": "2",
+      "currentlyPricedStakeLamports": "2",
+      "minimumTokenAmountForOneSolSplitRaw": "788353899",
+      "shortfallRaw": "788353897",
+      "mintSupplyRaw": "47933247",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5CBocarwfJeWGNozGemWktRYSz6kPikRPdfH8ZHSFrsg"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "GQNC5TgNuUJwjqPpc5n7vmtQW1vxAJKMBwya241Si5Ms"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "788353897",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "788353897",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+      "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+      "exposedTokenAccount": "FxPi7aWnEMA27qgeuJUj9Ew448ir13iJ8UUBNnujq28A",
+      "tokenOwner": "3Rn2NazNoXDyaKwwUNmzcPUubPBvj7QKSbXuiJE57opo",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "788353899",
+      "shortfallRaw": "788353898",
+      "mintSupplyRaw": "47933247",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5CBocarwfJeWGNozGemWktRYSz6kPikRPdfH8ZHSFrsg"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "GQNC5TgNuUJwjqPpc5n7vmtQW1vxAJKMBwya241Si5Ms"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "788353898",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "788353898",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "5MajYJn3isL5S5bZ1rnvjnMaq4UtbceoKtg52V2UHojo",
+      "mint": "5FGcgMtpjZXvrSqrXu8ehE43MLrKQoxBs6JPgk164vBc",
+      "exposedTokenAccount": "E7JJ8wGLjMHEgZpVMRcxkNZP5Qny7cvuUitUbz16a15s",
+      "tokenOwner": "GavCTN99tveMysjorVfzSC4igzAdYhhctCLREiKEerU4",
+      "burnableAmountRaw": "258169258",
+      "currentlyPricedStakeLamports": "298636401",
+      "minimumTokenAmountForOneSolSplitRaw": "864493601",
+      "shortfallRaw": "606324343",
+      "mintSupplyRaw": "436491547",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9L2xLfGDkCrWChGG8sSEEDV53ahmk86fcgKJS87JPjQj"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "606324343",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "606324343",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "6KyZ4p16cih53oE1zhzwum3aQNPjzBbCW6xieC5xtR6c",
+      "mint": "38ZUTefZnKSUJU3wxpUe3xpiw2j5WQPnmzSTNbS1JqLA",
+      "exposedTokenAccount": "5S8zeR3Kcqw8nSJHqJsHThk8APSqsJNrkSNbtvRn7SB2",
+      "tokenOwner": "testqVY7BMcYLjooMfj81ftpr7boVXQj2Spp9xHfRD4",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "6",
+      "minimumTokenAmountForOneSolSplitRaw": "159905157",
+      "shortfallRaw": "159905156",
+      "mintSupplyRaw": "31040128",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "4y2zYfJwPmSecoZeR6aibyCeTL2ziye7xkLYQCnVoL7V"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "159905156",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "159905156",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+      "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+      "exposedTokenAccount": "DiGe3QcBZR7aSRVBYYWQc7q9u9Yr4WAn1NX7Pfbq4GhK",
+      "tokenOwner": "CNBr8TcCHyxGZu77QVLAubP6ya5EwYbDhbGykCBtqMau",
+      "burnableAmountRaw": "2",
+      "currentlyPricedStakeLamports": "2",
+      "minimumTokenAmountForOneSolSplitRaw": "840157562",
+      "shortfallRaw": "840157560",
+      "mintSupplyRaw": "13169247263",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "2hs1pHAzDWGqnn1d8VQkc8bZRfQ45grYvzfau8dnWFUk"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "22ewUYwXHXTAdBeLFj532FXAPfAdwjZjwf93CkLdAhwn"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "840157560",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "840157560",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+      "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+      "exposedTokenAccount": "EnQXX7NAZnSenUzTGrX8UWYZoKvUZnNg1bUgCe8t1TPo",
+      "tokenOwner": "2g3U1dFhmbFonHzSVDy19et6UPTTYuW4ciA7wVHqtDg6",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "840157562",
+      "shortfallRaw": "840157561",
+      "mintSupplyRaw": "13169247263",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "2hs1pHAzDWGqnn1d8VQkc8bZRfQ45grYvzfau8dnWFUk"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "22ewUYwXHXTAdBeLFj532FXAPfAdwjZjwf93CkLdAhwn"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "840157561",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "840157561",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+      "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+      "exposedTokenAccount": "2tRGyBbrKjBcKRiDMs72gBbSZt866t7FKe8NqWk7wrGS",
+      "tokenOwner": "testqVY7BMcYLjooMfj81ftpr7boVXQj2Spp9xHfRD4",
+      "burnableAmountRaw": "5",
+      "currentlyPricedStakeLamports": "5",
+      "minimumTokenAmountForOneSolSplitRaw": "896518763",
+      "shortfallRaw": "896518758",
+      "mintSupplyRaw": "165141829641",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "66Pzudp4icvS34Sai81ZefMs1KS2jPwqwyWWjjzguFQY"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518758",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518758",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+      "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+      "exposedTokenAccount": "AZ1a6VcmsWro6cMJY6bSRgetNLPS2pfYtBMuMBuSrQZF",
+      "tokenOwner": "GtchhVZeYEE3jxP69LtityqoNrQcSK9id1WZWP5Y2M4W",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "896518763",
+      "shortfallRaw": "896518762",
+      "mintSupplyRaw": "165141829641",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "66Pzudp4icvS34Sai81ZefMs1KS2jPwqwyWWjjzguFQY"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+      "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+      "exposedTokenAccount": "FdA6sL4ksRaZMJVd9hMXSYMkhbEwVMwD6PdsPJUrNRYu",
+      "tokenOwner": "BSfyYehpE1apZ6N5JpuxctKPmA3jSezudGsvkzJYAfvM",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "896518763",
+      "shortfallRaw": "896518762",
+      "mintSupplyRaw": "165141829641",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "66Pzudp4icvS34Sai81ZefMs1KS2jPwqwyWWjjzguFQY"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+      "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+      "exposedTokenAccount": "GEZpaGw7oDeUUPwXh3hRS97XViJGkTiznSZmXVC7xhX2",
+      "tokenOwner": "6h43GsVT3TjtLa5nRpsXp15GDpAY4smWCYHgcq58dSPM",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "896518763",
+      "shortfallRaw": "896518762",
+      "mintSupplyRaw": "165141829641",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "66Pzudp4icvS34Sai81ZefMs1KS2jPwqwyWWjjzguFQY"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "896518762",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+      "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+      "exposedTokenAccount": "2aaAmQqHMwND74rdccuHT8EJfcebrEoebLRrigFR8AJp",
+      "tokenOwner": "testqVY7BMcYLjooMfj81ftpr7boVXQj2Spp9xHfRD4",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "697682393",
+      "shortfallRaw": "697682392",
+      "mintSupplyRaw": "97717114",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "FZaHyfg9hmNMKpfUJ474wNKPaPdXMpnJouasKnndECiZ"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "ErwRQSxtjgxCtWhK7VxB9zm438md24PhrJLP9MJcmBJz"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "697682392",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "697682392",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+      "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+      "exposedTokenAccount": "9ykS5NRSSCgTcLu4m5SYNJyd1v5xY92GLNpsWQghnk8J",
+      "tokenOwner": "HYbxGkNvEwvZ14RzJHPB9h3dWfXjxwAEhkyzJRHx1hBf",
+      "burnableAmountRaw": "10000000",
+      "currentlyPricedStakeLamports": "14051120",
+      "minimumTokenAmountForOneSolSplitRaw": "711686996",
+      "shortfallRaw": "701686996",
+      "mintSupplyRaw": "97717114",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5q1wJkGqqRh6mSBtjG8sfjBsgJSGdA2QoXTWv4UQbHGk"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5LD3TWKKiuY1pzNUHV7FmrhfGqXBPL7vbgxQXfvvij8Q"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "701686996",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "701686996",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+      "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+      "exposedTokenAccount": "CYBp8wdnHJT7HB6aeWJkjFkq9BEsuoaincsVViCL1BaN",
+      "tokenOwner": "testqVY7BMcYLjooMfj81ftpr7boVXQj2Spp9xHfRD4",
+      "burnableAmountRaw": "2",
+      "currentlyPricedStakeLamports": "2",
+      "minimumTokenAmountForOneSolSplitRaw": "711686996",
+      "shortfallRaw": "711686994",
+      "mintSupplyRaw": "97717114",
+      "evenAllCirculatingSupplyCannotReachOneSol": true,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5q1wJkGqqRh6mSBtjG8sfjBsgJSGdA2QoXTWv4UQbHGk"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "5LD3TWKKiuY1pzNUHV7FmrhfGqXBPL7vbgxQXfvvij8Q"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "711686994",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "711686994",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+      "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+      "exposedTokenAccount": "3dZ5DrgReQDMFuCjCfbtKGJosi66ynUoaotaoQrngs6H",
+      "tokenOwner": "GtchhVZeYEE3jxP69LtityqoNrQcSK9id1WZWP5Y2M4W",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "945721676",
+      "shortfallRaw": "945721675",
+      "mintSupplyRaw": "1832467582803",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9f9pXawhWV4gnDiWpeLTMahxYkM7E7XCk8ZFrqf1Tue3"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721675",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721675",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+      "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+      "exposedTokenAccount": "C4TNuKzsSmdLMKdJYSNxANkztDtCX9EcBydK5wjLNb2d",
+      "tokenOwner": "7Q3DGBUPmcVKryAbgBAk8uCvNVHey5ZDcQCabcjMkXgg",
+      "burnableAmountRaw": "5",
+      "currentlyPricedStakeLamports": "5",
+      "minimumTokenAmountForOneSolSplitRaw": "945721676",
+      "shortfallRaw": "945721671",
+      "mintSupplyRaw": "1832467582803",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9f9pXawhWV4gnDiWpeLTMahxYkM7E7XCk8ZFrqf1Tue3"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721671",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721671",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+      "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+      "exposedTokenAccount": "F9cQhkvGF8gePhLj4ZGZtNgxdKniSQtL7gfRTkPSx5ST",
+      "tokenOwner": "E6m9bmn7xetMSYxcAD7yxKjZj3SoxRwAmubczQswt13x",
+      "burnableAmountRaw": "4",
+      "currentlyPricedStakeLamports": "4",
+      "minimumTokenAmountForOneSolSplitRaw": "945721676",
+      "shortfallRaw": "945721672",
+      "mintSupplyRaw": "1832467582803",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9f9pXawhWV4gnDiWpeLTMahxYkM7E7XCk8ZFrqf1Tue3"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721672",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721672",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+      "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+      "exposedTokenAccount": "Fh8gr6RdLgH9m7muh9YEBZH1D2A3nhwRDC1UEtFzrku9",
+      "tokenOwner": "7a5UoQppzj9SWzP4Mpw9SCNbmgAD8AzFtuSw6gfjna4k",
+      "burnableAmountRaw": "3",
+      "currentlyPricedStakeLamports": "3",
+      "minimumTokenAmountForOneSolSplitRaw": "945721676",
+      "shortfallRaw": "945721673",
+      "mintSupplyRaw": "1832467582803",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9f9pXawhWV4gnDiWpeLTMahxYkM7E7XCk8ZFrqf1Tue3"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721673",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "945721673",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+      "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+      "exposedTokenAccount": "2Uga7qyJnzUZcgb32oxUjYr7XfkHcRZTsYqJNbJd7yHL",
+      "tokenOwner": "DjWbX4pLruGtjng7Ub8zo7ZuNiL7Jwz4CYsiuwcHPnPZ",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "778524908",
+      "shortfallRaw": "778524907",
+      "mintSupplyRaw": "389290306503",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "86eZ2ipEQvqzqG3S1wUAD7CaTRk28Xbt5JMGJr9WhKQ8"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+      "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+      "exposedTokenAccount": "BvSwvdxTr6UPwUus7W6EGqB2kNpnrKzqVCRn8AtWJGnR",
+      "tokenOwner": "4Uuay8hqDH9j9rNu9dRscDckQfXvJHCxJ1e11bjbvk1m",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "778524908",
+      "shortfallRaw": "778524907",
+      "mintSupplyRaw": "389290306503",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "86eZ2ipEQvqzqG3S1wUAD7CaTRk28Xbt5JMGJr9WhKQ8"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+      "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+      "exposedTokenAccount": "E8wNULxnc9Hrn6hV4MrAQKXcA11xf1qFZvMuHjj1j5dM",
+      "tokenOwner": "6h43GsVT3TjtLa5nRpsXp15GDpAY4smWCYHgcq58dSPM",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "778524908",
+      "shortfallRaw": "778524907",
+      "mintSupplyRaw": "389290306503",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "86eZ2ipEQvqzqG3S1wUAD7CaTRk28Xbt5JMGJr9WhKQ8"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      }
+    },
+    {
+      "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+      "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+      "exposedTokenAccount": "GHZkpRVFhhHh3xmWsDguVVaVJ1tA6N2xpN8KCKu5exUs",
+      "tokenOwner": "CQbrDzUh8DL1HhWQqtBM2hwhTfJk9ETXdBve1WwDPKYT",
+      "burnableAmountRaw": "1",
+      "currentlyPricedStakeLamports": "1",
+      "minimumTokenAmountForOneSolSplitRaw": "778524908",
+      "shortfallRaw": "778524907",
+      "mintSupplyRaw": "389290306503",
+      "evenAllCirculatingSupplyCannotReachOneSol": false,
+      "providers": [
+        {
+          "provider": "saveSolend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "kaminoLend",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "project0Marginfi",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47"
+          ],
+          "gate": "hard-zero borrow_limit or another zero state bound"
+        },
+        {
+          "provider": "jupiterMain",
+          "matchedAccountCount": 1,
+          "capacityRaw": "0",
+          "receiptAccounts": [
+            "86eZ2ipEQvqzqG3S1wUAD7CaTRk28Xbt5JMGJr9WhKQ8"
+          ],
+          "gate": "no flash-admin-bound target borrow position"
+        },
+        {
+          "provider": "jupiterIsolatedEthena",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target reserve"
+        },
+        {
+          "provider": "mangoV4",
+          "matchedAccountCount": 0,
+          "capacityRaw": "0",
+          "receiptAccounts": [],
+          "gate": "no target bank"
+        }
+      ],
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        },
+        "fundingGapRaw": "778524907",
+        "reachesSplitThreshold": false
+      }
+    }
+  ],
+  "delegatedAuthorityAndAggregateGate": {
+    "exposedAccountCount": 34,
+    "positiveBalanceAccountCount": 21,
+    "ownerPathCount": 0,
+    "delegatePathCount": 34,
+    "classification": "All live exposures are delegate-only. SVSP can sign a burn as the mint-authority PDA, but the outsider neither owns the receipts nor can sign as the PDA for a token transfer.",
+    "everyIndividualBelowSplitThreshold": true,
+    "everySameMintAggregateBelowSplitThreshold": true,
+    "signedControlArtifact": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-19/svsp-delegated-source-combine-fork.json",
+    "signedControlReceipts": {
+      "directPdaDelegateTransfer": "MissingRequiredSignature",
+      "oneSourceAskedToBurnTwoSourceSum": "SPL Token insufficient funds",
+      "sequentialTwoSourceWithdrawals": "first independent Stake split fails before the second source is reached"
+    },
+    "delegatedAggregateByPool": [
+      {
+        "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+        "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+        "positiveDelegatedSourceCount": 2,
+        "delegatedSourceAccounts": [
+          "BwL8cWnaT1htTdq66bC7K7DEadjk64HcoZRQQhCA7mFB",
+          "FxPi7aWnEMA27qgeuJUj9Ew448ir13iJ8UUBNnujq28A"
+        ],
+        "aggregateBurnableAmountRaw": "3",
+        "aggregatePricedStakeLamports": "3",
+        "minimumTokenAmountForOneSolSplitRaw": "788353899",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "788353896",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "5MajYJn3isL5S5bZ1rnvjnMaq4UtbceoKtg52V2UHojo",
+        "mint": "5FGcgMtpjZXvrSqrXu8ehE43MLrKQoxBs6JPgk164vBc",
+        "positiveDelegatedSourceCount": 1,
+        "delegatedSourceAccounts": [
+          "E7JJ8wGLjMHEgZpVMRcxkNZP5Qny7cvuUitUbz16a15s"
+        ],
+        "aggregateBurnableAmountRaw": "258169258",
+        "aggregatePricedStakeLamports": "298636401",
+        "minimumTokenAmountForOneSolSplitRaw": "864493601",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "606324343",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "6KyZ4p16cih53oE1zhzwum3aQNPjzBbCW6xieC5xtR6c",
+        "mint": "38ZUTefZnKSUJU3wxpUe3xpiw2j5WQPnmzSTNbS1JqLA",
+        "positiveDelegatedSourceCount": 1,
+        "delegatedSourceAccounts": [
+          "5S8zeR3Kcqw8nSJHqJsHThk8APSqsJNrkSNbtvRn7SB2"
+        ],
+        "aggregateBurnableAmountRaw": "1",
+        "aggregatePricedStakeLamports": "6",
+        "minimumTokenAmountForOneSolSplitRaw": "159905157",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "159905156",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+        "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+        "positiveDelegatedSourceCount": 2,
+        "delegatedSourceAccounts": [
+          "DiGe3QcBZR7aSRVBYYWQc7q9u9Yr4WAn1NX7Pfbq4GhK",
+          "EnQXX7NAZnSenUzTGrX8UWYZoKvUZnNg1bUgCe8t1TPo"
+        ],
+        "aggregateBurnableAmountRaw": "3",
+        "aggregatePricedStakeLamports": "3",
+        "minimumTokenAmountForOneSolSplitRaw": "840157562",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "840157559",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+        "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+        "positiveDelegatedSourceCount": 4,
+        "delegatedSourceAccounts": [
+          "2tRGyBbrKjBcKRiDMs72gBbSZt866t7FKe8NqWk7wrGS",
+          "AZ1a6VcmsWro6cMJY6bSRgetNLPS2pfYtBMuMBuSrQZF",
+          "FdA6sL4ksRaZMJVd9hMXSYMkhbEwVMwD6PdsPJUrNRYu",
+          "GEZpaGw7oDeUUPwXh3hRS97XViJGkTiznSZmXVC7xhX2"
+        ],
+        "aggregateBurnableAmountRaw": "8",
+        "aggregatePricedStakeLamports": "8",
+        "minimumTokenAmountForOneSolSplitRaw": "896518763",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "896518755",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+        "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+        "positiveDelegatedSourceCount": 1,
+        "delegatedSourceAccounts": [
+          "2aaAmQqHMwND74rdccuHT8EJfcebrEoebLRrigFR8AJp"
+        ],
+        "aggregateBurnableAmountRaw": "1",
+        "aggregatePricedStakeLamports": "1",
+        "minimumTokenAmountForOneSolSplitRaw": "697682393",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "697682392",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+        "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+        "positiveDelegatedSourceCount": 2,
+        "delegatedSourceAccounts": [
+          "9ykS5NRSSCgTcLu4m5SYNJyd1v5xY92GLNpsWQghnk8J",
+          "CYBp8wdnHJT7HB6aeWJkjFkq9BEsuoaincsVViCL1BaN"
+        ],
+        "aggregateBurnableAmountRaw": "10000002",
+        "aggregatePricedStakeLamports": "14051123",
+        "minimumTokenAmountForOneSolSplitRaw": "711686996",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "701686994",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+        "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+        "positiveDelegatedSourceCount": 4,
+        "delegatedSourceAccounts": [
+          "3dZ5DrgReQDMFuCjCfbtKGJosi66ynUoaotaoQrngs6H",
+          "C4TNuKzsSmdLMKdJYSNxANkztDtCX9EcBydK5wjLNb2d",
+          "F9cQhkvGF8gePhLj4ZGZtNgxdKniSQtL7gfRTkPSx5ST",
+          "Fh8gr6RdLgH9m7muh9YEBZH1D2A3nhwRDC1UEtFzrku9"
+        ],
+        "aggregateBurnableAmountRaw": "13",
+        "aggregatePricedStakeLamports": "13",
+        "minimumTokenAmountForOneSolSplitRaw": "945721676",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "945721663",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      },
+      {
+        "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+        "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+        "positiveDelegatedSourceCount": 4,
+        "delegatedSourceAccounts": [
+          "2Uga7qyJnzUZcgb32oxUjYr7XfkHcRZTsYqJNbJd7yHL",
+          "BvSwvdxTr6UPwUus7W6EGqB2kNpnrKzqVCRn8AtWJGnR",
+          "E8wNULxnc9Hrn6hV4MrAQKXcA11xf1qFZvMuHjj1j5dM",
+          "GHZkpRVFhhHh3xmWsDguVVaVJ1tA6N2xpN8KCKu5exUs"
+        ],
+        "aggregateBurnableAmountRaw": "4",
+        "aggregatePricedStakeLamports": "5",
+        "minimumTokenAmountForOneSolSplitRaw": "778524908",
+        "aggregateReachesOneSolSplitThreshold": false,
+        "aggregateShortfallRaw": "778524904",
+        "singleWithdrawSourceAccountLimit": 1,
+        "legalConsolidationAvailableToOutsider": false
+      }
+    ]
+  },
+  "activeOnrampCases": [
+    {
+      "pool": "2A172EkPfeQchU4uKuTd3e6Mk2LqwsTZF6sALRCQbzZj",
+      "voteAccount": "Simpj3KyRQmpRkXuBvCQFS7DBBG6vqw93SkZb9UD1hp",
+      "mint": "77YLpVLQXr2KU66GM2JykbT9g5du7LarWgehbWD3CJaB",
+      "canonicalDelegatedStakeLamports": "1059716585",
+      "onrampDelegatedStakeLamports": "1727441",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "BATMoW8FMJio6H3nDTHhpkWBLdwVw3dWndVpNaAizNaP",
+      "voteAccount": "oRAnGeU5h8h2UkvbfnE5cjXnnAa4rBoaxmS4kbFymSe",
+      "mint": "9yF8pXctzicum2P73uuk4Dhqf2MVz6tzRAe8THGXCJcp",
+      "canonicalDelegatedStakeLamports": "1076965800",
+      "onrampDelegatedStakeLamports": "1738662",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "8L6366uKkfVXfymWgbURNu2TxbxvacPDb2hR4YR8c39F",
+      "voteAccount": "mrgn2vsZ5EJ8YEfAMNPXmRux7th9cNfBasQ1JJvVwPn",
+      "mint": "6Mt7tBWLUJfDxqCFTsjoRXF9wD55g4Lhs5nAyYp244pX",
+      "canonicalDelegatedStakeLamports": "3811758168",
+      "onrampDelegatedStakeLamports": "4225798",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "CrpYNnXiaRRe2tKmpAZQoZsB11DuXESDXKdJw9jnhRYM",
+      "voteAccount": "3ZUQekqiZoybB57y49eqtvSaoonqDwuNbeqEGwN88JkQ",
+      "mint": "F1XPjtpsEy23Q7po4JkWjp1jkDZcvFYSrqD8TR1YL3EF",
+      "canonicalDelegatedStakeLamports": "1378442464",
+      "onrampDelegatedStakeLamports": "732300",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "GZcQzJ2Ai1gBvLk6Lr3Sc1sd3ik7RkcDEnvvpP4N8SHR",
+      "voteAccount": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+      "mint": "DKPvRV4dxUejjGpr2XwFmzZbbbTD7vx9Jmt1kk43n4d5",
+      "canonicalDelegatedStakeLamports": "1161707241",
+      "onrampDelegatedStakeLamports": "282748",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "E524AY3cdkmzFra5Sc2sr8ZYm1qeDMLk2MnY4fGEBq7S",
+      "voteAccount": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "mint": "9M7oMo4oL6RDPG7WbAX3Zz4dPzbMgpiCzwrQPMwG4Wgq",
+      "canonicalDelegatedStakeLamports": "7012897595",
+      "onrampDelegatedStakeLamports": "1395175",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "9Y4irMvZAn49LVCxpQuQtrXDB7V8YxhtVV1XM9U1RESq",
+      "voteAccount": "3xjfK9C9YNcta8MvK1US4sQ3bc6DEjoJoR3qLExGf9xE",
+      "mint": "Akib1NYJzzh9HkiDH41S2LUefUmR1bKsk65xgqUcW5C5",
+      "canonicalDelegatedStakeLamports": "2236906873",
+      "onrampDelegatedStakeLamports": "187286",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "Eip8KPQ2KcPxUoHHroccZQed4Qaz6Eqr9wf1nUTrnJh4",
+      "voteAccount": "abc1zP7ihWsgQW8z5YmfQNqMckJE5Dfx8fwUNMNVNkY",
+      "mint": "BNisp3omkr6Rg5nHESWafjUbeCpGPy6MYq1iRJRgSAsh",
+      "canonicalDelegatedStakeLamports": "34290649093897",
+      "onrampDelegatedStakeLamports": "1340187359",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "AvS4oXtxWdrJGCJwDbcZ7DqpSqNQtKjyXnbkDbrSk6Fq",
+      "voteAccount": "CooLbbZy5Xmdt7DiHPQ3ss2uRXawnTXXVgpMS8E8jDzr",
+      "mint": "BADo3D6nMtGnsAaTv3iEes8mMcq92TuFoBWebFe8kzeA",
+      "canonicalDelegatedStakeLamports": "159002654378",
+      "onrampDelegatedStakeLamports": "796175",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "AcYTFzeuaR4PZ2QoFQH8t5otN1sjobEzoakgLFJLQq7M",
+      "voteAccount": "SBLZib4npE7svxFA7AsD3ytdQAfYNb39c8zsU82AA2E",
+      "mint": "96rXgCFy1Er49169XoKHkeLiKC2k4bTy1641q1TVrMm2",
+      "canonicalDelegatedStakeLamports": "14454284177",
+      "onrampDelegatedStakeLamports": "33116",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    },
+    {
+      "pool": "7br6p7ynCs5hkTzuDagM2xBedkxxCjY1Ey9xQuCiDiq1",
+      "voteAccount": "EfnywDKqArxK6N6FS9ctsuzNdxfx3pzfXEQE5EevQ1SV",
+      "mint": "FcXEwHku68ZquqtSj1eSWS1SVWkhAZSyb4usfpiuEJAL",
+      "canonicalDelegatedStakeLamports": "1124015708",
+      "onrampDelegatedStakeLamports": "303",
+      "requiredFundingAsset": "validator-matched fully active Stake account, or a sourceable pool mint that can atomically produce it and later satisfy repayment",
+      "directActiveStakeProviderCapacityLamports": "0",
+      "poolMintProviderCapacityRaw": "0",
+      "maximalTwoProvider": {
+        "requestedProviderCount": 2,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "maximalThreeProvider": {
+        "requestedProviderCount": 3,
+        "selectedProviderCount": 0,
+        "allocations": [],
+        "totalPrincipalRaw": "0",
+        "providerFeesRaw": "0",
+        "lenderRepayment": {
+          "status": "not-started-no-loan",
+          "principalRaw": "0",
+          "feeRaw": "0",
+          "dueRaw": "0",
+          "actualRaw": "0"
+        },
+        "transactionBuilt": false,
+        "signedSimulationRun": false,
+        "envelope": {
+          "maximumSerializedBytes": 4096,
+          "maximumAccountKeys": 64,
+          "actualSerializedBytes": null,
+          "actualAccountKeys": null,
+          "gate": "provider authority/capacity failed before transaction construction"
+        },
+        "finalEquity": {
+          "outsiderWalletLamports": "0",
+          "protocolLamports": "0",
+          "lenderPrincipalRaw": "0"
+        }
+      },
+      "stateChangeTested": false,
+      "gate": "zero current native-stake provider inventory and zero sourceable exact pool-mint capacity"
+    }
+  ],
+  "reconciliation": {
+    "lenderPrincipalTransferredRaw": "0",
+    "lenderRepaymentDueRaw": "0",
+    "lenderRepaymentActualRaw": "0",
+    "outsiderWalletEquityDeltaLamports": "0",
+    "protocolEquityDeltaLamports": "0",
+    "reason": "Inventory/authority gates were established by finalized account state before any transaction was built; therefore no state mutation, loan, fee, or repayment occurred."
+  }
+}

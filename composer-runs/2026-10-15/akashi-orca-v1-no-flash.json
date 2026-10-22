@@ -1,0 +1,50 @@
+{
+  "observedAt": "2026-10-15T19:36:58.455Z",
+  "pool": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B",
+  "refreshKeyCount": 58,
+  "swapRefreshKeys": 62,
+  "flashSwapRefreshLowerBound": 68,
+  "flashReserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+  "variants": [
+    {
+      "name": "refresh",
+      "sizeBytes": 2072,
+      "addresses": 59,
+      "instructions": 1,
+      "requiredSignatures": 1,
+      "slot": 457356555,
+      "err": null,
+      "unitsConsumed": 177877,
+      "userAfter": {
+        "usdc": "3642811711",
+        "pyusd": "4721"
+      },
+      "logs": [
+        "Program log: Instruction: RefreshLeg",
+        "Program log: Instruction: AaiValue"
+      ]
+    },
+    {
+      "name": "swap-refresh-reverse",
+      "sizeBytes": 2292,
+      "addresses": 62,
+      "instructions": 3,
+      "requiredSignatures": 1,
+      "slot": 457356556,
+      "err": null,
+      "unitsConsumed": 264158,
+      "userAfter": {
+        "usdc": "3632808482",
+        "pyusd": "9988308"
+      },
+      "logs": [
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: RefreshLeg",
+        "Program log: Instruction: AaiValue",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked"
+      ]
+    }
+  ]
+}

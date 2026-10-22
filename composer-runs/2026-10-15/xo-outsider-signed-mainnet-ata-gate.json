@@ -1,0 +1,165 @@
+{
+  "observedAtUtc": "2026-10-15T23:34:53.839Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "sourceSignature": "37MmWe5kxkrpTwmMaedoJwTUYYz8z5Tnw4Ro26AGXdGXuKfsYjMrTi5cfGWMN5tGsNBffo2YbtQCuU392vWrYGmm",
+  "sourceSlot": 457307252,
+  "sourceInstruction": "SendToken",
+  "sourceSignerPositions": [
+    0,
+    6,
+    7,
+    8
+  ],
+  "mutation": "Replace four source signer roles with hooked wallet; use its XO ATA as payer_token_account and create that ATA idempotently in the simulated transaction. Keep source vault, authority, mint, recipients and instruction data. No nonce instruction.",
+  "ataMode": true,
+  "walletAta": "7CRBVWxaEQfXcrd44tBfbvcYcMGECMMe4Hdp9oEwT9N3",
+  "walletPublicKey": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "packetBytes": 559,
+  "accountKeys": 12,
+  "signatureVerified": true,
+  "simulationSlot": 457422599,
+  "err": {
+    "InstructionError": [
+      1,
+      {
+        "Custom": 6000
+      }
+    ]
+  },
+  "unitsConsumed": 32258,
+  "logs": [
+    "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+    "Program log: CreateIdempotent",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+    "Program log: Instruction: GetAccountDataSize",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2038 of 394735 compute units",
+    "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb swAAAAAAAAA=",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+    "Program 11111111111111111111111111111111 invoke [2]",
+    "Program 11111111111111111111111111111111 success",
+    "Program log: Initialize the associated token account",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+    "Program log: Instruction: InitializeImmutableOwner",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 387875 compute units",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+    "Program log: Instruction: InitializeAccount3",
+    "Program log: Warning: Mint has a permanent delegate, so tokens in this account may be seized at any time",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3928 of 384803 compute units",
+    "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+    "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 19408 of 400000 compute units",
+    "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+    "Program C64AAGzJxsFwzQZaS1t8Yis5UCVTTAchTwG2QZj1kSRi invoke [1]",
+    "Program log: Instruction: SendToken",
+    "Program log: AnchorError occurred. Error Code: TooManyWritableSigners. Error Number: 6000. Error Message: Too many writable signers.",
+    "Program C64AAGzJxsFwzQZaS1t8Yis5UCVTTAchTwG2QZj1kSRi consumed 12850 of 380592 compute units",
+    "Program C64AAGzJxsFwzQZaS1t8Yis5UCVTTAchTwG2QZj1kSRi failed: custom program error: 0x1770"
+  ],
+  "returnData": null,
+  "preTokenBalances": [
+    {
+      "accountIndex": 2,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "EznfmrkPUNtDhicN9AYHKyBDYqbYB83VpFi98fVSKxQv",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "2740041702112",
+        "decimals": 6,
+        "uiAmount": 2740041.702112,
+        "uiAmountString": "2740041.702112"
+      }
+    },
+    {
+      "accountIndex": 3,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "4JV2bTE8oYomC3M9KPxo4QxW9swq3KvptxGQzCszyEQW",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "5047489596",
+        "decimals": 6,
+        "uiAmount": 5047.489596,
+        "uiAmountString": "5047.489596"
+      }
+    },
+    {
+      "accountIndex": 4,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "97WbPBJV1E1fF9tHDZgTfiMZDXydP2YdjSvUzDWQvWJg",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "3015581219",
+        "decimals": 6,
+        "uiAmount": 3015.581219,
+        "uiAmountString": "3015.581219"
+      }
+    },
+    {
+      "accountIndex": 5,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "AaMkoxWehzZWUx1xyaKhSm3SZa87axuyUiNVvfdzthCX",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "2717590000",
+        "decimals": 6,
+        "uiAmount": 2717.59,
+        "uiAmountString": "2717.59"
+      }
+    }
+  ],
+  "postTokenBalances": [
+    {
+      "accountIndex": 2,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "EznfmrkPUNtDhicN9AYHKyBDYqbYB83VpFi98fVSKxQv",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "2740041702112",
+        "decimals": 6,
+        "uiAmount": 2740041.702112,
+        "uiAmountString": "2740041.702112"
+      }
+    },
+    {
+      "accountIndex": 3,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "4JV2bTE8oYomC3M9KPxo4QxW9swq3KvptxGQzCszyEQW",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "5047489596",
+        "decimals": 6,
+        "uiAmount": 5047.489596,
+        "uiAmountString": "5047.489596"
+      }
+    },
+    {
+      "accountIndex": 4,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "97WbPBJV1E1fF9tHDZgTfiMZDXydP2YdjSvUzDWQvWJg",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "3015581219",
+        "decimals": 6,
+        "uiAmount": 3015.581219,
+        "uiAmountString": "3015.581219"
+      }
+    },
+    {
+      "accountIndex": 5,
+      "mint": "xoUSDq85Rjsb6SbUwJyreFgeWQvxdkT7R3c3g7s6p5Y",
+      "owner": "AaMkoxWehzZWUx1xyaKhSm3SZa87axuyUiNVvfdzthCX",
+      "programId": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "uiTokenAmount": {
+        "amount": "2717590000",
+        "decimals": 6,
+        "uiAmount": 2717.59,
+        "uiAmountString": "2717.59"
+      }
+    }
+  ],
+  "noTransactionSubmitted": true,
+  "limitations": [
+    "Original instruction data might include an expiry, request ID or nonce; a failure does not by itself prove all SendToken shapes are gated.",
+    "Historical transaction had four independent signers; this outsider test uses the one available hooked wallet in all four positions."
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "orca-pr1396-real-existing-high-liquidity-pool/v1",
+  "execution": "local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:60899",
+  "pool": "478r35b8cKMuj3HzxkwqWsx8vBfFLP5YhbkUEsWt2jfo",
+  "position": "6K8ebAAheXRCfzSZo8zsdoaGJe2KzjTK8UPnci6Lrgm",
+  "actor": "8UgCzJmuenRPUAWZ5qUEC6Zvh3DQWqvAGRYK3vwwaCe3",
+  "swapDirection": "B-to-A",
+  "swapInputRawB": "20000",
+  "mode": "endOnly",
+  "rounds": 2,
+  "localSeeding": "actor system account; actor A ATA zero; actor USDC ATA 50,000 raw; absent oracle PDA zero-lamport",
+  "accounts": {
+    "tickArray": "AfMLL9typAKkWaqheJynjsCXRp5wEsXeBXKB9bknSPy4",
+    "oracle": "5RAHACFcj74d5arfrst4DJXkexwMumFcRjVWnu5N2F57",
+    "actorA": "2aGWFgdxMdC3mSUYrhxVmBy7eVepJLof1eqGMDcDGxL4",
+    "actorB": "BrvRvk9b7C5LmLXBkAA7FD4YvJTNwdhYyBvNqvvPkQah"
+  },
+  "initial": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94674",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "0",
+    "positionCheckpointB": "0",
+    "positionFeeOwedA": "0",
+    "positionFeeOwedB": "0",
+    "vaultA": "40000000002065863",
+    "vaultB": "158970",
+    "actorA": "0",
+    "actorB": "50000"
+  },
+  "baseline": {
+    "label": "baseline permissionless update",
+    "simulationError": null,
+    "simulationUnits": 9742,
+    "simulationWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9742 of 200000 compute units"
+    ],
+    "signature": "59erRWxERnyF8nnPf12v5rR8T4yDfBcMMdPzZSX5UyTFMAgPuFPRx6G3t2DbqyC6snMF8ZkJxeH3WbnWUXGC5vJ4",
+    "transactionError": null,
+    "transactionUnits": 9742,
+    "transactionSlot": 458871744,
+    "transactionWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9742 of 200000 compute units"
+    ]
+  },
+  "afterBaseline": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94674",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "4951618",
+    "positionCheckpointB": "94674",
+    "positionFeeOwedA": "4949703",
+    "positionFeeOwedB": "94637",
+    "vaultA": "40000000002065863",
+    "vaultB": "158970",
+    "actorA": "0",
+    "actorB": "50000"
+  },
+  "steps": [
+    {
+      "transaction": {
+        "label": "real swap 1",
+        "simulationError": null,
+        "simulationUnits": 27815,
+        "simulationWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27815 of 200000 compute units"
+        ],
+        "signature": "2y3owxtUgDtRhf6WjnLMmA4v6xRDdjPfzwHizzPs7Uc1DhBuCTV9i1muvqi7BuKDy2dnkxx92yJzZBRGsHzxjm6Q",
+        "transactionError": null,
+        "transactionUnits": 27815,
+        "transactionSlot": 458871745,
+        "transactionWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27815 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "tick": -39573,
+        "feeRate": 100,
+        "feeGrowthGlobalA": "4951618",
+        "feeGrowthGlobalB": "94676",
+        "positionLiquidity": "18439611894805844217",
+        "positionLower": -39573,
+        "positionUpper": -39567,
+        "positionCheckpointA": "4951618",
+        "positionCheckpointB": "94674",
+        "positionFeeOwedA": "4949703",
+        "positionFeeOwedB": "94637",
+        "vaultA": "40000000001019896",
+        "vaultB": "178970",
+        "actorA": "1045967",
+        "actorB": "30000"
+      }
+    },
+    {
+      "transaction": {
+        "label": "real swap 2",
+        "simulationError": null,
+        "simulationUnits": 27813,
+        "simulationWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27813 of 200000 compute units"
+        ],
+        "signature": "5sQC6fxWiNFodsffBsStKHhwP86kUKog1a3hoPZkfChcpwciBhHxEDRdvsFmG4jGafEh4a9s5cBkajSbByqgzEgB",
+        "transactionError": null,
+        "transactionUnits": 27813,
+        "transactionSlot": 458871745,
+        "transactionWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27813 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "tick": -39573,
+        "feeRate": 100,
+        "feeGrowthGlobalA": "4951618",
+        "feeGrowthGlobalB": "94678",
+        "positionLiquidity": "18439611894805844217",
+        "positionLower": -39573,
+        "positionUpper": -39567,
+        "positionCheckpointA": "4951618",
+        "positionCheckpointB": "94674",
+        "positionFeeOwedA": "4949703",
+        "positionFeeOwedB": "94637",
+        "vaultA": "39999999999973929",
+        "vaultB": "198970",
+        "actorA": "2091934",
+        "actorB": "10000"
+      }
+    }
+  ],
+  "finalUpdate": {
+    "label": "single outsider update after all swaps",
+    "simulationError": null,
+    "simulationUnits": 8977,
+    "simulationWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8977 of 200000 compute units"
+    ],
+    "signature": "5u68S3cky3ZdsnXLMy5L1xddU9gKeuv3NiypqPj5EjBjAVVpb8hp6cpL22KuXSpW1nXZMzx3WkYoykkmvfheUoEP",
+    "transactionError": null,
+    "transactionUnits": 8977,
+    "transactionSlot": 458871745,
+    "transactionWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8977 of 200000 compute units"
+    ]
+  },
+  "after": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94678",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "4951618",
+    "positionCheckpointB": "94678",
+    "positionFeeOwedA": "4949703",
+    "positionFeeOwedB": "94640",
+    "vaultA": "39999999999973929",
+    "vaultB": "198970",
+    "actorA": "2091934",
+    "actorB": "10000"
+  }
+}

@@ -1,0 +1,2065 @@
+{
+  "generatedAt": "2026-10-15T19:12:54.888Z",
+  "safety": "read-only RPC and simulateTransaction only",
+  "submittedTransactions": 0,
+  "validationRubric": [
+    "current executable and upgrade authority established",
+    "custody reserve address/mint/authority/program bindings and priced lower bound established",
+    "successful current-state value-moving control",
+    "signer/destination/vault/mint/CPI/alias controls mutated",
+    "replay/order/share-conversion/fee/atomicity controls exercised"
+  ],
+  "deployment": {
+    "observedSlots": [
+      457349828,
+      457349828
+    ],
+    "program": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+    "programOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "programData": "ALmAxhSP7TDWGMHWBLjD9qS71YjqxjN1ba6JLRdzdVy",
+    "programDataOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "lastDeployedSlot": "411884877",
+    "upgradeAuthority": "47SND7bGKvNXrqfP1bjsLCbwTgZhFBzAgmZ42QSkRScz",
+    "programDataLength": 1037549,
+    "elfOffset": 45,
+    "elfLength": 1037504,
+    "elfSha256": "4d11d617b2be14a13cbb859b6a8afb7355e609b0fa14a054c4b127c4b2c93947",
+    "verifiedBuild": {
+      "is_verified": false,
+      "message": "On chain program not verified",
+      "on_chain_hash": "25d3ade9efe70e40df16a1553c2cceac511a96e5a305046d273d884065e6e6e4",
+      "executable_hash": "9bbcaada4b4aa3099023cf551749ddf4c956afa46ceade4ddf772709673b0496",
+      "repo_url": "https://github.com/igneous-labs/S/tree/4e35462fb335a24738a57e7ced424a27b3c52f34",
+      "commit": "4e35462fb335a24738a57e7ced424a27b3c52f34",
+      "last_verified_at": "2026-04-24T20:09:05.729796",
+      "is_frozen": false,
+      "is_closed": false
+    },
+    "pdaChecks": {
+      "poolState": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+      "poolStateMatchesExpected": true,
+      "lstStateList": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+      "lstStateListMatchesExpected": true
+    }
+  },
+  "custody": {
+    "observedSlots": [
+      457349831,
+      457349831,
+      457349831,
+      457349832,
+      457349832
+    ],
+    "poolStateOwner": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+    "poolStateDataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+    "pool": {
+      "totalSolValueLamports": "1870227724854883",
+      "protocolFeeNanos": 50000000,
+      "version": 2,
+      "isDisabled": 0,
+      "isRebalancing": 0,
+      "admin": "8JS6XsMPo2u3EyeeY3p2jvzHEhdUtCKgarHpJ3PAonyv",
+      "rebalanceAuthority": "6utAm5grcWt4jCtLHPNWJQXmakQzC35dYyqMRnHmNr79",
+      "protocolFeeBeneficiary": "2APFNdwEd3ymNhc1mG2iv5bT8vUB1nRvLf9yWnDJb91c",
+      "pricingProgram": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+      "lpTokenMint": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+      "rpsAuthority": "8VE2uJkoheDbJd9rCyKzfXmiMqAS4o1B3XGshEh86BGk",
+      "rpsRaw": "39328803111936",
+      "withheldLamports": "116373146068",
+      "protocolFeeLamports": "11976814752",
+      "lastReleaseSlot": "457349141"
+    },
+    "lstStateListOwner": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+    "lstStateListDataLength": 15920,
+    "lstStateListSha256": "97097c2f86f8a5b66045556f188ea40ddbb8b214c3002cb48335e67a2b5250bf",
+    "lstEntryCount": 199,
+    "nonzeroReserveCount": 153,
+    "authorityAndBindingVerifiedNonzeroCount": 153,
+    "pricedNonzeroCount": 98,
+    "unpricedNonzeroCount": 55,
+    "pricedGrossUsdLowerBound": 197384320.57279465,
+    "livePriceCount": 39,
+    "retainedSameDayFallbackPriceCount": 59,
+    "reserveEvidenceSha256": "e059a14098e1c8d653cf7bf73487c2bd97fce9c9d9e5c1c33a2b464b3f8c5d4d",
+    "allNonzeroBindingsValid": true,
+    "smallestNonzeroByRecordedSolValue": [
+      {
+        "index": 11,
+        "address": "6ctzw5Dg5fXjLMPcxKZQgHkdSidfsZ2pgq4YsnTcRenh",
+        "mint": "GEJpt3Wjmr628FqXxTgxMce1pLntcPV4uFi8ksxMyPQh",
+        "rawAmount": "3",
+        "decimals": 9,
+        "recordedSolValueLamports": "2",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 3.946153715054287e-7,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 16,
+        "address": "DLReCfK3F2F4nmouEQSDvHcafwgY2RsxcF1mxnyojS8a",
+        "mint": "7dHbWXmci3dT8UFYWYZweBLXgycu7Y3iL6trKn1Y7ARj",
+        "rawAmount": "137",
+        "decimals": 9,
+        "recordedSolValueLamports": "177",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.00001600963717815292,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 17,
+        "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+        "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+        "rawAmount": "822",
+        "decimals": 9,
+        "recordedSolValueLamports": "1158",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.00012276169224857545,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 91,
+        "address": "Bf2GwWAo4LkrF7owZE6d9kFXcKYh8HEmaS1PDY56nHmz",
+        "mint": "DYNoyS3x5qgbccZg7RPXagm4xQzfnm5iwd9o8pMyJtdE",
+        "rawAmount": "59323",
+        "decimals": 9,
+        "recordedSolValueLamports": "63931",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.0065822669393985605,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 13,
+        "address": "6NDju4nK57FFwUet3jtfz1cWr7doC4yFRwzMR9JZdnM5",
+        "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+        "rawAmount": "181334",
+        "decimals": 9,
+        "recordedSolValueLamports": "249497",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.026428238127044253,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 171,
+        "address": "7ozm8F7jLqnLV3B4zAYG45uX6jBL6tGVtZMxFWvvHNGU",
+        "mint": "hySo1JDBhfEnkXuTtPRLXK9HZhkVEpYM8VoHGv9MUnN",
+        "rawAmount": "293710",
+        "decimals": 9,
+        "recordedSolValueLamports": "293416",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": null,
+        "priceSource": null
+      },
+      {
+        "index": 87,
+        "address": "HqFd7rGT5mAbknBXp2B1TjrY8fe3Q2Lph6d4YYrowyCR",
+        "mint": "sSo1wxKKr6zW2hqf5hZrp2CawLibcwi1pMBqk5bg2G4",
+        "rawAmount": "294733",
+        "decimals": 9,
+        "recordedSolValueLamports": "346274",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.03786647841588545,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 18,
+        "address": "9Eir1uYpYKgAseDUgWWZ2yJcCXeYCwkHPvJ1kecFRgif",
+        "mint": "vSoLxydx6akxyMD9XEcPvGYNGq6Nn66oqVb3UkGkei7",
+        "rawAmount": "344707",
+        "decimals": 9,
+        "recordedSolValueLamports": "404971",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.042879259205328854,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 9,
+        "address": "AZZKBGeFmHKepJN7fJ8G15pzAyNYhfFt2ui13qvqaU6J",
+        "mint": "bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1",
+        "rawAmount": "520336",
+        "decimals": 9,
+        "recordedSolValueLamports": "686540",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.07269046996088623,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 196,
+        "address": "8ytxTLtnQebgSVbGAbrsmjL1eKGtYTFPYCU4NrDisvkh",
+        "mint": "XAnDeUmMcqFyCdef9jzpNgtZPjTj3xUMj9eXKn2reFN",
+        "rawAmount": "742335",
+        "decimals": 9,
+        "recordedSolValueLamports": "843732",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.10194405669104573,
+        "priceSource": "same-day retained authority census price"
+      },
+      {
+        "index": 37,
+        "address": "5iY1KacVoBNChAcXeCDW398gsFvCBUVgRdk3S1eUsWE3",
+        "mint": "BNso1VUJnh4zcfpZa6986Ea66P6TCp59hvtNJ8b1X85",
+        "rawAmount": "984382",
+        "decimals": 9,
+        "recordedSolValueLamports": "1117088",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.11826878594522189,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 74,
+        "address": "5Kr4hjtD5oAKb9dww3oH6et28Mp5Gyga18knoMGVbVjg",
+        "mint": "truthMz1n1fzkRrSK2xdS4FBaPmvkihxa8asAYcDMD8",
+        "rawAmount": "1032472",
+        "decimals": 9,
+        "recordedSolValueLamports": "1143823",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": null,
+        "priceSource": null
+      },
+      {
+        "index": 116,
+        "address": "59hbvVuAU5ybFkZ15wPj3cfSyMw9QsAgekAf3tNBhvgy",
+        "mint": "stke7uu3fXHsGqKVVjKnkmj65LRPVrqr4bLG2SJg7rh",
+        "rawAmount": "1508609",
+        "decimals": 9,
+        "recordedSolValueLamports": "1577001",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.16721602308843,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 58,
+        "address": "GYsT2Kw9yrL7oqciKGgSn9mQvXbzfGQ4psbz9JPUSse",
+        "mint": "CDCSoLckzozyktpAp9FWT3w92KFJVEUxAU7cNu2Jn3aX",
+        "rawAmount": "1501920",
+        "decimals": 9,
+        "recordedSolValueLamports": "1667912",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.17685038598593691,
+        "priceSource": "https://coins.llama.fi/prices/current"
+      },
+      {
+        "index": 81,
+        "address": "FHpa4YhU5xQR47Z5pzgERC4L32mjJub4ngYj7wUt57ab",
+        "mint": "DUAL6T9pATmQUFPYmrWq2BkkGdRxLtERySGScYmbHMER",
+        "rawAmount": "1716859",
+        "decimals": 9,
+        "recordedSolValueLamports": "2013301",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "usdValue": 0.24306458777489806,
+        "priceSource": "same-day retained authority census price"
+      }
+    ],
+    "topPricedReserves": [
+      {
+        "address": "6wCsF4qacwRF9Wc7x2nrz4sbfCwbWMen94LAEMQA8mf8",
+        "mint": "sctmAy9zFfZznZUWxEMgGtF6PHZ3gwoiCGcfwRua1AZ",
+        "rawAmount": "1560992443642103",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "sctmSOL",
+        "usdPrice": 118.09390219059799,
+        "priceTimestamp": 1792091175,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 184343688.95973307
+      },
+      {
+        "address": "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu",
+        "mint": "So11111111111111111111111111111111111111112",
+        "rawAmount": "39370765162778",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "SOL",
+        "usdPrice": 105.81333197590511,
+        "priceTimestamp": 1792091525,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 4165951.8443144285
+      },
+      {
+        "address": "75qWMugYSMKgf2sPQhfSHeZwo4wyykHzJjjCJMZ3QJ4G",
+        "mint": "haSo1Vz5aTsqEnz8nisfnEsipvbAAWpgzRDh2WhhMEh",
+        "rawAmount": "22265834358950",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "haSOL",
+        "usdPrice": 130.37854988180527,
+        "priceTimestamp": 1792091208,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 2902987.195628376
+      },
+      {
+        "address": "ABkvEJg9sjvjeHN8tjwhHo63p4JP2Cfn3cpoT59Ehxf6",
+        "mint": "jupSoLaHXQiZZTSfEWMTRRgpnyFm8f6sZdosWBjx93v",
+        "rawAmount": "20345914505765",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "JUPSOL",
+        "usdPrice": 128.48338884465053,
+        "priceTimestamp": 1792090375,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 2614112.04484422
+      },
+      {
+        "address": "GLn9xNsy1QiUiQb9D3sgW4V4NwA9tcYj5AfXjSamLzkj",
+        "mint": "BPSoLzmLQn47EP5aa7jmFngRL8KC3TWAeAwXwZD8ip3P",
+        "rawAmount": "15366956777364",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "bpSOL",
+        "usdPrice": 118.5399033008831,
+        "priceTimestamp": 1792091175,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 1821597.5704175786
+      },
+      {
+        "address": "93E1gLBe9uqJoXwmnJa3UsB4q5zPg6241PMfHcp9VqEE",
+        "mint": "Dso1bDeDjCQxTrWHqUUi63oBvV7Mdm6WaobLbQ7gnPQ",
+        "rawAmount": "7673105467617",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "DSOL",
+        "usdPrice": 129.0588220260051,
+        "priceTimestamp": 1792090375,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 990281.9529319489
+      },
+      {
+        "address": "7QVQFQjpxgjcfE131i5Fsgw3WTHKWNv2fNQntMyfP7My",
+        "mint": "he1iusmfkpAdwvxLNGV8Y1iSbj4rUy6yMhEA3fotn9A",
+        "rawAmount": "932154965513",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "HSOL",
+        "usdPrice": 126.02857692789962,
+        "priceTimestamp": 1792090375,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 117478.16377987874
+      },
+      {
+        "address": "ujrr2Uy6xMBsb8xkiGhEeRLn1gnYytShYNbHPM5Lsj5",
+        "mint": "rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp",
+        "rawAmount": "583810520569",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "rkuSOL",
+        "usdPrice": 108.27230751031884,
+        "priceTimestamp": 1792091175,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 63210.51221080609
+      },
+      {
+        "address": "9cFbvTGKvzh9R8YwSrD41yBajxVdCsoHgbUzqLJS3Q3h",
+        "mint": "MangmsBgFqJhW4cLUR9LxfVgMboY1xAoP8UUBiWwwuY",
+        "rawAmount": "463672047159",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "mangoSOL",
+        "usdPrice": 132.47308475503877,
+        "priceTimestamp": "2026-10-15T18:55:04.123Z",
+        "priceSource": "same-day retained authority census price",
+        "usdValue": 61424.066401836535
+      },
+      {
+        "address": "BSx4d9VBCQN4Yt6w8o88Lxjt3kqtVgMaQPjU6mNDovY2",
+        "mint": "11111ZSvet4hKEYUAETZWELHgkeYjyNZovzcypyAWs",
+        "rawAmount": "532989916214",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "SOLANA",
+        "usdPrice": 108.91884011674674,
+        "priceTimestamp": 1792091175,
+        "priceSource": "https://coins.llama.fi/prices/current",
+        "usdValue": 58052.643467950904
+      },
+      {
+        "address": "3Lfc5v8gzxEJMfRsT9VrvJknVDb7wnqnqZeankmg2PJg",
+        "mint": "soLuqrygggsrxehAEhrsHgamSpWQUuPso3TiD8yFVwN",
+        "rawAmount": "488200726407",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "solSOL",
+        "usdPrice": 111.66587239308123,
+        "priceTimestamp": "2026-10-15T18:55:04.123Z",
+        "priceSource": "same-day retained authority census price",
+        "usdValue": 54515.360017173625
+      },
+      {
+        "address": "7Dic63rRx43WaYyZ7ETbjWF5h5G9Lq3QqJ2BrcyvpAz8",
+        "mint": "sphSo1j2eTLa6AB5Wjrmap8VbQoZKccCpqJ7gV5pqGM",
+        "rawAmount": "361205142792",
+        "decimals": 9,
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "authority": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+        "symbol": "sphSOL",
+        "usdPrice": 116.81831747681301,
+        "priceTimestamp": "2026-10-15T18:55:04.123Z",
+        "priceSource": "same-day retained authority census price",
+        "usdValue": 42195.37704493343
+      }
+    ]
+  },
+  "runtime": {
+    "controlDiscovery": {
+      "signature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+      "slot": 457279748,
+      "blockTime": 1792076408,
+      "originalDataHex": "17010101000000ffffffff1227f9d0000000008096c53101000000"
+    },
+    "actor": "4cqViyaxAxpUQSBrrD5Tq6cwEkeYZxyHHhRrfFzyeoJ9",
+    "sourceAta": "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4",
+    "destination": "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ",
+    "alternateDestination": "4EebshwQgFxpavhBGQ7kRCz32fnL8kuLjeX61p4kk4EN",
+    "otherMint": "BULKoNSGzxtCqzwTvg5hFJg8fx6dqZRScyXe5LYMfxrn",
+    "otherReserve": "BXAkBBymB7Y14YbxhzURtxrQQRtq5YFdwu2NmJVU1rZo",
+    "shareRoundTripMintedRaw": "1370668",
+    "swapAndShareCases": [
+      {
+        "label": "V2 exact-in wSOL to INF positive control",
+        "expected": "success with user INF increase and pool/mint accounting change",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349842,
+        "beforeReadSlot": 457349841,
+        "err": null,
+        "unitsConsumed": 34231,
+        "wireBytes": 701,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "0",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "685334",
+            "delta": "685334"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370766162778",
+            "delta": "1000000"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634975795648",
+            "delta": "685334"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "11e7192c320caacb9a8e91e3f7903185fbcf7b3024e2549cc2433e7a98624369",
+              "totalSolValueLamports": "1870227725854883",
+              "protocolFeeLamports": "11994181313",
+              "lastReleaseSlot": "457349842"
+            },
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20317 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": null
+      },
+      {
+        "label": "V1 exact-in compatibility positive control",
+        "expected": "success through current binary V1 adapter",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349843,
+        "beforeReadSlot": 457349842,
+        "err": null,
+        "unitsConsumed": 34239,
+        "wireBytes": 702,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "0",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "685334",
+            "delta": "685334"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370766162778",
+            "delta": "1000000"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634975795648",
+            "delta": "685334"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "397fe866d73d28b23d07555dc41dede252254b7a7b45f49ae7e87d09c3ad4b83",
+              "totalSolValueLamports": "1870227725854883",
+              "protocolFeeLamports": "11994206050",
+              "lastReleaseSlot": "457349843"
+            },
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactIn",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20325 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": null
+      },
+      {
+        "label": "V2 unauthorized signer substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349844,
+        "beforeReadSlot": 457349843,
+        "err": {
+          "InstructionError": [
+            4,
+            {
+              "Custom": 4
+            }
+          ]
+        },
+        "unitsConsumed": 29142,
+        "wireBytes": 701,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: Error: owner does not match",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x4",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 15228 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x4"
+        ],
+        "mutation": "signer -> SystemProgram/non-signer"
+      },
+      {
+        "label": "V2 source/destination alias",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349845,
+        "beforeReadSlot": 457349844,
+        "err": {
+          "InstructionError": [
+            4,
+            {
+              "Custom": 10
+            }
+          ]
+        },
+        "unitsConsumed": 30029,
+        "wireBytes": 669,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: Error: Instruction does not support native tokens",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0xa",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 16115 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0xa"
+        ],
+        "mutation": "output token account aliases input token account"
+      },
+      {
+        "label": "V2 reserve substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349845,
+        "beforeReadSlot": 457349845,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15632,
+        "wireBytes": 701,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu",
+          "Program log: Got:",
+          "Program log: BXAkBBymB7Y14YbxhzURtxrQQRtq5YFdwu2NmJVU1rZo",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1718 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "wSOL reserve -> BXAkBBymB7Y14YbxhzURtxrQQRtq5YFdwu2NmJVU1rZo"
+      },
+      {
+        "label": "V2 mint substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349847,
+        "beforeReadSlot": 457349846,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15524,
+        "wireBytes": 733,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: So11111111111111111111111111111111111111112",
+          "Program log: Got:",
+          "Program log: BULKoNSGzxtCqzwTvg5hFJg8fx6dqZRScyXe5LYMfxrn",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1610 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "input mint -> BULKoNSGzxtCqzwTvg5hFJg8fx6dqZRScyXe5LYMfxrn"
+      },
+      {
+        "label": "V2 token CPI program substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349847,
+        "beforeReadSlot": 457349847,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15559,
+        "wireBytes": 701,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "Program log: Got:",
+          "Program log: 11111111111111111111111111111111",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1645 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "input token program -> SystemProgram"
+      },
+      {
+        "label": "V2 calculator CPI program substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349849,
+        "beforeReadSlot": 457349848,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15461,
+        "wireBytes": 669,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: wsoGmxQLSvwWpuaidCApxN5kEowLe2HLQLJhCQnj4bE",
+          "Program log: Got:",
+          "Program log: 11111111111111111111111111111111",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1547 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "wSOL calculator -> SystemProgram"
+      },
+      {
+        "label": "V2 pricing CPI program substitution",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349849,
+        "beforeReadSlot": 457349849,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15072,
+        "wireBytes": 669,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+          "Program log: Got:",
+          "Program log: 11111111111111111111111111111111",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1158 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "pricing program -> SystemProgram"
+      },
+      {
+        "label": "V2 state/list account alias",
+        "expected": "reject",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349849,
+        "beforeReadSlot": 457349850,
+        "err": {
+          "InstructionError": [
+            4,
+            "InvalidArgument"
+          ]
+        },
+        "unitsConsumed": 15464,
+        "wireBytes": 669,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: Wrong account. Expected:",
+          "Program log: 25eqifgTUMGS3sHAm21QH39ckg7aKNBbjjq7ALXCC87g",
+          "Program log: Got:",
+          "Program log: wsoGmxQLSvwWpuaidCApxN5kEowLe2HLQLJhCQnj4bE",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 1550 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+        ],
+        "mutation": "LST state list aliases pool state"
+      },
+      {
+        "label": "V2 authorized gift to alternate INF destination",
+        "expected": "success; destination is intentionally caller-selectable, but the spending signer remains required",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349850,
+        "beforeReadSlot": 457349851,
+        "err": null,
+        "unitsConsumed": 34109,
+        "wireBytes": 701,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "0",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "0",
+            "delta": "0"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370766162778",
+            "delta": "1000000"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634975795648",
+            "delta": "685334"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "e47b36305fefeffe5135c1b8075dd0675718306404549601e126b185868272c7",
+              "totalSolValueLamports": "1870227725854883",
+              "protocolFeeLamports": "11994379205",
+              "lastReleaseSlot": "457349850"
+            },
+            "delta": null
+          },
+          "4EebshwQgFxpavhBGQ7kRCz32fnL8kuLjeX61p4kk4EN": {
+            "kind": "token",
+            "before": "0",
+            "after": "685334",
+            "delta": "685334"
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20195 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": "destination -> 4EebshwQgFxpavhBGQ7kRCz32fnL8kuLjeX61p4kk4EN"
+      },
+      {
+        "label": "V2 duplicate swaps with sufficient funding",
+        "expected": "success; each authorized leg is charged independently",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349852,
+        "beforeReadSlot": 457349851,
+        "err": null,
+        "unitsConsumed": 53342,
+        "wireBytes": 746,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "0",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "1370668",
+            "delta": "1370668"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370767162778",
+            "delta": "2000000"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634976480982",
+            "delta": "1370668"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "63dc50e4000d573a90674192a284aa33fe15b7af9f20f8e8f72d6c8ce5eb5758",
+              "totalSolValueLamports": "1870227726854883",
+              "protocolFeeLamports": "11994428677",
+              "lastReleaseSlot": "457349852"
+            },
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20254 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 19174 of 1365832 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx ml2XuM4jAACaXZe4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": "duplicate exact-in instruction"
+      },
+      {
+        "label": "V2 duplicate swaps with only one-leg funding",
+        "expected": "reject second leg and atomically roll back first",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349852,
+        "beforeReadSlot": 457349852,
+        "err": {
+          "InstructionError": [
+            5,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "unitsConsumed": 48154,
+        "wireBytes": 746,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20254 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: Error: insufficient funds",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 13986 of 1365832 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x1"
+        ],
+        "mutation": "duplicate exact-in instruction without second funding"
+      },
+      {
+        "label": "V2 successful leg followed by forced terminal failure",
+        "expected": "transaction failure with atomic rollback",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349854,
+        "beforeReadSlot": 457349853,
+        "err": {
+          "InstructionError": [
+            5,
+            "InvalidInstructionData"
+          ]
+        },
+        "unitsConsumed": 34256,
+        "wireBytes": 705,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: SwapExactInV2",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 1000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370766162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20192 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx WhuIuM4jAABaG4i4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+          "Program 11111111111111111111111111111111 failed: invalid instruction data"
+        ],
+        "mutation": "append invalid SystemProgram instruction"
+      },
+      {
+        "label": "add-liquidity share conversion positive control",
+        "expected": "success; wSOL deposited and INF shares minted",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349855,
+        "beforeReadSlot": 457349854,
+        "err": null,
+        "unitsConsumed": 34036,
+        "wireBytes": 695,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "0",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "1370668",
+            "delta": "1370668"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370767162778",
+            "delta": "2000000"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634976480982",
+            "delta": "1370668"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "b4bc7c6259582f24b4a6b09b7a407577d5470238dd73f857ace20673d7efa374",
+              "totalSolValueLamports": "1870227726854883",
+              "protocolFeeLamports": "11994502885",
+              "lastReleaseSlot": "457349855"
+            },
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: AddLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 2000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20122 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx ml2XuM4jAACaXZe4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": null
+      },
+      {
+        "label": "same-transaction add then remove full minted shares",
+        "expected": "success with no free share inflation; round-trip output does not exceed funded wSOL",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349855,
+        "beforeReadSlot": 457349855,
+        "err": null,
+        "unitsConsumed": 52670,
+        "wireBytes": 734,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": "1992902",
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": "0",
+            "delta": "0"
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": "39370765169876",
+            "delta": "7098"
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": "1283634975110314",
+            "delta": "0"
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": {
+              "hash": "efc351b2da5380a13d87db0539814daed7192615e877c0eea0503e412d5f3dd9",
+              "totalSolValueLamports": "1870227724861981",
+              "protocolFeeLamports": "11994502885",
+              "lastReleaseSlot": "457349855"
+            },
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: AddLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 2000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20122 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx ml2XuM4jAACaXZe4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: RemoveLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program log: SolToLst(SolToLstIxArgs { amount: 1992902 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765169876 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 18634 of 1365964 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 1PR4uM4jAADU9Hi4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+        ],
+        "mutation": "compose add and remove atomically"
+      },
+      {
+        "label": "same-transaction add then over-redeem one share",
+        "expected": "reject and atomically roll back add",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349856,
+        "beforeReadSlot": 457349856,
+        "err": {
+          "InstructionError": [
+            5,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "unitsConsumed": 47477,
+        "wireBytes": 734,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: AddLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 2000000 })",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 20179 of 1386086 compute units",
+          "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx ml2XuM4jAACaXZe4ziMAAA==",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: RemoveLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370767162778 })",
+          "Program log: SolToLst(SolToLstIxArgs { amount: 1992903 })",
+          "Program log: Error: insufficient funds",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 13384 of 1365907 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x1"
+        ],
+        "mutation": "remove amount = newly minted shares + 1"
+      },
+      {
+        "label": "remove before add ordering mutation",
+        "expected": "reject before value release",
+        "sourceSignature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+        "simulationContextSlot": 457349857,
+        "beforeReadSlot": 457349857,
+        "err": {
+          "InstructionError": [
+            4,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "unitsConsumed": 28319,
+        "wireBytes": 734,
+        "accounts": {
+          "HBTcB9xSdZ4Rg22RDiXqJJ2wg6WsqwGMFKzNEn1b6Ne4": {
+            "kind": "token",
+            "before": null,
+            "after": null,
+            "delta": null
+          },
+          "2GGeRzD91ofETt1vhVhFKou4MWmq3hLjvCPeuUuWvpCZ": {
+            "kind": "token",
+            "before": "0",
+            "after": null,
+            "delta": null
+          },
+          "F2AETMoKjZgb3965ee9DiSriVmFDMA9Uf1ebuWuVzjUu": {
+            "kind": "token",
+            "before": "39370765162778",
+            "after": null,
+            "delta": null
+          },
+          "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+            "kind": "mint",
+            "before": "1283634975110314",
+            "after": null,
+            "delta": null
+          },
+          "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+            "kind": "pool",
+            "before": {
+              "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+              "totalSolValueLamports": "1870227724854883",
+              "protocolFeeLamports": "11976814752",
+              "lastReleaseSlot": "457349141"
+            },
+            "after": null,
+            "delta": null
+          }
+        },
+        "relevantLogs": [
+          "Program log: CreateIdempotent",
+          "Program log: Initialize the associated token account",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+          "Program log: RemoveLiquidity",
+          "Program log: LstToSol(LstToSolIxArgs { amount: 39370765162778 })",
+          "Program log: SolToLst(SolToLstIxArgs { amount: 1992902 })",
+          "Program log: Error: insufficient funds",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 14405 of 1386086 compute units",
+          "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x1"
+        ],
+        "mutation": "reverse share-conversion order"
+      }
+    ],
+    "protocolFee": {
+      "beneficiary": "2APFNdwEd3ymNhc1mG2iv5bT8vUB1nRvLf9yWnDJb91c",
+      "destination": "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe",
+      "accumulatorBeforeLamports": "11976814752",
+      "cases": [
+        {
+          "label": "V2 protocol-fee withdrawal positive control",
+          "expected": "success; mint only to configured beneficiary-selected INF account",
+          "simulationContextSlot": 457349858,
+          "beforeReadSlot": 457349857,
+          "err": null,
+          "unitsConsumed": 4474,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": "8233068303",
+              "delta": "8233068303"
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": "1283643208178617",
+              "delta": "8233068303"
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": {
+                "hash": "98c0be55c75c5e1d8b31b4c02aed37f5d6941f032566d986b86e3f4394195353",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "0",
+                "lastReleaseSlot": "457349858"
+              },
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 4324 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+          ],
+          "mutation": null
+        },
+        {
+          "label": "protocol-fee beneficiary substitution",
+          "expected": "reject",
+          "simulationContextSlot": 457349859,
+          "beforeReadSlot": 457349858,
+          "err": {
+            "InstructionError": [
+              1,
+              "InvalidArgument"
+            ]
+          },
+          "unitsConsumed": 827,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": null,
+              "delta": null
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": null,
+              "delta": null
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": null,
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program log: Wrong account. Expected:",
+            "Program log: 2APFNdwEd3ymNhc1mG2iv5bT8vUB1nRvLf9yWnDJb91c",
+            "Program log: Got:",
+            "Program log: 4cqViyaxAxpUQSBrrD5Tq6cwEkeYZxyHHhRrfFzyeoJ9",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 677 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+          ],
+          "mutation": "configured beneficiary -> 4cqViyaxAxpUQSBrrD5Tq6cwEkeYZxyHHhRrfFzyeoJ9"
+        },
+        {
+          "label": "authorized protocol-fee destination redirect",
+          "expected": "success; configured beneficiary intentionally chooses any valid INF destination",
+          "simulationContextSlot": 457349859,
+          "beforeReadSlot": 457349859,
+          "err": null,
+          "unitsConsumed": 4470,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": "0",
+              "delta": "0"
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": "1283643208195593",
+              "delta": "8233085279"
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": {
+                "hash": "7c1fa6133b5b194263e1f14492a8efd2c1b4fc0b06600db24cb24381ed8bd015",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "0",
+                "lastReleaseSlot": "457349859"
+              },
+              "delta": null
+            },
+            "4EebshwQgFxpavhBGQ7kRCz32fnL8kuLjeX61p4kk4EN": {
+              "kind": "token",
+              "before": "0",
+              "after": "8233085279",
+              "delta": "8233085279"
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 4320 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+          ],
+          "mutation": "withdrawTo -> 4EebshwQgFxpavhBGQ7kRCz32fnL8kuLjeX61p4kk4EN"
+        },
+        {
+          "label": "protocol-fee wrong-mint destination",
+          "expected": "reject token mint mismatch",
+          "simulationContextSlot": 457349860,
+          "beforeReadSlot": 457349860,
+          "err": {
+            "InstructionError": [
+              1,
+              {
+                "Custom": 10
+              }
+            ]
+          },
+          "unitsConsumed": 4607,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": null,
+              "delta": null
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": null,
+              "delta": null
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": null,
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program log: Error: Instruction does not support native tokens",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0xa",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 4457 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0xa"
+          ],
+          "mutation": "withdrawTo -> wSOL reserve"
+        },
+        {
+          "label": "protocol-fee INF mint substitution",
+          "expected": "reject pool LP mint binding mismatch",
+          "simulationContextSlot": 457349861,
+          "beforeReadSlot": 457349861,
+          "err": {
+            "InstructionError": [
+              1,
+              "InvalidArgument"
+            ]
+          },
+          "unitsConsumed": 848,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": null,
+              "delta": null
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": null,
+              "delta": null
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": null,
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program log: Wrong account. Expected:",
+            "Program log: 5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "Program log: Got:",
+            "Program log: So11111111111111111111111111111111111111112",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 698 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+          ],
+          "mutation": "INF mint -> wSOL mint"
+        },
+        {
+          "label": "protocol-fee token CPI program substitution",
+          "expected": "reject token-program owner binding mismatch",
+          "simulationContextSlot": 457349862,
+          "beforeReadSlot": 457349861,
+          "err": {
+            "InstructionError": [
+              1,
+              "InvalidArgument"
+            ]
+          },
+          "unitsConsumed": 867,
+          "wireBytes": 345,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": null,
+              "delta": null
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": null,
+              "delta": null
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": null,
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program log: Wrong account. Expected:",
+            "Program log: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "Program log: Got:",
+            "Program log: 11111111111111111111111111111111",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 717 of 499850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: invalid program argument"
+          ],
+          "mutation": "token program -> SystemProgram"
+        },
+        {
+          "label": "duplicate protocol-fee withdrawal in one transaction",
+          "expected": "success with one mint only; second call observes zero accumulator",
+          "simulationContextSlot": 457349863,
+          "beforeReadSlot": 457349862,
+          "err": null,
+          "unitsConsumed": 5289,
+          "wireBytes": 354,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": "8233153183",
+              "delta": "8233153183"
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": "1283643208263497",
+              "delta": "8233153183"
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": {
+                "hash": "e6d2131c12a2fc2095c8b19a9200d6afbad2cb0b14ef610de1bea8df47a3b818",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "0",
+                "lastReleaseSlot": "457349863"
+              },
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 4254 of 699850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 885 of 695596 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success"
+          ],
+          "mutation": "duplicate withdrawal"
+        },
+        {
+          "label": "protocol-fee withdrawal followed by forced terminal failure",
+          "expected": "transaction failure with fee mint and accumulator update rolled back",
+          "simulationContextSlot": 457349863,
+          "beforeReadSlot": 457349863,
+          "err": {
+            "InstructionError": [
+              2,
+              "InvalidInstructionData"
+            ]
+          },
+          "unitsConsumed": 4554,
+          "wireBytes": 381,
+          "accounts": {
+            "etRLqizPcnGKa31iy3V9okmEf5Ue9C3EnrWg6g6Kmqe": {
+              "kind": "token",
+              "before": "0",
+              "after": null,
+              "delta": null
+            },
+            "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+              "kind": "mint",
+              "before": "1283634975110314",
+              "after": null,
+              "delta": null
+            },
+            "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+              "kind": "pool",
+              "before": {
+                "hash": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+                "totalSolValueLamports": "1870227724854883",
+                "protocolFeeLamports": "11976814752",
+                "lastReleaseSlot": "457349141"
+              },
+              "after": null,
+              "delta": null
+            }
+          },
+          "relevantLogs": [
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx invoke [1]",
+            "Program log: WithdrawProtocolFeesV2",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx consumed 4254 of 699850 compute units",
+            "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx success",
+            "Program 11111111111111111111111111111111 failed: invalid instruction data"
+          ],
+          "mutation": "append invalid SystemProgram instruction"
+        }
+      ]
+    }
+  }
+}

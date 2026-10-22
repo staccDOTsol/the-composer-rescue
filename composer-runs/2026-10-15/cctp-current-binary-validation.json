@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-10-15T18:52:57.644Z",
+  "rpcReadsAndSimulationOnly": true,
+  "submittedTransactions": 0,
+  "probes": [
+    {
+      "label": "CCTP V1",
+      "messageProgram": "CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd",
+      "tokenProgram": "CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3",
+      "custody": "FSxJ85FXVsXSr51SeWf9ciJWTcRnqKFSmBgRDeL3KyWw",
+      "handlerLogs": [
+        "Instruction: HandleReceiveMessage"
+      ],
+      "messageMeta": {
+        "program": "CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd",
+        "programData": "AqT6GNqtiEpTjYhAeTwA1orjryPiFFTZ9REGqE93gpnx",
+        "lastDeployedSlot": 312515728,
+        "upgradeAuthority": null,
+        "programDataLength": 1228765,
+        "elfSha256": "091f843d5287ff8ecf078fcfb5317c357e29666b8f1467400ab0080b155754c8"
+      },
+      "tokenMeta": {
+        "program": "CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3",
+        "programData": "Es2E4JZuFwA5gcCs1ubmAegekraPnUxFNpxHfWfWFcqk",
+        "lastDeployedSlot": 262177984,
+        "upgradeAuthority": null,
+        "programDataLength": 1618013,
+        "elfSha256": "1c48a53d95e12547f49f01cb2bc3c16c1fba8ba65ac102999fa0f71ade8e851b"
+      },
+      "historicalPositiveControl": {
+        "inspected": 1,
+        "signature": "2igvKXcwDZK6dsjAizaEMUpaRnZHTCgMo8jupj6cMWZKTBHYamJtbshYBX3P4BrwB3xKnhHoGMrAYAsuUCApBPM",
+        "slot": 457344007,
+        "blockTime": 1792090306,
+        "confirmationStatus": "finalized",
+        "metaErr": null,
+        "logs": [
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd invoke [1]",
+          "Program log: Instruction: ReceiveMessage",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 invoke [2]",
+          "Program log: Instruction: HandleReceiveMessage",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 58668 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 invoke [3]",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 consumed 3632 of 55431 compute units",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 success",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 consumed 33658 of 83873 compute units",
+          "Program CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3 success",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd invoke [2]",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd consumed 2133 of 46073 compute units",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd success",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd consumed 182995 of 219774 compute units",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd success",
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success"
+        ]
+      },
+      "historicalPostdatesCurrentDeployments": true,
+      "replayNegativeControl": {
+        "contextSlot": 457344328,
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6023
+            }
+          ]
+        },
+        "logs": [
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd invoke [1]",
+          "Program log: Instruction: ReceiveMessage",
+          "Program log: AnchorError thrown in programs/message-transmitter/src/state.rs:218. Error Code: NonceAlreadyUsed. Error Number: 6023. Error Message: Nonce already used.",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd consumed 131744 of 219774 compute units",
+          "Program CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd failed: custom program error: 0x1787"
+        ],
+        "unitsConsumed": 131744
+      },
+      "replayRejected": true,
+      "custodyBefore": {
+        "slot": 457344326,
+        "rawAmount": "123572680766837",
+        "decimals": 6,
+        "uiAmountString": "123572680.766837"
+      },
+      "custodyAfter": {
+        "slot": 457344329,
+        "rawAmount": "123572680766837",
+        "decimals": 6,
+        "uiAmountString": "123572680.766837"
+      },
+      "custodyUnchangedAcrossReadOnlyProbe": true
+    },
+    {
+      "label": "CCTP V2",
+      "messageProgram": "CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC",
+      "tokenProgram": "CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe",
+      "custody": "6xTBTqJMBr5m7BKqVxmW2x11DfqUwtD3TJsqpxELx72L",
+      "handlerLogs": [
+        "Instruction: HandleReceiveFinalizedMessage",
+        "Instruction: HandleReceiveUnfinalizedMessage"
+      ],
+      "messageMeta": {
+        "program": "CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC",
+        "programData": "2w2zCf9f5iyr7qcuWQH4DFNNahBZHgYkL4UVU3p5T1iS",
+        "lastDeployedSlot": 343321624,
+        "upgradeAuthority": null,
+        "programDataLength": 493557,
+        "elfSha256": "72021bdabcda528726f65189db421234808ff21a3af74a3e15a69a91d975a392"
+      },
+      "tokenMeta": {
+        "program": "CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe",
+        "programData": "9ZEnLvCp3weopBnSaoSSjn7hoVk6zMXMpfH3LjNzBFFF",
+        "lastDeployedSlot": 343322709,
+        "upgradeAuthority": null,
+        "programDataLength": 716277,
+        "elfSha256": "7493e02a34935898883671581de90d733e1f52a1a7820c699d9398e179898359"
+      },
+      "historicalPositiveControl": {
+        "inspected": 1,
+        "signature": "4zT1QRQYi6uw1YDUbZ9XDuQgozgSFnenu2Z3qadcc2j7CqboAaPW5BLoKjZc4UPKAARFvqgi2hue5Ac3EMQyp4bv",
+        "slot": 457344316,
+        "blockTime": 1792090374,
+        "confirmationStatus": "confirmed",
+        "metaErr": null,
+        "logs": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+          "Program log: CreateIdempotent",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 292921 compute units",
+          "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program log: Initialize the associated token account",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 287832 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 285369 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 15018 of 299850 compute units",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC invoke [1]",
+          "Program log: Instruction: ReceiveMessage",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Program 11111111111111111111111111111111 success",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe invoke [2]",
+          "Program log: Instruction: HandleReceiveUnfinalizedMessage",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 112639 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 109809 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe invoke [3]",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe consumed 2048 of 107001 compute units",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe success",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe consumed 35629 of 139646 compute units",
+          "Program CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe success",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC invoke [2]",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC consumed 5018 of 99275 compute units",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC success",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC consumed 191379 of 284832 compute units",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC success"
+        ]
+      },
+      "historicalPostdatesCurrentDeployments": true,
+      "replayNegativeControl": {
+        "contextSlot": 457344332,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 0
+            }
+          ]
+        },
+        "logs": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+          "Program log: CreateIdempotent",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5937 of 299850 compute units",
+          "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC invoke [1]",
+          "Program log: Instruction: ReceiveMessage",
+          "Program 11111111111111111111111111111111 invoke [2]",
+          "Allocate: account Address { address: 8dNbjVrbiQXTaRuGZ3Z5Ka9U29F68v17EvTZDpG5WvTZ, base: None } already in use",
+          "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC consumed 16101 of 293913 compute units",
+          "Program CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC failed: custom program error: 0x0"
+        ],
+        "unitsConsumed": 22188
+      },
+      "replayRejected": true,
+      "custodyBefore": {
+        "slot": 457344329,
+        "rawAmount": "40056940775743",
+        "decimals": 6,
+        "uiAmountString": "40056940.775743"
+      },
+      "custodyAfter": {
+        "slot": 457344331,
+        "rawAmount": "40056940775743",
+        "decimals": 6,
+        "uiAmountString": "40056940.775743"
+      },
+      "custodyUnchangedAcrossReadOnlyProbe": true
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "schema": "orca-3prt-small-pool-spot/v1",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:64339",
+  "pool": "3PRT79bw3hoMd9S4uC8mPTKvJVgqGa2NuS7ZLX92RFNn",
+  "actor": "8QkCPoDB2fMj8pLwsj6MpXx4psHhdQLheTnoRPny5Br4",
+  "activePosition": {
+    "L": "301845",
+    "lower": -427648,
+    "upper": 427648
+  },
+  "forkOnlyUsdcPrefundRaw": "1000000",
+  "before": {
+    "pool": {
+      "L": "301845",
+      "sqrt": "5991662548499965469",
+      "tick": -22492,
+      "spacing": 32896,
+      "feeRate": 0,
+      "protocolFeeRate": 0,
+      "protocolFeeOwedA": "0",
+      "protocolFeeOwedB": "0"
+    },
+    "vaultA": "932618",
+    "vaultB": "100786",
+    "actorA": "0",
+    "actorB": "1000000"
+  },
+  "setup": {
+    "label": "create actor ATAs",
+    "v1Bytes": 392,
+    "simulationError": null,
+    "simulationUnits": 13177,
+    "logs": [
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+      "Program log: CreateIdempotent",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 8839 of 1400000 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+      "Program log: CreateIdempotent",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1391161 compute units",
+      "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success"
+    ],
+    "signature": "5k8zV1HwboSsfy7pY2oNBDJKfuN7XSA4vqh47ztgv3zLRYsn3M6Xk7QjGbQzb8eGz5igoGu4rVfbEobReXgUKA9Q",
+    "slot": 458881208,
+    "committedError": null,
+    "committedUnits": 13177
+  },
+  "prepared": {
+    "pool": {
+      "L": "301845",
+      "sqrt": "5991662548499965469",
+      "tick": -22492,
+      "spacing": 32896,
+      "feeRate": 0,
+      "protocolFeeRate": 0,
+      "protocolFeeOwedA": "0",
+      "protocolFeeOwedB": "0"
+    },
+    "vaultA": "932618",
+    "vaultB": "100786",
+    "actorA": "0",
+    "actorB": "1000000"
+  },
+  "targetSqrt2": "8473490437251593553",
+  "targetSqrt10": "18947300624388979450",
+  "two": {
+    "label": "2x spot",
+    "v1Bytes": 523,
+    "simulationError": null,
+    "simulationUnits": 23746,
+    "logs": [
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+      "Program log: Instruction: Swap",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1381019 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1378926 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: 4cpJr5MroJYjdcwnKYH+v+Ll953vFYBuayQCa8VP2Zg8wDfFsc19twAdJlq5V6kmUwAAAAAAAAAAUfUMgKjil3UAAAAAAAAAAKOeAAAAAAAAOScEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 23746 of 1400000 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success"
+    ],
+    "signature": "5dBsup71FR9RTxqrwSFvmiytU7fDa8Jn8VNHHiGuzjCc5j8pc86XNZboWBvS4fCW62VxjWcjHt7wVHyYTNsjggZT",
+    "slot": 458881208,
+    "committedError": null,
+    "committedUnits": 23746
+  },
+  "afterTwo": {
+    "pool": {
+      "L": "301845",
+      "sqrt": "8473490437251593553",
+      "tick": -15560,
+      "spacing": 32896,
+      "feeRate": 0,
+      "protocolFeeRate": 0,
+      "protocolFeeOwedA": "0",
+      "protocolFeeOwedB": "0"
+    },
+    "vaultA": "660433",
+    "vaultB": "141397",
+    "actorA": "272185",
+    "actorB": "959389"
+  },
+  "ten": {
+    "label": "10x spot",
+    "v1Bytes": 523,
+    "simulationError": null,
+    "simulationUnits": 23650,
+    "logs": [
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+      "Program log: Instruction: Swap",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1381115 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1379022 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: 4cpJr5MroJYjdcwnKYH+v+Ll953vFYBuayQCa8VP2Zg8wDfFsc19twBR9QyAqOKXdQAAAAAAAAAA+vo94YdV8gYBAAAAAAAAAHidAgAAAAAA7IoFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 23650 of 1400000 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success"
+    ],
+    "signature": "35piJxS4C7MU2qWXPethkN57oh7HS9ZFz7o8N4yfY3EC5AfZn33C3LStfRG8pntxJruMsgFhuGyT6oZZQMVw1KK7",
+    "slot": 458881209,
+    "committedError": null,
+    "committedUnits": 23650
+  },
+  "afterTen": {
+    "pool": {
+      "L": "301845",
+      "sqrt": "18947300624388979450",
+      "tick": 535,
+      "spacing": 32896,
+      "feeRate": 0,
+      "protocolFeeRate": 0,
+      "protocolFeeOwedA": "0",
+      "protocolFeeOwedB": "0"
+    },
+    "vaultA": "297189",
+    "vaultB": "312781",
+    "actorA": "635429",
+    "actorB": "788005"
+  }
+}

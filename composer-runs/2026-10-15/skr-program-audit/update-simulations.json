@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-10-15T19:06:35.540Z",
+  "noTransactionsSubmitted": true,
+  "simulationSignatureVerification": false,
+  "caveat": "The off-curve stored authority cannot sign a top-level transaction. Marking it signer in a sigVerify:false simulation is hypothetical and does not establish live control.",
+  "storedAuthority": "Hgbea5UFVXD3dQoL2mJbXLVnnFFRqyJJis9vfm69w5oQ",
+  "storedAuthorityOffCurve": true,
+  "authorityAccount": {
+    "owner": "11111111111111111111111111111111",
+    "dataLength": 0,
+    "lamports": 117582081,
+    "observedSlot": 457348114
+  },
+  "accountOrder": [
+    "stake_config",
+    "authority",
+    "event_authority",
+    "program"
+  ],
+  "cases": [
+    {
+      "name": "stored_authority_not_marked_signer",
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 3243,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: UpdateStakeConfig",
+        "Program log: AnchorError caused by account: authority. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 3243 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0xbc2"
+      ],
+      "afterConfigData": null
+    },
+    {
+      "name": "wrong_signer_payer",
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 5667,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: UpdateStakeConfig",
+        "Program log: AnchorError caused by account: stake_config. Error Code: Unauthorized. Error Number: 6007. Error Message: Unauthorized: only authority can perform this action.",
+        "Program log: Left:",
+        "Program log: Hgbea5UFVXD3dQoL2mJbXLVnnFFRqyJJis9vfm69w5oQ",
+        "Program log: Right:",
+        "Program log: 5vwuHxvdfmiNWNXY38aLiroE9RBaXiVAft55vKMsUVaP",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5667 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1777"
+      ],
+      "afterConfigData": null
+    },
+    {
+      "name": "swapped_config_authority_order",
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3007
+          }
+        ]
+      },
+      "unitsConsumed": 3709,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: UpdateStakeConfig",
+        "Program log: AnchorError caused by account: stake_config. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: Left:",
+        "Program log: 11111111111111111111111111111111",
+        "Program log: Right:",
+        "Program log: SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 3709 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0xbbf"
+      ],
+      "afterConfigData": null
+    },
+    {
+      "name": "hypothetical_stored_authority_signer_noop_update",
+      "error": null,
+      "unitsConsumed": 16404,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: UpdateStakeConfig",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [2]",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5117 of 189621 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 16404 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success"
+      ],
+      "afterConfigData": "7pcrAwuXP7D/99/RmBWIoUKnBCJppz3tD3Kiqm19wGlNrfxqo58KnyMGfFo+Bf5BRxKnour+Qr52ELzZDL9XFid1g3PLitDYpHK7t3HxKVTi9/Qhl74s+E4dlydE1728RBtKSZ5/fy2TQEIPAAAAAAAAowIAAAAAAKyd0iVNjQ8AAAAAAAAAAABry8tEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABidw06tgkSAA=="
+    },
+    {
+      "name": "hypothetical_stored_authority_signer_zero_cooldown",
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6001
+          }
+        ]
+      },
+      "unitsConsumed": 10025,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: UpdateStakeConfig",
+        "Program log: AnchorError thrown in programs/staking/src/instructions/update_stake_config.rs:41. Error Code: InvalidCooldownPeriod. Error Number: 6001. Error Message: Invalid cooldown period: must be greater than zero.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 10025 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1771"
+      ],
+      "afterConfigData": null
+    }
+  ]
+}

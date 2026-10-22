@@ -1,0 +1,28 @@
+{
+  "schema": "orca-sdk-zero-liquidity-quote/v1",
+  "source": "@orca-so/whirlpools-sdk swapQuoteByInputToken",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:64335",
+  "pool": "C7AD8EHcbKvFL3zw2z4YKKn1ZMTCYqkThZGtY3hPajsd",
+  "state": {
+    "liquidity": "0",
+    "tick": -27464,
+    "sqrtPriceX64": "4672790998432938933"
+  },
+  "cases": [
+    {
+      "label": "B-to-A empty direction",
+      "inputRaw": "1000000",
+      "errorName": "Error",
+      "errorMessage": "Swap input value traversed too many arrays. Out of bounds at attempt to traverse tick index - -25344."
+    },
+    {
+      "label": "A-to-B returning to previous position range",
+      "inputRaw": "1000000",
+      "amountInRaw": "1000000",
+      "amountOutRaw": "61177",
+      "endTick": -27921,
+      "endSqrtPriceX64": "4567433478594877047"
+    }
+  ]
+}

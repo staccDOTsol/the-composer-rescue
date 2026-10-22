@@ -1,0 +1,664 @@
+{
+  "observedAtUtc": "2026-10-15T22:58:26.716Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "program": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
+  "stateSlot": 457412486,
+  "vaultSlot": 457412486,
+  "pools": [
+    {
+      "symbol": "ETH",
+      "authority": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+      "stateOwner": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
+      "stateOffCurve": true,
+      "stateDataLength": 2048,
+      "stateSha256": "24361f2695c7564b8c7f59c7f4651df5e2e0cae4684d31b27d7ba2e2872a3338",
+      "mintA": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+      "mintB": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "vaultA": "Eq4RXu6YteLSADZ7X3gxMimqGm98uUN9KMSzQjoUqSKP",
+      "vaultB": "EQgSe7ekYKr8PoP3eyxiGvno2SKUvhqfqP2am8Gpyqyu",
+      "vaults": [
+        {
+          "address": "Eq4RXu6YteLSADZ7X3gxMimqGm98uUN9KMSzQjoUqSKP",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "tokenAuthority": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+          "rawBalance": "799275958",
+          "sha256": "a59eda4fb03fee29a3cacac3d6c22ecd7b9f3dc01bbe7aefa0997fdf1a55751a"
+        },
+        {
+          "address": "EQgSe7ekYKr8PoP3eyxiGvno2SKUvhqfqP2am8Gpyqyu",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "tokenAuthority": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+          "rawBalance": "180975584871",
+          "sha256": "89ca08854ef025cf1d33aa9a0f23045090a9cd8c0d7a427699a6758e98bea096"
+        }
+      ]
+    },
+    {
+      "symbol": "cbBTC",
+      "authority": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+      "stateOwner": "goonuddtQRrWqqn5nFyczVKaie28f3kDkHWkHtURSLE",
+      "stateOffCurve": true,
+      "stateDataLength": 2048,
+      "stateSha256": "3e04b6e18ff80e03a9ad6991db0818f05a7f91cdabeb69d6cc10dbe89614765d",
+      "mintA": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+      "mintB": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "vaultA": "FKKpxrDezYSw5JoP2k5xaABPk2De3xvsU7gXkfsdJw3f",
+      "vaultB": "HQdab425TntryU9zwSzhkBSzkdUuyoKZX1y8sQvjTYmX",
+      "vaults": [
+        {
+          "address": "FKKpxrDezYSw5JoP2k5xaABPk2De3xvsU7gXkfsdJw3f",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+          "tokenAuthority": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+          "rawBalance": "64471910",
+          "sha256": "d01000c21f848f81fd9ea2be127718f5fd5ab0cfbfecfd70b25d895ec0c57851"
+        },
+        {
+          "address": "HQdab425TntryU9zwSzhkBSzkdUuyoKZX1y8sQvjTYmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "tokenAuthority": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+          "rawBalance": "161094310982",
+          "sha256": "ded57ddb2ec1834bcd6e8824ca9205f93af13643dbea87134fba0f49cd139aef"
+        }
+      ]
+    }
+  ],
+  "quoteMethod": "ExactIn, onlyDirectRoutes, exact target GoonFi pool key; independent direct leg excludes GoonFi V2; both route orders.",
+  "limitations": [
+    "State and vault reads are at adjacent, not necessarily identical, confirmed slots",
+    "Quotes are not an atomic executable packet and omit priority, base, flash, and slippage costs"
+  ],
+  "noTransaction": true,
+  "rows": [
+    {
+      "symbol": "ETH",
+      "usdc": 100,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "4072930",
+        "contextSlot": 457412487,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "4072930",
+        "outAmount": "99973361",
+        "contextSlot": 457412487,
+        "error": null,
+        "priceImpactPct": "0.0006606899019361106057681543",
+        "route": [
+          {
+            "label": "HumidiFi",
+            "ammKey": "iAMtZieUtpLwB3dzWw8Fo3H3FPkMFy3ej52URusseR1",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-26639"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 100,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "4073431",
+        "contextSlot": 457412488,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "AfaA4CE8C2DWSHANCqvU9RWrxRiXCV7KKVSw4cHi68Wn",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "4073431",
+        "outAmount": "99992416",
+        "contextSlot": 457412489,
+        "error": null,
+        "priceImpactPct": "0.0005931493640693411489930008",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-7584"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 1000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "40732484",
+        "contextSlot": 457412490,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "40732484",
+        "outAmount": "999693850",
+        "contextSlot": 457412490,
+        "error": null,
+        "priceImpactPct": "0.0007785480377950418123287535",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "Ce8WKGKeNPrtk85inFtkpskekaNibZiogSZBrcP7yhTN",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-306150"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 1000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "40730900",
+        "contextSlot": 457412491,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "AfaA4CE8C2DWSHANCqvU9RWrxRiXCV7KKVSw4cHi68Wn",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "40730900",
+        "outAmount": "999805296",
+        "contextSlot": 457412492,
+        "error": null,
+        "priceImpactPct": "0.0006282912524750160457862667",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-194704"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 10000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "407236890",
+        "contextSlot": 457412493,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "407236890",
+        "outAmount": "9994242563",
+        "contextSlot": 457412494,
+        "error": null,
+        "priceImpactPct": "0.0008322730160457744560652916",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "Ce8WKGKeNPrtk85inFtkpskekaNibZiogSZBrcP7yhTN",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-5757437"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 10000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "407281810",
+        "contextSlot": 457412494,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "Ce8WKGKeNPrtk85inFtkpskekaNibZiogSZBrcP7yhTN",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "407281810",
+        "outAmount": "9993313359",
+        "contextSlot": 457412495,
+        "error": null,
+        "priceImpactPct": "0.0010353597097298591794055443",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-6686641"
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 100000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 400,
+        "inAmount": "100000000000",
+        "outAmount": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "priceImpactPct": null,
+        "route": [],
+        "targetMatched": false
+      },
+      "second": null,
+      "valid": false,
+      "netUsdcRaw": null
+    },
+    {
+      "symbol": "ETH",
+      "usdc": 100000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000000",
+        "outAmount": "4061055306",
+        "contextSlot": 457412498,
+        "error": null,
+        "priceImpactPct": "0.0025221061118854070589916871",
+        "route": [
+          {
+            "label": "Perps",
+            "ammKey": "5BUwFW4nRbftYTDMbgxykoFWqWHPzahFSNAaaaJtVKsq",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "4061055306",
+        "outAmount": "99626315627",
+        "contextSlot": 457412498,
+        "error": null,
+        "priceImpactPct": "0.0012178090617924491102625903",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "5mHTXRU1bgBDo9vUoHKkCidbFRc2mLHSgTTdQyZBjMfg",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-373684373"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 100,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "121361",
+        "contextSlot": 457412499,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "121361",
+        "outAmount": "99985996",
+        "contextSlot": 457412499,
+        "error": null,
+        "priceImpactPct": "0.0013697555137666650187827544",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "2vPjbPRnz7V1SLGr56CmLLc7JspzfSfccWp3Th5KbrMJ",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-14004"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 100,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "121368",
+        "contextSlot": 457412500,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "9NkuAWB4LgCVFV77omEkJEjXqgV5PGupwMTu3B3pBRhc",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "121368",
+        "outAmount": "99995395",
+        "contextSlot": 457412501,
+        "error": null,
+        "priceImpactPct": "0.0013334833522994542586506161",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-4605"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 1000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "1213452",
+        "contextSlot": 457412502,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "1213452",
+        "outAmount": "999721526",
+        "contextSlot": 457412503,
+        "error": null,
+        "priceImpactPct": "0.0006102908815064825522022",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "2vPjbPRnz7V1SLGr56CmLLc7JspzfSfccWp3Th5KbrMJ",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-278474"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 1000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "1213696",
+        "contextSlot": 457412503,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "9NkuAWB4LgCVFV77omEkJEjXqgV5PGupwMTu3B3pBRhc",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "1213696",
+        "outAmount": "999936209",
+        "contextSlot": 457412503,
+        "error": null,
+        "priceImpactPct": "0.0005966384003074050443108369",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-63791"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 10000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "12135009",
+        "contextSlot": 457412505,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "12135009",
+        "outAmount": "9997605555",
+        "contextSlot": 457412506,
+        "error": null,
+        "priceImpactPct": "0.0006115479479889254374571272",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "2vPjbPRnz7V1SLGr56CmLLc7JspzfSfccWp3Th5KbrMJ",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-2394445"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 10000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "12136468",
+        "contextSlot": 457412506,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "9NkuAWB4LgCVFV77omEkJEjXqgV5PGupwMTu3B3pBRhc",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "12136468",
+        "outAmount": "9998186961",
+        "contextSlot": 457412507,
+        "error": null,
+        "priceImpactPct": "0.0006735786510563974911193901",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-1813039"
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 100000,
+      "order": "goonfi-first",
+      "first": {
+        "httpStatus": 400,
+        "inAmount": "100000000000",
+        "outAmount": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "priceImpactPct": null,
+        "route": [],
+        "targetMatched": false
+      },
+      "second": null,
+      "valid": false,
+      "netUsdcRaw": null
+    },
+    {
+      "symbol": "cbBTC",
+      "usdc": 100000,
+      "order": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000000",
+        "outAmount": "121343565",
+        "contextSlot": 457412510,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "9NkuAWB4LgCVFV77omEkJEjXqgV5PGupwMTu3B3pBRhc",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "121343565",
+        "outAmount": "99919173367",
+        "contextSlot": 457412511,
+        "error": null,
+        "priceImpactPct": "0.0019264970300902353035135752",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "8TxrtAxqA5PA2Y1d2pxzCz9SoDhjrBcYqNAQKVv6p443",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true
+      },
+      "valid": true,
+      "netUsdcRaw": "-80826633"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "scope": "Read-only source/binary baseline for Sanctum SPL stake-pool programs",
+  "observedDate": "2026-10-15",
+  "livePrograms": {
+    "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY": {
+      "pinnedFile": "sp12-current.so",
+      "sha256": "a8571c781982c72c2531f5957aab7d902df35cb3c1ed0d34829f03f9f0166770",
+      "pinnedBytesEqualFreshLiveDump": true,
+      "programDataAddress": "Cn5fegqLh8Fmvffisr4Wk3LmuaUgMMzTFfEuidpZFsvV",
+      "upgradeAuthority": "47SND7bGKvNXrqfP1bjsLCbwTgZhFBzAgmZ42QSkRScz",
+      "lastDeploySlot": 371704212,
+      "lastDeployTime": "2025-10-07T03:05:26Z"
+    },
+    "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn": {
+      "pinnedFile": "spmb-current.so",
+      "sha256": "a8571c781982c72c2531f5957aab7d902df35cb3c1ed0d34829f03f9f0166770",
+      "pinnedBytesEqualFreshLiveDump": true,
+      "programDataAddress": "HxBTMuB7cFBPVWVJjTi9iBF8MPd7mfY1QnrrWfLAySFd",
+      "upgradeAuthority": "47SND7bGKvNXrqfP1bjsLCbwTgZhFBzAgmZ42QSkRScz",
+      "lastDeploySlot": 371704232,
+      "lastDeployTime": "2025-10-07T03:05:34Z"
+    },
+    "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy": {
+      "pinnedFile": "spoo-current.so",
+      "sha256": "ec2dfefaa70d560754a0000f39bd2cabc192b895d36205b3c428f601b6e1d7e1",
+      "pinnedBytesEqualFreshLiveDump": true,
+      "programDataAddress": "EmiU8AQkB2sswTxVB6aCmsAJftoowZGGDXuytm6X65R3",
+      "upgradeAuthority": "dPpFfahSWhm5M2RB3nVaHsXfnh9ooz5bWtR3WeUguDH",
+      "lastDeploySlot": 429882117,
+      "lastDeployTime": "2026-06-30T12:53:10Z"
+    }
+  },
+  "binaryComparison": {
+    "sp12EqualsSpmbByteForByte": true,
+    "sp12EqualsSpooByteForByte": false,
+    "sp12SpooDifferingBytePositions": 209472,
+    "allFileLengths": 1080464,
+    "sp12AndSpmbEmbeddedMarkers": [
+      "stake-pool-v1.0.0",
+      "b7dd8fee93815b486fce98d3d43d1d0934980226",
+      "https://github.com/solana-labs/solana-program-library/tree/master/stake-pool/program",
+      "Instruction: Redelegate will not be enabled"
+    ],
+    "spooEmbeddedMarkers": [
+      "program@v2.0.3",
+      "https://github.com/solana-program/stake-pool",
+      "Instruction: Redelegate will not be enabled"
+    ]
+  },
+  "publishedSanctumBranches": {
+    "sanctum-spl-pool-deploy": "81f7e922a4cad340da8347a2ef244445d0cc3e26",
+    "sanctum-spl-multi-pool-deploy": "5fd31ede7629761d7c98b2358161cdc219e669fa",
+    "onlyOnChainSourceDifferenceBetweenBranchTips": "stake-pool/program/src/lib.rs declare_id: SP12 versus SPMB",
+    "sharedInstructionBlob": "4b8afd8e17bc7daab6392bd399232bb52113c746",
+    "sharedProcessorBlob": "6f5ef75feafd5c986e2699461ccae22cb2904b5b",
+    "sharedStateBlob": "b453b1b5a30374ab54d3107dab5e4c69dcbea814"
+  },
+  "exactSourceIdentity": {
+    "verified": false,
+    "reasons": [
+      "No release asset or reproducible-build manifest in the Sanctum repository matches SHA-256 a8571c781982c72c2531f5957aab7d902df35cb3c1ed0d34829f03f9f0166770.",
+      "The published branch tips are dated 2024-03-14 and 2024-03-30, while both live programs were last deployed on 2025-10-07.",
+      "The published branch processor executes Redelegate, while the live binary contains the later disabled-Redelegate log string.",
+      "The published branch security.txt leaves source_revision empty, while the live binary embeds b7dd8fee93815b486fce98d3d43d1d0934980226.",
+      "The live binary embeds upstream release/revision labels, but those labels do not identify the Sanctum fork commit or build toolchain."
+    ]
+  },
+  "instructionDiscriminants": {
+    "0": "Initialize",
+    "1": "AddValidatorToPool",
+    "2": "RemoveValidatorFromPool",
+    "3": "DecreaseValidatorStake",
+    "4": "IncreaseValidatorStake",
+    "5": "SetPreferredValidator",
+    "6": "UpdateValidatorListBalance",
+    "7": "UpdateStakePoolBalance",
+    "8": "CleanupRemovedValidatorEntries",
+    "9": "DepositStake",
+    "10": "WithdrawStake",
+    "11": "SetManager",
+    "12": "SetFee",
+    "13": "SetStaker",
+    "14": "DepositSol",
+    "15": "SetFundingAuthority",
+    "16": "WithdrawSol",
+    "17": "CreateTokenMetadata",
+    "18": "UpdateTokenMetadata",
+    "19": "IncreaseAdditionalValidatorStake",
+    "20": "DecreaseAdditionalValidatorStake",
+    "21": "DecreaseValidatorStakeWithReserve",
+    "22": "Redelegate (ABI retained; live binary reports it disabled)",
+    "23": "DepositStakeWithSlippage",
+    "24": "WithdrawStakeWithSlippage",
+    "25": "DepositSolWithSlippage",
+    "26": "WithdrawSolWithSlippage"
+  },
+  "successfulCurrentTransactionExamples": {
+    "DepositStake": {
+      "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+      "signature": "B2ANbP4pT8bHM2RBdjUzxdnpvggSTyFTfa45DLYyX5VbwL4GURF9UpvAr7qxM7sXrJSFXh6pBJLWGc6JogJFX6M",
+      "slot": 457196240,
+      "dataHex": "09",
+      "accountCount": 15
+    },
+    "WithdrawStake": {
+      "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+      "signature": "3c6JqN8XzvVf7RLxf3hcbaNrb3JVAFcoStMAHWT6HQAYhZCbmUDQMz9BSuSsABPdsp5zmcuMj5J9wrLsFRRGBRhH",
+      "slot": 457171201,
+      "dataHex": "0a0ed6123900000000",
+      "accountCount": 13
+    },
+    "UpdateValidatorListBalance": {
+      "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+      "signature": "47SjXVzyzpGRp7HYzDjq4teYcmCRHj4x7TKaFWjsGxAxiGGE143FL1UZfqe2FKj3zKKnR6wxrhc5JrwfWMzamRjD",
+      "slot": 457243651,
+      "dataPrefixHex": "06",
+      "observedPairAccountCount": 9
+    },
+    "UpdateStakePoolBalance": {
+      "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+      "signature": "2jcgmb2EFHDgN7j9uNLEhvY8sfvDAFubKDEbP3PRC3WmNqnnn8D13RbprZn5pECsqmBnk93CkbB491Fmi1QNgTcf",
+      "slot": 457348215,
+      "dataHex": "07",
+      "accountCount": 7
+    },
+    "IncreaseAdditionalValidatorStake": {
+      "program": "SPMBzsVUuoHA4Jm6KunbsotaahvVikZs1JyTW6iJvbn",
+      "signature": "2jypMLLzpXRR9XMjgnzkC7ScbYPwB7VJZzMfgtV96zCrRZe6HwRcp2YZpyHGaAM67vv41ezUpg7xiCReoQ75MdAK",
+      "slot": 457285362,
+      "dataPrefixHex": "13",
+      "accountCount": 14,
+      "stakerSignerObservedAtIndex": 1
+    }
+  },
+  "claimInstruction": {
+    "exists": false,
+    "basis": "No Claim variant in the 0-26 ABI; no case-insensitive whole-word claim occurrence in either published program source or any of the three current ELFs."
+  }
+}

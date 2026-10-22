@@ -1,0 +1,2715 @@
+{
+  "generatedAt": "2026-10-15T19:49:43.140Z",
+  "authorizationScope": "outsider-accessible unauthorized drain of the two named current ZBCN vaults",
+  "noMainnetTransactionsSubmitted": true,
+  "mainnet": {
+    "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+    "observationSlot": 457360082,
+    "programs": {
+      "zbc": {
+        "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+        "programObservationSlot": 457360099,
+        "programDataObservationSlot": 457360099,
+        "loaderOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "programDataAddress": "5WZptw8nX59K27Yir1N71dyzrYXVN3bjbmNZaz2eJGEm",
+        "lastDeployedSlot": "159738421",
+        "upgradeAuthority": "5aUDpuNNbAvme6hPi4o2vBbzHMrF7h3xB4kfKNMk6V8h",
+        "allocatedProgramDataBytes": 3102416,
+        "payloadBytes": 3102371,
+        "payloadSha256": "7fc64c7d1b701afb6e865d3b5fbef4a846a0dbbf57b849c1e1ce64d0ec30ed85",
+        "nonzeroPayloadBytes": 658985,
+        "nonzeroPayloadSha256": "d9691c1186887ee05c35f9e1cda8a78e081b9a7f52f074cea8d4ca530b8a784a"
+      },
+      "multisig": {
+        "programId": "b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr",
+        "programObservationSlot": 457360103,
+        "programDataObservationSlot": 457360103,
+        "loaderOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "programDataAddress": "BKg2qeJAHAUjHHHNm2LEHAZK1D8k9ifZvmJqmB88aAoZ",
+        "lastDeployedSlot": "248752486",
+        "upgradeAuthority": "5aUDpuNNbAvme6hPi4o2vBbzHMrF7h3xB4kfKNMk6V8h",
+        "allocatedProgramDataBytes": 1200045,
+        "payloadBytes": 1200000,
+        "payloadSha256": "5da49736551fcfc774ef014cb15ad8356aa4d8dc76a30e87e94a9cc097661754",
+        "nonzeroPayloadBytes": 237273,
+        "nonzeroPayloadSha256": "70b7d58cc4fbc7526dab3e5a2f7426596df66e7983b44a8ba598114139116bad"
+      }
+    },
+    "localBinaryArtifacts": {
+      "zbc": {
+        "path": "zbc-current.so",
+        "bytes": 3102371,
+        "sha256": "7fc64c7d1b701afb6e865d3b5fbef4a846a0dbbf57b849c1e1ce64d0ec30ed85"
+      },
+      "multisig": {
+        "path": "multisig-current.so",
+        "bytes": 1200000,
+        "sha256": "5da49736551fcfc774ef014cb15ad8356aa4d8dc76a30e87e94a9cc097661754",
+        "containsThresholdError": true
+      }
+    },
+    "idlEvidence": {
+      "package": "@zebec-protocol/stream@1.8.0",
+      "path": "zebec-idl-1.8.0.json",
+      "bytes": 28351,
+      "sha256": "5aeb6cddcce0d3b8f906d76ff0fc0f9bfcaee815f3b6ab31fcd5f2cb64cc3459",
+      "programIdMatches": true,
+      "sourceUrlEmbeddedInCurrentBinary": true,
+      "onChainIdlAddress": "J3ngNZMSk5N9by4KSsu3UXtqM6yMMqgXAYDJjt11y4fV",
+      "onChainIdlObservationSlot": 457360082,
+      "onChainIdlExists": false
+    },
+    "instructionSurface": {
+      "instructions": [
+        {
+          "name": "createFeeAccount",
+          "snakeCase": "create_fee_account",
+          "discriminatorHex": "4a3e7cbc73f91314",
+          "discriminatorBytes": [
+            74,
+            62,
+            124,
+            188,
+            115,
+            249,
+            19,
+            20
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "feeOwner"
+          ],
+          "args": [
+            {
+              "name": "feePercentage",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "withdrawFeesToken",
+          "snakeCase": "withdraw_fees_token",
+          "discriminatorHex": "a48d1a8af1c90be8",
+          "discriminatorBytes": [
+            164,
+            141,
+            26,
+            138,
+            241,
+            201,
+            11,
+            232
+          ],
+          "accountCount": 10,
+          "signerAccounts": [
+            "feeOwner"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "withdrawFeesSol",
+          "snakeCase": "withdraw_fees_sol",
+          "discriminatorHex": "31488dd3ab77add3",
+          "discriminatorBytes": [
+            49,
+            72,
+            141,
+            211,
+            171,
+            119,
+            173,
+            211
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "feeOwner"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "updateFees",
+          "snakeCase": "update_fees",
+          "discriminatorHex": "e11b0d064554acbf",
+          "discriminatorBytes": [
+            225,
+            27,
+            13,
+            6,
+            69,
+            84,
+            172,
+            191
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "feeOwner"
+          ],
+          "args": [
+            {
+              "name": "feePercentage",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "depositSol",
+          "snakeCase": "deposit_sol",
+          "discriminatorHex": "6c514e757d9b38c8",
+          "discriminatorBytes": [
+            108,
+            81,
+            78,
+            117,
+            125,
+            155,
+            56,
+            200
+          ],
+          "accountCount": 3,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "nativeStream",
+          "snakeCase": "native_stream",
+          "discriminatorHex": "352c484b3580a7e3",
+          "discriminatorBytes": [
+            53,
+            44,
+            72,
+            75,
+            53,
+            128,
+            167,
+            227
+          ],
+          "accountCount": 8,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "startTime",
+              "type": "u64"
+            },
+            {
+              "name": "endTime",
+              "type": "u64"
+            },
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "canCancel",
+              "type": "bool"
+            },
+            {
+              "name": "canUpdate",
+              "type": "bool"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "nativeStreamUpdate",
+          "snakeCase": "native_stream_update",
+          "discriminatorHex": "51fd6ca1455eb65b",
+          "discriminatorBytes": [
+            81,
+            253,
+            108,
+            161,
+            69,
+            94,
+            182,
+            91
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "startTime",
+              "type": "u64"
+            },
+            {
+              "name": "endTime",
+              "type": "u64"
+            },
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "withdrawStream",
+          "snakeCase": "withdraw_stream",
+          "discriminatorHex": "d3155a5cb9d6589d",
+          "discriminatorBytes": [
+            211,
+            21,
+            90,
+            92,
+            185,
+            214,
+            88,
+            157
+          ],
+          "accountCount": 9,
+          "signerAccounts": [
+            "receiver"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "pauseStream",
+          "snakeCase": "pause_stream",
+          "discriminatorHex": "f51f76e5006ca652",
+          "discriminatorBytes": [
+            245,
+            31,
+            118,
+            229,
+            0,
+            108,
+            166,
+            82
+          ],
+          "accountCount": 4,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "cancelStream",
+          "snakeCase": "cancel_stream",
+          "discriminatorHex": "dadd2619b1cfbc5b",
+          "discriminatorBytes": [
+            218,
+            221,
+            38,
+            25,
+            177,
+            207,
+            188,
+            91
+          ],
+          "accountCount": 9,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "instantNativeTransfer",
+          "snakeCase": "instant_native_transfer",
+          "discriminatorHex": "ea0d384ed53e509f",
+          "discriminatorBytes": [
+            234,
+            13,
+            56,
+            78,
+            213,
+            62,
+            80,
+            159
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "nativeWithdrawal",
+          "snakeCase": "native_withdrawal",
+          "discriminatorHex": "2a9e431635c36664",
+          "discriminatorBytes": [
+            42,
+            158,
+            67,
+            22,
+            53,
+            195,
+            102,
+            100
+          ],
+          "accountCount": 4,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "sendSolDirectly",
+          "snakeCase": "send_sol_directly",
+          "discriminatorHex": "702f0f09a99088db",
+          "discriminatorBytes": [
+            112,
+            47,
+            15,
+            9,
+            169,
+            144,
+            136,
+            219
+          ],
+          "accountCount": 3,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "depositToken",
+          "snakeCase": "deposit_token",
+          "discriminatorHex": "0b9c60da27a3b413",
+          "discriminatorBytes": [
+            11,
+            156,
+            96,
+            218,
+            39,
+            163,
+            180,
+            19
+          ],
+          "accountCount": 9,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "tokenStream",
+          "snakeCase": "token_stream",
+          "discriminatorHex": "6ca33b85add0e680",
+          "discriminatorBytes": [
+            108,
+            163,
+            59,
+            133,
+            173,
+            208,
+            230,
+            128
+          ],
+          "accountCount": 11,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "startTime",
+              "type": "u64"
+            },
+            {
+              "name": "endTime",
+              "type": "u64"
+            },
+            {
+              "name": "amount",
+              "type": "u64"
+            },
+            {
+              "name": "canCancel",
+              "type": "bool"
+            },
+            {
+              "name": "canUpdate",
+              "type": "bool"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "tokenStreamUpdate",
+          "snakeCase": "token_stream_update",
+          "discriminatorHex": "29f43931ae20d984",
+          "discriminatorBytes": [
+            41,
+            244,
+            57,
+            49,
+            174,
+            32,
+            217,
+            132
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "startTime",
+              "type": "u64"
+            },
+            {
+              "name": "endTime",
+              "type": "u64"
+            },
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "withdrawTokenStream",
+          "snakeCase": "withdraw_token_stream",
+          "discriminatorHex": "b94a2faf47c43bc4",
+          "discriminatorBytes": [
+            185,
+            74,
+            47,
+            175,
+            71,
+            196,
+            59,
+            196
+          ],
+          "accountCount": 16,
+          "signerAccounts": [
+            "destAccount"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "pauseResumeTokenStream",
+          "snakeCase": "pause_resume_token_stream",
+          "discriminatorHex": "6ba161510cc27e04",
+          "discriminatorBytes": [
+            107,
+            161,
+            97,
+            81,
+            12,
+            194,
+            126,
+            4
+          ],
+          "accountCount": 5,
+          "signerAccounts": [
+            "sender"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "cancelTokenStream",
+          "snakeCase": "cancel_token_stream",
+          "discriminatorHex": "3a0e9f3e8cabe606",
+          "discriminatorBytes": [
+            58,
+            14,
+            159,
+            62,
+            140,
+            171,
+            230,
+            6
+          ],
+          "accountCount": 16,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "instantTokenTransfer",
+          "snakeCase": "instant_token_transfer",
+          "discriminatorHex": "1f1d4c4b30e0fefb",
+          "discriminatorBytes": [
+            31,
+            29,
+            76,
+            75,
+            48,
+            224,
+            254,
+            251
+          ],
+          "accountCount": 11,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "tokenWithdrawal",
+          "snakeCase": "token_withdrawal",
+          "discriminatorHex": "0b4f357132a43a39",
+          "discriminatorBytes": [
+            11,
+            79,
+            53,
+            113,
+            50,
+            164,
+            58,
+            57
+          ],
+          "accountCount": 10,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        },
+        {
+          "name": "sendTokenDirectly",
+          "snakeCase": "send_token_directly",
+          "discriminatorHex": "3ff3b1cd51adc2b2",
+          "discriminatorBytes": [
+            63,
+            243,
+            177,
+            205,
+            81,
+            173,
+            194,
+            178
+          ],
+          "accountCount": 9,
+          "signerAccounts": [
+            "sourceAccount"
+          ],
+          "args": [
+            {
+              "name": "amount",
+              "type": "u64"
+            }
+          ],
+          "currentBinaryContainsInstructionLog": true
+        }
+      ],
+      "instructionCount": 22,
+      "zeroSignerInstructions": [],
+      "allIdlInstructionsPresentInCurrentBinary": true,
+      "embeddedAnchorIdlDispatchers": [
+        "IdlCreateAccount",
+        "IdlCreateBuffer",
+        "IdlWrite",
+        "IdlSetAuthority",
+        "IdlSetBuffer"
+      ]
+    },
+    "multisigInstructionSurface": {
+      "applicationInstructions": [
+        "CreateMultisig",
+        "CreateTransaction",
+        "Approve",
+        "SetOwnersAndChangeThreshold",
+        "SetOwners",
+        "ChangeThreshold",
+        "ExecuteTransaction"
+      ],
+      "embeddedAnchorIdlDispatchers": [
+        "IdlCreateAccount",
+        "IdlCreateBuffer",
+        "IdlWrite",
+        "IdlSetAuthority",
+        "IdlSetBuffer"
+      ]
+    },
+    "vaults": [
+      {
+        "vault": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+        "mint": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+        "authority": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+        "rawAmount": "7000217587086200",
+        "uiAmountString": "7000217587.0862",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "isAssociatedTokenAccountOfAuthority": true,
+        "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+        "multisigSignerDerived": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+        "multisigSignerBump": 255,
+        "authorityIsMultisigSigner": true,
+        "zbcCustodyPdaForAuthority": "9m4SS85ndU8kD7pfyj1eY7WF8GmMPK6KFaa43NwYThx3",
+        "zbcCustodyAtaForAuthority": "ChCZHh5LsYYqayjrFCE8kcGsdpjiRfKUac8WVWoSekrr",
+        "currentVaultIsZbcCustodyAta": false,
+        "outflowSignature": "bKKdrJV7kBSTozJiVJGCoHTLp27JSsA1ex1mCY7ytPfmUgNquLeH5mWGpLKZsT3zoNkQ8Tx3BJUWhXs8NBXFbhU",
+        "outflowSlot": 453127523,
+        "historicalMultisigTransaction": "BDZGaijXeKxq2zrrr4CQXUNJDN8DmJvWQS1ybRGncqqh",
+        "historicalTargetProgram": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+        "historicalInstruction": "sendTokenDirectly",
+        "historicalTransferRaw": "318000000000000",
+        "historicalApprovalCount": 3,
+        "historicalDidExecute": true
+      },
+      {
+        "vault": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+        "mint": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+        "authority": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+        "rawAmount": "5500000100000000",
+        "uiAmountString": "5500000100",
+        "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "isAssociatedTokenAccountOfAuthority": true,
+        "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+        "multisigSignerDerived": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+        "multisigSignerBump": 253,
+        "authorityIsMultisigSigner": true,
+        "zbcCustodyPdaForAuthority": "46mSFKvQ8xf6xkCM9vur1LrFzEV2kWCftex4bqgS62Ec",
+        "zbcCustodyAtaForAuthority": "7NForFxNSSmyzD5oW2zhKJN2NHXxtEi6nzpgvqTKg7Fx",
+        "currentVaultIsZbcCustodyAta": false,
+        "outflowSignature": "3waNh14q2e839J9HuVU9CUupqUQEw9y7fHUDGCHSHKjuKnkdE2DxRqyv2ZKdCdWyHosapJWJkeE7ycUXRig9y67V",
+        "outflowSlot": 440722549,
+        "historicalMultisigTransaction": "7DjzTwgsDqFkQzty9dkm3U7yZfoSrqLYe73ZJW5c4ubD",
+        "historicalTargetProgram": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+        "historicalInstruction": "sendTokenDirectly",
+        "historicalTransferRaw": "500000000000000",
+        "historicalApprovalCount": 3,
+        "historicalDidExecute": true
+      }
+    ],
+    "scopedVaultTotalRaw": "12500217687086200",
+    "scopedVaultTotalUi": "12500217687.0862",
+    "multisigs": [
+      {
+        "address": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+        "owners": [
+          "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+          "G82tVZ6eu2YRPfGFFnPYs3qLz8HtAQXnsnmNKpqfMnx7",
+          "EsDV3m3xUZ7g8QKa1kFdbZT18nNz8ddGJRcTK84WDQ7k",
+          "6enQZWHkQ5ayxyFbJXgrNdUwDZpcUon98SNCuVNSRbd2"
+        ],
+        "threshold": 3,
+        "nonce": 255,
+        "ownerSetSeqno": 0,
+        "derivedSigner": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+        "signerMatchesVaultAuthority": true
+      },
+      {
+        "address": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+        "owners": [
+          "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+          "6enQZWHkQ5ayxyFbJXgrNdUwDZpcUon98SNCuVNSRbd2",
+          "G82tVZ6eu2YRPfGFFnPYs3qLz8HtAQXnsnmNKpqfMnx7",
+          "EsDV3m3xUZ7g8QKa1kFdbZT18nNz8ddGJRcTK84WDQ7k"
+        ],
+        "threshold": 3,
+        "nonce": 253,
+        "ownerSetSeqno": 0,
+        "derivedSigner": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+        "signerMatchesVaultAuthority": true
+      }
+    ],
+    "historicalExecutedTransactions": [
+      {
+        "address": "BDZGaijXeKxq2zrrr4CQXUNJDN8DmJvWQS1ybRGncqqh",
+        "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+        "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+        "accounts": [
+          {
+            "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+            "isSigner": true,
+            "isWritable": true
+          },
+          {
+            "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+            "isSigner": false,
+            "isWritable": true
+          },
+          {
+            "pubkey": "11111111111111111111111111111111",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "SysvarRent111111111111111111111111111111111",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+            "isSigner": false,
+            "isWritable": true
+          },
+          {
+            "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+            "isSigner": false,
+            "isWritable": true
+          }
+        ],
+        "dataHex": "3ff3b1cd51adc2b200e0092538210100",
+        "discriminatorHex": "3ff3b1cd51adc2b2",
+        "amountRaw": "318000000000000",
+        "signers": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "approvalCount": 3,
+        "didExecute": true,
+        "ownerSetSeqno": 0
+      },
+      {
+        "address": "7DjzTwgsDqFkQzty9dkm3U7yZfoSrqLYe73ZJW5c4ubD",
+        "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+        "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+        "accounts": [
+          {
+            "pubkey": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+            "isSigner": true,
+            "isWritable": true
+          },
+          {
+            "pubkey": "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+            "isSigner": false,
+            "isWritable": true
+          },
+          {
+            "pubkey": "11111111111111111111111111111111",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "SysvarRent111111111111111111111111111111111",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+            "isSigner": false,
+            "isWritable": false
+          },
+          {
+            "pubkey": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+            "isSigner": false,
+            "isWritable": true
+          },
+          {
+            "pubkey": "9CL7dhZCEVpaFx1yE4Fbj83dwtssWJ8KDSqFBjQBmBQk",
+            "isSigner": false,
+            "isWritable": true
+          }
+        ],
+        "dataHex": "3ff3b1cd51adc2b200406352bfc60100",
+        "discriminatorHex": "3ff3b1cd51adc2b2",
+        "amountRaw": "500000000000000",
+        "signers": [
+          true,
+          true,
+          true,
+          false
+        ],
+        "approvalCount": 3,
+        "didExecute": true,
+        "ownerSetSeqno": 0
+      }
+    ],
+    "transactionInventory": {
+      "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG": {
+        "observationSlot": 457360082,
+        "total": 62,
+        "executed": 49,
+        "openCount": 13,
+        "openThresholdMet": 2,
+        "openThresholdMetZbcn": 0,
+        "open": [
+          {
+            "address": "2e6ji5xrWrr7TKrRYq47M82FHPm4ahxkovUrgVRNYLNA",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b200d61c37ef7d1503",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "222222223000000000",
+            "signers": [
+              true,
+              true,
+              false,
+              true
+            ],
+            "approvalCount": 3,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": true,
+            "referencesZbcnMint": false,
+            "referencesScopedVault": false
+          },
+          {
+            "address": "2uqwWWiiPEwU8UQF1WaRPm15rykWGCXe1i43grmJTffi",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080e03779c31100",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "5000000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "3QtZoPtgfowdGJE949G3svRJcbbqDTgAGKGnQgWFwPhp",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080e03779c31100",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "5000000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "47fxzqbBihxKMq9Nt3rzoP5DCbU2RtfNDdvaSS8NdqoN",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "5Z4BL6pL4xbKXdR73seMUMJPWRuzUEKPnXrAM3T8cxnJ",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "5obacTbUceVyV6AyJe4GPMaXDt5gLiibJ7tb9mtymvdA",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "96nhWmhaSMeB7LV6WpJ7kYNEybvrvW4SwxfzbfduECAX",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "AHKaQLssMdotwnur24CEdgPYJoV7dM5sUSexPuF3wyd1",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b2000004bfc91b8e00",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "40000000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": false,
+            "referencesScopedVault": false
+          },
+          {
+            "address": "BhVdjWo7uZps9YPQ4Myzw15HonWEuojW9AVPYwqjRN95",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080e03779c31100",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "5000000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "EAtGHTZk27wqtvkUJ3Y3m99ABtBqC1tWQo5cuLp2FMFh",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080c6a47e8d0300",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "1000000000000000",
+            "signers": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "approvalCount": 2,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "GErBa9mSzjjP46B8CnAtYrdxYGKfPGsTJuB26aimfFzB",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "GHpVVvWhZvff6d5YHU6qvQDgVM69ojVZWChsG94YEdhp",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b200d61c37ef7d1503",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "222222223000000000",
+            "signers": [
+              true,
+              true,
+              false,
+              true
+            ],
+            "approvalCount": 3,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": true,
+            "referencesZbcnMint": false,
+            "referencesScopedVault": false
+          },
+          {
+            "address": "JAatbdRjwYLhnHPAZsYekGwVZBi2FKTiZ7YUtz8keQU1",
+            "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "FsvtVi1a5BgJtxKBBZTmkBeqoMgYZ3KohVD1i6Be27p4",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080f420e6b50000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "200000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          }
+        ]
+      },
+      "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt": {
+        "observationSlot": 457360084,
+        "total": 6,
+        "executed": 2,
+        "openCount": 4,
+        "openThresholdMet": 0,
+        "openThresholdMetZbcn": 0,
+        "open": [
+          {
+            "address": "2ubj57WsKxx48EdyJ5deXFKS4XUTB7sq88zTPBM2T6Mk",
+            "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9CL7dhZCEVpaFx1yE4Fbj83dwtssWJ8KDSqFBjQBmBQk",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20040396b3a350100",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "340000000000000",
+            "signers": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "approvalCount": 2,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "53FzoxwWh1UdZTnBHas1CkmvXQrhmFXhDgQp95CP5RYC",
+            "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9CL7dhZCEVpaFx1yE4Fbj83dwtssWJ8KDSqFBjQBmBQk",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080ca3961240000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "40000000000000",
+            "signers": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "approvalCount": 1,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "CoTRJ5p3iio3L8LBcvF5Vgp9pdsiA3z8uE74QgiNE7Pn",
+            "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9CL7dhZCEVpaFx1yE4Fbj83dwtssWJ8KDSqFBjQBmBQk",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b20080c6a47e8d0300",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "1000000000000000",
+            "signers": [
+              true,
+              false,
+              true,
+              false
+            ],
+            "approvalCount": 2,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          },
+          {
+            "address": "FP1BswuVkxZuXn4eQXtSjV5VKLMLW42o8DfvsFW7jAH6",
+            "multisig": "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+            "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+            "accounts": [
+              {
+                "pubkey": "3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+                "isSigner": true,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9Sq2nZ481aiEkoDB9gavcfD6v7pr4LEcPnUdky4TEine",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "11111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "SysvarRent111111111111111111111111111111111",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+                "isSigner": false,
+                "isWritable": false
+              },
+              {
+                "pubkey": "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+                "isSigner": false,
+                "isWritable": true
+              },
+              {
+                "pubkey": "9CL7dhZCEVpaFx1yE4Fbj83dwtssWJ8KDSqFBjQBmBQk",
+                "isSigner": false,
+                "isWritable": true
+              }
+            ],
+            "dataHex": "3ff3b1cd51adc2b200e1f50500000000",
+            "discriminatorHex": "3ff3b1cd51adc2b2",
+            "amountRaw": "100000000",
+            "signers": [
+              true,
+              true,
+              false,
+              false
+            ],
+            "approvalCount": 2,
+            "didExecute": false,
+            "ownerSetSeqno": 0,
+            "instructionName": "sendTokenDirectly",
+            "threshold": 3,
+            "thresholdMet": false,
+            "referencesZbcnMint": true,
+            "referencesScopedVault": true
+          }
+        ]
+      }
+    },
+    "thresholdMetOpenEvidence": {
+      "observationSlot": 457360084,
+      "transactions": [
+        {
+          "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+          "transaction": "2e6ji5xrWrr7TKrRYq47M82FHPm4ahxkovUrgVRNYLNA",
+          "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+          "sourceTokenAccount": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+          "destinationTokenAccount": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+          "amountRaw": "222222223000000000",
+          "approvalCount": 3,
+          "threshold": 3,
+          "referencesZbcnMint": false,
+          "referencesScopedVault": false,
+          "currentSourceToken": {
+            "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+            "authority": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+            "rawAmount": "0",
+            "state": 1,
+            "delegated": false,
+            "closeAuthorityPresent": false
+          },
+          "currentDestinationToken": {
+            "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+            "authority": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+            "rawAmount": "0",
+            "state": 1,
+            "delegated": false,
+            "closeAuthorityPresent": false
+          }
+        },
+        {
+          "multisig": "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+          "transaction": "GHpVVvWhZvff6d5YHU6qvQDgVM69ojVZWChsG94YEdhp",
+          "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+          "sourceTokenAccount": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+          "destinationTokenAccount": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+          "amountRaw": "222222223000000000",
+          "approvalCount": 3,
+          "threshold": 3,
+          "referencesZbcnMint": false,
+          "referencesScopedVault": false,
+          "currentSourceToken": {
+            "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+            "authority": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+            "rawAmount": "0",
+            "state": 1,
+            "delegated": false,
+            "closeAuthorityPresent": false
+          },
+          "currentDestinationToken": {
+            "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+            "authority": "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+            "rawAmount": "0",
+            "state": 1,
+            "delegated": false,
+            "closeAuthorityPresent": false
+          }
+        }
+      ]
+    },
+    "sameMintFlashLiquidity": {
+      "klend": {
+        "observationSlot": 457360084,
+        "reserves": []
+      },
+      "project0Marginfi": {
+        "observationSlot": 457360082,
+        "programId": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+        "bank": "47Naxnhy3YnT4Mbpb1QnvPHZzuwW5ruUXBRiK5584yBQ",
+        "bankOwner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+        "liquidityVault": "GHBqxtyV52WM53siZEJSFMxgU97NpjVtT8bMWMSCcZDT",
+        "liquidityVaultToken": {
+          "mint": "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+          "authority": "5wUQ8FRCBQ4yGC4diDbPbNncvrucyZRukRM8cTDUJbtV",
+          "rawAmount": "0",
+          "state": 1,
+          "delegated": false,
+          "closeAuthorityPresent": false
+        }
+      }
+    }
+  },
+  "localFork": {
+    "endpoint": "localhost Surfpool fork (URL intentionally not embedded)",
+    "upstream": "Solana mainnet-beta read-only datasource (credential intentionally not embedded)",
+    "localSlotBefore": 457357884,
+    "localSlotAfter": 457357887,
+    "mainnetAccountsClonedWithoutModification": [
+      "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+      "b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr",
+      "ZBCNpuD7YMXzTHB2fhGkGi78MNsHGLRXUhRewNRm9RU",
+      "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB",
+      "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG",
+      "BDZGaijXeKxq2zrrr4CQXUNJDN8DmJvWQS1ybRGncqqh",
+      "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3",
+      "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt",
+      "7DjzTwgsDqFkQzty9dkm3U7yZfoSrqLYe73ZJW5c4ubD"
+    ],
+    "syntheticFixtures": {
+      "purpose": "positive authorization control only; no value claim",
+      "attacker": "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ",
+      "receiver": "3C1NG8KkmXJe21W6NQNVicqzPz8Aw9JH7g1AVyJTJrU9",
+      "attackerAta": "F1SY1ZN3Q6b2QydZFp4Mrg3q2eQqeeDiQ2F6nnTVPb3Y",
+      "receiverAta": "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o",
+      "syntheticAttackerStartingRaw": "100"
+    },
+    "cases": [
+      {
+        "label": "positive_control_attacker_moves_own_synthetic_zbcn",
+        "err": null,
+        "contextSlot": 457357885,
+        "unitsConsumed": 16501,
+        "loadedAccountsDataSize": 105554,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 463,
+          "addresses": 10,
+          "writableAddresses": 4,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "b7a417794c07330a6c8cdedbbedbf86097ed017f9b9341270454336274156c1c",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "F1SY1ZN3Q6b2QydZFp4Mrg3q2eQqeeDiQ2F6nnTVPb3Y": {
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "lamports": 2039280,
+            "dataLength": 165,
+            "rawTokenAmount": "99",
+            "dataSha256": "748c30dc5746c6644077d99f90f5062dea8525608572f1458b867d94d9d91c53"
+          },
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": {
+            "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "lamports": 2039280,
+            "dataLength": 165,
+            "rawTokenAmount": "1",
+            "dataSha256": "dbebdcf2ed6689fc87f5ca38675c2f66d01ee6528c0f7327f7c72f43a86b2693"
+          }
+        },
+        "logs": [
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [1]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1384304 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 16501 of 1400000 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T success"
+        ],
+        "innerInstructions": [
+          {
+            "index": 0,
+            "instructions": [
+              {
+                "program": "spl-token",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "parsed": {
+                  "type": "transfer",
+                  "info": {
+                    "source": "F1SY1ZN3Q6b2QydZFp4Mrg3q2eQqeeDiQ2F6nnTVPb3Y",
+                    "destination": "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o",
+                    "amount": "1",
+                    "authority": "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+                  }
+                },
+                "stackHeight": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "vault_1_outsider_signer_substituted_for_victim_authority",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 2015
+            }
+          ]
+        },
+        "contextSlot": 457357885,
+        "unitsConsumed": 14358,
+        "loadedAccountsDataSize": 105554,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 463,
+          "addresses": 10,
+          "writableAddresses": 4,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "715733e139206849c632d2843421c229ff055f92b6fc11166de9f50e3edc927c",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [1]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program log: AnchorError caused by account: source_account_token_account. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+          "Program log: Left:",
+          "Program log: H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+          "Program log: Right:",
+          "Program log: BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 14358 of 1400000 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T failed: custom program error: 0x7df"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_1_victim_authority_passed_without_signature",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "contextSlot": 457357886,
+        "unitsConsumed": 4480,
+        "loadedAccountsDataSize": 105554,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 495,
+          "addresses": 11,
+          "writableAddresses": 5,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "f9c522a770ec7111d98609baf96356a177a578d045c901abeb3a8165ce5e9f0a",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [1]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program log: AnchorError caused by account: source_account. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 4480 of 1400000 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T failed: custom program error: 0xbc2"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_1_outsider_cannot_approve_multisig_transaction",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6000
+            }
+          ]
+        },
+        "contextSlot": 457357886,
+        "unitsConsumed": 6689,
+        "loadedAccountsDataSize": 655,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 257,
+          "addresses": 4,
+          "writableAddresses": 2,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "f780c548caaefcd590d6be49035840e8de63dec3aac872bbbf95a1ff1e6c3203",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "2uqwWWiiPEwU8UQF1WaRPm15rykWGCXe1i43grmJTffi": null,
+          "EoqY5nPYoL7zH1hWSh1T5Nsbq5q6hhtztU6JStDeVgjG": null
+        },
+        "logs": [
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr invoke [1]",
+          "Program log: Instruction: Approve",
+          "Program log: AnchorError occurred. Error Code: InvalidOwner. Error Number: 6000. Error Message: The given owner is not part of this multisig..",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr consumed 6689 of 1400000 compute units",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr failed: custom program error: 0x1770"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_1_permissionless_execute_still_enforces_threshold",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6002
+            }
+          ]
+        },
+        "contextSlot": 457357886,
+        "unitsConsumed": 10060,
+        "loadedAccountsDataSize": 106209,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 587,
+          "addresses": 14,
+          "writableAddresses": 6,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "de9d7f8b81070943c6b3894d5a9dbef72b202c04600c3ddb1b721b7fe21a68e9",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "2uqwWWiiPEwU8UQF1WaRPm15rykWGCXe1i43grmJTffi": null,
+          "5L4EM1G2uTCrrXgvbwtQqrJkbU9qNDcpLbZ5yKCsb4yB": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr invoke [1]",
+          "Program log: Instruction: ExecuteTransaction",
+          "Program log: AnchorError occurred. Error Code: NotEnoughSigners. Error Number: 6002. Error Message: Not enough owners signed this transaction..",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr consumed 10060 of 1400000 compute units",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr failed: custom program error: 0x1772"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_2_outsider_signer_substituted_for_victim_authority",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 2015
+            }
+          ]
+        },
+        "contextSlot": 457357887,
+        "unitsConsumed": 14358,
+        "loadedAccountsDataSize": 105554,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 463,
+          "addresses": 10,
+          "writableAddresses": 4,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "81346c6766fa72a831f7cf5b716797984520fbdb8c8cab16db5c1cf81320c0d6",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [1]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program log: AnchorError caused by account: source_account_token_account. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+          "Program log: Left:",
+          "Program log: 3J7n5Usmei8BqgUHan5xuBiJkAx6M1AQQhGwbKiVdQ17",
+          "Program log: Right:",
+          "Program log: BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 14358 of 1400000 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T failed: custom program error: 0x7df"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_2_victim_authority_passed_without_signature",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "contextSlot": 457357887,
+        "unitsConsumed": 4480,
+        "loadedAccountsDataSize": 105554,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 495,
+          "addresses": 11,
+          "writableAddresses": 5,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "e7f1a35a91a55b0282a46b634a3bceeebfbbd42414a2e1ecec282e4b8c573d69",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [1]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program log: AnchorError caused by account: source_account. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 4480 of 1400000 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T failed: custom program error: 0xbc2"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_2_outsider_cannot_approve_multisig_transaction",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6000
+            }
+          ]
+        },
+        "contextSlot": 457357887,
+        "unitsConsumed": 6688,
+        "loadedAccountsDataSize": 655,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 257,
+          "addresses": 4,
+          "writableAddresses": 2,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "748fe50371fc2b15c7079577377bccfb6d1c58492368f465a6f918b9bceaa041",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "2ubj57WsKxx48EdyJ5deXFKS4XUTB7sq88zTPBM2T6Mk": null,
+          "GiiWgFNnkWbAGnKiDt7ohny1tTtb2pzxpJAXVZv3T1pt": null
+        },
+        "logs": [
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr invoke [1]",
+          "Program log: Instruction: Approve",
+          "Program log: AnchorError occurred. Error Code: InvalidOwner. Error Number: 6000. Error Message: The given owner is not part of this multisig..",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr consumed 6688 of 1400000 compute units",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr failed: custom program error: 0x1770"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "vault_2_permissionless_execute_still_enforces_threshold",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6002
+            }
+          ]
+        },
+        "contextSlot": 457357887,
+        "unitsConsumed": 10057,
+        "loadedAccountsDataSize": 106209,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 587,
+          "addresses": 14,
+          "writableAddresses": 6,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "1e862c9182f8d9dc772bb287845681d3818471e6e59c3edbd38799378bbd0b44",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "2ubj57WsKxx48EdyJ5deXFKS4XUTB7sq88zTPBM2T6Mk": null,
+          "CZMwajZAkdtPtDC3EfPokkzWmmoQo6jmZJPzDXG3DHR3": null,
+          "6zsGVr8JDHU5rW1jRghAj11duHcK4NYZwwdDpHnq3K1o": null
+        },
+        "logs": [
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr invoke [1]",
+          "Program log: Instruction: ExecuteTransaction",
+          "Program log: AnchorError occurred. Error Code: NotEnoughSigners. Error Number: 6002. Error Message: Not enough owners signed this transaction..",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr consumed 10057 of 1400000 compute units",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr failed: custom program error: 0x1772"
+        ],
+        "innerInstructions": []
+      },
+      {
+        "label": "positive_control_permissionless_execution_of_fixed_threshold_approved_transaction",
+        "err": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "contextSlot": 457357887,
+        "unitsConsumed": 31613,
+        "loadedAccountsDataSize": 106209,
+        "wire": {
+          "transactionVersion": 1,
+          "versionPrefixHex": "81",
+          "configBitsHex": "0c000000",
+          "bytes": 587,
+          "addresses": 14,
+          "writableAddresses": 6,
+          "instructions": 1,
+          "requiredSignatures": 1,
+          "signerOrder": [
+            "BSHLGbD6fKmwtW7Gb31Us3HwGqX9f52ZX4gbB9D4GzhJ"
+          ],
+          "sha256": "ebb6a8175047e12fe8491b9e21b8382a85c706bbed158cfc844174579a4d0e37",
+          "under4096Bytes": true,
+          "atMost64Addresses": true
+        },
+        "watched": {
+          "2e6ji5xrWrr7TKrRYq47M82FHPm4ahxkovUrgVRNYLNA": null,
+          "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B": null,
+          "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY": null
+        },
+        "logs": [
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr invoke [1]",
+          "Program log: Instruction: ExecuteTransaction",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T invoke [2]",
+          "Program log: Instruction: SendTokenDirectly",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+          "Program log: Error: insufficient funds",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 181 of 1368568 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T consumed 17377 of 1385764 compute units",
+          "Program zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T failed: custom program error: 0x1",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr consumed 31613 of 1400000 compute units",
+          "Program b6ZPysThkApNx2YDiGsPUiYPE7Ub1kTRdCWp7gBkzbr failed: custom program error: 0x1"
+        ],
+        "innerInstructions": [
+          {
+            "index": 0,
+            "instructions": [
+              {
+                "programId": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+                "accounts": [
+                  "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR",
+                  "FNuqKqgJLzJExhZQo1r8ZjQDQRp7hJX2j4bvE2hjcgtM",
+                  "11111111111111111111111111111111",
+                  "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                  "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+                  "SysvarRent111111111111111111111111111111111",
+                  "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+                  "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+                  "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY"
+                ],
+                "data": "8u2hcz7WRBfYPKo9YXbG6v",
+                "stackHeight": 2
+              },
+              {
+                "program": "spl-token",
+                "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "parsed": {
+                  "type": "transfer",
+                  "info": {
+                    "source": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+                    "destination": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+                    "amount": "222222223000000000",
+                    "authority": "H8Hr964ApEP3ie1rwRTT7wkSrgvUqJQb8oNAKspkDDfR"
+                  }
+                },
+                "stackHeight": 3
+              }
+            ]
+          }
+        ],
+        "fixedInstruction": {
+          "transaction": "2e6ji5xrWrr7TKrRYq47M82FHPm4ahxkovUrgVRNYLNA",
+          "targetProgram": "zbcKGdAmXfthXY3rEPBzexVByT2cqRqCZb9NwWdGQ2T",
+          "instructionName": "sendTokenDirectly",
+          "mint": "zebeczgi5fSEtbpfQKVZKCJ3WgYXxjkMUkNNx7fLKAF",
+          "sourceTokenAccount": "7VnMaCsfzCyfoMDDfj4bgq6B6E8QC6vdsEMfkybjGu1B",
+          "destinationTokenAccount": "88743sXwaPFs9f1dSxRptKEGN2hcbPvHR8d5zTN8M1pY",
+          "amountRaw": "222222223000000000",
+          "approvalCount": 3,
+          "threshold": 3,
+          "referencesZbcnMint": false,
+          "referencesScopedVault": false
+        }
+      }
+    ]
+  },
+  "conclusion": {
+    "exploitValidated": false,
+    "immediatelyAtRiskUnauthorizedRaw": "0",
+    "immediatelyAtRiskUnauthorizedUsd": 0,
+    "reason": "Every scoped value-moving path requires the vault authority signer; each authority is a 3-of-4 multisig signer PDA. Outsider approval fails, under-threshold permissionless execution fails, and direct signer/account substitution fails before value moves.",
+    "unwindTested": false,
+    "unwindReason": "No unauthorized principal was obtained. Same-mint flash capacity was also absent: no KLend ZBCN reserve and the current Project0/marginfi ZBCN liquidity vault balance was zero."
+  }
+}

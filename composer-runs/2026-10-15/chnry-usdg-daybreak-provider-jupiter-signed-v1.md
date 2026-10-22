@@ -1,0 +1,16 @@
+# Jupiter Ethena USDG flash + Chancery signed v1 fork check
+
+Observed 2026-10-15 on an isolated Solana mainnet Surfpool fork. The tested flash wrapper is `jupKxkab7RTnQJ6wXStXg6WY4rcReV3maiUNwByciFF`, backed by the distinct Ethena liquidity program `jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS`. Its exact USDG mint is `2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH`, a Token-2022 asset. The deployed flash IDL, current admin and position accounts, fee configuration, accounting and utilization boundary are in [the provider state and flash evidence](chnry-usdg-daybreak-provider-jupiter-native-flash.json). [Jupiter's flashloan documentation](https://developers.jup.ag/docs/lend/flashloan/index) describes the same-transaction borrow, custom instruction and payback model; the on-chain deployment and its exact settings were verified separately.
+
+The [test script](chnry-usdg-daybreak-provider-jupiter-signed-v1.js) created one ephemeral outsider keypair, funded only its System account with synthetic lamports on the fork, and initialized two **zero-token** Token-2022 accounts for USDG and USDv. The private key remained in memory. It serialized actual Solana **version 1** wire transactions with no address lookup table, signed each with Ed25519, independently verified that signature locally, and called only `simulateTransaction` with `sigVerify:true` and `replaceRecentBlockhash:false`. It never submitted a transaction to the fork or mainnet. [Machine-readable results](chnry-usdg-daybreak-provider-jupiter-signed-v1.json) contain the signed-wire hash, dimensions, traces and token accounting.
+
+| Signed v1 case | Wire bytes / addresses / instructions | Result |
+|---|---:|---|
+| USDG flash borrow → payback, 1,000 USDG | 662 / 15 / 2 | Success; outsider USDG and Jupiter USDG vault both finish with zero token delta. |
+| Same pair, 500,000 USDG | 662 / 15 / 2 | Success; same zero token deltas. This also tests the Chancery per-action cap amount. |
+| Two flash borrow/payback cycles under one wrapper | 730 / 15 / 4 | Rejected at first borrow, deployed error `FlashloanInvalidInstruction` (6010). |
+| Borrow → outsider Chancery mint → redeem → payback, 1,000 USDG | 1,536 / 37 / 4 | Borrow executes, then Chancery rejects the mint at instruction 1 with `AccountOwnerMismatch` (514) because the outsider lacks its canonical permission record. Atomic rollback leaves zero committed token deltas. |
+| Borrow → outsider Chancery redeem → mint → payback, 1,000 USDG | 1,536 / 37 / 4 | Same Chancery error and rollback. |
+| Mint → redeem route at 500,000 USDG | 1,536 / 37 / 4 | Same Chancery error and rollback. |
+
+The exact combined wire is **well inside 4,096 bytes and 64 addresses**, and an outsider can sign it. The provider's borrow works in that combined transaction before Chancery's permission gate rejects the target action. A successful fully signed *authorized-operator* Chancery composition cannot be established without the operator's private key; the earlier unsigned authorized-operator control is a distinct result and is not represented here as signed. All failures are atomic. Failed simulations may omit account post-images; their committed-equivalent deltas are zero by Solana transaction rollback semantics, not by treating missing images as balances.

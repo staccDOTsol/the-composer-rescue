@@ -1,0 +1,58 @@
+{
+  "name": "@hadron-fi/sdk-v2",
+  "version": "0.1.9",
+  "description": "TypeScript client SDK for the v2 Hadron AMM program on Solana.",
+  "license": "Apache-2.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "solana",
+    "hadron",
+    "amm",
+    "defi",
+    "sdk"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "docs:sdk": "typedoc --options typedoc.json",
+    "docs:mintlify": "npm run docs:sdk && node scripts/prepare-mintlify-docs.mjs",
+    "docs:sync-local": "node scripts/sync-local-docs.mjs",
+    "docs:preview-local": "npm run docs:mintlify && npm run docs:sync-local"
+  },
+  "peerDependencies": {
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.95.0"
+  },
+  "dependencies": {
+    "bn.js": "^5.2.1"
+  },
+  "devDependencies": {
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.95.0",
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^26.0.0",
+    "litesvm": "^0.5.0",
+    "tsup": "^8.0.0",
+    "typedoc": "^0.28.17",
+    "typedoc-plugin-markdown": "^4.10.0",
+    "typescript": "^5.4.0",
+    "vitest": "^4.0.18"
+  }
+}

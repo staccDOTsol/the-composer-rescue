@@ -1,0 +1,657 @@
+{
+  "generatedAt": "2026-10-15T20:03:29.934Z",
+  "readOnly": true,
+  "liveSubmission": false,
+  "endpointClass": "Jupiter Lite Quote API",
+  "request": {
+    "swapMode": "ExactIn",
+    "slippageBps": 100,
+    "restrictIntermediateTokens": true
+  },
+  "context": {
+    "assetsRaw": "8289625983285",
+    "supplyRaw": "4903464351105",
+    "virtualAssetsRaw": "100",
+    "virtualSharesRaw": "100",
+    "project0DisplayedOrcaRaw": "9863738355"
+  },
+  "formula": "xORCA minted = floor(stake * (supply + 100) / (nonEscrowed ORCA + 100))",
+  "roundTrips": [
+    {
+      "stakeRaw": "1",
+      "xorcaMintedRaw": "0",
+      "quote": null,
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "2",
+      "xorcaMintedRaw": "1",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:26.710Z",
+        "httpStatus": 400,
+        "routeAvailable": false,
+        "inAmount": "1",
+        "outAmount": null,
+        "otherAmountThreshold": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "routePlan": [],
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "3",
+      "xorcaMintedRaw": "1",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:26.955Z",
+        "httpStatus": 400,
+        "routeAvailable": false,
+        "inAmount": "1",
+        "outAmount": null,
+        "otherAmountThreshold": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "routePlan": [],
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "10",
+      "xorcaMintedRaw": "5",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:26.993Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5",
+        "outAmount": "6",
+        "otherAmountThreshold": "6",
+        "priceImpactPct": "0.2904875445992919978564090465",
+        "contextSlot": 457363923,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5",
+            "outAmount": "6"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "6",
+      "orcaOutMinusStakeRaw": "-4",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "100",
+      "xorcaMintedRaw": "59",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.036Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "59",
+        "outAmount": "96",
+        "otherAmountThreshold": "96",
+        "priceImpactPct": "0.0379492130159891496358088765",
+        "contextSlot": 457363924,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "59",
+            "outAmount": "96"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "96",
+      "orcaOutMinusStakeRaw": "-4",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "1000",
+      "xorcaMintedRaw": "591",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.072Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "591",
+        "outAmount": "984",
+        "otherAmountThreshold": "975",
+        "priceImpactPct": "0.0155664747401344132694677126",
+        "contextSlot": 457363924,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "697XRTarJ499QkyKtHjDx95BThFfLrLqy1kr22bwv612",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "591",
+            "outAmount": "984"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "984",
+      "orcaOutMinusStakeRaw": "-16",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "10000",
+      "xorcaMintedRaw": "5915",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.110Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5915",
+        "outAmount": "9857",
+        "otherAmountThreshold": "9759",
+        "priceImpactPct": "0.0146993134848156132531169303",
+        "contextSlot": 457363924,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "697XRTarJ499QkyKtHjDx95BThFfLrLqy1kr22bwv612",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5915",
+            "outAmount": "9857"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9857",
+      "orcaOutMinusStakeRaw": "-143",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "100000",
+      "xorcaMintedRaw": "59151",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.154Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "59151",
+        "outAmount": "98459",
+        "otherAmountThreshold": "97475",
+        "priceImpactPct": "0.015825502438697723016012385",
+        "contextSlot": 457363924,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "59151",
+            "outAmount": "98459"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "98459",
+      "orcaOutMinusStakeRaw": "-1541",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "1000000",
+      "xorcaMintedRaw": "591518",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.189Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "591518",
+        "outAmount": "984608",
+        "otherAmountThreshold": "974762",
+        "priceImpactPct": "0.0158208207707678879107133375",
+        "contextSlot": 457363924,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "591518",
+            "outAmount": "984608"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "984608",
+      "orcaOutMinusStakeRaw": "-15392",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "10000000",
+      "xorcaMintedRaw": "5915181",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.225Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5915181",
+        "outAmount": "9845985",
+        "otherAmountThreshold": "9747526",
+        "priceImpactPct": "0.0158304830136023481380980602",
+        "contextSlot": 457363925,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5915181",
+            "outAmount": "9845985"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9845985",
+      "orcaOutMinusStakeRaw": "-154015",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "100000000",
+      "xorcaMintedRaw": "59151816",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.267Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "59151816",
+        "outAmount": "98449238",
+        "otherAmountThreshold": "97464746",
+        "priceImpactPct": "0.0159366565952276727009968165",
+        "contextSlot": 457363925,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "59151816",
+            "outAmount": "98449238"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "98449238",
+      "orcaOutMinusStakeRaw": "-1550762",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "1000000000",
+      "xorcaMintedRaw": "591518165",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.350Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "591518165",
+        "outAmount": "983429365",
+        "otherAmountThreshold": "973595072",
+        "priceImpactPct": "0.0169992166480225631243712662",
+        "contextSlot": 457363925,
+        "routePlan": [
+          {
+            "percent": 100,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "591518165",
+            "outAmount": "983429365"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "983429365",
+      "orcaOutMinusStakeRaw": "-16570635",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "9863738354",
+      "xorcaMintedRaw": "5834580412",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.440Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5834580412",
+        "outAmount": "9607136286",
+        "otherAmountThreshold": "9511064924",
+        "priceImpactPct": "0.0264391532437330705915009403",
+        "contextSlot": 457363926,
+        "routePlan": [
+          {
+            "percent": 2,
+            "ammKey": "GoyDNGEMg9UetaguqmpBXWREokjiEHUhG8FyYt6LC8Q7",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "116691608",
+            "outAmount": "192241330"
+          },
+          {
+            "percent": 98,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5717888804",
+            "outAmount": "9414894956"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9607136286",
+      "orcaOutMinusStakeRaw": "-256602068",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "9863738355",
+      "xorcaMintedRaw": "5834580412",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.530Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5834580412",
+        "outAmount": "9607136286",
+        "otherAmountThreshold": "9511064924",
+        "priceImpactPct": "0.0264391532437330705915009403",
+        "contextSlot": 457363926,
+        "routePlan": [
+          {
+            "percent": 98,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5717888804",
+            "outAmount": "9414894956"
+          },
+          {
+            "percent": 2,
+            "ammKey": "GoyDNGEMg9UetaguqmpBXWREokjiEHUhG8FyYt6LC8Q7",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "116691608",
+            "outAmount": "192241330"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9607136286",
+      "orcaOutMinusStakeRaw": "-256602069",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "9863738356",
+      "xorcaMintedRaw": "5834580413",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.618Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5834580413",
+        "outAmount": "9607136287",
+        "otherAmountThreshold": "9511064925",
+        "priceImpactPct": "0.0264391533092562856634665493",
+        "contextSlot": 457363926,
+        "routePlan": [
+          {
+            "percent": 2,
+            "ammKey": "GoyDNGEMg9UetaguqmpBXWREokjiEHUhG8FyYt6LC8Q7",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "116691608",
+            "outAmount": "192241330"
+          },
+          {
+            "percent": 98,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5717888805",
+            "outAmount": "9414894957"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9607136287",
+      "orcaOutMinusStakeRaw": "-256602069",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "10000000000",
+      "xorcaMintedRaw": "5915181651",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.711Z",
+        "httpStatus": 200,
+        "routeAvailable": true,
+        "inAmount": "5915181651",
+        "outAmount": "9738373928",
+        "otherAmountThreshold": "9640990189",
+        "priceImpactPct": "0.0265870088005634885593087351",
+        "contextSlot": 457363926,
+        "routePlan": [
+          {
+            "percent": 2,
+            "ammKey": "GoyDNGEMg9UetaguqmpBXWREokjiEHUhG8FyYt6LC8Q7",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "118303632",
+            "outAmount": "194870213"
+          },
+          {
+            "percent": 98,
+            "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+            "label": "Whirlpool",
+            "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+            "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+            "inAmount": "5796878019",
+            "outAmount": "9543503715"
+          }
+        ],
+        "error": null,
+        "errorCode": null
+      },
+      "orcaOutRaw": "9738373928",
+      "orcaOutMinusStakeRaw": "-261626072",
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "100000000000",
+      "xorcaMintedRaw": "59151816511",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.818Z",
+        "httpStatus": 400,
+        "routeAvailable": false,
+        "inAmount": "59151816511",
+        "outAmount": null,
+        "otherAmountThreshold": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "routePlan": [],
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "1000000000000",
+      "xorcaMintedRaw": "591518165117",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.859Z",
+        "httpStatus": 400,
+        "routeAvailable": false,
+        "inAmount": "591518165117",
+        "outAmount": null,
+        "otherAmountThreshold": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "routePlan": [],
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    },
+    {
+      "stakeRaw": "8289625983285",
+      "xorcaMintedRaw": "4903464351145",
+      "quote": {
+        "observedAt": "2026-10-15T20:03:27.915Z",
+        "httpStatus": 400,
+        "routeAvailable": false,
+        "inAmount": "4903464351145",
+        "outAmount": null,
+        "otherAmountThreshold": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "routePlan": [],
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "orcaOutRaw": null,
+      "orcaOutMinusStakeRaw": null,
+      "positiveBeforeFlashFees": false
+    }
+  ],
+  "directRouteQuoteCeiling": {
+    "searchPerformed": true,
+    "monotonicAssumption": "Jupiter direct ExactIn route availability",
+    "iterations": 43,
+    "initialSuccessRaw": "1000000000",
+    "initialFailureRaw": "4903464351105",
+    "exactLastSuccessRaw": "12827489476",
+    "exactFirstFailureRaw": "12827489477",
+    "boundary": [
+      {
+        "amountRaw": "12827489475",
+        "quote": {
+          "observedAt": "2026-10-15T20:03:29.824Z",
+          "httpStatus": 200,
+          "routeAvailable": true,
+          "inAmount": "12827489475",
+          "outAmount": "20822882864",
+          "otherAmountThreshold": "20614654036",
+          "priceImpactPct": "0.0402061410021174524420170863",
+          "contextSlot": 457363936,
+          "routePlan": [
+            {
+              "percent": 100,
+              "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+              "label": "Whirlpool",
+              "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+              "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+              "inAmount": "12827489475",
+              "outAmount": "20822882864"
+            }
+          ],
+          "error": null,
+          "errorCode": null
+        }
+      },
+      {
+        "amountRaw": "12827489476",
+        "quote": {
+          "observedAt": "2026-10-15T20:03:29.785Z",
+          "httpStatus": 200,
+          "routeAvailable": true,
+          "inAmount": "12827489476",
+          "outAmount": "20822882865",
+          "otherAmountThreshold": "20614654037",
+          "priceImpactPct": "0.0402061410308474295888946571",
+          "contextSlot": 457363936,
+          "routePlan": [
+            {
+              "percent": 100,
+              "ammKey": "Ema46A5kTJCd9DYP68CpBgCTfjaA1WoKxXTtx9uHtJLu",
+              "label": "Whirlpool",
+              "inputMint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+              "outputMint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+              "inAmount": "12827489476",
+              "outAmount": "20822882865"
+            }
+          ],
+          "error": null,
+          "errorCode": null
+        }
+      },
+      {
+        "amountRaw": "12827489477",
+        "quote": {
+          "observedAt": "2026-10-15T20:03:29.859Z",
+          "httpStatus": 400,
+          "routeAvailable": false,
+          "inAmount": "12827489477",
+          "outAmount": null,
+          "otherAmountThreshold": null,
+          "priceImpactPct": null,
+          "contextSlot": null,
+          "routePlan": [],
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      },
+      {
+        "amountRaw": "12827489478",
+        "quote": {
+          "observedAt": "2026-10-15T20:03:29.889Z",
+          "httpStatus": 400,
+          "routeAvailable": false,
+          "inAmount": "12827489478",
+          "outAmount": null,
+          "otherAmountThreshold": null,
+          "priceImpactPct": null,
+          "contextSlot": null,
+          "routePlan": [],
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "testedStakeAmounts": 19,
+    "quotedRoundTrips": 13,
+    "positiveBeforeFlashFees": [],
+    "bestQuotedDeltaRaw": "-4"
+  },
+  "interpretation": "This is the best-case ORCA-denominated stake-to-secondary-market exit before lender fees, stable/ORCA swap fees, priority fees, and slippage threshold execution. A non-positive result cannot become positive when those omitted costs are added."
+}

@@ -1,0 +1,158 @@
+{
+  "at": "2026-10-15T19:08:38.098Z",
+  "targetProgram": "11111111111111111111111111111111",
+  "targetInstruction": "SystemProgram.transfer 1 lamport",
+  "targetInstructionHex": "020000000100000000000000",
+  "wrapperDataHex": "00000000000000000000000000000000000000000000000000000000000000000c000000020000000100000000000000",
+  "before": {
+    "slot": 457348676,
+    "pda": 24811787527,
+    "a": 1902234312
+  },
+  "after": {
+    "slot": 457348678,
+    "pda": 24811787527,
+    "a": 1902234312
+  },
+  "noChainPdaBalanceChange": true,
+  "results": [
+    {
+      "label": "reference_A_B",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp"
+      ],
+      "numRequiredSignatures": 2,
+      "compiledAccountIndices": [
+        0,
+        1,
+        4,
+        3,
+        2,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 31394,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 31394 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "destination": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+                  "lamports": 1,
+                  "source": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+                },
+                "type": "transfer"
+              },
+              "program": "system",
+              "programId": "11111111111111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postPdaLamports": 24811787526,
+      "postALamports": 1902224313
+    },
+    {
+      "label": "only_A_distinct_slots",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "numRequiredSignatures": 1,
+      "compiledAccountIndices": [
+        0,
+        5,
+        3,
+        2,
+        1,
+        0
+      ],
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidArgument"
+        ]
+      },
+      "unitsConsumed": 26259,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 26259 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: invalid program argument"
+      ],
+      "innerInstructions": [],
+      "postPdaLamports": null,
+      "postALamports": null
+    },
+    {
+      "label": "one_A_aliased_twice",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "numRequiredSignatures": 1,
+      "compiledAccountIndices": [
+        0,
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 31313,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 31313 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "destination": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+                  "lamports": 1,
+                  "source": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+                },
+                "type": "transfer"
+              },
+              "program": "system",
+              "programId": "11111111111111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postPdaLamports": 24811787526,
+      "postALamports": 1902229313
+    }
+  ]
+}

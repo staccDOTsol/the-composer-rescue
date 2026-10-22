@@ -1,0 +1,2387 @@
+{
+  "generatedAt": "2026-10-15T20:18:46.915Z",
+  "scope": "current-mainnet-backed Surfpool fork; no sendTransaction",
+  "forkRpc": "http://127.0.0.1:19097",
+  "sigVerify": true,
+  "customTransactionVersion": 1,
+  "source": {
+    "program": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+    "programPool": "Hv44BZaqT5URrrAtGk6jvfbWKL2PytWA4ur2r1QnvtQa",
+    "independentExitProgram": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+    "independentExitPool": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV",
+    "signatures": {
+      "byreal": "3Pd2Li7YKLJfQC3HDqi48TBu1P5zg52V8UNczoL2u5tha2ErcCMXceHvVtDmM7hTroZEgEt9j6n96DmRRj9Sdvq3",
+      "raydium": "3mnyio88VKfNYtPcymMvPtB7AQzFvta7MF7Z8UWwzFUpbndHrM32MT9KH1GydBn2W28RckadpKXtBLEonNW2GhEt",
+      "rebalance": "5DnzTGPMdakorV388SHPtSw4Yx7pvzYgVnajnAfUGTUVW5idbK9EfKZcqeLeaaFD5zqZF3Yet827ZJfUvFJdfpML"
+    },
+    "slots": {
+      "byreal": 457347587,
+      "raydium": 457365075,
+      "rebalance": 457364372
+    }
+  },
+  "actors": {
+    "control": "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH",
+    "flash": "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF",
+    "flashInitialUsdcRaw": "0",
+    "flashInitialCrclRaw": "0"
+  },
+  "flashSource": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "market": "47tfyEG9SsdEnUm9cw5kY9BXngQGqu3LBoop9j5uTAv8",
+    "supplyVault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "censusAvailableRaw": "7868315584088",
+    "currentSlot": 457366963,
+    "currentAvailableRaw": "8009393732715",
+    "reserveAccountDataLength": 8624
+  },
+  "controls": [
+    {
+      "label": "byreal_outsider_exact_in_1",
+      "forkBaselineSlot": 457366772,
+      "simulationSlot": 457366772,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6026
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "8c8a62ece5790216d86e698b40fefbcf47ea0b9d6ab42eec218a9da260a87d00"
+      },
+      "unitsConsumed": 32268,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/swap_v2.rs:203. Error Code: TooSmallInputOrOutputAmount. Error Number: 6026. Error Message: Swap input or output amount is too small.",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 32268 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 failed: custom program error: 0x178a"
+      ],
+      "inputUsdcRaw": "1"
+    },
+    {
+      "label": "byreal_outsider_exact_in_200000000",
+      "forkBaselineSlot": 457366858,
+      "simulationSlot": 457366858,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "e778b5a3497c6b22e22e7e54f75c891bc29cd7fb98dc8ef38749ddc73d16add0"
+      },
+      "unitsConsumed": 56447,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "abd33ce4ee431b1f1f2877585bf3c57b4419b8c150d023c689047f266c04419d",
+          "tokenAmountRaw": "299800000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "c6c3081ccb318fbd168721f239fb47a5b75c66cef31f8a483995fa1a391774d8",
+          "tokenAmountRaw": "229777625"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "8a44c65c887c9f33d839134d8f7961527d7f4160b45562c5075fd016d442cc9f",
+          "tokenAmountRaw": "255163431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "aee26e5d2f08abdf869710264834114c5c82ba372d17eedb13d9f444ec061dab",
+          "tokenAmountRaw": "1437295021585"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "f4243b9b93f3011b9d455d3fe2692fe84d3469267ac8f84e80b79d8271df6c20",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "-200000000",
+        "attackerCrcl": "229777625",
+        "poolAUsdc": "200000000",
+        "poolACrcl": "-229777625",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "0",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1354361 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 1351371 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe5v/Kvoo3mUGNPRcJukFz2lGEYQBmLOHlmHcLP8anIxegD9qPbmx1qDOnZbMWnvz6Ollcc7Y00Lib8dTm4YSt8Oxf68xOybN147EFlwZrGLf78Txte2/pSiOLKQWTFTEtdkgsg0AAAAAAAAAAAAAAAAAwusLAAAAAAAAAAAAAAAAAG8APhqCmZruAAAAAAAAAABz7+VPyAMAAAAAAAAAAAAAgPr//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 56447 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success"
+      ],
+      "inputUsdcRaw": "200000000"
+    },
+    {
+      "label": "byreal_outsider_exact_in_10000000000",
+      "forkBaselineSlot": 457366859,
+      "simulationSlot": 457366859,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "46fa28ffe08d549fd9367973913abd62bad922e059e884b534a0f35c9baf5c6d"
+      },
+      "unitsConsumed": 101000,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "cfc7d202c271775cbf209347508a62b65a355d8dddf33153667ddaa2ca1b7fca",
+          "tokenAmountRaw": "290000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "0f9f28a2fe2c5812638b48c1013bc2b9eaf0a33c1a3b79ca944cbd4048c6b00b",
+          "tokenAmountRaw": "11459965254"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "38df70241499ab9e9bffd2e577916971995039192892d7ccd589bb3f548f7d91",
+          "tokenAmountRaw": "264963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "aaf8d0993be02955e76295615c0596acf495986eb32260a44c0647ddd7c32873",
+          "tokenAmountRaw": "1426064833956"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "e71b88d5b99bcdcc65e1610d4e2677d6906db7cc21c84a44ef2ec3913f8e86ba",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "-10000000000",
+        "attackerCrcl": "11459965254",
+        "poolAUsdc": "10000000000",
+        "poolACrcl": "-11459965254",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "0",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1309808 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 1306818 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe5v/Kvoo3mUGNPRcJukFz2lGEYQBmLOHlmHcLP8anIxegD9qPbmx1qDOnZbMWnvz6Ollcc7Y00Lib8dTm4YSt8Oxf68xOybN147EFlwZrGLf78Txte2/pSiOLKQWTFTEtUYxEasCAAAAAAAAAAAAAAAA5AtUAgAAAAAAAAAAAAAAAAuNpVEStzTvAAAAAAAAAABk6P0CygMAAAAAAAAAAAAAsvr//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 101000 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success"
+      ],
+      "inputUsdcRaw": "10000000000"
+    },
+    {
+      "label": "byreal_outsider_exact_in_100000000000",
+      "forkBaselineSlot": 457366859,
+      "simulationSlot": 457366859,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "64063eda427791d48f2372c3523c57a51dba55c3aae553e5bf5bf638b010aabf"
+      },
+      "unitsConsumed": 461522,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "87943a519b039514ccd6fb0d40f0d4d3829334028c54253e1f2f2599f1ea3b24",
+          "tokenAmountRaw": "200000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "a7c64f6bb423376e3761c5048c9261fd358777216637d5564ea5338900d69595",
+          "tokenAmountRaw": "111947425749"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "824706bb1b0f7726063414627478461a5915b7880eab1d8d17425158a6c3c896",
+          "tokenAmountRaw": "354963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "4c2067519c046c7520033e2b6e7fbc387bfbb250876b0188403cdded362b2886",
+          "tokenAmountRaw": "1325577373461"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "7e2522f3ced0aa2f13cdbe56bee60037e5a352070a664d18e5737ce51600400d",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "-100000000000",
+        "attackerCrcl": "111947425749",
+        "poolAUsdc": "100000000000",
+        "poolACrcl": "-111947425749",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "0",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 949286 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 946296 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe5v/Kvoo3mUGNPRcJukFz2lGEYQBmLOHlmHcLP8anIxegD9qPbmx1qDOnZbMWnvz6Ollcc7Y00Lib8dTm4YSt8Oxf68xOybN147EFlwZrGLf78Txte2/pSiOLKQWTFTEtdUnlhAaAAAAAAAAAAAAAAAA6HZIFwAAAAAAAAAAAAAAAEIGuxD3Qw71AAAAAAAAAAB2xDcl8QIAAAAAAAAAAAAAlvz//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 461522 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success"
+      ],
+      "inputUsdcRaw": "100000000000"
+    },
+    {
+      "label": "byreal_outsider_exact_in_200000000000",
+      "forkBaselineSlot": 457366884,
+      "simulationSlot": 457366884,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "0003cd44f7bcc7b58698bd7006076d0ebf04cc31be1d1e51d3df7f074df8a9d3"
+      },
+      "unitsConsumed": 937909,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "e56f7442d123627c1a9441e05a574b6da9467fce58f31a91f67173100deb9287",
+          "tokenAmountRaw": "100000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "57e34cd2f6ed681212278777b3dcb927dac47524446ff6014ee3f036b76f5e67",
+          "tokenAmountRaw": "217420473670"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "a00e58f4d3579eed0ab08743edaac6066ccd90130036231bc238912cd9d77a0c",
+          "tokenAmountRaw": "454963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "e2257694ca152ec8fad896835df8fe27ad08bb384ebc74218d37e502dc3ba498",
+          "tokenAmountRaw": "1220104325540"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "7402bbd7a29c8c883c8ab59c9eaa957e589553a31ec810a9ea2a85f7d3544b62",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "-200000000000",
+        "attackerCrcl": "217420473670",
+        "poolAUsdc": "200000000000",
+        "poolACrcl": "-217420473670",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "0",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 472899 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 469909 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe5v/Kvoo3mUGNPRcJukFz2lGEYQBmLOHlmHcLP8anIxegD9qPbmx1qDOnZbMWnvz6Ollcc7Y00Lib8dTm4YSt8Oxf68xOybN147EFlwZrGLf78Txte2/pSiOLKQWTFTEtUYlRZ8yAAAAAAAAAAAAAAAA0O2QLgAAAAAAAAAAAAAAAGeh3g2pLxT9AAAAAAAAAAAxpNwF4QIAAAAAAAAAAAAAGv///w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 937909 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success"
+      ],
+      "inputUsdcRaw": "200000000000"
+    },
+    {
+      "label": "byreal_outsider_exact_in_256263056905",
+      "forkBaselineSlot": 457366885,
+      "simulationSlot": 457366885,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "0a16603b5f17152ffdf27a11b741364a753e1018976c0360041000c82b132e1b"
+      },
+      "unitsConsumed": 1050053,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: NotEnoughTickArrayAccount. Error Number: 6027. Error Message: Not enought tick array account.",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 1050053 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 failed: custom program error: 0x178b"
+      ],
+      "inputUsdcRaw": "256263056905"
+    },
+    {
+      "label": "byreal_outsider_exact_in_256263056904",
+      "forkBaselineSlot": 457366885,
+      "simulationSlot": 457366885,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "eb504ce6387caf34869b8ba0705ddca283977f8fd11b17428c3ab3bef4df27d2"
+      },
+      "unitsConsumed": 1050053,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: NotEnoughTickArrayAccount. Error Number: 6027. Error Message: Not enought tick array account.",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 1050053 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 failed: custom program error: 0x178b"
+      ],
+      "inputUsdcRaw": "256263056904"
+    },
+    {
+      "label": "byreal_outsider_exact_in_256263056906",
+      "forkBaselineSlot": 457366885,
+      "simulationSlot": 457366885,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "BVwsAb8cqkGAJpa8GXJBBjvCkdfUrseZwGqzcKsDnhpH"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 785,
+        "maximumBytes": 4096,
+        "addressCount": 19,
+        "maximumAddresses": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "sha256": "620590a5d698afad1251f84e5089f39226f35dbc27ca9418410be1cbb5057776"
+      },
+      "unitsConsumed": 1050053,
+      "loadedAccountsDataSize": 52905,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "dfa34a5ec7f4496e70b0a7203c78546e16b165441b60400072eac2518b5680df",
+          "tokenAmountRaw": "300000000000"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "ce6718a4c8dba6f25427409b3d08f0972595b76aa95569c264a573d5a318672e",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: NotEnoughTickArrayAccount. Error Number: 6027. Error Message: Not enought tick array account.",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 1050053 of 1400000 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 failed: custom program error: 0x178b"
+      ],
+      "inputUsdcRaw": "256263056906"
+    }
+  ],
+  "roundTrips": [
+    {
+      "label": "klend_byreal_raydium_repay_200000000",
+      "forkBaselineSlot": 457366911,
+      "simulationSlot": 457366911,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 1520,
+        "maximumBytes": 4096,
+        "addressCount": 38,
+        "maximumAddresses": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "sha256": "2cd83c1b20e4ec580ed37d1f6d247c1741b6873cde39de4c4e5fe8616d616a04"
+      },
+      "unitsConsumed": 107179,
+      "loadedAccountsDataSize": 105975,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363964 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37259 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1317102 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 1314112 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe4o+ccnaFvGlTPv/W/5m83DO2Je+Et4SZM+M6NOm1K6MoxlRo1Eti7GtKlbrIiKRrjCvhCmGk6mDIkQz1eQro8QoYdQYbZiKz6I2iZoPOcV/RCOKM1hksd7D60V6AuqpgNkgsg0AAAAAAAAAAAAAAAAAwusLAAAAAAAAAAAAAAAAAG8APhqCmZruAAAAAAAAAABz7+VPyAMAAAAAAAAAAAAAgPr//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 56447 of 1362741 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK consumed 13473 of 1306294 compute units",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "borrowUsdcRaw": "200000000",
+      "byrealPreviewCrclOutRaw": "229777625",
+      "independentExitPool": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV"
+    },
+    {
+      "label": "klend_byreal_raydium_repay_10000000000",
+      "forkBaselineSlot": 457366937,
+      "simulationSlot": 457366937,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 1520,
+        "maximumBytes": 4096,
+        "addressCount": 38,
+        "maximumAddresses": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "sha256": "be2df6227f2776ca51b1edc2c5383abb1748e08e390b074d85581e70ab0691e4"
+      },
+      "unitsConsumed": 151732,
+      "loadedAccountsDataSize": 105975,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363964 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37259 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1272549 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 1269559 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe4o+ccnaFvGlTPv/W/5m83DO2Je+Et4SZM+M6NOm1K6MoxlRo1Eti7GtKlbrIiKRrjCvhCmGk6mDIkQz1eQro8QoYdQYbZiKz6I2iZoPOcV/RCOKM1hksd7D60V6AuqpgEYxEasCAAAAAAAAAAAAAAAA5AtUAgAAAAAAAAAAAAAAAAuNpVEStzTvAAAAAAAAAABk6P0CygMAAAAAAAAAAAAAsvr//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 101000 of 1362741 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK consumed 13473 of 1261741 compute units",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "borrowUsdcRaw": "10000000000",
+      "byrealPreviewCrclOutRaw": "11459965254",
+      "independentExitPool": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV"
+    },
+    {
+      "label": "klend_byreal_raydium_repay_100000000000",
+      "forkBaselineSlot": 457366937,
+      "simulationSlot": 457366937,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 1520,
+        "maximumBytes": 4096,
+        "addressCount": 38,
+        "maximumAddresses": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "sha256": "16c68feacd2f198098075825966e4a1bb1df52f03eac77ed684254e041d26f9b"
+      },
+      "unitsConsumed": 512254,
+      "loadedAccountsDataSize": 105975,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363964 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37259 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 912027 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 909037 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe4o+ccnaFvGlTPv/W/5m83DO2Je+Et4SZM+M6NOm1K6MoxlRo1Eti7GtKlbrIiKRrjCvhCmGk6mDIkQz1eQro8QoYdQYbZiKz6I2iZoPOcV/RCOKM1hksd7D60V6AuqpgNUnlhAaAAAAAAAAAAAAAAAA6HZIFwAAAAAAAAAAAAAAAEIGuxD3Qw71AAAAAAAAAAB2xDcl8QIAAAAAAAAAAAAAlvz//w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 461522 of 1362741 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK consumed 13473 of 901219 compute units",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "borrowUsdcRaw": "100000000000",
+      "byrealPreviewCrclOutRaw": "111947425749",
+      "independentExitPool": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV"
+    },
+    {
+      "label": "klend_byreal_raydium_repay_200000000000",
+      "forkBaselineSlot": 457366963,
+      "simulationSlot": 457366963,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 1520,
+        "maximumBytes": 4096,
+        "addressCount": 38,
+        "maximumAddresses": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "sha256": "8878f9fc73809be49c72ea42dd22fca936c42bf0e3459372daa11eda323a5bd0"
+      },
+      "unitsConsumed": 988633,
+      "loadedAccountsDataSize": 105975,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363972 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37251 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 435648 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3686 of 432658 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: QMbN6CYIceL7UjpUQP3EImeED2RXtNYXeXNzUcBCZ+xOq+US8eeAe4o+ccnaFvGlTPv/W/5m83DO2Je+Et4SZM+M6NOm1K6MoxlRo1Eti7GtKlbrIiKRrjCvhCmGk6mDIkQz1eQro8QoYdQYbZiKz6I2iZoPOcV/RCOKM1hksd7D60V6AuqpgEYlRZ8yAAAAAAAAAAAAAAAA0O2QLgAAAAAAAAAAAAAAAGeh3g2pLxT9AAAAAAAAAAAxpNwF4QIAAAAAAAAAAAAAGv///w==",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 consumed 937909 of 1362749 compute units",
+        "Program REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2 success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK invoke [1]",
+        "Program log: Instruction: SwapV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK consumed 13473 of 424840 compute units",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "borrowUsdcRaw": "200000000000",
+      "byrealPreviewCrclOutRaw": "217420473670",
+      "independentExitPool": "GYqHjuDzTiw7i52Xv1qohDE6eJr6eSZpsrBVikGZyaFV"
+    }
+  ],
+  "lenderBoundaries": [
+    {
+      "label": "klend_capacity_8009393732714",
+      "forkBaselineSlot": 457366964,
+      "simulationSlot": 457366964,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 531,
+        "maximumBytes": 4096,
+        "addressCount": 11,
+        "maximumAddresses": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "sha256": "4f9c729ad9919984041b07d8e1eeebe08df028991b7c655f6870484061f74f73"
+      },
+      "unitsConsumed": 55218,
+      "loadedAccountsDataSize": 13937,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "47a238f473203ab7dd13fc46d2a1a67c5609a1e4ed47f6aa8a4dcfc537f5776f",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "0",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "0",
+        "lenderFee": "0",
+        "lenderReserve": "0",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367629 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33594 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346019 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1366406 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "borrowUsdcRaw": "8009393732714"
+    },
+    {
+      "label": "klend_capacity_8009393732715",
+      "forkBaselineSlot": 457366989,
+      "simulationSlot": 457366989,
+      "err": null,
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 531,
+        "maximumBytes": 4096,
+        "addressCount": 11,
+        "maximumAddresses": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "sha256": "b5519cffcb59f76625778bd78fd537afadfb630a6983ff1886fe58f687309804"
+      },
+      "unitsConsumed": 55220,
+      "loadedAccountsDataSize": 13937,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "6d95a443e97a8fb0cc657d8fc917bd19d938551f2dacfa30bafcdb5ec2fc3134",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "0",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "0",
+        "lenderFee": "0",
+        "lenderReserve": "0",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367627 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33596 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346017 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1366404 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "borrowUsdcRaw": "8009393732715"
+    },
+    {
+      "label": "klend_capacity_8009393732716",
+      "forkBaselineSlot": 457366990,
+      "simulationSlot": 457366990,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6008
+          }
+        ]
+      },
+      "sigVerify": true,
+      "signerOrder": [
+        "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+      ],
+      "wire": {
+        "version": 1,
+        "sizeBytes": 531,
+        "maximumBytes": 4096,
+        "addressCount": 11,
+        "maximumAddresses": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "sha256": "1835ae6196eefef3f7630c1332711de14d3a35a701e4f74a12cb301e4ce5c9b3"
+      },
+      "unitsConsumed": 32647,
+      "loadedAccountsDataSize": 13937,
+      "before": {
+        "attackerUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2261280",
+          "dataLength": 165,
+          "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+          "tokenAmountRaw": "0"
+        },
+        "attackerCrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2136720",
+          "dataLength": 179,
+          "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+          "tokenAmountRaw": "0"
+        },
+        "poolAUsdc": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039283",
+          "dataLength": 165,
+          "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+          "tokenAmountRaw": "254963431220"
+        },
+        "poolACrcl": {
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108881",
+          "dataLength": 175,
+          "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+          "tokenAmountRaw": "1437524799210"
+        },
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "lenderFee": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "lenderReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": "60913931",
+          "dataLength": 8624,
+          "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+          "tokenAmountRaw": "11729497877384227300"
+        },
+        "poolAState": {
+          "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+          "lamports": "11637165",
+          "dataLength": 1544,
+          "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+          "tokenAmountRaw": "11113044829609092952"
+        },
+        "poolBState": {
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "lamports": "21637127",
+          "dataLength": 1544,
+          "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+          "tokenAmountRaw": "17255301111503618687"
+        }
+      },
+      "after": {
+        "attackerUsdc": null,
+        "attackerCrcl": null,
+        "poolAUsdc": null,
+        "poolACrcl": null,
+        "poolBCrcl": null,
+        "poolBUsdc": null,
+        "lenderSupply": null,
+        "lenderFee": null,
+        "lenderReserve": null,
+        "poolAState": null,
+        "poolBState": null
+      },
+      "deltas": {
+        "attackerUsdc": "changed",
+        "attackerCrcl": "changed",
+        "poolAUsdc": "changed",
+        "poolACrcl": "changed",
+        "poolBCrcl": "unchanged",
+        "poolBUsdc": "unchanged",
+        "lenderSupply": "changed",
+        "lenderFee": "changed",
+        "lenderReserve": "changed",
+        "poolAState": "changed",
+        "poolBState": "changed"
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Withdraw amount 8009393732716 cannot exceed the total available amount 8009393732715",
+        "Program log: AnchorError thrown in programs/klend/src/state/reserve.rs:1010. Error Code: InsufficientLiquidity. Error Number: 6008. Error Message: Insufficient liquidity available.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 32647 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1778"
+      ],
+      "borrowUsdcRaw": "8009393732716"
+    }
+  ],
+  "rebalanceReplay": {
+    "label": "outsider_rebalance_current_accounts",
+    "forkBaselineSlot": 457367017,
+    "simulationSlot": 457367017,
+    "err": {
+      "InstructionError": [
+        0,
+        {
+          "Custom": 12006
+        }
+      ]
+    },
+    "sigVerify": true,
+    "signerOrder": [
+      "AJeVLMQj5keJQmgM7KQiCVbeqfGgSkQGSqY5JMHv1EJF"
+    ],
+    "wire": {
+      "version": 1,
+      "sizeBytes": 1427,
+      "maximumBytes": 4096,
+      "addressCount": 37,
+      "maximumAddresses": 64,
+      "instructionCount": 1,
+      "requiredSignatures": 1,
+      "sha256": "500eeb9ddba2bc591a67b9e6eef0cbd3716aff068789d490823a3846b2bc1b86"
+    },
+    "unitsConsumed": 20471,
+    "loadedAccountsDataSize": 182383,
+    "before": {
+      "attackerUsdc": {
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": "2261280",
+        "dataLength": 165,
+        "dataSha256": "8eac88d93d4634f34ce9e8698c16b25c0b8b0558b0d582236aee64680c69949d",
+        "tokenAmountRaw": "0"
+      },
+      "attackerCrcl": {
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "lamports": "2136720",
+        "dataLength": 179,
+        "dataSha256": "069b6d6eda0d71c7c72e540ca92e967f1b5f1fbd5096a0cb5fbeeea65149964a",
+        "tokenAmountRaw": "0"
+      },
+      "poolAUsdc": {
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": "2039283",
+        "dataLength": 165,
+        "dataSha256": "2af540bef4079aa1d0f31102328c6ad4bc4d586b7517d2554e23609be165dfea",
+        "tokenAmountRaw": "254963431220"
+      },
+      "poolACrcl": {
+        "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "lamports": "2108881",
+        "dataLength": 175,
+        "dataSha256": "3b0d1799953892000f4dd61cbc9222cadb91cff6ba07fc583c89b832d9ef0529",
+        "tokenAmountRaw": "1437524799210"
+      },
+      "poolBCrcl": null,
+      "poolBUsdc": null,
+      "lenderSupply": {
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": "2039280",
+        "dataLength": 165,
+        "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+        "tokenAmountRaw": "8009393802720"
+      },
+      "lenderFee": {
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "lamports": "2039280",
+        "dataLength": 165,
+        "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+        "tokenAmountRaw": "0"
+      },
+      "lenderReserve": {
+        "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "lamports": "60913931",
+        "dataLength": 8624,
+        "dataSha256": "38aff593c3e6a8d68c66f126feda561889384e74c46ab486f657f2a9235f2124",
+        "tokenAmountRaw": "11729497877384227300"
+      },
+      "poolAState": {
+        "owner": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+        "lamports": "11637165",
+        "dataLength": 1544,
+        "dataSha256": "6feb728ce243b668e7e5a3004cd3d86d231d9c88a672cc4378849d34d2785202",
+        "tokenAmountRaw": "11113044829609092952"
+      },
+      "poolBState": {
+        "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+        "lamports": "21637127",
+        "dataLength": 1544,
+        "dataSha256": "954bb0bcc012f2ee7b8bed8ccad49331cb9e5163decf8836ab82cbe7bfde7f12",
+        "tokenAmountRaw": "17255301111503618687"
+      }
+    },
+    "after": {
+      "attackerUsdc": null,
+      "attackerCrcl": null,
+      "poolAUsdc": null,
+      "poolACrcl": null,
+      "poolBCrcl": null,
+      "poolBUsdc": null,
+      "lenderSupply": null,
+      "lenderFee": null,
+      "lenderReserve": null,
+      "poolAState": null,
+      "poolBState": null
+    },
+    "deltas": {
+      "attackerUsdc": "changed",
+      "attackerCrcl": "changed",
+      "poolAUsdc": "changed",
+      "poolACrcl": "changed",
+      "poolBCrcl": "unchanged",
+      "poolBUsdc": "unchanged",
+      "lenderSupply": "changed",
+      "lenderFee": "changed",
+      "lenderReserve": "changed",
+      "poolAState": "changed",
+      "poolBState": "changed"
+    },
+    "logs": [
+      "Program BYrEa363GeActic949HkNmw7VGBf9k7awKEqCTZvPuT4 invoke [1]",
+      "Program log: Instruction: Rebalance",
+      "Program log: AnchorError thrown in programs/autoswap/src/utils/token.rs:60. Error Code: InvalidTokenOwner. Error Number: 12006. Error Message: Invalid token owner.",
+      "Program log: Left:",
+      "Program log: Byfr7xnFpcSbr1WWk4yNQcmMiKMP6PimW8w2E4AchipB",
+      "Program log: Right:",
+      "Program log: HzTMkHiHEyYbyuoNBCwAd6cctyrNxS2EWxUzMToszHAf",
+      "Program BYrEa363GeActic949HkNmw7VGBf9k7awKEqCTZvPuT4 consumed 20471 of 1400000 compute units",
+      "Program BYrEa363GeActic949HkNmw7VGBf9k7awKEqCTZvPuT4 failed: custom program error: 0x2ee6"
+    ],
+    "historicalSignature": "5DnzTGPMdakorV388SHPtSw4Yx7pvzYgVnajnAfUGTUVW5idbK9EfKZcqeLeaaFD5zqZF3Yet827ZJfUvFJdfpML",
+    "extractedError": "Program log: AnchorError thrown in programs/autoswap/src/utils/token.rs:60. Error Code: InvalidTokenOwner. Error Number: 12006. Error Message: Invalid token owner."
+  }
+}

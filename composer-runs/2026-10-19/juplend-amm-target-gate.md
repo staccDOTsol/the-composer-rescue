@@ -1,0 +1,20 @@
+# JupLend AMM major-stable route gate
+
+Observed on mainnet-beta 2026-10-19 07:58 UTC. **No new Daybreak candidate** from these two route pools. This is a read-only custody and receipt gate, not a vulnerability claim.
+
+Jupiter's sampled routes identify `FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy` (USDC/USDT) and `AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy` (USDC/USDG) as JupLend AMM pools. Both live pool accounts are owned by executable DEX program `jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd`, whose current upgradeable ProgramData is `E4TqU7cqaKuAmpHZt2RZ6W4zPKqbC5K5muE3M2T5ZL1S`, last deployment slot **449990119**, ELF SHA-256 `b259bef25bd37ce21a8bff502877a243d3e0663253523b5d4ceb447abde57646`. The companion Liquidity program `jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC` is executable; its current ProgramData is `J6Ry5yuy4Vp4kNa1PTGASiHJxZ8x4pgRPaJ18SmnqtW5`, last deployment slot **453953579**, ELF SHA-256 `f7be679179291c719b204eb031cc134fe94a5299cd4bfdf705ba632863cffafe`.
+
+At RPC context slots **458758434–458758443**, neither pool key controls a Token or Token-2022 account. The reserve accounts referenced by each pool instead point to **shared Jupiter Liquidity vaults**, all with token authority `7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z`, the Liquidity program's `['liquidity']` PDA:
+
+| Pool route | Referenced vault | Current token balance | Pool-specific position |
+|---|---|---:|---|
+| USDC/USDT | `BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB` | 35,277,620.623911 USDC | 2,361,535.439313 USDC borrowed |
+| USDC/USDT | `4HTRHjdgy4VSVRcsumuzVFCgWywNhjGsD5oG3kqAt5vo` | 2,063,793.872130 USDT | 515,359.836947 USDT borrowed |
+| USDC/USDG | `E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm` | 209,896.956170 USDG units | 21,225.361331 USDG supplied |
+| USDC/USDG | same USDC vault above | 35,277,620.623911 USDC | 22,639.484727 USDC supplied |
+
+The USDC vault balance is listed twice because both pools reference the **same** shared reserve; it is not additive or attributable to either pool. The USDC/USDT pool-specific entries are borrow liabilities, not pool-owned vault balances. The USDC/USDG pool-specific supply position totals about 43,865 units at stablecoin par, below the $100,000 gate. No per-pool PDA-controlled major/stable token vault above the threshold was established.
+
+Successful post-deployment transaction [`5GBqn6w…GABnK`](https://solscan.io/tx/5GBqn6wZ5sEimAmm8uaBzhKePxpz8kAo4T7RhyDBVMrsGx8HR9tpKdk68GzRWr1bnr1jxRh8wmfQv3PqtKqGABnK) at slot **458757019** shows the USDC/USDT pool's direct DEX (stack 2) → Tokenkeg (stack 3) `transferChecked` moves **1,576.242195 USDT into** the shared USDT vault. Its authority `HHHJTk2pdPSCoAcFRxkapVdDRprR7Wo1tpXyB8LcVb4s` is an **outer signer**. The reverse-side **1,574.723513 USDC outflow** from the shared USDC vault has Liquidity as immediate parent at stack 3 and Tokenkeg at stack 4; its PDA authority is not an outer signer. Successful transaction [`jsemUWe…Czz`](https://solscan.io/tx/jsemUWepbqFJxBjaANRNBZQn1mLvVRHNQ5y5LiShW38wtnm2ZuEzX8VqgkUMr4shsKnjuYCwWYQTLbroiUnPCzz) at slot **458719969** shows the same pattern for USDC/USDG: direct DEX → Token-2022 at stacks 2→3 moves **3.994624 USDG units into** the shared vault under an outer signer, while the **3.994537 USDC** shared-vault outflow is Liquidity stack 3 → Tokenkeg stack 4. These receipts do **not** prove a direct program-signed AMM vault outflow at stacks 2→3 with a nonsigner authority. The bounded receipt gate does not claim such an outflow never occurs.
+
+The DEX program and peg routes were already covered in the [Jupiter Lend composition audit](../2026-10-15/jupiter-lend-composition-audit.md); the USDC/USDG pool was specifically covered by [Vault 95 current-state validation](jupiter-v95-validation.md). The USDC/USDT pool is a different pool, but it shares that deployed DEX and Liquidity architecture. [Machine evidence and exact signer/stack records](juplend-amm-target-gate.json) are reproducible with [the read-only script](juplend-amm-target-gate.js). No wallet keys, simulation, signed transaction, or mainnet broadcast were used.

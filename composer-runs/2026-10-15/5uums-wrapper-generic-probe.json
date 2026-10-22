@@ -1,0 +1,174 @@
+{
+  "generatedAt": "2026-10-15T19:09:58.138Z",
+  "transport": "get* and simulateTransaction only; no signing or send",
+  "assumption": "wrapper data encodes 32-byte target program ID, u32 inner-data length, and inner instruction bytes; test replaces target with System Program and inner bytes with transfers of 1 lamport, full PDA SOL, and full+1",
+  "pdaLamportsAtStart": 24811787527,
+  "tests": [
+    {
+      "name": "minimal-system-transfer-1-lamport",
+      "bytes": 321,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstSixIndexes": [
+        0,
+        0,
+        3,
+        4,
+        1,
+        0
+      ],
+      "currentSlot": 457349051,
+      "err": null,
+      "unitsConsumed": 31313,
+      "lamports": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "pre": 1902234312,
+          "post": 1902229313,
+          "delta": -4999
+        },
+        {
+          "address": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+          "pre": 24811787527,
+          "post": 24811787526,
+          "delta": -1
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 31313 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "name": "minimal-system-transfer-full-PDA-SOL",
+      "bytes": 321,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstSixIndexes": [
+        0,
+        0,
+        3,
+        4,
+        1,
+        0
+      ],
+      "currentSlot": 457349051,
+      "err": null,
+      "unitsConsumed": 31313,
+      "lamports": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "pre": 1902234312,
+          "post": 26714016839,
+          "delta": 24811782527
+        },
+        {
+          "address": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+          "pre": 24811787527,
+          "post": 0,
+          "delta": -24811787527
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 31313 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "name": "minimal-system-transfer-over-balance",
+      "bytes": 321,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstSixIndexes": [
+        0,
+        0,
+        3,
+        4,
+        1,
+        0
+      ],
+      "currentSlot": 457349052,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 31171,
+      "lamports": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "pre": 1902234312,
+          "delta": null
+        },
+        {
+          "address": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+          "pre": 24811787527,
+          "delta": null
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Transfer: insufficient lamports 24811787527, need 24811787528",
+        "Program 11111111111111111111111111111111 failed: custom program error: 0x1",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 31171 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "name": "expanded-system-transfer-1-lamport",
+      "bytes": 520,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstSixIndexes": [
+        0,
+        0,
+        1,
+        7,
+        2,
+        0
+      ],
+      "currentSlot": 457349053,
+      "err": null,
+      "unitsConsumed": 33824,
+      "lamports": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "pre": 1902234312,
+          "post": 1902229313,
+          "delta": -4999
+        },
+        {
+          "address": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+          "pre": 24811787527,
+          "post": 24811787526,
+          "delta": -1
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 33824 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    }
+  ]
+}

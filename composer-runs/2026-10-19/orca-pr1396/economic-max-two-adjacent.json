@@ -1,0 +1,443 @@
+{
+  "schema": "orca-pr1396-economic-max-sweep/v1",
+  "execution": "signed v1 simulation on separate local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:56899",
+  "allocation": "save",
+  "providerMode": "two",
+  "tickMode": "adjacent",
+  "syncedSaveState": {
+    "source": "http://127.0.0.1:48899",
+    "addresses": [
+      "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv",
+      "8PbodeaosQP19SjYFx855UMqWxH2HynZLdBXmsrbac36",
+      "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7",
+      "4UpD2fh7xH3VP9QQaXtsS1YY3bxzWhtfpks7FatyKvdY"
+    ]
+  },
+  "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+  "position": "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw",
+  "rows": [
+    {
+      "inputLamports": "22800000000000",
+      "cushionLamports": "456000010000",
+      "allocation": "save",
+      "providerMode": "two",
+      "tickMode": "adjacent",
+      "saveFeeLamports": "9119600000",
+      "borrowedLamports": {
+        "save": "22799000000000",
+        "project0": "0",
+        "klend": "1000000000"
+      },
+      "actor": "F8xaKbPpzXXRsAPbyjweNj32dqdtWLrPQ9mB76b4SpZp",
+      "actorWsolAta": "BQbMUCugQyH5XQbwoV3ZCRwBMwCNRaaymRY4ysnTMUE8",
+      "err": null,
+      "firstFailure": null,
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": true,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": "0",
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": "0",
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": "9119600000",
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "BQbMUCugQyH5XQbwoV3ZCRwBMwCNRaaymRY4ysnTMUE8": null,
+        "2TSxHFGkmJDu2YV6BBrbLpSfE3wd7LrNxmYqx294U1Zx": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": "456000000000",
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": "-45409713975"
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": "10000",
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": "45409713975",
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": "210223081032176",
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": "6635292955086",
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": {
+        "liquidity": "2471395",
+        "checkpointA": "12508489637776174386",
+        "feeOwedA": "874208",
+        "checkpointB": "1690764837809788450",
+        "feeOwedB": "129814"
+      },
+      "unitsConsumed": 1393975,
+      "wire": {
+        "version": 1,
+        "bytes": 1478,
+        "accounts": 33,
+        "instructions": 13,
+        "requiredSignatures": 1,
+        "computeLimit": 1400000,
+        "sha256": "9826407a863e80e3872459d59c42db1a43ace39debbc52f79c69c9cab69664a7"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 32687 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21587 of 53030 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 13168 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 124 of 9910 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 6571 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 25418 of 31443 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo success"
+      ],
+      "pass": true
+    },
+    {
+      "inputLamports": "22810000000000",
+      "cushionLamports": "456200010000",
+      "allocation": "save",
+      "providerMode": "two",
+      "tickMode": "adjacent",
+      "saveFeeLamports": "9123600000",
+      "borrowedLamports": {
+        "save": "22809000000000",
+        "project0": "0",
+        "klend": "1000000000"
+      },
+      "actor": "BkN7kubUVYmLVdyQJj9Nkr7syEgCypCxsjcwYUCZJnyH",
+      "actorWsolAta": "fc3gJNih8LjkzDkAHrfXVgu4x79tGqiejJ5YfCNjL8C",
+      "err": {
+        "InstructionError": [
+          12,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "fc3gJNih8LjkzDkAHrfXVgu4x79tGqiejJ5YfCNjL8C": null,
+        "2ghRqrtxkn2BJe6HNQicUER3pEBYC1RUjbixd5KWLqab": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1478,
+        "accounts": 33,
+        "instructions": 13,
+        "requiredSignatures": 1,
+        "computeLimit": 1400000,
+        "sha256": "490e115cc2bff71302741f21b7b8add3b853b4aba01a03135929a07812113df0"
+      },
+      "logTail": [
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 44316 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 35334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 14790 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21587 of 35133 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 13546 of 13546 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "22820000000000",
+      "cushionLamports": "456400010000",
+      "allocation": "save",
+      "providerMode": "two",
+      "tickMode": "adjacent",
+      "saveFeeLamports": "9127600000",
+      "borrowedLamports": {
+        "save": "22819000000000",
+        "project0": "0",
+        "klend": "1000000000"
+      },
+      "actor": "A1P5hbVK1JyhFuRdoChAPRaaYzt4768e3WJnvK3PaArw",
+      "actorWsolAta": "HrHi75w94mpmu3MwZyvwUx1sqwZKaY2mzwHPg2sAavKh",
+      "err": {
+        "InstructionError": [
+          12,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "HrHi75w94mpmu3MwZyvwUx1sqwZKaY2mzwHPg2sAavKh": null,
+        "A4GAXWKZJGvz6e5YBApLN2qJRbTr5aAX276tCKzPddge": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1478,
+        "accounts": 33,
+        "instructions": 13,
+        "requiredSignatures": 1,
+        "computeLimit": 1400000,
+        "sha256": "75064a6c4874667e95420c297fbc696d4e75fdccaa018c44eab6a9be2779dfda"
+      },
+      "logTail": [
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 45599 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 36617 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 16073 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21587 of 36416 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 14829 of 14829 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "22830000000000",
+      "cushionLamports": "456600010000",
+      "allocation": "save",
+      "providerMode": "two",
+      "tickMode": "adjacent",
+      "saveFeeLamports": "9131600000",
+      "borrowedLamports": {
+        "save": "22829000000000",
+        "project0": "0",
+        "klend": "1000000000"
+      },
+      "actor": "5tzzym5ixrKJtE8R2fhdmhYdmVJJdexNtBQJBXnJJvvA",
+      "actorWsolAta": "6ZviByRXw8wpPwABTkqG9pkm2kYuVx4togaK6TCcHBp1",
+      "err": {
+        "InstructionError": [
+          12,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "6ZviByRXw8wpPwABTkqG9pkm2kYuVx4togaK6TCcHBp1": null,
+        "9fy7KPfgaD8o7ig4hPrx8ucZEf23p22kXDV9EFkzo1vU": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1478,
+        "accounts": 33,
+        "instructions": 13,
+        "requiredSignatures": 1,
+        "computeLimit": 1400000,
+        "sha256": "512da2d0e5a10d8768050c6a55d66a1d3303465589b5abf4fb0611ba1278a6de"
+      },
+      "logTail": [
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 44657 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 35675 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 15131 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21587 of 35474 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 13887 of 13887 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "22840000000000",
+      "cushionLamports": "456800010000",
+      "allocation": "save",
+      "providerMode": "two",
+      "tickMode": "adjacent",
+      "saveFeeLamports": "9135600000",
+      "borrowedLamports": {
+        "save": "22839000000000",
+        "project0": "0",
+        "klend": "1000000000"
+      },
+      "actor": "E7iR9SfPBETVQCyeqV88s6tdSMaa87PZ2BvXbqzNxfGD",
+      "actorWsolAta": "5riMxB5CsEeVqHoDc4gKCAmt44GPbgvrLufn2v3Dt875",
+      "err": {
+        "InstructionError": [
+          12,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "5riMxB5CsEeVqHoDc4gKCAmt44GPbgvrLufn2v3Dt875": null,
+        "EMZR9mErUFPz4Q2pJ3AhGBKnK8hSZHjjg8RM9vWR2neJ": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1478,
+        "accounts": 33,
+        "instructions": 13,
+        "requiredSignatures": 1,
+        "computeLimit": 1400000,
+        "sha256": "28ed5adcd83457e6567db5b9dd2c9f8c01f61abc8dbec2291e1c5da22b417834"
+      },
+      "logTail": [
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 44562 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 35580 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 15036 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21587 of 35379 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 13792 of 13792 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    }
+  ]
+}

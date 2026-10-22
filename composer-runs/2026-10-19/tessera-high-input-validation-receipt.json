@@ -1,0 +1,37 @@
+{
+  "candidateId": "tessera-wsol-usdc-high-input-discontinuity",
+  "findingTitle": "Potential high-input TesseraV WSOL/USDC pricing discontinuity",
+  "validatedAtUtc": "2026-10-19T09:25:11Z",
+  "confidence": "high for the tested sizes and current deployment; no whole-program conclusion",
+  "method": "current deployment attestation, held-out receipt validation, signed mainnet v1 flash precursors, independent exact-output exit quotes, and signed two-/three-provider atomic construction",
+  "rubric": [
+    {"criterion": "Current executable identity and Composer schema match the pinned baseline", "passed": true},
+    {"criterion": "A held-out current successful receipt confirms the live swap selector, accounts, and vault outflow", "passed": true},
+    {"criterion": "Every tested route is fresh-signed, sigVerify:true, no-broadcast, and reconciles executed token CPIs", "passed": true},
+    {"criterion": "High inputs are compared with independent major-asset exits", "passed": true},
+    {"criterion": "Any positive precursor receives full atomic 2/3-provider construction and fee accounting", "passed": true}
+  ],
+  "evidence": {
+    "deployment": "slot 458775950; deploy slot 446053401; ELF sha256 82fd37995fcece47a253b1a00c1dd7e4c3fff706b2e42384110e2cbabf4201b3",
+    "heldOutReceipt": "slot 458775988; selector 1100; 14 accounts; current WSOL/USDC vault transfers",
+    "largestSignedPrecursors": [
+      "5000 WSOL -> 528204.157327 USDC; independent exit net -17.076293047 WSOL before fees",
+      "3000000 USDC -> 24466.473635221 WSOL; independent exit net -441853.191233 USDC before fees"
+    ],
+    "positivePrecursor": "10 USDC time-separated quote-only exit net +0.003716 USDC before fees",
+    "twoProviderAtomic": "KLend+Project0; err:null; 1642 bytes; 35 accounts; both lenders restored; caller -0.013991 USDC before network fee and -0.015049 USDC after base-fee equivalent",
+    "threeProviderAtomic": "Save+KLend+Project0; 1877 bytes; 41 accounts; Tessera memory allocation failed before completion"
+  },
+  "counterevidenceOrProofGap": "The fixed-bank Surfpool control returned Tessera 0xffff while the identical live-mainnet control succeeded, so exact same-bank cross-size fork execution was not available. Signed mainnet precursor cases therefore span nearby slots. cbBTC and untested future states remain outside scope.",
+  "disposition": "suppressed",
+  "remainingUncertainty": "No positive signed atomic WSOL/USDC route was demonstrated. The three-provider OOM shape and cbBTC require separate work only if future evidence makes them economically relevant.",
+  "artifacts": [
+    "tessera-current-audit.md",
+    "tessera-current-census.json",
+    "tessera-receipt-shapes.json",
+    "tessera-mainnet-flash-precursor.json",
+    "tessera-mainnet-flash-exit-screen.json",
+    "tessera-full-atomic-v1.json"
+  ],
+  "broadcast": false
+}

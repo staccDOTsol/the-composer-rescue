@@ -1,0 +1,16 @@
+{
+  "candidateId": "5UUMS-001",
+  "instance": "current RuneMine 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu wrapper signer threshold",
+  "disposition": "reportable",
+  "confidence": "high",
+  "severity": "high, conditional on possession of one authorized signer key",
+  "validationMethod": "read-only mainnet current-state simulateTransaction with one-required-signature alias wires, distinct-signer negative controls, token/SOL/loader post-account images, and current binary/state/history binding",
+  "proof": [
+    "5uums-wrapper-alias-independent.json",
+    "5uums-wrapper-generic-probe.json",
+    "5uums-wrapper-upgrade-independent.json",
+    "5uums-wrapper-upgrade-boundary.json"
+  ],
+  "counterevidenceOrProofGap": "No permissionless path was shown; an outsider needs one of A/B/C private keys. Simulations used sigVerify:false and submitted no transaction. Token USD proceeds and Bitcoin-side redemption are unproven.",
+  "report": "5uums-validation.md"
+}

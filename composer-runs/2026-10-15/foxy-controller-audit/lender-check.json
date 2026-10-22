@@ -1,0 +1,69 @@
+{
+  "generatedAt": "2026-10-15T20:03:36.065Z",
+  "readOnly": true,
+  "noTransactionsSubmitted": true,
+  "mint": "FoXyMu5xwXre7zEoSvzViRk3nGawHUp9kUh97y2NDhcq",
+  "results": [
+    {
+      "label": "project0_marginfi_v1_bank_by_mint",
+      "programId": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "mintOffset": 8,
+      "observationSlot": 457360293,
+      "accounts": []
+    },
+    {
+      "label": "kamino_lend_reserve_by_liquidity_mint",
+      "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "mintOffset": 128,
+      "observationSlot": 457360316,
+      "accounts": []
+    },
+    {
+      "label": "save_solend_reserve_by_liquidity_mint",
+      "programId": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "mintOffset": 42,
+      "dataSize": 619,
+      "observationSlot": 457360343,
+      "accounts": []
+    },
+    {
+      "label": "jupiter_isolated_liquidity_token_reserve_by_mint",
+      "programId": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+      "mintOffset": 8,
+      "discriminator": "4XRCaxYacbu",
+      "observationSlot": 457360343,
+      "accounts": []
+    },
+    {
+      "label": "jupiter_lend_liquidity_token_reserve_by_mint",
+      "programId": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+      "mintOffset": 8,
+      "discriminator": "4XRCaxYacbu",
+      "observationSlot": 457360343,
+      "accounts": []
+    }
+  ],
+  "providerClassification": [
+    {
+      "label": "project0_marginfi_v1_bank_by_mint",
+      "outsiderAtomicSemantics": "flashloan start/borrow/repay/end; fresh attacker-owned marginfi account supported"
+    },
+    {
+      "label": "kamino_lend_reserve_by_liquidity_mint",
+      "outsiderAtomicSemantics": "flash borrow/repay pair; one borrow per reserve per transaction"
+    },
+    {
+      "label": "save_solend_reserve_by_liquidity_mint",
+      "outsiderAtomicSemantics": "flash borrow/repay pair; one borrow per transaction"
+    },
+    {
+      "label": "jupiter_isolated_liquidity_token_reserve_by_mint",
+      "outsiderAtomicSemantics": "zero-fee isolated flash wrapper for its configured reserve set"
+    },
+    {
+      "label": "jupiter_lend_liquidity_token_reserve_by_mint",
+      "outsiderAtomicSemantics": "protocol-bound operate path; checked for completeness, not counted as generic outsider source"
+    }
+  ],
+  "conclusion": "no_same_mint_bank_or_reserve_across_current_provider_set"
+}

@@ -1,0 +1,481 @@
+{
+  "generatedAt": "2026-10-15T19:07:30.209Z",
+  "transport": "get* and simulateTransaction only; no signing or send",
+  "caveat": "sigVerify:false supplies a zero signature. Signer-count and compiled-index evidence proves the alias variant needs only A to sign, but no live transaction was submitted.",
+  "A": {
+    "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+    "onCurve": true,
+    "owner": "11111111111111111111111111111111",
+    "lamports": 1902234312
+  },
+  "B": {
+    "address": "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+    "onCurve": true
+  },
+  "C": {
+    "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+    "onCurve": true
+  },
+  "initialVaultAmounts": {
+    "MIM": "2032443364232",
+    "DOG": "9709562711505337",
+    "PUPS": "716632732762402445"
+  },
+  "tests": [
+    {
+      "label": "control-only-A-distinct-slots",
+      "symbol": "MIM",
+      "wireBytes": 620,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+          "isSigner": false
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        1,
+        2
+      ],
+      "amountRaw": "1501075607",
+      "currentSlot": 457348362,
+      "snapshotSlot": 457348363,
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidArgument"
+        ]
+      },
+      "unitsConsumed": 27461,
+      "tokens": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 27461 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: invalid program argument"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-B-slot-original-amount",
+      "symbol": "MIM",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        0,
+        1
+      ],
+      "amountRaw": "1501075607",
+      "currentSlot": 457348362,
+      "snapshotSlot": 457348363,
+      "err": null,
+      "unitsConsumed": 56647,
+      "tokens": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2030942288625",
+          "delta": "-1501075607"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "3002151214",
+          "delta": "1501075607"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 144064 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 56647 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-B-slot-full-MIM",
+      "symbol": "MIM",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        0,
+        1
+      ],
+      "amountRaw": "2032443364232",
+      "currentSlot": 457348363,
+      "snapshotSlot": 457348363,
+      "err": null,
+      "unitsConsumed": 56647,
+      "tokens": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "0",
+          "delta": "-2032443364232"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "2033944439839",
+          "delta": "2032443364232"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 144064 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 56647 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-B-slot-alternate-recipient",
+      "symbol": "MIM",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        0,
+        1
+      ],
+      "amountRaw": "1",
+      "currentSlot": 457348364,
+      "snapshotSlot": 457348364,
+      "err": null,
+      "unitsConsumed": 55147,
+      "tokens": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364231",
+          "delta": "-1"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024373",
+          "delta": "1"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 145564 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 21381 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 55147 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-C-slot",
+      "symbol": "MIM",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+          "isSigner": false
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        1,
+        0
+      ],
+      "amountRaw": "1501075607",
+      "currentSlot": 457348365,
+      "snapshotSlot": 457348365,
+      "err": null,
+      "unitsConsumed": 56647,
+      "tokens": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2030942288625",
+          "delta": "-1501075607"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "3002151214",
+          "delta": "1501075607"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 144064 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 56647 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-B-slot-full-DOG",
+      "symbol": "DOG",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        0,
+        1
+      ],
+      "amountRaw": "9709562711505337",
+      "currentSlot": 457348365,
+      "snapshotSlot": 457348365,
+      "err": null,
+      "unitsConsumed": 56647,
+      "tokens": [
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "0",
+          "delta": "-9709562711505337"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "9709699579659592",
+          "delta": "9709562711505337"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 144064 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 56647 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "A-duplicated-in-B-slot-full-PUPS",
+      "symbol": "PUPS",
+      "wireBytes": 588,
+      "version": 0,
+      "signatureSlots": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "firstThreeMetas": [
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+          "isSigner": true
+        },
+        {
+          "address": "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn",
+          "isSigner": false
+        }
+      ],
+      "firstThreeCompiledIndexes": [
+        0,
+        0,
+        1
+      ],
+      "amountRaw": "716632732762402445",
+      "currentSlot": 457348366,
+      "snapshotSlot": 457348366,
+      "err": null,
+      "unitsConsumed": 52147,
+      "tokens": [
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "0",
+          "delta": "-716632732762402445"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "716632732762402445",
+          "delta": "716632732762402445"
+        }
+      ],
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 148564 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 18381 of 166523 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 52147 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    }
+  ]
+}

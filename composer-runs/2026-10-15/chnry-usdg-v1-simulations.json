@@ -1,0 +1,3149 @@
+{
+  "observedAt": "2026-10-15T19:49:38.821Z",
+  "readOnly": true,
+  "noSubmission": true,
+  "signerVerification": false,
+  "transactionVersion": 1,
+  "exactWireLimitBytes": 4096,
+  "programId": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+  "historicalControlSignature": "32sBxLB3zYh4efsMnBPnsCNdEenL2zfnjk48q8YVxAV9cXDZT44AFHiyHnvbypwq724uy94Jg9k2qRjKpiwqovXX",
+  "historicalControlSlot": 456023812,
+  "sourceRevision": "0dafa95d1aded954de098208f0f515d436aa496c",
+  "selectedKlendReserve": {
+    "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+    "market": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+    "supplyVault": "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+    "feeVault": "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs",
+    "reserveReportedAvailableRaw": "3153959608819",
+    "supplyVaultBalanceRaw": "3153959608819",
+    "flashFeeSf": "0",
+    "status": 0,
+    "emergencyMode": 0
+  },
+  "actors": {
+    "operator": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+    "operatorUsdG": "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa",
+    "operatorUsdV": "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj",
+    "outsider": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+    "outsiderUsdG": "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR",
+    "outsiderUsdVDerivedAta": "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t",
+    "outsiderPermissionPda": "AexP3HH56yv1fhefnaxuXpPoudPvTShjLsNeK1kp3tFQ"
+  },
+  "controllerParameters": {
+    "minimumRaw": "1000000000",
+    "maximumRaw": "500000000000",
+    "depositRateE9": "1000000000",
+    "redeemRateE9": "1000000000",
+    "feePolicyPresent": false,
+    "vaultBalanceRaw": "8082639810000"
+  },
+  "watch": [
+    "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa",
+    "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj",
+    "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR",
+    "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t",
+    "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg",
+    "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+    "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs",
+    "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+    "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk",
+    "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+    "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv"
+  ],
+  "results": [
+    {
+      "label": "operator_redeem_historical_20808_control",
+      "category": "positive-control",
+      "expected": "success; authorized 1:1 USDv burn for USDG",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360038,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360038,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "f881da4c158d2b1d309e8edd85c180b15f9aa05d11213bbc05505e6ae44724a6",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 114578,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "20808000000",
+        "subjectUsdVDeltaRaw": "-20808000000",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "-20808000000",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "-20808000000",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": {
+          "pre": "327d4a0b7b604555e2c43234ff9a8334ab5cb815358966c2cfafa3c7a3b67d85",
+          "post": "17e005bc57b1ec9712cc3b5f8c13e84db8b6ea1d36c148d3019db58d4e10920d"
+        },
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": {
+          "pre": "0a8787a64ee2db0996a730e10c1fe531778a3896350765385fe1415260a688ca",
+          "post": "4179361b2ba7ef9279720b2c7603e4180e837e15251abe9976a63f3ce7c92680"
+        },
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": {
+          "pre": "7c58ce7d2e96162a0a9aa95acfebcd551d3b7730e2e0893942df0422ca43a964",
+          "post": "a53d287fe2b39b47ed765ad43591f00d4b36dc453fbad4da698932ca556d3b5d"
+        },
+        "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk": {
+          "pre": "e81a0a88475756f0586e6cd48e53890e35502f36b76c082072e8b6532c912a02",
+          "post": "8d3287ebd8dbb4fe0077911c1c27a4bb4e4be8b175d763d54b5fbd26cb5dbd35"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "f4e1f639f9b1bdcf16287cc90e79c0b69347f7ef7dce5f3b263b4b8a2c7b3601"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "131212177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "108815578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8061831810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success"
+      ]
+    },
+    {
+      "label": "operator_redeem_minimum_control",
+      "category": "boundary-control",
+      "expected": "success at configured minimum",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360039,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360039,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "f66dd0c24456f44a1bbbef0ccc3b9b73808587bac504fc3d0eee19669876d44a",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 114550,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "1000000000",
+        "subjectUsdVDeltaRaw": "-1000000000",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "-1000000000",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "-1000000000",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": {
+          "pre": "327d4a0b7b604555e2c43234ff9a8334ab5cb815358966c2cfafa3c7a3b67d85",
+          "post": "e5f08ddd995bc07f567ab026ed15a7009fc3ce5ca2f51d30e248facc9e5ca961"
+        },
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": {
+          "pre": "0a8787a64ee2db0996a730e10c1fe531778a3896350765385fe1415260a688ca",
+          "post": "236efacf23480c80ffaf7a8a014b0fc4ce3218594d6949e8d6a89f55db606a6c"
+        },
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": {
+          "pre": "7c58ce7d2e96162a0a9aa95acfebcd551d3b7730e2e0893942df0422ca43a964",
+          "post": "777ec3d51031a7edec883b297f0b3dd436ea64eaee75473a7368b58db076799a"
+        },
+        "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk": {
+          "pre": "e81a0a88475756f0586e6cd48e53890e35502f36b76c082072e8b6532c912a02",
+          "post": "01c584b5a5a37faca73d220df45c55ff9b562623f67a935314d7e640ed2dc850"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "d42664a2b09dffed30f631f5c8adc5b0393395c4a9efdd724104a435dfa6d870"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "111404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "128623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8081639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success"
+      ]
+    },
+    {
+      "label": "operator_redeem_zero",
+      "category": "dust-boundary",
+      "expected": "failure before asset outflow",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360040,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360040,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2563
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2563,
+        "program": "Chancery",
+        "name": "AmountBelowMinimum",
+        "message": "amount below minimum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "02c69669f236ca7232b360536d40ae147944cd67a3bef6d11e0a7e1f6766f198",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43503,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa03"
+      ]
+    },
+    {
+      "label": "operator_redeem_one_raw",
+      "category": "dust-boundary",
+      "expected": "failure before asset outflow",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360041,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360041,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2563
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2563,
+        "program": "Chancery",
+        "name": "AmountBelowMinimum",
+        "message": "amount below minimum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "31e9d57bbc3f2ca40b1c9eaea7feb2524f86e077b9802d1cc91fc5e5063f1ce7",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43503,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa03"
+      ]
+    },
+    {
+      "label": "operator_redeem_minimum_minus_one",
+      "category": "dust-boundary",
+      "expected": "failure before asset outflow",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360043,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360043,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2563
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2563,
+        "program": "Chancery",
+        "name": "AmountBelowMinimum",
+        "message": "amount below minimum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "9f1a177e8d40dcf4aea8c232322c9cd74d8a98a56f161b6ef639a4b3202bfa5d",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43503,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa03"
+      ]
+    },
+    {
+      "label": "operator_redeem_maximum_plus_one",
+      "category": "arithmetic-boundary",
+      "expected": "failure at configured maximum guard",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360044,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360044,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2564
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2564,
+        "program": "Chancery",
+        "name": "AmountExceedsMaximum",
+        "message": "amount exceeds maximum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "81f509fa199eb1fee47abd6507f65fce71f621b14afd657c030c5aded99aec6e",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43507,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa04"
+      ]
+    },
+    {
+      "label": "operator_redeem_vault_minus_one",
+      "category": "vault-capacity-boundary",
+      "expected": "failure at per-settlement maximum before vault capacity is reachable",
+      "controllerAuthorization": "authorized operator",
+      "notes": "Current vault exceeds the stricter 500,000 USDG action cap.",
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360046,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360046,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2564
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2564,
+        "program": "Chancery",
+        "name": "AmountExceedsMaximum",
+        "message": "amount exceeds maximum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "03246283c2151d600fbfeb3afcdf34123d5753f688519282e02ae766066182cc",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43507,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa04"
+      ]
+    },
+    {
+      "label": "operator_redeem_vault_exact",
+      "category": "vault-capacity-boundary",
+      "expected": "failure at per-settlement maximum before vault capacity is reachable",
+      "controllerAuthorization": "authorized operator",
+      "notes": "Current vault exceeds the stricter 500,000 USDG action cap.",
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360047,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360047,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2564
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2564,
+        "program": "Chancery",
+        "name": "AmountExceedsMaximum",
+        "message": "amount exceeds maximum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "0943827d57800f2624d390ae4a35eafcb8ace550a6dde2c72a7837dea976f270",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43507,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa04"
+      ]
+    },
+    {
+      "label": "operator_redeem_vault_plus_one",
+      "category": "vault-capacity-boundary",
+      "expected": "failure at per-settlement maximum before vault capacity is reachable",
+      "controllerAuthorization": "authorized operator",
+      "notes": "Current vault exceeds the stricter 500,000 USDG action cap.",
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360048,
+      "baselineMatchesActionSlot": false,
+      "simulationSlot": 457360049,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2564
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2564,
+        "program": "Chancery",
+        "name": "AmountExceedsMaximum",
+        "message": "amount exceeds maximum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "78a99525f75824d946f04534e3ad9484b7d3a7c81c8ce122981aa2489251d10e",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43507,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa04"
+      ]
+    },
+    {
+      "label": "outsider_redeem_direct_no_permission",
+      "category": "outsider-auth",
+      "expected": "failure; canonical outsider permission PDA is absent",
+      "controllerAuthorization": "unauthorized outsider",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360051,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360051,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 514,
+        "program": "Chancery",
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "225b95434d88ead97bcee075e2dd13d9a5c16a13ecec8eb079c62510c3a36a16",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 33645,
+      "loadedAccountsDataSize": 2428352,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_mint_direct_no_permission",
+      "category": "outsider-auth",
+      "expected": "failure; canonical outsider permission PDA is absent",
+      "controllerAuthorization": "unauthorized outsider",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360052,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360052,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 514,
+        "program": "Chancery",
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "b3deb3cf2cca3f97a05583767553dc780fcef9523a48a19290e4939743c8f646",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 33647,
+      "loadedAccountsDataSize": 2428352,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_outsider_principal_operator_permission",
+      "category": "account-substitution",
+      "expected": "failure; permission subject/PDA does not bind to outsider",
+      "controllerAuthorization": "unauthorized outsider",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360054,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360054,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 770
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 770,
+        "program": "Chancery",
+        "name": "PermissionScopeMismatch",
+        "message": "permission scope mismatch"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "5a89b2fb70c84658a7bb024db915fb62352d5d3806e544d6528fe20f6243616f",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 35293,
+      "loadedAccountsDataSize": 2428608,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x302"
+      ]
+    },
+    {
+      "label": "substitution_operator_principal_outsider_permission",
+      "category": "account-substitution",
+      "expected": "failure; missing/noncanonical permission account",
+      "controllerAuthorization": "authorized operator with substituted account",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360055,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360055,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 514,
+        "program": "Chancery",
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "99fae7b84fd3028477497e20253061fe59608c0a0df1fc5eb2fd91d288fd0de6",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 33645,
+      "loadedAccountsDataSize": 2428595,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_redeem_destination_outsider",
+      "category": "account-substitution",
+      "expected": "failure; destination token owner must be principal",
+      "controllerAuthorization": "authorized operator with outsider destination",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360056,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360056,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 515
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 515,
+        "program": "Chancery",
+        "name": "AccountKeyMismatch",
+        "message": "account key mismatch"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "de9c3daa8a1ae34a25531d91bffa876523dc6f7b6016f787cbf449360c3ad842",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43490,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x203"
+      ]
+    },
+    {
+      "label": "substitution_reserve_vault_klend_supply",
+      "category": "account-substitution",
+      "expected": "failure; reserve must be canonical authority ATA",
+      "controllerAuthorization": "authorized operator with substituted vault",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360058,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360058,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 516
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 516,
+        "program": "Chancery",
+        "name": "InvalidPda",
+        "message": "invalid pda derivation"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "ae6c6d2b01f521f8719533284212626bf2569db7c45df1280e699835cb17b9b5",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 43323,
+      "loadedAccountsDataSize": 2428847,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x204"
+      ]
+    },
+    {
+      "label": "substitution_redeem_reserve_authority_mint_authority",
+      "category": "pda-cpi-authority",
+      "expected": "failure; reserve authority must be canonical PDA",
+      "controllerAuthorization": "authorized operator with substituted PDA",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360059,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360059,
+      "err": {
+        "InstructionError": [
+          0,
+          "PrivilegeEscalation"
+        ]
+      },
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "a5375018a3f1e5088883432f1fc1f362168d92ca8a8a4d764bf811d6c21245b1",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 80442,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: Cross-program invocation with unauthorized signer or writable account"
+      ]
+    },
+    {
+      "label": "substitution_mint_authority_reserve_authority",
+      "category": "pda-cpi-authority",
+      "expected": "failure; mint authority must be configured canonical PDA",
+      "controllerAuthorization": "authorized operator with substituted PDA",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360060,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360060,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 515
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 515,
+        "program": "Chancery",
+        "name": "AccountKeyMismatch",
+        "message": "account key mismatch"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "6857b984855c636b37c6d95c7a2d72c0ad43924c7818d967e2b6459e735230d2",
+        "sizeBytes": 1031,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1020,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 40248,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x203"
+      ]
+    },
+    {
+      "label": "substitution_asset_mint_issued_mint",
+      "category": "account-substitution",
+      "expected": "failure; asset config/mint binding",
+      "controllerAuthorization": "authorized operator with substituted mint",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360062,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360062,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 524
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 524,
+        "program": "Chancery",
+        "name": "AccountAliasNotAllowed",
+        "message": "semantically distinct accounts may not alias"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "35aeffbf9df35a9f0eff20c25df2f62b824896082076e540ebb72a8a4526a38d",
+        "sizeBytes": 999,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 988,
+        "addressCount": 25,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 14018,
+      "loadedAccountsDataSize": 2427921,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x20c"
+      ]
+    },
+    {
+      "label": "principal_not_instruction_signer",
+      "category": "signer-auth",
+      "expected": "failure; external principal signer required",
+      "controllerAuthorization": "unsigned operator identity",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360064,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360064,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 513
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 513,
+        "program": "Chancery",
+        "name": "AccountNotSigner",
+        "message": "account is not a signer"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "f1eec0cfea410b3f982a514f5533c9d8a9d5293a1b14ab6fbffa2dbada289afa",
+        "sizeBytes": 1063,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1052,
+        "addressCount": 27,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 15998,
+      "loadedAccountsDataSize": 2428915,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x201"
+      ]
+    },
+    {
+      "label": "program_owned_state_as_principal",
+      "category": "pda-cpi-authority",
+      "expected": "failure; program-owned identities cannot serve as external signers",
+      "controllerAuthorization": "program-owned substituted identity",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360066,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360066,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 524
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 524,
+        "program": "Chancery",
+        "name": "AccountAliasNotAllowed",
+        "message": "semantically distinct accounts may not alias"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "20ee765b5bb9c5fd69d459e042a5f6a842cd3b9dc147fa689b871ef647eee07f",
+        "sizeBytes": 1095,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1084,
+        "addressCount": 26,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 2,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 11008,
+      "loadedAccountsDataSize": 2428595,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x20c"
+      ]
+    },
+    {
+      "label": "operator_mint_redeem_no_flash_control",
+      "category": "same-transaction-ordering",
+      "expected": "success with zero value-equivalent delta",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360067,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360067,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "0c58192a0e4c907b73959283d2ccd1a7f1358d831c1a12da90b0d505ad0cd5f8",
+        "sizeBytes": 1148,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1136,
+        "addressCount": 27,
+        "addressLimit": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 207878,
+      "loadedAccountsDataSize": 2428851,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "0",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "7648c78ed1a72ac8648406c6d5489a66aed6b77a1f1477eb2d08977aea599875"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success"
+      ]
+    },
+    {
+      "label": "klend_flash_pair_control",
+      "category": "flash-control",
+      "expected": "success; exact-zero-rate borrow and full repay",
+      "controllerAuthorization": "no controller action",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360068,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360068,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "03637d97138e94335b59f6b8b38b54229a1af5207d9f7d68dd0639a50a04997d",
+        "sizeBytes": 531,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 519,
+        "addressCount": 11,
+        "addressLimit": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 68807,
+      "loadedAccountsDataSize": 11883368,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp": {
+          "pre": "7dda6bb6475fe1ad5bc94976b0c775574e8934f90446cc0eaf1260b6570bae22",
+          "post": "714ea003a6d374407e4b546fa9ff9eb77a9a0d878a640cb884f95541c14bb954"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "label": "operator_flash_mint_redeem_minimum",
+      "category": "flash-controller-composition",
+      "expected": "success; full unwind and repay with zero net equity",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360069,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360069,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "6db6e2c0e3a4164683822b3516848d1f879a9ddae7cb46b2ba462782cdc9e55e",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 282083,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp": {
+          "pre": "7dda6bb6475fe1ad5bc94976b0c775574e8934f90446cc0eaf1260b6570bae22",
+          "post": "5f98a9e489a11eb6fa1a23b8ab319d4c57fbe7105e7b013bde510d4b094121e6"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "7648c78ed1a72ac8648406c6d5489a66aed6b77a1f1477eb2d08977aea599875"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "label": "operator_flash_redeem_mint_minimum",
+      "category": "same-transaction-ordering",
+      "expected": "success; reverse controller order remains value-neutral",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360070,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360070,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "bb69a41b86f658996c7a1e068b31120201322c1c80ebaa81b0d3f0c32f9db504",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 282173,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp": {
+          "pre": "7dda6bb6475fe1ad5bc94976b0c775574e8934f90446cc0eaf1260b6570bae22",
+          "post": "c0db6756e737e1546ac06a0ad4d9c4cdf5544a26a4f06b3ae7d378533ebf2a90"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "7648c78ed1a72ac8648406c6d5489a66aed6b77a1f1477eb2d08977aea599875"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "label": "operator_flash_mint_redeem_maximum",
+      "category": "arithmetic-boundary",
+      "expected": "success at configured maximum; full unwind and repay",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360071,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360071,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "3de2e5b5b0d7b8a7b63c007b7b35224e979a429e8cec294b2bb3c293936c1ea9",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 282141,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "500000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp": {
+          "pre": "7dda6bb6475fe1ad5bc94976b0c775574e8934f90446cc0eaf1260b6570bae22",
+          "post": "1317154de16ec313120bcf257933a91534059facee5f6dc7494f7da79bacffa3"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "fb133f5a04d32610378803971248b8e54c79488e04645027108c38e450e46971"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "label": "operator_flash_mint_redeem_maximum_plus_one",
+      "category": "arithmetic-boundary",
+      "expected": "failure at configured maximum; atomic rollback",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360072,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360072,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2564
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2564,
+        "program": "Chancery",
+        "name": "AmountExceedsMaximum",
+        "message": "amount exceeds maximum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "e3ade36780e554f5b395b4cf2126ad02afe58ed519ec3429551982eb67785c7b",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 91833,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "500000000001",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa04"
+      ]
+    },
+    {
+      "label": "operator_flash_mint_repay_then_redeem_maximum",
+      "category": "same-transaction-ordering",
+      "expected": "failure or value-neutral completion; no unpaid liability gain",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360073,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360073,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 1,
+        "program": "unknown-or-KLend"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "cbb55e72c9703847a79a1ff249528a93f0389c2116f2ea492aaac13e02d35165",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 184923,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "500000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: insufficient funds",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "label": "operator_flash_mint_redeem_one_raw",
+      "category": "dust-flash-composition",
+      "expected": "failure at Chancery minimum; atomic KLend rollback",
+      "controllerAuthorization": "authorized operator",
+      "notes": null,
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360075,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360075,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2563
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 2563,
+        "program": "Chancery",
+        "name": "AmountBelowMinimum",
+        "message": "amount below minimum"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "31988e37cc6fc0f19afc45be1591d326f07af90cf8d3b2b4ddf3ca31a17e7699",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 91834,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0xa03"
+      ]
+    },
+    {
+      "label": "outsider_flash_mint_redeem_minimum",
+      "category": "outsider-flash-composition",
+      "expected": "failure at outsider permission; atomic rollback and no equity gain",
+      "controllerAuthorization": "unauthorized outsider",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360076,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360076,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 514,
+        "program": "Chancery",
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "51b5b972d04a57040a69d06c746816eddeac787df32145ac233bb872308891b6",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 81946,
+      "loadedAccountsDataSize": 12928250,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_controller_before_flash",
+      "category": "same-transaction-ordering",
+      "expected": "failure before borrow; no equity gain",
+      "controllerAuthorization": "unauthorized outsider",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360077,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360077,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 514,
+        "program": "Chancery",
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "cece44e2738ff993bf17028106cca380588b55e4b9b70c0be1b7087aa49b241d",
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 1423,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 33647,
+      "loadedAccountsDataSize": 12928250,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "klend_flash_missing_repay",
+      "category": "liability-enforcement",
+      "expected": "failure; KLend requires same-transaction repay",
+      "controllerAuthorization": "no controller action",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360078,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360078,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6032
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 6032,
+        "program": "unknown-or-KLend"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "2b5d797e489e29bc6d1fd7b6b5f3cd22011596af6bb499afc7693591ee069022",
+        "sizeBytes": 498,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 487,
+        "addressCount": 11,
+        "addressLimit": 64,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 25094,
+      "loadedAccountsDataSize": 11883368,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": false,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: No flash repay found",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:139. Error Code: NoFlashRepayFound. Error Number: 6032. Error Message: No corresponding repay found for flash borrow.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1790"
+      ]
+    },
+    {
+      "label": "klend_repay_before_borrow",
+      "category": "same-transaction-ordering",
+      "expected": "failure; repay cannot precede referenced borrow",
+      "controllerAuthorization": "no controller action",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360079,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360079,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 6033,
+        "program": "unknown-or-KLend"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "d3dd081ae503b1a212bdc3086485c43f177ea7def0e24438aab64395a4f1b6c0",
+        "sizeBytes": 531,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 519,
+        "addressCount": 11,
+        "addressLimit": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 19068,
+      "loadedAccountsDataSize": 11883368,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Flash repay: borrow instruction index 1 has to be less than current index 0",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:40. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ]
+    },
+    {
+      "label": "klend_wrong_repay_index",
+      "category": "liability-enforcement",
+      "expected": "failure; repay must reference exact borrow index",
+      "controllerAuthorization": "no controller action",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360081,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360081,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 6033,
+        "program": "unknown-or-KLend"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "0147ec375c1d7eb7eb7087f5268a0ef95a51167778a18979706e11c70d1cd285",
+        "sizeBytes": 531,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 519,
+        "addressCount": 11,
+        "addressLimit": 64,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 27089,
+      "loadedAccountsDataSize": 11883368,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "1000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Borrow instruction index 1 for flash repay doesn't match current index 0",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:164. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ]
+    },
+    {
+      "label": "klend_two_flash_cycles",
+      "category": "same-transaction-ordering",
+      "expected": "failure if KLend one-borrow invariant applies; no gain",
+      "controllerAuthorization": "no controller action",
+      "notes": null,
+      "payer": "C68a6RCGLiPskbPYtAcsCjhG8tfTWYcoB4JjCrXFdqyo",
+      "baselineSimulationSlot": 457360083,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360083,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6035
+          }
+        ]
+      },
+      "decodedError": {
+        "code": 6035,
+        "program": "unknown-or-KLend"
+      },
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "3bf9d19d678de25e3f8f9360cdfe98b1e1700be19d8f9a215066d67d19c15706",
+        "sizeBytes": 596,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 582,
+        "addressCount": 11,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 28783,
+      "loadedAccountsDataSize": 11883368,
+      "failedTransactionAccountingUsesAtomicRollback": true,
+      "accounting": {
+        "subject": "attacker",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "2000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {},
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Multiple flash borrows not allowed",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:123. Error Code: MultipleFlashBorrows. Error Number: 6035. Error Message: Multiple flash borrows not allowed in the same transaction.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1793"
+      ]
+    },
+    {
+      "label": "operator_flash_five_max_mints_then_five_redeems",
+      "category": "near-liquidity-batch",
+      "expected": "bounded by v1/CU/volume controls or succeeds value-neutrally; full repay required",
+      "controllerAuthorization": "authorized operator",
+      "notes": "Temporarily moves 2.5M USDG into the Chancery vault before unwinding; no live state is committed.",
+      "payer": "GLKCuotKSjPtQhxHmf6q8GUkw6tUZnzs8W5vEbxdaBdK",
+      "baselineSimulationSlot": 457360084,
+      "baselineMatchesActionSlot": true,
+      "simulationSlot": 457360084,
+      "err": null,
+      "decodedError": null,
+      "transaction": {
+        "version": 1,
+        "exactWireBase64Sha256": "6f5cb1a70f1fd75d5713cf87ad442a890513cc19f783bf56e36f48ec3530ee3b",
+        "sizeBytes": 2117,
+        "sizeLimitBytes": 4096,
+        "withinSizeLimit": true,
+        "v0ComparisonBytes": 2095,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 12,
+        "requiredSignatures": 1,
+        "signaturesVerified": false,
+        "computeLimit": 1400000,
+        "loadedAccountsDataLimit": 67108864
+      },
+      "unitsConsumed": 1052331,
+      "loadedAccountsDataSize": 12928749,
+      "failedTransactionAccountingUsesAtomicRollback": false,
+      "accounting": {
+        "subject": "operator",
+        "valuation": "raw 6-decimal units; USDG and USDv at configured 1:1 mint/redeem rate",
+        "subjectUsdGDeltaRaw": "0",
+        "subjectUsdVDeltaRaw": "0",
+        "subjectValueEquivalentDeltaRaw": "0",
+        "vaultUsdGDeltaRaw": "0",
+        "klendSupplyUsdGDeltaRaw": "0",
+        "klendFeeUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "requestedFlashPrincipalRaw": "2500000000000",
+        "fullRepayInstructionIncluded": true,
+        "outstandingLiabilityAfterTransactionRaw": "0",
+        "netEquityAfterLiabilitiesRaw": "0",
+        "positiveNetEquityAfterLiabilities": false
+      },
+      "changedAccountHashes": {
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": {
+          "pre": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "post": null
+        },
+        "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp": {
+          "pre": "7dda6bb6475fe1ad5bc94976b0c775574e8934f90446cc0eaf1260b6570bae22",
+          "post": "1045a45b188565c153fa5d92a4885657aadc085a156638b74c6d196854be17a5"
+        },
+        "7AZ7oBXVgmqHyCJxcmdPUDviouaF4XmcqSbQtkk3i7Cv": {
+          "pre": "ae530309b285faafcfbcde72acbe183f7429c80c1e1ee349f977d4e0db6f93bf",
+          "post": "675702df8682983fcfa24ba99e608a7789b56ec0f7f38ff30058aec9eb1a6bf9"
+        }
+      },
+      "preTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "postTokenAmounts": {
+        "6rdUtxMVCEKaKDMFtKynnZRuToFRnfKPKqvEUmwxngEa": "110404177057",
+        "7TpVyNfeYEUh7GEtBuwR24XtonwahqUULfb8mVq7fwaj": "129623578347",
+        "8T8DLKDtoMUKNgCdY9b7USDGJaP6RVYP6QmRgCKLtyxR": "83004323434148",
+        "8QCr6XEjd5T7zLFJHix6p9WxHez72eiMwY26BkwCjo1t": null,
+        "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg": "8082639810000",
+        "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "3152127524062",
+        "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "13565131"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: MintToChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz success",
+        "Program log: Instruction: BurnChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+      ]
+    }
+  ],
+  "conclusion": {
+    "outsiderCases": 5,
+    "outsiderSuccessfulTransactions": 0,
+    "outsiderPositiveNetEquityCases": [],
+    "positiveUnauthorizedNetAssetGainObserved": false,
+    "operatorCasesAreControlsNotFindings": true
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "observedAt": "2026-10-15T19:22:30.171Z",
+  "scopeProgram": "HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ",
+  "klendProgram": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "reserve": "4SnQnrZqGHT2zNW76S23um1xUYpZN8vmePSPuBP4p3fx",
+  "mint": "CTALocKfjp97U1XS2yTMamt68d9vYcKeXV7L1GCnTcMT",
+  "feed": "82tcZDwUSGnmekst8cU4TCgQ4KLFGdtgbVkekHeibN7V",
+  "mapping": "D66o6ybaEuMpBrHRRyQw7Xf3qmmHm6niJpjKaztQZBDF",
+  "priceChain": [
+    2,
+    1,
+    0,
+    65535
+  ],
+  "ammIndexes": [
+    2,
+    1
+  ],
+  "ammPools": [
+    {
+      "index": 1,
+      "type": "RaydiumClmmBtoA",
+      "pool": "7CDd3NPGWCzT2PY69DUCFzwvNaYQCL2UDXvKJd6Fs2Zj",
+      "frozen": false,
+      "refPriceIndex": 65535
+    },
+    {
+      "index": 2,
+      "type": "RaydiumClmmAtoB",
+      "pool": "5C9hnu7eVU1ifppiTSZiot5LQzcVvgnVsWD31HFB3pg5",
+      "frozen": false,
+      "refPriceIndex": 65535
+    }
+  ],
+  "before": {
+    "slot": 457352528,
+    "reserve": {
+      "hash": "6b9806b2a955f1b18f5b3fd4d2ff97313aeef99d44f61b79d6937fd3d977c19d",
+      "lastUpdateSlot": "442566785",
+      "stale": 0,
+      "priceStatus": 0,
+      "availableRaw": "120487670088",
+      "marketPriceSf": "0799407e3aee00000000000000000000"
+    },
+    "scopePricesHash": "5ee812b41e2cde199dc57182591f723f4246c9fd7d3b01af0274c2e6abeec2da"
+  },
+  "results": [
+    {
+      "name": "klend_only",
+      "slot": 457352529,
+      "wireBytes": 281,
+      "accountKeys": 5,
+      "err": null,
+      "unitsConsumed": 43932,
+      "reserve": {
+        "hash": "5233cb5c8e814fb082093fba3aa7d5af957f030e809a17eb06724d4f75d39ac5",
+        "lastUpdateSlot": "457352529",
+        "stale": 0,
+        "priceStatus": 61,
+        "availableRaw": "120487670088",
+        "marketPriceSf": "6c66e1cf1c1d01000000000000000000"
+      },
+      "scopePricesHash": "5ee812b41e2cde199dc57182591f723f4246c9fd7d3b01af0274c2e6abeec2da",
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Price is too old age=187410 max_age=150",
+        "Program log: Price is too old token=[CTALS], AnchorError(AnchorError { error_name: \"PriceTooOld\", error_code_number: 6039, error_msg: \"Price too old\", error_origin: Some(Source(Source { filename: \"programs/klend/src/utils/prices/checks.rs\", line: 115 })), compared_values: None })",
+        "Program log: Token: CTALS Price: 0.0003",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 43932 of 200000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "name": "scope_then_klend",
+      "slot": 457352529,
+      "wireBytes": 498,
+      "accountKeys": 11,
+      "err": null,
+      "unitsConsumed": 67835,
+      "reserve": {
+        "hash": "5233cb5c8e814fb082093fba3aa7d5af957f030e809a17eb06724d4f75d39ac5",
+        "lastUpdateSlot": "457352529",
+        "stale": 0,
+        "priceStatus": 61,
+        "availableRaw": "120487670088",
+        "marketPriceSf": "6c66e1cf1c1d01000000000000000000"
+      },
+      "scopePricesHash": "08bf6474c2b4fff201803c8c7ce0344de4264fa84861026c63080faa7f1ff56c",
+      "logs": [
+        "Program log: Instruction: RefreshPriceList",
+        "Program log: tk 1, RaydiumAmmV3BtoA: 2573931199898 to 2573931199898 | prev_slot: 457352474, new_slot: 457352529, crt_slot: 457352529",
+        "Program log: tk 2, RaydiumAmmV3AtoB: 983832893391432675 to 983832893391432675 | prev_slot: 457352474, new_slot: 457352529, crt_slot: 457352529",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Price is too old age=187410 max_age=150",
+        "Program log: Price is too old token=[CTALS], AnchorError(AnchorError { error_name: \"PriceTooOld\", error_code_number: 6039, error_msg: \"Price too old\", error_origin: Some(Source(Source { filename: \"programs/klend/src/utils/prices/checks.rs\", line: 115 })), compared_values: None })",
+        "Program log: Token: CTALS Price: 0.0003",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 43930 of 376095 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "name": "compute_scope_then_klend",
+      "slot": 457352530,
+      "wireBytes": 538,
+      "accountKeys": 12,
+      "err": null,
+      "unitsConsumed": 68657,
+      "reserve": {
+        "hash": "79b23d406310c3785f5b5a4e8838eb84889cb509eddd1dbb44a511ccc9ac3ad4",
+        "lastUpdateSlot": "457352530",
+        "stale": 0,
+        "priceStatus": 61,
+        "availableRaw": "120487670088",
+        "marketPriceSf": "6c66e1cf1c1d01000000000000000000"
+      },
+      "scopePricesHash": "0c23acec7a53f4c1fd3ed23b32e55d84de0f61245fe11b7ad2a4d77909fc9f29",
+      "logs": [
+        "Program log: Instruction: RefreshPriceList",
+        "Program log: tk 1, RaydiumAmmV3BtoA: 2573931199898 to 2573931199898 | prev_slot: 457352474, new_slot: 457352530, crt_slot: 457352530",
+        "Program log: tk 2, RaydiumAmmV3AtoB: 983832893391432675 to 983832893391432675 | prev_slot: 457352474, new_slot: 457352530, crt_slot: 457352530",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Price is too old age=187410 max_age=150",
+        "Program log: Price is too old token=[CTALS], AnchorError(AnchorError { error_name: \"PriceTooOld\", error_code_number: 6039, error_msg: \"Price too old\", error_origin: Some(Source(Source { filename: \"programs/klend/src/utils/prices/checks.rs\", line: 115 })), compared_values: None })",
+        "Program log: Token: CTALS Price: 0.0003",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 43930 of 475273 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "name": "klend_then_scope",
+      "slot": 457352530,
+      "wireBytes": 498,
+      "accountKeys": 11,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "unitsConsumed": 53603,
+      "reserve": null,
+      "scopePricesHash": null,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Price is too old age=187410 max_age=150",
+        "Program log: Price is too old token=[CTALS], AnchorError(AnchorError { error_name: \"PriceTooOld\", error_code_number: 6039, error_msg: \"Price too old\", error_origin: Some(Source(Source { filename: \"programs/klend/src/utils/prices/checks.rs\", line: 115 })), compared_values: None })",
+        "Program log: Token: CTALS Price: 0.0003",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 43930 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: Instruction: RefreshPriceList",
+        "Program log: AnchorError thrown in programs/scope/src/handlers/handler_refresh_prices.rs:229. Error Code: RefreshWithUnexpectedIxs. Error Number: 6014. Error Message: Refresh price instruction preceded by unexpected ixs.",
+        "Program HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ failed: custom program error: 0x177e"
+      ]
+    },
+    {
+      "name": "memo_scope_then_klend",
+      "slot": 457352531,
+      "wireBytes": 550,
+      "accountKeys": 12,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "unitsConsumed": 16832,
+      "reserve": null,
+      "scopePricesHash": null,
+      "logs": [
+        "Program log: Instruction: RefreshPriceList",
+        "Program log: AnchorError thrown in programs/scope/src/handlers/handler_refresh_prices.rs:229. Error Code: RefreshWithUnexpectedIxs. Error Number: 6014. Error Message: Refresh price instruction preceded by unexpected ixs.",
+        "Program HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ failed: custom program error: 0x177e"
+      ]
+    }
+  ]
+}

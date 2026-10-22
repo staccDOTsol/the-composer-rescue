@@ -1,0 +1,242 @@
+{
+  "flashProgram": "jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS",
+  "vaultProgram": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+  "flashSourceSignature": "4G9tPDpx1dcPpeZpb2MG5DyFLnZMuaUZgSpuSnXnXvrJDdUc4H5KeXfFG7XDbvjbhhZdDCctHof382JMUUStdWhp",
+  "flashSourceSlot": 457333656,
+  "vaultSourceSignature": "N7RNYhPJiXyu9KW1kfnP7HZPmzEpL6Wz13Euwoct4XxkLYjxLMJp1tXb8QJyQbmESxWNyiGzUw7Cyis7YtWUiRj",
+  "vaultSourceSlot": 457333594,
+  "shared": {
+    "flashMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "vaultBorrowMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "flashReserve": "94vK29npVbyRHXH63rRcTiSr26SFhrQTzbpNJuhQEDu",
+    "vaultBorrowReserve": "94vK29npVbyRHXH63rRcTiSr26SFhrQTzbpNJuhQEDu",
+    "flashVault": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+    "vaultBorrowVault": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB"
+  },
+  "watchedTokenAccounts": {
+    "order": [
+      "sharedVault",
+      "flashSignerBorrowAccount",
+      "vaultSignerBorrowAccount"
+    ],
+    "addresses": [
+      "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+      "9FBW2nzH792E6J8aDXXVMuXW3TKMVAb2CZTM2g2GompQ",
+      "6UP14T5zmait6cmSfS8RZsm9j4RVLzyB93svcHjfLzeu"
+    ],
+    "preBalances": [
+      33677758538550,
+      19072695,
+      100
+    ]
+  },
+  "transport": "Surfpool fork simulateTransaction only; source transactions read from mainnet; no mainnet sendTransaction",
+  "results": [
+    {
+      "case": "flash_control",
+      "staticAccountKeys": 3,
+      "lookupWritable": 4,
+      "lookupReadonly": 8,
+      "err": null,
+      "unitsConsumed": 97311,
+      "tokenDeltas": [
+        0,
+        0,
+        -100
+      ],
+      "logs": [
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS invoke [1]",
+        "Program log: Instruction: FlashloanBorrow",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6200 of 357983 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiKubi8A9XiCxFAx4t15UeudUkWFSJ/lIEmi+AOw3Qz8cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAAAAAAAAAAAAAAAAAAAAAJsrvQAAAAAAAAAAAAAAAABl9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3pm8/0682X7M1Upbfr7wIHGkC33Hyj+fLseO7sX60J4kAvVuJfMAAABANr/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 28703 of 378968 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC AvVuJfMAAABANr/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS consumed 51423 of 400000 compute units",
+        "Program return: jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS AvVuJfMAAABANr/X9gAAAA==",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS invoke [1]",
+        "Program log: Instruction: FlashloanPayback",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: PreOperate",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 4385 of 337293 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6200 of 330160 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQiKubi8A9XiCxFAx4t15UeudUkWFSJ/lIEmi+AOw3Qz8cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAAAAAAAAAAAAAAAAAAAAAGXUQv////////////////9l9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3mX13/18hK91qKX3vc6hYi4rOr+H/FOocbkIVho6ixveAvVuJfMAAABANr/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11991 of 316343 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC AvVuJfMAAABANr/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS consumed 45888 of 348577 compute units",
+        "Program return: jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS AvVuJfMAAABANr/X9gAAAA==",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS success"
+      ]
+    },
+    {
+      "case": "vault_control",
+      "staticAccountKeys": 13,
+      "lookupWritable": 8,
+      "lookupReadonly": 11,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 57212,
+      "logs": [
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: Operate",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: Math error thrown at programs/oracle/src/helper.rs:307",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4525 of 147313 compute units",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc failed: custom program error: 0x1770",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 57212 of 200000 compute units",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "flash_borrow_vault_borrow_flash_payback",
+      "staticAccountKeys": 15,
+      "lookupWritable": 10,
+      "lookupReadonly": 12,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 105946,
+      "logs": [
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS invoke [1]",
+        "Program log: Instruction: FlashloanBorrow",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6200 of 553127 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiKubi8A9XiCxFAx4t15UeudUkWFSJ/lIEmi+AOw3Qz8cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAAAAAAAAAAAAAAAAAAAAAJsrvQAAAAAAAAAAAAAAAABl9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3pm8/0682X7M1Upbfr7wIHGkC33Hyj+fLseO7sX60J4k7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 28701 of 574110 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS consumed 56279 of 600000 compute units",
+        "Program return: jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: Operate",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: Math error thrown at programs/oracle/src/helper.rs:307",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4525 of 498579 compute units",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc failed: custom program error: 0x1770",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 49667 of 543721 compute units",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "vault_borrow_then_flash_pair",
+      "staticAccountKeys": 15,
+      "lookupWritable": 10,
+      "lookupReadonly": 12,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 57212,
+      "logs": [
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: Operate",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: Math error thrown at programs/oracle/src/helper.rs:307",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4525 of 547313 compute units",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc failed: custom program error: 0x1770",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 57212 of 600000 compute units",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "case": "flash_pair_then_vault_borrow",
+      "staticAccountKeys": 15,
+      "lookupWritable": 10,
+      "lookupReadonly": 12,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 151832,
+      "logs": [
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS invoke [1]",
+        "Program log: Instruction: FlashloanBorrow",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6200 of 553127 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiKubi8A9XiCxFAx4t15UeudUkWFSJ/lIEmi+AOw3Qz8cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAAAAAAAAAAAAAAAAAAAAAJsrvQAAAAAAAAAAAAAAAABl9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3pm8/0682X7M1Upbfr7wIHGkC33Hyj+fLseO7sX60J4k7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 28701 of 574110 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS consumed 56279 of 600000 compute units",
+        "Program return: jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS invoke [1]",
+        "Program log: Instruction: FlashloanPayback",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: PreOperate",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 4385 of 532437 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 6200 of 525304 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQiKubi8A9XiCxFAx4t15UeudUkWFSJ/lIEmi+AOw3Qz8cb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAAAAAAAAAAAAAAAAAAAAAGXUQv////////////////9l9d/9fISvdail973OoWIuKzq/h/xTqHG5CFYaOosb3mX13/18hK91qKX3vc6hYi4rOr+H/FOocbkIVho6ixve7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11989 of 511487 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS consumed 45886 of 543721 compute units",
+        "Program return: jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS 7PxuJfMAAADTP7/X9gAAAA==",
+        "Program jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: Operate",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: Math error thrown at programs/oracle/src/helper.rs:307",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4525 of 452693 compute units",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc failed: custom program error: 0x1770",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 49667 of 497835 compute units",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

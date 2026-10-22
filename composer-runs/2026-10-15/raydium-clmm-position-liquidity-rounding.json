@@ -1,0 +1,1358 @@
+{
+  "transport": "read-only mainnet simulateTransaction; sigVerify=false; no sendTransaction",
+  "position": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+  "positionLiquidityRaw": 8594677882,
+  "before": {
+    "slot": 457352404,
+    "accounts": [
+      {
+        "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+        "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+        "dataLen": 281,
+        "liquidity": 8594677882,
+        "feeOwed0": 75383741,
+        "feeOwed1": 6359305,
+        "rewardOwed": [
+          192253,
+          0,
+          0
+        ]
+      },
+      {
+        "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+        "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+        "dataLen": 1544
+      },
+      {
+        "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 4506348850129
+      },
+      {
+        "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 327616584552
+      },
+      {
+        "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 57572287692
+      },
+      {
+        "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 19299225315
+      },
+      {
+        "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 813961337
+      },
+      {
+        "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 154372716343
+      }
+    ]
+  },
+  "results": [
+    {
+      "case": "position_fee_reward_control",
+      "err": null,
+      "contextSlot": 457352405,
+      "unitsConsumed": 50474,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 8594677882,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4506264250467
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327609374150
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57656887354
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19306435717
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813769084
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372908596
+        }
+      ]
+    },
+    {
+      "case": "position_fee_reward_twice_atomic",
+      "err": null,
+      "contextSlot": 457352407,
+      "unitsConsumed": 91515,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 8594677882,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4506264250467
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327609374150
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57656887354
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19306435717
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813769084
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372908596
+        }
+      ]
+    },
+    {
+      "case": "position_decrease_one_liquidity_raw",
+      "err": null,
+      "contextSlot": 457352409,
+      "unitsConsumed": 53269,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 8594677881,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4506264250467
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327609374150
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57656887354
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19306435717
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813769084
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372908596
+        }
+      ]
+    },
+    {
+      "case": "position_decrease_two_liquidity_raw",
+      "err": null,
+      "contextSlot": 457352412,
+      "unitsConsumed": 53269,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 8594677880,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4506264250467
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327609374150
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57656887354
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19306435717
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813769084
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372908596
+        }
+      ]
+    },
+    {
+      "case": "position_decrease_full_liquidity",
+      "err": null,
+      "contextSlot": 457352414,
+      "unitsConsumed": 54601,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "260992170",
+                    "decimals": 6,
+                    "uiAmount": 260.99217,
+                    "uiAmountString": "260.99217"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 0,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4506264250467
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327355592382
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57656887354
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19560217485
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813769084
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372908596
+        }
+      ]
+    },
+    {
+      "case": "position_decrease_full_plus_one",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2506
+          }
+        ]
+      },
+      "contextSlot": 457352417,
+      "unitsConsumed": 17651,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/decrease_liquidity.rs:136. Error Code: RequireGteViolated. Error Number: 2506. Error Message: A require_gte expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9ca"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_attacker_owner_and_destinations",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "contextSlot": 457352419,
+      "unitsConsumed": 15012,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_missing_owner_signature",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "contextSlot": 457352421,
+      "unitsConsumed": 7773,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: nft_owner. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc2"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_foreign_pool",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "contextSlot": 457352424,
+      "unitsConsumed": 15244,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: personal_position. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7d3"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_vaults_swapped",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "contextSlot": 457352426,
+      "unitsConsumed": 15305,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: token_vault_0. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7d3"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_mints_swapped",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "contextSlot": 457352428,
+      "unitsConsumed": 16099,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: vault_0_mint. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_recipient0_is_vault0",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2040
+          }
+        ]
+      },
+      "contextSlot": 457352431,
+      "unitsConsumed": 14645,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: recipient_token_account_0. Error Code: ConstraintDuplicateMutableAccount. Error Number: 2040. Error Message: A duplicate mutable account constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7f8"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_recipient_mints_swapped",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2014
+          }
+        ]
+      },
+      "contextSlot": 457352434,
+      "unitsConsumed": 15309,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7de"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_token_programs_swapped",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "contextSlot": 457352435,
+      "unitsConsumed": 11161,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc0"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_reward_vault_foreign",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "contextSlot": 457352438,
+      "unitsConsumed": 47303,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/decrease_liquidity.rs:454. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_reward_recipient_is_vault",
+      "err": null,
+      "contextSlot": 457352441,
+      "unitsConsumed": 50318,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "FDZHJV8ktDRkxr8auQ47gajjeXinSjQJjhW7cm3Vkixj",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 281,
+          "liquidity": 8594677882,
+          "feeOwed0": 0,
+          "feeOwed1": 0,
+          "rewardOwed": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4507245787183
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327505099255
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 57047149609
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19371213756
+        },
+        {
+          "address": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 813961337
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        }
+      ]
+    },
+    {
+      "case": "position_valid_then_unauthorized_atomic_rollback",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "contextSlot": 457352443,
+      "unitsConsumed": 65486,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: collect reward index: 0, transfer_amount: 192253, reward_amount_owed:192253 ",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "84599662",
+                    "decimals": 9,
+                    "uiAmount": 0.084599662,
+                    "uiAmountString": "0.084599662"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "7210402",
+                    "decimals": 6,
+                    "uiAmount": 7.210402,
+                    "uiAmountString": "7.210402"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "ETnN2GUhQB4Y2pKXB8kP4cfuQQyRJqvrfvvGkmRsmhqB",
+                  "tokenAmount": {
+                    "amount": "192253",
+                    "decimals": 6,
+                    "uiAmount": 0.192253,
+                    "uiAmountString": "0.192253"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "position_unauthorized_then_valid_order",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "contextSlot": 457352446,
+      "unitsConsumed": 15012,
+      "logs": [
+        "Program log: Instruction: DecreaseLiquidityV2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7df"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

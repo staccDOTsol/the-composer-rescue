@@ -1,0 +1,683 @@
+{
+  "generatedAt": "2026-10-19T08:03:14.018Z",
+  "safety": {
+    "environment": "isolated current-mainnet-backed Surfpool fork",
+    "transport": "simulateTransaction only",
+    "sigVerify": true,
+    "replaceRecentBlockhash": false,
+    "transactionSubmitted": false,
+    "sendPathPresent": false,
+    "rpcCredentialRecorded": false,
+    "forkWrites": "Only synthetic fresh-outsider SOL/ONyc/USDG setup; simulations roll back."
+  },
+  "sourceReceipt": {
+    "signature": "1rRX1GpfdxFm6aikrKz3r2krjBCjhLkUk2tvtPRPyhVjv5gAYyPK4Mkav9BqNNAvqQJ53B2XpaFgQkeq8cxgYLp",
+    "slot": 454852733,
+    "blockTime": 1791545253,
+    "handler": "OpenSwapSell",
+    "historicalUser": "ASQ4kYjSYGUYbbYtsaLhUeJS6RtrN4Uwp4XbF4gDifvr",
+    "historicalInputAta": "FKYixac9jrwVixJcn9JekueGsyJSg6TeJveeQVw55KUF",
+    "historicalRecipientAta": "6XgLBiH2A7jZyZmsqxQeLLYwErD8CTvEh4VLfKCcNXy",
+    "tokenInRaw": "376159000000000",
+    "minimumOutRaw": "432686665048",
+    "observedPayoutRaw": "433119784833",
+    "observedVaultDeltaRaw": "-433119784833",
+    "exactInstructionDataBase58": "9Z1W5EPwhCCQzCFJFNYjs9rgopkUqtrgo",
+    "accountCount": 31
+  },
+  "freshOutsider": {
+    "address": "8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd",
+    "onycAta": "97EyMAXvYSrAQbfVWCrnRGa7nJS92VmgXmtguLTGMCBk",
+    "usdGAta": "w2cC5GagP7s1PBAofBGgi9bQUUpJGkzYQSfNswj6oEQ",
+    "privateKeyPersisted": false,
+    "syntheticStartingOnycRaw": "752318000000000",
+    "syntheticStartingUsdGRaw": "0"
+  },
+  "result": {
+    "exactHistoricalDataAcceptedAtCurrentState": true,
+    "recipientRedirectAccepted": false,
+    "signerOnlyMutationAccepted": false,
+    "currentPricePaidControlAccepted": true,
+    "currentControlAttackerOnycDeltaRaw": "-376159000000000",
+    "currentControlAttackerUsdGDeltaRaw": "433918040869",
+    "currentControlRedemptionVaultUsdGDeltaRaw": "-433918040869",
+    "findingDemonstrated": false,
+    "conclusion": "Recipient and debit ATAs remained bound to the fresh signer; the only accepted path was a paid permissionless sell."
+  },
+  "cases": [
+    {
+      "label": "historical_receipt_exact_data_fresh_outsider",
+      "err": null,
+      "targetErrorLog": null,
+      "wire": {
+        "version": 1,
+        "bytes": 1197,
+        "accounts": 32,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd"
+        ],
+        "sigVerify": true,
+        "messageSha256": "d4e95f2d845d3a1efecb16655d2f7868012cefe24b5402213c567f381faff50a",
+        "signedWireSha256": "d5852fd15af94ec80c0f254dd057597cffb7480db08889fce144b1225e83a69a"
+      },
+      "unitsConsumed": 212484,
+      "sell": {
+        "tokenInAfterFeeRaw": "375030523000000",
+        "feeOnycRaw": "1128477000000",
+        "tokenOutUsdGRaw": "433918040869",
+        "log": "Program log: Open swap sell - offer: 8w1BAUUn6RbAtU3BuCUNXzHR7cxNyNga9pJLQYgpXJU, token_in(+fee): 375030523000000(+1128477000000), token_out: 433918040869, user: 8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd, price: 1.157164052"
+      },
+      "deltas": {
+        "attackerUsdG": {
+          "address": "w2cC5GagP7s1PBAofBGgi9bQUUpJGkzYQSfNswj6oEQ",
+          "tokenAmountRaw": "433918040869",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerOnyc": {
+          "address": "97EyMAXvYSrAQbfVWCrnRGa7nJS92VmgXmtguLTGMCBk",
+          "tokenAmountRaw": "-376159000000000",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerRedemptionRequest": {
+          "address": "DjEd5aYJKsNySToTkdLdQoYrci7u9NgCgGHpgWd8KfRo",
+          "tokenAmountRaw": null,
+          "existedBefore": false,
+          "existsAfter": false,
+          "dataSha256Equal": true
+        },
+        "onreRedemptionUsdGVault": {
+          "address": "2XgTjcME2M18RgUzoJfaXbAeM5VGiigYCzYBegUSAGZC",
+          "tokenAmountRaw": "-433918040869",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreRedemptionOnycVault": {
+          "address": "CYTD1vpREHZ8eN2PS93jyrbuUkbKUv3dqbfgkzNEXMaV",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreOfferUsdGVault": {
+          "address": "3xCRkXGwWBCfTV8YPNbrwiXba18jSn2BX8Zqw6gJCbad",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onreOfferOnycVault": {
+          "address": "6zqQk9iDWzCx4NUyKNyfNVyxp8e3od8Br7jwkSDeRz8K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessUsdGVault": {
+          "address": "9n4ii1PbeEKmH1s2stngnTE2bd4WuG5S7XTJkEigUXTN",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessOnycVault": {
+          "address": "3vaMSBXYcwEjUGtVExcAxLpUuFQMgDSCxghNgTP1uZ7K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmProceedsOnyc": {
+          "address": "Cyoh6A9nR58aXPmPzMVs2yDi1oZK8hfU63u52GWNNfgf",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onrePropAmmFeeOnyc": {
+          "address": "7Yo3hoMZoPJKV4k29dE8BNQbatN8URoW4zDJHo3KxZkv",
+          "tokenAmountRaw": "1128477000000",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreReserveOnyc": {
+          "address": "9Kt9Kt24h16kvMzetqDPEVPovthnPP1dumD2rzM4CRNg",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreManagementFeeOnyc": {
+          "address": "6CCecHtZ5jPvDkBekngy28EXu67NGjTBnQ3rYazD4Sdb",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onrePerformanceFeeOnyc": {
+          "address": "Ammu95nSbweiDZkBV2MJbKAPN76JyYqYrcqp8xxXWVfe",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onycMint": {
+          "address": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "usdGMint": {
+          "address": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "historicalUserOnyc": {
+          "address": "FKYixac9jrwVixJcn9JekueGsyJSg6TeJveeQVw55KUF",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "historicalUserUsdG": {
+          "address": "6XgLBiH2A7jZyZmsqxQeLLYwErD8CTvEh4VLfKCcNXy",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: OpenSwapSell",
+        "Program log: Open swap sell - offer: 8w1BAUUn6RbAtU3BuCUNXzHR7cxNyNga9pJLQYgpXJU, token_in(+fee): 375030523000000(+1128477000000), token_out: 433918040869, user: 8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd, price: 1.157164052"
+      ]
+    },
+    {
+      "label": "fresh_outsider_redirect_to_historical_recipient",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6030
+          }
+        ]
+      },
+      "targetErrorLog": "Program onreuGhHHgVzMWSkj2oQDLDtvvGvoepBPkqyaubFcwe failed: custom program error: 0x178e",
+      "wire": {
+        "version": 1,
+        "bytes": 1197,
+        "accounts": 32,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd"
+        ],
+        "sigVerify": true,
+        "messageSha256": "cd749fa25e7132ecc8b3caf28702877fac2a9b8fe5721fb6d7c51dcd4adff61a",
+        "signedWireSha256": "5c876c9c7b7f8d97d836d66ce21027087dc6087773b46e11a410e1273a27fc1d"
+      },
+      "unitsConsumed": 88543,
+      "sell": null,
+      "deltas": {
+        "attackerUsdG": {
+          "address": "w2cC5GagP7s1PBAofBGgi9bQUUpJGkzYQSfNswj6oEQ",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerOnyc": {
+          "address": "97EyMAXvYSrAQbfVWCrnRGa7nJS92VmgXmtguLTGMCBk",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerRedemptionRequest": {
+          "address": "DjEd5aYJKsNySToTkdLdQoYrci7u9NgCgGHpgWd8KfRo",
+          "tokenAmountRaw": null,
+          "existedBefore": false,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreRedemptionUsdGVault": {
+          "address": "2XgTjcME2M18RgUzoJfaXbAeM5VGiigYCzYBegUSAGZC",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreRedemptionOnycVault": {
+          "address": "CYTD1vpREHZ8eN2PS93jyrbuUkbKUv3dqbfgkzNEXMaV",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreOfferUsdGVault": {
+          "address": "3xCRkXGwWBCfTV8YPNbrwiXba18jSn2BX8Zqw6gJCbad",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreOfferOnycVault": {
+          "address": "6zqQk9iDWzCx4NUyKNyfNVyxp8e3od8Br7jwkSDeRz8K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessUsdGVault": {
+          "address": "9n4ii1PbeEKmH1s2stngnTE2bd4WuG5S7XTJkEigUXTN",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessOnycVault": {
+          "address": "3vaMSBXYcwEjUGtVExcAxLpUuFQMgDSCxghNgTP1uZ7K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmProceedsOnyc": {
+          "address": "Cyoh6A9nR58aXPmPzMVs2yDi1oZK8hfU63u52GWNNfgf",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmFeeOnyc": {
+          "address": "7Yo3hoMZoPJKV4k29dE8BNQbatN8URoW4zDJHo3KxZkv",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreReserveOnyc": {
+          "address": "9Kt9Kt24h16kvMzetqDPEVPovthnPP1dumD2rzM4CRNg",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreManagementFeeOnyc": {
+          "address": "6CCecHtZ5jPvDkBekngy28EXu67NGjTBnQ3rYazD4Sdb",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePerformanceFeeOnyc": {
+          "address": "Ammu95nSbweiDZkBV2MJbKAPN76JyYqYrcqp8xxXWVfe",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onycMint": {
+          "address": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "usdGMint": {
+          "address": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "historicalUserOnyc": {
+          "address": "FKYixac9jrwVixJcn9JekueGsyJSg6TeJveeQVw55KUF",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "historicalUserUsdG": {
+          "address": "6XgLBiH2A7jZyZmsqxQeLLYwErD8CTvEh4VLfKCcNXy",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: OpenSwapSell",
+        "Program log: AnchorError occurred. Error Code: InvalidUserTokenOutAccount. Error Number: 6030. Error Message: Invalid User Token Out Account.",
+        "Program onreuGhHHgVzMWSkj2oQDLDtvvGvoepBPkqyaubFcwe failed: custom program error: 0x178e"
+      ]
+    },
+    {
+      "label": "fresh_outsider_with_historical_input_and_recipient",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6111
+          }
+        ]
+      },
+      "targetErrorLog": "Program onreuGhHHgVzMWSkj2oQDLDtvvGvoepBPkqyaubFcwe failed: custom program error: 0x17df",
+      "wire": {
+        "version": 1,
+        "bytes": 1197,
+        "accounts": 32,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd"
+        ],
+        "sigVerify": true,
+        "messageSha256": "01a9dfc5674c6e154af7117e2b07f7f1ca433374f9c4eeb80415b8b7229c36e3",
+        "signedWireSha256": "c98069baad7465f98d9c2beaba07861f1bb7eb6f590b43b04798a987583ba5c5"
+      },
+      "unitsConsumed": 86220,
+      "sell": null,
+      "deltas": {
+        "attackerUsdG": {
+          "address": "w2cC5GagP7s1PBAofBGgi9bQUUpJGkzYQSfNswj6oEQ",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerOnyc": {
+          "address": "97EyMAXvYSrAQbfVWCrnRGa7nJS92VmgXmtguLTGMCBk",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerRedemptionRequest": {
+          "address": "DjEd5aYJKsNySToTkdLdQoYrci7u9NgCgGHpgWd8KfRo",
+          "tokenAmountRaw": null,
+          "existedBefore": false,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreRedemptionUsdGVault": {
+          "address": "2XgTjcME2M18RgUzoJfaXbAeM5VGiigYCzYBegUSAGZC",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreRedemptionOnycVault": {
+          "address": "CYTD1vpREHZ8eN2PS93jyrbuUkbKUv3dqbfgkzNEXMaV",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreOfferUsdGVault": {
+          "address": "3xCRkXGwWBCfTV8YPNbrwiXba18jSn2BX8Zqw6gJCbad",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreOfferOnycVault": {
+          "address": "6zqQk9iDWzCx4NUyKNyfNVyxp8e3od8Br7jwkSDeRz8K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessUsdGVault": {
+          "address": "9n4ii1PbeEKmH1s2stngnTE2bd4WuG5S7XTJkEigUXTN",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessOnycVault": {
+          "address": "3vaMSBXYcwEjUGtVExcAxLpUuFQMgDSCxghNgTP1uZ7K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmProceedsOnyc": {
+          "address": "Cyoh6A9nR58aXPmPzMVs2yDi1oZK8hfU63u52GWNNfgf",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmFeeOnyc": {
+          "address": "7Yo3hoMZoPJKV4k29dE8BNQbatN8URoW4zDJHo3KxZkv",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreReserveOnyc": {
+          "address": "9Kt9Kt24h16kvMzetqDPEVPovthnPP1dumD2rzM4CRNg",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreManagementFeeOnyc": {
+          "address": "6CCecHtZ5jPvDkBekngy28EXu67NGjTBnQ3rYazD4Sdb",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onrePerformanceFeeOnyc": {
+          "address": "Ammu95nSbweiDZkBV2MJbKAPN76JyYqYrcqp8xxXWVfe",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onycMint": {
+          "address": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "usdGMint": {
+          "address": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "historicalUserOnyc": {
+          "address": "FKYixac9jrwVixJcn9JekueGsyJSg6TeJveeQVw55KUF",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "historicalUserUsdG": {
+          "address": "6XgLBiH2A7jZyZmsqxQeLLYwErD8CTvEh4VLfKCcNXy",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: OpenSwapSell",
+        "Program log: AnchorError occurred. Error Code: InvalidAmount. Error Number: 6111. Error Message: Invalid Amount.",
+        "Program onreuGhHHgVzMWSkj2oQDLDtvvGvoepBPkqyaubFcwe failed: custom program error: 0x17df"
+      ]
+    },
+    {
+      "label": "historical_amount_current_price_fresh_outsider_control",
+      "err": null,
+      "targetErrorLog": null,
+      "wire": {
+        "version": 1,
+        "bytes": 1197,
+        "accounts": 32,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd"
+        ],
+        "sigVerify": true,
+        "messageSha256": "c1b12cd86b96fe9c84e60c28ed270b0bfbdc80ee05b842ba5935243d2ff324b5",
+        "signedWireSha256": "c61e9e7b133a17694fc051dfe6ecf75b24d11cde3670566742b958715f4090b9"
+      },
+      "unitsConsumed": 212484,
+      "sell": {
+        "tokenInAfterFeeRaw": "375030523000000",
+        "feeOnycRaw": "1128477000000",
+        "tokenOutUsdGRaw": "433918040869",
+        "log": "Program log: Open swap sell - offer: 8w1BAUUn6RbAtU3BuCUNXzHR7cxNyNga9pJLQYgpXJU, token_in(+fee): 375030523000000(+1128477000000), token_out: 433918040869, user: 8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd, price: 1.157164052"
+      },
+      "deltas": {
+        "attackerUsdG": {
+          "address": "w2cC5GagP7s1PBAofBGgi9bQUUpJGkzYQSfNswj6oEQ",
+          "tokenAmountRaw": "433918040869",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerOnyc": {
+          "address": "97EyMAXvYSrAQbfVWCrnRGa7nJS92VmgXmtguLTGMCBk",
+          "tokenAmountRaw": "-376159000000000",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "attackerRedemptionRequest": {
+          "address": "DjEd5aYJKsNySToTkdLdQoYrci7u9NgCgGHpgWd8KfRo",
+          "tokenAmountRaw": null,
+          "existedBefore": false,
+          "existsAfter": false,
+          "dataSha256Equal": true
+        },
+        "onreRedemptionUsdGVault": {
+          "address": "2XgTjcME2M18RgUzoJfaXbAeM5VGiigYCzYBegUSAGZC",
+          "tokenAmountRaw": "-433918040869",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreRedemptionOnycVault": {
+          "address": "CYTD1vpREHZ8eN2PS93jyrbuUkbKUv3dqbfgkzNEXMaV",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreOfferUsdGVault": {
+          "address": "3xCRkXGwWBCfTV8YPNbrwiXba18jSn2BX8Zqw6gJCbad",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onreOfferOnycVault": {
+          "address": "6zqQk9iDWzCx4NUyKNyfNVyxp8e3od8Br7jwkSDeRz8K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessUsdGVault": {
+          "address": "9n4ii1PbeEKmH1s2stngnTE2bd4WuG5S7XTJkEigUXTN",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePermissionlessOnycVault": {
+          "address": "3vaMSBXYcwEjUGtVExcAxLpUuFQMgDSCxghNgTP1uZ7K",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "onrePropAmmProceedsOnyc": {
+          "address": "Cyoh6A9nR58aXPmPzMVs2yDi1oZK8hfU63u52GWNNfgf",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onrePropAmmFeeOnyc": {
+          "address": "7Yo3hoMZoPJKV4k29dE8BNQbatN8URoW4zDJHo3KxZkv",
+          "tokenAmountRaw": "1128477000000",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "onreReserveOnyc": {
+          "address": "9Kt9Kt24h16kvMzetqDPEVPovthnPP1dumD2rzM4CRNg",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onreManagementFeeOnyc": {
+          "address": "6CCecHtZ5jPvDkBekngy28EXu67NGjTBnQ3rYazD4Sdb",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onrePerformanceFeeOnyc": {
+          "address": "Ammu95nSbweiDZkBV2MJbKAPN76JyYqYrcqp8xxXWVfe",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "onycMint": {
+          "address": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": false
+        },
+        "usdGMint": {
+          "address": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "tokenAmountRaw": "0",
+          "existedBefore": true,
+          "existsAfter": true,
+          "dataSha256Equal": true
+        },
+        "historicalUserOnyc": {
+          "address": "FKYixac9jrwVixJcn9JekueGsyJSg6TeJveeQVw55KUF",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        },
+        "historicalUserUsdG": {
+          "address": "6XgLBiH2A7jZyZmsqxQeLLYwErD8CTvEh4VLfKCcNXy",
+          "tokenAmountRaw": null,
+          "existedBefore": true,
+          "existsAfter": false,
+          "dataSha256Equal": false
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: OpenSwapSell",
+        "Program log: Open swap sell - offer: 8w1BAUUn6RbAtU3BuCUNXzHR7cxNyNga9pJLQYgpXJU, token_in(+fee): 375030523000000(+1128477000000), token_out: 433918040869, user: 8nR76d6TJP4oANQaVUvEv156Rde1PHFu59w3UXFa9Kwd, price: 1.157164052"
+      ]
+    }
+  ]
+}

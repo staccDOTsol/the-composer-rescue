@@ -1,0 +1,91 @@
+{
+  "schema": "codex-security-standalone-validation-receipt/v1",
+  "candidateId": "PERENA-2W4A-OUTSIDER-VALUE-RELEASE",
+  "findingTitle": "Outsider-controlled account substitution might release value from the major-stable Perena pool",
+  "target": {
+    "network": "solana-mainnet-beta",
+    "program": "NUMERUNsFCP3kuNmWZuXtm1AaQCPj9uw6Guv2Ekoi5P",
+    "programData": "64h2hsxpnUprJu87bwH7HcYxoVtbidw95bZ7m5JTXGp",
+    "pool": "2w4A1eGyjRutakyFdmVyBiLPf98qKxNTC2LpuwhaCruZ",
+    "elfSha256": "f45357b0b8273edacf1ca3f497edf7c7a008fc3896de4f477d6a9bf9e31f5e04",
+    "lastDeploySlot": "329553166"
+  },
+  "validationMethod": [
+    "exact ProgramData extraction and hashing",
+    "successful post-deploy receipt reconstruction",
+    "fresh-key mainnet simulateTransaction positive control with sigVerify:true",
+    "recipient, vault, pool, and signer/source-authority mutations",
+    "skim and LP-removal sibling checks",
+    "signed v1 two-provider and three-provider flash compositions on a current private mainnet fork",
+    "both-direction stable-pair pricing, small controls, forward near-vault-edge execution, and zero-token-seed repayment checks"
+  ],
+  "confidence": "high",
+  "disposition": "suppressed",
+  "survives": "no",
+  "evidence": [
+    "Legitimate fresh outsider exact-in swap succeeded and reconciled to outsider -5000 raw USDC/+5003 raw USDT and inverse pool-vault deltas.",
+    "Recipient mint alias failed with Anchor custom 2014 ConstraintTokenMint.",
+    "Vault swap and output-vault substitution failed with Anchor custom 2012 ConstraintAddress.",
+    "Cross-pool substitution failed with Anchor custom 2003 ConstraintRaw.",
+    "Fresh outsider authority over another wallet's input account failed with Anchor custom 2015 ConstraintTokenOwner.",
+    "Fresh outsider skim failed with custom 6000 OnlyOwner at the deployed processors/skim.rs:18.",
+    "Zero-balance LP removal failed with custom 6015 InsufficientBalance; victim LP substitution failed with custom 2015 for partial and full removal.",
+    "Forward $2,000 and $113,000 two-provider and three-provider construction controls fit the 4 KB/64-address v1 envelope and completed every repayment only because their disclosed token seeds covered measured losses.",
+    "At the forward whole-$1,000 quote edge, $113,000 produced a pre-fee wallet stable loss of 708303141 raw units; $114,000 returned No routes found.",
+    "The zero-token-seed forward attempts reached lender repayment and rolled back with Token Program insufficient funds; no stable-token gain persisted.",
+    "The executable $2,000 reverse-vector controls lost 484552 raw stable units with two providers and 884552 with Save; zero-token-seed versions rolled back at repayment.",
+    "Reverse best-route quotes were negative through the accepted $87,000 whole-$1,000 boundary and returned No routes found at the Perena leg for $88,000."
+  ],
+  "counterevidenceOrProofGap": "No tested mutation reached an unauthorized PDA-signed stable-vault transfer. The program remains upgradeable, so a changed ELF hash requires revalidation.",
+  "flashComposition": {
+    "required": false,
+    "performedAsFocusedFollowUp": true,
+    "providers": [
+      "KLend",
+      "Project0",
+      "Save"
+    ],
+    "packetLimits": {
+      "maxObservedBytes": 2015,
+      "maxObservedAddresses": 45,
+      "requestedMaxBytes": 4096,
+      "requestedMaxAddresses": 64
+    },
+    "forwardUpperEdge": {
+      "inputRaw": "113000000000",
+      "nextRejectedInputRaw": "114000000000",
+      "twoProviderCompleteRepaymentWithDisclosedSeed": true,
+      "threeProviderCompleteRepaymentWithDisclosedSeed": true,
+      "twoProviderWalletStableDeltaRaw": "-708303141",
+      "threeProviderWalletStableDeltaRaw": "-708703141",
+      "saveFeeRaw": "400000",
+      "zeroTokenSeedCompleteRepayment": false,
+      "zeroTokenSeedFailure": "Token Program insufficient funds during lender repayment; atomic rollback"
+    },
+    "reverse": {
+      "smallSignedControlCompleteRepayment": true,
+      "smallTwoProviderWalletStableDeltaRaw": "-484552",
+      "smallThreeProviderWalletStableDeltaRaw": "-884552",
+      "highestAcceptedWholeThousandQuoteInputRaw": "87000000000",
+      "nextRejectedWholeThousandQuoteInputRaw": "88000000000",
+      "upperBandSignedExecutionBlocker": "Best-depth independent entry venue did not reproduce as a current executable fork route; the executable Deriverse route had prohibitive upper-band depth."
+    },
+    "reasonNotReportable": "Every complete-repayment packet consumed disclosed seed value, and every zero-token-seed packet rolled back before full repayment."
+  },
+  "artifactReferences": [
+    "composer-runs/2026-10-19/perena-validation-report.md",
+    "composer-runs/2026-10-19/perena-current-attestation.json",
+    "composer-runs/2026-10-19/perena-current-mainnet.so",
+    "composer-runs/2026-10-19/perena-signed-mainnet-mutations.json",
+    "composer-runs/2026-10-19/perena-remove-receipt.json",
+    "composer-runs/2026-10-19/perena-liquidity-sibling-mutations.json",
+    "composer-runs/2026-10-19/perena-multiflash-extremes.js",
+    "composer-runs/2026-10-19/perena-multiflash-small-control.json",
+    "composer-runs/2026-10-19/perena-multiflash-small-zero-seed.json",
+    "composer-runs/2026-10-19/perena-multiflash-upper-edge-control.json",
+    "composer-runs/2026-10-19/perena-multiflash-upper-edge-zero-seed.json",
+    "composer-runs/2026-10-19/perena-multiflash-reverse-small-control.json",
+    "composer-runs/2026-10-19/perena-multiflash-reverse-small-zero-seed.json",
+    "composer-runs/2026-10-19/perena-flash-pricing-boundary.json"
+  ]
+}

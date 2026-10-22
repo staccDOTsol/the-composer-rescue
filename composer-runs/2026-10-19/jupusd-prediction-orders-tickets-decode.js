@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+'use strict';
+const fs = require('fs');
+const bs58Module = require('/Users/stacc/Documents/Codex/2026-10-15/goonfi-daybreak-audit/work/audit-tools/node_modules/bs58');
+const bs58 = bs58Module.default || bs58Module;
+const rpc = name => JSON.parse(fs.readFileSync(`${__dirname}/jupusd-prediction-current-${name}-rpc.json`)).result;
+const pk = (b,o) => bs58.encode(b.subarray(o,o+32));
+const u64 = (b,o) => b.readBigUInt64LE(o).toString();
+const i64 = (b,o) => b.readBigInt64LE(o).toString();
+const str = (b,c) => {const n=b.readUInt32LE(c.o);c.o+=4;const s=b.subarray(c.o,c.o+n).toString();c.o+=n;return s;};
+function order(r){const b=Buffer.from(r.account.data[0],'base64'),c={o:8};const owner=pk(b,c.o);c.o+=32;const position=pk(b,c.o);c.o+=32;const status=b[c.o++];const marketId=str(b,c);const isYes=!!b[c.o++],isBuy=!!b[c.o++];const createdAt=i64(b,c.o);c.o+=8;const contracts=u64(b,c.o);c.o+=8;const maxFillPriceUsd=u64(b,c.o);c.o+=8;const filledAt=i64(b,c.o);c.o+=8;const filledContracts=u64(b,c.o);c.o+=8;const avgFillPriceUsd=u64(b,c.o);c.o+=8;const orderId=b[c.o++]?str(b,c):null;const externalOrderId=str(b,c);const bump=b[c.o++],orderType=b[c.o++];const payer=pk(b,c.o);c.o+=32;const integrator=pk(b,c.o);c.o+=32;const integratorFeeBps=b.readUInt16LE(c.o);c.o+=2;const unitVersion=b[c.o++];return{pubkey:r.pubkey,owner,position,status,marketId,isYes,isBuy,createdAt,contracts,maxFillPriceUsd,filledAt,filledContracts,avgFillPriceUsd,orderId,externalOrderId,bump,orderType,payer,integrator,integratorFeeBps,unitVersion,accountLength:b.length,trailingNonzeroBytes:[...b.subarray(c.o)].filter(x=>x).length};}
+function ticket(r){const b=Buffer.from(r.account.data[0],'base64'),c={o:8};const owner=pk(b,c.o);c.o+=32;const payer=pk(b,c.o);c.o+=32;const settlementMint=pk(b,c.o);c.o+=32;const ticketId=str(b,c);const ticketIdHash=b.subarray(c.o,c.o+32).toString('hex');c.o+=32;const marketId=str(b,c);const venueTicketId=b[c.o++]?str(b,c):null;const stakeUsd=u64(b,c.o);c.o+=8;const maxPayoutUsd=u64(b,c.o);c.o+=8;const payoutUsd=u64(b,c.o);c.o+=8;const status=b[c.o++],payoutClaimed=!!b[c.o++];const createdAt=i64(b,c.o);c.o+=8;const acceptedAt=i64(b,c.o);c.o+=8;const settledAt=i64(b,c.o);c.o+=8;const claimableAt=i64(b,c.o);c.o+=8;const claimedAt=i64(b,c.o);c.o+=8;const bump=b[c.o++],unitVersion=b[c.o++];c.o+=120;return{pubkey:r.pubkey,owner,payer,settlementMint,ticketId,ticketIdHash,marketId,venueTicketId,stakeUsd,maxPayoutUsd,payoutUsd,status,payoutClaimed,createdAt,acceptedAt,settledAt,claimableAt,claimedAt,bump,unitVersion,accountLength:b.length,trailingNonzeroBytes:[...b.subarray(c.o)].filter(x=>x).length};}
+const o=rpc('orders'),t=rpc('tickets'),orders=o.value.map(order),tickets=t.value.map(ticket),now=Math.floor(Date.now()/1000);
+const pending=orders.filter(x=>x.status===0||x.status===3);
+const claimable=tickets.filter(x=>x.status===3&&!x.payoutClaimed&&BigInt(x.payoutUsd)>0n&&BigInt(x.claimableAt)<=BigInt(now));
+const result={generatedAt:new Date().toISOString(),observedUnixTime:now,slots:{orders:o.context.slot,tickets:t.context.slot},counts:{orders:orders.length,pendingOrPartiallyFilledOrders:pending.length,tickets:tickets.length,claimableTickets:claimable.length},ticketLiabilityRaw:claimable.reduce((s,x)=>s+BigInt(x.payoutUsd),0n).toString(),pendingOrders:pending,largestClaimableTickets:claimable.sort((a,b)=>Number(BigInt(b.payoutUsd)-BigInt(a.payoutUsd))).slice(0,25)};
+fs.writeFileSync(`${__dirname}/jupusd-prediction-current-orders-tickets-census.json`,JSON.stringify(result,null,2)+'\n');
+console.log(JSON.stringify({...result,pendingOrders:result.pendingOrders.slice(0,3),largestClaimableTickets:result.largestClaimableTickets.slice(0,3)},null,2));

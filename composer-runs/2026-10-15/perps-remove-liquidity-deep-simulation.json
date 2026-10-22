@@ -1,0 +1,374 @@
+{
+  "observedAt": "2026-10-15T18:46:47.526Z",
+  "simulationOnly": true,
+  "transactionNeverSubmitted": true,
+  "sigVerifyFalseCaveat": "Signer substitution is authorization-path testing only and does not establish external signability.",
+  "trackedAccounts": [
+    "EJ6CLvJPJErjkUnPQicVahzw4Q4NHLfpDV9knoP7iqfK",
+    "CHcHknV6KujiUVqVsQfJrqUcsifgJmWBzhUWyYibt1ss",
+    "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+    "WzWUoCmtVv7eqAbU3BfKPU3fhLP6CXR8NCJH78UK9VS",
+    "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4"
+  ],
+  "preTokenAmounts": [
+    "71912363636013",
+    "9786434851872",
+    "33638384840117",
+    "100566779547910"
+  ],
+  "preMintSupply": "191812392808486",
+  "variants": [
+    {
+      "name": "holder_positive_control",
+      "error": null,
+      "unitsConsumed": 122121,
+      "postTokenAmounts": [
+        "71912362636013",
+        "9786434851872",
+        "33638389405557",
+        "100566774982470"
+      ],
+      "postMintSupply": "191812391808486",
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Burn LP tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 720359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: Amount out: 4565440",
+        "Program log: Transfer tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 697656 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [2]",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 5134 of 694142 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 121971 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "victim_source_attacker_signer_and_destination",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 24830,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: AnchorError caused by account: lp_token_account. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: B9spsrMK6pJicYtukaZzDyzsUQLgc3jbx5gHVwdDxb6y",
+        "Program log: Right:",
+        "Program log: 7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 24680 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "holder_redirect_to_other_owner",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 24640,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: AnchorError caused by account: receiving_account. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: DKu1jCcDj6cBJ7eVFgXg9LodP4MhGzHAeCVu25j5Bibp",
+        "Program log: Right:",
+        "Program log: 7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 24490 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "wrong_selected_oracle",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6002
+          }
+        ]
+      },
+      "unitsConsumed": 94554,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Burn LP tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 720359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: AnchorError thrown in programs/perpetuals/src/state/oracle.rs:102. Error Code: InvalidOracleAccount. Error Number: 6002. Error Message: Invalid oracle account.",
+        "Program log: Left:",
+        "Program log: hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+        "Program log: Right:",
+        "Program log: 6Jp2xZUTWdDD2ZyUPRzeMdc6AFQ5K3pFgZxk2EijfjnM",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 94404 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "name": "aliased_usdc_oracle_in_aum_tail",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6002
+          }
+        ]
+      },
+      "unitsConsumed": 69853,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: AnchorError thrown in programs/perpetuals/src/state/oracle.rs:102. Error Code: InvalidOracleAccount. Error Number: 6002. Error Message: Invalid oracle account.",
+        "Program log: Left:",
+        "Program log: hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+        "Program log: Right:",
+        "Program log: 6Jp2xZUTWdDD2ZyUPRzeMdc6AFQ5K3pFgZxk2EijfjnM",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 69703 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "name": "overburn_max_u64",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 81377,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Error: Overflow in 84437044634609844880 as u64",
+        "Program log: AnchorError thrown in programs/perpetuals/src/math.rs:347. Error Code: MathOverflow. Error Number: 6000. Error Message: Overflow in arithmetic operation.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 81227 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "name": "two_removals_atomic_control",
+      "error": null,
+      "unitsConsumed": 236654,
+      "postTokenAmounts": [
+        "71912361636013",
+        "9786434851872",
+        "33637238237121",
+        "100566770417030"
+      ],
+      "postMintSupply": "191812390808486",
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Burn LP tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 720359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: Amount out: 4565440",
+        "Program log: Transfer tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 697658 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [2]",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 5134 of 694144 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 121969 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Burn LP tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 598389 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: Amount out: 4565440",
+        "Program log: Transfer tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 583123 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [2]",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 5134 of 579609 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 114535 of 677881 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "valid_then_overburn_atomic_revert",
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 203353,
+      "postTokenAmounts": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "postMintSupply": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Burn LP tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 720359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: Amount out: 4565440",
+        "Program log: Transfer tokens",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 697652 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [2]",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 5134 of 694138 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 121975 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10569678035, publish time: 1792090005",
+        "Program log: doves ag price: 244680120686, publish time: 1792090005",
+        "Program log: doves ag price: 8223727377721, publish time: 1792090005",
+        "Program log: doves ag price: 99986875, publish time: 1792090003",
+        "Program log: doves ag price: 99951749, publish time: 1792089993",
+        "Program log: Error: Overflow in 84437044634667678279 as u64",
+        "Program log: AnchorError thrown in programs/perpetuals/src/math.rs:347. Error Code: MathOverflow. Error Number: 6000. Error Message: Overflow in arithmetic operation.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 81228 of 677875 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

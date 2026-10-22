@@ -1,0 +1,408 @@
+{
+  "generatedAt": "2026-10-15T18:52:33.890Z",
+  "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+  "safety": "simulateTransaction only; no transaction submitted",
+  "controls": {
+    "borrow": {
+      "label": "current-state borrow replay",
+      "err": null,
+      "unitsConsumed": 152787,
+      "wireBytes": 597,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": "46026742921",
+          "delta": "-100000000"
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": "100100000",
+          "delta": "100000000"
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": "45593809169",
+          "delta": "0"
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow"
+      ],
+      "sourceSignature": "Vv6SMnzqaExN1dvLnPXVXRpp2yTC9T2GJD2rZUqNHePj3oZyBzVGojJh2vah2B6wDdqviYNzDCvMAKNXy48iYgQ",
+      "targetInstructionIndex": 3,
+      "amountRaw": "100000000",
+      "mint": "USDSwr9ApdHk5bvJKMjzff41FfuX8bSxdKcR81vTwcA",
+      "bank": "FDsf8sj6SoV313qrA91yms3u5b3P4hBxEPvanVs8LtJV",
+      "sourceVault": "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki",
+      "originalDestination": "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo"
+    },
+    "borrowCompact": {
+      "label": "isolated current-state borrow control",
+      "err": null,
+      "unitsConsumed": 131029,
+      "wireBytes": 417,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": "46026742921",
+          "delta": "-100000000"
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": "100100000",
+          "delta": "100000000"
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": "45593809169",
+          "delta": "0"
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow"
+      ],
+      "sourceSignature": "Vv6SMnzqaExN1dvLnPXVXRpp2yTC9T2GJD2rZUqNHePj3oZyBzVGojJh2vah2B6wDdqviYNzDCvMAKNXy48iYgQ",
+      "amountRaw": "100000000"
+    },
+    "repayFlashloan": {
+      "label": "current-state borrow/swap/repay/end-flashloan replay",
+      "sourceSignature": "3ok9CzX7U7oAkgaqUxLx6zhjCC4sMe6EeqKQRNnwMMw4TteVFCAvxf7g9kGtQbNM6m4B9FN7x4MxXGFLuxFt7D8i",
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 289139,
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: SwapTobV3",
+        "Program FQXqWuMPdQ7PzPu5y7eJSFBrNQ6WQL5KWzNQ6pLNBfdq failed: custom program error: 0x1"
+      ]
+    },
+    "flashloanOrdering": {
+      "label": "compact start/end ordering control",
+      "err": null,
+      "unitsConsumed": 8103,
+      "wireBytes": 348,
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: LendingAccountEndFlashloan"
+      ]
+    }
+  },
+  "mutations": [
+    {
+      "label": "borrow: substitute unauthorized signer",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6042
+          }
+        ]
+      },
+      "unitsConsumed": 19602,
+      "wireBytes": 692,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": null,
+          "delta": null
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": null,
+          "delta": null
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: AnchorError caused by account: marginfi_account. Error Code: Unauthorized. Error Number: 6042. Error Message: Unauthorized.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x179a"
+      ],
+      "expected": "reject before value transfer",
+      "changedAccount": "authority",
+      "replacement": "11111111111111111111111111111111"
+    },
+    {
+      "label": "borrow: redirect authorized destination",
+      "err": null,
+      "unitsConsumed": 131034,
+      "wireBytes": 417,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": "46026742921",
+          "delta": "-100000000"
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": "100000",
+          "delta": "0"
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": "45693809169",
+          "delta": "100000000"
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow"
+      ],
+      "expected": "authorized destination is caller-selectable; authority gate must remain effective",
+      "changedAccount": "destination_token_account",
+      "replacement": "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA"
+    },
+    {
+      "label": "borrow: substitute liquidity vault",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6094
+          }
+        ]
+      },
+      "unitsConsumed": 20389,
+      "wireBytes": 628,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": null,
+          "delta": null
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": null,
+          "delta": null
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: AnchorError caused by account: bank. Error Code: InvalidLiquidityVault. Error Number: 6094. Error Message: Invalid liquidity vault: account constraint violated.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x17ce"
+      ],
+      "expected": "reject bank-vault binding mismatch",
+      "changedAccount": "liquidity_vault",
+      "replacement": "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA"
+    },
+    {
+      "label": "borrow: substitute same-group bank",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6094
+          }
+        ]
+      },
+      "unitsConsumed": 20627,
+      "wireBytes": 598,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": null,
+          "delta": null
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": null,
+          "delta": null
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: AnchorError caused by account: bank. Error Code: InvalidLiquidityVault. Error Number: 6094. Error Message: Invalid liquidity vault: account constraint violated.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x17ce"
+      ],
+      "expected": "reject bank/vault/oracle account mismatch",
+      "changedAccount": "bank",
+      "replacement": "9ThXmfwhNzc6qbkRLuSGHwKS7mxjn6QcuRD644Pjn4F"
+    },
+    {
+      "label": "borrow: substitute CPI token program",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 19874,
+      "wireBytes": 597,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": null,
+          "delta": null
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": null,
+          "delta": null
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0xbc0"
+      ],
+      "expected": "reject token-program interface mismatch",
+      "changedAccount": "token_program",
+      "replacement": "11111111111111111111111111111111"
+    },
+    {
+      "label": "borrow: duplicate authorized borrow",
+      "err": null,
+      "unitsConsumed": 245123,
+      "wireBytes": 450,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": "45926742921",
+          "delta": "-200000000"
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": "200100000",
+          "delta": "200000000"
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": "45593809169",
+          "delta": "0"
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: LendingAccountBorrow"
+      ],
+      "expected": "each borrow independently enforces authorization and health",
+      "changedAccount": "instruction duplication"
+    },
+    {
+      "label": "borrow then forced failure: atomic rollback",
+      "err": {
+        "InstructionError": [
+          2,
+          "InvalidInstructionData"
+        ]
+      },
+      "unitsConsumed": 131184,
+      "wireBytes": 453,
+      "accountAmounts": {
+        "3WozDBEqbWJ7oe8CDd2MEJYAv4ZUaxNTuMesQ6kwTvki": {
+          "before": "46126742921",
+          "after": null,
+          "delta": null
+        },
+        "FtxUBKBSM9afSPpaKXR4V5X4kvhbm649QZPCt4rZGxTo": {
+          "before": "100000",
+          "after": null,
+          "delta": null
+        },
+        "8DK8c5pzYoBHch7uS3oM2YVYX8DBWysEEFaEPyCpPrBA": {
+          "before": "45593809169",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program 11111111111111111111111111111111 failed: invalid instruction data"
+      ],
+      "expected": "later failure rolls back the earlier token transfer",
+      "changedAccount": "same-transaction terminal failure"
+    },
+    {
+      "label": "flashloan: declared end points to repay",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "unitsConsumed": 20314,
+      "wireBytes": 932,
+      "accountAmounts": {},
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: AnchorError thrown in programs/marginfi/src/instructions/marginfi_account/flashloan.rs:94. Error Code: IllegalFlashloan. Error Number: 6038. Error Message: Illegal flashloan.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1796"
+      ],
+      "expected": "reject incorrect end instruction/index",
+      "changedAccount": "flashloan end_index",
+      "declaredEndIndex": 9
+    },
+    {
+      "label": "flashloan: end before repay",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "unitsConsumed": 20314,
+      "wireBytes": 932,
+      "accountAmounts": {},
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: AnchorError thrown in programs/marginfi/src/instructions/marginfi_account/flashloan.rs:94. Error Code: IllegalFlashloan. Error Number: 6038. Error Message: Illegal flashloan.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1796"
+      ],
+      "expected": "reject instruction reordering / fail final health before repayment",
+      "changedAccount": "instruction order"
+    },
+    {
+      "label": "flashloan: duplicate start",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "unitsConsumed": 7195,
+      "wireBytes": 370,
+      "accountAmounts": {},
+      "relevantLogs": [
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: AnchorError caused by account: marginfi_account. Error Code: IllegalFlashloan. Error Number: 6038. Error Message: Illegal flashloan.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1796"
+      ],
+      "expected": "reject duplicate flashloan start",
+      "changedAccount": "instruction duplication"
+    }
+  ]
+}

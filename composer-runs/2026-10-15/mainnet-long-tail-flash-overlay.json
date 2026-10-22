@@ -1,0 +1,1200 @@
+{
+  "generatedAt": "2026-10-15T19:04:59.240Z",
+  "readOnly": true,
+  "sourceRanking": "mainnet-long-tail-custody-ranked.json",
+  "observations": {
+    "marginfiSlots": [
+      457347665,
+      457347665
+    ],
+    "kaminoSlots": [
+      457347665,
+      457347666
+    ],
+    "marginfiProgram": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "kaminoProgram": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+  },
+  "methodology": {
+    "scope": "Overlay only; it does not replace the executable/token-authority census.",
+    "liquidity": "Amounts are current vault/reserve available-balance upper bounds. They are not guaranteed borrowable amounts and are not exploitable value.",
+    "reachability": "A recent successful off-curve-authority outflow proves a live exit path. It does not prove an unauthorized caller can satisfy that path or repay a flash loan.",
+    "transactionEnvelope": "The exact composed v1 message is not fabricated. Only the observed exit transaction is measured against 4096 bytes and 64 accounts; program-specific construction/simulation remains required."
+  },
+  "priorities": [
+    {
+      "programId": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+      "label": null,
+      "custodyRankScore": 82.46,
+      "credibleCustodyUsd": 312920925.51178765,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT",
+          "rawAvailableUpperBound": "1113206761",
+          "decimals": 9,
+          "uiAvailableUpperBound": 1.113206761,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT",
+          "rawAvailableUpperBound": "3100636701",
+          "decimals": 9,
+          "uiAvailableUpperBound": 3.100636701,
+          "reserveCount": 1,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "marginfi_project0",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "rawAvailableUpperBound": "9799295051",
+          "decimals": 6,
+          "uiAvailableUpperBound": 9799.295051,
+          "vaultCount": 5,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "rawAvailableUpperBound": "25387342032322",
+          "decimals": 6,
+          "uiAvailableUpperBound": 25387342.032322,
+          "reserveCount": 8,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "marginfi_project0",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "rawAvailableUpperBound": "3223467809",
+          "decimals": 6,
+          "uiAvailableUpperBound": 3223.467809,
+          "vaultCount": 3,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "rawAvailableUpperBound": "5696478552802",
+          "decimals": 6,
+          "uiAvailableUpperBound": 5696478.552802,
+          "reserveCount": 11,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "sYSrcD3W5zgy6VxMbvzztPYYmg6K8mqBhnX6PGsT4L4oCxLhuBUSHqXEuANeXsoDgphCJNDgHuXAQUht1qMmxWZ",
+        "slot": 457252387,
+        "rootProgramId": "jup97Zx1NixM8UJMQFw8TtKzqTiRT3ETAJR7cVx3PfQ",
+        "immediateSignerProgramId": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+        "stateAuthority": "6GjquP3CKxb9G6RDsDsbMRjvomhzzeDq9twa9mS8AumL",
+        "vault": "8DesAbtAabk7s2YdPX5P3Bs5QpHFps5H35mWuzbLYRZX",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "transactionAccountCount": 20,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 811
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy",
+      "label": null,
+      "custodyRankScore": 80.1,
+      "credibleCustodyUsd": 28563225.64258126,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "BULKoNSGzxtCqzwTvg5hFJg8fx6dqZRScyXe5LYMfxrn",
+          "rawAvailableUpperBound": "1327854797779",
+          "decimals": 9,
+          "uiAvailableUpperBound": 1327.854797779,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "2r8LZwaDfxNPB8yTiPF8LTwizzzYecedvkrXJtpfoPQbBF7w51B9cWYZqXt6Lx5DshZKpMwUXd8hk4eJTALr3oPE",
+        "slot": 457333275,
+        "rootProgramId": "XPBookgQTN2p8Yw1C2La35XkPMmZTCEYH77AdReVvK1",
+        "immediateSignerProgramId": "XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy",
+        "stateAuthority": "6XPT3FnRn3MBpBX3rAyBtd4AXBeGeCdChmTbfVPYnorN",
+        "vault": "69aN14j61zbYfJBTNv6yGD7yeVDYWZxzZkbMw6erbVwH",
+        "mint": "BULKoNSGzxtCqzwTvg5hFJg8fx6dqZRScyXe5LYMfxrn",
+        "transactionAccountCount": 38,
+        "topLevelInstructionCount": 9,
+        "serializedBytes": 1005
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "JanusXpm3gsW3c9ErNoUgHppL8dGLvZKB7uekkJEYFP",
+      "label": "JanusFI / World market-maker AMM",
+      "custodyRankScore": 75.77,
+      "credibleCustodyUsd": 4376426.347139998,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+          "rawAvailableUpperBound": "1916129362",
+          "decimals": 6,
+          "uiAvailableUpperBound": 1916.129362,
+          "vaultCount": 2,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+          "rawAvailableUpperBound": "3138137812807",
+          "decimals": 6,
+          "uiAvailableUpperBound": 3138137.812807,
+          "reserveCount": 4,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "jGXXxGf9s5r3thv4PyMXKW7nCrjMWKR4sLnRXrQjfZYtfPothZuErj38vUyDCiu5DUNDWQSFupE38Hk11rYuYum",
+        "slot": 457347460,
+        "rootProgramId": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+        "immediateSignerProgramId": "JanusXpm3gsW3c9ErNoUgHppL8dGLvZKB7uekkJEYFP",
+        "stateAuthority": "4H6mGpUjmqMkHesdZim6AhrNkWtjqxPSBkjpM5LTGLw4",
+        "vault": "GL3sSqDgKN46xGyUfLQwECRseiSHXqL9UGZ2Qe1RPrRp",
+        "mint": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+        "transactionAccountCount": 31,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 661
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
+      "label": "Bison / World pay-in venue",
+      "custodyRankScore": 67.25,
+      "credibleCustodyUsd": 1064994.789872501,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+          "rawAvailableUpperBound": "1863175295",
+          "decimals": 6,
+          "uiAvailableUpperBound": 1863.175295,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+          "rawAvailableUpperBound": "13857361127",
+          "decimals": 6,
+          "uiAvailableUpperBound": 13857.361127,
+          "reserveCount": 2,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "marginfi_project0",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAvailableUpperBound": "29546619382",
+          "decimals": 8,
+          "uiAvailableUpperBound": 295.46619382,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAvailableUpperBound": "108165140170",
+          "decimals": 8,
+          "uiAvailableUpperBound": 1081.6514017,
+          "reserveCount": 1,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "hJtVEJqnaZY5xEJeP3JXBvdAVTrFQbz6d4FDxpdK88Uf3wPxvC9KN1VHr92tFKsBZocRKVBxter1gU6Pyf5ATgi",
+        "slot": 457347644,
+        "rootProgramId": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+        "immediateSignerProgramId": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
+        "stateAuthority": "AfaA4CE8C2DWSHANCqvU9RWrxRiXCV7KKVSw4cHi68Wn",
+        "vault": "GgSbe8Pbbh2n35gLxB3yjCW8WVUtBQMcLR7Vc2a1Mrnu",
+        "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+        "transactionAccountCount": 50,
+        "topLevelInstructionCount": 9,
+        "serializedBytes": 2034
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj",
+      "label": "Magna Solana vesting / Airlock",
+      "custodyRankScore": 65.42,
+      "credibleCustodyUsd": 14365065.68966011,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
+          "rawAvailableUpperBound": "975125749701090",
+          "decimals": 9,
+          "uiAvailableUpperBound": 975125.74970109,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "q7baeKAY8ZSGmbkwGahABc1ppHxKZ7MFYw6nJgEMsJY37KDcKvJQncRc5vAX5SnAnngoCLT9VnEaTivm2FH88TF",
+        "slot": 454482718,
+        "rootProgramId": "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj",
+        "immediateSignerProgramId": "magnaSHyv8zzKJJmr8NSz5JXmtdGDTTFPEADmvNAwbj",
+        "stateAuthority": "How2rJVQCFKP8iabjBXHoJqvFHCmHUHmFUj6HE9on8hs",
+        "vault": "6Xe1e45BYUG8HcwJ9gVr98TRm6T6TbKqTmadVgJGZbY2",
+        "mint": "CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu",
+        "transactionAccountCount": 9,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 802
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "label": "Solstice YieldVault",
+      "custodyRankScore": 62.01,
+      "credibleCustodyUsd": 10023861.791488817,
+      "flashPriority": "extreme",
+      "sameAssetSources": [
+        {
+          "provider": "kamino_lend",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "rawAvailableUpperBound": "2875264254873",
+          "decimals": 6,
+          "uiAvailableUpperBound": 2875264.254873,
+          "reserveCount": 1,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "GW5wRjGTSPoGQ2yzM1UbqxWPHW3FaMNrksjCzAjw1Hv93LhEdBxpT1X4t2uBCZ7kaNHi9k1RLSyiVBxveYk1kKL",
+        "slot": 457264439,
+        "rootProgramId": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+        "immediateSignerProgramId": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+        "stateAuthority": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+        "vault": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA",
+        "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+        "transactionAccountCount": 26,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 810
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3",
+      "label": "Circle CCTP V1 TokenMessengerMinter",
+      "custodyRankScore": 63.88,
+      "credibleCustodyUsd": 125193552.46149084,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAvailableUpperBound": "283298171920",
+          "decimals": 6,
+          "uiAvailableUpperBound": 283298.17192,
+          "vaultCount": 14,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAvailableUpperBound": "24416836227924",
+          "decimals": 6,
+          "uiAvailableUpperBound": 24416836.227924,
+          "reserveCount": 41,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": true
+        }
+      ],
+      "observedExit": {
+        "signature": "3np653nL8rTGgE2yqCYPepr1NevQztRh4WzF7wQnyxBFujJpSyE1nxL3fCNd9nSiriaDAfhzb26WzrqsQRyeiUgg",
+        "slot": 457346411,
+        "rootProgramId": "CCTPmbSD7gX1bxKPAmg77w8oFzNFpaQiQUWD43TKaecd",
+        "immediateSignerProgramId": "CCTPiPYPc6AsJuwueEnWgSgucamXDZwBd53dQ11YiKX3",
+        "stateAuthority": "DBD8hAwLDRQkTsu6EqviaYNGKPnsAMmQonxf7AH8ZcFY",
+        "vault": "FSxJ85FXVsXSr51SeWf9ciJWTcRnqKFSmBgRDeL3KyWw",
+        "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "transactionAccountCount": 19,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 1180
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe",
+      "label": "Circle CCTP V2 TokenMessengerMinter",
+      "custodyRankScore": 59.46,
+      "credibleCustodyUsd": 40438996.5317747,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAvailableUpperBound": "283298171920",
+          "decimals": 6,
+          "uiAvailableUpperBound": 283298.17192,
+          "vaultCount": 14,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        },
+        {
+          "provider": "kamino_lend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAvailableUpperBound": "24416836227924",
+          "decimals": 6,
+          "uiAvailableUpperBound": 24416836.227924,
+          "reserveCount": 41,
+          "evidence": "fresh KLend Reserve available_amount fields",
+          "mintSpecificFlashValidation": true
+        }
+      ],
+      "observedExit": {
+        "signature": "57TkBi8EzQbmmfT6X6TYSyqXyHP1tjDuhreSgPwPxz9UnH7FbL61iqamtuhCDBkeMhyZe5JqChLLqY2psou6N9ro",
+        "slot": 457347367,
+        "rootProgramId": "CCTPV2Sm4AdWt5296sk4P66VBZ7bEhcARwFaaS9YPbeC",
+        "immediateSignerProgramId": "CCTPV2vPZJS2u2BBsUoscuikbYjnpFmbFsvVuJdgUMQe",
+        "stateAuthority": "E1bQJ8eMMn3zmeSewW3HQ8zmJr7KR75JonbwAtWx2bux",
+        "vault": "6xTBTqJMBr5m7BKqVxmW2x11DfqUwtD3TJsqpxELx72L",
+        "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "transactionAccountCount": 22,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 1132
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ",
+      "label": null,
+      "custodyRankScore": 58.76,
+      "credibleCustodyUsd": 9394666.302340005,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+          "rawAvailableUpperBound": "13665771357913",
+          "decimals": 8,
+          "uiAvailableUpperBound": 136657.71357913,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "3ziipkssiTUxka7V5EjWNZ9Qt43eguAKMDeFEfp3UX3sWPQrwVyzMwgkRYZdJYaAr8cHEaEiSrPZzFjkm46myFaq",
+        "slot": 457327610,
+        "rootProgramId": "brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d",
+        "immediateSignerProgramId": "circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ",
+        "stateAuthority": "AYm4Knn6Sw1f52Eq42ujQ2ez5Xb7iBJeviprFCA7ADCy",
+        "vault": "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra",
+        "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+        "transactionAccountCount": 29,
+        "topLevelInstructionCount": 2,
+        "serializedBytes": 1108
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+      "label": "Orca xORCA staking",
+      "custodyRankScore": 56.31,
+      "credibleCustodyUsd": 18048131.593639795,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "rawAvailableUpperBound": "9863738355",
+          "decimals": 6,
+          "uiAvailableUpperBound": 9863.738355,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "36Nr3rPc6i8WefZZbHXAXhNx2M3vxRxi5yUenU2xFgEhct4GhxF6yj1nUyoJ9n4boNfYq6QLK9SNKAuZsns8yDp5",
+        "slot": 457341866,
+        "rootProgramId": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+        "immediateSignerProgramId": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+        "stateAuthority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+        "vault": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+        "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+        "transactionAccountCount": 13,
+        "topLevelInstructionCount": 5,
+        "serializedBytes": 573
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "jtogvBNH3WBSWDYD5FJfQP2ZxNTuf82zL8GkEhPeaJx",
+      "label": null,
+      "custodyRankScore": 54.99,
+      "credibleCustodyUsd": 9969173.549630638,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+          "rawAvailableUpperBound": "1925044422162224",
+          "decimals": 9,
+          "uiAvailableUpperBound": 1925044.422162224,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "51W8i4y2upfAVbYPybhsxAuP6SbvcFDV4M3dBopTUbbyCyZaSzWVWLFtQLgU4oWik2hnPVPtGEWezjmVLCutbtRm",
+        "slot": 456843911,
+        "rootProgramId": "jtogvBNH3WBSWDYD5FJfQP2ZxNTuf82zL8GkEhPeaJx",
+        "immediateSignerProgramId": "jtogvBNH3WBSWDYD5FJfQP2ZxNTuf82zL8GkEhPeaJx",
+        "stateAuthority": "jjCAwuuNpJCNMLAanpwgJZ6cdXzLPXe2GfD6TaDQBXt",
+        "vault": "5HvmiQoySwMDgxxAKzAqW1L5QPkGKAMpgW2cnLRUn1Bu",
+        "mint": "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL",
+        "transactionAccountCount": 17,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 753
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "sSo1iU21jBrU9VaJ8PJib1MtorefUV4fzC9GURa2KNn",
+      "label": "Solayer restaking",
+      "custodyRankScore": 53.91,
+      "credibleCustodyUsd": 9781521.103751956,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "BNso1VUJnh4zcfpZa6986Ea66P6TCp59hvtNJ8b1X85",
+          "rawAvailableUpperBound": "25575404027",
+          "decimals": 9,
+          "uiAvailableUpperBound": 25.575404027,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "Lu6AfgtU7VCXNZibXvEr6cf4dgDVQuwowFVKefvvzmw321nBSCsch3tGiBcUBT9RU9jdmoZ2dF5UEt8w92GT2Um",
+        "slot": 457286864,
+        "rootProgramId": "sSo1iU21jBrU9VaJ8PJib1MtorefUV4fzC9GURa2KNn",
+        "immediateSignerProgramId": "sSo1iU21jBrU9VaJ8PJib1MtorefUV4fzC9GURa2KNn",
+        "stateAuthority": "7RJPqA2b4SicEzLSyUVhGZUdH2rGrTaXV1t7Z4ga2Kpg",
+        "vault": "9Qj3UvSYbyDFotud3BQeFfrwqXcrKQ92MR3yjqpzA771",
+        "mint": "BNso1VUJnh4zcfpZa6986Ea66P6TCp59hvtNJ8b1X85",
+        "transactionAccountCount": 12,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 537
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "J9uWvULFL47gtCPvgR3oN7W357iehn5WF2Vn9MJvcSxz",
+      "label": null,
+      "custodyRankScore": 52.79,
+      "credibleCustodyUsd": 5684858.141419472,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "rawAvailableUpperBound": "9863738355",
+          "decimals": 6,
+          "uiAvailableUpperBound": 9863.738355,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "2cQprK2wP8UCNB53Dqig2ruyfCQh2yN2jFkiQAYdEwSLznL5EpCsm2zGkmLmvnr8H8xVgvVxfVD7QN4DHwNzxX5S",
+        "slot": 456550013,
+        "rootProgramId": "J9uWvULFL47gtCPvgR3oN7W357iehn5WF2Vn9MJvcSxz",
+        "immediateSignerProgramId": "J9uWvULFL47gtCPvgR3oN7W357iehn5WF2Vn9MJvcSxz",
+        "stateAuthority": "66Du7mXgS2KMQBUk6m9h3TszMjqZqdWhsG3Duuf69VNW",
+        "vault": "AxNLCnLxauG6gEoi5aq6efZXSdwbWmtW39YWW3ARtvoh",
+        "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+        "transactionAccountCount": 11,
+        "topLevelInstructionCount": 6,
+        "serializedBytes": 568
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+      "label": null,
+      "custodyRankScore": 52.46,
+      "credibleCustodyUsd": 5224696.869033307,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+          "rawAvailableUpperBound": "2300486781449",
+          "decimals": 9,
+          "uiAvailableUpperBound": 2300.486781449,
+          "vaultCount": 2,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "4P9C1bfRHu9SZnjCs853cRC3HRTkV8w8CFNaDezicAvMaN7AcRCmnMAqmsTa2o11HQ9KDLjgDGRYLwNohsRFGuXv",
+        "slot": 457130830,
+        "rootProgramId": "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+        "immediateSignerProgramId": "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+        "stateAuthority": "AkbZvKxUAxMKz92FF7g5k2YLCJftg8SnYEPWdmZTt3mp",
+        "vault": "5HrP4MEggWDsENFTFX7QqW7U49RTei6Qqh7TVCczhgWa",
+        "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+        "transactionAccountCount": 27,
+        "topLevelInstructionCount": 2,
+        "serializedBytes": 428
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+      "label": null,
+      "custodyRankScore": 51.42,
+      "credibleCustodyUsd": 1436597.341072785,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "Bybit2vBJGhPF52GBdNaQfUJ6ZpThSgHBobjWZpLPb4B",
+          "rawAvailableUpperBound": "70894930305",
+          "decimals": 9,
+          "uiAvailableUpperBound": 70.894930305,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "iPZHgJ97BmJVVChuW3GhjUpoxhddax9o9YaqAA4oD4n1NcaZj3JyFVFomxPkviMxyGg57PCzthaLS6fHEdWNhaW",
+        "slot": 457287967,
+        "rootProgramId": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+        "immediateSignerProgramId": "REALQqNEomY6cQGZJUGwywTBD2UmDT32rZcNnfxQ5N2",
+        "stateAuthority": "87pbGHxigtjdMovzkAAFEe8XFVTETjDomoEFfpSFd2yD",
+        "vault": "Auxmbn5HnmzzUaaiMkdNAb24uuMsNLuHJqjFAifpcdLq",
+        "mint": "Bybit2vBJGhPF52GBdNaQfUJ6ZpThSgHBobjWZpLPb4B",
+        "transactionAccountCount": 41,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 651
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "label": null,
+      "custodyRankScore": 47.53,
+      "credibleCustodyUsd": 14781805.453090617,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "rawAvailableUpperBound": "24778428556031651",
+          "decimals": 5,
+          "uiAvailableUpperBound": 247784285560.31653,
+          "vaultCount": 2,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "4u9pxD4rWBPaYM9hsmF6ckRrLfXaSLU5ptTqfQLRB1V8MEahKce1DAQE99129KvZpaLdTyLoUjScY4pNNoaqG7vu",
+        "slot": 433708592,
+        "rootProgramId": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+        "immediateSignerProgramId": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+        "stateAuthority": "634QWfYYzXuqdDWoVtNgQisVYkTdBmfBbBPYZoNZyHwE",
+        "vault": "9FXfaV6eVe5RfD8vLg137u8kzA1aNmNsV3kDHCZhdqzF",
+        "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+        "transactionAccountCount": 21,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 684
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "VoteMBhDCqGLRgYpp9o7DGyq81KNmwjXQRAHStjtJsS",
+      "label": null,
+      "custodyRankScore": 40.5,
+      "credibleCustodyUsd": 2445909.093826427,
+      "flashPriority": "high",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+          "rawAvailableUpperBound": "169606047597614",
+          "decimals": 9,
+          "uiAvailableUpperBound": 169606.047597614,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "48zGuLhYQTktBzrzpcyfhQHqhvxfQqkv8MAsKEbY4BQmspLYg3YemcQrJNcJkR32LonMMT5rDGbENxQFqnGCRQHP",
+        "slot": 244502334,
+        "rootProgramId": "VoteMBhDCqGLRgYpp9o7DGyq81KNmwjXQRAHStjtJsS",
+        "immediateSignerProgramId": "VoteMBhDCqGLRgYpp9o7DGyq81KNmwjXQRAHStjtJsS",
+        "stateAuthority": "AhEgQj1ZrTECK982fE8NfoGH1RzwTtw56f8fDMENGewF",
+        "vault": "EVomrzdS3TUpkVmd3ANaKgYf4BDfqnMEHRXnJcfvYxaA",
+        "mint": "MNDEFzGvMt87ueuHvVU9VcTqsAP5b3fTGPsHuuPA5ey",
+        "transactionAccountCount": 10,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 484
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": true,
+        "composedStatus": "candidate_not_constructed_or_simulated",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+      "label": null,
+      "custodyRankScore": 54.03,
+      "credibleCustodyUsd": 2801956.529711289,
+      "flashPriority": "medium",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux",
+          "rawAvailableUpperBound": "49415504341903",
+          "decimals": 8,
+          "uiAvailableUpperBound": 494155.04341903,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "4kjS4A2QM8Hzai8mcNYYkwmahucP7baf9MSdw1c8aQq5bg2efRThD6tmem8KKnRpDcxvFyhtCHXdteNoKgDkdkBa",
+        "slot": 457345252,
+        "rootProgramId": "1azyuavdMyvsivtNxPoz6SucD18eDHeXzFCUPq5XU7w",
+        "immediateSignerProgramId": "circAbx64bbsscPbQzZAUvuXpHqrCe6fLMzc2uKXz9g",
+        "stateAuthority": "5veMSa4ks66zydSaKSPMhV7H2eF88HvuKDArScNH9jaG",
+        "vault": "4po3YMfioHkNP4mL4N46UWJvBoQDS2HFjzGm1ifrUWuZ",
+        "mint": "iotEVVZLEywoTn1QdwNPddxPWszn3zFhEot3MfL9fns",
+        "transactionAccountCount": 22,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 803
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "gr8tqq2ripsM6N46gLWpSDXtdrH6J9jaXoyya1ELC9t",
+      "label": "MetaDAO token migrator",
+      "custodyRankScore": 49.44,
+      "credibleCustodyUsd": 86740249.5413443,
+      "flashPriority": "medium",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr",
+          "rawAvailableUpperBound": "20016003335",
+          "decimals": 9,
+          "uiAvailableUpperBound": 20.016003335,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": {
+        "signature": "25f88VsGe8cHbdAdjxN5rKkWRNUxRGGW1evGEExw2So9h3JAeZCtRJFzbhVhigQB2vSvYYuyJJqZFV9TRWk1LBVt",
+        "slot": 451747420,
+        "rootProgramId": "gr8tqq2ripsM6N46gLWpSDXtdrH6J9jaXoyya1ELC9t",
+        "immediateSignerProgramId": "gr8tqq2ripsM6N46gLWpSDXtdrH6J9jaXoyya1ELC9t",
+        "stateAuthority": "4viadAyxnRpHyW2g2NEzjLwGGgLTQK2QBmniJJqXWpXN",
+        "vault": "Ew4FbaNqsh3dj6cWenCxbcsSKdiopxQ7Hnm9xMhYuJvX",
+        "mint": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
+        "transactionAccountCount": 14,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 591
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "voTpe3tHQ7AjQHMapgSue2HJFAh2cGsdokqN3XqmVSj",
+      "label": null,
+      "custodyRankScore": 40.45,
+      "credibleCustodyUsd": 52030380.03028834,
+      "flashPriority": "medium",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "rawAvailableUpperBound": "4536917007533",
+          "decimals": 6,
+          "uiAvailableUpperBound": 4536917.007533,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+      "label": "Jupiter / Meteora Lock",
+      "custodyRankScore": 35.91,
+      "credibleCustodyUsd": 58591162.286030486,
+      "flashPriority": "medium",
+      "sameAssetSources": [
+        {
+          "provider": "marginfi_project0",
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "rawAvailableUpperBound": "4536917007533",
+          "decimals": 6,
+          "uiAvailableUpperBound": 4536917.007533,
+          "vaultCount": 1,
+          "evidence": "fresh PDA-bound Bank liquidity-vault balances",
+          "mintSpecificFlashValidation": false
+        }
+      ],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa",
+      "label": null,
+      "custodyRankScore": 60.65,
+      "credibleCustodyUsd": 42430998.10850478,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": {
+        "signature": "45MDDNuZLciFn7GXzfDS2u2utTzwUorcNPdejxZLpcWDkMF3Dbg5zEsF7CLWeDgzNwAUEkjFFrWBxMv8QLkXDCez",
+        "slot": 456588704,
+        "rootProgramId": "LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa",
+        "immediateSignerProgramId": "LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa",
+        "stateAuthority": "AvtfUvU3byPXgp6Dpw3mgKB2BbVwQvGyry9KeMzD9BLc",
+        "vault": "7h4m5Qggvp44FV8KDFv4NoiQtm1hTkCzhHp1t8MuANTk",
+        "mint": "LFNTYraetVioAPnGJht4yNg2aUZFXR776cMeN9VMjXp",
+        "transactionAccountCount": 10,
+        "topLevelInstructionCount": 4,
+        "serializedBytes": 574
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "DisJzzeTrLXzJgtaaqBxcNKLrLFyc4mY3ELGCdEkVPzt",
+      "label": null,
+      "custodyRankScore": 54.53,
+      "credibleCustodyUsd": 31844140.08001587,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": {
+        "signature": "5M2SYhHFBsxACoZ9LT14Y3MUJ4stJxVFyjwTPQtTao9jqy5boYXMwXpUh2oHYsbRtsgMAXxSNiimuppnUnZYcwZ5",
+        "slot": 455923006,
+        "rootProgramId": "DisJzzeTrLXzJgtaaqBxcNKLrLFyc4mY3ELGCdEkVPzt",
+        "immediateSignerProgramId": "DisJzzeTrLXzJgtaaqBxcNKLrLFyc4mY3ELGCdEkVPzt",
+        "stateAuthority": "4NcjVs9xEsP7ny7Ku9fAxBdEgA7vPgWTDhssSs7v6bsd",
+        "vault": "EukVHqQDMUy8La6R9KR7PHPh5YYmBZt8XoYNuYvmWXsE",
+        "mint": "MangmsBgFqJhW4cLUR9LxfVgMboY1xAoP8UUBiWwwuY",
+        "transactionAccountCount": 30,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 1161
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ",
+      "label": null,
+      "custodyRankScore": 54.32,
+      "credibleCustodyUsd": 3016320.782320699,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": {
+        "signature": "2UY1TAtmDvQCcfCDyXjS8pqKhWoSkYDZfWH7itfyANKuPKVme1jnBhmSJA2MV2wWPq68sEAbtYpt3miSfnXJSVYZ",
+        "slot": 457325922,
+        "rootProgramId": "STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ",
+        "immediateSignerProgramId": "STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ",
+        "stateAuthority": "64TDz8bnvNb6RwKmJxZ24sQLTwJGLdw3T6Bmqs2F8JpK",
+        "vault": "3GzZn1Qyzc6xzCgDn83teJysBW2bMCsK6DcRNhksMNo4",
+        "mint": "DUSDt4AeLZHWYmcXnVGYdgAzjtzU5mXUVnTMdnSzAttM",
+        "transactionAccountCount": 12,
+        "topLevelInstructionCount": 1,
+        "serializedBytes": 574
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "VALT7AM76ZWfRhjVeYQRrLvNRLvqBzNs8dTsAcLW3jj",
+      "label": null,
+      "custodyRankScore": 46.68,
+      "credibleCustodyUsd": 4280453.710322698,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": {
+        "signature": "34Q6HtE2wagf7aTxScwaNYFp6Py2Xn4rXJgT4xt6HnDyGSJsnPwNVmtfKKMcdahwe1ckFJ8RLmh2A1nmnR8TehEn",
+        "slot": 456286935,
+        "rootProgramId": "VALT7AM76ZWfRhjVeYQRrLvNRLvqBzNs8dTsAcLW3jj",
+        "immediateSignerProgramId": "VALT7AM76ZWfRhjVeYQRrLvNRLvqBzNs8dTsAcLW3jj",
+        "stateAuthority": "ENcCimzGPU6dNih1qnsSShTYBu9rRERnF4Wwx7BVVt7h",
+        "vault": "xyLZUzaaFdn9tuoBAM7qLNEh5HFkTyjXFoSqoC4WBwb",
+        "mint": "9ckR7pPPvyPadACDTzLwK2ZAEeUJ3qGSnzPs8bVaHrSy",
+        "transactionAccountCount": 13,
+        "topLevelInstructionCount": 6,
+        "serializedBytes": 517
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+      "label": null,
+      "custodyRankScore": 43.92,
+      "credibleCustodyUsd": 58756548.495638214,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "EjP9w4XxbekWTH7Z25WYRHvEgSosQKoK94whf7c74DPA",
+      "label": null,
+      "custodyRankScore": 39.49,
+      "credibleCustodyUsd": 40731918.04709068,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "vesFcnNXtfS9JMtspbe9SkMJiRiSPwsywuWMjYwxQ2K",
+      "label": null,
+      "custodyRankScore": 37,
+      "credibleCustodyUsd": 0,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": {
+        "signature": "4Mu2FnrUCfkvbmVAwza1p1cGvgxQcy7Y2PgezY5xC7xLix2tbg95gDkm8VFdLL5dwKRoCWR5dqPmgvd9MxkKRmnn",
+        "slot": 337305045,
+        "rootProgramId": "vesFcnNXtfS9JMtspbe9SkMJiRiSPwsywuWMjYwxQ2K",
+        "immediateSignerProgramId": "vesFcnNXtfS9JMtspbe9SkMJiRiSPwsywuWMjYwxQ2K",
+        "stateAuthority": "Ftk41smBgQ5tiFsDpBatfofHjYgpS4TcnzwDdw1CsaTC",
+        "vault": "C7J4nzXwVJpPRhSW43EUNomPci7tMjjzrGT93BYuMho",
+        "mint": "2Wu1g2ft7qZHfTpfzP3wLdfPeV1is4EwQ3CXBfRYAciD",
+        "transactionAccountCount": 11,
+        "topLevelInstructionCount": 3,
+        "serializedBytes": 438
+      },
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": true,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "4Q6WW2ouZ6V3iaNm56MTd5n2tnTm4C5fiH8miFHnAFHo",
+      "label": null,
+      "custodyRankScore": 27.97,
+      "credibleCustodyUsd": 2140413.191955064,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    },
+    {
+      "programId": "CChTq6PthWU82YZkbveA3WDf7s97BWhBK4Vx9bmsT743",
+      "label": null,
+      "custodyRankScore": 25.11,
+      "credibleCustodyUsd": 1029838.2919914062,
+      "flashPriority": "low",
+      "sameAssetSources": [],
+      "observedExit": null,
+      "atomicV1": {
+        "limits": {
+          "serializedBytes": 4096,
+          "inlineAccounts": 64
+        },
+        "observedExitAloneWithinLimits": null,
+        "sameAssetExitObserved": false,
+        "composedStatus": "not_prioritized",
+        "note": "The observed exit alone fitting is not proof the flash-borrow + exit + repay union fits. Build exact instructions, deduplicate metas, serialize a v1 message, and simulate before claiming reachability."
+      }
+    }
+  ]
+}

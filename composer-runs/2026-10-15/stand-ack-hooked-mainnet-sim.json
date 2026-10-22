@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-10-15T22:37:37.121Z",
+  "scope": "historical post-deployment AckRemoteCall payload; hooked-wallet signed mainnet-beta simulation; no send",
+  "program": "STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ",
+  "historicalSignature": "2UY1TAtmDvQCcfCDyXjS8pqKhWoSkYDZfWH7itfyANKuPKVme1jnBhmSJA2MV2wWPq68sEAbtYpt3miSfnXJSVYZ",
+  "historicalSlot": 457325922,
+  "instructionDiscriminatorHex": "7a068c57ad840711",
+  "attacker": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "originalRecipient": "B9eEC4F5S5dCwSVAo4RziuxoJtWoGKFmgZv41iz6BEWg",
+  "originalDestination": "5zr5FuVDPQ4vrA6Vqc6rUCEXRQihrvRyY3sHHtPJneYN",
+  "attackerDestination": "E6yxUJeyVxAfRaNP9ia2Cf2LNp4T6bLMo8j3Tfp1wrzb",
+  "vault": "3GzZn1Qyzc6xzCgDn83teJysBW2bMCsK6DcRNhksMNo4",
+  "beforeTokenRaw": [
+    "3020596672780",
+    "0",
+    null
+  ],
+  "sigVerify": true,
+  "results": [
+    {
+      "label": "hooked_signer_redirected_recipient",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6001
+          }
+        ]
+      },
+      "bytes": 555,
+      "addresses": 11,
+      "requiredSignatures": 1,
+      "unitsConsumed": 50852,
+      "postTokenRaw": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ invoke [1]",
+        "Program log: Instruction: AckRemoteCall",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: Create",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1523 of 1376428 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 1370083 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2153 of 1367012 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20108 of 1384684 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: AnchorError caused by account: signer. Error Code: VO. Error Number: 6001. Error Message: VO.",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ consumed 50852 of 1400000 compute units",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ failed: custom program error: 0x1771"
+      ]
+    }
+  ]
+}

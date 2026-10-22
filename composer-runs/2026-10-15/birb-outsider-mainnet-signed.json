@@ -1,0 +1,175 @@
+{
+  "observedAtUtc": "2026-10-15T22:28:41.343Z",
+  "network": "mainnet-beta",
+  "simulationSlot": 457404183,
+  "program": "tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE",
+  "programdata": "FPGt2WQy991Tg4MEMeYnDtjafdomPCk8bLEMUtVDUSMu",
+  "lastDeploySlot": "442466831",
+  "sourceWithdraw": "5TJfUTBWNDDXHvM2hHaBFCYUhvppriPcoqdCtL2V3AtSjJNsgBYyKSvsje9VWnp7KofEDXMZ8ZwntSC3Ct9wAFcW",
+  "sourceWithdrawSlot": 457187700,
+  "sourceDeposit": "EA1Vj2sYyTdXQr6KniDoArLfqL6ShMNLX47qXDw1TCXz9D8Cpzihc5aUMpFtjbRt8bW6xjzJyqhMqvBKJ6gWMg9",
+  "sourceDepositSlot": 457054358,
+  "signer": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "attemptedWithdrawBirbRaw": "1000000",
+  "validation": {
+    "configPda": "GcqAvs4CsY86eWQzaEqEsg2CYSKYdLfkGtCrPUL9sjpJ",
+    "configBump": 254,
+    "stakePda": "FWbL7ozRuZpn8HAVgUEeuA1K9pWobzTLAPZ6Pr26SnLe",
+    "stakeBump": 254,
+    "stakeOwner": "LZxsvsaXKA4WHiXxyJB5gxTsiWNidiiz3Qm46j3wpZZ",
+    "stakeRecordedRaw": "7596060000",
+    "walletStakePda": "KKcTtUe7kVDskbnc4CbMsLsKKH4N1nerj8s9VE9Smbh",
+    "walletStakeExists": false,
+    "configuredVault": "5xi165ttDbd1cN4ot4zLMWE59FMLM7dAeTECsGWqQcMz",
+    "vaultAuthority": "GcqAvs4CsY86eWQzaEqEsg2CYSKYdLfkGtCrPUL9sjpJ",
+    "mint": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG",
+    "mintDecimals": 6,
+    "mintSupplyRaw": "999999202577225",
+    "walletAta": "CKna7S2H4kgniyoSj1kP13brJKt8cSQ4vygaGR95ESed",
+    "walletAtaExisted": false,
+    "poolVaultRaw": "15175464870338"
+  },
+  "packet": {
+    "bytes": 494,
+    "keys": 11,
+    "instructions": 2,
+    "signerCount": 1,
+    "sigVerify": true,
+    "sha256": "dbc5de623c7a058262748b82a9b52763fda71404ee41c15c8c7d99eb6d278e72"
+  },
+  "simulation": {
+    "error": {
+      "InstructionError": [
+        1,
+        {
+          "Custom": 2006
+        }
+      ]
+    },
+    "unitsConsumed": 33842,
+    "logs": [
+      "Program log: CreateIdempotent",
+      "Program log: Initialize the associated token account",
+      "Program log: Instruction: Withdraw",
+      "Program log: AnchorError caused by account: stake. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+      "Program tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE failed: custom program error: 0x7d6"
+    ],
+    "simulatedPostAvailable": false,
+    "simulatedPost": null,
+    "chainPre": {
+      "slot": 457404182,
+      "accounts": [
+        {
+          "address": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "exists": true,
+          "lamports": 937809515,
+          "owner": "11111111111111111111111111111111",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "CKna7S2H4kgniyoSj1kP13brJKt8cSQ4vygaGR95ESed",
+          "exists": false,
+          "lamports": 0,
+          "tokenRaw": null
+        },
+        {
+          "address": "5xi165ttDbd1cN4ot4zLMWE59FMLM7dAeTECsGWqQcMz",
+          "exists": true,
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "tokenRaw": "15175464870338",
+          "tokenMint": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+        },
+        {
+          "address": "FWbL7ozRuZpn8HAVgUEeuA1K9pWobzTLAPZ6Pr26SnLe",
+          "exists": true,
+          "lamports": 899160,
+          "owner": "tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "GcqAvs4CsY86eWQzaEqEsg2CYSKYdLfkGtCrPUL9sjpJ",
+          "exists": true,
+          "lamports": 2018400,
+          "owner": "tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "Ahe9AL4RQFU6DiuqLBctokfv2YDRqxoNNPL6KM4vWC1V",
+          "exists": true,
+          "lamports": 278866292,
+          "owner": "11111111111111111111111111111111",
+          "tokenRaw": null,
+          "tokenMint": null
+        }
+      ],
+      "stakeRecordedRaw": "7596060000"
+    },
+    "chainPost": {
+      "slot": 457404183,
+      "accounts": [
+        {
+          "address": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "exists": true,
+          "lamports": 937809515,
+          "owner": "11111111111111111111111111111111",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "CKna7S2H4kgniyoSj1kP13brJKt8cSQ4vygaGR95ESed",
+          "exists": false,
+          "lamports": 0,
+          "tokenRaw": null
+        },
+        {
+          "address": "5xi165ttDbd1cN4ot4zLMWE59FMLM7dAeTECsGWqQcMz",
+          "exists": true,
+          "lamports": 2039280,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "tokenRaw": "15175464870338",
+          "tokenMint": "G7vQWurMkMMm2dU3iZpXYFTHT9Biio4F4gZCrwFpKNwG"
+        },
+        {
+          "address": "FWbL7ozRuZpn8HAVgUEeuA1K9pWobzTLAPZ6Pr26SnLe",
+          "exists": true,
+          "lamports": 899160,
+          "owner": "tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "GcqAvs4CsY86eWQzaEqEsg2CYSKYdLfkGtCrPUL9sjpJ",
+          "exists": true,
+          "lamports": 2018400,
+          "owner": "tbg7LYoHuCogZ54p6z6BaALBiyXy9b7hN368EHGh3EE",
+          "tokenRaw": null,
+          "tokenMint": null
+        },
+        {
+          "address": "Ahe9AL4RQFU6DiuqLBctokfv2YDRqxoNNPL6KM4vWC1V",
+          "exists": true,
+          "lamports": 278866292,
+          "owner": "11111111111111111111111111111111",
+          "tokenRaw": null,
+          "tokenMint": null
+        }
+      ],
+      "stakeRecordedRaw": "7596060000"
+    },
+    "chainDelta": {
+      "walletBirbRaw": "0",
+      "vaultBirbRaw": "0",
+      "walletLamports": 0,
+      "destinationAuthorityLamports": 0,
+      "stakeRecordedRaw": "0"
+    },
+    "lenders": [],
+    "debtRaw": "0"
+  },
+  "mainnetSubmitted": false,
+  "syntheticBalances": false
+}

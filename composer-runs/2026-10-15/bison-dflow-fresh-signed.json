@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-10-15T21:53:16.790Z",
+  "scope": "Fresh-signer DFlow outer route to current Bison wSOL/USDC on localhost fork",
+  "mainnetReadOnly": true,
+  "mainnetSubmission": false,
+  "forkSubmission": false,
+  "sigVerify": true,
+  "sourceSig": "2YXDA44jF67GLRvpeDqUmAfErwzWKzaAMWB5FiC9pLyTfNSdFr2Gtxat2tuMMT8jBTVqnw3uGNCZhLX2uwCyyH64",
+  "sourceSlot": 457390509,
+  "user": "6s1qZ4CapC3HfJhwj45AdY96CHXBKc1WZqAoQCoFuAVD",
+  "feePayer": "HsTjdoN58PQirdHts7Z59osai5j7nwsCE1LHxYCyY42P",
+  "syntheticFunding": {
+    "pumpMint": "Ar8mYJece3kHPQUxwoW8sk6LRpdCLZd5N3mZ8BMRpump",
+    "pumpRaw": "4516763547202",
+    "lamportsPerSigner": "1000000000"
+  },
+  "freshAccounts": {
+    "pump": "9aJ3AVzmDWfxgpEGDGaQDY7jQjviiNLvCBhR21ua2p4s",
+    "wsol": "9pCzYWmhmyfo19rX8inPPahfjnxQnCtNEcsuVpLtFpqh",
+    "usdc": "GFHqwntgfMnfFan4zPhUhH4b7Eok6qSgRS8UVZPycy6n"
+  },
+  "bisonPool": {
+    "wsol": "ATRsNGv2nDw7hSMfkUTBoVUDsFDwN7po7KbecyiGWNB4",
+    "usdc": "2Y7HATmn9aJBcxCskE5V2U2epmjvkZmB51zTJBbhj4cU"
+  },
+  "wireBytes": 1565,
+  "addressCount": 37,
+  "signerOrder": [
+    "HsTjdoN58PQirdHts7Z59osai5j7nwsCE1LHxYCyY42P",
+    "6s1qZ4CapC3HfJhwj45AdY96CHXBKc1WZqAoQCoFuAVD"
+  ],
+  "err": {
+    "InstructionError": [
+      0,
+      {
+        "Custom": 2006
+      }
+    ]
+  },
+  "computeUnits": 76145,
+  "watch": [
+    "9aJ3AVzmDWfxgpEGDGaQDY7jQjviiNLvCBhR21ua2p4s",
+    "9pCzYWmhmyfo19rX8inPPahfjnxQnCtNEcsuVpLtFpqh",
+    "GFHqwntgfMnfFan4zPhUhH4b7Eok6qSgRS8UVZPycy6n",
+    "ATRsNGv2nDw7hSMfkUTBoVUDsFDwN7po7KbecyiGWNB4",
+    "2Y7HATmn9aJBcxCskE5V2U2epmjvkZmB51zTJBbhj4cU"
+  ],
+  "before": [
+    "4516763547202",
+    "0",
+    "0",
+    "20240946808488",
+    "2501353108916"
+  ],
+  "after": [],
+  "deltas": [
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "logs": [
+    "Program DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH invoke [1]",
+    "Program log: Instruction: SwapWithDestination",
+    "Program log: ~",
+    "Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P invoke [2]",
+    "Program log: Instruction: SellV3",
+    "Program log: AnchorError caused by account: user_volume_accumulator. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+    "Program log: Left:",
+    "Program log: 9gbW9ZX6ZxUzvBdEfWs1SvARKpvsP6takN1ydbhZkd9F",
+    "Program log: Right:",
+    "Program log: FPoF2m2sdTLymmASeCVQwa8J6XqgmxZNRoY7papiv9fH",
+    "Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P consumed 16634 of 1340489 compute units",
+    "Program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P failed: custom program error: 0x7d6",
+    "Program DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH consumed 76145 of 1400000 compute units",
+    "Program DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH failed: custom program error: 0x7d6"
+  ],
+  "pdaDiagnosis": {
+    "outerAccountPosition": 25,
+    "oldUserVolumeAccumulator": "9gbW9ZX6ZxUzvBdEfWs1SvARKpvsP6takN1ydbhZkd9F",
+    "expectedFreshUserVolumeAccumulator": "FPoF2m2sdTLymmASeCVQwa8J6XqgmxZNRoY7papiv9fH",
+    "derivation": "findProgramAddressSync([\"user_volume_accumulator\", user], Pump program 6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P)",
+    "error": "Pump SellV3 ConstraintSeeds 2006 before Bison CPI"
+  },
+  "forkPostRead": {
+    "balancesRaw": [
+      "4516763547202",
+      "0",
+      "0",
+      "20240946808488",
+      "2501353108916"
+    ],
+    "deltasRaw": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "matchesPreSimulation": true
+  },
+  "simulationBudget": {
+    "signedSimulationsUsed": 2,
+    "firstResponseParsingFailure": true,
+    "secondCapturedHere": true
+  }
+}

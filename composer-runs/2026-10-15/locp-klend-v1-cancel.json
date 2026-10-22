@@ -1,0 +1,605 @@
+{
+  "generatedAt": "2026-10-15T19:09:47.539Z",
+  "noTransactionsSubmitted": true,
+  "sigVerify": false,
+  "virtualSignerWarning": "Authorized creator simulations use sigVerify:false and do not prove live key control.",
+  "sourceFlashSignature": "2FXLn7y8JMiBWGPzVFcVQjVV3Lppjw88hm33L6TANJvE4saKj4B1ByndvNUEkKgeffHjSqcivAdDkVz6LR4dRPjF",
+  "programId": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+  "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "reserve": "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor",
+  "flashFeeRateSf": "0",
+  "flashSourceAmountRaw": "295382700454",
+  "escrow": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+  "vault": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+  "creator": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+  "outsider": "ESuvjvsQtjuxC4XGsDeMhx8Wp5yjQcCFGncGhupcJbg8",
+  "creatorAta": "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs",
+  "preSlot": 457349000,
+  "pre": {
+    "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": {
+      "amount": "295382700454"
+    },
+    "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": {
+      "amount": "0"
+    },
+    "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": {
+      "amount": "170144"
+    },
+    "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": {
+      "availableRaw": "295382700454",
+      "borrowedAmountSf": "0",
+      "collateralMintSupply": "295382700454",
+      "flashLoanFeeSf": "0"
+    },
+    "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": {
+      "owner": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+      "dataLength": 296,
+      "hash": "b844d1060b589fa7c0492af3350bc633d1fb7a5f1505a777f4e1b4115a2af293"
+    },
+    "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": {
+      "amount": "94414767978779"
+    },
+    "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": {
+      "amount": "1300916"
+    }
+  },
+  "results": [
+    {
+      "name": "outsider_cancel_alone",
+      "v1Bytes": 458,
+      "v0Bytes": 447,
+      "accountCount": 10,
+      "instructionCount": 1,
+      "slot": 457349001,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "rpcError": null,
+      "unitsConsumed": 15115,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "reserveDeltas": null,
+      "logs": [
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "name": "flash_dust_outsider_cancel_repay",
+      "v1Bytes": 779,
+      "v0Bytes": 766,
+      "accountCount": 18,
+      "instructionCount": 3,
+      "slot": 457349001,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "rpcError": null,
+      "unitsConsumed": 49026,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "reserveDeltas": null,
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "destination": "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23",
+                  "tokenAmount": {
+                    "amount": "1",
+                    "decimals": 6,
+                    "uiAmount": 0.000001,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flash_90pct_outsider_cancel_repay",
+      "v1Bytes": 779,
+      "v0Bytes": 766,
+      "accountCount": 18,
+      "instructionCount": 3,
+      "slot": 457349001,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "rpcError": null,
+      "unitsConsumed": 49029,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "reserveDeltas": null,
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "destination": "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23",
+                  "tokenAmount": {
+                    "amount": "265844430408",
+                    "decimals": 6,
+                    "uiAmount": 265844.430408,
+                    "uiAmountString": "265844.430408"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flash_full_outsider_cancel_repay",
+      "v1Bytes": 779,
+      "v0Bytes": 766,
+      "accountCount": 18,
+      "instructionCount": 3,
+      "slot": 457349002,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "rpcError": null,
+      "unitsConsumed": 49030,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": null,
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": null,
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": null,
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": null
+      },
+      "reserveDeltas": null,
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "destination": "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23",
+                  "tokenAmount": {
+                    "amount": "295382700454",
+                    "decimals": 6,
+                    "uiAmount": 295382.700454,
+                    "uiAmountString": "295382.700454"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "authorized_creator_cancel_control",
+      "v1Bytes": 426,
+      "v0Bytes": 415,
+      "accountCount": 9,
+      "instructionCount": 1,
+      "slot": 457349002,
+      "err": null,
+      "rpcError": null,
+      "unitsConsumed": 29592,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": {
+          "amount": "295382700454"
+        },
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": {
+          "amount": "0"
+        },
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": {
+          "amount": "170144"
+        },
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": {
+          "availableRaw": "295382700454",
+          "borrowedAmountSf": "0",
+          "collateralMintSupply": "295382700454",
+          "flashLoanFeeSf": "0"
+        },
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": {
+          "owner": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+          "dataLength": 296,
+          "hash": "e5e2e34f49242950edbfd1bd79992b1ec641d7f810b58712cd39c755aa3c0d8f"
+        },
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": {
+          "owner": "11111111111111111111111111111111",
+          "dataLength": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": {
+          "amount": "94414769279695"
+        }
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": "0",
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": "0",
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": "0",
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": "94414767978779"
+      },
+      "reserveDeltas": {
+        "availableRaw": "0",
+        "borrowedAmountSf": "0",
+        "collateralMintSupply": "0"
+      },
+      "logs": [
+        "Program log: Instruction: CancelVestingEscrow"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+                  "destination": "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "tokenAmount": {
+                    "amount": "0",
+                    "decimals": 6,
+                    "uiAmount": 0,
+                    "uiAmountString": "0"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+                  "destination": "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "tokenAmount": {
+                    "amount": "94414767978779",
+                    "decimals": 6,
+                    "uiAmount": 94414767.978779,
+                    "uiAmountString": "94414767.978779"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "account": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "destination": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+                  "owner": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7"
+                },
+                "type": "closeAccount"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "accounts": [
+                "AqUDk3wybxjZujrNbKmjr2YTUZ8RA1a1nyGgs1zSmvTG"
+              ],
+              "data": "21448NTnPMYUH8kPhNSC9F1UXKVNNGq8LcaoZj6ngP2AxNDnnbeofiYRHgNiX2N2NDQpn2ni699zJP4PLr5jT77gKa1a9XsyijnQnPXmRtvA69Sipmvc3FhkErowVKJXYX6Dn4SgeArB1uy",
+              "programId": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "flash_dust_authorized_creator_cancel_repay",
+      "v1Bytes": 843,
+      "v0Bytes": 830,
+      "accountCount": 18,
+      "instructionCount": 3,
+      "slot": 457349002,
+      "err": null,
+      "rpcError": null,
+      "unitsConsumed": 85078,
+      "post": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": {
+          "amount": "295382700454"
+        },
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": {
+          "amount": "0"
+        },
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": {
+          "amount": "170144"
+        },
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": {
+          "availableRaw": "295382700454",
+          "borrowedAmountSf": "0",
+          "collateralMintSupply": "295382700454",
+          "flashLoanFeeSf": "0"
+        },
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": {
+          "owner": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+          "dataLength": 296,
+          "hash": "e5e2e34f49242950edbfd1bd79992b1ec641d7f810b58712cd39c755aa3c0d8f"
+        },
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": {
+          "owner": "11111111111111111111111111111111",
+          "dataLength": 0,
+          "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": {
+          "amount": "94414769279695"
+        }
+      },
+      "delta": {
+        "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23": "0",
+        "DRUkn14EVfBfiQy6br9WZs5ib8ij3R2xCChvjgFReVEg": "0",
+        "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz": "0",
+        "4AFAGAm5G8fkcKy7QerL88E7BiSE22ZRbvJzvaKjayor": null,
+        "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": null,
+        "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": null,
+        "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": "94414767978779"
+      },
+      "reserveDeltas": {
+        "availableRaw": "0",
+        "borrowedAmountSf": "0",
+        "collateralMintSupply": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "9DrvZvyWh1HuAoZxvYWMvkf2XCzryCpGgHqrMjyDWpmo",
+                  "destination": "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23",
+                  "tokenAmount": {
+                    "amount": "1",
+                    "decimals": 6,
+                    "uiAmount": 0.000001,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+                  "destination": "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "tokenAmount": {
+                    "amount": "0",
+                    "decimals": 6,
+                    "uiAmount": 0,
+                    "uiAmountString": "0"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+                  "destination": "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "tokenAmount": {
+                    "amount": "94414767978779",
+                    "decimals": 6,
+                    "uiAmount": 94414767.978779,
+                    "uiAmountString": "94414767.978779"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "account": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+                  "destination": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+                  "owner": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7"
+                },
+                "type": "closeAccount"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "accounts": [
+                "AqUDk3wybxjZujrNbKmjr2YTUZ8RA1a1nyGgs1zSmvTG"
+              ],
+              "data": "21448NTnPMYUH8kPhNSC9F1UXKVNNGq8LcaoZj6ngP2AxNDnnbeofiYRHgNiX2N2NDQpn2ni699zJP4PLr5jT77gKa1a9XsyijnQnPXmRtvA69Sipmvc3FhkErowVKJXYX6Dn4SgeArB1uy",
+              "programId": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+              "stackHeight": 2
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "ESuvjvsQtjuxC4XGsDeMhx8Wp5yjQcCFGncGhupcJbg8",
+                  "destination": "4AWAjssbahfbzS7Qs3DJ7588CsCKyNPYcVw9ztENtv23",
+                  "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+                  "source": "5bcr94epMB8kFJygQeEURgDnCWKg4qPVafP7LcRCqVHz",
+                  "tokenAmount": {
+                    "amount": "1",
+                    "decimals": 6,
+                    "uiAmount": 0.000001,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

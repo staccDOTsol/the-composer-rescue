@@ -1,0 +1,14 @@
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/sbpf-solana-solana/release/deps/zerocopy-22b206d46ae34416.d: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macros.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macro_util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/third_party/rust/layout.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/wrappers.rs
+
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/sbpf-solana-solana/release/deps/libzerocopy-22b206d46ae34416.rlib: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macros.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macro_util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/third_party/rust/layout.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/wrappers.rs
+
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/sbpf-solana-solana/release/deps/libzerocopy-22b206d46ae34416.rmeta: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macros.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macro_util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/util.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/third_party/rust/layout.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/wrappers.rs
+
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/lib.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macros.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/macro_util.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/util.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/third_party/rust/layout.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.7.25/src/wrappers.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.7.25

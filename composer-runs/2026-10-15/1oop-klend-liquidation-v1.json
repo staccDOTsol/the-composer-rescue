@@ -1,0 +1,163 @@
+{
+  "generatedAt": "2026-10-15T19:53:59.755Z",
+  "scope": "read-only current-mainnet Solana v1 simulateTransaction; no signing or submission",
+  "programIds": {
+    "loopscale": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+    "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+  },
+  "sourceFlash": {
+    "signature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+    "slot": 457338071
+  },
+  "signerModel": {
+    "feePayer": "Dsg7ZFQzXuiKsBAmL78Y5V5VjN6ASkfKDxB7VUNpp6aM",
+    "liquidator": "Dsg7ZFQzXuiKsBAmL78Y5V5VjN6ASkfKDxB7VUNpp6aM",
+    "liquidatorIsCurrentOperationsAdmin": false,
+    "liquidatorIsOnCurve": true,
+    "usdcTokenAccount": "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw",
+    "bonkAta": "EW4YvBL23dithgEXydkhg7WiCeyUvEj4UcgabWWtoTdj",
+    "sigVerify": false,
+    "note": "Existing on-curve System account and token account used only as public-state stand-ins; no key or control is claimed."
+  },
+  "selectedLoan": {
+    "loan": "634QWfYYzXuqdDWoVtNgQisVYkTdBmfBbBPYZoNZyHwE",
+    "borrower": "DJTiaWW2osQwz4wwHJrzrK6U2vD7cRUGymgmVTHzuDAd",
+    "strategy": "6tv6XYnXUFjLSaAeap4T1GQusYeEw3nK6KTcVyyHf3ns",
+    "marketInformation": "5qjqX4YQL6HSQMagRfTVfFDXrwxzKpS6bHguCWPe768y",
+    "collateralVault": "9FXfaV6eVe5RfD8vLg137u8kzA1aNmNsV3kDHCZhdqzF",
+    "principalMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "collateralMint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+  },
+  "flash": {
+    "reserve": {
+      "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+      "market": "47tfyEG9SsdEnUm9cw5kY9BXngQGqu3LBoop9j5uTAv8",
+      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "supplyVault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+      "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+      "availableRaw": "7868315584088",
+      "decimals": 6,
+      "status": 0,
+      "emergencyMode": 0,
+      "name": "USDC",
+      "flashFeeSf": "0",
+      "flashFeeClass": "exact-zero-rate",
+      "flashFeeRateApprox": 0,
+      "supplyVaultBalanceRaw": "7868315654093",
+      "feeVaultBalanceRaw": "0"
+    },
+    "amountRaw": "2500000000000",
+    "amountUi": 2500000,
+    "feeRate": 0,
+    "repaymentInstructionIndex": 2,
+    "borrowInstructionIndexEncodedInRepay": 0
+  },
+  "route": [
+    "KLend FlashBorrowReserveLiquidity",
+    "Loopscale LiquidateLedger",
+    "KLend FlashRepayReserveLiquidity"
+  ],
+  "reverseSwap": {
+    "included": false,
+    "reason": "The current-binary liquidation guard rejects before collateral transfer; a swap cannot affect that predicate and no successful drain claim is made."
+  },
+  "baselineSlot": 457361270,
+  "simulationSlot": 457361283,
+  "wire": {
+    "version": 1,
+    "bytes": 1054,
+    "addresses": 26,
+    "instructions": 3,
+    "requiredSignatures": 1,
+    "sha256": "ec0cb64f3ec1b3abee47c8356f6e2d474fdb74c343d09b8fca0c74bccee3f64c",
+    "limits": {
+      "maxBytes": 4096,
+      "maxAddresses": 64
+    }
+  },
+  "err": {
+    "InstructionError": [
+      1,
+      {
+        "Custom": 2003
+      }
+    ]
+  },
+  "unitsConsumed": 47131,
+  "loadedAccountsDataSize": 15661937,
+  "watched": [
+    "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw",
+    "EW4YvBL23dithgEXydkhg7WiCeyUvEj4UcgabWWtoTdj",
+    "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "634QWfYYzXuqdDWoVtNgQisVYkTdBmfBbBPYZoNZyHwE",
+    "9FXfaV6eVe5RfD8vLg137u8kzA1aNmNsV3kDHCZhdqzF",
+    "6tv6XYnXUFjLSaAeap4T1GQusYeEw3nK6KTcVyyHf3ns",
+    "3GAu8zG1bLHEd2K5JUvysEjLSkfTw4aXYCFaUcQCYsA2"
+  ],
+  "beforeTokenAmountsRaw": [
+    "716825",
+    null,
+    "8011118770949",
+    "0",
+    "11729497877384227300",
+    "13426005807839851020",
+    "87205876845651877",
+    "3406132003093669088",
+    "622271074424"
+  ],
+  "afterTokenAmountsRaw": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "logMessages": [
+    "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+    "Program log: Instruction: FlashBorrowReserveLiquidity",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1365496 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+    "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 35727 of 1400000 compute units",
+    "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+    "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 invoke [1]",
+    "Program log: Instruction: LiquidateLedger",
+    "Program log: AnchorError caused by account: liquidator. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+    "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 consumed 11404 of 1364273 compute units",
+    "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0x7d3"
+  ],
+  "innerInstructions": [
+    {
+      "index": 0,
+      "instructions": [
+        {
+          "parsed": {
+            "info": {
+              "authority": "FsvTiXTUFDc4aLbrov4PrvDTjXCWCniL1dxTUkZ1T2ss",
+              "destination": "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "source": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+              "tokenAmount": {
+                "amount": "2500000000000",
+                "decimals": 6,
+                "uiAmount": 2500000,
+                "uiAmountString": "2500000"
+              }
+            },
+            "type": "transferChecked"
+          },
+          "program": "spl-token",
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 2
+        }
+      ]
+    }
+  ],
+  "atomicRollbackExpected": true
+}

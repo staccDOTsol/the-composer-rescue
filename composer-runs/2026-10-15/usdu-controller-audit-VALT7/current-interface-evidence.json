@@ -1,0 +1,900 @@
+{
+  "generatedAt": "2026-10-15T19:52:03.853Z",
+  "currentBinary": {
+    "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/usdu-controller-audit-VALT7/valt-current.so",
+    "bytes": 912136,
+    "sha256": "88a46040909ad72745b9eea4a7d2e962d44325156dcaa99b6347ab49eb929693"
+  },
+  "interfaceSource": {
+    "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/usdu-controller-audit-VALT7/unitas-idl-source/vault/vault.json",
+    "commit": "17ed34217eb5b280c13a0e80b1727bc681070b3c",
+    "sha256": "072a6776993b7073c71146680ce1341b5d28056482e1cb6f82523fa8475d5b96",
+    "externalSourceTreatedAsUntrustedUntilCrossChecked": true
+  },
+  "instructionCount": 21,
+  "allInstructionLogsPresentInCurrentBinary": true,
+  "instructions": [
+    {
+      "name": "accept_admin_transfer",
+      "discriminatorHex": "59d360d4e900fb07",
+      "accountCount": 4,
+      "signerAccounts": [
+        "new_admin"
+      ],
+      "writableAccounts": [
+        "new_admin",
+        "vault_config",
+        "vault_state"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "adjust_cooldown",
+      "discriminatorHex": "b7d6d1b32ee3c4b1",
+      "accountCount": 5,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "vault_config",
+        "authority"
+      ],
+      "args": [
+        {
+          "name": "cooldown_duration",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "deposit_collateral_mint_usdu",
+      "discriminatorHex": "9488abb8a6b801de",
+      "accountCount": 20,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "vault_config",
+        "usdu_config",
+        "authority",
+        "benefactor_collateral_token_account",
+        "fund_collateral_token_account",
+        "beneficiary_usdu_token_account",
+        "usdu_token"
+      ],
+      "args": [
+        {
+          "name": "collateral_amount",
+          "type": "u64"
+        },
+        {
+          "name": "usdu_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "distribute_usdu_reward",
+      "discriminatorHex": "79518c51901ff0e3",
+      "accountCount": 13,
+      "signerAccounts": [
+        "caller"
+      ],
+      "writableAccounts": [
+        "caller",
+        "vault_config",
+        "caller_usdu_token_account",
+        "vault_stake_pool_usdu_token_account",
+        "susdu_config"
+      ],
+      "args": [
+        {
+          "name": "usdu_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "emergency_reset_total_cooldown_usdu_amount",
+      "discriminatorHex": "e95db27988f7ba10",
+      "accountCount": 5,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "authority",
+        "vault_config"
+      ],
+      "args": [
+        {
+          "name": "new_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "emergency_withdraw_vault_silo_usdu",
+      "discriminatorHex": "322e8655e2d97094",
+      "accountCount": 12,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "authority",
+        "vault_config",
+        "vault_state",
+        "vault_silo_usdu_token_account",
+        "receiver_usdu_token_account"
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "emergency_withdraw_vault_stake_pool_usdu",
+      "discriminatorHex": "039a825be773f5c9",
+      "accountCount": 12,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "authority",
+        "vault_config",
+        "vault_state",
+        "vault_stake_pool_usdu_token_account",
+        "receiver_usdu_token_account"
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "emergency_withdraw_vault_susdu",
+      "discriminatorHex": "4983bcb92cbed153",
+      "accountCount": 12,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "authority",
+        "vault_config",
+        "vault_state",
+        "vault_susdu_token_account",
+        "receiver_susdu_token_account"
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "emergency_withdraw_vault_usdu",
+      "discriminatorHex": "064279f87e1e9c2a",
+      "accountCount": 12,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "authority",
+        "vault_config",
+        "vault_state",
+        "vault_usdu_token_account",
+        "receiver_usdu_token_account"
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_config",
+      "discriminatorHex": "29c245fec4f6e2c3",
+      "accountCount": 6,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_config"
+      ],
+      "args": [
+        {
+          "name": "cooldown_duration",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_state",
+      "discriminatorHex": "60781764990b0da5",
+      "accountCount": 4,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_state"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_state_silo_usdu_token_account",
+      "discriminatorHex": "96739f0af4da6a8a",
+      "accountCount": 8,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_state",
+        "vault_config",
+        "vault_silo_usdu_token_account"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_state_stake_pool_usdu_token_account",
+      "discriminatorHex": "d1552848686aa7b0",
+      "accountCount": 8,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_state",
+        "vault_config",
+        "vault_stake_pool_usdu_token_account"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_state_susdu_token_account",
+      "discriminatorHex": "7da0ade9c906672d",
+      "accountCount": 8,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_state",
+        "vault_config",
+        "vault_susdu_token_account"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "init_vault_state_usdu_token_account",
+      "discriminatorHex": "5c810868ac429808",
+      "accountCount": 8,
+      "signerAccounts": [
+        "admin"
+      ],
+      "writableAccounts": [
+        "admin",
+        "vault_state",
+        "vault_config",
+        "vault_usdu_token_account"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "propose_new_admin",
+      "discriminatorHex": "e8bd9b3c044411bc",
+      "accountCount": 4,
+      "signerAccounts": [
+        "current_admin"
+      ],
+      "writableAccounts": [
+        "current_admin",
+        "vault_config"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "redeem_usdu_withdraw_collateral",
+      "discriminatorHex": "f2231a6c7e32ce00",
+      "accountCount": 22,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "vault_config",
+        "usdu_config",
+        "authority",
+        "beneficiary_usdu_token_account",
+        "fund_collateral_token_account",
+        "vault_usdu_token_account",
+        "benefactor_collateral_token_account",
+        "usdu_token"
+      ],
+      "args": [
+        {
+          "name": "collateral_amount",
+          "type": "u64"
+        },
+        {
+          "name": "usdu_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "redistribute_locked",
+      "discriminatorHex": "5d0ffc3d4d6ebc81",
+      "accountCount": 14,
+      "signerAccounts": [
+        "authority"
+      ],
+      "writableAccounts": [
+        "vault_config",
+        "authority",
+        "susdu_config",
+        "susdu_token",
+        "locked_susdu_token_account",
+        "receiver_susdu_token_account"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "stake_usdu_mint_susdu",
+      "discriminatorHex": "140f78f1280cf511",
+      "accountCount": 17,
+      "signerAccounts": [
+        "caller"
+      ],
+      "writableAccounts": [
+        "caller",
+        "receiver_susdu_token_account",
+        "caller_usdu_token_account",
+        "vault_stake_pool_usdu_token_account",
+        "usdu_token",
+        "susdu_token",
+        "vault_config",
+        "susdu_config"
+      ],
+      "args": [
+        {
+          "name": "usdu_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "unstake_susdu",
+      "discriminatorHex": "b29495c793865ea8",
+      "accountCount": 18,
+      "signerAccounts": [
+        "caller"
+      ],
+      "writableAccounts": [
+        "caller",
+        "caller_susdu_token_account",
+        "susdu_config",
+        "vault_config",
+        "vault_susdu_token_account",
+        "cooldown",
+        "susdu_token",
+        "usdu_token",
+        "vault_stake_pool_usdu_token_account",
+        "vault_silo_usdu_token_account"
+      ],
+      "args": [
+        {
+          "name": "susdu_amount",
+          "type": "u64"
+        }
+      ],
+      "currentBinaryContainsInstructionLog": true
+    },
+    {
+      "name": "withdraw_usdu",
+      "discriminatorHex": "5c37db84687f90ce",
+      "accountCount": 11,
+      "signerAccounts": [
+        "caller"
+      ],
+      "writableAccounts": [
+        "caller",
+        "vault_config",
+        "receiver_usdu_token_account",
+        "vault_silo_usdu_token_account",
+        "cooldown"
+      ],
+      "args": [],
+      "currentBinaryContainsInstructionLog": true
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "ConfigAlreadyInitialized",
+      "msg": "Config already initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6001,
+      "name": "ConfigNotInitialized",
+      "msg": "Config not initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6002,
+      "name": "StateNotInitialized",
+      "msg": "State not initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6003,
+      "name": "StateAlreadyInitialized",
+      "msg": "State already initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6004,
+      "name": "InitialDepositRequired",
+      "msg": "Initial deposit required",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6005,
+      "name": "InitialDepositAlreadyAdded",
+      "msg": "Initial deposit already added",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6006,
+      "name": "InsufficientInitialDeposit",
+      "msg": "Insufficient initial deposit",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6007,
+      "name": "ProposedAdminAlreadySet",
+      "msg": "Proposed admin already set",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6008,
+      "name": "ProposedAdminIsCurrentAdmin",
+      "msg": "Proposed admin is current admin",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6009,
+      "name": "Unauthorized",
+      "msg": "Unauthorized",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6010,
+      "name": "UnauthorizedRole",
+      "msg": "Unauthorized role",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6011,
+      "name": "InvalidVaultAdminAuthority",
+      "msg": "Invalid vault admin authority",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6012,
+      "name": "VaultStateAdminMismatch",
+      "msg": "Vault state admin mismatch",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6013,
+      "name": "NoDelegate",
+      "msg": "No delegate",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6014,
+      "name": "DelegateAccountMismatch",
+      "msg": "Delegate account mismatch",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6015,
+      "name": "OnlyAdminCanProposeNewAdmin",
+      "msg": "Only the current admin can propose a new admin",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6016,
+      "name": "OnlyProposedAdminCanAccept",
+      "msg": "Only the proposed admin can accept the transfer",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6017,
+      "name": "NoPendingAdminTransfer",
+      "msg": "No pending admin transfer",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6018,
+      "name": "CollateralMismatch",
+      "msg": "Collateral mismatch",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6019,
+      "name": "InvalidCollateralToken",
+      "msg": "Invalid collateral token",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6020,
+      "name": "InsufficientCollateral",
+      "msg": "Insufficient collateral",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6021,
+      "name": "InvalidPostAmountInput",
+      "msg": "Invalid post amount input",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6022,
+      "name": "MaxDepositExceeded",
+      "msg": "Max deposit exceeded",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6023,
+      "name": "InsufficientMinShares",
+      "msg": "Insufficient min shares",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6024,
+      "name": "InvalidUsduToken",
+      "msg": "Invalid usdu token",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6025,
+      "name": "InvalidSusduToken",
+      "msg": "Invalid susdu token",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6026,
+      "name": "InvalidVaultStakePoolUsduTokenAccount",
+      "msg": "Invalid vault stake pool usdu token account",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6027,
+      "name": "InvalidVaultSiloUsduTokenAccount",
+      "msg": "Invalid vault silo usdu token account",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6028,
+      "name": "InvalidVaultUsduTokenAccount",
+      "msg": "Invalid vault usdu token account",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6029,
+      "name": "InvalidVaultSusduTokenAccount",
+      "msg": "Invalid vault susdu token account",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6030,
+      "name": "VaultUsduTokenAccountAlreadyInitialized",
+      "msg": "Vault usdu token account already initialized",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6031,
+      "name": "VaultSusduTokenAccountAlreadyInitialized",
+      "msg": "Vault susdu token account already initialized",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6032,
+      "name": "VaultStakePoolUsduTokenAccountAlreadyInitialized",
+      "msg": "Vault stake pool usdu token account already initialized",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6033,
+      "name": "VaultSiloUsduTokenAccountAlreadyInitialized",
+      "msg": "Vault silo usdu token account already initialized",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6034,
+      "name": "InvalidReceiverUsduTokenAccount",
+      "msg": "Invalid receiver usdu token account",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6035,
+      "name": "InvalidRemainingAccounts",
+      "msg": "Invalid remaining accounts",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6036,
+      "name": "InvalidCooldownOwner",
+      "msg": "Invalid cooldown owner",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6037,
+      "name": "InvalidCooldownUnderlyingTokenAccount",
+      "msg": "Invalid cooldown underlying token account",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6038,
+      "name": "InvalidCooldownUnderlyingTokenMint",
+      "msg": "Invalid cooldown underlying token mint",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6039,
+      "name": "CooldownNotInitialized",
+      "msg": "Cooldown not initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6040,
+      "name": "CooldownActive",
+      "msg": "Cooldown active",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6041,
+      "name": "CooldownDurationTooShort",
+      "msg": "Cooldown duration too short",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6042,
+      "name": "CooldownDurationTooLong",
+      "msg": "Cooldown duration too long",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6043,
+      "name": "AmountMustBeGreaterThanZero",
+      "msg": "Amount must be greater than zero",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6044,
+      "name": "InsufficientUsdu",
+      "msg": "Insufficient usdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6045,
+      "name": "InsufficientUsduSupply",
+      "msg": "Insufficient usdu supply",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6046,
+      "name": "InsufficientUsduBalance",
+      "msg": "Insufficient usdu balance",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6047,
+      "name": "InsufficientUnvestedUsdu",
+      "msg": "Insufficient unvested usdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6048,
+      "name": "InvalidStakeUsduAmount",
+      "msg": "Invalid stake usdu amount",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6049,
+      "name": "InvalidPreviewRedeemUsduAmount",
+      "msg": "Invalid preview redeem usdu amount",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6050,
+      "name": "InsufficientVaultUsdu",
+      "msg": "Insufficient vault usdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6051,
+      "name": "InsufficientStakePoolUsdu",
+      "msg": "Insufficient stake pool usdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6052,
+      "name": "InsufficientSiloUsdu",
+      "msg": "Insufficient silo usdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6053,
+      "name": "InsufficientUsduInSilo",
+      "msg": "Insufficient usdu in silo for cooldown withdrawals",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6054,
+      "name": "InsufficientUsduForCooldowns",
+      "msg": "Insufficient usdu to cover all active cooldowns",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6055,
+      "name": "StillVesting",
+      "msg": "Still vesting",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6056,
+      "name": "InsufficientSusdu",
+      "msg": "Insufficient susdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6057,
+      "name": "InsufficientVaultSusdu",
+      "msg": "Insufficient vault susdu",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6058,
+      "name": "SusduTotalSupplyTooLow",
+      "msg": "Susdu total supply too low",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6059,
+      "name": "InvalidUnstakeSusduAmount",
+      "msg": "Invalid unstake susdu amount",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6060,
+      "name": "InvalidPreviewDepositSusduAmount",
+      "msg": "Invalid preview deposit susdu amount",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6061,
+      "name": "InvalidLockedSusduTokenAccountOwner",
+      "msg": "Invalid locked susdu token account owner",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6062,
+      "name": "InvalidLockedSusduTokenAccountAmount",
+      "msg": "Invalid locked susdu token account amount",
+      "currentBinaryContainsName": true,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6063,
+      "name": "AccessRoleNotInitialized",
+      "msg": "Access role not initialized",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6064,
+      "name": "AccessRegistryMismatch",
+      "msg": "Access registry mismatch",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    },
+    {
+      "code": 6065,
+      "name": "MathOverflow",
+      "msg": "Math overflow",
+      "currentBinaryContainsName": false,
+      "currentBinaryContainsMessage": true
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "timestamp": "2026-10-15T18:48:05.308Z",
+  "sourceSignature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+  "sourceSlot": 457338071,
+  "sampledProgram": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+  "preSlot": 457342970,
+  "signerVerification": false,
+  "requestedAmountRaw": "100000",
+  "largeAmountRaw": "1000000",
+  "accounts": {
+    "payer": "Dsg7ZFQzXuiKsBAmL78Y5V5VjN6ASkfKDxB7VUNpp6aM",
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "supply": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "userToken": "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw",
+    "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "otherToken": "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i"
+  },
+  "before": {
+    "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": "7932196712975",
+    "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": "707565",
+    "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": "0",
+    "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": "e2c0144a633f30d91a805d058092b4a62ee54300919a5003c91ad53cb9927bea",
+    "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": "100467"
+  },
+  "results": [
+    {
+      "label": "positive_direct_pair",
+      "slot": 457342970,
+      "err": null,
+      "unitsConsumed": 55210,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 367637 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33586 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 346027 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 366414 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": "7932196712975",
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": "707565",
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": "0",
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": "ffb3e2ec3189d83a5ee2626d51f520bc768fc54d60a4184194d081b1a071aacd",
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": "100467"
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": "0",
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": "0",
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": "0",
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": "0"
+      },
+      "reserveStateChanged": true
+    },
+    {
+      "label": "borrow_without_repay",
+      "slot": 457342970,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6032
+          }
+        ]
+      },
+      "unitsConsumed": 19326,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: No flash repay found",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:139. Error Code: NoFlashRepayFound. Error Number: 6032. Error Message: No corresponding repay found for flash borrow.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 19326 of 200000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1790"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "repay_before_borrow",
+      "slot": 457342971,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "unitsConsumed": 18334,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Flash repay: borrow instruction index 1 has to be less than current index 0",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:40. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 18334 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "repay_wrong_borrow_index",
+      "slot": 457342971,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "unitsConsumed": 21321,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Borrow instruction index 1 for flash repay doesn't match current index 0",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:164. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21321 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "repay_amount_minus_one",
+      "slot": 457342972,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "unitsConsumed": 20641,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Liquidity amount for flash repay doesn't match borrow",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:158. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20641 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "duplicate_borrow",
+      "slot": 457342972,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6035
+          }
+        ]
+      },
+      "unitsConsumed": 20765,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Multiple flash borrows not allowed",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:123. Error Code: MultipleFlashBorrows. Error Number: 6035. Error Message: Multiple flash borrows not allowed in the same transaction.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20765 of 600000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1793"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "duplicate_repay",
+      "slot": 457342972,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6035
+          }
+        ]
+      },
+      "unitsConsumed": 23024,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Multiple flash repays not allowed",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:129. Error Code: MultipleFlashBorrows. Error Number: 6035. Error Message: Multiple flash borrows not allowed in the same transaction.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 23024 of 600000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1793"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "repay_other_destination",
+      "slot": 457342972,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "unitsConsumed": 44557,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Some accounts in flash tx couple differs. index: 6, borrow:C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw, repay:2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:182. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 44557 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "repay_other_fee_vault",
+      "slot": 457342973,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "unitsConsumed": 44528,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Some accounts in flash tx couple differs. index: 7, borrow:5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj, repay:2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:182. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 44528 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "borrow_destination_aliases_supply",
+      "slot": 457342971,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6006
+          }
+        ]
+      },
+      "unitsConsumed": 15579,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Borrow reserve liquidity supply cannot be used as the destination liquidity provided",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/lending_checks.rs:379. Error Code: InvalidAccountInput. Error Number: 6006. Error Message: Invalid account input.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 15579 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1776"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    },
+    {
+      "label": "borrow_transfer_away_then_unfunded_repay",
+      "slot": 457342973,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 55127,
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 566751 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34472 of 600000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 565528 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 192 of 545065 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20579 of 565452 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ],
+      "after": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "deltas": {
+        "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB": null,
+        "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw": null,
+        "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj": null,
+        "2FT1zp7qKxtRC2gMWE3S5y5MG345dM4Y2u5wKTZYvm4i": null
+      },
+      "reserveStateChanged": null
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "generatedAtUtc": "2026-10-19T07:59:23.596Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "scope": "one bounded signed mainnet-beta AlphaQ CASH/USDC routed control",
+  "signer": "runtime-loaded and redacted",
+  "quote": {
+    "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "outputMint": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+    "inAmount": "5000",
+    "outAmount": "5000",
+    "otherAmountThreshold": "4950",
+    "priceImpactPct": "0.0001324089809734553669467443",
+    "contextSlot": 458758757,
+    "route": [
+      {
+        "label": "AlphaQ",
+        "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+        "percent": 100
+      }
+    ]
+  },
+  "routeEnvelope": {
+    "topLevelPrograms": [
+      "ComputeBudget111111111111111111111111111111",
+      "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+    ],
+    "alphaQParents": [
+      {
+        "depth": 2,
+        "immediateParent": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+      }
+    ],
+    "wireBytes": 485,
+    "accountKeyCount": 17,
+    "requiredSignatures": 1,
+    "recentBlockhash": "redacted",
+    "wireSha256": "5347da1493d73b2bd69adeab37ac8f142168218be45f0467009984edb6392eb4"
+  },
+  "slots": {
+    "preAccountRead": 458758756,
+    "simulation": 458758758,
+    "poolDeltaComparable": false
+  },
+  "preRaw": {
+    "walletUsdc": "10492",
+    "walletCash": null,
+    "poolCash": "22554551880",
+    "poolUsdc": "362054703023"
+  },
+  "postRaw": {
+    "walletUsdc": "5492",
+    "walletCash": "5000",
+    "poolCash": "22554546880",
+    "poolUsdc": "362046830773"
+  },
+  "simulation": {
+    "err": null,
+    "unitsConsumed": 54878,
+    "feeLamports": 5000,
+    "logs": [
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]",
+      "Program ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA invoke [2]",
+      "Program log: Instruction: TransferChecked",
+      "Program ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA consumed 29624 of 45608 compute units",
+      "Program ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA success",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 91 of 14108 compute units",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 36019 of 49432 compute units",
+      "Program return: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 iBMAAAAAAAA=",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success"
+    ]
+  },
+  "accountingNote": "Wallet deltas are the signed control result; pool pre/post values span different live slots and are not used as an exact transaction delta.",
+  "sigVerify": true,
+  "sendTransactionCalled": false,
+  "broadcast": false
+}

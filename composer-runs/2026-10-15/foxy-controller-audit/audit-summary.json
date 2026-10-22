@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-15T20:08:14.000Z",
+  "scope": "defensive current-mainnet outsider-accessible one-atomic-transaction drain audit",
+  "programId": "FoXpJL1exLBJgHVvdSHNKyKu2xX2uatctH9qp6dLmfpP",
+  "programData": "BZGG4GPFP9tDKyWiF1FLSNnBXHVn2w9XY3SRfiCA9VyK",
+  "programPayloadSha256": "c41b21bdfc88d9c6629445eb0a9a0e07cb0cac806c9a6b373ca537933637d7e8",
+  "lastDeployedSlot": 415920556,
+  "vault": "32Xe8tQYy7hZDH3PWFA8q34oPbHK1BXaDLnRDhuWCx8h",
+  "vaultAuthority": "Gd18t9bFpigpnEWpYkXD6bhcbtKW5szN2HkgmFUtsM3m",
+  "mint": "FoXyMu5xwXre7zEoSvzViRk3nGawHUp9kUh97y2NDhcq",
+  "selectedConfig": "7N7M1H2CK51ip7sNtPgKhhv2eScx6BokLgHi1Ke3ZLiq",
+  "observedVaultBalanceRaw": "9268009525",
+  "observedVaultBalanceSlot": 457354822,
+  "conclusion": "no immediate outsider-accessible unauthorized drain found",
+  "unauthorizedRealizableFoxyRaw": "0",
+  "unauthorizedRealizableUsd": 0,
+  "validatedOutflowHandlers": [
+    "claim",
+    "auth_unstake_fox"
+  ],
+  "authorizationBlockers": [
+    "owner signature",
+    "staking PDA seeds",
+    "config-derived authority PDA",
+    "config-bound reward vault",
+    "configured AuthUnstakeFox signer",
+    "configured UpdateConfig signer",
+    "beneficiary token-account owner"
+  ],
+  "signedFork": {
+    "sigVerify": true,
+    "replaceRecentBlockhash": false,
+    "noMainnetSubmission": true,
+    "noForkSubmission": true,
+    "maxObservedWireBytes": 829,
+    "maxObservedAccounts": 21,
+    "requestedMaxWireBytes": 4096,
+    "requestedMaxAccounts": 64,
+    "outsiderCandidateCount": 10,
+    "successfulUnauthorizedCandidates": 0
+  },
+  "flash": {
+    "mint": "FoXyMu5xwXre7zEoSvzViRk3nGawHUp9kUh97y2NDhcq",
+    "compatibleProviderCount": 0,
+    "jointCapacityRaw": "0",
+    "plusOneConstructible": false,
+    "blocker": "no FOXY bank or reserve in the audited live provider state; unrelated-mint liquidity cannot affect the target signature or PDA predicates"
+  },
+  "suppliedOutflow": {
+    "signature": "mcGyLQrXVogQvJZYWkiismSnjnXCf6MiTqpH2eiaxRDTV76VfPJUomemnBvMJbkRKu7UsJiPnJj3tsk7K52ANRg",
+    "slot": 457344744,
+    "amountRaw": "640"
+  },
+  "history": {
+    "signaturePopulation": 147000,
+    "newestSlot": 457350458,
+    "oldestSlot": 415793738,
+    "sampledTransactions": 11765,
+    "authUnstakeMatches": 5
+  },
+  "evidenceSha256": {
+    "program-metadata.json": "86609fe2389c1243a8c999f2d7c7d3a5a9f086573dd9916b8046de9cadaf9889",
+    "evidence.json": "e0c5cc0bc20328e7da905f2a99a63e5fb9825140cb5035adeecf01490740abb9",
+    "history-map.json": "2bfab95a76ad3c1e810764b6a950702d0a9c0d8c01f4a04c1d7312cacedfdf22",
+    "auth-unstake-history.json": "4b613865a26bda676a9b6df25ad4b10094b696f56d34f92eaf768827098f95df",
+    "signed-fork-outsider.json": "5d6f187f90e4ff2a42fd8120c6948fae132c77f3308de88d46dd0472e5bb9b3f",
+    "update-config-signed-probe.json": "b19b48d98dd9d53c579548eba3b2ab3367b8e09237c622e4a0e7af01c9316a3b",
+    "lender-check.json": "d7262b8f164c2cfa88c17c4d2b025dff11a1ed3536b18f4dd49b77069d7e4c3a"
+  }
+}

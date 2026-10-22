@@ -1,0 +1,377 @@
+{
+  "generatedAt": "2026-10-19T07:20:36.106Z",
+  "network": "mainnet-beta local Surfpool fork",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "upstreamClass": "public keyless mainnet RPC",
+  "targetProgram": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+  "targetPool": "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb",
+  "safety": {
+    "freshEphemeralKeys": true,
+    "privateKeysSaved": false,
+    "syntheticMutation": "only fresh attacker system balance; stake account is created, initialized and delegated by signed Solana instructions",
+    "allSimulationsSigVerifyTrue": true,
+    "sendMethodCalled": false
+  },
+  "currentMainnetLayoutSource": {
+    "signature": "rrjH9bUcMiQeEQ7K97cMSStP5Dc8gXZmDNvpMJik2Q8Uorw65gS6nKTUatYn37cZMBj8WzuYkEUA3MYAG6oqG6B",
+    "slot": 458733846,
+    "discriminatorHex": "06f2f2003de6603a"
+  },
+  "cases": [
+    {
+      "name": "canonical_stored_manager_fee_positive_control",
+      "forkPreSlot": 458747797,
+      "simulationSlot": 458747797,
+      "stakeAccount": "uXGiKdrwrXZzymmTMhY7W1qZ3qmRwr6cr6Ex7R17Eh8",
+      "stakeInfoPda": "4w5eUEUzqWMXvTCToNTaw8AhszcwqNnYgefKFyq3LiKD",
+      "syntheticStakeLamports": "1002282880",
+      "rentLamports": "2282880",
+      "managerFeeAccount": "F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW",
+      "signed": true,
+      "sigVerify": true,
+      "liveSubmission": false,
+      "wire": {
+        "version": 1,
+        "bytes": 925,
+        "addresses": 16,
+        "instructions": 5,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+          "uXGiKdrwrXZzymmTMhY7W1qZ3qmRwr6cr6Ex7R17Eh8"
+        ],
+        "signedSha256": "70769ceffdc5e64d08de6f10b3a90e90ff84c397d0600df662ed036379dd082a"
+      },
+      "err": null,
+      "unitsConsumed": 87116,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [1]",
+        "Program log: Instruction: Initialize",
+        "Program Stake11111111111111111111111111111111111111 consumed 7566 of 1399700 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [1]",
+        "Program log: Instruction: DelegateStake",
+        "Program Stake11111111111111111111111111111111111111 consumed 15518 of 1392134 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: LiquidUnstakeStakeAccount",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Authorize",
+        "Program Stake11111111111111111111111111111111111111 consumed 11684 of 1355634 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Authorize",
+        "Program Stake11111111111111111111111111111111111111 consumed 11703 of 1341341 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Deactivate",
+        "Program Stake11111111111111111111111111111111111111 consumed 10733 of 1327655 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 63732 of 1376616 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo success"
+      ],
+      "compactLogs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: Initialize",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: DelegateStake",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: LiquidUnstakeStakeAccount",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: Authorize",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: Authorize",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: Deactivate",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo success"
+      ],
+      "watched": [
+        "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+        "uXGiKdrwrXZzymmTMhY7W1qZ3qmRwr6cr6Ex7R17Eh8",
+        "4w5eUEUzqWMXvTCToNTaw8AhszcwqNnYgefKFyq3LiKD",
+        "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb",
+        "6RLKARrt6oPCyuMCdYdUHmJxd4wUa6ZeyiC8VSMcYxRv",
+        "F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW"
+      ],
+      "before": [
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "5000000000",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        null,
+        null,
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "366120224",
+          "dataBytes": 316,
+          "dataSha256": "91bc9c16f55828b2908aa6ea06d3efbaec4fce12563690b6bb3126caa912c801",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "4018329016113",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "76054805188",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        }
+      ],
+      "after": [
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "4999665261",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "Stake11111111111111111111111111111111111111",
+          "executable": false,
+          "lamports": "1002282880",
+          "dataBytes": 200,
+          "dataSha256": "a2fb8c8babc4b39d582994c6d2d1c3a08bc639af12dd1973f7d45317f99c5d6f",
+          "tokenAmountRaw": null,
+          "stakeStateKind": 2,
+          "staker": "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb",
+          "withdrawer": "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb"
+        },
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "1447680",
+          "dataBytes": 80,
+          "dataSha256": "ba44113df854cdb4405e78e7d5448d1912cb7cc39f88183fa58ae4352b3e5460",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "366120224",
+          "dataBytes": 316,
+          "dataSha256": "0f9ae4fb4cc35301dbbb5b946633f267fab12b48d4ef16a51dc94e78f4516ddf",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "4017325556169",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "76054859311",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        }
+      ],
+      "deltas": {
+        "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd": {
+          "lamports": "-334739",
+          "beforeExists": true,
+          "afterExists": true
+        },
+        "uXGiKdrwrXZzymmTMhY7W1qZ3qmRwr6cr6Ex7R17Eh8": {
+          "lamports": null,
+          "beforeExists": false,
+          "afterExists": true
+        },
+        "4w5eUEUzqWMXvTCToNTaw8AhszcwqNnYgefKFyq3LiKD": {
+          "lamports": null,
+          "beforeExists": false,
+          "afterExists": true
+        },
+        "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb": {
+          "lamports": "0",
+          "beforeExists": true,
+          "afterExists": true
+        },
+        "6RLKARrt6oPCyuMCdYdUHmJxd4wUa6ZeyiC8VSMcYxRv": {
+          "lamports": "-1003459944",
+          "beforeExists": true,
+          "afterExists": true
+        },
+        "F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW": {
+          "lamports": "54123",
+          "beforeExists": true,
+          "afterExists": true
+        }
+      }
+    },
+    {
+      "name": "attacker_substitutes_manager_fee_recipient",
+      "forkPreSlot": 458747798,
+      "simulationSlot": 458747798,
+      "stakeAccount": "BogZoj86mSscU8k1porb7fFskAp28ubPiMXcnQdPUAPb",
+      "stakeInfoPda": "HKqWzmLxaVzKYivnA8YqtL6hQCCyHuKJ4mCiCWihsVi4",
+      "syntheticStakeLamports": "1002282880",
+      "rentLamports": "2282880",
+      "managerFeeAccount": "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+      "signed": true,
+      "sigVerify": true,
+      "liveSubmission": false,
+      "wire": {
+        "version": 1,
+        "bytes": 893,
+        "addresses": 15,
+        "instructions": 5,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+          "BogZoj86mSscU8k1porb7fFskAp28ubPiMXcnQdPUAPb"
+        ],
+        "signedSha256": "ccd1b64118a72a07e38ba06928438230e34a495315657c5ef107ede46c8ad838"
+      },
+      "err": {
+        "InstructionError": [
+          4,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 37112,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [1]",
+        "Program log: Instruction: Initialize",
+        "Program Stake11111111111111111111111111111111111111 consumed 7566 of 1399700 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program Stake11111111111111111111111111111111111111 invoke [1]",
+        "Program log: Instruction: DelegateStake",
+        "Program Stake11111111111111111111111111111111111111 consumed 15518 of 1392134 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo invoke [1]",
+        "Program log: Instruction: LiquidUnstakeStakeAccount",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: AnchorError caused by account: pool. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW",
+        "Program log: Right:",
+        "Program log: 217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo consumed 13728 of 1376616 compute units",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x7d1"
+      ],
+      "compactLogs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: Initialize",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: DelegateStake",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Instruction: LiquidUnstakeStakeAccount",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: AnchorError caused by account: pool. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: Right:",
+        "Program 2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo failed: custom program error: 0x7d1"
+      ],
+      "watched": [
+        "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd",
+        "BogZoj86mSscU8k1porb7fFskAp28ubPiMXcnQdPUAPb",
+        "HKqWzmLxaVzKYivnA8YqtL6hQCCyHuKJ4mCiCWihsVi4",
+        "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb",
+        "6RLKARrt6oPCyuMCdYdUHmJxd4wUa6ZeyiC8VSMcYxRv",
+        "F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW"
+      ],
+      "before": [
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "5000000000",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        null,
+        null,
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "366120224",
+          "dataBytes": 316,
+          "dataSha256": "91bc9c16f55828b2908aa6ea06d3efbaec4fce12563690b6bb3126caa912c801",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "2rU1oCHtQ7WJUvy15tKtFvxdYNNSc3id7AzUcjeFSddo",
+          "executable": false,
+          "lamports": "4018329016113",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        {
+          "owner": "11111111111111111111111111111111",
+          "executable": false,
+          "lamports": "76054805188",
+          "dataBytes": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        }
+      ],
+      "after": [],
+      "deltas": {
+        "217MpL2pAfGVoW3vuz6pRF51r9UyXYX6u9F2HEZ51mVd": {
+          "lamports": null,
+          "beforeExists": true,
+          "afterExists": false
+        },
+        "BogZoj86mSscU8k1porb7fFskAp28ubPiMXcnQdPUAPb": {
+          "lamports": null,
+          "beforeExists": false,
+          "afterExists": false
+        },
+        "HKqWzmLxaVzKYivnA8YqtL6hQCCyHuKJ4mCiCWihsVi4": {
+          "lamports": null,
+          "beforeExists": false,
+          "afterExists": false
+        },
+        "9nyw5jxhzuSs88HxKJyDCsWBZMhxj2uNXsFcyHF5KBAb": {
+          "lamports": null,
+          "beforeExists": true,
+          "afterExists": false
+        },
+        "6RLKARrt6oPCyuMCdYdUHmJxd4wUa6ZeyiC8VSMcYxRv": {
+          "lamports": null,
+          "beforeExists": true,
+          "afterExists": false
+        },
+        "F3yy3FVpwq9MV321AzALFcDWZp9XBBHbMas3t4AtEtCW": {
+          "lamports": null,
+          "beforeExists": true,
+          "afterExists": false
+        }
+      }
+    }
+  ]
+}

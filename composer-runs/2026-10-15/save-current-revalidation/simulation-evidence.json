@@ -1,0 +1,490 @@
+{
+  "program": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+  "observedSlot": 457346269,
+  "observedBlockTime": 1792090797,
+  "observedAt": "2026-10-15T18:59:58.140Z",
+  "sigVerify": false,
+  "replaceRecentBlockhash": true,
+  "results": [
+    {
+      "label": "control_withdrawAndRedeem",
+      "sourceSignature": "EW7aVqxnzuGmNqoLYd7LnMb1pbs9hpYtZWVKwanTqpo3pdJec1WREKqACA8cmFRGXev7wZZ7dU46LsA7aYVKCFT",
+      "sourceSlot": 457336395,
+      "simulationSlot": 457346249,
+      "err": "AccountNotFound",
+      "unitsConsumed": 0,
+      "nonzeroTokenDeltas": {},
+      "logs": []
+    },
+    {
+      "label": "control_redeemFees",
+      "sourceSignature": "3uv5vHGZCzB48ZXmdxDimwFMeDxaF39pvZwhYhZ5kVq4hyY1ExnYa1g7oxu9fiuJ3zijLmcW2YzUm6a6YJ3HdDMu",
+      "sourceSlot": 457329711,
+      "simulationSlot": 457346250,
+      "err": null,
+      "unitsConsumed": 60517,
+      "nonzeroTokenDeltas": {
+        "Cpyk5WRGmdK2yFGTJCrmgyABPiNEF5eCyCMMZLxpdkXu": "687",
+        "5PjYVwpt7mVmmRRgRWXCFG6SoehQevef4UCztfCxcGL2": "-687"
+      },
+      "logs": [
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: RedeemFees"
+      ]
+    },
+    {
+      "label": "control_borrowObligationLiquidity",
+      "sourceSignature": "2mcZwLgBkUqSdPhqihLQQYL2VNKA67a5BoLDckCd3YAWgPFxLAZVhipbNGkPXihN6ASnb3mLJFY3GXR5iyxEARxP",
+      "sourceSlot": 457325487,
+      "simulationSlot": 457346251,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 26
+          }
+        ]
+      },
+      "unitsConsumed": 269492,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Instruction: Borrow Obligation Liquidity",
+        "Program log: Borrow value cannot exceed maximum borrow value",
+        "Program log: Borrow amount too large for deposited collateral",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x1a"
+      ]
+    },
+    {
+      "label": "control_flashBorrow",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346252,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 140690,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Too many obligation deposit or borrow reserves provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "control_direct_flash_pair",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346254,
+      "err": null,
+      "unitsConsumed": 115761,
+      "nonzeroTokenDeltas": {
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": "400"
+      },
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Flash Repay Reserve Liquidity"
+      ]
+    },
+    {
+      "label": "direct_flash_missing_repay_atomicity",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346255,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 48
+          }
+        ]
+      },
+      "unitsConsumed": 83946,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: No flash repay found",
+        "Program log: No corresponding repay found for flash borrow",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x30"
+      ]
+    },
+    {
+      "label": "direct_flash_repay_before_borrow",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346256,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 49
+          }
+        ]
+      },
+      "unitsConsumed": 59160,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program log: Flash repay: Supplied borrow instruction index is not a flash borrow",
+        "Program log: Invalid repay found",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x31"
+      ]
+    },
+    {
+      "label": "direct_flash_wrong_borrow_index",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346257,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 49
+          }
+        ]
+      },
+      "unitsConsumed": 84636,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Borrow instruction index 7 for flash repay doesn't match current index 6",
+        "Program log: Invalid repay found",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x31"
+      ]
+    },
+    {
+      "label": "direct_flash_destination_alias_supply",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346258,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 79308,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Borrow reserve liquidity supply cannot be used as the destination liquidity provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "direct_flash_wrong_supply",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346259,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 78814,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Borrow reserve liquidity supply must be used as the source liquidity provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "direct_flash_cpi_program_substitution",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346260,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 9
+          }
+        ]
+      },
+      "unitsConsumed": 77578,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x9"
+      ]
+    },
+    {
+      "label": "liquidation_rebased_to_current_obligation_shape",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346261,
+      "err": {
+        "InstructionError": [
+          9,
+          {
+            "Custom": 36
+          }
+        ]
+      },
+      "unitsConsumed": 156065,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Instruction: Liquidate Obligation and Redeem Reserve Collateral",
+        "Program log: Obligation borrowed value is zero",
+        "Program log: Obligation borrows have zero value",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x24"
+      ]
+    },
+    {
+      "label": "flash_missing_repay_atomicity",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346261,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 48
+          }
+        ]
+      },
+      "unitsConsumed": 90733,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: No flash repay found",
+        "Program log: No corresponding repay found for flash borrow",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x30"
+      ]
+    },
+    {
+      "label": "flash_repay_before_borrow",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346263,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 49
+          }
+        ]
+      },
+      "unitsConsumed": 59333,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program log: Flash repay: Supplied borrow instruction index is not a flash borrow",
+        "Program log: Invalid repay found",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x31"
+      ]
+    },
+    {
+      "label": "flash_wrong_borrow_index",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346264,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 49
+          }
+        ]
+      },
+      "unitsConsumed": 87476,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Borrow instruction index 11 for flash repay doesn't match current index 6",
+        "Program log: Invalid repay found",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x31"
+      ]
+    },
+    {
+      "label": "liquidation_unsigned_authority",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346265,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 139174,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Too many obligation deposit or borrow reserves provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "liquidation_destination_alias_source",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346265,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 139174,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Too many obligation deposit or borrow reserves provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "liquidation_wrong_repay_vault",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346266,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 140268,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Too many obligation deposit or borrow reserves provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "liquidation_cpi_program_substitution",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "simulationSlot": 457346266,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 140268,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: AssertAccountData",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: Refresh Obligation",
+        "Program log: Too many obligation deposit or borrow reserves provided",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "redeem_fees_destination_alias_supply",
+      "sourceSignature": "3uv5vHGZCzB48ZXmdxDimwFMeDxaF39pvZwhYhZ5kVq4hyY1ExnYa1g7oxu9fiuJ3zijLmcW2YzUm6a6YJ3HdDMu",
+      "sourceSlot": 457329711,
+      "simulationSlot": 457346267,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 52782,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: RedeemFees",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "redeem_fees_wrong_supply",
+      "sourceSignature": "3uv5vHGZCzB48ZXmdxDimwFMeDxaF39pvZwhYhZ5kVq4hyY1ExnYa1g7oxu9fiuJ3zijLmcW2YzUm6a6YJ3HdDMu",
+      "sourceSlot": 457329711,
+      "simulationSlot": 457346268,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 13
+          }
+        ]
+      },
+      "unitsConsumed": 53003,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: RedeemFees",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0xd"
+      ]
+    },
+    {
+      "label": "redeem_fees_cpi_program_substitution",
+      "sourceSignature": "3uv5vHGZCzB48ZXmdxDimwFMeDxaF39pvZwhYhZ5kVq4hyY1ExnYa1g7oxu9fiuJ3zijLmcW2YzUm6a6YJ3HdDMu",
+      "sourceSlot": 457329711,
+      "simulationSlot": 457346269,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 9
+          }
+        ]
+      },
+      "unitsConsumed": 54766,
+      "nonzeroTokenDeltas": {},
+      "logs": [
+        "Program log: Instruction: Refresh Reserve",
+        "Program log: Instruction: RedeemFees",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x9"
+      ]
+    }
+  ]
+}

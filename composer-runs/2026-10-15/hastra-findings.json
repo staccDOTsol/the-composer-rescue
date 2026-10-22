@@ -1,0 +1,63 @@
+{
+  "target": "97V7JsExNC6yFWu5KjK1FLfVkNVvtMpAFL5QkLWKEGxY",
+  "network": "solana-mainnet",
+  "verifiedSourceCommit": "121e4cc600b976a97faa018359e00bda48113ec2",
+  "deployedArtifactSha256": "43d77f0feade4dbdca9df47c55d3aa551b0e2095ef03ebb73cb21bd5e9d8868d",
+  "findings": [
+    {
+      "id": "HASTRA-01",
+      "title": "Just-in-time deposits capture rewards accrued before entry",
+      "severity": "high",
+      "confidence": "high",
+      "cwe": "CWE-362",
+      "outsiderAccessible": true,
+      "operatorSignatureRequiredFromAttacker": false,
+      "atomicFlashExploit": false,
+      "impact": "A permissionless entrant can deposit at the pre-update global price and redeem after a routine higher price update, withdrawing more wYLDS than supplied and reducing the canonical vault by the same amount.",
+      "latestObservedWindow": {
+        "rewardPublicationSlot": 457351954,
+        "rewardRaw": "813853565",
+        "oldPriceRaw": "1064716884235726713",
+        "firstHigherPriceSlot": 457352632,
+        "confirmedOldPriceWindowSeconds": 146,
+        "laterPriceSlot": 457357363,
+        "laterPriceRaw": "1064723917765092433",
+        "secondsToLaterPrice": 1165
+      },
+      "exactBinaryForkProof": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939216814165",
+        "assetsOutRaw": "1000006606008",
+        "userNetGainWyldsRaw": "6606008",
+        "vaultNetLossWyldsRaw": "-6606008",
+        "primeBalanceFinalDelta": "0",
+        "primeSupplyFinalDelta": "0"
+      },
+      "primaryEvidence": [
+        "hastra-temporal-fork.json",
+        "hastra-reward-window-analysis.json",
+        "hastra-history-analysis.json",
+        "hastra-build-verification.json"
+      ],
+      "sourceLocations": [
+        "hastra-deployed-source/programs/vault-stake/src/processor.rs:89",
+        "hastra-deployed-source/programs/vault-stake/src/processor.rs:194",
+        "hastra-deployed-source/programs/vault-stake/src/processor.rs:429",
+        "hastra-deployed-source/programs/vault-stake/src/processor.rs:946",
+        "hastra-deployed-source/programs/vault-stake/src/account_structs.rs:82",
+        "hastra-deployed-source/programs/vault-stake/src/account_structs.rs:167",
+        "hastra-deployed-source/programs/vault-stake/src/state.rs:9"
+      ]
+    }
+  ],
+  "atomicFlashConclusion": {
+    "unauthorizedGainFound": false,
+    "successfulPacketBytes": 883,
+    "successfulPacketAddresses": 20,
+    "sameAssetCallerDeltaWyldsRaw": "-1",
+    "crossAssetCallerDeltaWyldsRaw": "-1",
+    "lenderEconomicAccountsReconciled": true,
+    "outsiderPublishGuard": "InvalidRewardsAdministrator (6025)",
+    "outsiderVerifyGuard": "InvalidRewardsAdministrator (6025)"
+  }
+}

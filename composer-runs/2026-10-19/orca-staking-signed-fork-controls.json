@@ -1,0 +1,2260 @@
+{
+  "schema": "orca-staking-signed-fork-controls/v1",
+  "generatedAtUtc": "2026-10-19T09:38:56.405Z",
+  "environment": {
+    "rpc": "http://127.0.0.1:19697",
+    "mainnetBacked": true,
+    "forkHealth": "ok",
+    "forkWrites": [
+      "fresh outsider funded with synthetic SOL",
+      "fresh outsider canonical ORCA ATA seeded with 20000000000000 raw",
+      "fresh outsider canonical xORCA ATA seeded with 0 raw",
+      "one matured live PendingWithdraw cloned to an outsider-bound PDA solely for destination-binding controls"
+    ],
+    "sourceAccountContextSlot": 458785061,
+    "sourcePendingContextSlot": 458785063
+  },
+  "target": {
+    "program": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+    "state": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+    "vault": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+    "orca": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+    "xorca": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N"
+  },
+  "signer": {
+    "freshOutsiderPublicKey": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW",
+    "outsiderSecretPersisted": false,
+    "protocolPrivilegeKnown": false
+  },
+  "startingBalances": {
+    "outsiderOrcaRaw": "20000000000000",
+    "outsiderXorcaRaw": "0"
+  },
+  "tests": [
+    {
+      "label": "stake_amount_1",
+      "notes": {
+        "inputOrcaRaw": "1",
+        "predictedSharesRaw": "0",
+        "scale": "rounding edge"
+      },
+      "contextSlot": 458786116,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "unitsConsumed": 3145,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 2995 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x177e"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x177e",
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": null
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": null
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": null
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": null
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 452,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "9cb6817b9239f8ac9f19dcae598685d26d3535cb25c3ea549fb4fe693467dde6",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_amount_100",
+      "notes": {
+        "inputOrcaRaw": "100",
+        "predictedSharesRaw": "59",
+        "scale": "rounding edge"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 5884,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495787 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494587 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AGQAAAAAAAAAPV/NO9MIAAD+jDkahwAAADiECzrmBAAAOwAAAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 5734 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436669",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822456"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19999999999900",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "59",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        null
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "100"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "59"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-100"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "59"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 452,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "2103af6f09007ef2b40927d3b2d0ce101611c86746504711bf3101cab2c53c17",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_then_unstake_roundtrip_100",
+      "notes": {
+        "inputOrcaRaw": "100",
+        "mintedThenBurnedSharesRaw": "59",
+        "predictedPendingOrcaRaw": "99",
+        "predictedRoundingLossRaw": "1",
+        "pendingAddress": "F4AU58oJXMYGS7k3LzexQZjjSfA6VXJn46yMAcNhZ2fh",
+        "withdrawIndex": 11
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 18770,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495787 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494588 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AGQAAAAAAAAAPV/NO9MIAAD+jDkahwAAADiECzrmBAAAOwAAAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 5733 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 483756 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: ATsAAAAAAAAAPV/NO9MIAABhjTkahwAAAP2DCzrmBAAAYwAAAAAAAACAOgkAAAAAAAs=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 12887 of 494117 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436669",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19999999999900",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564321",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "100"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-100"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "99"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 538,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "1fb791e13cb75e0e3fa3ddc76d121cfa968762be5e5c5939015f076a82dd8227",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_amount_1000000",
+      "notes": {
+        "inputOrcaRaw": "1000000",
+        "predictedSharesRaw": "590465",
+        "scale": "current-vault relevant"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 5884,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495787 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494587 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AEBCDwAAAAAAGaHcO9MIAAD+jDkahwAAAH6GFDrmBAAAgQIJAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 5734 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703335436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386863412862"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19999999000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "590465",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        null
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "1000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "590465"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-1000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "590465"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 452,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "44250d2706c3dffbd20554619fda9a4b9a2465fc09fa66a4d9db299f555b788b",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_then_unstake_roundtrip_1000000",
+      "notes": {
+        "inputOrcaRaw": "1000000",
+        "mintedThenBurnedSharesRaw": "590465",
+        "predictedPendingOrcaRaw": "999998",
+        "predictedRoundingLossRaw": "2",
+        "pendingAddress": "W3DNqghewXxSUVeKvwgVQMreCvxqJ1GywpQ2kFW1UBy",
+        "withdrawIndex": 12
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 14270,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495787 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494588 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AEBCDwAAAAAAGaHcO9MIAAD+jDkahwAAAH6GFDrmBAAAgQIJAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 5733 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 488256 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: AYECCQAAAAAAGaHcO9MIAAA8z0gahwAAAP2DCzrmBAAAPkIPAAAAAACAOgkAAAAAAAw=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 8387 of 494117 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703335436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19999999000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580261564220",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "1000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-1000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "999998"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 538,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "5b6668111b6cece24bb5c3396d92c748bd22c825dd53f9db359d8c6ba7fa0952",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_amount_1000000000000",
+      "notes": {
+        "inputOrcaRaw": "1000000000000",
+        "predictedSharesRaw": "590465768206",
+        "scale": "current-vault relevant"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 6157,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495514 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494314 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AAAQpdToAAAA2W5yELwJAAD+jDkahwAAAAsfjLRvBQAADpuAeokAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 6007 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "10703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5977328590603"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "590465768206",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        null
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "1000000000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "590465768206"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-1000000000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "590465768206"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 452,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "f06aa5f05d529518739c3e2def4ac3253c580ecc6255fcd18585071d0599654d",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_then_unstake_roundtrip_1000000000000",
+      "notes": {
+        "inputOrcaRaw": "1000000000000",
+        "mintedThenBurnedSharesRaw": "590465768206",
+        "predictedPendingOrcaRaw": "999999999999",
+        "predictedRoundingLossRaw": "1",
+        "pendingAddress": "9j8xxcJQFgmRPmsuU1QG6a3jkZYgCyT6DQL6ypNmKhJJ",
+        "withdrawIndex": 13
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 14816,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495514 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494315 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AAAQpdToAAAA2W5yELwJAAD+jDkahwAAAAsfjLRvBQAADpuAeokAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 6006 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 487710 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: AQ6bgHqJAAAA2W5yELwJAAD9nN7ubwEAAP2DCzrmBAAA/w+l1OgAAACAOgkAAAAAAA0=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 8660 of 493844 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "10703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "1580260564221",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "1000000000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-1000000000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "999999999999"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 538,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "e3ce98669cfbf9592808261b6d48ea77bfd33bf66662eb23c36914103d31ef4d",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_amount_5000000000000",
+      "notes": {
+        "inputOrcaRaw": "5000000000000",
+        "predictedSharesRaw": "2952328841031",
+        "scale": "current-vault relevant"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 6157,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495514 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494314 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AABQOSeMBAAA2a4GY18NAAD+jDkahwAAAESLjp6VBwAARweDZK8CAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 6007 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "14703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "8339191663428"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "15000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "2952328841031",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        null
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "5000000000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "2952328841031"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-5000000000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "2952328841031"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 452,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "0150cc8ce17455abb3b0c52e15296dd640b383c648a86e567737c8d0ee278116",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "stake_then_unstake_roundtrip_5000000000000",
+      "notes": {
+        "inputOrcaRaw": "5000000000000",
+        "mintedThenBurnedSharesRaw": "2952328841031",
+        "predictedPendingOrcaRaw": "4999999999999",
+        "predictedRoundingLossRaw": "1",
+        "pendingAddress": "JADFtnXF7hjWZX7wrc2ZnUR2vgZPKVXDddyxrdUemqq9",
+        "withdrawIndex": 14
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 16316,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495514 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494315 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AABQOSeMBAAA2a4GY18NAAD+jDkahwAAAESLjp6VBwAARweDZK8CAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 6006 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 486210 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: AUcHg2SvAgAA2a4GY18NAAD93HJBEwUAAP2DCzrmBAAA/085J4wEAACAOgkAAAAAAA4=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 10160 of 493844 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "14703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "15000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "5580260564221",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "5000000000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-5000000000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "4999999999999"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 538,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "1f36d9f3904c8db4b0709c8142ae74c45d0867d4b1412a3185628d8bfe268b57",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "reward_donation_then_roundtrip_donation_1000000",
+      "notes": {
+        "donationOrcaRaw": "1000000",
+        "stakeOrcaRaw": "1000000",
+        "mintedThenBurnedSharesRaw": "590465",
+        "predictedPendingOrcaRaw": "999998",
+        "predictedAttackerEquityLossRaw": "1000002",
+        "rewardMechanism": "direct signed SPL Token transfer to the canonical vault"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 14346,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 499850 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495711 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494512 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AEBCDwAAAAAAWePrO9MIAAD+jDkahwAAAH6GFDrmBAAAgQIJAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 5733 of 499774 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 488180 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: AYECCQAAAAAAWePrO9MIAAA8z0gahwAAAP2DCzrmBAAAPkIPAAAAAACAOgkAAAAAAB4=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 8387 of 494041 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703336436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19999998000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580261564220",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "2000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-2000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "999998"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 553,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "411372934d5f37ed637b708b085a43a9c66b79fd092e8e58b4972950cfd854ac",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "reward_donation_then_roundtrip_donation_5000000000000",
+      "notes": {
+        "donationOrcaRaw": "5000000000000",
+        "stakeOrcaRaw": "5000000000000",
+        "mintedThenBurnedSharesRaw": "1907114156290",
+        "predictedPendingOrcaRaw": "4999999999998",
+        "predictedAttackerEquityLossRaw": "5000000000002",
+        "rewardMechanism": "direct signed SPL Token transfer to the canonical vault"
+      },
+      "contextSlot": 458786116,
+      "err": null,
+      "unitsConsumed": 16392,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 499850 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495438 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 494239 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: AABQOSeMBAAA2f4/iusRAAD+jDkahwAAAP8k6EKiBgAAAqHcCLwBAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 6006 of 499774 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 486134 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: AQKh3Ai8AQAA2f4/iusRAAD83HJBEwUAAP2DCzrmBAAA/k85J4wEAACAOgkAAAAAAB8=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 10160 of 493768 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "19703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "10000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "5580260564220",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "10000000000000"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": {
+            "supplyRaw": "0"
+          }
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "-10000000000000"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": {
+            "amountRaw": "0"
+          }
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "4999999999998"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 553,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "893564be9cf3d844b437c19fcd5dc3af2fde22f5a330d6c5f7477604728c1f5a",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "synthetic_bound_pending_canonical_withdraw_control",
+      "notes": {
+        "syntheticFixture": true,
+        "sourcePending": "J5bAT4o4iqySCzDVwzEFf3bAaEzqqUWVTt4MHBqScmp",
+        "clonedAmountRaw": "1",
+        "mutation": "unstaker and PDA changed together to fresh outsider; timestamp and amount retained"
+      },
+      "contextSlot": 458786117,
+      "err": null,
+      "unitsConsumed": 4622,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 495922 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: Av2MORqHAAAAAQAAAAAAAACAOgkAAAAAAAA=",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 4472 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT success"
+      ],
+      "targetErrorLog": null,
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436568",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        null,
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000001",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        null,
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564221",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": {
+            "amountRaw": "-1"
+          }
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": null
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": {
+            "amountRaw": "1"
+          }
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": null
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": {
+            "escrowedOrcaRaw": "-1"
+          }
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 445,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "7fbbb4b1baa5eab35bf3b5063ed658841cd8253d1555e247bf7a16d1920839a7",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "synthetic_bound_pending_destination_substituted_to_victim_ata",
+      "notes": {
+        "syntheticFixture": true,
+        "sourcePending": "J5bAT4o4iqySCzDVwzEFf3bAaEzqqUWVTt4MHBqScmp",
+        "victimDestination": "A2wKVTbAu16sffHsHPirJh5GLEfamwCpXag5ac7dCVRR"
+      },
+      "contextSlot": 458786117,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 62889,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: Token account data owner 7yRFJkY3wT53VXmuH5wa9bvJeaAHu2VDmYoj3p5CQjsJ does not match owner account Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW for token mint account orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6Q@",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 62739 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": null
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": null
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": null
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": null
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 445,
+        "inlineAccountKeys": 10,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "f1d2dfea87f47719b594facdc43b1d25b7a546ba1760fdbb3695849391ec7daa",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    },
+    {
+      "label": "synthetic_bound_pending_destination_aliased_to_vault",
+      "notes": {
+        "syntheticFixture": true,
+        "sourcePending": "J5bAT4o4iqySCzDVwzEFf3bAaEzqqUWVTt4MHBqScmp",
+        "alias": "destination equals canonical vault"
+      },
+      "contextSlot": 458786117,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 62990,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: Token account data owner CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK does not match owner account Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW for token mint account orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6Q@",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 62840 of 499850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "before": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "9703334436569",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK"
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "9128765",
+          "dataLength": 82,
+          "kind": "mint",
+          "supplyRaw": "5386862822397"
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "20000000000000",
+          "mint": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": "2039280",
+          "dataLength": 165,
+          "kind": "token",
+          "amountRaw": "0",
+          "mint": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "authority": "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+          "lamports": "15144960",
+          "dataLength": 2048,
+          "kind": "state",
+          "escrowedOrcaRaw": "580260564222",
+          "coolDownSeconds": "604800"
+        }
+      ],
+      "after": [],
+      "deltas": [
+        {
+          "address": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+          "delta": null
+        },
+        {
+          "address": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+          "delta": null
+        },
+        {
+          "address": "8WUgYdqQMN7BLWCpREgpZ2p5p36tbvGYfQVijqZpBcB7",
+          "delta": null
+        },
+        {
+          "address": "59LHfghRpDLd6U67suTc5beZqEjnZTDWKnmdxTAALS5r",
+          "delta": null
+        },
+        {
+          "address": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+          "delta": null
+        }
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 413,
+        "inlineAccountKeys": 9,
+        "requiredSignatures": 1,
+        "signerPublicKeys": [
+          "Fbj3TvWYjCzetfaCd2nDL6WKkDv9wR6jiDp2vhNmytW"
+        ],
+        "signedWireSha256": "b0d795e48954b18ee294fa55bd2c443e2f1fb1d699245f0babf55e34fcc8de92",
+        "sigVerify": true,
+        "replaceRecentBlockhash": false
+      }
+    }
+  ],
+  "safety": {
+    "sigVerify": true,
+    "replaceRecentBlockhash": false,
+    "simulationsOnly": true,
+    "sendTransactionCalled": false,
+    "transactionSubmitted": false,
+    "broadcast": false,
+    "freshOutsiderSecretPersisted": false
+  }
+}

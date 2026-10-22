@@ -1,0 +1,438 @@
+{
+  "generatedAt": "2026-10-15T19:15:47.980Z",
+  "readSource": "Solana public RPC",
+  "simulationSource": "configured mainnet RPC",
+  "sourceSignature": "2WxD766a1LAyiHiMYK8REpBsNpDhA8GQAkNb3occqXXooFF5xyUKz6Xim4m9tVQMiyFrhCYbKKcb6o4FibMBBdwG",
+  "sourceSlot": 457340229,
+  "authority": "3zdXwWm9GVGzSBmYEtWGBgP9E2A95TbUz7ccGavWMPL8",
+  "walletWsol": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+  "pools": [
+    {
+      "pool": "Hx6EoXCzvYzcdtTvEm2QsXUFVe9pJzhH9FuMxmLw589D",
+      "apiPage": "WSOL/USDC ascending liquidity",
+      "stateOwner": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "poolState": {
+        "ammConfig": "2fGXL8uhqxJ4tpgtosHZXT4zcQap6j62z3bMDxdkMvy5",
+        "mint0": "So11111111111111111111111111111111111111112",
+        "mint1": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "vault0": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+        "vault1": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+        "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "observation": "Ckw9LZj6JZvQGg7cFq394ewu8zuundgNuaM3kqeY4MrL",
+        "lpMint": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+        "lpSupply": "15583",
+        "protocolFees0": "302707",
+        "protocolFees1": "330169",
+        "fundFees0": "100373",
+        "fundFees1": "109720",
+        "openTime": "1723744072",
+        "status": 0
+      },
+      "preSlot": 457347250,
+      "pre": [
+        {
+          "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+          "rawToken": "0",
+          "mintSupply": "10216089231191916320"
+        },
+        {
+          "key": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+          "rawToken": "0",
+          "mintSupply": "10216089231191916320"
+        },
+        {
+          "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "rawToken": "11208583873143",
+          "mintSupply": "13969624989413576352"
+        },
+        {
+          "key": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+          "rawToken": "3229173",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+          "rawToken": "734475",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "Hx6EoXCzvYzcdtTvEm2QsXUFVe9pJzhH9FuMxmLw589D",
+          "rawToken": "2498010158675575897",
+          "mintSupply": "14044130441356247238"
+        },
+        {
+          "key": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+          "rawToken": "0",
+          "mintSupply": "15483"
+        }
+      ],
+      "cases": [
+        {
+          "name": "swap_deposit_repay",
+          "slot": 457350664,
+          "bytes": 1191,
+          "accounts": 26,
+          "instructions": 11,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 166961,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: Deposit",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "amount": "100000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "destination": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "amount": "9872",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "amount": "18776",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "destination": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "amount": "1828",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1881224",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "rawToken": "8044",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "rawToken": "3347949",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "rawToken": "726431",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "Hx6EoXCzvYzcdtTvEm2QsXUFVe9pJzhH9FuMxmLw589D",
+              "rawToken": "2498010158675575897",
+              "mintSupply": "14044130441356247238",
+              "pool": {
+                "ammConfig": "2fGXL8uhqxJ4tpgtosHZXT4zcQap6j62z3bMDxdkMvy5",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "vault0": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+                "vault1": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "Ckw9LZj6JZvQGg7cFq394ewu8zuundgNuaM3kqeY4MrL",
+                "lpMint": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+                "lpSupply": "15683",
+                "protocolFees0": "302947",
+                "protocolFees1": "330169",
+                "fundFees0": "100453",
+                "fundFees1": "109720",
+                "openTime": "1723744072",
+                "status": 0
+              }
+            },
+            {
+              "key": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+              "rawToken": "0",
+              "mintSupply": "15583",
+              "pool": null
+            },
+            {
+              "key": "2Rpy5uoZHRjwvGxdUKM8C8oRjpxUudJMVnCtJV1RC5Qz",
+              "rawToken": "100",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "swap_deposit_withdraw_repay",
+          "slot": 457350666,
+          "bytes": 1273,
+          "accounts": 27,
+          "instructions": 12,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 192409,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: Deposit",
+            "Program log: Instruction: Withdraw",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "amount": "100000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "destination": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "amount": "9872",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "amount": "18776",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "destination": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "amount": "1828",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "source": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "18775",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "destination": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "amount": "1827",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1899999",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "rawToken": "9871",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "rawToken": "3329174",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "rawToken": "724604",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "Hx6EoXCzvYzcdtTvEm2QsXUFVe9pJzhH9FuMxmLw589D",
+              "rawToken": "2498010158675575897",
+              "mintSupply": "14044130441356247238",
+              "pool": {
+                "ammConfig": "2fGXL8uhqxJ4tpgtosHZXT4zcQap6j62z3bMDxdkMvy5",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "vault0": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+                "vault1": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "Ckw9LZj6JZvQGg7cFq394ewu8zuundgNuaM3kqeY4MrL",
+                "lpMint": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+                "lpSupply": "15583",
+                "protocolFees0": "302947",
+                "protocolFees1": "330169",
+                "fundFees0": "100453",
+                "fundFees1": "109720",
+                "openTime": "1723744072",
+                "status": 0
+              }
+            },
+            {
+              "key": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+              "rawToken": "0",
+              "mintSupply": "15483",
+              "pool": null
+            },
+            {
+              "key": "2Rpy5uoZHRjwvGxdUKM8C8oRjpxUudJMVnCtJV1RC5Qz",
+              "rawToken": "0",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "deposit_without_usdc_control",
+          "slot": 457350667,
+          "bytes": 1086,
+          "accounts": 24,
+          "instructions": 10,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111197,
+          "err": {
+            "InstructionError": [
+              7,
+              {
+                "Custom": 1
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: Deposit",
+            "Program log: Error: insufficient funds",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x1"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "amount": "18136",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "destination": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "amount": "1891",
+              "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "HYDz96iMcuTbGL8PF6bnD8Vav7diB54KdgbwwUMNGL2X",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "6FghY4izwEJ4dq4jVLgbiQeJQBxAHQcyFEbH3ePNqAPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "4kVkYx1ZL2BS5ndNBDCv6AUrmXj7q5wtQhiCaY1UXo9u",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "Hx6EoXCzvYzcdtTvEm2QsXUFVe9pJzhH9FuMxmLw589D",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "4wETSJG3woeMzonzp3xRHZdc9TzzTQdZPyoGHWE6ALC4",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2Rpy5uoZHRjwvGxdUKM8C8oRjpxUudJMVnCtJV1RC5Qz",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        }
+      ],
+      "postPriceNote": "Quote quality to be evaluated from other on-chain pools; no profit inference from single-pool marginal price."
+    }
+  ]
+}

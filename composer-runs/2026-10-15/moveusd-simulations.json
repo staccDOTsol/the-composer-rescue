@@ -1,0 +1,384 @@
+{
+  "generatedAt": "2026-10-15T19:32:32.708Z",
+  "transport": "current-mainnet read-only simulateTransaction; unsigned custom Solana v1; sigVerify=false; no sendTransaction",
+  "programId": "EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+  "sourceTransaction": "4LzzHMY8eCKiVCxb2258q9VbVa9XmsWpC3RZRaXzTUYkLNaxsPZjFjHX8gu2MnTrrrVdS5dZW5w2auQRf9Y5Drxq",
+  "before": {
+    "sourceRaw": "101776167770000",
+    "destinationRaw": "0"
+  },
+  "importantInterpretation": "Cases retaining OPERATOR as a declared signer bypass cryptographic signature verification only to exercise current program logic; they are operator-equivalent controls and not outsider attack paths.",
+  "results": [
+    {
+      "label": "operator_equivalent_fresh_transfer_1",
+      "simulationSlot": 457355327,
+      "err": null,
+      "unitsConsumed": 31865,
+      "loadedAccountsDataSize": 1290356,
+      "sourcePostRaw": "101776167769999",
+      "destinationPostRaw": "1",
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [2]",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 423 of 1369318 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 31865 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "a9cbaddaaea43028f10bef5846b10b8348fb5e64de442b29f375a78015a88aa8"
+    },
+    {
+      "label": "outsider_substitutes_authority_against_operator_permission",
+      "simulationSlot": 457355327,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 26416,
+      "loadedAccountsDataSize": 1290420,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError caused by account: authority_permissions. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 26416 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x7d6"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "6mgztPM3Br7Sn8Jqe49jT2RRMmZbMRK6iH2xRZ6XVLL3"
+      ],
+      "wireSha256": "79bb98b2521d280263dbb4a247abe0c3abff68c9f5d5e203f61516e40e71465a"
+    },
+    {
+      "label": "token_info_substituted_with_system_program",
+      "simulationSlot": 457355327,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3007
+          }
+        ]
+      },
+      "unitsConsumed": 7707,
+      "loadedAccountsDataSize": 1290283,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError caused by account: token_info. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 7707 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbbf"
+      ],
+      "sizeBytes": 699,
+      "addressCount": 13,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "f0deafc5781fb7cedb31adc49a1cdf157f55e9a88b608a4cbfbb936dfdb0b4ad"
+    },
+    {
+      "label": "source_token_account_aliased_to_destination",
+      "simulationSlot": 457355328,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "unitsConsumed": 27737,
+      "loadedAccountsDataSize": 1290127,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError caused by account: source_ledger_account. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 27737 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x7df"
+      ],
+      "sizeBytes": 699,
+      "addressCount": 13,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "674f020e196e43463c39f302f05d549eeb985b01980cda94404e8eeba6327644"
+    },
+    {
+      "label": "destination_token_account_aliased_to_source",
+      "simulationSlot": 457355328,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6006
+          }
+        ]
+      },
+      "unitsConsumed": 30757,
+      "loadedAccountsDataSize": 1290127,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError thrown in programs/mintfx/src/ledger_account/state/remaining_accounts.rs:124. Error Code: InvalidLedgerAccountTransferDestinations. Error Number: 6006. Error Message: Invalid Ledger Account Transfer Destinations / No Destination Provided.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 30757 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x1776"
+      ],
+      "sizeBytes": 699,
+      "addressCount": 13,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "9a7cc81d185707a9083e2a69d16ed74ac4199b2bcc29521e76233560e946c2ae"
+    },
+    {
+      "label": "token_program_substituted_with_system_program",
+      "simulationSlot": 457355328,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 14319,
+      "loadedAccountsDataSize": 1181547,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 14319 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbc0"
+      ],
+      "sizeBytes": 699,
+      "addressCount": 13,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "1be2b55250d7b99925e9a7dbd5ee310661c24144e8253a1598ad43c2fd829284"
+    },
+    {
+      "label": "operator_account_not_marked_signer",
+      "simulationSlot": 457355329,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 7976,
+      "loadedAccountsDataSize": 1290356,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: AnchorError caused by account: authority. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 7976 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbc2"
+      ],
+      "sizeBytes": 667,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ"
+      ],
+      "wireSha256": "df89bcb234bd46d47b6f5f033fd9e41446a23d04f04d6360d938b6c4c171674f"
+    },
+    {
+      "label": "replay_completed_transfer_id",
+      "simulationSlot": 457355329,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 0
+          }
+        ]
+      },
+      "unitsConsumed": 10991,
+      "loadedAccountsDataSize": 1290429,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 10991 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x0"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "ab1594a83f39396febe29765f7cf62b2dbf1014966da62d992ad52c87a848369"
+    },
+    {
+      "label": "operator_equivalent_zero_amount",
+      "simulationSlot": 457355329,
+      "err": null,
+      "unitsConsumed": 33382,
+      "loadedAccountsDataSize": 1290356,
+      "sourcePostRaw": "101776167770000",
+      "destinationPostRaw": "0",
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [2]",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 423 of 1367801 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 33382 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "bc0d24a69385d545e6642debbc9b865175371ad922575e4e5d40c8e831f2e993"
+    },
+    {
+      "label": "operator_equivalent_source_plus_one",
+      "simulationSlot": 457355329,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 28484,
+      "loadedAccountsDataSize": 1290356,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 28484 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x1"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "308907743226dc1b872a85257963e210e296b07a34b2ca58ffcc87172e15b962"
+    },
+    {
+      "label": "operator_equivalent_u64_max",
+      "simulationSlot": 457355329,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 28484,
+      "loadedAccountsDataSize": 1290356,
+      "sourcePostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 28484 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x1"
+      ],
+      "sizeBytes": 731,
+      "addressCount": 14,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "3d93bf4475baa2391603bb06110300e4bafa9eec5ffb8a0434fdbdf544d9802f"
+    },
+    {
+      "label": "operator_equivalent_exact_4096_byte_v1",
+      "simulationSlot": 457355330,
+      "err": null,
+      "unitsConsumed": 1199870,
+      "loadedAccountsDataSize": 1365220,
+      "sourcePostRaw": "101776167769999",
+      "destinationPostRaw": "1",
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Transfer",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [2]",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 423 of 1369318 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 31865 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success"
+      ],
+      "sizeBytes": 4096,
+      "addressCount": 15,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "716d799f35212133d07923ce8074aab898ec7f6b78617e39659fca34e236db6d"
+    }
+  ]
+}

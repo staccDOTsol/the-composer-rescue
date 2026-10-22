@@ -1,0 +1,237 @@
+{
+  "generatedAtUtc": "2026-10-19T07:56:57.160Z",
+  "environment": "private nested current fork",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "forkBaselineSlot": 458757488,
+  "program": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+  "pool": "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32",
+  "outsider": {
+    "publicKey": "4S9WVns9bhhVynTDqUsJLhYctCYqB5MAULA8wrvaRMzN",
+    "privateKeysPersisted": false,
+    "syntheticSolLamports": "10000000000",
+    "syntheticUsdcRaw": "1000000000",
+    "syntheticUsdtRaw": "1000000000"
+  },
+  "quote": {
+    "contextSlot": 458758088,
+    "inAmount": "100000000",
+    "outAmount": "100096721",
+    "route": [
+      {
+        "label": "SolFi V2",
+        "ammKey": "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32"
+      }
+    ]
+  },
+  "tracked": [
+    "FSPNCVaCZvNWmqB2gVacens46891MD1fYSRss4YpqovV",
+    "4ogEAnkZy1f1jbCbbqYPgHDczqVUipdSscKXVbUQEyfD",
+    "ARWaajRJyF6PKQryJ4HLzLBfTWM2qmVQUQVtBjk6PgPc",
+    "5bHD9xdEzJdkVuhs54mGPC9BZgUshqgMg4tqmTwhWggc"
+  ],
+  "beforeRaw": {
+    "walletUsdc": "1000000000",
+    "walletUsdt": "1000000000",
+    "poolUsdc": "304577026619",
+    "poolUsdt": "445839669657"
+  },
+  "cases": [
+    {
+      "label": "clean",
+      "donatedMint": null,
+      "donationRaw": "0",
+      "slot": 458757488,
+      "err": null,
+      "unitsConsumed": 74608,
+      "wire": {
+        "version": 1,
+        "bytes": 773,
+        "addresses": 18,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "0cc5cc2dff81223d8362d7ab7ebfb254075bd041fb6966fadbe5689e58d9ae90",
+        "sigVerify": true
+      },
+      "postRaw": {
+        "walletUsdc": "900000000",
+        "walletUsdt": "1100096120",
+        "poolUsdc": "304677026619",
+        "poolUsdt": "445739573537"
+      },
+      "deltaRaw": {
+        "walletUsdc": "-100000000",
+        "walletUsdt": "100096120",
+        "poolUsdc": "100000000",
+        "poolUsdt": "-100096120"
+      },
+      "solfiInvocations": [
+        {
+          "depth": 2,
+          "immediateParent": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]",
+        "Program log: Instruction: Route",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF invoke [2]",
+        "Program data: 2xZ84zrhN1YTP9LmrgIw+WTDZUb11jWFmyBjlf69q5VaDcYBAAAAAMUXWBsAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1331266 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1329822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF consumed 59607 of 1387580 compute units",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 91 of 1326099 compute units",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 70120 of 1395512 compute units",
+        "Program return: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 eFj3BQAAAAA=",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success"
+      ],
+      "outputDifferenceVsCleanRaw": "0"
+    },
+    {
+      "label": "donate_input_usdc",
+      "donatedMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "donationRaw": "100000000",
+      "slot": 458757488,
+      "err": null,
+      "unitsConsumed": 75607,
+      "wire": {
+        "version": 1,
+        "bytes": 789,
+        "addresses": 18,
+        "instructions": 4,
+        "requiredSignatures": 1,
+        "sha256": "4c2924818120d76cbdb22fbc6d9332c2a7cbe2c7ec499ec156de20d1ed9e3c26",
+        "sigVerify": true
+      },
+      "postRaw": {
+        "walletUsdc": "800000000",
+        "walletUsdt": "1100096120",
+        "poolUsdc": "304777026619",
+        "poolUsdt": "445739573537"
+      },
+      "deltaRaw": {
+        "walletUsdc": "-200000000",
+        "walletUsdt": "100096120",
+        "poolUsdc": "200000000",
+        "poolUsdt": "-100096120"
+      },
+      "solfiInvocations": [
+        {
+          "depth": 2,
+          "immediateParent": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+        }
+      ],
+      "logs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1400000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1399774 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]",
+        "Program log: Instruction: Route",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF invoke [2]",
+        "Program data: 2xZ84zrhN1YTP9LmrgIw+WTDZUb11jWFmyBjlf69q5VaDcYBAAAAAMUXWBsAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1330271 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1328827 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF consumed 60529 of 1387503 compute units",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 91 of 1325100 compute units",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 71043 of 1395436 compute units",
+        "Program return: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 eFj3BQAAAAA=",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success"
+      ],
+      "outputDifferenceVsCleanRaw": "0"
+    },
+    {
+      "label": "donate_output_usdt",
+      "donatedMint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+      "donationRaw": "100000000",
+      "slot": 458757488,
+      "err": null,
+      "unitsConsumed": 75569,
+      "wire": {
+        "version": 1,
+        "bytes": 789,
+        "addresses": 18,
+        "instructions": 4,
+        "requiredSignatures": 1,
+        "sha256": "a3e2ebe901c2e0ca5e026ebe9c936b4b96ee0a759ed918796081a5991c443517",
+        "sigVerify": true
+      },
+      "postRaw": {
+        "walletUsdc": "900000000",
+        "walletUsdt": "1000096120",
+        "poolUsdc": "304677026619",
+        "poolUsdt": "445839573537"
+      },
+      "deltaRaw": {
+        "walletUsdc": "-100000000",
+        "walletUsdt": "96120",
+        "poolUsdc": "100000000",
+        "poolUsdt": "-96120"
+      },
+      "solfiInvocations": [
+        {
+          "depth": 2,
+          "immediateParent": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4"
+        }
+      ],
+      "logs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1400000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1399774 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]",
+        "Program log: Instruction: Route",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF invoke [2]",
+        "Program data: 2xZ84zrhN1YTP9LmrgIw+WTDZUb11jWFmyBjlf69q5VaDcYBAAAAAMUXWBsAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1330303 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1328859 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF consumed 60491 of 1387503 compute units",
+        "Program SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [2]",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 91 of 1325138 compute units",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 71005 of 1395436 compute units",
+        "Program return: JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 eFj3BQAAAAA=",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 success"
+      ],
+      "outputDifferenceVsCleanRaw": "-100000000"
+    }
+  ],
+  "safety": {
+    "mainnetTransactionsSubmitted": false,
+    "sendTransactionPathPresent": false,
+    "persistentMutation": "fresh outsider system and token accounts on private nested fork only"
+  }
+}

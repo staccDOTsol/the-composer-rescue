@@ -1,0 +1,483 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-15T19:52:42.887Z",
+  "target": {
+    "chain": "Solana mainnet",
+    "programId": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn",
+    "asset": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+  },
+  "verdict": {
+    "status": "no_validated_outsider_unauthorized_net_asset_gain_in_tested_scope",
+    "validatedFindings": [],
+    "reportableOutsiderGainObserved": false,
+    "confidence": "high for the exercised JitoSOL/xSOL mint-redeem surface; limited for unexercised instructions because the current on-chain processor source was not reproducibly matched"
+  },
+  "safety": {
+    "readOnlyMainnetSimulationOnly": true,
+    "noTransactionsSubmitted": true,
+    "operatorContacted": false,
+    "rpcEndpointRedacted": true,
+    "simulationSignatureVerificationDisabled": true,
+    "signerModel": {
+      "address": "9hNaQ3crLjWihWa5BeQgSYfrPY3eoDmHJAX2sTWE8nUC",
+      "onCurve": true,
+      "systemOwnedAtObservation": true,
+      "startingLamports": 304044674,
+      "signatureVerificationDisabledOnlyForSimulation": true
+    }
+  },
+  "liveCustody": {
+    "observationSlot": 457356939,
+    "vault": "2Y3TLkdGoJwbdizxqrZmQwNLYJyGKTgzC4tbetbkvQ43",
+    "vaultAuthority": "82MNhUCha26wY4kohTUEC965b4ypEe7RPa4itp9UMrKK",
+    "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "raw": "230893431670961",
+    "jitosol": "230893.431670961",
+    "nominalSolBackingBeforePoolFee": "301644.513408627",
+    "censusGrossUsdApprox": "31821000",
+    "sameMintCensusInventoryUsdApprox": {
+      "kamino": "120158000",
+      "project0": "7587000",
+      "total": "127745000",
+      "caveat": "Census inventory is routing context, not a proof that the entire amount is flash-borrowable."
+    }
+  },
+  "atomicHarness": {
+    "transport": "read-only current-mainnet simulateTransaction; real no-ALT 4096-byte Solana v1 wire; sigVerify=false; no signing or submission",
+    "observationSlot": 457359680,
+    "flashProvider": "Kamino Lend v2",
+    "flashReserve": "EVbyPKrHG6WBfm4dLxLMJpUDY43cCAcHSpV3KYjKsktW",
+    "flashMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "flashFeeRateScaledFraction": "0",
+    "flashFeeExactlyZero": true,
+    "availableRaw": "721263424102624",
+    "availableJitosol": "721263.424102624",
+    "operation": "ATA idempotent create -> KLend flash borrow JitoSOL -> Hylo mint xSOL -> Hylo redeem all minted xSOL -> KLend exact repay",
+    "successfulFullRoundTrips": [
+      {
+        "label": "lever_dust_10_raw_flash_mint_redeem_full_repay",
+        "slot": 457359686,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "f8360d89144fdaa45b5cedc6b1bf388e780c76ea500c3c993e3f5088dc2930d4"
+        },
+        "flashAmountRaw": "10",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-4",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "2",
+          "hylo_jitosol_fee_vault": "2",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      },
+      {
+        "label": "lever_one_jitosol_flash_mint_redeem_full_repay",
+        "slot": 457359686,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "453b915a6561b4892639b565e2a2563965791c09c1bf55e51f852d86ad067c1d"
+        },
+        "flashAmountRaw": "1000000000",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-20906648",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "1016816",
+          "hylo_jitosol_fee_vault": "19889832",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      },
+      {
+        "label": "lever_hundred_jitosol_flash_mint_redeem_full_repay",
+        "slot": 457359688,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "8e2ed782ba2b46e0c3fa98b8b1ddcdf3e4d5a3d2313d4e23f55d58bcbd7446c7"
+        },
+        "flashAmountRaw": "100000000000",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-2090586843",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "101602871",
+          "hylo_jitosol_fee_vault": "1988983972",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      },
+      {
+        "label": "lever_near_liquidity_90pct_flash_mint_redeem_full_repay",
+        "slot": 457359687,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "84111a1eb48e4de14f480139b665276d2803de060549915da167260d2459a8c7"
+        },
+        "flashAmountRaw": "649137081692361",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-13152339289842",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "236880165821",
+          "hylo_jitosol_fee_vault": "12915459124021",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      },
+      {
+        "label": "lever_near_liquidity_minus_one_flash_mint_redeem_full_repay",
+        "slot": 457359689,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "55fa618e30b9e7e42e27d789ef31b4cbabd43c4c00c497ba5edc6099de91b06e"
+        },
+        "flashAmountRaw": "721263424102623",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-14607854379973",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "257285091242",
+          "hylo_jitosol_fee_vault": "14350569288731",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      },
+      {
+        "label": "lever_exact_liquidity_flash_mint_redeem_full_repay",
+        "slot": 457359690,
+        "err": null,
+        "wire": {
+          "version": 1,
+          "sizeBytes": 1063,
+          "maximumBytes": 4096,
+          "accountCount": 25,
+          "instructionCount": 5,
+          "sha256": "d35b2a2415553dc2ceb8dabb35774b62fa9d406d23ead2d27909037006210598"
+        },
+        "flashAmountRaw": "721263424102624",
+        "fullRepaymentProven": true,
+        "outsiderNetAssetGain": false,
+        "balanceDeltasRaw": {
+          "outsider_jitosol": "-14607854379973",
+          "outsider_hyusd": "0",
+          "klend_supply_vault": "0",
+          "klend_fee_vault": "0",
+          "hylo_jitosol_vault": "257285091242",
+          "hylo_jitosol_fee_vault": "14350569288731",
+          "hyusd_mint": "0",
+          "hylo_state": "changed",
+          "klend_reserve": "changed",
+          "outsider_xsol": "0",
+          "xsol_mint": "0"
+        }
+      }
+    ],
+    "invariantAcrossSuccessfulFullRoundTrips": {
+      "klendSupplyVaultDeltaRaw": "0",
+      "klendFeeVaultDeltaRaw": "0",
+      "callerXsolDeltaRaw": "0",
+      "callerJitosolDeltaAlwaysNegative": true
+    }
+  },
+  "sameTransactionOrdering": {
+    "redeemBeforeMint": {
+      "slot": 457359693,
+      "result": "rejected and atomically rolled back",
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      }
+    },
+    "repayBeforeRedeem": {
+      "slot": 457359693,
+      "result": "accepted using the caller pre-balance, then redeemed; full lender balances restored and caller JitoSOL delta remained negative",
+      "balanceDeltasRaw": {
+        "outsider_jitosol": "-20906648",
+        "outsider_hyusd": "0",
+        "klend_supply_vault": "0",
+        "klend_fee_vault": "0",
+        "hylo_jitosol_vault": "1016816",
+        "hylo_jitosol_fee_vault": "19889832",
+        "hyusd_mint": "0",
+        "hylo_state": "changed",
+        "klend_reserve": "changed",
+        "outsider_xsol": "0",
+        "xsol_mint": "0"
+      }
+    },
+    "twoSequentialCycles": {
+      "slot": 457359694,
+      "result": "accepted and fully repaid; residual xSOL dust did not offset the JitoSOL loss",
+      "wireSizeBytes": 1136,
+      "balanceDeltasRaw": {
+        "outsider_jitosol": "-42253639",
+        "outsider_hyusd": "0",
+        "klend_supply_vault": "0",
+        "klend_fee_vault": "0",
+        "hylo_jitosol_vault": "2478423",
+        "hylo_jitosol_fee_vault": "39775216",
+        "hyusd_mint": "0",
+        "hylo_state": "changed",
+        "klend_reserve": "changed",
+        "outsider_xsol": "70083",
+        "xsol_mint": "70083"
+      },
+      "valuationControl": {
+        "oneJitosolMintQuoteXsolRaw": "2050838907",
+        "residualXsolJitosolEquivalentRawFloorAtObservedMintRate": "34172",
+        "netJitosolEquivalentRawUpperBound": "-42219467",
+        "netJitosolEquivalentUpperBound": "-0.042219467",
+        "note": "Using the mint rate overvalues the residual for this control because a redeem also charges fees."
+      }
+    }
+  },
+  "stablecoinPath": {
+    "smallRoundTrip": {
+      "slot": 457359683,
+      "result": "rejected and atomically rolled back",
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 13035
+          }
+        ]
+      },
+      "errorName": "NoValidStablecoinRedeemFee",
+      "reason": "projected collateral ratio above the configured redeem-fee curve domain"
+    },
+    "nearLiquidityMint": {
+      "slot": 457359683,
+      "result": "rejected and atomically rolled back",
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 13034
+          }
+        ]
+      },
+      "errorName": "NoValidStablecoinMintFee",
+      "reason": "projected collateral ratio below the configured mint-fee curve domain"
+    },
+    "outsiderGainObserved": false
+  },
+  "accountAndOracleControls": {
+    "wrongVault": {
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "result": "rejected by token owner/associated-account constraint"
+    },
+    "wrongLstHeader": {
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 3002
+          }
+        ]
+      },
+      "result": "rejected by Anchor discriminator constraint"
+    },
+    "wrongOracleOwner": {
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 3007
+          }
+        ]
+      },
+      "result": "rejected by Pyth Receiver owner constraint"
+    },
+    "verifiedHistoricalSameFeedAccount": {
+      "substitutedAddress": "GGdMnioYUC8qFWrWXJP2n3YHAns49MJW87CeuT7sgvrf",
+      "canonicalAddress": "7AviUf9nL62mcxNbQGKm4nKDQnPjswo6c5MX4D57HmyE",
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "result": "rejected by static address constraint before freshness evaluation"
+    },
+    "publicMathFreshnessChecks": [
+      "positive price and supported exponent",
+      "publish-time interval",
+      "posted-slot interval and no future slot",
+      "confidence tolerance"
+    ]
+  },
+  "jitosolRedemptionAndLiquidity": {
+    "observationSlots": {
+      "poolAccountSlot": 457356938,
+      "liquidityAccountsSlot": 457356939,
+      "epoch": 1058
+    },
+    "identityChecks": {
+      "poolOwner": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+      "poolOwnerMatchesPublishedSplStakePoolProgram": true,
+      "poolMintMatchesJitosol": true,
+      "tokenMintSupplyMatchesPoolState": true,
+      "poolLastUpdateEpoch": "1058",
+      "currentEpoch": "1058",
+      "poolUpdatedThisEpoch": true
+    },
+    "totalPoolSol": "10478732.138756046",
+    "immediateDirectSolBeforePoolFee": "8065.831886468",
+    "immediateDirectSolCoverageBpsOfHyloVault": "267",
+    "immediateDirectSolCoversFullHyloVault": false,
+    "solWithdrawalFee": {
+      "numerator": "1",
+      "denominator": "1000"
+    },
+    "alternateExit": "Permissionless withdraw-stake can return delegated stake inventory, but realization as liquid SOL requires stake deactivation/cooldown.",
+    "exploitHarnessDenomination": "JitoSOL; no JitoSOL-to-SOL exit was required to repay the flash liability."
+  },
+  "deploymentAndSource": {
+    "program": {
+      "address": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn",
+      "observationSlots": {
+        "program": 457359257,
+        "programData": 457359258
+      },
+      "loader": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "programDataAddress": "BA5b6FzvZ77m7MZbsMEVSCFW1x86f7jM98wjcecVwzYN",
+      "lastDeploySlot": "447625876",
+      "upgradeAuthority": "GzyhwK4y7EKPEevAMc2TEpgi1Y3znwj14FUzkHmCMiNP",
+      "executableLength": 1760400,
+      "executableSha256": "c745eb73d5dfa951a6317bcd5ceef1e540f7367ff7165d12596835d0488f5719",
+      "fullProgramDataLength": 1760445,
+      "fullProgramDataSha256": "951e3b0f2c0502a188380f73dc2ee6b73896e09d9610297fedd17ac0469d08c3"
+    },
+    "localDump": {
+      "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-current.so",
+      "length": 1760400,
+      "sha256": "c745eb73d5dfa951a6317bcd5ceef1e540f7367ff7165d12596835d0488f5719",
+      "matchesFetchedOnchainExecutable": true
+    },
+    "publicSdk": {
+      "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-sdk-source",
+      "gitCommit": "d5a989e1862b467d69e7f5b2e7d2ecc2aae966b0",
+      "workspaceVersion": "2.6.5",
+      "idlMetadataVersion": "2.0.5",
+      "idlProgramAddress": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn",
+      "instructionCount": 77,
+      "idlSha256": "7d3c25be6a8d60151f3e876ac994457be1a389e35811fa8576916eab55d524fd",
+      "containsClientIdlAndMathNotFullOnchainProcessor": true
+    },
+    "december2025Audit": {
+      "auditedCommit": "0c3c6d34c5c50d94425f150f86913e2be7431cb7",
+      "attestedBuildSha256": "7d4e5ff843530aeeefb44e3356edec81999ee0f71bf0516b6c9ab16cb577d0fa",
+      "currentExecutableMatchesAttestedBuild": false
+    },
+    "verifiedBuildRegistry": {
+      "isVerified": false,
+      "message": "On chain program not verified",
+      "programBuildCount": 0,
+      "currentHashBuildCount": 0
+    },
+    "sourceToCurrentBinaryMatchEstablished": false
+  },
+  "publicSdkTests": {
+    "command": "cargo test -p hylo-core",
+    "result": "pass",
+    "passed": 221,
+    "failed": 0,
+    "ignored": 2,
+    "notes": [
+      "The public conversion property test asserts token_to_lst(lst_to_token(x)) <= x.",
+      "These tests increase confidence in published math but do not prove that the unmatched current executable was built from that source."
+    ]
+  },
+  "limitations": [
+    "No reproducible source-to-current-binary match was available; the public SDK contains IDL/client/math code but not the full on-chain processor.",
+    "The current executable hash differs from the December 2025 audit-attested build hash, and the public verified-build registry returned no build for it.",
+    "Read-only simulation used sigVerify=false and a real on-curve system-owned outsider account model; no private key was used and no transaction was submitted.",
+    "The conclusion is not a claim that all 77 IDL instructions or all economic states are vulnerability-free.",
+    "An upgrade-authority/operator path is intentionally not treated as an outsider finding."
+  ],
+  "artifacts": {
+    "report": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-security-audit.md",
+    "detailedSimulation": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-klend-v1-sim.json",
+    "simulationHarness": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-klend-v1-sim.js",
+    "transactionV1Encoder": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-v1-wire.js",
+    "liveProbe": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-live-probe.js",
+    "instructionMap": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-instruction-map.json",
+    "jitosolLiquidityProbe": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-jitosol-liquidity.js",
+    "jitosolLiquidity": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-jitosol-liquidity.json",
+    "deploymentProbe": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-deployment-attestation.js",
+    "deploymentAttestation": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-deployment-attestation.json",
+    "currentExecutableDump": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-current.so",
+    "publicSdkCheckout": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/hylo-exchange-sdk-source"
+  }
+}

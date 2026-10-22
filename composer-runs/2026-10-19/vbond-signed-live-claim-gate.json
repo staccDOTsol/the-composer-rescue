@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-10-19T07:14:59.793Z",
+  "scope": "signed current mainnet-beta simulateTransaction only",
+  "broadcast": false,
+  "program": "vBoNdEvzMrSai7is21XgVYik65mqtaKXuSdMBJ1xkW4",
+  "request": "HgjD8mWs1KyHAT7W2P1hysX3K7RuRMC2ZT5noMWctP3L",
+  "bond": "6GsA6Mf2RpDebHg3Qf9mupkPnWPseKq6jpMMP7pqK6Xi",
+  "config": "vbMaRfmTCg92HWGzmd53APkMNpPnGVGZTUHwUJQkXAU",
+  "voteAccount": "7sBYPueerpq3kKjmuimJkGr7jmiM8ZZ74pXPMEcBSxo5",
+  "bondAuthority": "6vG7fgweSfvY7JRViG4HwKgV9u6JKhMpf2bqr6TKNjUW",
+  "nodeIdentity": "ApVnoa3r3okD1NbsHUCB7uGq32ph91o4KJVDxC41VSu6",
+  "outsider": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "withdrawer": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "stakeAccount": "AWAxUgCzSmAsu15sh4rDBK3UDFGMSdC3cydZL3N5PnwY",
+  "stakeLamports": "139923860380",
+  "requestEpoch": "1032",
+  "currentEpoch": 1061,
+  "requestRemainingLamports": "18446744073709551615",
+  "walletLamportsBefore": "19677787",
+  "stakeLamportsBefore": "139923860380",
+  "requestLamportsBefore": "2026560",
+  "slotFixture": 458746457,
+  "transactionBytes": 643,
+  "addressCount": 14,
+  "requiredSignatures": 2,
+  "sigVerify": true,
+  "estimatedFeeLamports": 10000,
+  "err": {
+    "InstructionError": [
+      0,
+      {
+        "Custom": 6002
+      }
+    ]
+  },
+  "computeUnits": 35658,
+  "logs": [
+    "Program vBoNdEvzMrSai7is21XgVYik65mqtaKXuSdMBJ1xkW4 invoke [1]",
+    "Program log: Instruction: ClaimWithdrawRequest",
+    "Program 11111111111111111111111111111111 invoke [2]",
+    "Program 11111111111111111111111111111111 success",
+    "Program log: AnchorError thrown in programs/validator-bonds/src/instructions/withdraw/claim_withdraw_request.rs:123. Error Code: InvalidWithdrawRequestAuthority. Error Number: 6002. Error Message: Invalid authority to operate with the withdraw request of validator bond account.",
+    "Program vBoNdEvzMrSai7is21XgVYik65mqtaKXuSdMBJ1xkW4 consumed 35658 of 200000 compute units",
+    "Program vBoNdEvzMrSai7is21XgVYik65mqtaKXuSdMBJ1xkW4 failed: custom program error: 0x1772"
+  ],
+  "watchedAccounts": [
+    {
+      "address": "AWAxUgCzSmAsu15sh4rDBK3UDFGMSdC3cydZL3N5PnwY",
+      "lamports": null
+    },
+    {
+      "address": "HgjD8mWs1KyHAT7W2P1hysX3K7RuRMC2ZT5noMWctP3L",
+      "lamports": null
+    },
+    {
+      "address": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+      "lamports": null
+    }
+  ]
+}

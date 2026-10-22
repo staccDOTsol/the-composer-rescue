@@ -1,0 +1,2143 @@
+{
+  "generatedAt": "2026-10-15T20:10:05.487855+00:00",
+  "mode": "read-only evidence merge; no live transactions",
+  "inputDenominator": {
+    "executablePrograms": 77715,
+    "boundedDirectMappedControllers": 334,
+    "mappedDexPegVaults": 11,
+    "kliquidityStrategies": 5
+  },
+  "rankingRule": "score = 6*evidenceScore + 4*valueEvidenceScore + 2*min(flash source count,4) - 3*barrier count; evidence priority, not estimated profit. No source inventory is executable max until proven.",
+  "validationStandard": "attacker-only signed sigVerify:true single v1 <=4096 bytes/64 keys, all flash loans repaid, all token/share/debt/protocol equity reconciled",
+  "validatedUnauthorizedDrains": 0,
+  "graphPaths": [
+    {
+      "pathId": "jup-dex-vault-103-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "G41Dqz9A1v39TT2MryR5BkZU2a7UzfUkiRHyJGuRfeyF",
+        "mints": [
+          "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "Hf9Yw2a1EA9aTUbHS8N7AoyqXvWrRvsZqGJuC4YVeaXN",
+        "vaultConfig": "83UCos6JtbPhs5Raa7HzwNbjCdToQWhvKHzWwyEDgAgr",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 8,
+        "positionDebtMetricRaw": "3366075351532",
+        "positionSupplyMetricRaw": "6482468839255562",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 26 positions, 8 with borrowing activity",
+        "signed local-fork v1 KLend controls and direct oracle observations; no positive outsider equity in tested loop"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+          "reserve": "5vq24eGz45YWt4x8ub4eiJHU952UgFKpCTyW7rLb8wF2",
+          "vault": "ARQ9taJ9vEic3MfSY1ekrjJnMsraZhTcGRZBryWQPhQh",
+          "observedInventoryRaw": "8114875509506",
+          "fee": "exact zero rate",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 103 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 4,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json",
+        "jupiter-dex-v103-signed-fork.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 38,
+      "rank": 1
+    },
+    {
+      "pathId": "kliq-Hmj82e48-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Kamino Liquidity share/spot cross-pool",
+      "producer": {
+        "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "account": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B",
+        "mints": [
+          "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded pool A spot move"
+      },
+      "consumer": {
+        "programId": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+        "strategy": "Hmj82e48X9LNW8LeMLk186iE4UKPoUwWuLwoiqMpUiGm",
+        "instruction": "public ratio deposit/share mint then own-share withdrawal",
+        "assetMints": [
+          "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ]
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "unwind token exposure in independent pool B"
+      },
+      "valueEvidence": {
+        "attributableStrategyAssetsUsd": 16741741.75,
+        "note": "direct controlled position and idle assets; claim not additive with full Orca pool TVL"
+      },
+      "evidence": [
+        "finalized strategy and controlled Orca position decoded; attributable controlled position valued from on-chain decrease-liquidity quote",
+        "public share-owner deposit and withdrawal current-binary controls",
+        "signed-style v1 KLend-funded Orca A move -> deposit/withdraw -> reverse A fully repaid, ending about $0.205 loss; only same-pool unwind exercised"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "reserve": "6bR98MJTH68s7eV8ssyBgfuuH5oR2bEt58P9rZPLpBrC",
+          "vault": "J9btqprqRAp871qt6HVAbkyV8ft2aStFMxLFzmAsbZL2",
+          "observedInventoryRaw": "10313838195286",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "reserve": "EDf6dGbVnCCABbNhE3mp5i1jV2JhDAVmTWb1ztij1Yhs",
+          "vault": "8Am2NKsHozvH9J1Ub5ntdLhGySUsD5P4yYBkcoPQ6NXQ",
+          "observedInventoryRaw": "3752904172065",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "bank": "8UEiPmgZHXXEDrqLS3oiTxQxTbeYTtPbeMBxAd2XGbpu",
+          "vault": "HUmHLAXvcoUgWAtanAnCPNssBnAUzEfSRsb4MZYw7R73",
+          "observedInventoryRaw": "9799272993",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "bank": "4DSx551213J6FUYcu1uRYAYxqiJeVfdYpjdGiDwzL8ek",
+          "vault": "9jLPFbsos7ikvrVuKY1rfES1QNBczNvv4jSByFB8LjnG",
+          "observedInventoryRaw": "22020",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "pool B current depth/quote unmeasured",
+        "share rights remain with depositor; prior same-A route loses after residual shares marked",
+        "max multi-source one-tx B route not simulated"
+      ],
+      "nextDecisiveTest": "Discover independent liquid pool B for this exact pair; maximize available compatible flash across KLend/P0/third source, move Orca A, deposit/withdraw, exit B, repay, mark residual shares and every lender.",
+      "evidenceScore": 4,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "kliquidity-current-audit.md",
+        "kliquidity-top5-fixtures.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 35,
+      "rank": 2
+    },
+    {
+      "pathId": "jup-dex-vault-97-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "AM8rYsQewRaDXt5wimrzEoJuJ7LxLdr1Pur897fkXDgT",
+        "mints": [
+          "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "D71dLb1NbZQnABiaD39GKUVf7nNTc3APFxwRsVsMW2ev",
+        "vaultConfig": "7s5uDgnQh3mJctrqNdQYYL2b95pLhWnUYSZhAfW58kKN",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 16,
+        "positionDebtMetricRaw": "2931048611034",
+        "positionSupplyMetricRaw": "2975223170225014",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 67 positions, 16 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "Project0",
+          "mint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "bank": "3xn7strvpinirQ5KxEgVFemb6qYeHG39krohoeRHRrRt",
+          "vault": "ApB4ncRNHyqjLuWoaJmGmp1ETToJsw8nXe812gtq1J7c",
+          "observedInventoryRaw": "142630348",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT",
+          "reserve": "8ZTwUgBXoEKUQNV63GS2xaMhsciJMQNLeBSXgZihvp52",
+          "vault": "A5MK7PmE86g3B1JHLHEYDKtjJ3RaNDbJ58347WMhxGVy",
+          "observedInventoryRaw": "9929955938930694",
+          "fee": "exact zero rate",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 97 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 4,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 32,
+      "rank": 3
+    },
+    {
+      "pathId": "jup-dex-vault-96-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy",
+        "mints": [
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "CJ9MioCV69RD4kaZ566hmpHBCWm6YSmSDRyhUSwQsaPx",
+        "vaultConfig": "2zmj1q9WH4bc2gEtg2K3SkKZhm8rH8BUpjck4AhnEge6",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "FfEJYz4hLLFe4KyNyKYCjvfhMfbtpLH3CXpcPe8nhmfy"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 22,
+        "positionDebtMetricRaw": "581064895734",
+        "positionSupplyMetricRaw": "3252090647364000",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 68 positions, 22 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "reserve": "4nY1w21fR8GQTARbkmT4Cauz2gQerubp5NnBvsuEQg7J",
+          "vault": "5nnTgWzLfRrgBx5k2bYvMwDLYdKaffZocRf3JxnKUAQh",
+          "observedInventoryRaw": "47918437",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "reserve": "6F8jQc49qAUBGMVoeWK1x6VFzpvDH9dT3ggzNDuxTV75",
+          "vault": "2Q9PgZq3WEF68AoizrrdHbLv8otGr2GESK1wRuSRMGR6",
+          "observedInventoryRaw": "100000",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "bank": "HmpMfL8942u22htC4EMiWgLX931g3sacXFR6KjuLgKLV",
+          "vault": "77t6Fi9qj4s4z22K1toufHtstM8rEy7Y3ytxik7mcsTy",
+          "observedInventoryRaw": "247659209517",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "bank": "4WZSF4sxm2UTpuw23chNTPedAWFuJADH6YSycQiKsdrj",
+          "vault": "BtHfXTnBwJ5P2AFE5n2jCRGcLtMLcirKSL7uMRRsLf4Q",
+          "observedInventoryRaw": "900000",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 96 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 32,
+      "rank": 4
+    },
+    {
+      "pathId": "jup-dex-vault-93-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "BdhXJHhhveU8WSk8Bzemnarsh87xR5GBwaZAmmwENt7m",
+        "mints": [
+          "59obFNBzyTBGowrkif5uK7ojS58vsuWz3ZCvg6tfZAGw",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "65kJK86Vk24qW6qnX1HwjW2WxJgLJfpXXquRDoDVsgDt",
+        "vaultConfig": "7RfAgrcfYbd21kxukAXjUPVmwKbkzfU5FC91dq3aM7fU",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 10,
+        "positionDebtMetricRaw": "3126648561120",
+        "positionSupplyMetricRaw": "2484857007756199",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 21 positions, 10 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "Project0",
+          "mint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "bank": "3xn7strvpinirQ5KxEgVFemb6qYeHG39krohoeRHRrRt",
+          "vault": "ApB4ncRNHyqjLuWoaJmGmp1ETToJsw8nXe812gtq1J7c",
+          "observedInventoryRaw": "142630348",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "59obFNBzyTBGowrkif5uK7ojS58vsuWz3ZCvg6tfZAGw",
+          "reserve": "DzgYbR8HFQKf8YLCJ6M3E6ricB1xWAiNGZ2TB7X2KDHz",
+          "vault": "GnM1jYtuH6anTbsHPuhNs7j5fwMrURP3C1QHigdfDXb7",
+          "observedInventoryRaw": "31300411590350",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "59obFNBzyTBGowrkif5uK7ojS58vsuWz3ZCvg6tfZAGw",
+          "reserve": "2dvVzaywa8LKRjXiH4GLivXQgQD3JWwpGeoSzsPYWt9c",
+          "vault": "4TWSv3nBZAnkxCxAxdYcbuJBLaXptywxZzR5DgeCYrux",
+          "observedInventoryRaw": "100000",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 93 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 32,
+      "rank": 5
+    },
+    {
+      "pathId": "jup-dex-vault-91-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "DQfkVMGvZzqdq5jwoCRAyD26rJEioPM6kRGjC7BYts5P",
+        "mints": [
+          "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "6cYKjpyZyEAS7BjZ574wjCFaBfoXFZeofdAFmdaqADCi",
+        "vaultConfig": "5ECnwJCg93EfmejR9TDt7HiABzYMq6wNonrJgj6AM1Ye",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "DQfkVMGvZzqdq5jwoCRAyD26rJEioPM6kRGjC7BYts5P"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 20,
+        "positionDebtMetricRaw": "948598133667",
+        "positionSupplyMetricRaw": "3302821481985000",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 64 positions, 20 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "Project0",
+          "mint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "bank": "3xn7strvpinirQ5KxEgVFemb6qYeHG39krohoeRHRrRt",
+          "vault": "ApB4ncRNHyqjLuWoaJmGmp1ETToJsw8nXe812gtq1J7c",
+          "observedInventoryRaw": "142630348",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 91 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 32,
+      "rank": 6
+    },
+    {
+      "pathId": "kliq-C7HgBuY7-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Kamino Liquidity share/spot cross-pool",
+      "producer": {
+        "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "account": "6fteKNvMdv7tYmBoJHhj1jx6rHcEwC6RdSEmVpyS613J",
+        "mints": [
+          "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded pool A spot move"
+      },
+      "consumer": {
+        "programId": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+        "strategy": "C7HgBuY7AGjdMUnELGfd7nfHcU4resTaND4WxGDrj5zv",
+        "instruction": "public ratio deposit/share mint then own-share withdrawal",
+        "assetMints": [
+          "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ]
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "unwind token exposure in independent pool B"
+      },
+      "valueEvidence": {
+        "attributableStrategyAssetsUsd": 10060351.21,
+        "note": "direct controlled position and idle assets; claim not additive with full Orca pool TVL"
+      },
+      "evidence": [
+        "finalized strategy and controlled Orca position decoded; attributable controlled position valued from on-chain decrease-liquidity quote",
+        "public share-owner deposit and withdrawal current-binary controls"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "reserve": "AwCyCPZYJSZ93xcVKNK7jR8e1BHzJXq1D4bReNuh9woY",
+          "vault": "8Se5SK1Tty2bH4EQVrKW8hwr9Lc9E2cEbkaN59DpcB6i",
+          "observedInventoryRaw": "47193169283142",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "reserve": "GapQ5YUdKEnwvNhh34cjW8pyTirNqqtNdT3ziuCgywsb",
+          "vault": "7KQmVHWchCBmFpuhyr9AVC27WHr8cRYho1cmCdEQzshC",
+          "observedInventoryRaw": "104376705",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "bank": "Dyuh6umsxbLAXKz3SrwXgYmmXuVWE9muYBvFUBPM58NY",
+          "vault": "CDnNCHNv93jEfq6R2fvhtzm3no2qKvQTAw38AXCwJAJo",
+          "observedInventoryRaw": "85593520",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "pool B current depth/quote unmeasured",
+        "share rights remain with depositor; prior same-A route loses after residual shares marked",
+        "max multi-source one-tx B route not simulated"
+      ],
+      "nextDecisiveTest": "Discover independent liquid pool B for this exact pair; maximize available compatible flash across KLend/P0/third source, move Orca A, deposit/withdraw, exit B, repay, mark residual shares and every lender.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "kliquidity-current-audit.md",
+        "kliquidity-top5-fixtures.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 29,
+      "rank": 7
+    },
+    {
+      "pathId": "kliq-ByPbo7yG-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Kamino Liquidity share/spot cross-pool",
+      "producer": {
+        "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "account": "9RqDTfwCx2SgxsvKpspQHc38HUo3B6hRd3oR9JR966Ps",
+        "mints": [
+          "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded pool A spot move"
+      },
+      "consumer": {
+        "programId": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+        "strategy": "ByPbo7yGcsfrEXet3ip3DcMKf4hwhUv71b6aAU9umBdu",
+        "instruction": "public ratio deposit/share mint then own-share withdrawal",
+        "assetMints": [
+          "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ]
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "unwind token exposure in independent pool B"
+      },
+      "valueEvidence": {
+        "attributableStrategyAssetsUsd": 10506951.68,
+        "note": "direct controlled position and idle assets; claim not additive with full Orca pool TVL"
+      },
+      "evidence": [
+        "finalized strategy and controlled Orca position decoded; attributable controlled position valued from on-chain decrease-liquidity quote",
+        "public share-owner deposit and withdrawal current-binary controls"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "vault": "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "observedInventoryRaw": "3165411467527",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "reserve": "JBmLCoKqjdKSStK45onRqe6U6sxVgSpdXoeXe4h7NwJw",
+          "vault": "3oHtmrDBP3qGb3PNkCg9kW59D3qUeCD96EBugr9zNcpf",
+          "observedInventoryRaw": "1371962227856",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "bank": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+          "vault": "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK",
+          "observedInventoryRaw": "3223467792",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "bank": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+          "vault": "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ",
+          "observedInventoryRaw": "16",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "pool B current depth/quote unmeasured",
+        "share rights remain with depositor; prior same-A route loses after residual shares marked",
+        "max multi-source one-tx B route not simulated"
+      ],
+      "nextDecisiveTest": "Discover independent liquid pool B for this exact pair; maximize available compatible flash across KLend/P0/third source, move Orca A, deposit/withdraw, exit B, repay, mark residual shares and every lender.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 3,
+      "sources": [
+        "kliquidity-current-audit.md",
+        "kliquidity-top5-fixtures.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 29,
+      "rank": 8
+    },
+    {
+      "pathId": "jup-dex-vault-95-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+        "mints": [
+          "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "9JfwVjFMDpSVSKWt9sGXkPEsGKCLNtYo6YWvs9BAvs9h",
+        "vaultConfig": "8LxvfvLfT2sQWrhrwWqWywXMrVKhhmo9qTpr5FdWtzeq",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 9,
+        "positionDebtMetricRaw": "508045807",
+        "positionSupplyMetricRaw": "22727125893752",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 41 positions, 9 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "vault": "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "observedInventoryRaw": "3165411467527",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "reserve": "JBmLCoKqjdKSStK45onRqe6U6sxVgSpdXoeXe4h7NwJw",
+          "vault": "3oHtmrDBP3qGb3PNkCg9kW59D3qUeCD96EBugr9zNcpf",
+          "observedInventoryRaw": "1371962227856",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "bank": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+          "vault": "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK",
+          "observedInventoryRaw": "3223467792",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "bank": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+          "vault": "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ",
+          "observedInventoryRaw": "16",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 95 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 28,
+      "rank": 9
+    },
+    {
+      "pathId": "jup-dex-vault-90-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "5rozJuhAAdcuVJEgMu1sStkeXGxWYHgEXkiNKdtJrpi1",
+        "mints": [
+          "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "9aacijNK3PHtNH2ig9zjcqYfjspwRxTRsnkD8kRHEakm",
+        "vaultConfig": "8bJpago2ju98eRqB3Q34CFNfZM3qJwB32myKqPV1eaPb",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 13,
+        "positionDebtMetricRaw": "2866755188",
+        "positionSupplyMetricRaw": "2907232989051",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 44 positions, 13 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "reserve": "AwCyCPZYJSZ93xcVKNK7jR8e1BHzJXq1D4bReNuh9woY",
+          "vault": "8Se5SK1Tty2bH4EQVrKW8hwr9Lc9E2cEbkaN59DpcB6i",
+          "observedInventoryRaw": "47193169283142",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "reserve": "GapQ5YUdKEnwvNhh34cjW8pyTirNqqtNdT3ziuCgywsb",
+          "vault": "7KQmVHWchCBmFpuhyr9AVC27WHr8cRYho1cmCdEQzshC",
+          "observedInventoryRaw": "104376705",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "bank": "Dyuh6umsxbLAXKz3SrwXgYmmXuVWE9muYBvFUBPM58NY",
+          "vault": "CDnNCHNv93jEfq6R2fvhtzm3no2qKvQTAw38AXCwJAJo",
+          "observedInventoryRaw": "85593520",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 90 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 28,
+      "rank": 10
+    },
+    {
+      "pathId": "jup-dex-vault-105-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8",
+        "mints": [
+          "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "6nwRP7wRRw9pthATcQ6RrvndWVXsgNHj8YgxgQ8t7FVx",
+        "vaultConfig": "DdmQFd7gqYrZtDCVJYmUS37Yz5nu3k87HGjs8rwR4MZn",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 4,
+        "positionDebtMetricRaw": "3574213541566",
+        "positionSupplyMetricRaw": "3999961724988776",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 6 positions, 4 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 105 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 28,
+      "rank": 11
+    },
+    {
+      "pathId": "jup-dex-vault-98-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "4XGHBkFVPwYacnVSGQHeTcf6jFgTH8twGPECRDxVcbtt",
+        "mints": [
+          "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "oJFwnW7DbwyukCks2qv4LCd3749CrdBFqtJVfZZwKnN",
+        "vaultConfig": "XHmMVu4A7Fo9kCGbzptcdo5QD85Bwd2ML9WKRWS8SYZ",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 1,
+        "positionDebtMetricRaw": "821098",
+        "positionSupplyMetricRaw": "7181232233621",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 22 positions, 1 with borrowing activity",
+        "current-binary operate control succeeds; KLend USDC flash plus DEX move and full repay tested, net loss on same-pool unwind"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "reserve": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX",
+          "vault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "observedInventoryRaw": "2875264254873",
+          "fee": "exact zero rate",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity",
+        "selected max-input sweeps under current math did not produce positive net gain"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 98 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 4,
+      "valueEvidenceScore": 1,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json",
+        "jupiter-dex-peg-max-input-sweep.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 27,
+      "rank": 12
+    },
+    {
+      "pathId": "kliq-HCntzqDU-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Kamino Liquidity share/spot cross-pool",
+      "producer": {
+        "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "account": "Hp53XEtt4S8SvPCXarsLSdGfZBuUr5mMmZmX2DRNXQKp",
+        "mints": [
+          "So11111111111111111111111111111111111111112",
+          "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+        ],
+        "action": "flash-funded pool A spot move"
+      },
+      "consumer": {
+        "programId": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+        "strategy": "HCntzqDU5wXSWjwgLQP5hqh3kLHRYizKtPErvSCyggXd",
+        "instruction": "public ratio deposit/share mint then own-share withdrawal",
+        "assetMints": [
+          "So11111111111111111111111111111111111111112",
+          "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+        ]
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "unwind token exposure in independent pool B"
+      },
+      "valueEvidence": {
+        "attributableStrategyAssetsUsd": 5976568.52,
+        "note": "direct controlled position and idle assets; claim not additive with full Orca pool TVL"
+      },
+      "evidence": [
+        "finalized strategy and controlled Orca position decoded; attributable controlled position valued from on-chain decrease-liquidity quote",
+        "public share-owner deposit and withdrawal current-binary controls"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "So11111111111111111111111111111111111111112",
+          "reserve": "4oigbthMAgjTMPyw8dBxhxU59YMtvNDHqhpR3W4HAzBM",
+          "vault": "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR",
+          "observedInventoryRaw": "6550155560273",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "So11111111111111111111111111111111111111112",
+          "reserve": "EMyn5A2HhvYhojiibR3znk5QyafRVnK4oZ725XYzzf2s",
+          "vault": "HJMfhBGcsUvJ7kuqcz75LC8rL3dSA1pcj9iHB79STSrj",
+          "observedInventoryRaw": "3281696804749",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "So11111111111111111111111111111111111111112",
+          "bank": "CCKtUs6Cgwo4aaQUmBPmyoApH2gUDErxNZCAntD6LYGh",
+          "vault": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "observedInventoryRaw": "11208583873143",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "So11111111111111111111111111111111111111112",
+          "bank": "CK1Qnz6C6uZEiJFrTSkkgV485UuDJidaSxqewzYeCU7x",
+          "vault": "B32qZAtcPDye4zMGKVZbs878PfHzeDh1VndBqdvKfvna",
+          "observedInventoryRaw": "208999968",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "reserve": "EVbyPKrHG6WBfm4dLxLMJpUDY43cCAcHSpV3KYjKsktW",
+          "vault": "6sga1yRArgQRqa8Darhm54EBromEpV3z8iDAvMTVYXB3",
+          "observedInventoryRaw": "721270531579498",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "reserve": "F9HdecRG8GPs9LEn4S5VfeJVEZVqrDJFR6bvmQTi22na",
+          "vault": "5cRbUeR6cxaUNtuLcoZjFcxDLa1bQC2sGKLj4sF5W9JE",
+          "observedInventoryRaw": "148479615486315",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "bank": "Bohoc1ikHLD7xKJuzTyiTyCwzaL5N7ggJQu75A8mKYM8",
+          "vault": "38VGtXd2pDPq9FMh1z6AVjcHCoHgvWyMhdNyamDTeeks",
+          "observedInventoryRaw": "55125991885335",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "pool B current depth/quote unmeasured",
+        "share rights remain with depositor; prior same-A route loses after residual shares marked",
+        "max multi-source one-tx B route not simulated"
+      ],
+      "nextDecisiveTest": "Discover independent liquid pool B for this exact pair; maximize available compatible flash across KLend/P0/third source, move Orca A, deposit/withdraw, exit B, repay, mark residual shares and every lender.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "kliquidity-current-audit.md",
+        "kliquidity-top5-fixtures.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 25,
+      "rank": 13
+    },
+    {
+      "pathId": "jup-dex-vault-94-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "85MmkyvQL4tJoe1TMjxqFHZDhjuCW8SiBR2h5Zrk3mhh",
+        "mints": [
+          "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "GYKpB8imFWxBT5dTQe7aRJxLRyqNJLWbR8zHLpaqHMJ7",
+        "vaultConfig": "5uo4CAFd8aL6pN6kgJs1kPZBCHDKGEcN6b76cLjEkbW9",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 2,
+        "positionDebtMetricRaw": "3396632",
+        "positionSupplyMetricRaw": "43026844360",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 5 positions, 2 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "Project0",
+          "mint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+          "bank": "3xn7strvpinirQ5KxEgVFemb6qYeHG39krohoeRHRrRt",
+          "vault": "ApB4ncRNHyqjLuWoaJmGmp1ETToJsw8nXe812gtq1J7c",
+          "observedInventoryRaw": "142630348",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT",
+          "reserve": "8ZTwUgBXoEKUQNV63GS2xaMhsciJMQNLeBSXgZihvp52",
+          "vault": "A5MK7PmE86g3B1JHLHEYDKtjJ3RaNDbJ58347WMhxGVy",
+          "observedInventoryRaw": "9929955938930694",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 94 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 1,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 24,
+      "rank": 14
+    },
+    {
+      "pathId": "jup-dex-vault-92-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Jupiter Lend DEX peg cross-pool",
+      "producer": {
+        "programId": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "account": "Etb72AHGeCAcD72s3PVtzdQGnkYNd2ny4ULb6YgKi58",
+        "mints": [
+          "So11111111111111111111111111111111111111112",
+          "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn"
+        ],
+        "action": "flash-funded thin-pool spot move"
+      },
+      "consumer": {
+        "programId": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+        "oracleProgramId": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+        "oracle": "TEqwo8FXBhiFtg24oQt4RiKXBzsX6PM48A5GB2o7fbF",
+        "vaultConfig": "E6bBQPfnGtZWjyNjRcGwkLMfPbvFBVeDcabr6ZYXn5Qw",
+        "instruction": "owner-signed operate/borrow using same-slot GetBothExchangeRate",
+        "assetMint": "So11111111111111111111111111111111111111112"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "sell or rebalance received asset through independent market B, then repay"
+      },
+      "valueEvidence": {
+        "borrowingPositions": 7,
+        "positionDebtMetricRaw": "28904235",
+        "positionSupplyMetricRaw": "637740263049",
+        "grossVaultMarkUsd": null,
+        "note": "debt metric is not an executable payout quote"
+      },
+      "evidence": [
+        "live finalized DEX state owned by jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+        "GetBothExchangeRate succeeded on current oracle for all 11 paths",
+        "current vault has 67 positions, 7 with borrowing activity"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "So11111111111111111111111111111111111111112",
+          "reserve": "4oigbthMAgjTMPyw8dBxhxU59YMtvNDHqhpR3W4HAzBM",
+          "vault": "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR",
+          "observedInventoryRaw": "6550155560273",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "So11111111111111111111111111111111111111112",
+          "reserve": "EMyn5A2HhvYhojiibR3znk5QyafRVnK4oZ725XYzzf2s",
+          "vault": "HJMfhBGcsUvJ7kuqcz75LC8rL3dSA1pcj9iHB79STSrj",
+          "observedInventoryRaw": "3281696804749",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "So11111111111111111111111111111111111111112",
+          "bank": "CCKtUs6Cgwo4aaQUmBPmyoApH2gUDErxNZCAntD6LYGh",
+          "vault": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "observedInventoryRaw": "11208583873143",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "So11111111111111111111111111111111111111112",
+          "bank": "CK1Qnz6C6uZEiJFrTSkkgV485UuDJidaSxqewzYeCU7x",
+          "vault": "B32qZAtcPDye4zMGKVZbs878PfHzeDh1VndBqdvKfvna",
+          "observedInventoryRaw": "208999968",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "reserve": "EVbyPKrHG6WBfm4dLxLMJpUDY43cCAcHSpV3KYjKsktW",
+          "vault": "6sga1yRArgQRqa8Darhm54EBromEpV3z8iDAvMTVYXB3",
+          "observedInventoryRaw": "721270531579498",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "reserve": "F9HdecRG8GPs9LEn4S5VfeJVEZVqrDJFR6bvmQTi22na",
+          "vault": "5cRbUeR6cxaUNtuLcoZjFcxDLa1bQC2sGKLj4sF5W9JE",
+          "observedInventoryRaw": "148479615486315",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "bank": "Bohoc1ikHLD7xKJuzTyiTyCwzaL5N7ggJQu75A8mKYM8",
+          "vault": "38VGtXd2pDPq9FMh1z6AVjcHCoHgvWyMhdNyamDTeeks",
+          "observedInventoryRaw": "55125991885335",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "independent external pool B address, executable depth and quote not yet confirmed",
+        "no single signed max-source route with independent B and positive full equity"
+      ],
+      "nextDecisiveTest": "Find deep independent market B for vault 92 borrow/collateral asset; serialize attacker-signed max route with KLend+P0+third source if fit, move DEX A, operate, exit B, repay and mark all positions.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 1,
+      "sources": [
+        "jupiter-dex-peg-path-census.json",
+        "jupiter-dex-path-liquidity.json",
+        "jupiter-dex-oracle-all-paths.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 24,
+      "rank": 15
+    },
+    {
+      "pathId": "kliq-DzGJLoq3-cross-pool",
+      "status": "active-research",
+      "targetFamily": "Kamino Liquidity share/spot cross-pool",
+      "producer": {
+        "programId": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "account": "94BpFoyri4uTT55NFSHKYNFyUMtoWXEisMA4LK7nTKPU",
+        "mints": [
+          "9ckR7pPPvyPadACDTzLwK2ZAEeUJ3qGSnzPs8bVaHrSy",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ],
+        "action": "flash-funded pool A spot move"
+      },
+      "consumer": {
+        "programId": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+        "strategy": "DzGJLoq3FnSN4VJyTbbNUWsN8syRQzxvDZX3iTmnw5FG",
+        "instruction": "public ratio deposit/share mint then own-share withdrawal",
+        "assetMints": [
+          "9ckR7pPPvyPadACDTzLwK2ZAEeUJ3qGSnzPs8bVaHrSy",
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        ]
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "unwind token exposure in independent pool B"
+      },
+      "valueEvidence": {
+        "attributableStrategyAssetsUsd": 3636411.27,
+        "note": "direct controlled position and idle assets; claim not additive with full Orca pool TVL"
+      },
+      "evidence": [
+        "finalized strategy and controlled Orca position decoded; attributable controlled position valued from on-chain decrease-liquidity quote",
+        "public share-owner deposit and withdrawal current-binary controls"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+          "vault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+          "observedInventoryRaw": "7868315584088",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "reserve": "C2Wp6bpsVevig3AZ1KSCkgHZhsWfN2tw9eQ4kG9z7U7J",
+          "vault": "7KcyBoZNQr4L5kRHxtkfmAuyJ1UhYonWBDxFGcBTSGi6",
+          "observedInventoryRaw": "2450289943825",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+          "vault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+          "observedInventoryRaw": "281283255768",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "bank": "7wYBRtPh4BoGVgdV6smRPHbN3z4hafiyqk9gGtY6EWTk",
+          "vault": "GTr3FFhgp9VtK8VfGMckeCi3S6GMfB8BZpoofQ7LeMa8",
+          "observedInventoryRaw": "670566907",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "pool B current depth/quote unmeasured",
+        "share rights remain with depositor; prior same-A route loses after residual shares marked",
+        "max multi-source one-tx B route not simulated"
+      ],
+      "nextDecisiveTest": "Discover independent liquid pool B for this exact pair; maximize available compatible flash across KLend/P0/third source, move Orca A, deposit/withdraw, exit B, repay, mark residual shares and every lender.",
+      "evidenceScore": 3,
+      "valueEvidenceScore": 1,
+      "sources": [
+        "kliquidity-current-audit.md",
+        "kliquidity-top5-fixtures.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 21,
+      "rank": 16
+    },
+    {
+      "pathId": "fragmetric-jsol-receipt-cross-market",
+      "status": "active-research",
+      "targetFamily": "cross-program custody/receipt edge",
+      "producer": {
+        "programId": "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+        "account": null,
+        "mints": [
+          "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn"
+        ],
+        "action": "flash JSOL"
+      },
+      "consumer": {
+        "programId": "fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3",
+        "vault": "5HrP4MEggWDsENFTFX7QqW7U49RTei6Qqh7TVCczhgWa",
+        "assetMint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+        "instruction": "routed swap or public receipt/share exit; exact auth to verify"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "flash JSOL -> deposit/receipt -> redeem or independent receipt sale -> repay; prove cooldown/claim and share equity"
+      },
+      "valueEvidence": {
+        "grossMarkedVaultUsd": 5224696.869033307,
+        "note": "spot balance mark only; realizable unauthorized payout unproven and receipts overlap backing"
+      },
+      "evidence": [
+        "program-controlled vault and post-deployment signer transfer",
+        "outflow {'signature': '4P9C1bfRHu9SZnjCs853cRC3HRTkV8w8CFNaDezicAvMaN7AcRCmnMAqmsTa2o11HQ9KDLjgDGRYLwNohsRFGuXv', 'slot': 457130830, 'rootProgramId': 'fragnAis7Bp6FTsMoa6YcH8UffhEw43Ph79qAiK3iF3', 'amountRaw': '24059559458'}"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+          "reserve": "HD93Fq3gmVh3J7euJJ5MBw8Ph3ebeMFS699JQePN4XgN",
+          "vault": "BkCTFeGZ19hGZCo6dG4uBXEF9cC5LbTEMpKxwJUsnFFM",
+          "observedInventoryRaw": "35484568921185",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+          "bank": "5wZz2MV3dFJVq3Wp4tBoqrgrSGZqeLCdLE1L4w6okm9g",
+          "vault": "9Ei9yEVijVf88Vf2ecRtXEfFdoqJ5jJrwKZob1nWZnx2",
+          "observedInventoryRaw": "2299958162094",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "7Q2afV64in6N6SeZsAAB81TJzwDoD6zpqmHkzi9Dcavn",
+          "bank": "AjShpbVdDpUM4ejJ92nWqsqY9tB7xWJjq1xjTGw6cCcQ",
+          "vault": "7foPGs5GWFZgmYaeBxSGHwvNJYQt1NX9ZqK873mxfdLm",
+          "observedInventoryRaw": "528619355",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "public caller authorization for chosen value-moving leg unproved",
+        "independent B executable quote, multi-source route and full equity unproved"
+      ],
+      "nextDecisiveTest": "flash JSOL -> deposit/receipt -> redeem or independent receipt sale -> repay; prove cooldown/claim and share equity; replay live positive control then outsider-substitute caller/destination, size max compatible flashes and verify complete one-tx repayment/equity.",
+      "evidenceScore": 2,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "mainnet-token-authority-flash-crosswalk.json",
+        "mainnet-long-tail-custody-ranked.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 20,
+      "rank": 17
+    },
+    {
+      "pathId": "bison-eth-routed-cross-market",
+      "status": "active-research",
+      "targetFamily": "cross-program custody/receipt edge",
+      "producer": {
+        "programId": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+        "account": null,
+        "mints": [
+          "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs"
+        ],
+        "action": "Tessera ETH market versus Jupiter-routed Bison leg; confirm exact Tessera program/pool and independent price"
+      },
+      "consumer": {
+        "programId": "BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi",
+        "vault": "GgSbe8Pbbh2n35gLxB3yjCW8WVUtBQMcLR7Vc2a1Mrnu",
+        "assetMint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+        "instruction": "routed swap or public receipt/share exit; exact auth to verify"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "Tessera ETH market versus Jupiter-routed Bison leg; confirm exact Tessera program/pool and independent price"
+      },
+      "valueEvidence": {
+        "grossMarkedVaultUsd": 495546.089591852,
+        "note": "spot balance mark only; realizable unauthorized payout unproven and receipts overlap backing"
+      },
+      "evidence": [
+        "program-controlled vault and post-deployment signer transfer",
+        "outflow {'signature': 'hJtVEJqnaZY5xEJeP3JXBvdAVTrFQbz6d4FDxpdK88Uf3wPxvC9KN1VHr92tFKsBZocRKVBxter1gU6Pyf5ATgi', 'slot': 457347644, 'rootProgramId': 'JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4', 'amountRaw': '3917354'}"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "reserve": "febGYTnFX4GbSGoFHFeJXUHgNaK53fB23uDins9Jp1E",
+          "vault": "GRGmgWor2PX3sNkoA5wZuNBBYoCnZPoiAufAVvG3WDEi",
+          "observedInventoryRaw": "108165140170",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "KLend",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "reserve": "BaF2UVKWYjYrWUVnqLxDMayo2mac5ewH8rNiHbByfBbX",
+          "vault": "GdGztxgFx8Cg2vkX7EoZVyy8WZHEWEZaAoFTd1ryoDr5",
+          "observedInventoryRaw": "1100000",
+          "fee": "exact zero rate",
+          "executableMax": null
+        },
+        {
+          "provider": "Project0",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "bank": "BkUyfXjbBBALcfZvw76WAFRvYQ21xxMWWeoPtJrUqG3z",
+          "vault": "AxPJtiTEDksJWvCqNHCziK4uUcabqfmwW41dqtZrPFkp",
+          "observedInventoryRaw": "29546619382",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "public caller authorization for chosen value-moving leg unproved",
+        "independent B executable quote, multi-source route and full equity unproved"
+      ],
+      "nextDecisiveTest": "Tessera ETH market versus Jupiter-routed Bison leg; confirm exact Tessera program/pool and independent price; replay live positive control then outsider-substitute caller/destination, size max compatible flashes and verify complete one-tx repayment/equity.",
+      "evidenceScore": 2,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "mainnet-token-authority-flash-crosswalk.json",
+        "mainnet-long-tail-custody-ranked.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 20,
+      "rank": 18
+    },
+    {
+      "pathId": "xp1br-rkusol-adapter-cross-market",
+      "status": "active-research",
+      "targetFamily": "cross-program custody/receipt edge",
+      "producer": {
+        "programId": "XPC1MM4dYACDfykNuXYZ5una2DsMDWL24CrYubCvarC",
+        "account": null,
+        "mints": [
+          "rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp"
+        ],
+        "action": "XP1BR rkuSOL adapter wrap/redeem through XPC1M then independent external rkuSOL exit; BulkSOL negative test does not close rkuSOL"
+      },
+      "consumer": {
+        "programId": "XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy",
+        "vault": "FcTYERGTnymbL1BDdXow9Z1RqZ1rE8AYbjs79d8hmGKq",
+        "assetMint": "rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp",
+        "instruction": "routed swap or public receipt/share exit; exact auth to verify"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "XP1BR rkuSOL adapter wrap/redeem through XPC1M then independent external rkuSOL exit; BulkSOL negative test does not close rkuSOL"
+      },
+      "valueEvidence": {
+        "grossMarkedVaultUsd": 7491344.003784225,
+        "note": "spot balance mark only; realizable unauthorized payout unproven and receipts overlap backing"
+      },
+      "evidence": [
+        "program-controlled vault and post-deployment signer transfer",
+        "outflow {'signature': '63diuY5MgoXW6XWDrXhN4mRqVaC7N2UnuRFH4cNEbHYg8GooBB4NXX1LXiM5HDhWWUrG7c2TA1k3aZQt6rUgojT4', 'slot': 457332072, 'rootProgramId': 'XPC1MM4dYACDfykNuXYZ5una2DsMDWL24CrYubCvarC', 'amountRaw': '1217648334'}"
+      ],
+      "flashSources": [
+        {
+          "provider": "KLend",
+          "mint": "rkubjTrZYioRSeXwDnhwGQzvW3qkcin72JSxUt3WMVp",
+          "reserve": "J7idSfhvLqdkSmbMvhHMXBAhZMJVxEtzqXo45JB9HZrP",
+          "vault": "6CsD9U2EUSZpfQbQxVPUvdxZ9gwDdkEu2wUZt1JXfyRv",
+          "observedInventoryRaw": "21667589654872",
+          "fee": "exact zero rate",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "public caller authorization for chosen value-moving leg unproved",
+        "independent B executable quote, multi-source route and full equity unproved"
+      ],
+      "nextDecisiveTest": "XP1BR rkuSOL adapter wrap/redeem through XPC1M then independent external rkuSOL exit; BulkSOL negative test does not close rkuSOL; replay live positive control then outsider-substitute caller/destination, size max compatible flashes and verify complete one-tx repayment/equity.",
+      "evidenceScore": 2,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "mainnet-token-authority-flash-crosswalk.json",
+        "mainnet-long-tail-custody-ranked.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 16,
+      "rank": 19
+    },
+    {
+      "pathId": "hylo-stability-hyusd-cross-market",
+      "status": "active-research",
+      "targetFamily": "cross-program custody/receipt edge",
+      "producer": {
+        "programId": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+        "account": null,
+        "mints": [
+          "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E"
+        ],
+        "action": "flash hyUSD"
+      },
+      "consumer": {
+        "programId": "HysTabVUfmQBFcmzu1ctRd1Y1fxd66RBpboy1bmtDSQQ",
+        "vault": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+        "assetMint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+        "instruction": "routed swap or public receipt/share exit; exact auth to verify"
+      },
+      "independentExit": {
+        "programId": null,
+        "pool": null,
+        "action": "flash hyUSD -> stability pool share/withdraw -> independent hyUSD or receipt market B -> repay; direct loops tested negative"
+      },
+      "valueEvidence": {
+        "grossMarkedVaultUsd": 20805838.553419907,
+        "note": "spot balance mark only; realizable unauthorized payout unproven and receipts overlap backing"
+      },
+      "evidence": [
+        "current program-controlled vault and prior successful signer provenance"
+      ],
+      "flashSources": [
+        {
+          "provider": "Project0",
+          "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+          "bank": "5syijTAMBBmdjwUgYYBvvv26zTS6YX1bYV9EdXkgYqLa",
+          "vault": "6fN1Eqh7433vm4RLBC2Ybd9m3EHg3s6S2GP1JyjABMEU",
+          "observedInventoryRaw": "46063895930",
+          "fee": "needs route-specific check",
+          "executableMax": null
+        }
+      ],
+      "barriers": [
+        "public caller authorization for chosen value-moving leg unproved",
+        "independent B executable quote, multi-source route and full equity unproved"
+      ],
+      "nextDecisiveTest": "flash hyUSD -> stability pool share/withdraw -> independent hyUSD or receipt market B -> repay; direct loops tested negative; replay live positive control then outsider-substitute caller/destination, size max compatible flashes and verify complete one-tx repayment/equity.",
+      "evidenceScore": 2,
+      "valueEvidenceScore": 2,
+      "sources": [
+        "mainnet-token-authority-flash-crosswalk.json",
+        "mainnet-long-tail-custody-ranked.json",
+        "hylo-stability-v1-sim.json"
+      ],
+      "validatedUnauthorizedGainUsd": 0,
+      "reachableValueUsd": null,
+      "independentExitQuoteUsd": null,
+      "oneTxMaxFlashRouteVerified": false,
+      "acceptance": "attacker-only signatures, sigVerify:true, one v1 <=4096B/64 keys, all loan sources repaid, all receipt/liability and protocol equity accounted",
+      "priorityScore": 16,
+      "rank": 20
+    }
+  ],
+  "blockedClasses": [
+    {
+      "producer": "Scope AMM/TWAP",
+      "consumer": "KLend",
+      "affectedReserveCount": 18,
+      "barrier": "deployed Scope refresh rejects any preceding non-ComputeBudget instruction and CPI; swap/flash -> refresh -> borrow cannot update feed in same tx",
+      "source": "twap-producer-consumer-graph.json; scope-amm-consumer-current-audit.md"
+    },
+    {
+      "producer": "RaTEZ Claim",
+      "consumer": "RTX ATA",
+      "barrier": "historical claims at slots 416668551/411409150 each paid claimant-owned ATA; no same-mint lender or new spot consumer",
+      "source": "live finalized RPC slot 457364746"
+    }
+  ]
+}

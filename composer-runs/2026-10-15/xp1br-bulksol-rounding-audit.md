@@ -1,0 +1,13 @@
+# XP1BR BulkSOL mint/redeem rounding check
+
+Read-only simulation against the current XP1BR executable (`XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy`, deployed at slot 456,137,922; dumped binary SHA-256 `a1f2fa4b17fc8fe8916b75af91e79bb13614b9913f641fc00dfa33e9228f33b3`). Account schemas came from the public Exponent application IDL, and the BulkSOL meta/index came from current mainnet account reads. No transaction was signed or submitted.
+
+At the observed BulkSOL index `1,104,089,630,094` (scale `10^12`), XP1BR `mint(A)` transfers and mints `S = floor(A × 10^12 / 1,104,089,630,094)` raw units of BulkSOL and SY, respectively. The actual `S` must be passed to `redeem`. Passing `A` causes an insufficient-SY failure; the earlier 0/19 simulation result therefore did not exercise a valid round trip. In particular, `mint(1)` mints zero SY, while `mint(2)` mints one SY.
+
+The corrected one-transaction route was Project0 flash start → borrow `A` BulkSOL → XP1BR `mint(A)` → XP1BR `redeem(S)` → repay `A` → flash end → close the temporary BulkSOL and SY accounts. Nine single-cycle cases succeeded from `A = 2` through `663,927,398,889` raw BulkSOL, including 1,000,000, 1,000,000,000, 10,000,000,000, and 100,000,000,000. Two- and four-cycle variants also succeeded, as did an exact 4,096-byte, 64-address Solana v1 message. These are 12 successful atomic executions in all.
+
+For every successful case, the XP1BR token CPI trace shows the same `S` raw units transferred into the principal vault and minted as SY, then `S` burned and transferred out. Project0 repaid the original `A` in full. Pre/post raw balances of the Project0 liquidity vault, XP1BR principal vault, XP1BR SY escrow, and SY mint state matched. Project0 total asset/liability shares and the tested borrower's decoded BulkSOL balance matched. The temporary outsider token accounts closed with **zero BulkSOL and zero SY residual**. The simulated signer had **35,000 fewer lamports** after the route.
+
+Borrowing at `1,327,854,797,778` raw BulkSOL or above hit Project0 `IllegalUtilizationRatio` (6026). Eight- and sixteen-cycle variants hit the runtime `MaxInstructionTraceLengthExceeded`; neither completed. The successful tested path yields no outsider asset gain. This result covers the BulkSOL adapter and tested current-state flash composition; it does not establish a global property of every XP1BR interface.
+
+Evidence: [simulation script](./xp1br-bulksol-rounding-audit.js), [full responses, pre/post images, CPI traces, and v1 wire](./xp1br-bulksol-rounding-audit.json), [current executable and account inventory](./xp1br-current-inventory.json), [client IDL provenance](./xp1br-idl-source-evidence.json).

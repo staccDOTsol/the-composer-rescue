@@ -1,0 +1,193 @@
+{
+  "generatedAt": "2026-10-15T19:07:09.506Z",
+  "noTransactionsSubmitted": true,
+  "caseSignatureVerification": false,
+  "accountingCaveat": "The baseline read and each simulation use different confirmed slots; compare the inner SPL transfer trace, not cross-slot token-balance differences.",
+  "currentSlot": 457348270,
+  "authorityIsOffCurve": true,
+  "sourceIdlCommit": "d7ae7b13a8fc280985d69244ea2c4eade30542a6",
+  "before": {
+    "vault": "5077227885450824",
+    "destination": "4729",
+    "guardianAccrued": "0"
+  },
+  "cases": [
+    {
+      "name": "hypothetical_stored_authority_signer_zero_accrual",
+      "simulationSlot": 457348270,
+      "err": null,
+      "unitsConsumed": 20912,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [2]",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5117 of 185998 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 20912 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "accounts": [
+                "8rUTGg1XoyuvK9G64S7d37m3HtLZH24oPeMmXkpJH8ir"
+              ],
+              "data": "21448NTnPMYUHP2wo3JvWZFVCYnxVXD397tgeZynLc7SahRbpp9Rm8b7boh72DYSREpvWZis7aX31BBisUznpuWKH3REoHgHzFgSemtnZ2x7S1JZYwnumCcPN3ToaLwtgquiJpmpgXQwop3",
+              "programId": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "after": {
+        "vault": "5077227885450824",
+        "destination": "4729",
+        "guardianAccrued": "0"
+      }
+    },
+    {
+      "name": "stored_authority_not_marked_signer",
+      "simulationSlot": 457348269,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 4983,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program log: AnchorError caused by account: authority. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 4983 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0xbc2"
+      ],
+      "innerInstructions": [],
+      "after": {
+        "vault": null,
+        "destination": null,
+        "guardianAccrued": null
+      }
+    },
+    {
+      "name": "wrong_signer_fee_payer",
+      "simulationSlot": 457348271,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 13465,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program log: AnchorError thrown in programs/staking/src/instructions/claim_guardian_commission.rs:54. Error Code: Unauthorized. Error Number: 6007. Error Message: Unauthorized: only authority can perform this action.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 13465 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1777"
+      ],
+      "innerInstructions": [],
+      "after": {
+        "vault": null,
+        "destination": null,
+        "guardianAccrued": null
+      }
+    },
+    {
+      "name": "alias_destination_vault",
+      "simulationSlot": 457348271,
+      "err": null,
+      "unitsConsumed": 20731,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [2]",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5117 of 186161 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 20731 of 200000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "accounts": [
+                "8rUTGg1XoyuvK9G64S7d37m3HtLZH24oPeMmXkpJH8ir"
+              ],
+              "data": "21448NTnPMYUHP2wo3JvWZFVCYnxVXD397tgeZynLc7SahRbpp9Rm8b7boh72DYSREpvWZis7aX31BBisUznpuWKH3REoHgHzFgSemtnZ2x7S1JZYwnumCcPN3ToaLwtgquiJpmpgXQwop3",
+              "programId": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "after": {
+        "vault": "5077227887450824",
+        "destination": "4729",
+        "guardianAccrued": "0"
+      }
+    },
+    {
+      "name": "repeat_claim_same_transaction",
+      "simulationSlot": 457348271,
+      "err": null,
+      "unitsConsumed": 41824,
+      "logs": [
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [2]",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5117 of 385998 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 20912 of 400000 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [1]",
+        "Program log: Instruction: ClaimGuardianCommission",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ invoke [2]",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 5117 of 365086 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ consumed 20912 of 379088 compute units",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "accounts": [
+                "8rUTGg1XoyuvK9G64S7d37m3HtLZH24oPeMmXkpJH8ir"
+              ],
+              "data": "21448NTnPMYUHP2wo3JvWZFVCYnxVXD397tgeZynLc7SahRbpp9Rm8b7boh72DYSREpvWZis7aX31BBisUznpuWKH3REoHgHzFgSemtnZ2x7S1JZYwnumCcPN3ToaLwtgquiJpmpgXQwop3",
+              "programId": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+              "stackHeight": 2
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "instructions": [
+            {
+              "accounts": [
+                "8rUTGg1XoyuvK9G64S7d37m3HtLZH24oPeMmXkpJH8ir"
+              ],
+              "data": "21448NTnPMYUHP2wo3JvWZFVCYnxVXD397tgeZynLc7SahRbpp9Rm8b7boh72DYSREpvWZis7aX31BBisUznpuWKH3REoHgHzFgSemtnZ2x7S1JZYwnumCcPN3ToaLwtgquiJpmpgXQwop3",
+              "programId": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "after": {
+        "vault": "5077227887450824",
+        "destination": "4729",
+        "guardianAccrued": "0"
+      }
+    }
+  ]
+}

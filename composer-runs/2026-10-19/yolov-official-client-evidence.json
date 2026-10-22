@@ -1,0 +1,83 @@
+{
+  "observedAt": "2026-10-19T07:06:09Z",
+  "sources": {
+    "productUrl": "https://jup.ag/yolo",
+    "productHtmlSha256": "834ec2693105a95f13ac8f952aedd525de22d7538bbd6d796bad999af8757d50",
+    "clientAssetUrl": "https://jup.ag/yolo/assets/types-e4TGCdWx.js",
+    "clientAssetSha256": "aa1507c73f30b0e7d3b996608368450cde3019790e9179b135b351c03e13b54f",
+    "tradeAssetUrl": "https://jup.ag/yolo/assets/routes-BCDWJOS5.js"
+  },
+  "officialAttribution": {
+    "pageTitle": "YOLO | Jupiter",
+    "description": "SOL, BTC and ETH markets with 500–1,000× leverage on Jupiter YOLO.",
+    "programIdInClient": "yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA",
+    "apiBaseInClient": "https://yolo-api.jup.ag"
+  },
+  "clientRequestSchema": {
+    "actions": ["open", "close"],
+    "openLeverageAcceptedByClient": {"minimum": 500, "maximum": 1000},
+    "markets": ["SOL", "BTC", "ETH"],
+    "buildPath": "transactions/build",
+    "executePath": "transactions/execute"
+  },
+  "currentPublicMarketResponse": {
+    "paused": false,
+    "minMarginRawJupUsd": "5000000",
+    "winFeePpm": 20000,
+    "closeFeePpm": 10,
+    "debtRawJupUsd": "0"
+  },
+  "unsignedBuildObservation": {
+    "request": {
+      "action": "open",
+      "owner": "Be54H8P9S7gJ1UJE4PXzTcH88w4au3Zhx9gSsj4qdALB",
+      "market": "BTC",
+      "leverage": 500,
+      "long": true,
+      "transactionVersion": 0,
+      "margin": "5000000"
+    },
+    "responseSha256": "d2b6d670e848482ab0e73c5dbfdd61d03321dfc2bff40750df966fb4b1cea329",
+    "decodedResponseSha256": "8d4a9467a88e314740ed9c9565bfa76c7839da7c72470ba3a1c0105d22517860",
+    "messageRequiredSignatures": 2,
+    "staticSigner0": "Be54H8P9S7gJ1UJE4PXzTcH88w4au3Zhx9gSsj4qdALB",
+    "staticSigner1": "A2rCQdCqQB4wu72x9Q7iq1QugtdZmcyWsiSPfgfZzu2u",
+    "returnedSignatureStates": ["all-zero", "all-zero"],
+    "programInstructionAccountOrder": [
+      "owner",
+      "keeper",
+      "config",
+      "market",
+      "pool",
+      "position",
+      "vault",
+      "usd_mint",
+      "destination_or_funding_account",
+      "oracle",
+      "token_program",
+      "system_program",
+      "event_authority",
+      "program"
+    ]
+  },
+  "clientMessageBinding": {
+    "preWalletChecks": [
+      "transaction version is 0 or 1",
+      "static account 0 equals connected owner",
+      "message declares exactly two signers",
+      "message blockhash equals build metadata"
+    ],
+    "postWalletChecks": [
+      "wallet-signed message bytes exactly equal build message bytes",
+      "signer 0 equals connected owner",
+      "owner signature is nonzero"
+    ],
+    "limitation": "The execute endpoint was not called because it submits transactions. Server-side buildToken binding and keeper signing were therefore not probed."
+  },
+  "clientPnlModel": {
+    "winningPnlMinimumRelativeMovePpm": 20,
+    "winFeePercentOfAdjustedProfit": 2,
+    "samePriceNetPayoutRaw": "0",
+    "constants": {"threshold": "50000", "curveU": "1157299", "curveW": "6109485000"}
+  }
+}

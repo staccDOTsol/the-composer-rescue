@@ -1,0 +1,80 @@
+{
+  "generatedAt": "2026-10-15T20:13:44.645Z",
+  "readOnly": true,
+  "liveSubmission": false,
+  "loginAttempted": false,
+  "turnstileAttempted": false,
+  "tokenRequested": false,
+  "assets": {
+    "home": {
+      "url": "https://world.xyz/",
+      "status": 200,
+      "bytes": 3084,
+      "sha256": "92f7b9fa605e148f7f8c1e2fcd824d0d87ca6d4ee09276d98137fe62d2580ec1"
+    },
+    "index": {
+      "url": "https://world.xyz/assets/index-oGb4C2qG.js",
+      "status": 200,
+      "bytes": 223492,
+      "sha256": "76a2e6e8021b6b1367f56f24a00fe95f35500c16b4c96e13d82c302bc55d61de"
+    },
+    "api": {
+      "url": "https://world.xyz/assets/api-CcCaG8Rc.js",
+      "status": 200,
+      "bytes": 619,
+      "sha256": "d70db74d9564dee3052d1a2892c405cf8b3eabf5abb6ab096e84bc19ba84660e"
+    },
+    "app": {
+      "url": "https://world.xyz/assets/App-DaSPrmSy.js",
+      "status": 200,
+      "bytes": 882334,
+      "sha256": "a37dc373088bef8514d2f2762376ea0d7ef126e64f8aebf63f4e6e78f8b8bfb6"
+    },
+    "client": {
+      "url": "https://world.xyz/assets/client-BVdSZcek.js",
+      "status": 200,
+      "bytes": 474342,
+      "sha256": "b253d744977915ff334d9891365793f3eca978e411111fdf864622de48e22994"
+    },
+    "scrollRail": {
+      "url": "https://world.xyz/assets/ScrollRail-BXIL_ggZ.js",
+      "status": 200,
+      "bytes": 20533,
+      "sha256": "163f0953195b1a57481df5f500f5d9764233abab0848fb58deb1f84a5c9d37f0"
+    }
+  },
+  "currentClientIndicators": {
+    "aggregatorBasePresent": true,
+    "aggregatorBaseBundles": [
+      "api"
+    ],
+    "orderGetPresent": true,
+    "orderGetBundles": [
+      "scrollRail"
+    ],
+    "turnstileJwtStoragePresent": true,
+    "turnstileJwtStorageBundles": [
+      "client"
+    ],
+    "turnstileExchangePresent": true,
+    "turnstileExchangeBundles": [
+      "client"
+    ],
+    "bearerAuthorizationPresent": true,
+    "bearerAuthorizationBundles": [
+      "client"
+    ],
+    "empty404TriggersTokenRefreshPresent": true
+  },
+  "unauthenticatedOrderProbe": {
+    "method": "GET",
+    "url": "https://aggregator-api-proxy.world-xyz.workers.dev/order",
+    "queryParameters": false,
+    "authorizationHeader": false,
+    "status": 404,
+    "responseBytes": 0,
+    "responseSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "contentType": null
+  },
+  "limitation": "A fresh authorized quote was not obtained because the current public client requires an anonymous JWT exchanged from Cloudflare Turnstile. The challenge was not solved or bypassed."
+}

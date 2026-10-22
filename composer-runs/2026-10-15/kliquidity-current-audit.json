@@ -1,0 +1,1748 @@
+{
+  "schema": "kliquidity-current-audit-v1",
+  "observedAtUtc": "2026-10-15T19:14:10.554Z",
+  "rpcUrl": "https://rpc.solanatracker.io/public",
+  "safety": {
+    "submittedTransactions": false,
+    "testing": "read-only RPC and simulateTransaction with sigVerify=false; no sendTransaction calls"
+  },
+  "deployedProgram": {
+    "observedSlot": 457350209,
+    "program": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+    "programOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "executable": true,
+    "loaderTag": 2,
+    "programDataAddress": "8n11WGJCXqRe5pB4gBTo71YxyiZxEYm47r3LfdQiHYAj",
+    "programDataOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "programDataTag": 3,
+    "deployedSlot": 445049632,
+    "upgradeAuthority": "3pAxu6C9ykZvyyzdknZvmz6CbWGZPTjRevjk4PRF5ib7",
+    "binaryPath": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kliquidity-current.so",
+    "binaryBytes": 10485715,
+    "binarySha256": "ada7cbbbe96aaf2508dcfa0bd5de4534df5173e1b18435ee585907fbaac7402e",
+    "sdkControlDiscriminatorsPresentInBinary": {
+      "withdraw": false,
+      "collectFeesAndRewards": false,
+      "executiveWithdraw": false,
+      "openLiquidityPosition": false
+    }
+  },
+  "interfaceEvidence": {
+    "officialSdkRepository": "https://github.com/Kamino-Finance/kliquidity-sdk",
+    "officialSdkCommit": "369ed3ffd62338539a9beb4147d411a21489fd35",
+    "officialSdkCommitTime": "2026-10-05T17:49:15Z",
+    "officialSdkVersion": "16.0.0",
+    "exactSourceIdentityEstablished": false,
+    "note": "Successful current-state controls and discriminator presence establish compatibility for tested paths, not a reproducible source-to-binary identity."
+  },
+  "strategies": [
+    {
+      "address": "Hmj82e48X9LNW8LeMLk186iE4UKPoUwWuLwoiqMpUiGm",
+      "slot": 457350215,
+      "apiRankEvidence": {
+        "tokenA": "pyUSD",
+        "tokenB": "USDC",
+        "totalValueLockedUsd": "16741741.751617454949"
+      },
+      "state": {
+        "adminAuthority": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+        "globalConfig": "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+        "dex": 0,
+        "status": "1",
+        "creationStatus": 2,
+        "pool": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B",
+        "position": "BzQ8gcpXorH3MxMVLkVB4qJ2q1xy9h3UQ29LNEZUFKiv",
+        "positionMint": "JDDpmLKnsGuLuv7A2dvUyzSnsr86sUhHVwUVLvu8ZTAP",
+        "positionTokenAccount": "F8VmPhqMgrhPUXhJ3pkRJXwbBS6y9sTPoSM8Atbrw3iV",
+        "tokenAMint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+        "tokenBMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "tokenAVault": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+        "tokenBVault": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+        "sharesMint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+        "sharesIssuedRaw": "5455392149572846",
+        "strategyLookupTable": "2H2dqs2j2SMk5BFWYBapwTpGWPiDQiNTJh886ZfZgEfv"
+      },
+      "custody": {
+        "expectedVaultAPda": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+        "expectedVaultBPda": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+        "expectedAuthorityPda": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+        "vaultABump": 251,
+        "vaultBBump": 254,
+        "authorityBump": 255,
+        "vaultPdasMatch": true,
+        "authorityMatches": true,
+        "vaultA": {
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "rawAmount": "81973"
+        },
+        "vaultB": {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "rawAmount": "0"
+        },
+        "vaultBindingsMatch": true,
+        "expectedPositionAta": "F8VmPhqMgrhPUXhJ3pkRJXwbBS6y9sTPoSM8Atbrw3iV",
+        "positionAtaMatches": true,
+        "positionNft": {
+          "mint": "JDDpmLKnsGuLuv7A2dvUyzSnsr86sUhHVwUVLvu8ZTAP",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "rawAmount": "1"
+        },
+        "positionNftControlled": true,
+        "positionOwnerProgram": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "positionOwnedByOrca": true,
+        "positionPool": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B",
+        "positionPoolMatches": true,
+        "positionLiquidityRaw": "13401320172145130",
+        "tickLowerIndex": -11,
+        "tickUpperIndex": 14
+      },
+      "valuation": {
+        "source": "Token quantities are decoded from current on-chain idle token accounts and an Orca decrease-liquidity quote over the controlled position; USD prices are derived from the contemporaneous official API metric.",
+        "availableA": "0.081973",
+        "availableB": "0",
+        "investedA": "8947382.448488",
+        "investedB": "7798135.419382",
+        "availableUsd": "0.08194859089979",
+        "investedUsd": "16741741.669668864049",
+        "totalUsd": "16741741.751617454949",
+        "tokenAPriceUsd": "0.99970223",
+        "tokenBPriceUsd": "0.99985741",
+        "poolSqrtPriceX64": "18447335693654273731"
+      }
+    },
+    {
+      "address": "ByPbo7yGcsfrEXet3ip3DcMKf4hwhUv71b6aAU9umBdu",
+      "slot": 457350226,
+      "apiRankEvidence": {
+        "tokenA": "USDG",
+        "tokenB": "USDC",
+        "totalValueLockedUsd": "10506951.677367518146"
+      },
+      "state": {
+        "adminAuthority": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+        "globalConfig": "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+        "dex": 0,
+        "status": "1",
+        "creationStatus": 2,
+        "pool": "9RqDTfwCx2SgxsvKpspQHc38HUo3B6hRd3oR9JR966Ps",
+        "position": "9KgtUNp7b2NXtUDPbN78M7pz43tFarX1oZs39ymCLnS8",
+        "positionMint": "87jXWCVLwk3hkabFCqr9G1ZYjQnn6HKueouveVQe4Kca",
+        "positionTokenAccount": "HmmtkyHEsET6Z4nK9cmPgYbEJMacKL2sqDbbDbH4tvmP",
+        "tokenAMint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "tokenBMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "tokenAVault": "AhS8kQyHHaFbc348dmmBBUrsog842Ysn9HkyVxJpSe3u",
+        "tokenBVault": "2HtBgoVQXjRj8Aa8QcHT47oSgjWTDvv41NT4xa91Foha",
+        "sharesMint": "Gm7QgH9yYyVrymYQ9jPA5ALvyZ2FXRDQcjwvLqhsFZtf",
+        "sharesIssuedRaw": "2083556483154048",
+        "strategyLookupTable": "9CpDyjvcEEHALrpW1zZMNGENmAVcF77uJZoFLQ5B7p7J"
+      },
+      "custody": {
+        "expectedVaultAPda": "AhS8kQyHHaFbc348dmmBBUrsog842Ysn9HkyVxJpSe3u",
+        "expectedVaultBPda": "2HtBgoVQXjRj8Aa8QcHT47oSgjWTDvv41NT4xa91Foha",
+        "expectedAuthorityPda": "H2TyWdV6XmDLNcFEzAsoB6vdP4MY6pChMjmLFJ2VZ2mj",
+        "vaultABump": 254,
+        "vaultBBump": 255,
+        "authorityBump": 255,
+        "vaultPdasMatch": true,
+        "authorityMatches": true,
+        "vaultA": {
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "authority": "H2TyWdV6XmDLNcFEzAsoB6vdP4MY6pChMjmLFJ2VZ2mj",
+          "rawAmount": "9318713"
+        },
+        "vaultB": {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "H2TyWdV6XmDLNcFEzAsoB6vdP4MY6pChMjmLFJ2VZ2mj",
+          "rawAmount": "9806653"
+        },
+        "vaultBindingsMatch": true,
+        "expectedPositionAta": "HmmtkyHEsET6Z4nK9cmPgYbEJMacKL2sqDbbDbH4tvmP",
+        "positionAtaMatches": true,
+        "positionNft": {
+          "mint": "87jXWCVLwk3hkabFCqr9G1ZYjQnn6HKueouveVQe4Kca",
+          "authority": "H2TyWdV6XmDLNcFEzAsoB6vdP4MY6pChMjmLFJ2VZ2mj",
+          "rawAmount": "1"
+        },
+        "positionNftControlled": true,
+        "positionOwnerProgram": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "positionOwnedByOrca": true,
+        "positionPool": "9RqDTfwCx2SgxsvKpspQHc38HUo3B6hRd3oR9JR966Ps",
+        "positionPoolMatches": true,
+        "positionLiquidityRaw": "2104269521749250",
+        "tickLowerIndex": -51,
+        "tickUpperIndex": 49
+      },
+      "valuation": {
+        "source": "Token quantities are decoded from current on-chain idle token accounts and an Orca decrease-liquidity quote over the controlled position; USD prices are derived from the contemporaneous official API metric.",
+        "availableA": "9.318713",
+        "availableB": "9.806653",
+        "investedA": "5148399.991511",
+        "investedB": "5359276.919809",
+        "availableUsd": "19.12400354639378",
+        "investedUsd": "10506932.553363971752",
+        "totalUsd": "10506951.677367518146",
+        "tokenAPriceUsd": "1.00000385",
+        "tokenBPriceUsd": "0.99985741",
+        "poolSqrtPriceX64": "18446748394878493899"
+      }
+    },
+    {
+      "address": "C7HgBuY7AGjdMUnELGfd7nfHcU4resTaND4WxGDrj5zv",
+      "slot": 457350236,
+      "apiRankEvidence": {
+        "tokenA": "SyrupUSDC",
+        "tokenB": "USDC",
+        "totalValueLockedUsd": "10060351.210242027142"
+      },
+      "state": {
+        "adminAuthority": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+        "globalConfig": "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+        "dex": 0,
+        "status": "1",
+        "creationStatus": 2,
+        "pool": "6fteKNvMdv7tYmBoJHhj1jx6rHcEwC6RdSEmVpyS613J",
+        "position": "5uAP3xQ8q9CtZjHBjyowsRMv1VBZf15pw4qZoBjaDZGA",
+        "positionMint": "G7YMBcMGQZNVUiNki4yAcDpZcUia3j4jxaRRP18feq1g",
+        "positionTokenAccount": "DcVXMiAza6a7x6rZafzF4TPjNhK4aUczmhdiUyQKR76u",
+        "tokenAMint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+        "tokenBMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "tokenAVault": "7HwqXGy1Ro5933vwUeoyxDubhb1j7MkeuCmHaDxMHF7b",
+        "tokenBVault": "5KM7KHt83TYsQjMDy1CcnAgWezcWs3ujXtHNn8B9FmE6",
+        "sharesMint": "4h9kBY6TLBjKYmuvXM6LkhAaJuzkDH5otNp5GcXQuLTY",
+        "sharesIssuedRaw": "3699573647188630",
+        "strategyLookupTable": "6goFiWvEKrJtjgrpyB6j3A4B4MKgtbzGrpWoZ2pufGRS"
+      },
+      "custody": {
+        "expectedVaultAPda": "7HwqXGy1Ro5933vwUeoyxDubhb1j7MkeuCmHaDxMHF7b",
+        "expectedVaultBPda": "5KM7KHt83TYsQjMDy1CcnAgWezcWs3ujXtHNn8B9FmE6",
+        "expectedAuthorityPda": "DNAyfJP627TSmW2afrnVaYX1Br8S8TuwmBunpmjE2BBp",
+        "vaultABump": 255,
+        "vaultBBump": 254,
+        "authorityBump": 255,
+        "vaultPdasMatch": true,
+        "authorityMatches": true,
+        "vaultA": {
+          "mint": "AvZZF1YaZDziPY2RCK4oJrRVrbN3mTD9NL24hPeaZeUj",
+          "authority": "DNAyfJP627TSmW2afrnVaYX1Br8S8TuwmBunpmjE2BBp",
+          "rawAmount": "3732947"
+        },
+        "vaultB": {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "DNAyfJP627TSmW2afrnVaYX1Br8S8TuwmBunpmjE2BBp",
+          "rawAmount": "5304364"
+        },
+        "vaultBindingsMatch": true,
+        "expectedPositionAta": "DcVXMiAza6a7x6rZafzF4TPjNhK4aUczmhdiUyQKR76u",
+        "positionAtaMatches": true,
+        "positionNft": {
+          "mint": "G7YMBcMGQZNVUiNki4yAcDpZcUia3j4jxaRRP18feq1g",
+          "authority": "DNAyfJP627TSmW2afrnVaYX1Br8S8TuwmBunpmjE2BBp",
+          "rawAmount": "1"
+        },
+        "positionNftControlled": true,
+        "positionOwnerProgram": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "positionOwnedByOrca": true,
+        "positionPool": "6fteKNvMdv7tYmBoJHhj1jx6rHcEwC6RdSEmVpyS613J",
+        "positionPoolMatches": true,
+        "positionLiquidityRaw": "7387178863833646",
+        "tickLowerIndex": 1711,
+        "tickUpperIndex": 1736
+      },
+      "valuation": {
+        "source": "Token quantities are decoded from current on-chain idle token accounts and an Orca decrease-liquidity quote over the controlled position; USD prices are derived from the contemporaneous official API metric.",
+        "availableA": "3.732947",
+        "availableB": "5.304364",
+        "investedA": "3856077.390196",
+        "investedB": "5479996.863604",
+        "availableUsd": "9.7384513614435466162",
+        "investedUsd": "10060341.47181172504",
+        "totalUsd": "10060351.210263086484",
+        "tokenAPriceUsd": "1.1880275049997513",
+        "tokenBPriceUsd": "0.99985741000000000001",
+        "poolSqrtPriceX64": "20107932258594580671"
+      }
+    },
+    {
+      "address": "HCntzqDU5wXSWjwgLQP5hqh3kLHRYizKtPErvSCyggXd",
+      "slot": 457350246,
+      "apiRankEvidence": {
+        "tokenA": "SOL",
+        "tokenB": "JITOSOL",
+        "totalValueLockedUsd": "5976568.528312590288"
+      },
+      "state": {
+        "adminAuthority": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+        "globalConfig": "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+        "dex": 0,
+        "status": "1",
+        "creationStatus": 2,
+        "pool": "Hp53XEtt4S8SvPCXarsLSdGfZBuUr5mMmZmX2DRNXQKp",
+        "position": "3BstL64SkBTuEmDxWbC1x1tJYYmrx8D916sediW8h4Hq",
+        "positionMint": "dguYSRtnHp1CdYE7Z1jEKxZGPcG11CzxhkRVq3kRr4M",
+        "positionTokenAccount": "86gBfTt87xkLrHJnYhRHYQiYBxEgqBK2C6LHKpajAgEq",
+        "tokenAMint": "So11111111111111111111111111111111111111112",
+        "tokenBMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+        "tokenAVault": "DGQdXfxUX54ud6CVWDNF4XMmZ1jdGUHQCBnwrz2fupFb",
+        "tokenBVault": "HozdhT8PEaeFYYmBhvDC6kjMooRgLuTwHv6H9MWd24xt",
+        "sharesMint": "Dk2X1HCbwJae44P7FpqdFoeT6LEw4JVyyHvZMHUzHWbi",
+        "sharesIssuedRaw": "19686979110984001",
+        "strategyLookupTable": "DvCAng6ogdy9wodkKcLggnpuxH1XFBAEei9QJXeSB2yn"
+      },
+      "custody": {
+        "expectedVaultAPda": "DGQdXfxUX54ud6CVWDNF4XMmZ1jdGUHQCBnwrz2fupFb",
+        "expectedVaultBPda": "HozdhT8PEaeFYYmBhvDC6kjMooRgLuTwHv6H9MWd24xt",
+        "expectedAuthorityPda": "8Qr1fHknGauJm3D9Bj1Qh2s3yC22bg9JzikosJf9R7aH",
+        "vaultABump": 254,
+        "vaultBBump": 254,
+        "authorityBump": 255,
+        "vaultPdasMatch": true,
+        "authorityMatches": true,
+        "vaultA": {
+          "mint": "So11111111111111111111111111111111111111112",
+          "authority": "8Qr1fHknGauJm3D9Bj1Qh2s3yC22bg9JzikosJf9R7aH",
+          "rawAmount": "116421629"
+        },
+        "vaultB": {
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "authority": "8Qr1fHknGauJm3D9Bj1Qh2s3yC22bg9JzikosJf9R7aH",
+          "rawAmount": "28766879"
+        },
+        "vaultBindingsMatch": true,
+        "expectedPositionAta": "86gBfTt87xkLrHJnYhRHYQiYBxEgqBK2C6LHKpajAgEq",
+        "positionAtaMatches": true,
+        "positionNft": {
+          "mint": "dguYSRtnHp1CdYE7Z1jEKxZGPcG11CzxhkRVq3kRr4M",
+          "authority": "8Qr1fHknGauJm3D9Bj1Qh2s3yC22bg9JzikosJf9R7aH",
+          "rawAmount": "1"
+        },
+        "positionNftControlled": true,
+        "positionOwnerProgram": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "positionOwnedByOrca": true,
+        "positionPool": "Hp53XEtt4S8SvPCXarsLSdGfZBuUr5mMmZmX2DRNXQKp",
+        "positionPoolMatches": true,
+        "positionLiquidityRaw": "44925116012893900",
+        "tickLowerIndex": -2671,
+        "tickUpperIndex": -2649
+      },
+      "valuation": {
+        "source": "Token quantities are decoded from current on-chain idle token accounts and an Orca decrease-liquidity quote over the controlled position; USD prices are derived from the contemporaneous official API metric.",
+        "availableA": "0.116421629",
+        "availableB": "0.028766879",
+        "investedA": "42528.433554673",
+        "investedB": "10656.808874569",
+        "availableUsd": "16.304642094452698134",
+        "investedUsd": "5976552.2111911073482",
+        "totalUsd": "5976568.5158332018009",
+        "tokenAPriceUsd": "105.87200016",
+        "tokenBPriceUsd": "138.3136269435845819",
+        "poolSqrtPriceX64": "16145084301819331961"
+      }
+    },
+    {
+      "address": "DzGJLoq3FnSN4VJyTbbNUWsN8syRQzxvDZX3iTmnw5FG",
+      "slot": 457350256,
+      "apiRankEvidence": {
+        "tokenA": "USDu",
+        "tokenB": "USDC",
+        "totalValueLockedUsd": "3636411.2659004523444"
+      },
+      "state": {
+        "adminAuthority": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+        "globalConfig": "GKnHiWh3RRrE1zsNzWxRkomymHc374TvJPSTv2wPeYdB",
+        "dex": 0,
+        "status": "1",
+        "creationStatus": 2,
+        "pool": "94BpFoyri4uTT55NFSHKYNFyUMtoWXEisMA4LK7nTKPU",
+        "position": "BzbDaCVU3To1HLobpy5YjYa15wbWUYQjysBfaUVEvvon",
+        "positionMint": "G4QnxJmJSZqYawcFgVe3PRxA8WHsNVXpqJiuctzoSWHq",
+        "positionTokenAccount": "2Y1aVRp6at1ATu6tyxHME3aW4j8UWtGuWmvcuKkS1L6F",
+        "tokenAMint": "9ckR7pPPvyPadACDTzLwK2ZAEeUJ3qGSnzPs8bVaHrSy",
+        "tokenBMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "tokenAVault": "CKtY6cHsEriZTBrhwQ3fyoAm9kcQrMCV4mAGTqypo3mi",
+        "tokenBVault": "Hi36hUaiq1rtrHoa26rJusCmR6PG6pzoJYRc4buKuRJW",
+        "sharesMint": "GyWBi7ExXpfPRWppHna3t8eogcW5Q8Vu8Devfz4GHKAR",
+        "sharesIssuedRaw": "362540581255979",
+        "strategyLookupTable": "GpHiW7EWoyWY2aKsNFgyMRwy3PS531Q2ZiYDUKi891VL"
+      },
+      "custody": {
+        "expectedVaultAPda": "CKtY6cHsEriZTBrhwQ3fyoAm9kcQrMCV4mAGTqypo3mi",
+        "expectedVaultBPda": "Hi36hUaiq1rtrHoa26rJusCmR6PG6pzoJYRc4buKuRJW",
+        "expectedAuthorityPda": "ANf8Mr9GZcPx4itLkb89sNrJnfotFyg9rTpKWk31FSxP",
+        "vaultABump": 255,
+        "vaultBBump": 255,
+        "authorityBump": 255,
+        "vaultPdasMatch": true,
+        "authorityMatches": true,
+        "vaultA": {
+          "mint": "9ckR7pPPvyPadACDTzLwK2ZAEeUJ3qGSnzPs8bVaHrSy",
+          "authority": "ANf8Mr9GZcPx4itLkb89sNrJnfotFyg9rTpKWk31FSxP",
+          "rawAmount": "0"
+        },
+        "vaultB": {
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "ANf8Mr9GZcPx4itLkb89sNrJnfotFyg9rTpKWk31FSxP",
+          "rawAmount": "85858"
+        },
+        "vaultBindingsMatch": true,
+        "expectedPositionAta": "2Y1aVRp6at1ATu6tyxHME3aW4j8UWtGuWmvcuKkS1L6F",
+        "positionAtaMatches": true,
+        "positionNft": {
+          "mint": "G4QnxJmJSZqYawcFgVe3PRxA8WHsNVXpqJiuctzoSWHq",
+          "authority": "ANf8Mr9GZcPx4itLkb89sNrJnfotFyg9rTpKWk31FSxP",
+          "rawAmount": "1"
+        },
+        "positionNftControlled": true,
+        "positionOwnerProgram": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+        "positionOwnedByOrca": true,
+        "positionPool": "94BpFoyri4uTT55NFSHKYNFyUMtoWXEisMA4LK7nTKPU",
+        "positionPoolMatches": true,
+        "positionLiquidityRaw": "728371343128019",
+        "tickLowerIndex": -51,
+        "tickUpperIndex": 49
+      },
+      "valuation": {
+        "source": "Token quantities are decoded from current on-chain idle token accounts and an Orca decrease-liquidity quote over the controlled position; USD prices are derived from the contemporaneous official API metric.",
+        "availableA": "0",
+        "availableB": "0.085858",
+        "investedA": "1822210.916108",
+        "investedB": "1814916.021338",
+        "availableUsd": "0.085845757507780000002",
+        "investedUsd": "3636411.1800546948368",
+        "totalUsd": "3636411.2659004523446",
+        "tokenAPriceUsd": "0.99974922303901098248",
+        "tokenBPriceUsd": "0.99985741000000000002",
+        "poolSqrtPriceX64": "18445731737821925477"
+      }
+    }
+  ],
+  "directValuation": {
+    "strategyCount": 5,
+    "availableUsd": "45.33489135069759475",
+    "investedUsd": "46921979.086090363026",
+    "totalUsd": "46922024.420981713725",
+    "accounting": "Counts each strategy idle vault plus only its attributable Orca position amounts. It does not count full Orca pool vault custody or API TVL again."
+  },
+  "actors": {
+    "strategyAdmin": "BES3z5muriP8FmB9r5hnW5wCYy184qWVe3VPpUuQ544k",
+    "withdrawalControlHolder": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+    "mutationAttacker": "BWi2ve5yWp1sdoBkt2h7HAMBzFu7izbnk3rXyGu9ieqn"
+  },
+  "simulations": [
+    {
+      "name": "control: shareholder withdraw 1 share",
+      "slot": 457350330,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 709,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 234792,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "FAD3u9fq5W159y2FAo1HMqv6Utogq9XrVuxwB8hJRkUL",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "26047751",
+          "afterRawAmount": "26049389",
+          "deltaRawAmount": "1638"
+        },
+        {
+          "address": "EBHcqBTqK3Wz81ymgTsLRwhpU89izUw99HbsyKJceWnk",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "1427",
+          "deltaRawAmount": "1427"
+        },
+        {
+          "address": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+          "mint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "178235990358",
+          "afterRawAmount": "178234990358",
+          "deltaRawAmount": "-1000000"
+        },
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": "81973",
+          "deltaRawAmount": "0"
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "0",
+          "deltaRawAmount": "0"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1233988 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1203413 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1197434 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1192489 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21696 of 1213630 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1187959 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1180813 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3742 of 1176378 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1169124 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 224447 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    },
+    {
+      "name": "control: collect fees and rewards",
+      "slot": 457350340,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 754,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 12,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 216680,
+      "fee": 10000,
+      "tokenDeltas": [
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": "125363",
+          "deltaRawAmount": "43390"
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "4961432",
+          "deltaRawAmount": "4961432"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 1338695 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1289721 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1281493 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1275176 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 1300232 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1250336 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 1242108 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 1258712 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 1216433 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 1224793 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1211299 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1204152 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216530 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    },
+    {
+      "name": "control: executive position exit for rebalance",
+      "slot": 457350441,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 613,
+      "staticAccountCount": 11,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 3,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 106397,
+      "fee": 10000,
+      "tokenDeltas": [
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": "8947382530461",
+          "deltaRawAmount": "8947382448488"
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "7798135419382",
+          "deltaRawAmount": "7798135419382"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: ExecutiveWithdraw",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1308381 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1302402 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1297457 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21911 of 1318813 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 106247 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    },
+    {
+      "name": "control: collect plus open replacement position rebalance",
+      "slot": 457350453,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          2,
+          "ComputationalBudgetExceeded"
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 1211,
+      "staticAccountCount": 25,
+      "lookupWritableCount": 13,
+      "lookupReadonlyCount": 3,
+      "instructionCount": 3,
+      "requiredSignatures": 3,
+      "unitsConsumed": 403000,
+      "fee": 15000,
+      "tokenDeltas": [
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        }
+      ],
+      "logs": [
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 341697 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 292723 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 284495 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 278178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 303234 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 253338 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 245110 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 261714 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 219435 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 227795 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 214301 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 207154 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216528 of 402850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success",
+        "Program log: Instruction: OpenLiquidityPosition",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 53258 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 47279 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 42334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21889 of 63668 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: ClosePosition",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 138 of 27603 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 25347 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9354 of 34083 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: OpenPosition",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 14725 of 14725 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: Computational budget exceeded",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 186322 of 186322 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: Computational budget exceeded"
+      ]
+    },
+    {
+      "name": "mutation: withdraw signer substituted, victim share account retained",
+      "slot": 457350463,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 741,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 42378,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "FAD3u9fq5W159y2FAo1HMqv6Utogq9XrVuxwB8hJRkUL",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "26047751",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "EBHcqBTqK3Wz81ymgTsLRwhpU89izUw99HbsyKJceWnk",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "0",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+          "mint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "178235990358",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4456 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5937 of 1395394 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: token_a_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 31835 of 1389457 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "name": "mutation: signer and withdrawal beneficiaries substituted",
+      "slot": 457350473,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 709,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 56588,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "CMAfyW3L4ToGnYtgyhWiFuP3pKWeagVDUWEEziV7g9vR",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "BWi2ve5yWp1sdoBkt2h7HAMBzFu7izbnk3rXyGu9ieqn",
+          "beforeRawAmount": "662898270000",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "CMFZ8HByfq3wfAfvdUzV79Pbugh9D3CiEgntVevKCUfu",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "BWi2ve5yWp1sdoBkt2h7HAMBzFu7izbnk3rXyGu9ieqn",
+          "beforeRawAmount": "0",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+          "mint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "178235990358",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 8857 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1390993 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: user_shares_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 41743 of 1385155 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal strategy substituted cross-strategy",
+      "slot": 457350479,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 740,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 38479,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 28134 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal token A vault substituted cross-strategy",
+      "slot": 457350485,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 740,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 39376,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 29031 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal position substituted cross-strategy",
+      "slot": 457350491,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 740,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 38609,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 28264 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal token A mint substituted cross-strategy",
+      "slot": 457350498,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 741,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 39632,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 29287 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal pool CPI program changed to system program",
+      "slot": 457350504,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6081
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 677,
+      "staticAccountCount": 14,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 62586,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yvaults/src/instructions/withdraw.rs:53. Error Code: WrongDEXProgramID. Error Number: 6081. Error Message: Wrong DEX program ID.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 52241 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x17c1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal vault account order swapped",
+      "slot": 457350511,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 709,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 39376,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 29031 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: withdrawal position aliased to token A vault",
+      "slot": 457350518,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 708,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 38427,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 28082 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: fee collection signer substituted",
+      "slot": 457350524,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 658,
+      "staticAccountCount": 14,
+      "lookupWritableCount": 12,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 216680,
+      "fee": 5000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 1338695 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1289721 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1281493 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1275176 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 1300232 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1250336 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 1242108 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 1258712 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 1216433 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 1224793 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1211299 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1204152 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216530 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    },
+    {
+      "name": "mutation: fee signer and treasury beneficiaries substituted",
+      "slot": 457350533,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 711,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 12,
+      "lookupReadonlyCount": 5,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 62482,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "CMAfyW3L4ToGnYtgyhWiFuP3pKWeagVDUWEEziV7g9vR",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "BWi2ve5yWp1sdoBkt2h7HAMBzFu7izbnk3rXyGu9ieqn",
+          "beforeRawAmount": "662898270000",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "CMFZ8HByfq3wfAfvdUzV79Pbugh9D3CiEgntVevKCUfu",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "BWi2ve5yWp1sdoBkt2h7HAMBzFu7izbnk3rXyGu9ieqn",
+          "beforeRawAmount": "0",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 8857 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1390993 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: AnchorError thrown in programs/yvaults/src/utils/treasury_fee_vault_utils.rs:12. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 47637 of 1385155 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x9c6"
+      ]
+    },
+    {
+      "name": "mutation: fee position substituted cross-strategy",
+      "slot": 457350540,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 785,
+      "staticAccountCount": 16,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 24392,
+      "fee": 10000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 24242 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: fee pool CPI program changed to system program",
+      "slot": 457350545,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6081
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 723,
+      "staticAccountCount": 14,
+      "lookupWritableCount": 12,
+      "lookupReadonlyCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 43509,
+      "fee": 10000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: AnchorError thrown in programs/yvaults/src/instructions/collect_fees_and_rewards.rs:62. Error Code: WrongDEXProgramID. Error Number: 6081. Error Message: Wrong DEX program ID.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 43359 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x17c1"
+      ]
+    },
+    {
+      "name": "mutation: position-exit admin substituted",
+      "slot": 457350555,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 517,
+      "staticAccountCount": 10,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 3,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 18084,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": null,
+          "deltaRawAmount": null
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: ExecutiveWithdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 17934 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: position-exit strategy substituted cross-strategy",
+      "slot": 457350561,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 644,
+      "staticAccountCount": 12,
+      "lookupWritableCount": 9,
+      "lookupReadonlyCount": 3,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 18214,
+      "fee": 10000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: ExecutiveWithdraw",
+        "Program log: AnchorError caused by account: strategy. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 18064 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "mutation: position-exit pool CPI program changed to system program",
+      "slot": 457350567,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6081
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 582,
+      "staticAccountCount": 10,
+      "lookupWritableCount": 10,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 2,
+      "requiredSignatures": 2,
+      "unitsConsumed": 26173,
+      "fee": 10000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: ExecutiveWithdraw",
+        "Program log: AnchorError thrown in programs/yvaults/src/instructions/executive_withdraw.rs:52. Error Code: WrongDEXProgramID. Error Number: 6081. Error Message: Wrong DEX program ID.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 26023 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x17c1"
+      ]
+    },
+    {
+      "name": "mutation: replacement-position admin substituted",
+      "slot": 457350574,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6083
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 1203,
+      "staticAccountCount": 25,
+      "lookupWritableCount": 13,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 3,
+      "requiredSignatures": 3,
+      "unitsConsumed": 238397,
+      "fee": 15000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 1338697 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1289723 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1281495 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1275178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 1300234 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1250338 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 1242110 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 1258714 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 1216435 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 1224795 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1211301 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1204154 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216528 of 1399850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success",
+        "Program log: Instruction: OpenLiquidityPosition",
+        "Program log: AnchorError thrown in programs/yvaults/src/instructions/open_liquidity_position.rs:94. Error Code: InvalidAdminAuthority. Error Number: 6083. Error Message: Invalid admin authority.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 21719 of 1183322 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x17c3"
+      ]
+    },
+    {
+      "name": "mutation: replacement-position pool CPI program changed to system program",
+      "slot": 457350579,
+      "success": false,
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6081
+          }
+        ]
+      },
+      "wireVersion": 0,
+      "wireBytes": 1211,
+      "staticAccountCount": 25,
+      "lookupWritableCount": 13,
+      "lookupReadonlyCount": 3,
+      "instructionCount": 3,
+      "requiredSignatures": 3,
+      "unitsConsumed": 289242,
+      "fee": 15000,
+      "tokenDeltas": [],
+      "logs": [
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 341697 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 292723 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 284495 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 278178 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 303234 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 253338 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 245110 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 261714 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 219435 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 227795 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 214301 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 207154 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216528 of 402850 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success",
+        "Program log: Instruction: OpenLiquidityPosition",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: AnchorError thrown in programs/yvaults/src/instructions/open_liquidity_position.rs:162. Error Code: WrongDEXProgramID. Error Number: 6081. Error Message: Wrong DEX program ID.",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 72564 of 186322 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc failed: custom program error: 0x17c1"
+      ]
+    },
+    {
+      "name": "composition: two sequential shareholder withdrawals",
+      "slot": 457350589,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 757,
+      "staticAccountCount": 15,
+      "lookupWritableCount": 11,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 5,
+      "requiredSignatures": 1,
+      "unitsConsumed": 459051,
+      "fee": 5000,
+      "tokenDeltas": [
+        {
+          "address": "FAD3u9fq5W159y2FAo1HMqv6Utogq9XrVuxwB8hJRkUL",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "26047751",
+          "afterRawAmount": "26051027",
+          "deltaRawAmount": "3276"
+        },
+        {
+          "address": "EBHcqBTqK3Wz81ymgTsLRwhpU89izUw99HbsyKJceWnk",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "2854",
+          "deltaRawAmount": "2854"
+        },
+        {
+          "address": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+          "mint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "178235990358",
+          "afterRawAmount": "178233990358",
+          "deltaRawAmount": "-2000000"
+        },
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": "81973",
+          "deltaRawAmount": "0"
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "0",
+          "deltaRawAmount": "0"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1233988 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1203413 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1197434 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1192489 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21696 of 1213630 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1187959 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1180813 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3742 of 1176378 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1169124 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 224447 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1009504 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 979154 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 973175 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 968230 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21471 of 989146 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 963700 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 956554 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3742 of 952119 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 944865 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 224259 of 1165208 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    },
+    {
+      "name": "composition: fee collection then shareholder withdrawal",
+      "slot": 457350599,
+      "success": true,
+      "error": null,
+      "wireVersion": 0,
+      "wireBytes": 952,
+      "staticAccountCount": 19,
+      "lookupWritableCount": 14,
+      "lookupReadonlyCount": 4,
+      "instructionCount": 5,
+      "requiredSignatures": 2,
+      "unitsConsumed": 452357,
+      "fee": 10000,
+      "tokenDeltas": [
+        {
+          "address": "FAD3u9fq5W159y2FAo1HMqv6Utogq9XrVuxwB8hJRkUL",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "26047751",
+          "afterRawAmount": "26049389",
+          "deltaRawAmount": "1638"
+        },
+        {
+          "address": "EBHcqBTqK3Wz81ymgTsLRwhpU89izUw99HbsyKJceWnk",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "1427",
+          "deltaRawAmount": "1427"
+        },
+        {
+          "address": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+          "mint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+          "authority": "Enj5st8nPmhtKka7ivp8zum66TYz4JjDG45bE3QUyUT7",
+          "beforeRawAmount": "178235990358",
+          "afterRawAmount": "178234990358",
+          "deltaRawAmount": "-1000000"
+        },
+        {
+          "address": "CJJdsVKXsPDcfKsYafBMYb6ZhtgnnjUk5JgBAehXjdzi",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "81973",
+          "afterRawAmount": "125363",
+          "deltaRawAmount": "43390"
+        },
+        {
+          "address": "7ZVPknXkeDJYwJmrSy9Ei4KMbfo59EpyarGtPTu1ppJv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7L2CTsgivHdz6gjq9aHYnAwJPA2ymEP64cs1Gh85E3dK",
+          "beforeRawAmount": "0",
+          "afterRawAmount": "4961432",
+          "deltaRawAmount": "4961432"
+        }
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4357 of 1399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 5838 of 1395493 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9107 of 1328502 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectFeesV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1279528 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1271300 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1264983 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 26549 of 1290039 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 1240143 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3632 of 1231915 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21489 of 1248519 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: CollectRewardV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 122 of 1206240 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9735 of 1214600 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 1201106 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1193959 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 216528 of 1389655 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1016401 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr consumed 4641 of 985848 compute units",
+        "Program MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 979869 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 974924 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 21674 of 996043 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3634 of 970394 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 963248 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3742 of 958813 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 951559 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc consumed 225484 of 1173127 compute units",
+        "Program 6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc success"
+      ]
+    }
+  ],
+  "conclusion": {
+    "successfulControls": 3,
+    "totalControls": 4,
+    "successfulMutations": [
+      "mutation: fee collection signer substituted"
+    ],
+    "successfulCompositions": [
+      "composition: two sequential shareholder withdrawals",
+      "composition: fee collection then shareholder withdrawal"
+    ]
+  }
+}

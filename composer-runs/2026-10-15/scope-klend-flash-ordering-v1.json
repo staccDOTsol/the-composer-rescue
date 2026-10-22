@@ -1,0 +1,149 @@
+{
+  "observedAt": "2026-10-15T19:23:42.381Z",
+  "flashSourceSignature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+  "flashReserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+  "scopeProgram": "HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ",
+  "ammIndexes": [
+    1,
+    2
+  ],
+  "results": [
+    {
+      "name": "flash_pair",
+      "slot": 457352867,
+      "wireBytes": 519,
+      "err": null,
+      "unitsConsumed": 55218,
+      "before": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "after": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "deltas": [
+        "0",
+        "0",
+        "0"
+      ],
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33591 of 400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21627 of 366409 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "name": "scope_then_flash_pair",
+      "slot": 457352867,
+      "wireBytes": 736,
+      "err": null,
+      "unitsConsumed": 79123,
+      "before": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "after": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "deltas": [
+        "0",
+        "0",
+        "0"
+      ],
+      "logs": [
+        "Program log: tk 1, RaydiumAmmV3BtoA: 2573931199898 to 2573931199898 | prev_slot: 457352751, new_slot: 457352867, crt_slot: 457352867",
+        "Program log: tk 2, RaydiumAmmV3AtoB: 983832893391432675 to 983832893391432675 | prev_slot: 457352751, new_slot: 457352867, crt_slot: 457352867",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33591 of 576095 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21627 of 542504 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ]
+    },
+    {
+      "name": "flash_borrow_then_scope_then_repay",
+      "slot": 457352868,
+      "wireBytes": 736,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "unitsConsumed": 44722,
+      "before": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "after": [
+        null,
+        null,
+        null
+      ],
+      "deltas": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34662 of 600000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: AnchorError thrown in programs/scope/src/handlers/handler_refresh_prices.rs:229. Error Code: RefreshWithUnexpectedIxs. Error Number: 6014. Error Message: Refresh price instruction preceded by unexpected ixs.",
+        "Program HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ failed: custom program error: 0x177e"
+      ]
+    },
+    {
+      "name": "flash_pair_then_scope",
+      "slot": 457352868,
+      "wireBytes": 736,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6014
+          }
+        ]
+      },
+      "unitsConsumed": 66351,
+      "before": [
+        "8011866865998",
+        "716825",
+        "0"
+      ],
+      "after": [
+        null,
+        null,
+        null
+      ],
+      "deltas": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34664 of 600000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21627 of 565336 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program log: AnchorError thrown in programs/scope/src/handlers/handler_refresh_prices.rs:229. Error Code: RefreshWithUnexpectedIxs. Error Number: 6014. Error Message: Refresh price instruction preceded by unexpected ixs.",
+        "Program HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ failed: custom program error: 0x177e"
+      ]
+    }
+  ]
+}

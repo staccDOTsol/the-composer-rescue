@@ -1,0 +1,522 @@
+{
+  "schema": "orca-pr1396-economic-max-sweep/v1",
+  "execution": "signed v1 simulation on separate local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:56899",
+  "allocation": "save",
+  "syncedSaveState": {
+    "source": "http://127.0.0.1:48899",
+    "addresses": [
+      "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv",
+      "8PbodeaosQP19SjYFx855UMqWxH2HynZLdBXmsrbac36",
+      "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7",
+      "4UpD2fh7xH3VP9QQaXtsS1YY3bxzWhtfpks7FatyKvdY"
+    ]
+  },
+  "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+  "position": "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw",
+  "rows": [
+    {
+      "inputLamports": "6000000000000",
+      "cushionLamports": "120000010000",
+      "allocation": "save",
+      "saveFeeLamports": "2399560000",
+      "borrowedLamports": {
+        "save": "5998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "6Aez4LT3ZxNjqg88S1eyDqXRnmxvy1rSCiQcftVJ3aR5",
+      "actorWsolAta": "DDuqBoP2Hs4Rmt2owYBkhnNumjq9Rf3sZndnDHMdvrk2",
+      "err": null,
+      "firstFailure": null,
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 2,
+      "completeRepayment": true,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": "0",
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": "0",
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": "0",
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": "2399560000",
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "DDuqBoP2Hs4Rmt2owYBkhnNumjq9Rf3sZndnDHMdvrk2": null,
+        "E95baxJgDbVtiy7gXnwKHrS5bCRZbGBHQ8KhzZix8iQ5": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": "120000000000",
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": "-11949019736"
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": "10000",
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": "11949019736",
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": "209887081032176",
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": "6668753649325",
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": {
+        "liquidity": "2471395",
+        "checkpointA": "12508206001904611579",
+        "feeOwedA": "874170",
+        "checkpointB": "1690734981402255523",
+        "feeOwedB": "129810"
+      },
+      "unitsConsumed": 550842,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "15d4abba90492ed74b44dee6afd303918c2077185e288b98ed9eea58b07bf2d6"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21590 of 899882 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 860037 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 124 of 856779 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 853440 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 25398 of 878292 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Log truncated"
+      ],
+      "pass": true
+    },
+    {
+      "inputLamports": "10000000000000",
+      "cushionLamports": "200000010000",
+      "allocation": "save",
+      "saveFeeLamports": "3999560000",
+      "borrowedLamports": {
+        "save": "9998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "4YYKXKbofwYPfuvWrcf2vng78tYTJVa7rxdcWT8dUydA",
+      "actorWsolAta": "JACE9MCksuNH8XCPVZHzWvqgZh9PysKYQeLBRHCCrUgd",
+      "err": null,
+      "firstFailure": null,
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 2,
+      "completeRepayment": true,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": "0",
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": "0",
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": "0",
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": "3999560000",
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "JACE9MCksuNH8XCPVZHzWvqgZh9PysKYQeLBRHCCrUgd": null,
+        "B6PcK3vjVRDTUJQRZupT32KomP3r31CJ5hVGw9TXbk7t": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": "200000000000",
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": "-19915192007"
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": "10000",
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": "19915192007",
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": "209967081032176",
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": "6660787477054",
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": {
+        "liquidity": "2471395",
+        "checkpointA": "12508250786515910970",
+        "feeOwedA": "874176",
+        "checkpointB": "1690742445504138755",
+        "feeOwedB": "129811"
+      },
+      "unitsConsumed": 711098,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "59ae03dcb8e043b64bf0bc954154c17f1600bc24e8b4b9f8e7118371d949c276"
+      },
+      "logTail": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21590 of 739630 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 699781 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 124 of 696523 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 693184 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 25402 of 718040 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountEndFlashloan",
+        "Log truncated"
+      ],
+      "pass": true
+    },
+    {
+      "inputLamports": "20000000000000",
+      "cushionLamports": "400000010000",
+      "allocation": "save",
+      "saveFeeLamports": "7999560000",
+      "borrowedLamports": {
+        "save": "19998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "BzzgEezZx6LKaK7RotvbvLoFs7U2fMJ4hY9hW97ptgzd",
+      "actorWsolAta": "9ThFK5dz3owFX87QKqzi9U7wunfg7hXXnFwKhZQvqb3h",
+      "err": {
+        "InstructionError": [
+          9,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "firstFailure": "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+      "whirlpoolSwaps": 1,
+      "whirlpoolUpdates": 0,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "9ThFK5dz3owFX87QKqzi9U7wunfg7hXXnFwKhZQvqb3h": null,
+        "FijmzuwgWrykYJ85aLtqSPMQm6CZk1ALXmzrpc1PQGGm": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 591629,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "438377ce959cd34cce270accab1a9e36c8d552654e764fdd9ce85d993429506d"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1257567 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 44508 of 1300845 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABFAEAAAAAAADx8EkCkOn0QAAAAAAAAAAA",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1224113 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 32BRCpxjGjsBo3AwvIbQ1Zvzi/++//BdcVOiYWQOEYsC6EC+MmGJUbJSQQCAa1g0nfr+WcB5gxo+7yprpkDK9RUI99gtvwk27KNwMLyG0NWb84v/vv/wXXFTomFkDhGLAuhAvjJhiVGyORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABAOH1BQAAAABfizeisbsSF9cEAAAAAAAA",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 51460 of 1256337 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: Swap",
+        "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 396506 of 1204877 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x1796"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "50000000000000",
+      "cushionLamports": "1000000010000",
+      "allocation": "save",
+      "saveFeeLamports": "19999560000",
+      "borrowedLamports": {
+        "save": "49998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "FcfaXStnEWnSB2pXJnmTPJYHfZzXgQyRfC8ptGfx65bY",
+      "actorWsolAta": "7uFHzyE7tQVaKar7ecJeW37bkfpZmGf7zbt8srbMdVkk",
+      "err": {
+        "InstructionError": [
+          9,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "firstFailure": "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+      "whirlpoolSwaps": 1,
+      "whirlpoolUpdates": 0,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "7uFHzyE7tQVaKar7ecJeW37bkfpZmGf7zbt8srbMdVkk": null,
+        "5M6ALMzHtue8Dba6RwCmRNNtjphavpbkJ29dymVA2wXP": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 586481,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "212a9c27a1941f80faf3335990b2cb7298eb1373f99ba13dee4abb58587a12d5"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1262065 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 44508 of 1305343 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABFAEAAAAAAADx8EkCkOn0QAAAAAAAAAAA",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1228611 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 32BRCpxjGjsB2SaQymi44WMqP1cqcVOhjJQirkc6UGN9FCihDg55GZv8s+hGrbO09t4fUxC5+N1I5wFh0B7x4RDBim8LpJOfTdkmkMpouOFjKj9XKnFToYyUIq5HOlBjfRQooQ4OeRmbORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABAOH1BQAAAABfizeisbsSF9cEAAAAAAAA",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 51460 of 1260835 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: Swap",
+        "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 395856 of 1209375 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x1796"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "70000000000000",
+      "cushionLamports": "1400000010000",
+      "allocation": "save",
+      "saveFeeLamports": "27999560000",
+      "borrowedLamports": {
+        "save": "69998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "2iVJcb9aCzUUczuty8N6ezpdhVKj68rFa9QsGt7upFM9",
+      "actorWsolAta": "6X6BH6vwZtgQLuKkLUcqWYFNXpkGDSmQAH4uwM9riV5j",
+      "err": {
+        "InstructionError": [
+          9,
+          {
+            "Custom": 6038
+          }
+        ]
+      },
+      "firstFailure": "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+      "whirlpoolSwaps": 1,
+      "whirlpoolUpdates": 0,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "6X6BH6vwZtgQLuKkLUcqWYFNXpkGDSmQAH4uwM9riV5j": null,
+        "GJgsA96Hs9QCP52hASqPyMQqbm2FAEDbcVcypFNckoFT": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 586394,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "97a7a0ad665e219af797ad7e01a6638082965ec80cce705772e502dc6b03c120"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1262152 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 44508 of 1305430 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABFAEAAAAAAADx8EkCkOn0QAAAAAAAAAAA",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1228698 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 32BRCpxjGjsBGXyA0AvjF17VFoN6YfbSJ0QMO81Foc/QOhKTVBsjHyBRKG4HCIs/U0Is3xZFtAe+seuAHREbUQqAEn8iedN3fRl8gNAL4xde1RaDemH20idEDDvNRaHP0DoSk1QbIx8gORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABAOH1BQAAAABfizeisbsSF9cEAAAAAAAA",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 51460 of 1260922 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: Swap",
+        "Program log: AnchorError occurred. Error Code: TickArraySequenceInvalidIndex. Error Number: 6038. Error Message: Invalid index for tick array sequence.",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 395856 of 1209462 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x1796"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "80000000000000",
+      "cushionLamports": "1600000010000",
+      "allocation": "save",
+      "saveFeeLamports": "31999560000",
+      "borrowedLamports": {
+        "save": "79998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "Ey94CDZYEXJEKqPCoEtbUZ8J3QhpYZ2rzB8fFD7qUFNZ",
+      "actorWsolAta": "7Te7xBkvc2sSuMwoSK9cY44GscBxJCXErRTJZw42qSYq",
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 20
+          }
+        ]
+      },
+      "firstFailure": "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x14",
+      "whirlpoolSwaps": 0,
+      "whirlpoolUpdates": 0,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "7Te7xBkvc2sSuMwoSK9cY44GscBxJCXErRTJZw42qSYq": null,
+        "4AfA2x9YPakEZQdFtpBMEsbBmcrM54t2eWdCjp3Fr9vS": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 94484,
+      "wire": {
+        "version": 1,
+        "bytes": 1800,
+        "accounts": 37,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "32cbc91a48be0affa5236c4368678b6aaa7b16f56ce2d9904d1c1f40517cb963"
+      },
+      "logTail": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13424 of 1380182 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 11111111111111111111111111111111 invoke [1]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 201 of 1366608 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 3765 of 1366407 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo invoke [1]",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Borrow amount cannot exceed available amount",
+        "Program log: Insufficient liquidity available",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo consumed 57126 of 1362642 compute units",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x14"
+      ],
+      "pass": false
+    }
+  ]
+}

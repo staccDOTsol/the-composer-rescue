@@ -1,0 +1,207 @@
+{
+  "schema": "orca-pr1396-new-lp-negative-control/v1",
+  "mode": "interleave",
+  "execution": "signed local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:60889",
+  "pool": "478r35b8cKMuj3HzxkwqWsx8vBfFLP5YhbkUEsWt2jfo",
+  "victim": "6K8ebAAheXRCfzSZo8zsdoaGJe2KzjTK8UPnci6Lrgm",
+  "actor": "8UgCzJmuenRPUAWZ5qUEC6Zvh3DQWqvAGRYK3vwwaCe3",
+  "newPosition": "7JK3m3K3QWCMXNVf3psenuYb6eQp719jYx3M5Krt1pPY",
+  "liquidity": "100000000",
+  "before": {
+    "poolLiquidity": "18439611894805844217",
+    "poolGrowthB": "94678",
+    "victimOwedB": "94639",
+    "newLiquidity": null,
+    "newCheckpointB": null,
+    "newOwedA": null,
+    "newOwedB": null,
+    "vaultA": "39999999999973929",
+    "vaultB": "198970",
+    "actorA": "2091934",
+    "actorB": "10000",
+    "nftAmount": null
+  },
+  "stages": [
+    {
+      "transaction": {
+        "label": "open attacker-owned position",
+        "seededAbsentAccounts": [
+          "7JK3m3K3QWCMXNVf3psenuYb6eQp719jYx3M5Krt1pPY",
+          "uJgDowbDCJUw66cfQAnn5oArLu8Xay9yVRir16KC5u2",
+          "YmCQmD3fuGDDRYJtkCeXfgKYK9kJag9yeZmhn9N5c5t"
+        ],
+        "simulationError": null,
+        "simulationUnits": 47265,
+        "simulationLogs": [
+          "Program log: Instruction: OpenPosition",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 47265 of 200000 compute units"
+        ],
+        "signature": "2VzHmC5C7NXf9op9de14Ei7mjnmoxd25Wgj8nKhdwQe8uRwJCzgk6bwPmzXVbnhYxXkZprzPcqUwtwfD2urL8nB3",
+        "transactionError": null,
+        "transactionUnits": 47265,
+        "transactionLogs": [
+          "Program log: Instruction: OpenPosition",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 47265 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "poolGrowthB": "94678",
+        "victimOwedB": "94639",
+        "newLiquidity": "0",
+        "newCheckpointB": "0",
+        "newOwedA": "0",
+        "newOwedB": "0",
+        "vaultA": "39999999999973929",
+        "vaultB": "198970",
+        "actorA": "2091934",
+        "actorB": "10000",
+        "nftAmount": "1"
+      }
+    },
+    {
+      "transaction": {
+        "label": "increase attacker liquidity",
+        "seededAbsentAccounts": [],
+        "simulationError": null,
+        "simulationUnits": 11137,
+        "simulationLogs": [
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11137 of 200000 compute units"
+        ],
+        "signature": "39RVLTicpMznDTh2SiDfNEFq39zJ8wuVJC7gjVpqmEuJGwqXQCKcaJG5SRuPEFizesF86i6KwWapXnUSiessfJjJ",
+        "transactionError": null,
+        "transactionUnits": 11137,
+        "transactionLogs": [
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11137 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894905844217",
+        "poolGrowthB": "94678",
+        "victimOwedB": "94639",
+        "newLiquidity": "100000000",
+        "newCheckpointB": "94678",
+        "newOwedA": "0",
+        "newOwedB": "0",
+        "vaultA": "40000000000190854",
+        "vaultB": "198971",
+        "actorA": "1875009",
+        "actorB": "9999",
+        "nftAmount": "1"
+      }
+    },
+    {
+      "transaction": {
+        "label": "permissionless update attacker position",
+        "seededAbsentAccounts": [],
+        "simulationError": null,
+        "simulationUnits": 8336,
+        "simulationLogs": [
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8336 of 200000 compute units"
+        ],
+        "signature": "4qeGTER8Bru1ZipJNADpMBthCbq978GKDTh8g1ZmZ9Qv9KNZSLHwdapLApVd2gCnkzVE4oS3KJECzWVVJ3Wm4xNw",
+        "transactionError": null,
+        "transactionUnits": 8336,
+        "transactionLogs": [
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8336 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894905844217",
+        "poolGrowthB": "94678",
+        "victimOwedB": "94639",
+        "newLiquidity": "100000000",
+        "newCheckpointB": "94678",
+        "newOwedA": "0",
+        "newOwedB": "0",
+        "vaultA": "40000000000190854",
+        "vaultB": "198971",
+        "actorA": "1875009",
+        "actorB": "9999",
+        "nftAmount": "1"
+      }
+    },
+    {
+      "transaction": {
+        "label": "collect attacker fees",
+        "seededAbsentAccounts": [],
+        "simulationError": null,
+        "simulationUnits": 11377,
+        "simulationLogs": [
+          "Program log: Instruction: CollectFees",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11377 of 200000 compute units"
+        ],
+        "signature": "4FgnDxHWK9wEcrx5ViF9dYVuLMQb2eYWs8rCF5wcrRj4atMPFegWm3otFeBU2Jdu7ruXFfMNqcNtjNbtfTneqs3T",
+        "transactionError": null,
+        "transactionUnits": 11377,
+        "transactionLogs": [
+          "Program log: Instruction: CollectFees",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11377 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894905844217",
+        "poolGrowthB": "94678",
+        "victimOwedB": "94639",
+        "newLiquidity": "100000000",
+        "newCheckpointB": "94678",
+        "newOwedA": "0",
+        "newOwedB": "0",
+        "vaultA": "40000000000190854",
+        "vaultB": "198971",
+        "actorA": "1875009",
+        "actorB": "9999",
+        "nftAmount": "1"
+      }
+    },
+    {
+      "transaction": {
+        "label": "decrease attacker liquidity",
+        "seededAbsentAccounts": [],
+        "simulationError": null,
+        "simulationUnits": 11101,
+        "simulationLogs": [
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11101 of 200000 compute units"
+        ],
+        "signature": "4wT8xxVFZ7YGE26vihGh1vNDJG8M5MUfEUJrKq2iEas9jKZQv24zR2Wy5tDwUSNdAG9RaErdeDtWKGdiyUppVHZM",
+        "transactionError": null,
+        "transactionUnits": 11101,
+        "transactionLogs": [
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11101 of 200000 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "poolGrowthB": "94678",
+        "victimOwedB": "94639",
+        "newLiquidity": "0",
+        "newCheckpointB": "94678",
+        "newOwedA": "0",
+        "newOwedB": "0",
+        "vaultA": "39999999999973930",
+        "vaultB": "198971",
+        "actorA": "2091933",
+        "actorB": "9999",
+        "nftAmount": "1"
+      }
+    }
+  ],
+  "after": {
+    "poolLiquidity": "18439611894805844217",
+    "poolGrowthB": "94678",
+    "victimOwedB": "94639",
+    "newLiquidity": "0",
+    "newCheckpointB": "94678",
+    "newOwedA": "0",
+    "newOwedB": "0",
+    "vaultA": "39999999999973930",
+    "vaultB": "198971",
+    "actorA": "2091933",
+    "actorB": "9999",
+    "nftAmount": "1"
+  }
+}

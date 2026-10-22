@@ -1,0 +1,414 @@
+{
+  "observedAtUtc": "2026-10-15T23:32:36.539Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "stateSlot": 457421970,
+  "program": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+  "accounts": {
+    "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA": {
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true,
+      "space": 36
+    },
+    "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug": {
+      "owner": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+      "executable": false,
+      "space": 672
+    },
+    "hKH9LFREBm3TxTx5Ex6D1nHTKEA8ii3CWfhEkB9s21u": {
+      "owner": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+      "executable": false,
+      "space": 672
+    },
+    "DbTYuFpdELAgyZBhX7TaTVDGYq1dJSQqdnAhtWHjxPjP": {
+      "owner": "ALPHAQmeA7bjrVuccPsYPiCvsi428SNwte66Srvs4pHA",
+      "executable": false,
+      "space": 672
+    }
+  },
+  "pairs": [
+    {
+      "a": "USDS",
+      "b": "USDC",
+      "pool": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+      "sizes": [
+        100,
+        1000,
+        10000,
+        100000
+      ]
+    },
+    {
+      "a": "JitoSOL",
+      "b": "WSOL",
+      "pool": "hKH9LFREBm3TxTx5Ex6D1nHTKEA8ii3CWfhEkB9s21u",
+      "sizes": [
+        1,
+        10,
+        100,
+        500
+      ]
+    },
+    {
+      "a": "mSOL",
+      "b": "WSOL",
+      "pool": "DbTYuFpdELAgyZBhX7TaTVDGYq1dJSQqdnAhtWHjxPjP",
+      "sizes": [
+        1,
+        10,
+        100,
+        500
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "pair": "USDS>USDC",
+      "size": 100,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "100000000",
+        "amountOut": "99993315",
+        "contextSlot": 457421970,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "99993315",
+        "amountOut": "99998925",
+        "contextSlot": 457421970,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": true,
+      "netInputRawBeforeTxFees": "-1075"
+    },
+    {
+      "pair": "USDS>USDC",
+      "size": 1000,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "1000000000",
+        "amountOut": "999931297",
+        "contextSlot": 457421970,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "999931297",
+        "amountOut": "999984208",
+        "contextSlot": 457421970,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "USDS>USDC",
+      "size": 10000,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "10000000000",
+        "amountOut": "9998757175",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "USDS>USDC",
+      "size": 100000,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "100000000000",
+        "amountOut": "99954936404",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "Raydium CLMM",
+            "ammKey": "AS5MV3ear4NZPMWXbCsEz3AdbCaXEnq4ChdaWsvLgkcM",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "JitoSOL>WSOL",
+      "size": 1,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "1000000000",
+        "amountOut": "1305554954",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "hKH9LFREBm3TxTx5Ex6D1nHTKEA8ii3CWfhEkB9s21u",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "1305554954",
+        "amountOut": "999992305",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": true,
+      "netInputRawBeforeTxFees": "-7695"
+    },
+    {
+      "pair": "JitoSOL>WSOL",
+      "size": 10,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "10000000000",
+        "amountOut": "13055549548",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "hKH9LFREBm3TxTx5Ex6D1nHTKEA8ii3CWfhEkB9s21u",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "13055549548",
+        "amountOut": "9999923058",
+        "contextSlot": 457421971,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": true,
+      "netInputRawBeforeTxFees": "-76942"
+    },
+    {
+      "pair": "JitoSOL>WSOL",
+      "size": 100,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "100000000000",
+        "amountOut": "130555128796",
+        "contextSlot": 457421972,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "JitoSOL>WSOL",
+      "size": 500,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "500000000000",
+        "amountOut": "652768284238",
+        "contextSlot": 457421972,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "mSOL>WSOL",
+      "size": 1,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "1000000000",
+        "amountOut": "1411177959",
+        "contextSlot": 457421972,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "DbTYuFpdELAgyZBhX7TaTVDGYq1dJSQqdnAhtWHjxPjP",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "1411177959",
+        "amountOut": "999982255",
+        "contextSlot": 457421972,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "AxSHFMAZbY3gEcKzzmweFZHxCAxCFtZruRDdS1WouLDL",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": true,
+      "netInputRawBeforeTxFees": "-17745"
+    },
+    {
+      "pair": "mSOL>WSOL",
+      "size": 10,
+      "target": true,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "10000000000",
+        "amountOut": "14111765687",
+        "contextSlot": 457421973,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "DbTYuFpdELAgyZBhX7TaTVDGYq1dJSQqdnAhtWHjxPjP",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "httpStatus": 200,
+        "amountIn": "14111765687",
+        "amountOut": "9999812703",
+        "contextSlot": 457421973,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "AxSHFMAZbY3gEcKzzmweFZHxCAxCFtZruRDdS1WouLDL",
+            "percent": 100
+          }
+        ]
+      },
+      "independent": true,
+      "netInputRawBeforeTxFees": "-187297"
+    },
+    {
+      "pair": "mSOL>WSOL",
+      "size": 100,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "100000000000",
+        "amountOut": "141114753863",
+        "contextSlot": 457421973,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "AxSHFMAZbY3gEcKzzmweFZHxCAxCFtZruRDdS1WouLDL",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    },
+    {
+      "pair": "mSOL>WSOL",
+      "size": 500,
+      "target": false,
+      "first": {
+        "httpStatus": 200,
+        "amountIn": "500000000000",
+        "amountOut": "705551993957",
+        "contextSlot": 457421974,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "AxSHFMAZbY3gEcKzzmweFZHxCAxCFtZruRDdS1WouLDL",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": null,
+      "independent": false,
+      "netInputRawBeforeTxFees": null
+    }
+  ],
+  "quoteMethod": "Jupiter ExactIn onlyDirectRoutes, first leg accepted only when exact AlphaQ pool wins, independent reverse exit",
+  "noTransaction": true,
+  "limitations": [
+    "Best direct quote does not enumerate all pools or atomic paths",
+    "No signed simulation unless a persistent fee-positive round trip appears"
+  ]
+}

@@ -1,0 +1,7 @@
+# Next propAMM gate: no eligible new controller in the bounded evidence
+
+Checked 2026-10-15. The [new immediate-parent transfer sample](new-amm-parent-transfer-sample.json), observed at 22:30:31 UTC, contains four programs: Kipseli, Obsidian, TesseraV, and Scorch. All four are explicitly excluded or already screened. Its three successful transactions per program do not establish an additional, untested program with a postdeployment program-signed major-token outflow.
+
+The earlier [six-program activity census](propamm-live-census.json), generated at 21:39:23 UTC, sampled 15 parsed transactions per program. The four with observed direct token outflows were Bison, GoonFi V2, HumidiFi, and AlphaQ, all excluded or already reported. The remaining Obric V2 and BisonPredict each had zero observed direct token outflows and zero source accounts in that bounded sample. A separate [40-transaction Obric screen](obric-v2-current-screen.json) also found no direct Obric outflow. The [prior liquid-major gate](propamm-next-liquid-major-screen.md) did not establish an eligible controller from these candidates.
+
+**Decision:** zero distinct eligible candidates in these saved samples. The required controller/authority proof fails before a current-account or independent-exit quote gate. No new RPC call, signed `simulateTransaction`, or broadcast was made for this pass. This is a bounded selection result, not evidence that Obric V2, BisonPredict, or any other program has no vault or outflow elsewhere.

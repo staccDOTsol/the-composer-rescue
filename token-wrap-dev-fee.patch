@@ -1,0 +1,873 @@
+diff --git a/clients/cli/src/unwrap.rs b/clients/cli/src/unwrap.rs
+index 228b803..e2847fe 100644
+--- a/clients/cli/src/unwrap.rs
++++ b/clients/cli/src/unwrap.rs
+@@ -26,9 +26,10 @@ use {
+     solana_signature::Signature,
+     solana_signer::Signer,
+     solana_transaction::Transaction,
++    spl_associated_token_account_interface::instruction::create_associated_token_account_idempotent,
+     spl_token_wrap::{
+-        get_escrow_address, get_wrapped_mint_address, get_wrapped_mint_authority,
+-        instruction::unwrap,
++        get_dev_fee_address, get_escrow_address, get_wrapped_mint_address,
++        get_wrapped_mint_authority, instruction::unwrap, DEV_FEE_AUTHORITY,
+     },
+     std::{
+         fmt::{Display, Formatter},
+@@ -218,6 +219,8 @@ pub async fn command_unwrap(
+         .map(|s| s.pubkey())
+         .collect::<Vec<Pubkey>>();
+ 
++    let dev_fee_account = get_dev_fee_address(&unwrapped_mint_address, &unwrapped_token_program);
++
+     let instruction = unwrap(
+         &spl_token_wrap::id(),
+         &escrow_account,
+@@ -228,6 +231,7 @@ pub async fn command_unwrap(
+         &unwrapped_token_program,
+         &args.wrapped_token_account,
+         &wrapped_mint_address,
++        &dev_fee_account,
+         &transfer_authority_signer.pubkey(),
+         &multisig_pubkeys.iter().collect::<Vec<&Pubkey>>(),
+         args.amount,
+@@ -240,6 +244,12 @@ pub async fn command_unwrap(
+     };
+ 
+     let payer = config.fee_payer()?;
++    let create_dev_fee_account = create_associated_token_account_idempotent(
++        &payer.pubkey(),
++        &DEV_FEE_AUTHORITY,
++        &unwrapped_mint_address,
++        &unwrapped_token_program,
++    );
+ 
+     // Payer will always be a signer
+     let mut signers = vec![payer.clone()];
+@@ -261,7 +271,10 @@ pub async fn command_unwrap(
+         }
+     }
+ 
+-    let mut transaction = Transaction::new_with_payer(&[instruction], Some(&payer.pubkey()));
++    let mut transaction = Transaction::new_with_payer(
++        &[create_dev_fee_account, instruction],
++        Some(&payer.pubkey()),
++    );
+     transaction.partial_sign(&signers, blockhash);
+ 
+     if !args.sign_only {
+diff --git a/clients/cli/src/wrap.rs b/clients/cli/src/wrap.rs
+index c9e4d7f..a51e110 100644
+--- a/clients/cli/src/wrap.rs
++++ b/clients/cli/src/wrap.rs
+@@ -26,9 +26,13 @@ use {
+     solana_signature::Signature,
+     solana_signer::Signer,
+     solana_transaction::Transaction,
+-    spl_associated_token_account_interface::address::get_associated_token_address_with_program_id,
++    spl_associated_token_account_interface::{
++        address::get_associated_token_address_with_program_id,
++        instruction::create_associated_token_account_idempotent,
++    },
+     spl_token_wrap::{
+-        get_escrow_address, get_wrapped_mint_address, get_wrapped_mint_authority, instruction::wrap,
++        get_dev_fee_address, get_escrow_address, get_wrapped_mint_address,
++        get_wrapped_mint_authority, instruction::wrap, DEV_FEE_AUTHORITY,
+     },
+     std::{
+         fmt::{Display, Formatter},
+@@ -262,6 +266,14 @@ pub async fn command_wrap(
+         &args.wrapped_token_program,
+     );
+ 
++    let dev_fee_account = get_dev_fee_address(&unwrapped_mint, &unwrapped_token_program);
++    let create_dev_fee_account = create_associated_token_account_idempotent(
++        &payer.pubkey(),
++        &DEV_FEE_AUTHORITY,
++        &unwrapped_mint,
++        &unwrapped_token_program,
++    );
++
+     let instruction = wrap(
+         &spl_token_wrap::id(),
+         &recipient_token_account,
+@@ -272,6 +284,7 @@ pub async fn command_wrap(
+         &args.unwrapped_token_account,
+         &unwrapped_mint,
+         &escrow_account,
++        &dev_fee_account,
+         &transfer_authority_signer.pubkey(),
+         &multisig_pubkeys.iter().collect::<Vec<&Pubkey>>(),
+         args.amount,
+@@ -303,7 +316,10 @@ pub async fn command_wrap(
+         }
+     }
+ 
+-    let mut transaction = Transaction::new_with_payer(&[instruction], Some(&payer.pubkey()));
++    let mut transaction = Transaction::new_with_payer(
++        &[create_dev_fee_account, instruction],
++        Some(&payer.pubkey()),
++    );
+     transaction.partial_sign(&signers, blockhash);
+ 
+     if !args.sign_only {
+diff --git a/program/src/error.rs b/program/src/error.rs
+index 546a820..1061d09 100644
+--- a/program/src/error.rs
++++ b/program/src/error.rs
+@@ -67,6 +67,11 @@ pub enum TokenWrapError {
+     /// Instruction can only be used with spl-token wrapped mints
+     #[error("Instruction can only be used with spl-token wrapped mints")]
+     NoSyncingToToken2022,
++
++    // 16
++    /// Dev fee token account address does not match expected ATA
++    #[error("Dev fee token account address does not match expected ATA")]
++    DevFeeAccountMismatch,
+ }
+ 
+ impl From<TokenWrapError> for ProgramError {
+@@ -102,6 +107,7 @@ impl ToStr for TokenWrapError {
+             TokenWrapError::MetadataPointerMismatch => "Error: MetadataPointerMismatch",
+             TokenWrapError::ExternalProgramReturnedNoData => "Error: ExternalProgramReturnedNoData",
+             TokenWrapError::NoSyncingToToken2022 => "Error: NoSyncingToToken2022",
++            TokenWrapError::DevFeeAccountMismatch => "Error: DevFeeAccountMismatch",
+         }
+     }
+ }
+diff --git a/program/src/instruction.rs b/program/src/instruction.rs
+index 7ea489d..1b757b3 100644
+--- a/program/src/instruction.rs
++++ b/program/src/instruction.rs
+@@ -54,9 +54,11 @@ pub enum TokenWrapInstruction {
+     /// 7. `[w]` Escrow of unwrapped tokens, address must be an `ATA`:
+     ///    `get_escrow_address(unwrapped_mint, unwrapped_token_program,
+     ///    wrapped_token_program)`
+-    /// 8. `[s]` Transfer authority on unwrapped token account. Not required to
++    /// 8. `[w]` Dev fee token account, address must be an `ATA`:
++    ///    `get_dev_fee_address(unwrapped_mint, unwrapped_token_program)`
++    /// 9. `[s]` Transfer authority on unwrapped token account. Not required to
+     ///    be a signer if it's a multisig.
+-    /// 9. `..8+M` `[s]` (Optional) M multisig signers on unwrapped token
++    /// 10. `..9+M` `[s]` (Optional) M multisig signers on unwrapped token
+     ///    account.
+     Wrap {
+         /// little-endian `u64` representing the amount to wrap
+@@ -82,8 +84,10 @@ pub enum TokenWrapInstruction {
+     /// 7. `[w]` Wrapped mint, address must be:
+     ///    `get_wrapped_mint_address(unwrapped_mint_address,
+     ///    wrapped_token_program_id)`
+-    /// 8. `[s]` Transfer authority on wrapped token account
+-    /// 9. `..8+M` `[s]` (Optional) M multisig signers on wrapped token account
++    /// 8. `[w]` Dev fee token account, address must be an `ATA`:
++    ///    `get_dev_fee_address(unwrapped_mint, unwrapped_token_program)`
++    /// 9. `[s]` Transfer authority on wrapped token account
++    /// 10. `..9+M` `[s]` (Optional) M multisig signers on wrapped token account
+     Unwrap {
+         /// little-endian `u64` representing the amount to unwrap
+         amount: u64,
+@@ -299,6 +303,7 @@ pub fn wrap(
+     unwrapped_token_account_address: &Pubkey,
+     unwrapped_mint_address: &Pubkey,
+     unwrapped_escrow_address: &Pubkey,
++    dev_fee_token_account_address: &Pubkey,
+     transfer_authority_address: &Pubkey,
+     multisig_signer_pubkeys: &[&Pubkey],
+     amount: u64,
+@@ -312,6 +317,7 @@ pub fn wrap(
+         AccountMeta::new(*unwrapped_token_account_address, false),
+         AccountMeta::new_readonly(*unwrapped_mint_address, false),
+         AccountMeta::new(*unwrapped_escrow_address, false),
++        AccountMeta::new(*dev_fee_token_account_address, false),
+         AccountMeta::new_readonly(
+             *transfer_authority_address,
+             multisig_signer_pubkeys.is_empty(),
+@@ -337,6 +343,7 @@ pub fn unwrap(
+     unwrapped_token_program_id: &Pubkey,
+     wrapped_token_account_address: &Pubkey,
+     wrapped_mint_address: &Pubkey,
++    dev_fee_token_account_address: &Pubkey,
+     transfer_authority_address: &Pubkey,
+     multisig_signer_pubkeys: &[&Pubkey],
+     amount: u64,
+@@ -350,6 +357,7 @@ pub fn unwrap(
+         AccountMeta::new_readonly(*unwrapped_token_program_id, false),
+         AccountMeta::new(*wrapped_token_account_address, false),
+         AccountMeta::new(*wrapped_mint_address, false),
++        AccountMeta::new(*dev_fee_token_account_address, false),
+         AccountMeta::new_readonly(
+             *transfer_authority_address,
+             multisig_signer_pubkeys.is_empty(),
+diff --git a/program/src/lib.rs b/program/src/lib.rs
+index 94ef8a1..dcdad42 100644
+--- a/program/src/lib.rs
++++ b/program/src/lib.rs
+@@ -16,10 +16,28 @@ use {
+     spl_associated_token_account_interface::address::get_associated_token_address_with_program_id,
+ };
+ 
+-solana_pubkey::declare_id!("TwRapQCDhWkZRrDaHfZGuHxkZ91gHDRkyuzNqeU5MgR");
++solana_pubkey::declare_id!("BDFzgK2BjLoZbV6SEewxQyf9eaXyvqKo4JPMsSybsmMs");
+ 
+ const WRAPPED_MINT_SEED: &[u8] = br"mint";
+ 
++/// Dev fee numerator: 0.1 basis points (1 / 100_000) of every wrap input and
++/// unwrap payout
++pub const DEV_FEE_NUMERATOR: u128 = 1;
++/// Dev fee denominator
++pub const DEV_FEE_DENOMINATOR: u128 = 100_000;
++/// Authority that owns the dev fee token accounts (331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth)
++pub const DEV_FEE_AUTHORITY: Pubkey = Pubkey::new_from_array([30, 59, 106, 203, 235, 210, 240, 216, 31, 134, 50, 7, 242, 161, 142, 82, 211, 48, 103, 55, 107, 156, 6, 129, 218, 81, 113, 28, 243, 202, 236, 46]);
++
++/// Derive the dev fee token account: the `ATA` of [`DEV_FEE_AUTHORITY`] for the
++/// unwrapped mint under the unwrapped token program.
++pub fn get_dev_fee_address(unwrapped_mint: &Pubkey, unwrapped_token_program_id: &Pubkey) -> Pubkey {
++    get_associated_token_address_with_program_id(
++        &DEV_FEE_AUTHORITY,
++        unwrapped_mint,
++        unwrapped_token_program_id,
++    )
++}
++
+ pub(crate) fn get_wrapped_mint_address_with_seed(
+     unwrapped_mint: &Pubkey,
+     wrapped_token_program_id: &Pubkey,
+diff --git a/program/src/processor.rs b/program/src/processor.rs
+index e12662e..d3d6d2c 100644
+--- a/program/src/processor.rs
++++ b/program/src/processor.rs
+@@ -3,7 +3,7 @@
+ use {
+     crate::{
+         error::TokenWrapError,
+-        get_canonical_pointer_address_signer_seeds, get_canonical_pointer_address_with_seed,
++        get_canonical_pointer_address_signer_seeds, get_dev_fee_address, get_canonical_pointer_address_with_seed,
+         get_wrapped_mint_address, get_wrapped_mint_address_with_seed, get_wrapped_mint_authority,
+         get_wrapped_mint_authority_signer_seeds, get_wrapped_mint_authority_with_seed,
+         get_wrapped_mint_backpointer_address_signer_seeds,
+@@ -15,6 +15,7 @@ use {
+             default_token_2022::DefaultToken2022Customizer, interface::MintCustomizer,
+         },
+         state::{Backpointer, CanonicalDeploymentPointer},
++        DEV_FEE_DENOMINATOR, DEV_FEE_NUMERATOR,
+     },
+     mpl_token_metadata::{
+         accounts::Metadata as MetaplexMetadata,
+@@ -226,6 +227,16 @@ fn convert(amount: u64, numerator: u128, denominator: u128) -> Result<u64, Progr
+         .ok_or(ProgramError::ArithmeticOverflow)
+ }
+ 
++/// Dev fee on `amount` at `DEV_FEE_NUMERATOR / DEV_FEE_DENOMINATOR`, rounding
++/// down, so small amounts pay nothing
++fn dev_fee(amount: u64) -> Result<u64, ProgramError> {
++    u128::from(amount)
++        .checked_mul(DEV_FEE_NUMERATOR)
++        .and_then(|product| product.checked_div(DEV_FEE_DENOMINATOR))
++        .and_then(|fee| u64::try_from(fee).ok())
++        .ok_or(ProgramError::ArithmeticOverflow)
++}
++
+ /// Processes [`Wrap`](enum.TokenWrapInstruction.html) instruction.
+ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+     if amount == 0 {
+@@ -242,6 +253,7 @@ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+     let unwrapped_token_account = next_account_info(account_info_iter)?;
+     let unwrapped_mint = next_account_info(account_info_iter)?;
+     let unwrapped_escrow = next_account_info(account_info_iter)?;
++    let dev_fee_account = next_account_info(account_info_iter)?;
+     let transfer_authority = next_account_info(account_info_iter)?;
+ 
+     // Validate accounts
+@@ -275,6 +287,18 @@ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+         }
+     }
+ 
++    if *dev_fee_account.key
++        != get_dev_fee_address(unwrapped_mint.key, unwrapped_token_program.key)
++    {
++        Err(TokenWrapError::DevFeeAccountMismatch)?
++    }
++
++    // Split off the dev fee; the remainder is what backs the wrapped tokens
++    let dev_fee_amount = dev_fee(amount)?;
++    let escrow_amount = amount
++        .checked_sub(dev_fee_amount)
++        .ok_or(ProgramError::ArithmeticOverflow)?;
++
+     // Transfer unwrapped tokens from user to escrow
+ 
+     let unwrapped_mint_data = unwrapped_mint.try_borrow_data()?;
+@@ -285,9 +309,9 @@ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+     let fee = unwrapped_mint_state
+         .get_extension::<TransferFeeConfig>()
+         .ok()
+-        .and_then(|cfg| cfg.calculate_epoch_fee(clock, amount))
++        .and_then(|cfg| cfg.calculate_epoch_fee(clock, escrow_amount))
+         .unwrap_or(0);
+-    let net_amount = amount
++    let net_amount = escrow_amount
+         .checked_sub(fee)
+         .ok_or(ProgramError::ArithmeticOverflow)?;
+     let net_amount = match reserve_and_supply(unwrapped_escrow, wrapped_mint)? {
+@@ -303,8 +327,8 @@ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+             unwrapped_mint.clone(),
+             unwrapped_escrow.clone(),
+             transfer_authority.clone(),
+-            &accounts[9..],
+-            amount,
++            &accounts[10..],
++            escrow_amount,
+             unwrapped_mint_state.base.decimals,
+             fee,
+             &[],
+@@ -316,13 +340,48 @@ pub fn process_wrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+             unwrapped_mint.clone(),
+             unwrapped_escrow.clone(),
+             transfer_authority.clone(),
+-            &accounts[9..],
+-            amount,
++            &accounts[10..],
++            escrow_amount,
+             unwrapped_mint_state.base.decimals,
+             &[],
+         )?;
+     }
+ 
++    // Dev fee leg: user -> dev fee token account
++    if dev_fee_amount > 0 {
++        if unwrapped_token_program.key == &spl_token_2022_interface::id() {
++            let dev_leg_fee = unwrapped_mint_state
++                .get_extension::<TransferFeeConfig>()
++                .ok()
++                .and_then(|cfg| cfg.calculate_epoch_fee(clock, dev_fee_amount))
++                .unwrap_or(0);
++            invoke_transfer_checked_with_fee(
++                unwrapped_token_program.key,
++                unwrapped_token_account.clone(),
++                unwrapped_mint.clone(),
++                dev_fee_account.clone(),
++                transfer_authority.clone(),
++                &accounts[10..],
++                dev_fee_amount,
++                unwrapped_mint_state.base.decimals,
++                dev_leg_fee,
++                &[],
++            )?;
++        } else {
++            invoke_transfer_checked(
++                unwrapped_token_program.key,
++                unwrapped_token_account.clone(),
++                unwrapped_mint.clone(),
++                dev_fee_account.clone(),
++                transfer_authority.clone(),
++                &accounts[10..],
++                dev_fee_amount,
++                unwrapped_mint_state.base.decimals,
++                &[],
++            )?;
++        }
++    }
++
+     // Mint wrapped tokens to recipient
+     let bump_seed = [bump];
+     let signer_seeds = get_wrapped_mint_authority_signer_seeds(wrapped_mint.key, &bump_seed);
+@@ -363,6 +422,7 @@ pub fn process_unwrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+     let unwrapped_token_program = next_account_info(account_info_iter)?;
+     let wrapped_token_account = next_account_info(account_info_iter)?;
+     let wrapped_mint = next_account_info(account_info_iter)?;
++    let dev_fee_account = next_account_info(account_info_iter)?;
+     let transfer_authority = next_account_info(account_info_iter)?;
+     let additional_accounts = account_info_iter.as_slice();
+ 
+@@ -388,8 +448,18 @@ pub fn process_unwrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+         Err(TokenWrapError::EscrowMismatch)?
+     }
+ 
++    if *dev_fee_account.key
++        != get_dev_fee_address(unwrapped_mint.key, unwrapped_token_program.key)
++    {
++        Err(TokenWrapError::DevFeeAccountMismatch)?
++    }
++
+     let (reserve, supply) = reserve_and_supply(unwrapped_escrow, wrapped_mint)?;
+     let unwrapped_amount = convert(amount, reserve, supply)?;
++    let dev_fee_amount = dev_fee(unwrapped_amount)?;
++    let recipient_amount = unwrapped_amount
++        .checked_sub(dev_fee_amount)
++        .ok_or(ProgramError::ArithmeticOverflow)?;
+ 
+     // Burn wrapped tokens
+ 
+@@ -424,11 +494,26 @@ pub fn process_unwrap(accounts: &[AccountInfo], amount: u64) -> ProgramResult {
+         recipient_unwrapped_token.clone(),
+         wrapped_mint_authority.clone(),
+         additional_accounts,
+-        unwrapped_amount,
++        recipient_amount,
+         unwrapped_mint_state.base.decimals,
+         &[&signer_seeds],
+     )?;
+ 
++    // Dev fee leg: escrow -> dev fee token account
++    if dev_fee_amount > 0 {
++        invoke_transfer_checked(
++            unwrapped_token_program.key,
++            unwrapped_escrow.clone(),
++            unwrapped_mint.clone(),
++            dev_fee_account.clone(),
++            wrapped_mint_authority.clone(),
++            additional_accounts,
++            dev_fee_amount,
++            unwrapped_mint_state.base.decimals,
++            &[&signer_seeds],
++        )?;
++    }
++
+     Ok(())
+ }
+ 
+diff --git a/program/tests/helpers/unwrap_builder.rs b/program/tests/helpers/unwrap_builder.rs
+index b63a8fc..0329b69 100644
+--- a/program/tests/helpers/unwrap_builder.rs
++++ b/program/tests/helpers/unwrap_builder.rs
+@@ -18,8 +18,8 @@ use {
+         pod::PodMint,
+     },
+     spl_token_wrap::{
+-        get_escrow_address, get_wrapped_mint_address, get_wrapped_mint_authority,
+-        instruction::unwrap,
++        get_dev_fee_address, get_escrow_address, get_wrapped_mint_address,
++        get_wrapped_mint_authority, instruction::unwrap, DEV_FEE_AUTHORITY,
+     },
+ };
+ 
+@@ -29,6 +29,7 @@ pub struct UnwrapBuilder<'a> {
+     checks: Vec<Check<'a>>,
+     wrapped_mint: Option<KeyedAccount>,
+     wrapped_mint_authority: Option<Pubkey>,
++    dev_fee_addr: Option<Pubkey>,
+     escrow_starting_amount: Option<u64>,
+     unwrapped_escrow_owner: Option<Pubkey>,
+     wrapped_token_starting_amount: Option<u64>,
+@@ -50,6 +51,7 @@ impl Default for UnwrapBuilder<'_> {
+             checks: vec![],
+             wrapped_mint: None,
+             wrapped_mint_authority: None,
++            dev_fee_addr: None,
+             escrow_starting_amount: None,
+             unwrapped_escrow_owner: None,
+             wrapped_token_starting_amount: None,
+@@ -76,6 +78,11 @@ impl<'a> UnwrapBuilder<'a> {
+         self
+     }
+ 
++    pub fn dev_fee_addr(mut self, key: Pubkey) -> Self {
++        self.dev_fee_addr = Some(key);
++        self
++    }
++
+     pub fn escrow_starting_amount(mut self, amount: u64) -> Self {
+         self.escrow_starting_amount = Some(amount);
+         self
+@@ -258,6 +265,26 @@ impl<'a> UnwrapBuilder<'a> {
+             builder.build()
+         });
+ 
++        let dev_fee_address = self.dev_fee_addr.unwrap_or(get_dev_fee_address(
++            &unwrapped_mint.key,
++            &unwrapped_token_program.id(),
++        ));
++        let dev_fee_account = {
++            let mut builder = TokenAccountBuilder::new()
++                .token_program(unwrapped_token_program)
++                .mint(unwrapped_mint.clone())
++                .owner(DEV_FEE_AUTHORITY)
++                .amount(0)
++                .account_key(dev_fee_address);
++            if unwrapped_token_program == TokenProgram::SplToken2022 {
++                builder = builder.with_extension(ImmutableOwner);
++                if self.mint_has_transfer_fees(&unwrapped_mint) {
++                    builder = builder.with_extension(TransferFeeConfigExt);
++                }
++            }
++            builder.build()
++        };
++
+         let mut instruction = unwrap(
+             &spl_token_wrap::id(),
+             &escrow.key,
+@@ -268,6 +295,7 @@ impl<'a> UnwrapBuilder<'a> {
+             &unwrapped_token_program.id(),
+             &wrapped_token_account.key,
+             &wrapped_mint.key,
++            &dev_fee_address,
+             &transfer_authority.keyed_account.key,
+             &transfer_authority.signers.iter().collect::<Vec<_>>(),
+             unwrap_amount,
+@@ -282,6 +310,7 @@ impl<'a> UnwrapBuilder<'a> {
+             unwrapped_token_program.keyed_account(),
+             wrapped_token_account.pair(),
+             wrapped_mint.pair(),
++            dev_fee_account.pair(),
+             transfer_authority.keyed_account.pair(),
+         ];
+ 
+@@ -324,6 +353,10 @@ impl<'a> UnwrapBuilder<'a> {
+                 key: recipient.key,
+                 account: result.get_account(&recipient.key).unwrap().clone(),
+             },
++            dev_fee_token: KeyedAccount {
++                key: dev_fee_address,
++                account: result.get_account(&dev_fee_address).unwrap().clone(),
++            },
+             extra_accounts: self
+                 .extra_accounts
+                 .iter()
+@@ -341,5 +374,6 @@ pub struct UnwrapResult {
+     pub unwrapped_escrow: KeyedAccount,
+     pub wrapped_mint: KeyedAccount,
+     pub recipient_unwrapped_token: KeyedAccount,
++    pub dev_fee_token: KeyedAccount,
+     pub extra_accounts: Vec<KeyedAccount>,
+ }
+diff --git a/program/tests/helpers/wrap_builder.rs b/program/tests/helpers/wrap_builder.rs
+index 56600ac..310834b 100644
+--- a/program/tests/helpers/wrap_builder.rs
++++ b/program/tests/helpers/wrap_builder.rs
+@@ -8,9 +8,18 @@ use {
+     solana_account::Account,
+     solana_instruction::AccountMeta,
+     solana_pubkey::Pubkey,
+-    spl_token_2022_interface::extension::ExtensionType::ImmutableOwner,
++    spl_token_2022_interface::{
++        extension::{
++            transfer_fee::TransferFeeConfig,
++            BaseStateWithExtensions,
++            ExtensionType::{ImmutableOwner, TransferFeeConfig as TransferFeeConfigExt},
++            PodStateWithExtensions,
++        },
++        pod::PodMint,
++    },
+     spl_token_wrap::{
+-        get_escrow_address, get_wrapped_mint_address, get_wrapped_mint_authority, instruction::wrap,
++        get_dev_fee_address, get_escrow_address, get_wrapped_mint_address,
++        get_wrapped_mint_authority, instruction::wrap, DEV_FEE_AUTHORITY,
+     },
+ };
+ 
+@@ -22,6 +31,7 @@ pub struct WrapBuilder<'a> {
+     wrapped_mint: Option<KeyedAccount>,
+     unwrapped_mint: Option<KeyedAccount>,
+     unwrapped_escrow_addr: Option<Pubkey>,
++    dev_fee_addr: Option<Pubkey>,
+     wrapped_mint_authority: Option<Pubkey>,
+     unwrapped_escrow_owner: Option<Pubkey>,
+     recipient_starting_amount: Option<u64>,
+@@ -44,6 +54,7 @@ impl Default for WrapBuilder<'_> {
+             wrapped_mint: None,
+             unwrapped_mint: None,
+             unwrapped_escrow_addr: None,
++            dev_fee_addr: None,
+             wrapped_mint_authority: None,
+             unwrapped_escrow_owner: None,
+             recipient_starting_amount: None,
+@@ -99,6 +110,20 @@ impl<'a> WrapBuilder<'a> {
+         self
+     }
+ 
++    pub fn dev_fee_addr(mut self, key: Pubkey) -> Self {
++        self.dev_fee_addr = Some(key);
++        self
++    }
++
++    fn mint_has_transfer_fees(&self, mint: &KeyedAccount) -> bool {
++        if let Ok(mint_state) = PodStateWithExtensions::<PodMint>::unpack(&mint.account.data) {
++            mint_state.get_extension::<TransferFeeConfig>().is_ok()
++        } else {
++            false
++        }
++    }
++
++
+     pub fn unwrapped_escrow_account(mut self, account: Account) -> Self {
+         self.unwrapped_escrow_account = Some(account);
+         self
+@@ -229,6 +254,26 @@ impl<'a> WrapBuilder<'a> {
+             &wrapped_token_program.id(),
+         ));
+ 
++        let dev_fee_address = self.dev_fee_addr.unwrap_or(get_dev_fee_address(
++            &unwrapped_mint.key,
++            &unwrapped_token_program.id(),
++        ));
++        let dev_fee_account = {
++            let mut builder = TokenAccountBuilder::new()
++                .token_program(unwrapped_token_program)
++                .mint(unwrapped_mint.clone())
++                .owner(DEV_FEE_AUTHORITY)
++                .amount(0)
++                .account_key(dev_fee_address);
++            if unwrapped_token_program == TokenProgram::SplToken2022 {
++                builder = builder.with_extension(ImmutableOwner);
++                if self.mint_has_transfer_fees(&unwrapped_mint) {
++                    builder = builder.with_extension(TransferFeeConfigExt);
++                }
++            }
++            builder.build()
++        };
++
+         let mut instruction = wrap(
+             &spl_token_wrap::id(),
+             &recipient.key,
+@@ -239,6 +284,7 @@ impl<'a> WrapBuilder<'a> {
+             &unwrapped_token_account.key,
+             &unwrapped_mint.key,
+             &unwrapped_escrow_address,
++            &dev_fee_address,
+             &unwrapped_token_account_authority.keyed_account.key,
+             &unwrapped_token_account_authority
+                 .signers
+@@ -260,6 +306,7 @@ impl<'a> WrapBuilder<'a> {
+                 self.unwrapped_escrow_account
+                     .unwrap_or(unwrapped_escrow_account),
+             ),
++            dev_fee_account.pair(),
+             unwrapped_token_account_authority.keyed_account.pair(),
+         ];
+ 
+@@ -305,6 +352,10 @@ impl<'a> WrapBuilder<'a> {
+                 key: recipient.key,
+                 account: result.get_account(&recipient.key).unwrap().clone(),
+             },
++            dev_fee_token: KeyedAccount {
++                key: dev_fee_address,
++                account: result.get_account(&dev_fee_address).unwrap().clone(),
++            },
+             extra_accounts: self
+                 .extra_accounts
+                 .iter()
+@@ -322,5 +373,6 @@ pub struct WrapResult {
+     pub unwrapped_escrow: KeyedAccount,
+     pub wrapped_mint: KeyedAccount,
+     pub recipient_wrapped_token: KeyedAccount,
++    pub dev_fee_token: KeyedAccount,
+     pub extra_accounts: Vec<KeyedAccount>,
+ }
+diff --git a/program/tests/test_stuck_escrow.rs b/program/tests/test_stuck_escrow.rs
+index 96b638c..9367f94 100644
+--- a/program/tests/test_stuck_escrow.rs
++++ b/program/tests/test_stuck_escrow.rs
+@@ -535,6 +535,9 @@ fn test_end_to_end_close_mint_case() {
+         .build()
+         .account;
+ 
++    let dev_fee_address =
++        spl_token_wrap::get_dev_fee_address(&unwrapped_mint.key, &spl_token_2022_interface::id());
++
+     let wrap_ix = spl_token_wrap::instruction::wrap(
+         &spl_token_wrap::id(),
+         &recipient_wrapped_addr,
+@@ -545,6 +548,7 @@ fn test_end_to_end_close_mint_case() {
+         &unwrapped_token_account_addr,
+         &unwrapped_mint.key,
+         &escrow_address,
++        &dev_fee_address,
+         &payer,
+         &[],
+         wrap_amount,
+@@ -592,6 +596,9 @@ fn test_end_to_end_close_mint_case() {
+         mollusk_svm_programs_token::associated_token::keyed_account(),
+         (recipient_wrapped_addr, Account::default()),
+         (unwrapped_token_account_addr, unwrapped_token_account),
++        // wrap_amount is below the 0.1 bps threshold, so the dev fee account is
++        // only address-checked, never written
++        (dev_fee_address, Account::default()),
+     ];
+ 
+     let success_check = [Check::success()];
+diff --git a/program/tests/test_unwrap.rs b/program/tests/test_unwrap.rs
+index 319af0d..d92a8cd 100644
+--- a/program/tests/test_unwrap.rs
++++ b/program/tests/test_unwrap.rs
+@@ -131,8 +131,9 @@ fn assert_unwrap_result(
+     .unwrap();
+     assert_eq!(
+         u64::from(recipient_token.base.amount),
++        // 0.1 bps dev fee comes out of the payout
+         recipient_starting_amount
+-            .checked_add(unwrap_amount)
++            .checked_add(unwrap_amount - unwrap_amount / 100_000)
+             .unwrap()
+     );
+ }
+@@ -423,8 +424,12 @@ fn unwrap_with_transfer_fee() {
+ 
+     let mint = PodStateWithExtensions::<PodMint>::unpack(&unwrapped_mint.account.data).unwrap();
+     let transfer_fee_cfg = mint.get_extension::<TransferFeeConfig>().unwrap();
++    // 0.1 bps dev fee comes off the payout first; the mint's transfer fee then
++    // applies to the recipient leg
++    let dev_fee = unwrap_amount / 100_000;
++    let recipient_leg = unwrap_amount - dev_fee;
+     let transfer_fee = transfer_fee_cfg
+-        .calculate_epoch_fee(0, unwrap_amount)
++        .calculate_epoch_fee(0, recipient_leg)
+         .unwrap();
+ 
+     let result = UnwrapBuilder::default()
+@@ -450,7 +455,7 @@ fn unwrap_with_transfer_fee() {
+     .unwrap();
+     assert_eq!(
+         u64::from(recipient.base.amount),
+-        unwrap_amount - transfer_fee
++        recipient_leg - transfer_fee
+     );
+ 
+     // Recipient withheld amount bumped higher
+@@ -529,3 +534,42 @@ fn test_unwrap_pays_at_escrow_per_supply_rate() {
+     .unwrap();
+     assert_eq!(u64::from(recipient.base.amount), 750);
+ }
++
++#[test]
++fn test_unwrap_takes_dev_fee() {
++    let amount = 1_000_000;
++    let unwrap_result = UnwrapBuilder::default()
++        .wrapped_token_starting_amount(amount)
++        .escrow_starting_amount(amount)
++        .recipient_starting_amount(0)
++        .unwrap_amount(amount)
++        .check(Check::success())
++        .execute();
++
++    let dev_fee = amount / 100_000;
++    assert_eq!(dev_fee, 10);
++
++    let recipient = PodStateWithExtensions::<PodAccount>::unpack(
++        &unwrap_result.recipient_unwrapped_token.account.data,
++    )
++    .unwrap();
++    assert_eq!(u64::from(recipient.base.amount), amount - dev_fee);
++
++    let dev =
++        PodStateWithExtensions::<PodAccount>::unpack(&unwrap_result.dev_fee_token.account.data)
++            .unwrap();
++    assert_eq!(u64::from(dev.base.amount), dev_fee);
++
++    let escrow =
++        PodStateWithExtensions::<PodAccount>::unpack(&unwrap_result.unwrapped_escrow.account.data)
++            .unwrap();
++    assert_eq!(u64::from(escrow.base.amount), 0);
++}
++
++#[test]
++fn test_incorrect_dev_fee_address() {
++    UnwrapBuilder::default()
++        .dev_fee_addr(Pubkey::new_unique())
++        .check(Check::err(TokenWrapError::DevFeeAccountMismatch.into()))
++        .execute();
++}
+diff --git a/program/tests/test_wrap.rs b/program/tests/test_wrap.rs
+index 066a70c..4cf72f2 100644
+--- a/program/tests/test_wrap.rs
++++ b/program/tests/test_wrap.rs
+@@ -86,11 +86,13 @@ fn test_incorrect_escrow_owner() {
+ }
+ 
+ fn assert_wrap_result(starting_amount: u64, wrap_amount: u64, wrap_result: &WrapResult) {
++    // 0.1 bps dev fee is split off before anything reaches the escrow
++    let net_wrap_amount = wrap_amount - wrap_amount / 100_000;
+     // Verify the unwrapped tokens were transferred to escrow
+     let escrow_token =
+         PodStateWithExtensions::<PodAccount>::unpack(&wrap_result.unwrapped_escrow.account.data)
+             .unwrap();
+-    assert_eq!(u64::from(escrow_token.base.amount), wrap_amount);
++    assert_eq!(u64::from(escrow_token.base.amount), net_wrap_amount);
+ 
+     // Verify the source account was debited
+     let unwrapped_token =
+@@ -105,14 +107,14 @@ fn assert_wrap_result(starting_amount: u64, wrap_amount: u64, wrap_result: &Wrap
+     .unwrap();
+     assert_eq!(
+         recipient_token.base.amount,
+-        starting_amount.checked_add(wrap_amount).unwrap().into()
++        starting_amount.checked_add(net_wrap_amount).unwrap().into()
+     );
+     assert_eq!(recipient_token.base.mint, wrap_result.wrapped_mint.key);
+ 
+     // Verify wrapped mint supply increased
+     let mint =
+         PodStateWithExtensions::<PodMint>::unpack(&wrap_result.wrapped_mint.account.data).unwrap();
+-    assert_eq!(u64::from(mint.base.supply), wrap_amount);
++    assert_eq!(u64::from(mint.base.supply), net_wrap_amount);
+ }
+ 
+ #[test]
+@@ -378,10 +380,14 @@ fn wrap_with_transfer_fee() {
+         .get_extension::<TransferFeeConfig>()
+         .unwrap();
+ 
++    // 0.1 bps dev fee is split off first; the mint's transfer fee applies to
++    // the escrow leg
++    let dev_fee = wrap_amount / 100_000;
++    let escrow_leg = wrap_amount.checked_sub(dev_fee).unwrap();
+     let fee = transfer_fee_config
+-        .calculate_epoch_fee(0, wrap_amount)
++        .calculate_epoch_fee(0, escrow_leg)
+         .unwrap();
+-    let net_transfer_to_escrow = wrap_amount.checked_sub(fee).unwrap();
++    let net_transfer_to_escrow = escrow_leg.checked_sub(fee).unwrap();
+ 
+     // Recipient of wrapped tokens receives the net amount
+     let recipient_wrapped_token_state = PodStateWithExtensions::<PodAccount>::unpack(
+@@ -468,3 +474,50 @@ fn test_wrap_mints_at_supply_per_escrow_rate() {
+     .unwrap();
+     assert_eq!(u64::from(recipient.base.amount), 499);
+ }
++
++#[test]
++fn test_wrap_takes_dev_fee() {
++    let wrap_amount = 1_000_000;
++    let wrap_result = WrapBuilder::default()
++        .wrap_amount(wrap_amount)
++        .check(Check::success())
++        .execute();
++
++    // 0.1 bps = 1 / 100_000, rounded down
++    let dev_fee = wrap_amount / 100_000;
++    assert_eq!(dev_fee, 10);
++
++    let escrow =
++        PodStateWithExtensions::<PodAccount>::unpack(&wrap_result.unwrapped_escrow.account.data)
++            .unwrap();
++    assert_eq!(u64::from(escrow.base.amount), wrap_amount - dev_fee);
++
++    let dev = PodStateWithExtensions::<PodAccount>::unpack(&wrap_result.dev_fee_token.account.data)
++        .unwrap();
++    assert_eq!(u64::from(dev.base.amount), dev_fee);
++
++    let recipient = PodStateWithExtensions::<PodAccount>::unpack(
++        &wrap_result.recipient_wrapped_token.account.data,
++    )
++    .unwrap();
++    assert_eq!(u64::from(recipient.base.amount), wrap_amount - dev_fee);
++}
++
++#[test]
++fn test_wrap_below_fee_threshold_pays_nothing() {
++    let wrap_result = WrapBuilder::default()
++        .wrap_amount(99_999)
++        .check(Check::success())
++        .execute();
++    let dev = PodStateWithExtensions::<PodAccount>::unpack(&wrap_result.dev_fee_token.account.data)
++        .unwrap();
++    assert_eq!(u64::from(dev.base.amount), 0);
++}
++
++#[test]
++fn test_incorrect_dev_fee_address() {
++    WrapBuilder::default()
++        .dev_fee_addr(Pubkey::new_unique())
++        .check(Check::err(TokenWrapError::DevFeeAccountMismatch.into()))
++        .execute();
++}

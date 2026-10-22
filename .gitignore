@@ -1,0 +1,71 @@
+# secrets
+*.env
+.env
+.env.*
+!.env.example
+!*.env.example
+.envrc
+*keypair*.json
+*-keypair.json
+id.json
+*.pem
+*.key
+
+# separate forward-build app (has its own secrets) + scratch
+secretsfun/
+tmp/
+.surfpool/
+
+# deps / build
+node_modules/
+target/
+dist/
+
+# os
+.DS_Store
+**/.DS_Store
+
+# over GitHub 100MB hard limit
+composer-runs/2026-10-15/foxy-controller-audit/history-map.json
+
+# vendored third-party source clones (embedded git repos, not our composer work)
+/composer-runs/2026-10-15/byreal-source/
+/composer-runs/2026-10-15/chnry-usdg-daybreak-provider-larix-source/
+/composer-runs/2026-10-15/chnry-usdg-daybreak-provider-port-source/
+/composer-runs/2026-10-15/chnry-usdg-daybreak-provider-save-source/
+/composer-runs/2026-10-15/chnry-usdg-integrity-records/
+/composer-runs/2026-10-15/chnry-usdg-source/
+/composer-runs/2026-10-15/damm-v2-source/
+/composer-runs/2026-10-15/drift-source/
+/composer-runs/2026-10-15/fragmetric-core-current-audit/jito-restaking-source/
+/composer-runs/2026-10-15/fragmetric-core-current-audit/official-docs-source/
+/composer-runs/2026-10-15/gover-phy-audit/source-mythic-spl/
+/composer-runs/2026-10-15/gover-phy-audit/source-spl-governance-v3/
+/composer-runs/2026-10-15/gr8t-token-migrator-source/
+/composer-runs/2026-10-15/hastra-deployed-source/
+/composer-runs/2026-10-15/hastra-public-source/
+/composer-runs/2026-10-15/hylo-exchange-sdk-source/
+/composer-runs/2026-10-15/hylo-stability-sdk-source/
+/composer-runs/2026-10-15/jup6qf-fluid-source/
+/composer-runs/2026-10-15/jup6qf-source/
+/composer-runs/2026-10-15/kliquidity-sdk-official/
+/composer-runs/2026-10-15/kvault-source-2dadf944/
+/composer-runs/2026-10-15/locp-fogo-reference/
+/composer-runs/2026-10-15/locp-sdk/
+/composer-runs/2026-10-15/manifest-source/
+/composer-runs/2026-10-15/marginfi-source/
+/composer-runs/2026-10-15/meteora-dbc-source/
+/composer-runs/2026-10-15/onre-jup-integration-source/
+/composer-runs/2026-10-15/onre-source/
+/composer-runs/2026-10-15/prime-controller-source/
+/composer-runs/2026-10-15/rise-public-source/
+/composer-runs/2026-10-15/sanctum-inf-source/
+/composer-runs/2026-10-15/sanctum-splmulti-source/
+/composer-runs/2026-10-15/scope-source/
+/composer-runs/2026-10-15/sp12-source-official/
+/composer-runs/2026-10-15/sp12-source-spoo-v2.0.3/
+/composer-runs/2026-10-15/usdu-controller-audit-VALT7/unitas-audits/
+/composer-runs/2026-10-15/usdu-controller-audit-VALT7/unitas-idl-source/
+/composer-runs/2026-10-15/validator-bonds-deployed-1989b66/
+/composer-runs/2026-10-15/validator-bonds-source/
+/composer-runs/2026-10-15/wormhole-source/

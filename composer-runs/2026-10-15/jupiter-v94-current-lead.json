@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-10-15T20:10:00Z",
+  "scope": "current-mainnet read-only state plus public Jupiter quote API; no mainnet transaction submitted",
+  "candidate": "Jupiter Vault 94 reUSD/USDC DEX-smart-collateral oracle cross-pool manipulation",
+  "disposition": "deferred",
+  "confidence": "medium",
+  "poolA": {
+    "vaultId": 94,
+    "vaultConfig": "5uo4CAFd8aL6pN6kgJs1kPZBCHDKGEcN6b76cLjEkbW9",
+    "oracle": "GYKpB8imFWxBT5dTQe7aRJxLRyqNJLWbR8zHLpaqHMJ7",
+    "oracleSource": "FCA47Dsxhw537gzXDktSMYgU5hPyt7owvKNKhmMXWNWz",
+    "dex": "85MmkyvQL4tJoe1TMjxqFHZDhjuCW8SiBR2h5Zrk3mhh",
+    "reUsdMint": "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT",
+    "usdcMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "stateSlot": 457362047,
+    "reUsdSupplyRaw": "37412150837",
+    "usdcSupplyRaw": "64955646",
+    "feeBps4": "200",
+    "centerPriceX15": "1106999763058202",
+    "collateralFactorBps": 870,
+    "liquidationThresholdBps": 900,
+    "pegBufferPercent": "5000"
+  },
+  "consumerExposure": {
+    "censusSlot": 457355431,
+    "positionCount": 5,
+    "borrowingPositions": 2,
+    "totalPositionSupplyRaw": "43026844360",
+    "totalPositionDustDebtRaw": "3396632",
+    "perPositionHealthAndCredit": "not yet decoded"
+  },
+  "zeroFeeFlash": {
+    "reUsdReserve": "8ZTwUgBXoEKUQNV63GS2xaMhsciJMQNLeBSXgZihvp52",
+    "market": "45MBhfB6SNw2rRSWzUwBqG3e9JJnS6UWvDDdQvBsUnds",
+    "availableRawAtCensus": "9929955938930694",
+    "flashFeeSf": "0"
+  },
+  "independentExit": {
+    "quoteContextSlot": 457365300,
+    "path": [
+      {
+        "ammKey": "AM8rYsQewRaDXt5wimrzEoJuJ7LxLdr1Pur897fkXDgT",
+        "label": "JupLend AMM",
+        "inputMint": "2uxaYT1fVrp6Fg2BrxQcyKSW91hefM6dG9krpbeDiirT",
+        "outputMint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD"
+      },
+      {
+        "label": "USD/USDC split across Manifest, GoonFi V2, AlphaQ; at larger size Raydium CLMM and Whirlpool also route",
+        "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      }
+    ],
+    "quotes": [
+      {
+        "reUsdInRaw": "37000000000000",
+        "usdcOutRaw": "40983428497",
+        "effectiveUsdcPerReUsd": "1.1076602296486486",
+        "priceImpactPctReported": "0"
+      },
+      {
+        "reUsdInRaw": "50000000000000",
+        "usdcOutRaw": "55382290268",
+        "effectiveUsdcPerReUsd": "1.10764580536",
+        "priceImpactPctReported": "0.0000024065919300314772130356"
+      },
+      {
+        "reUsdInRaw": "1000000000000000",
+        "usdcOutRaw": "1106784205331",
+        "effectiveUsdcPerReUsd": "1.106784205331",
+        "priceImpactPctReported": "0.00078027073524278676916367"
+      }
+    ],
+    "routeValidCapacityLowerBoundReUsd": "1000000",
+    "individualPoolBLiquidity": "not decoded before branch pause"
+  },
+  "deploymentAttestation": {
+    "slot": 457363986,
+    "vaultsBinarySha256": "2f2d6f759197ce02f27e4397a6674f18919bfb3c6704de19c308be6c8c415612",
+    "oracleBinarySha256": "ec80153d65a1eb3893eda320bddcde0c942351ef93e0c9771d19c7a4f42d037a",
+    "dexBinarySha256": "b259bef25bd37ce21a8bff502877a243d3e0663253523b5d4ceb447abde57646",
+    "flashloanBinarySha256": "b9d57b914196fe34d7ec55b732d4f78d28f54e13d329141e7e0e7dac1c2b9c09"
+  },
+  "proofGap": {
+    "signedLocalForkSigVerifyTrue": false,
+    "singleV1Within4096BytesAnd64Accounts": false,
+    "atomicCrossPoolExploitProved": false,
+    "attackerEquityRaw": null,
+    "protocolEquityRaw": null,
+    "reason": "branch paused before transaction construction and per-position health decoding"
+  },
+  "sources": [
+    "jupiter-dex-peg-path-census.json",
+    "jupiter-dex-path-liquidity.json",
+    "klend-zero-fee-census.json",
+    "jupiter-v103-signed-fork-audit/current-finalized-state.json",
+    "Jupiter public quote API observations in this audit turn"
+  ]
+}

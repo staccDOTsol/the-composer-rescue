@@ -1,0 +1,220 @@
+{
+  "generatedAtUtc": "2026-10-19T07:55:22.553Z",
+  "network": "current mainnet-beta-backed Surfpool fork",
+  "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "upstreamObservationSlot": 458755505,
+  "safety": {
+    "freshEphemeralKeyNotSaved": true,
+    "syntheticMutation": "fresh outsider system lamports only",
+    "sigVerify": true,
+    "simulationsOnly": true,
+    "mainnetSubmission": false,
+    "forkSendOrBroadcast": false,
+    "noSendMethodInHarness": true
+  },
+  "target": {
+    "program": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+    "currentElfSha256": "e0ace82e092741fe0dfe9e5c8ec45dfdbc642bfc510bb9e126f1fb8a6142ab92",
+    "escrow": "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7",
+    "vault": "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc",
+    "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+    "storedCreator": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+    "storedRecipient": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+    "cancelMode": 1,
+    "updateRecipientMode": 1
+  },
+  "outsider": {
+    "publicKey": "6RLKsYbsTzgTVuh9jA7hbPRqDCeHhgBnykjBR2AwscMR",
+    "destinationAta": "AwWbTgm6RBQDeMbA5oR8jnVYvv9F9qacjGzUaHXnzFPp"
+  },
+  "before": {
+    "slot": 458757252,
+    "values": {
+      "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": {
+        "lamports": 2951063,
+        "owner": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+        "executable": false,
+        "dataLength": 296,
+        "dataSha256": "b844d1060b589fa7c0492af3350bc633d1fb7a5f1505a777f4e1b4115a2af293",
+        "tokenRawAmount": "2824859375850201528",
+        "escrowRecipient": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+        "escrowTotalClaimed": "0"
+      },
+      "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "dataLength": 165,
+        "dataSha256": "1ee7cff6f58678d56f3586f4cd41bfea86df16650e44011d653451d4d1ebfcfb",
+        "tokenRawAmount": "94414767978779",
+        "escrowRecipient": null,
+        "escrowTotalClaimed": null
+      },
+      "AwWbTgm6RBQDeMbA5oR8jnVYvv9F9qacjGzUaHXnzFPp": null,
+      "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "dataLength": 165,
+        "dataSha256": "52b75bf5c75893c5f93a3b958be77b8165137f13bb886893b32c72bea5584da9",
+        "tokenRawAmount": "1300916",
+        "escrowRecipient": null,
+        "escrowTotalClaimed": null
+      }
+    }
+  },
+  "tests": [
+    {
+      "label": "fresh_outsider_claim_to_fresh_destination",
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "signed": true,
+      "wire": {
+        "bytes": 493,
+        "accountKeys": 11,
+        "instructions": 2,
+        "requiredSignatures": 1,
+        "sha256": "ee458f8f0e64d756de5778f31f8083559cfeacaf00f681da1992037347c34ff2"
+      },
+      "slot": 458757253,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 21276,
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 393149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 388056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 385594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 14924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program log: AnchorError caused by account: escrow. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+        "Program log: Right:",
+        "Program log: 6RLKsYbsTzgTVuh9jA7hbPRqDCeHhgBnykjBR2AwscMR",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 6352 of 385076 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x7d1"
+      ],
+      "returnedAccounts": null
+    },
+    {
+      "label": "fresh_outsider_update_stored_recipient_to_self",
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "signed": true,
+      "wire": {
+        "bytes": 312,
+        "accountKeys": 5,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "sha256": "aef0f6302a60ba3a9ed83c136bb718bec40711b30f5a6edd16726de8f77c1f42"
+      },
+      "slot": 458757253,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 8441,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: UpdateVestingEscrowRecipient",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:170. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 8441 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "returnedAccounts": null
+    },
+    {
+      "label": "fresh_outsider_cancel_existing_escrow",
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "signed": true,
+      "wire": {
+        "bytes": 445,
+        "accountKeys": 10,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "sha256": "c18e538af041e5b9cce03fc27f8e0039832086a328a064a9be6b868476bc0298"
+      },
+      "slot": 458757254,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 15115,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 15115 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "returnedAccounts": null
+    }
+  ],
+  "after": {
+    "slot": 458757254,
+    "values": {
+      "6wsjaQTidXNqmPDw4st2yMtFmTk7yyBEox5SydFQeJe7": {
+        "lamports": 2951063,
+        "owner": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+        "executable": false,
+        "dataLength": 296,
+        "dataSha256": "b844d1060b589fa7c0492af3350bc633d1fb7a5f1505a777f4e1b4115a2af293",
+        "tokenRawAmount": "2824859375850201528",
+        "escrowRecipient": "F4zqSudk7rmdKuav7MjT9bhoJmf7c3js97Di37a1LZ7o",
+        "escrowTotalClaimed": "0"
+      },
+      "HG6XGeAwBueqMbubLbMMWRCfhC1wKjDJmQiJjjFdTJDc": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "dataLength": 165,
+        "dataSha256": "1ee7cff6f58678d56f3586f4cd41bfea86df16650e44011d653451d4d1ebfcfb",
+        "tokenRawAmount": "94414767978779",
+        "escrowRecipient": null,
+        "escrowTotalClaimed": null
+      },
+      "AwWbTgm6RBQDeMbA5oR8jnVYvv9F9qacjGzUaHXnzFPp": null,
+      "C6c9h5674dQFMo6PSpjDsVsa3tRARnfUWMjttAoegNMs": {
+        "lamports": 2039280,
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "dataLength": 165,
+        "dataSha256": "52b75bf5c75893c5f93a3b958be77b8165137f13bb886893b32c72bea5584da9",
+        "tokenRawAmount": "1300916",
+        "escrowRecipient": null,
+        "escrowTotalClaimed": null
+      }
+    }
+  },
+  "persistedForkStateUnchanged": true,
+  "interpretation": "Every fresh outsider mutation must fail before any Locp-authorized vault release. A failed atomic simulation is not an outflow; returned account snapshots may be absent on error, so persisted before/after digests are recorded separately."
+}

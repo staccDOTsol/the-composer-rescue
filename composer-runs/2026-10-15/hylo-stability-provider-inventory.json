@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-10-15T20:12:16.127Z",
+  "observationSlot": 457366371,
+  "observationBlockTime": 1792095132,
+  "target": {
+    "symbol": "hyUSD",
+    "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+    "decimals": 6
+  },
+  "safety": {
+    "readOnly": true,
+    "rpcEndpointRedacted": true,
+    "transactionsBuilt": 0,
+    "transactionsSigned": 0,
+    "simulations": 0,
+    "submissions": 0
+  },
+  "eligibleExactMintZeroFeeProviders": [
+    {
+      "provider": "Project0 / Marginfi",
+      "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "bank": "5syijTAMBBmdjwUgYYBvvv26zTS6YX1bYV9EdXkgYqLa",
+      "vault": {
+        "address": "6fN1Eqh7433vm4RLBC2Ybd9m3EHg3s6S2GP1JyjABMEU",
+        "exists": true,
+        "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLength": 165,
+        "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+        "authority": "EseejrdpACi7QmQ3X1DiNQ5caDXgGPQkAQUFDeA8y38P",
+        "amountRaw": "46063895930",
+        "state": 1
+      },
+      "exactMint": true,
+      "programExecutable": true,
+      "zeroFeeEvidence": {
+        "field": "protocol_origination_fee I80F48",
+        "raw": "0",
+        "exactlyZero": true
+      },
+      "displayedVaultRaw": "46063895930",
+      "observedRiskLimitedFlashMaximumRaw": "45892395255",
+      "observedFullHyloRouteMaximumRaw": null,
+      "capacitySemantics": "Bank risk/borrow limits are authoritative; displayed vault tokens are not all flash-borrowable."
+    },
+    {
+      "provider": "Kamino Lend / KLend",
+      "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "reserve": "BhD4buCKPSpXiws9CzuXoE4Hg4XDAxfNVPnHPSWV3PgG",
+      "market": "4XAxzYvQqUcxN1qdXV6Qsn1tfD19epbkg5Wkmo46L5Dq",
+      "supplyVault": {
+        "address": "2he82FFDtK4awwVr1XbER9XRS3BDpZYfR3b5TNNN6dS9",
+        "exists": true,
+        "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLength": 165,
+        "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+        "authority": "4Bd1YPRPBtVyM2m9wBVNSkNwsUtwResmaqtjTFNn6Ejb",
+        "amountRaw": "100000",
+        "state": 1
+      },
+      "feeVault": {
+        "address": "4veAufs2oHh9ymfedNNZi84ycmk3sB8PRxBjtHB4JcG8",
+        "exists": true,
+        "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLength": 165,
+        "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+        "authority": "4Bd1YPRPBtVyM2m9wBVNSkNwsUtwResmaqtjTFNn6Ejb",
+        "amountRaw": "0",
+        "state": 1
+      },
+      "exactMint": true,
+      "programExecutable": true,
+      "availableRaw": "100000",
+      "flashLoanFeeSf": "0",
+      "feeScale": "2^60",
+      "exactlyZeroFee": true,
+      "repeatBorrowConstraint": "MultipleFlashBorrows is enforced per reserve per transaction; one borrow can fund repeated target calls."
+    }
+  ],
+  "investigatedButNotCompatibleAsThirdExactMintProvider": [
+    {
+      "provider": "Jupiter Lend native flash-loan program",
+      "program": "jupKxkab7RTnQJ6wXStXg6WY4rcReV3maiUNwByciFF",
+      "programExecutable": true,
+      "currentReserveMints": [
+        "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+        "DEkqHyPN7GMRJ5cArtQFAWefqbZb33Hyf6s5iCwjEonT",
+        "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+        "So11111111111111111111111111111111111111112"
+      ],
+      "targetReservePresent": false,
+      "blocker": "Current native flash reserve set does not contain hyUSD."
+    },
+    {
+      "provider": "Mango v4",
+      "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+      "bankMintOffset": 56,
+      "result": {
+        "slot": 457366372,
+        "count": 0,
+        "accounts": []
+      },
+      "blocker": "No current Mango Bank account has the hyUSD mint."
+    },
+    {
+      "provider": "Drift spot",
+      "program": "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH",
+      "spotMarketMintOffset": 72,
+      "result": {
+        "slot": 457366372,
+        "count": 0,
+        "accounts": []
+      },
+      "blocker": "No current Drift SpotMarket has the hyUSD mint."
+    },
+    {
+      "provider": "Save / Solend",
+      "program": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "reserveMintOffset": 42,
+      "result": {
+        "slot": 457366371,
+        "count": 0,
+        "accounts": []
+      },
+      "blocker": "No current 619-byte Save reserve has the hyUSD mint."
+    },
+    {
+      "provider": "Port Finance",
+      "program": "Port7uDYB3wk6GJAw4KT1WpTeMtSu9bTcChBHkX2LfR",
+      "reserveMintOffset": 42,
+      "result": {
+        "slot": 457366371,
+        "count": 0,
+        "accounts": []
+      },
+      "blocker": "No current SPL-lending-layout account has the hyUSD mint."
+    },
+    {
+      "provider": "Larix",
+      "program": "7Zb1bGi32pfsrBkzWdqd4dFhUXwp5Nybr1zuaEwN34hy",
+      "reserveMintOffset": 42,
+      "result": {
+        "slot": 457366371,
+        "count": 0,
+        "accounts": []
+      },
+      "blocker": "No current SPL-lending-layout account has the hyUSD mint."
+    },
+    {
+      "provider": "XP1BR principal-token program",
+      "currentHyusdCustody": [
+        {
+          "address": "ihvVihjUqm2Y1E25S5L5aGERmBXrha5ZEhNauRynYVc",
+          "authority": "CJzj7C6WjTJN5QV4KPpTmMhQb2N27Brn8JESf292osG4",
+          "amountRaw": "313724057017"
+        }
+      ],
+      "instructionNames": [
+        "add_emission",
+        "change_interface_type",
+        "collect_emission",
+        "collect_treasury_emission",
+        "deposit",
+        "get_position",
+        "get_state",
+        "init_sy",
+        "initialize_position",
+        "mint",
+        "modify_hook",
+        "modify_ore_interface_account",
+        "realloc_sy_meta",
+        "redeem",
+        "set_exchange_rate_limit",
+        "update_data_stream",
+        "withdraw"
+      ],
+      "hasFlashOrBorrowInstruction": false,
+      "blocker": "It has hyUSD custody but exposes deposit/mint/redeem/withdraw semantics, not an outsider flash-borrow facility."
+    },
+    {
+      "provider": "Manifest orderbook custody",
+      "blocker": "Custody/orderbook settlement is not an independently callable exact-repayment flash-loan facility; no flash-borrow instruction was identified."
+    }
+  ],
+  "maximumCompatibleSet": {
+    "independentProviderCount": 2,
+    "providers": [
+      "Project0 / Marginfi",
+      "Kamino Lend / KLend"
+    ],
+    "triSourcePossible": false,
+    "blocker": "Every investigated third protocol either lacks a current hyUSD market/reserve or lacks an outsider-callable flash-borrow ABI.",
+    "compositionEvidence": "hylo-stability-v1-sim.json"
+  },
+  "sourceArtifacts": [
+    {
+      "name": "jup6qf-current-inventory.json",
+      "sha256": "bb0ebdb09eef8167f5d4767f9d8cf0c1eccd19e2a4d2c6e909e802beec830d1f"
+    },
+    {
+      "name": "xp1br-generic-standard-idl.json",
+      "sha256": "c1450d923fa6977d161dd2fea5bfeaf80d63dccb35e66566c16f7aadab176917"
+    },
+    {
+      "name": "xp1br-current-inventory.json",
+      "sha256": "8343a4257e5ee95eeed39a9a466a7d25b57859ca688d75335fc25adab6016df9"
+    },
+    {
+      "name": "mainnet-token-authority-flash-crosswalk.json",
+      "sha256": "82a78d1fd77af3f8b9e879025a3646c8affb3cdcf450449b6053d419cbccf40b"
+    },
+    {
+      "name": "mainnet-long-tail-flash-overlay.json",
+      "sha256": "d885bf549c6b441f0e9bd562a8298b882e4d26b333bbf6c84500920684c3791e"
+    },
+    {
+      "name": "hylo-stability-v1-sim.json",
+      "sha256": "be7d83e6ba23e6a850e1b80ea8270bb1ac8c3bb2df1c505092dfc0d366ed4bfe"
+    }
+  ],
+  "caveat": "Exact-mint inventory covers the deployed native flash surfaces and current same-mint lending markets enumerated above. Cross-asset flash plus a DEX swap is a different route with swap price, account, and liquidity dependencies; it is not a third zero-fee hyUSD source."
+}

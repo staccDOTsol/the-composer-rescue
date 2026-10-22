@@ -1,0 +1,989 @@
+{
+  "schema": "orca-staking-signed-mainnet-mutations/v1",
+  "generatedAtUtc": "2026-10-19T09:40:40.050Z",
+  "network": "mainnet-beta simulateTransaction",
+  "target": {
+    "program": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+    "state": "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+    "vault": "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+    "orca": "orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE",
+    "xorca": "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+    "victimOrca": "26wHgvEbmRdKnxVs9PjRYZMXBMUNVxuMpqG8PhDeK8Ju",
+    "victimXorca": "C6mxGUHW9eb9Ek1BL819KwEtsa4qhWzbvvmdWDpizDHz"
+  },
+  "signer": {
+    "feePayerPublicKey": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+    "freshOutsiderPublicKey": "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw",
+    "outsiderSecretPersisted": false,
+    "protocolPrivilegeKnown": false
+  },
+  "fixture": {
+    "pending": {
+      "address": "7Ca4kBSvBGrzYdHZoX3ytD2mcTVkAbAMfsJ8mGpanHL",
+      "owner": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+      "lamports": "8017920",
+      "dataLength": 1024,
+      "dataSha256": "09269e2a0c3031f044a19d6021a7353384113e4521d5a3e87e8c28be9e652957",
+      "discriminator": 2,
+      "bump": 255,
+      "withdrawIndex": 0,
+      "unstaker": "8X96yVCSC1Gn5E5bDDZuPUuXogX9uaFSP7RrAj4hki32",
+      "withdrawableOrcaAmountRaw": "311248",
+      "withdrawableTimestamp": "1764727691"
+    },
+    "victimOrcaAta": "G7HCU2xVWeKtTCtRQBcdFG2hMefBQ991mrRB4YrRoJ7F",
+    "outsiderPending": "8EJrqLWzK8Siu5KXRXvuSrdT2QhTCrdnbZd2bAz5Pf2s",
+    "outsiderIndex": 250,
+    "outsiderOrcaAta": "8uzLG64x5J3KKsyNv5gRRqb48AA9rvpigGsxhyeT2vCv",
+    "outsiderXorcaAta": "2Y2RxV2Vdg29qum4uSRDpYtZgMtvniEx7L66TD3y991e"
+  },
+  "watch": [
+    "Ce5j11WAsSzM3nkzrw4Kw6v6ic3nbyqpv5eywjYKeKc5",
+    "xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N",
+    "CSqKhyW1cpdyjheAx5HXx4ibcnYrzpL5JywEMAkZixBK",
+    "8uzLG64x5J3KKsyNv5gRRqb48AA9rvpigGsxhyeT2vCv",
+    "2Y2RxV2Vdg29qum4uSRDpYtZgMtvniEx7L66TD3y991e"
+  ],
+  "tests": [
+    {
+      "label": "stake_valid_shape_empty_outsider_amount_1",
+      "contextSlot": 458786871,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6009
+          }
+        ]
+      },
+      "unitsConsumed": 28215,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 1040 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1779"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1779",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 632,
+        "inlineAccountKeys": 13,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "a7bb48ffe410739851598647cde6cd0dcd3acb6a12ccd6e013203a660af86fa4"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "stake_source_substituted_with_victim_orca_account",
+      "contextSlot": 458786871,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 89680,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program log: Token account data owner 9LEdJRvk26Rmgj3rfUP5LEiZ2suZVdZwvhE7Pw43Z2sy does not match owner account FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw for token mint account orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6@",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 62505 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 664,
+        "inlineAccountKeys": 14,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "9234479dd507541a6f5db4f80b0f098c74e94cdea5e7fa60a1df0cf2eff827a6"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "stake_xorca_destination_substituted_with_victim_account",
+      "contextSlot": 458786872,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 90080,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program log: Token account data owner 9LEdJRvk26Rmgj3rfUP5LEiZ2suZVdZwvhE7Pw43Z2sy does not match owner account FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw for token mint account xorcaYqbXUNz3474ubUMJAdu2xgPsew3@",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 62905 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 664,
+        "inlineAccountKeys": 14,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "ef568b29d6a8044e2e42908cf929f0298e7f055342ac29876d637a5567b19947"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "stake_vault_substituted_with_outsider_orca_account",
+      "contextSlot": 458786872,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 29398,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 2223 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 600,
+        "inlineAccountKeys": 12,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "900958fb4937ce10b828761440f304c09b22b566be85edc4576a298cd2f954c8"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "stake_source_destination_alias",
+      "contextSlot": 458786873,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 68838,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Stake",
+        "Program log: Token account data mint orcaEKTdK7LKz57vaAYr9QeNsVEPfiu6QeMU1kektZE does not match token mint account xorcaYqbXUNz3474ubUMJAdu2xgPsew3rUCe5ughT3N.",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 41663 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 632,
+        "inlineAccountKeys": 13,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "b89477c08f0ad096454dd537493070f5754e549f9a46044836cd7f310e2078bb"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "unstake_valid_shape_empty_outsider_amount_1",
+      "contextSlot": 458786873,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6009
+          }
+        ]
+      },
+      "unitsConsumed": 30556,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 3381 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1779"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1779",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 666,
+        "inlineAccountKeys": 14,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "2bb00e829aa78f13acef705eabeeac0d42e06c697c839393e969c8ee535cda9e"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "unstake_source_substituted_with_victim_xorca_account",
+      "contextSlot": 458786874,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 92073,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380911 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375822 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373362 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13511 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program log: Token account data owner 9LEdJRvk26Rmgj3rfUP5LEiZ2suZVdZwvhE7Pw43Z2sy does not match owner account FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw for token mint account xorcaYqbXUNz3474ubUMJAdu2xgPsew3@",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 64898 of 372825 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 698,
+        "inlineAccountKeys": 15,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "da21b0a362c6e062fade7a25f81b44314562bf8c89f5cf204374b331db012d82"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "withdraw_victim_pending_to_outsider_destination",
+      "contextSlot": 458786875,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 28870,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380909 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375820 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 1692 of 372822 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 657,
+        "inlineAccountKeys": 14,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "58091d01b26d74b29f6eb9e75a78ff6037c8ee7eb1876bed558b11efcfd1c25c"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "withdraw_victim_pending_and_victim_destination",
+      "contextSlot": 458786875,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 28870,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380909 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375820 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 1692 of 372822 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1775",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 689,
+        "inlineAccountKeys": 15,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "9120a37e84ac565fddab3d1add0236e179d4c0c6c8982cc44d7441f6f977a74d"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "withdraw_outsider_nonexistent_pending",
+      "contextSlot": 458786876,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6004
+          }
+        ]
+      },
+      "unitsConsumed": 69136,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 394423 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 389334 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 386873 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 399850 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 179 of 380909 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 37 of 375820 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 233 of 373359 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 13514 of 386336 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: Account 8EJrqLWzK8Siu5KXRXvuSrdT2QhTCrdnbZd2bAz5Pf2s is not owned by StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 41958 of 372822 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1774"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1774",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 657,
+        "inlineAccountKeys": 14,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "009494f9e7080a02ce5731c65f5dba89487fe33075b7d168220421387f62c948"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "set_cooldown_authority_substituted_with_outsider",
+      "contextSlot": 458786877,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6006
+          }
+        ]
+      },
+      "unitsConsumed": 21789,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Set",
+        "Program log: Account FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw has wrong address",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 21639 of 399850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1776"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1776",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 351,
+        "inlineAccountKeys": 5,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "ed868de41b13c0cdbdaba511d459f8070a1668c7b5e5da6fa09c8d5f95869330"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "set_state_substituted_with_pending_account",
+      "contextSlot": 458786877,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 20836,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Set",
+        "Program log: Account 7Ca4kBSvBGrzYdHZoX3ytD2mcTVkAbAMfsJ8mGpanHL is incorrect size. Expected at least 2048 but got 1024",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 20686 of 399850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1777",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 351,
+        "inlineAccountKeys": 5,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "7532df62f95b0527dd2288f9ea5e33f11880d99b282481087c07ab4572170934"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    },
+    {
+      "label": "initialize_deployer_substituted_with_outsider",
+      "contextSlot": 458786878,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6019
+          }
+        ]
+      },
+      "unitsConsumed": 752,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT invoke [1]",
+        "Program log: Instruction: Initialize",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT consumed 602 of 399850 compute units",
+        "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1783"
+      ],
+      "targetErrorLog": "Program StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT failed: custom program error: 0x1783",
+      "watchedTokenAmounts": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "envelope": {
+        "version": 0,
+        "wireBytes": 549,
+        "inlineAccountKeys": 11,
+        "requiredSignatures": 2,
+        "signerPublicKeys": [
+          "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+          "FU3U2bR5dWdEtbhd1JLQMTMMwCSARRxu72DHGnTqUsrw"
+        ],
+        "signedWireSha256": "9d08552cd57fa2970b669f0875de6a8d260a6ee170989d288d68180c0de9183d"
+      },
+      "safety": {
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "simulationOnly": true
+      }
+    }
+  ],
+  "safety": {
+    "sigVerify": true,
+    "simulationsOnly": true,
+    "sendTransactionCalled": false,
+    "transactionSubmitted": false,
+    "broadcast": false,
+    "freshOutsiderSecretPersisted": false
+  }
+}

@@ -1,0 +1,582 @@
+{
+  "generatedAt": "2026-10-15T20:12:37.568Z",
+  "scope": "isolated Surfpool fork with current deployed programs; no mainnet send",
+  "fork": "http://127.0.0.1:9097",
+  "attacker": "5CShSGVCF19MsnAL9u8wxny9Zc5eTBNyGij8wDHbuSjG",
+  "syntheticStartingUSDCraw": "5000000000000",
+  "syntheticStartingToken0Raw": "5000000000000",
+  "sourceTokenAccounts": [
+    "9kGqd5zsQGaFfFPdUuEgbRM4V7x72Jdt7WTS4uRouAQ7",
+    "GmyD7LwCfLmLtb653YRSZ5WYZ1NxGpaBJ19VtjqDjkYz"
+  ],
+  "target": {
+    "vaultId": 91,
+    "oracle": "6cYKjpyZyEAS7BjZ574wjCFaBfoXFZeofdAFmdaqADCi",
+    "dex": "DQfkVMGvZzqdq5jwoCRAyD26rJEioPM6kRGjC7BYts5P"
+  },
+  "lender": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "availableRaw": "8011084472352",
+    "flashFeeSf": "0"
+  },
+  "signatureVerification": true,
+  "v1Version": 1,
+  "liveSubmission": false,
+  "watch": [
+    {
+      "label": "attacker",
+      "address": "5CShSGVCF19MsnAL9u8wxny9Zc5eTBNyGij8wDHbuSjG"
+    },
+    {
+      "label": "attackerToken0",
+      "address": "3B24ZL2b5rXYVv7nt7GpAGvuxDJoXF3vx6mufUdYY1Kj"
+    },
+    {
+      "label": "attackerUSDC",
+      "address": "Em4bufYV8EAG4E1PEAvcQUqxyTzK6w2EiGd7N6CEyFAe"
+    },
+    {
+      "label": "flashSupply",
+      "address": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB"
+    },
+    {
+      "label": "flashFeeVault",
+      "address": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj"
+    },
+    {
+      "label": "dexSupply0",
+      "address": "9FniG9V2R63bS1e7u3ZitEzNuDUmqKa3o2hTosQpMRV"
+    },
+    {
+      "label": "dexSupply1",
+      "address": "FwhxZFAeD6HbonKCa4jyLkJKfnNwmBCnJLRakMgJmFi9"
+    },
+    {
+      "label": "dex",
+      "address": "DQfkVMGvZzqdq5jwoCRAyD26rJEioPM6kRGjC7BYts5P"
+    },
+    {
+      "label": "oracle",
+      "address": "6cYKjpyZyEAS7BjZ574wjCFaBfoXFZeofdAFmdaqADCi"
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "address": "G9TTzpKEovgoXmV6rDaMD4iA4L6FSUCNCTmiCYkYKW3y"
+    }
+  ],
+  "before": [
+    {
+      "label": "attacker",
+      "rawAmount": null,
+      "lamports": 20000000000
+    },
+    {
+      "label": "attackerToken0",
+      "rawAmount": "5000000000000",
+      "lamports": 2039280
+    },
+    {
+      "label": "attackerUSDC",
+      "rawAmount": "5000000000000",
+      "lamports": 1488440
+    },
+    {
+      "label": "flashSupply",
+      "rawAmount": "8011084542357",
+      "lamports": 2039280
+    },
+    {
+      "label": "flashFeeVault",
+      "rawAmount": "0",
+      "lamports": 2039280
+    },
+    {
+      "label": "dexSupply0",
+      "rawAmount": null,
+      "lamports": 1726080
+    },
+    {
+      "label": "dexSupply1",
+      "rawAmount": null,
+      "lamports": 1726080
+    },
+    {
+      "label": "dex",
+      "rawAmount": null,
+      "lamports": 3180720
+    },
+    {
+      "label": "oracle",
+      "rawAmount": null,
+      "lamports": 2832720
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "rawAmount": null,
+      "lamports": 1260267
+    }
+  ],
+  "results": [
+    {
+      "amountRaw": "0",
+      "slot": 457364893,
+      "err": null,
+      "bytes": 489,
+      "addresses": 11,
+      "instructions": 1,
+      "requiredSignatures": 1,
+      "computeUnits": 71523,
+      "oracleReturns": [
+        {
+          "supplyX15": "560310756852316",
+          "borrowX15": "560310756852316"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_debt_exchange_rate: 491738455387919",
+        "Program log: smart_debt_exchange_rate: 491738455387919",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 71523 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc XEKgg5n9AQAAAAAAAAAAAFxCoIOZ/QEAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "amountRaw": "1000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 234931,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1170336 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACAAAAAAAAAAAAAAAAAAAAAOgDAAAAAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 24101 of 1192641 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 194368 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1000000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 236922,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1168345 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTAC+v///////////////////71DDwAAAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25170 of 1191719 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 196359 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1000000000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 237767,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167500 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACBeb//////////////////4KaoDsAAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25371 of 1191075 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197204 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "100000000000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238026,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167241 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTAC8Nn1/////////////////0aBJkoXAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25503 of 1190948 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197463 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "300000000000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238032,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167235 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACWo/h/////////////////zSY59pFAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25500 of 1190939 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197469 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "600000000000",
+      "slot": 457364894,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238187,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167080 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACVSPD/////////////////xTHLKuLAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25500 of 1190784 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197624 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "900000000000",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238422,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1166845 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTAC8ruk/////////////////xv60XDRAAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25500 of 1190549 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197859 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1100000000000",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238415,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1166852 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACl3mQ/////////////////+WJr+7/AAAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25501 of 1190557 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197852 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1200000000000",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238241,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167026 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACL1mG/////////////////wme2SsXAQAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25506 of 1190736 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197678 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1225078014004",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238250,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167017 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACJM+D/////////////////yX2mP8cAQAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25507 of 1190728 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197687 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1225078014005",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238253,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167014 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACJM+D/////////////////yb2mP8cAQAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25507 of 1190725 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197690 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "1225078014006",
+      "slot": 457364895,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1355,
+      "addresses": 32,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 238251,
+      "oracleReturns": [],
+      "attackerUsdcPostRaw": null,
+      "attackerToken0PostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1167016 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQi4XGqQvLUrrL0VTkjk1sCZ4qOyf0pWkyrHQ8I2ykemLgSWmnM222lIweUWwz+Ue/cr5jTUZr1A53p+4ikQNTACJM+D/////////////////yf2mP8cAQAAAAAAAAAAAAA+XTFGm+PPvky4A+M5tERAPA15gnXhQEgDCc8J10lhVz5dMUab48++TLgD4zm0REA8DXmCdeFASAMJzwnXSWFXYbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 25507 of 1190727 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program log: Math error thrown at programs/dex/src/state/dex.rs:747",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 197688 of 1359437 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd YbUfVe4AAAC7jjQU8QAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

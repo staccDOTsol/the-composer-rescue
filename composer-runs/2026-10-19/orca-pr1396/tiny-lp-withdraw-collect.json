@@ -1,0 +1,75 @@
+{
+  "schema": "orca-tiny-lp-withdraw-collect/v1",
+  "mainnetSubmission": false,
+  "before": {
+    "pool": {
+      "L": "0",
+      "sqrt": "4672790998432938933",
+      "tick": -27464,
+      "protocolFeeOwedA": "15695",
+      "protocolFeeOwedB": "1026"
+    },
+    "vaultA": "612280",
+    "vaultB": "9375587281",
+    "lpA": "96840748",
+    "lpB": "999998",
+    "traderA": "3159259",
+    "traderB": "796933",
+    "position": {
+      "L": "1000000000",
+      "lower": -27480,
+      "upper": -27464,
+      "feeOwedA": "0",
+      "feeOwedB": "502"
+    }
+  },
+  "receipt": {
+    "label": "withdraw and collect owned LP after active liquidity zero",
+    "v1Bytes": 542,
+    "simulationError": null,
+    "simulationUnits": 19960,
+    "logs": [
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1391908 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: pgEkR3DKtaulBHQopnohchiHyzTCiIDHCRCeEdCx8rKSxvmquyKd6NU5ohlSKdKSwuWT0HD3c20KR43Q/90k+gkgM6Fv232zqJT//7iU//8Aypo7AAAAAAAAAAAAAAAAAAAAAAAAAAA+FwMAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8604 of 1400000 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+      "Program log: Instruction: CollectFees",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 94 of 1383483 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1381379 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 11356 of 1391396 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success"
+    ],
+    "signature": "3ENzfNCWmvGWcFpn2eazVEqJt7okuhtzz1e5wGpxuS6YwuiTBDZYZ1ysbvaVP4E8FCDUpAmGofBE4jkA3HmmUjRs",
+    "slot": 458881007,
+    "committedError": null,
+    "committedUnits": 19960
+  },
+  "after": {
+    "pool": {
+      "L": "0",
+      "sqrt": "4672790998432938933",
+      "tick": -27464,
+      "protocolFeeOwedA": "15695",
+      "protocolFeeOwedB": "1026"
+    },
+    "vaultA": "612280",
+    "vaultB": "9375384221",
+    "lpA": "96840748",
+    "lpB": "1203058",
+    "traderA": "3159259",
+    "traderB": "796933",
+    "position": {
+      "L": "0",
+      "lower": -27480,
+      "upper": -27464,
+      "feeOwedA": "0",
+      "feeOwedB": "0"
+    }
+  }
+}

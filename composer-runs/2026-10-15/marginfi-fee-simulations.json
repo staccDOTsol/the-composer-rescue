@@ -1,0 +1,215 @@
+{
+  "generatedAt": "2026-10-15T18:54:47.805Z",
+  "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+  "safety": "simulateTransaction only; no transaction submitted",
+  "candidate": {
+    "bank": "6Fk3bzhqmUqupk6sN5CbfYMdafvyzDdqDNHW5CsJzq8K",
+    "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+    "mint": "BLZEEuZUBVqFhj8adcCFPJvPVCiCyVmh3hkJMrU8KuJA",
+    "liquidityVault": "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu",
+    "insuranceVault": "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J",
+    "feeVault": "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X",
+    "feeState": "HoMNdUF3RDZDPKAARYK1mxcPFfUnPjLmpKYibZzAijev",
+    "canonicalFeeAta": "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n",
+    "integerOutstandingLowerBound": "2478848283965"
+  },
+  "control": {
+    "err": null,
+    "unitsConsumed": 26607,
+    "amounts": {
+      "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu": {
+        "before": "64008628513658605",
+        "after": "64006149665374641",
+        "delta": "-2478848283964"
+      },
+      "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J": {
+        "before": "68429404695810",
+        "after": "68429404695956",
+        "delta": "146"
+      },
+      "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X": {
+        "before": "0",
+        "after": "2478848283818",
+        "delta": "2478848283818"
+      },
+      "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n": {
+        "before": "12196470105580500",
+        "after": "12196470105580500",
+        "delta": "0"
+      }
+    },
+    "relevantLogs": [
+      "Program log: Instruction: LendingPoolCollectBankFees"
+    ]
+  },
+  "mutations": [
+    {
+      "label": "collect fees: redirect global fee destination",
+      "changedAccount": "fee_ata",
+      "replacement": "3dwebEcaTh5RhN27paaAJp5VMMN7mY8bRRjcygJmtJZh",
+      "expected": "reject non-canonical destination",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6045
+          }
+        ]
+      },
+      "unitsConsumed": 20816,
+      "amounts": {
+        "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu": {
+          "before": "64008628513658605",
+          "after": null,
+          "delta": null
+        },
+        "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J": {
+          "before": "68429404695810",
+          "after": null,
+          "delta": null
+        },
+        "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X": {
+          "before": "0",
+          "after": null,
+          "delta": null
+        },
+        "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n": {
+          "before": "12196470105580500",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingPoolCollectBankFees",
+        "Program log: AnchorError occurred. Error Code: InvalidFeeAta. Error Number: 6045. Error Message: Invalid ATA for global fee account.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x179d"
+      ]
+    },
+    {
+      "label": "collect fees: substitute liquidity vault",
+      "changedAccount": "liquidity_vault",
+      "replacement": "3dwebEcaTh5RhN27paaAJp5VMMN7mY8bRRjcygJmtJZh",
+      "expected": "reject PDA/bank binding mismatch",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 14406,
+      "amounts": {
+        "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu": {
+          "before": "64008628513658605",
+          "after": null,
+          "delta": null
+        },
+        "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J": {
+          "before": "68429404695810",
+          "after": null,
+          "delta": null
+        },
+        "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X": {
+          "before": "0",
+          "after": null,
+          "delta": null
+        },
+        "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n": {
+          "before": "12196470105580500",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingPoolCollectBankFees",
+        "Program log: AnchorError caused by account: liquidity_vault. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "collect fees: substitute CPI token program",
+      "changedAccount": "token_program",
+      "replacement": "11111111111111111111111111111111",
+      "expected": "reject token-program interface mismatch",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 8794,
+      "amounts": {
+        "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu": {
+          "before": "64008628513658605",
+          "after": null,
+          "delta": null
+        },
+        "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J": {
+          "before": "68429404695810",
+          "after": null,
+          "delta": null
+        },
+        "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X": {
+          "before": "0",
+          "after": null,
+          "delta": null
+        },
+        "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n": {
+          "before": "12196470105580500",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingPoolCollectBankFees",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0xbc0"
+      ]
+    },
+    {
+      "label": "collect fees: substitute same-group bank",
+      "changedAccount": "bank",
+      "replacement": "9ThXmfwhNzc6qbkRLuSGHwKS7mxjn6QcuRD644Pjn4F",
+      "expected": "reject bank/vault binding mismatch",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 12802,
+      "amounts": {
+        "DyEuAkiK13uZgDfAdz1fJxgryLKsuEHQvDd96dz6Dnmu": {
+          "before": "64008628513658605",
+          "after": null,
+          "delta": null
+        },
+        "GoHXtVQeRKjwqDSZwf9YgrDzUeXKwRckzYM7urmTmX5J": {
+          "before": "68429404695810",
+          "after": null,
+          "delta": null
+        },
+        "4ZbBPFuTse67QkkeWUZXwv4NBsjhaACauEPGYwAfzB8X": {
+          "before": "0",
+          "after": null,
+          "delta": null
+        },
+        "7FF7zYyUsYhKxvoBUwfA4W9gVVi4FKhsK2qgtCa7B64n": {
+          "before": "12196470105580500",
+          "after": null,
+          "delta": null
+        }
+      },
+      "relevantLogs": [
+        "Program log: Instruction: LendingPoolCollectBankFees",
+        "Program log: AnchorError caused by account: liquidity_vault_authority. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x7d6"
+      ]
+    }
+  ]
+}

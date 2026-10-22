@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-15T19:43:21Z",
+  "scope": "Current Solana mainnet MOVEUSD controller, outsider-accessible unauthorized net asset gain",
+  "verdict": {
+    "status": "no_validated_outsider_gain",
+    "reportableFindings": [],
+    "statement": "No tested permissionless path produced unauthorized assets or positive outsider equity. Successful value movement required an existing operator permission PDA and a declared operator signer and is classified as a privileged control, not an outsider finding.",
+    "notAProofOfAbsence": true
+  },
+  "program": {
+    "programId": "EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+    "identity": "mintfx controller for CFX MOVEUSD",
+    "programData": "DybKXmycEuZDF4u8EVxr21Ljza9dEHKF6CKJ9G91zMMY",
+    "upgradeAuthority": "AiWGaHWRrSAizfXRPGypvxGoMgH714yr6cpRZgdKq2tr",
+    "lastDeployedSlot": 449520764,
+    "payloadBytes": 1180400,
+    "payloadSha256": "68374147fe8a5038882db50120cf61a242394aa8caf6da27d15d1c2ea9210a81",
+    "nonzeroPayloadBytes": 696113,
+    "nonzeroPayloadSha256": "78f075b25861e7a0a0a2a76b864ad4c97c5aeff675b11ca53ea23a3db13789cb",
+    "snapshotSlot": 457352859,
+    "finalRecheckSlot": 457358333,
+    "finalRecheckPayloadMatched": true,
+    "upgradeable": true
+  },
+  "token": {
+    "mint": "3AdhVEX6k85yNivHVXDEiY3WyP2WgFQTUZCahGaeC2qm",
+    "decimals": 6,
+    "snapshotSupplyRaw": "115793431659254",
+    "snapshotSupplyUi": 115793431.659254,
+    "laterSimulationPrestateSlot": 457357111,
+    "laterSimulationPrestateSupplyRaw": "115794133639254",
+    "finalRecheckSupplyRaw": "115794133639254",
+    "mintAuthority": "3AdhVEX6k85yNivHVXDEiY3WyP2WgFQTUZCahGaeC2qm",
+    "freezeAuthority": "3AdhVEX6k85yNivHVXDEiY3WyP2WgFQTUZCahGaeC2qm",
+    "authorityIsOffCurve": true
+  },
+  "custody": {
+    "tokenAccount": "9LbzSsqxTyaa9dA9nVv7oBaZy85qJuAonX7wCuEaXoXX",
+    "authority": "F42zAoH6HGZqrXroPWTXP9fHujFc2mLrycMgn3kJkMrr",
+    "amountRaw": "101776167770000",
+    "amountUi": 101776167.77,
+    "shareOfSnapshotSupplyPct": 87.89459497970257,
+    "classification": "controller-derived redemption ledger wallet ATA, not proof of on-chain backing reserves",
+    "recentOutflowWitnesses": 10,
+    "recentOutflowTotalRaw": "422533410000",
+    "recentOutflowTotalUi": 422533.41,
+    "pdaAndAtaDerivationMatched": true
+  },
+  "market": {
+    "jupiterObservedAt": "2026-10-15T19:29:28.969Z",
+    "jupiterUsdPrice": 0.9989562718634578,
+    "grossCustodyMarkUsd": 101669941.12006901,
+    "jupiterReportedLiquidityUsd": 97952.806077764,
+    "grossMarkToReportedLiquidityMultiple": 1037.9482241616845,
+    "moveusdToUsdcLargestQuotedProbeUi": 90000,
+    "moveusdToUsdcFirstUnavailableProbeUi": 100000,
+    "usdcToMoveusdLargestQuotedProbeUi": 5000,
+    "usdcToMoveusdFirstUnavailableProbeUi": 10000,
+    "caveat": "Quotes are route availability, not guaranteed execution or redemption capacity. The spot mark is not liquid at custody scale."
+  },
+  "authorization": {
+    "tokenId": "FXUSD",
+    "operator": "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4",
+    "permissionPda": "2wwUmY5HFJe2iNipmV1p6AgaHY76dAJab1ATM4pDdQQQ",
+    "permissionSeedVersion": "access_control_v3",
+    "permissionBits": "3879",
+    "permissionStateEmbedsOperator": true,
+    "operatorSignerRequired": true,
+    "transferIdempotentPdaMatched": true,
+    "mintIdempotentPdaMatched": true
+  },
+  "recentControllerCorpus": {
+    "transactions": 70,
+    "failed": 0,
+    "instructionShapes": {
+      "Transfer": 45,
+      "Mint": 15,
+      "CommitRedeem": 9,
+      "Redeem": 1
+    },
+    "observedPrograms": [
+      "EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+      "ComputeBudget111111111111111111111111111111",
+      "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+      "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+      "11111111111111111111111111111111"
+    ],
+    "observedDexLenderOracleOrBridgeCpi": false
+  },
+  "liveBinary": {
+    "instructionNameCount": 22,
+    "containsMintViaSwapInstructionName": false,
+    "containsOracleAscii": false,
+    "containsPythAscii": false,
+    "containsSwitchboardAscii": false,
+    "containsAccessControlV3Seed": true,
+    "onchainIdlIsStale": true,
+    "staleIdlDifferences": [
+      "IDL uses access_control_v2 while current binary uses access_control_v3",
+      "IDL contains mint_via_swap while current binary does not",
+      "current binary adds withdrawal and external redemption instruction families"
+    ]
+  },
+  "simulations": {
+    "transport": "Current-mainnet read-only simulateTransaction with unsigned custom Solana v1 wires and sigVerify=false; no sendTransaction",
+    "transferSimulationSlots": [457355327, 457355330],
+    "mintSimulationSlots": [457357111, 457357114],
+    "operatorControls": {
+      "freshTransferOneRawUnit": "success",
+      "freshMintOneRawUnit": "success",
+      "zeroTransfer": "success_no_balance_delta",
+      "zeroMint": "success_no_supply_or_balance_delta",
+      "exact4096ByteV1Transfer": "success_operator_equivalent"
+    },
+    "outsiderAndBoundaryCases": {
+      "transferOutsiderAuthoritySubstitution": "rejected_ConstraintSeeds_2006",
+      "mintOutsiderAuthoritySubstitution": "rejected_ConstraintSeeds_2006",
+      "transferMissingOperatorSigner": "rejected_AccountNotSigner_3010",
+      "mintMissingOperatorSigner": "rejected_AccountNotSigner_3010",
+      "transferReplay": "rejected_existing_idempotent_account",
+      "mintReplay": "rejected_existing_idempotent_account",
+      "transferSourcePlusOne": "rejected_SPL_insufficient_funds",
+      "transferU64Max": "rejected_SPL_insufficient_funds",
+      "mintU64Max": "rejected_SPL_overflow",
+      "wrongTokenInfo": "rejected_wrong_owner",
+      "wrongMint": "rejected_ConstraintSeeds_2006",
+      "wrongTokenProgram": "rejected_InvalidProgramId_3008",
+      "sourceDestinationAliasing": "rejected"
+    },
+    "interpretation": "sigVerify=false makes operator-signed successes logic controls only. It does not provide the outsider with the operator key; missing-signer and permission-PDA checks still fail in-program."
+  },
+  "mintHistory": {
+    "latestSignatureCount": 1000,
+    "rangeUtc": ["2026-10-09T18:08:55Z", "2026-10-15T19:33:43Z"],
+    "mintToCheckedOperations": 197,
+    "burnCheckedOperations": 64,
+    "directBurnOperations": 1,
+    "checkedMintOrBurnTransactionsWithController": 261,
+    "checkedMintOrBurnTransactionsWithoutController": 0,
+    "transactionsWithExternalDexOrRouterPrograms": 8,
+    "transactionsCombiningControllerWithExternalDexOrRouterPrograms": 0,
+    "wormholeCoreObserved": false,
+    "wormholeWrappedTokenTransferObserved": false,
+    "limitation": "Bounded latest-1,000 history; not lifetime proof and not an asset-specific NTT state decode."
+  },
+  "flashAndCrossAsset": {
+    "sameMintKaminoOrProject0InventoryObserved": false,
+    "currentControllerPriceConsumerObserved": false,
+    "currentControllerCrossAssetInstructionObserved": false,
+    "trueFlashRepaymentCompositionConstructed": false,
+    "reason": "There is no sampled same-mint lender, the only observed DEX route is shallow, and no outsider-accessible controller leg consumes a cross-asset price or produces value. A borrow-swap-reverse-swap envelope would only add fees and debt and cannot satisfy positive outsider equity.",
+    "transportOnlyExact4096ByteControlConstructed": true
+  },
+  "bridge": {
+    "publicDescription": "Wormhole NTT burn-and-mint across Solana, Base, and Ethereum",
+    "genericNttAuthorization": "Guardian-signed VAA plus deployment-specific access controls",
+    "assetSpecificManagerAndTransceiverStateResolved": false,
+    "currentControllerDirectWormholeCpiObserved": false,
+    "classification": "Unresolved external/issuer-mediated bridge surface, not a demonstrated permissionless controller route"
+  },
+  "outsiderEquity": {
+    "unauthorizedMoveusdReceivedRaw": "0",
+    "unauthorizedOtherAssetsReceived": {},
+    "unpaidDebtRaw": "0",
+    "residualClaimsRaw": "0",
+    "netPositiveEquityDemonstrated": false
+  },
+  "limitations": [
+    "No verified source/build was available for the current executable; the analysis used current account bytes, binary strings, current transactions, exact PDA derivations, and simulations.",
+    "The on-chain Anchor IDL is stale and was used only as historical context.",
+    "Recent transaction and mint histories are bounded samples, not lifetime enumeration.",
+    "Jupiter quotes were read-only and no swap was requested or submitted.",
+    "No live transaction was constructed, signed, or submitted and no operator was contacted."
+  ]
+}

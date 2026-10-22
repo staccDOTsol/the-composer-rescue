@@ -1,0 +1,389 @@
+{
+  "address": "3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU",
+  "cached": true,
+  "caveats": [
+    "a name shown here comes from another program that declared the same discriminator, not from this one — treat it as a strong hint, not a fact. `ix_<hex>` means no published IDL anywhere declares it.",
+    "an account marked `constant` was the same address in every sample, which usually means a fixed global — but a program used by only one caller will look that way too.",
+    "argument layout is NOT decoded. `argsHex` below is the observed bytes after the discriminator — pass them back verbatim as `argsHex` on the instruction spec. Without that the transaction carries the right accounts and an EMPTY payload, which the program will reject."
+  ],
+  "evidence": {
+    "discriminatorBytes": 8,
+    "distinctDiscriminators": 2,
+    "encoding": "anchor",
+    "encodingConfident": true,
+    "instructionSamples": 250,
+    "instructionsNamed": 1,
+    "rainbowEntries": 23302,
+    "seedBudgetExhausted": true,
+    "seedCandidates": 4121,
+    "seedDerivationsTried": 3152089,
+    "seedDictionary": 3868,
+    "seedLiteralsFromBinary": 258,
+    "signaturesScanned": 250,
+    "transactionsParsed": 250
+  },
+  "howToUse": "pass this whole object as `idl` to /tx/build or /tx/batch. Account names are positional (`account_0`...) because transactions do not carry names; anything with a `pda` block is derived for you, the rest you supply.",
+  "instructions": [
+    {
+      "accounts": [
+        {
+          "address": "5rpBDHXZfyfgCn1XCi6bTt4iREXfdwngmFSqfbQ3odCi",
+          "evidence": "identical in all 131 samples",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "address": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+          "evidence": "identical in all 131 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        24
+      ],
+      "args": [],
+      "argsHex": [
+        "c1cb72a118000000070000000000000060260653a1010000",
+        "c1cb72a11800000007000000000000003a240653a1010000",
+        "c1cb72a118000000070000000000000014220653a1010000"
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        12,
+        134,
+        227,
+        128,
+        114,
+        216,
+        95,
+        86
+      ],
+      "exampleSignatures": [
+        "2MxQPZFDV63PSQERUk5zpzt33CorTA9dvm5oDGW52Lf7kEANLWDuiYYQrMb21E6MnXDheA7n6472253Mx9TuFku7",
+        "39GQj544SXeFk35c8W7YHF1xr5kzzoCqNu3ztmJQoSdxfJsaxoRr3VtVPb3EhP57KagZfPWvmFaM6xuH3YKKJGAU",
+        "qJYA3nkGwXVBsPnfx7P4UZaPkK1e2AtSagCmQeenuKyFf2WUgVFK4FANepRwCXYUUNgkitBTkeNY92mLmuEnELH"
+      ],
+      "name": "ix_0c86e38072d85f56",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 131,
+      "samplesGained": 0,
+      "samplesLost": 131,
+      "shapeNote": "all 131 samples had 2 accounts"
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "address": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+          "evidence": "identical in all 119 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "HgFLBWQugxt6qbPaWiwXjrqauXdQmcpMV6H6t8ttD8s1",
+          "evidence": "identical in all 119 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "FzvRbXDdrsYVMa9KohXyQytWNAZAo4PsF8yujDH7KCfG",
+          "evidence": "identical in all 119 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "So11111111111111111111111111111111111111112",
+          "evidence": "identical in all 119 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "evidence": "identical in all 119 samples",
+          "name": "account_5",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 119/119 samples (searched 7 combinations)",
+          "name": "account_6",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_4"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 119/119 samples (searched 9 combinations)",
+          "name": "account_7",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_5"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 119 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 119 samples",
+          "name": "account_9",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_11",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_12",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "J1to1yufRnoWn81KYg1XkTWzmKjnYSnmE2VY8DGUJ9Qv",
+          "evidence": "identical in all 119 samples",
+          "name": "account_13",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "Sysvar1nstructions1111111111111111111111111",
+          "evidence": "identical in all 119 samples",
+          "name": "account_14",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        17
+      ],
+      "args": [],
+      "argsHex": [
+        "6ab2ce1100000000000000000000000001",
+        "6a8b4f0600000000000000000000000000",
+        "e001120500000000000000000000000000"
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        240,
+        224,
+        38,
+        33,
+        176,
+        31,
+        241,
+        175
+      ],
+      "exampleSignatures": [
+        "4z6GUn57rrN68ePRXDCCqL1UvbLd4NxnW7PrgrQe9vPpbEyhwMjAi6552zvWPaNmZzZqrGbsHx81vFodf2tVAorn",
+        "2KEvS4S8MSmTYtBdZmSz9DacV2T3VCEy5EKwPChwYfbY3XvYFhJLjiLKKXa8n1SZ5sGhVGEBGKidTxSuL9rMS8k6",
+        "3WYXuPvdHeLKUXp86Ug5eUTDUEF3eFKx6anDpKhdwDnhASWk6sdpsc3QUrvvrr1TzTyB5zwc8tdSSnTNbFYJPBAu"
+      ],
+      "name": "swap_v3",
+      "nameSource": "openzoo sonar rainbow table — this discriminator is declared by 2 published IDL(s); the name is theirs, the shape below is this program's",
+      "observedIn": 119,
+      "samplesGained": 76,
+      "samplesLost": 43,
+      "shapeNote": "all 119 samples had 15 accounts"
+    }
+  ],
+  "metadata": {
+    "name": "learned",
+    "source": "reconstructed from landed transactions",
+    "spec": "0.1.0"
+  },
+  "truncated": "the PDA seed search hit its budget: some accounts reported as caller-supplied may in fact be derivable. Raise `seedBudget`."
+}

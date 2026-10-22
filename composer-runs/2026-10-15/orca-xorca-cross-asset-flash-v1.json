@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-10-15T20:10:17.516Z",
+  "readOnly": true,
+  "liveSubmission": false,
+  "sigVerify": true,
+  "targetProgram": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+  "nativeFlashProgram": "jupKxkab7RTnQJ6wXStXg6WY4rcReV3maiUNwByciFF",
+  "liquidityProgram": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+  "sourceMint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+  "sourceSymbol": "USDG",
+  "sourceConfiguredFeeBps": "0",
+  "attacker": "G2UZazyoNop6by6KfZ3ZwgyktbgFWusspNHpyEq9yraj",
+  "attackerAccounts": {
+    "usdg": "YscCQWYrq61S4uopdXFFF3EGqBXXgCpgjC5NvS4aCru",
+    "orca": "7UTUhvTngNLVUie5wdoaXq533jXhEW5fSEEFLprqQr1J",
+    "xorca": "GPmYExR9RVAa68hYTC9DuD6pCvnUJteygBSiUAwcgFu4"
+  },
+  "secretKeysStored": false,
+  "rpcUrlsStored": false,
+  "protocolAccountsMutated": false,
+  "results": [],
+  "quoteBlockers": [
+    {
+      "amountRaw": "1000",
+      "blocker": "HTTP 429: Rate limit exceeded, please try again later."
+    },
+    {
+      "amountRaw": "1000000",
+      "blocker": "Cannot convert undefined to a BigInt"
+    },
+    {
+      "amountRaw": "100000000",
+      "blocker": "Cannot convert undefined to a BigInt"
+    }
+  ],
+  "summary": {
+    "attemptedAmounts": 3,
+    "simulatedCases": 0,
+    "successfulFullRepayCases": 0,
+    "positiveAttackerUsdGCases": [],
+    "maxWireBytes": 0,
+    "maxAddressCount": 0,
+    "allWithinV1Limits": true
+  },
+  "interpretation": "The synthetic USDG prefund is explicitly included so loss-making cases can still complete exact repayment. Attacker USDG delta is measured after full lender repayment; ORCA and xORCA must both unwind to zero."
+}

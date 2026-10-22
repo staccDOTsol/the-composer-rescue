@@ -1,0 +1,3346 @@
+{
+  "schema": "kliquidity-klend-v1-v1",
+  "observedAtUtc": "2026-10-15T19:32:06.386Z",
+  "safety": {
+    "liveSubmission": false,
+    "sigVerify": false,
+    "rpcMethod": "simulateTransaction"
+  },
+  "programs": {
+    "kliquidity": "6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc",
+    "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+  },
+  "sourceFlashTransaction": {
+    "signature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+    "slot": 457338071,
+    "borrowInstructionIndex": 3,
+    "repayInstructionIndex": 13
+  },
+  "selectedReserve": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "liquiditySupply": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "availableLiquidityRaw": "8010116695096",
+    "flashLoanFeeSf": "0",
+    "feeScale": "2^60",
+    "feeInterpretation": "The decoded on-chain fee field is exactly zero; zero simulated fee is not a rounding inference."
+  },
+  "strategy": {
+    "address": "Hmj82e48X9LNW8LeMLk186iE4UKPoUwWuLwoiqMpUiGm",
+    "tokenAMint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+    "tokenBMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "sharesMint": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+    "withdrawAmountShares": "1"
+  },
+  "manipulationRoutes": {
+    "producerPathsTested": [
+      "Orca Whirlpool v2 USDC -> pyUSD spot swap"
+    ],
+    "consumerPathsTested": [
+      "Kliquidity proportional deposit -> share mint -> shareholder withdraw"
+    ],
+    "calibration": {
+      "swapInputUsdcRaw": "200000",
+      "depositTokenA": "0.197967",
+      "depositTokenB": "0.17253492318147434495",
+      "withdrawnShares": "120.7",
+      "reverseInputTokenARaw": "199000"
+    },
+    "scaledFlashRoute": {
+      "flashBorrowUsdcRaw": "186500000",
+      "swapInputUsdcRaw": "100000000",
+      "depositTokenA": "98.983751",
+      "depositTokenB": "86.267680345710064673",
+      "withdrawnShares": "60300",
+      "reverseInputTokenARaw": "99500000"
+    }
+  },
+  "tracked": {
+    "flashUserUsdc": "C5D9cS5gAtuSipZJXacjgdpaBhed39GMeMr5CNom8zDw",
+    "klendSupplyUsdc": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "klendFeeVaultUsdc": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "klendReserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "holderTokenA": "FAD3u9fq5W159y2FAo1HMqv6Utogq9XrVuxwB8hJRkUL",
+    "holderUsdc": "EBHcqBTqK3Wz81ymgTsLRwhpU89izUw99HbsyKJceWnk",
+    "holderShares": "41X7pYVPHucbz8ry1bNd1ieCwaByys41eS8GR125gb5o",
+    "strategySharesMintSupply": "38wQFRuj6FezzGYegzHdqrRK7hkEkBx7wSqxDBYXpKpy",
+    "outsiderTokenA": "F4Z7bmzUPwMRoNEu6GHtmyUaUE9cFg6fa1pumrtmk5kz",
+    "outsiderShares": "9Gjty6wYfmEJNpaPPH93Ws3wT3uGSqYTDdKbcdnVSAqZ",
+    "orcaPool": "9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B"
+  },
+  "beforeSlot": 457355125,
+  "before": [
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "716825",
+      "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+    },
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "8010116765101",
+      "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+    },
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "0",
+      "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+    },
+    {
+      "kind": "state",
+      "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+      "availableLiquidityRaw": "8010116695096",
+      "flashLoanFeeSf": "0"
+    },
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "26047751",
+      "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+    },
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "0",
+      "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+    },
+    {
+      "kind": "tokenAccount",
+      "rawAmount": "178235990358",
+      "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+    },
+    {
+      "kind": "tokenMint",
+      "rawAmount": "5455392147248194",
+      "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+    },
+    null,
+    null,
+    {
+      "kind": "state",
+      "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+      "liquidityRaw": "13419576908646500",
+      "sqrtPriceX64": "18447335554267119363",
+      "tickCurrentIndex": 0
+    }
+  ],
+  "debtAccounting": "KLend flash loans do not create a persistent obligation account. Success requires the indexed repay in the same atomic transaction; restored reserve/supply/user/fee balances are reconciled explicitly.",
+  "outputs": [
+    {
+      "name": "control_full_rebalance_v1",
+      "amountRaw": "0",
+      "success": true,
+      "error": null,
+      "slot": 457355128,
+      "sizeBytes": 1686,
+      "equivalentV0Bytes": 1673,
+      "accountCount": 41,
+      "instructionCount": 3,
+      "requiredSignatures": 3,
+      "unitsConsumed": 432542,
+      "loadedAccountsDataSize": 22797424,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "1daffca136f4f08a70e3cf86c685bb64f1792013956dbfae5bf55acb4d5094c8",
+            "liquidityRaw": "18256736501370",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program log: Instruction: CollectFeesV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: OpenLiquidityPosition",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:421] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: [programs/yvaults/src/utils/scope.rs:337] VaultError::InvalidScopeStakingRateChain = InvalidScopeStakingRateChain",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: ClosePosition",
+        "Program log: Instruction: OpenPosition"
+      ]
+    },
+    {
+      "name": "outsider_swap_calibration_only",
+      "amountRaw": "0",
+      "success": true,
+      "error": null,
+      "slot": 457355133,
+      "sizeBytes": 921,
+      "equivalentV0Bytes": 907,
+      "accountCount": 22,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "unitsConsumed": 89947,
+      "loadedAccountsDataSize": 12209971,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "516825",
+            "sha256": "736b0052552f9ffbc631e862f0750447a264b8bf3dd46c38404f6903e8efa739"
+          },
+          "rawDelta": "-200000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "199967",
+            "sha256": "c0aa3b8354024762a2b5bfbd8e865db258fe6eafe3d6396e88639c0be8dd6f93"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "d0e7650fdd40ad9a43042e0b4b63b550cb2f166ea569fdd598d958e68e15e94d"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "6dfa1ebd0428cd854b2c727d27dc16085ccaf5707c7f5ed1ad3c4903157a6ef1",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554542014756",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "name": "outsider_swap_then_ratio_deposit_calibration",
+      "amountRaw": "0",
+      "success": true,
+      "error": null,
+      "slot": 457355137,
+      "sizeBytes": 1327,
+      "equivalentV0Bytes": 1312,
+      "accountCount": 33,
+      "instructionCount": 5,
+      "requiredSignatures": 1,
+      "unitsConsumed": 324506,
+      "loadedAccountsDataSize": 22821971,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "344292",
+            "sha256": "f0e7f2bc9368f0050bf1a7c57916c0d616e91a3e91e9c951a3a55e222d9b9d1a"
+          },
+          "rawDelta": "-372533",
+          "stateHashRestored": false
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392267949707",
+            "sha256": "cfb2349dbdd1f120bf10ef0c230283f7b8652000ff4d22f0e9312ef8fb7c1e04"
+          },
+          "rawDelta": "120701513",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "2002",
+            "sha256": "e6eb06d8de75049f792e8cdd79b1d9e01eab423b821891225eee75bde55efb24"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "120701513",
+            "sha256": "bfe000dd4582e4e88465f6c0d0b72bd3a24ff439dc154c672722c2c3260d6e9a"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "6dfa1ebd0428cd854b2c727d27dc16085ccaf5707c7f5ed1ad3c4903157a6ef1",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554542014756",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Deposit",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "name": "outsider_swap_deposit_withdraw_cycle",
+      "amountRaw": "0",
+      "success": true,
+      "error": null,
+      "slot": 457355141,
+      "sizeBytes": 1472,
+      "equivalentV0Bytes": 1456,
+      "accountCount": 36,
+      "instructionCount": 6,
+      "requiredSignatures": 1,
+      "unitsConsumed": 556044,
+      "loadedAccountsDataSize": 22822676,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "516649",
+            "sha256": "fa36db708e22d35220fb6701634a25a1df2cf09e42a500eb78cc765f79786c94"
+          },
+          "rawDelta": "-200176",
+          "stateHashRestored": false
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147249707",
+            "sha256": "ea2499a013a8e5f43242c8c38577e47f5b4a7f1aabf6259466a0ee68117a5169"
+          },
+          "rawDelta": "1513",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "199766",
+            "sha256": "d7e49486d450733718b754d3796b3b91c20e2d9e95e0eef0751710536e3ccfbd"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "1513",
+            "sha256": "c6180a7a850f9b1d34d81cdb47f894cc88eda22510782582fb5f240a902d8dce"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "6458fdd012d23c5148c3f609141a09e0985d4a2d628f418bee269c06580187d3",
+            "liquidityRaw": "13419576612143168",
+            "sqrtPriceX64": "18447335554542014756",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Deposit",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "name": "outsider_swap_deposit_withdraw_reverse_cycle",
+      "amountRaw": "0",
+      "success": true,
+      "error": null,
+      "slot": 457355145,
+      "sizeBytes": 1542,
+      "equivalentV0Bytes": 1525,
+      "accountCount": 36,
+      "instructionCount": 7,
+      "requiredSignatures": 1,
+      "unitsConsumed": 600693,
+      "loadedAccountsDataSize": 22822676,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "715641",
+            "sha256": "e670c3d9933ab53f833feba058f90205dc7587c1e511bd8fe1728cd81faca863"
+          },
+          "rawDelta": "-1184",
+          "stateHashRestored": false
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147249707",
+            "sha256": "ea2499a013a8e5f43242c8c38577e47f5b4a7f1aabf6259466a0ee68117a5169"
+          },
+          "rawDelta": "1513",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "766",
+            "sha256": "12ecdd9a522362010eaa24f00b233f40c3a32a14075119901e5323f14477c644"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "1513",
+            "sha256": "c6180a7a850f9b1d34d81cdb47f894cc88eda22510782582fb5f240a902d8dce"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "ac1c5efd82a92b98596fd57cdd50bdbd1935f4c3d4f604474195a5929ea95cea",
+            "liquidityRaw": "13419576612143168",
+            "sqrtPriceX64": "18447335554268476430",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Deposit",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: SwapV2"
+      ]
+    },
+    {
+      "name": "flash_scaled_swap_deposit_withdraw_reverse_repay",
+      "amountRaw": "186500000",
+      "success": true,
+      "error": null,
+      "slot": 457355149,
+      "sizeBytes": 1799,
+      "equivalentV0Bytes": 1780,
+      "accountCount": 42,
+      "instructionCount": 9,
+      "requiredSignatures": 1,
+      "unitsConsumed": 671836,
+      "loadedAccountsDataSize": 33322474,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "54371",
+            "sha256": "4bf3dc97f2d9c3e534139c8256a1da8ad5e5d7526c85e208257adaca5dd83ae0"
+          },
+          "rawDelta": "-662454",
+          "stateHashRestored": false
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "35e3ec927789d7d406ceacc6bbfc39cabbf8d9b8e85a078d9cc7b53146f53003",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392198058351",
+            "sha256": "83a6983d493d79bf580d84c15314736b2cc5a11f9a33a9b7a52c812de8c2c71c"
+          },
+          "rawDelta": "50810157",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "301351",
+            "sha256": "d38bb614d26656ff02333a247326f8ad83bcadbd072f0240e9f8fc88f9ab45f9"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "50810157",
+            "sha256": "c76de51065fe348a25d8556ba7ce59b47914335972895e655fb67438816045c6"
+          },
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "a13e81e0d8cbed5a2fcbaa6809cc741111a168cec6170b1b3f3e85776e666656",
+            "liquidityRaw": "13419428781684001",
+            "sqrtPriceX64": "18447335554944076754",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: SwapV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Deposit",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked"
+      ]
+    },
+    {
+      "name": "dust_1_raw_pair",
+      "amountRaw": "1",
+      "success": true,
+      "error": null,
+      "slot": 457355155,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 55217,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "5ef881d6e1d31d3c44afa62b50111360910db2b06e776847fa802cfd48a5ff98",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "dust_2_raw_pair",
+      "amountRaw": "2",
+      "success": true,
+      "error": null,
+      "slot": 457355159,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 55222,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "4bc35d56f2a6d3060d7db9fa43322386611841d896d8bb0bc3b0a80bae83e250",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "known_7789632497552_raw_pair",
+      "amountRaw": "7789632497552",
+      "success": true,
+      "error": null,
+      "slot": 457355164,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 55216,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "317124664f50e71cc49c5cbb9f565658a69881b1a1be3fcaf598338dd43c0c22",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "available_minus_1_pair",
+      "amountRaw": "8010116695095",
+      "success": true,
+      "error": null,
+      "slot": 457355168,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 55212,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "2bc9cbe2441883082af122232e2440b9e2cb5eba8afc09f0f27d88d358c7fab3",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "available_exact_pair",
+      "amountRaw": "8010116695096",
+      "success": true,
+      "error": null,
+      "slot": 457355172,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 55225,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "4893aaa440aaa352409d7bbaa10a752743371256b6b6a4cb03e3c757b7d1466d",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": true
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "available_plus_1_pair",
+      "amountRaw": "8010116695097",
+      "success": false,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6008
+          }
+        ]
+      },
+      "slot": 457355179,
+      "sizeBytes": 531,
+      "equivalentV0Bytes": 519,
+      "accountCount": 11,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "unitsConsumed": 32644,
+      "loadedAccountsDataSize": 10609046,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: AnchorError thrown in programs/klend/src/state/reserve.rs:1010. Error Code: InsufficientLiquidity. Error Number: 6008. Error Message: Insufficient liquidity available.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1778"
+      ]
+    },
+    {
+      "name": "flash_collect_repay",
+      "amountRaw": "1000000",
+      "success": true,
+      "error": null,
+      "slot": 457355183,
+      "sizeBytes": 1380,
+      "equivalentV0Bytes": 1367,
+      "accountCount": 36,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "unitsConsumed": 275412,
+      "loadedAccountsDataSize": 33093857,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "08c4ae3c3a677135ba5a23f26a9159bad07d2a1b764ebbe44adebece5e81e73d",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "0dc501b02355b342acd1f780337de65b88b6ea53b43148d9473b18f48bf9b95f",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program log: Instruction: CollectFeesV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "collect_flash_repay",
+      "amountRaw": "1000000",
+      "success": true,
+      "error": null,
+      "slot": 457355188,
+      "sizeBytes": 1380,
+      "equivalentV0Bytes": 1367,
+      "accountCount": 36,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "unitsConsumed": 272392,
+      "loadedAccountsDataSize": 33093857,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "39ee5e6a42bf8a567fc1b62543fdba6ede203e6494f35a867c5674f73d3c24ab",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "145d4f0388e8aea8171e986795fdcbb0589c844ef720564143a9e447f664618c",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program log: Instruction: CollectFeesV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_withdraw_1_share_repay",
+      "amountRaw": "1000000",
+      "success": true,
+      "error": null,
+      "slot": 457355191,
+      "sizeBytes": 1498,
+      "equivalentV0Bytes": 1483,
+      "accountCount": 37,
+      "instructionCount": 5,
+      "requiredSignatures": 2,
+      "unitsConsumed": 294650,
+      "loadedAccountsDataSize": 33198795,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "79f3215a7f3322bbe4ac81debb7daaaf18c5bdf5a57344ea306bff81879dae65",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26049389",
+            "sha256": "8f5da8b9ec03b714c3ab3b52f6ef7e3c10d311cda7ee2be8dd6ae3b420045a17"
+          },
+          "rawDelta": "1638",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "1427",
+            "sha256": "41eb522e10e31cb2ae2e585bd09584aa00834ce0a2700deb56028e4aea8d7811"
+          },
+          "rawDelta": "1427",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178234990358",
+            "sha256": "7e4816ea601dea8f4810a4d8f82e8aa5f53e3688712d79f5149527ed0a07cb2b"
+          },
+          "rawDelta": "-1000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392146248194",
+            "sha256": "3a3ca6fb6fdd67f885c6219710e7a959d106813fd68f757f8b0ac4fd9927d2f3"
+          },
+          "rawDelta": "-1000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "d4e84b19f56034aa6584ce1b2740d8d901d9cadc9ed7f4a1821b26e0e0cd496c",
+            "liquidityRaw": "13419576906188972",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_two_withdrawals_repay",
+      "amountRaw": "1000000",
+      "success": true,
+      "error": null,
+      "slot": 457355195,
+      "sizeBytes": 1547,
+      "equivalentV0Bytes": 1531,
+      "accountCount": 37,
+      "instructionCount": 6,
+      "requiredSignatures": 2,
+      "unitsConsumed": 521404,
+      "loadedAccountsDataSize": 33198795,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "7e7475fd1b5987664b4d517bd3029847c9ecf29132e0f68eadd228e81dd49c6c",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26051027",
+            "sha256": "4eb582f3b72e040b5dfc359930ea2856b6ab719b418272b8028ddb6ae00add37"
+          },
+          "rawDelta": "3276",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "2854",
+            "sha256": "b536864015faf0a39929ce9e7445946bddd014a9c2a9926185d97570291e191b"
+          },
+          "rawDelta": "2854",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178233990358",
+            "sha256": "2d39f8ec69086019decd7a18421df7d5be10be1e9b71e96693dfd30b8bebf8a9"
+          },
+          "rawDelta": "-2000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392145248194",
+            "sha256": "bbbd63d4da0335de5368ee5e65fe23c1a8a9e90e3d502933a5682a08811c85f8"
+          },
+          "rawDelta": "-2000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "cd4f71e1c4752c534d6993ca0aac80ea3f613dbde84b48aa541b4c891cffacef",
+            "liquidityRaw": "13419576903731444",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_collect_withdraw_repay",
+      "amountRaw": "1000000",
+      "success": true,
+      "error": null,
+      "slot": 457355199,
+      "sizeBytes": 1739,
+      "equivalentV0Bytes": 1723,
+      "accountCount": 43,
+      "instructionCount": 6,
+      "requiredSignatures": 2,
+      "unitsConsumed": 515888,
+      "loadedAccountsDataSize": 33199957,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "rawDelta": "0",
+          "stateHashRestored": true
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "6108781eecd18e81fd8df75ccf4fda0d124bd31ce212a8f756e02f41d0dce4d0",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "26049389",
+            "sha256": "8f5da8b9ec03b714c3ab3b52f6ef7e3c10d311cda7ee2be8dd6ae3b420045a17"
+          },
+          "rawDelta": "1638",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "1427",
+            "sha256": "41eb522e10e31cb2ae2e585bd09584aa00834ce0a2700deb56028e4aea8d7811"
+          },
+          "rawDelta": "1427",
+          "stateHashRestored": false
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": {
+            "kind": "tokenAccount",
+            "rawAmount": "178234990358",
+            "sha256": "7e4816ea601dea8f4810a4d8f82e8aa5f53e3688712d79f5149527ed0a07cb2b"
+          },
+          "rawDelta": "-1000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392146248194",
+            "sha256": "3a3ca6fb6fdd67f885c6219710e7a959d106813fd68f757f8b0ac4fd9927d2f3"
+          },
+          "rawDelta": "-1000000",
+          "stateHashRestored": false
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": {
+            "kind": "state",
+            "sha256": "01d8e030dd2152cdbc0ce4785ddaa9cbc70fa52a8870731fbe1f1cf1737aeeed",
+            "liquidityRaw": "13419576906188972",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "rawDelta": null,
+          "stateHashRestored": false
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: CollectFeesAndRewards",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program log: Instruction: CollectFeesV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: CollectRewardV2",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_wrong_repay_index",
+      "amountRaw": "1000000",
+      "success": false,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6033
+          }
+        ]
+      },
+      "slot": 457355203,
+      "sizeBytes": 1380,
+      "equivalentV0Bytes": 1367,
+      "accountCount": 36,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "unitsConsumed": 24336,
+      "loadedAccountsDataSize": 33093857,
+      "deltas": [
+        {
+          "label": "flashUserUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "716825",
+            "sha256": "cec5cde6ce250d9ec32d4cdff99c3fce95d8be5dd650cc71e3b184930abaebcb"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendSupplyUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "8010116765101",
+            "sha256": "c4b08b794c5589e160c921f2cd255e26cfb94feedc759f78d2426cccbc1ef079"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendFeeVaultUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "klendReserve",
+          "before": {
+            "kind": "state",
+            "sha256": "e734d21a7f084f2d536fe712a487bf4495ff4c0046983f0445decfdf45fb75d6",
+            "availableLiquidityRaw": "8010116695096",
+            "flashLoanFeeSf": "0"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderTokenA",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "26047751",
+            "sha256": "5b8d216a7711d1ec9e28f3f4fee96f4e6d100e70d3d8da24494e27877c4272ba"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderUsdc",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "0",
+            "sha256": "190a25f13be5f8a96456bf6b039441bba217103d55f3e14ec94c18ebfbd2f748"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "holderShares",
+          "before": {
+            "kind": "tokenAccount",
+            "rawAmount": "178235990358",
+            "sha256": "5af645391ce2d11b2dbe46823a004434e3a124e8e692417455c87580032805c1"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "strategySharesMintSupply",
+          "before": {
+            "kind": "tokenMint",
+            "rawAmount": "5455392147248194",
+            "sha256": "0f840ea87e291c2a6bf3a99423a43a96bcf51b3ffd881f89796a1099270a3253"
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderTokenA",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "outsiderShares",
+          "before": null,
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        },
+        {
+          "label": "orcaPool",
+          "before": {
+            "kind": "state",
+            "sha256": "400b5e1aa18eb020c860e131c090248f5c725aa8bb8f3bc57c2cf39031455dc4",
+            "liquidityRaw": "13419576908646500",
+            "sqrtPriceX64": "18447335554267119363",
+            "tickCurrentIndex": 0
+          },
+          "after": null,
+          "rawDelta": null,
+          "stateHashRestored": null
+        }
+      ],
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:164. Error Code: InvalidFlashRepay. Error Number: 6033. Error Message: Invalid repay found.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1791"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1201 @@
+{
+  "generatedAt": "2026-10-15T19:43:51.112Z",
+  "method": "offline deterministic execution of the deployed floor-division formulas over decoded mainnet events",
+  "formula": {
+    "deposit": "shares=floor(assets*1e18/old_price)",
+    "redeem": "assets_out=floor(shares*new_price/1e18)"
+  },
+  "caveat": "This is a two-transaction temporal path. Atomic flash liquidity cannot span the reward-to-price window; modeled lender inventory is only a scale reference, not a claim that a flash loan can finance the path.",
+  "latestPositiveWindow": {
+    "publish": {
+      "signature": "TCRGVmYqyjTpXfnT3jkhpD2WirW2xzWiFtEwr8REZZJpBKTR5AuJEhrz42deZ1zSVbMGYsRfPEULbBBZHhaLFEJ",
+      "slot": 457351954,
+      "blockTimeIso": "2026-10-15T19:20:25.000Z",
+      "amountRaw": "813853565",
+      "publicationId": 11447
+    },
+    "priorPrice": {
+      "signature": "36sNcGnR14keDTwNrFra97mWCTDWW4tj25CDrnztFm1Y8HkYDEBch2NaSnZozR7RPKz2pnnirYhpMMmoKXHdQZUG",
+      "slot": 457345403,
+      "blockTimeIso": "2026-10-15T18:56:51.000Z",
+      "raw": "1064716884235726713",
+      "observationTimestamp": "1792090584"
+    },
+    "nextPrice": {
+      "signature": "DHiUji3MPDprRJ8NUyQPoWHs2Ej1TP8f9VNkMcF9ADKFDsDC8YDF5DsCogJB84xgnXDo4BaYmdpDT7KFUiCFQem",
+      "slot": 457352632,
+      "blockTimeIso": "2026-10-15T19:22:51.000Z",
+      "raw": "1064718370320839103",
+      "observationTimestamp": "1792092144"
+    },
+    "openWindowSeconds": 146,
+    "priceDeltaRaw": "1486085112390",
+    "priceIncreasePartsPerBillion": "1395",
+    "depositsObservedInsideWindow": [],
+    "modeledAtOneMillionWylds": {
+      "assetsInRaw": "1000000000000",
+      "sharesMintedRaw": "939216814165",
+      "assetsOutRaw": "1000001395755",
+      "netWyldsRaw": "1395755"
+    },
+    "modeledAtLiveWyldsLenderInventory": {
+      "assetsInRaw": "37605722306",
+      "sharesMintedRaw": "35319926698",
+      "assetsOutRaw": "37605774793",
+      "netWyldsRaw": "52487"
+    },
+    "modeledAtPreRewardVaultAssets": {
+      "assetsInRaw": "123202392693474",
+      "sharesMintedRaw": "115713758763120",
+      "assetsOutRaw": "123202564653967",
+      "netWyldsRaw": "171960493"
+    },
+    "bestObservedExitBeforeNextReward": {
+      "signature": "5P1kUokbVTadrrxLcbRWTtxY1ZR8VPbTvpJ6pgYKCLLioDQ3kkkokMuKTjLjq9UuVt5CBeKVSX5xLU3U1NWuF5xn",
+      "slot": 457357363,
+      "blockTimeIso": "2026-10-15T19:39:50.000Z",
+      "raw": "1064723917765092433",
+      "secondsAfterPublish": 1165,
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939216814165",
+        "assetsOutRaw": "1000006606008",
+        "netWyldsRaw": "6606008"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35319926698",
+        "assetsOutRaw": "37605970729",
+        "netWyldsRaw": "248423"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "123202392693474",
+        "sharesMintedRaw": "115713758763120",
+        "assetsOutRaw": "123203206569593",
+        "netWyldsRaw": "813876119"
+      }
+    }
+  },
+  "windows": [
+    {
+      "publish": {
+        "signature": "k66vT4roz5EtiVDsWzpoyR5y7yTvhvAG6g9ctF6x6kCdeTqmKGLiY1EUtbASPtZUt94qsDNFLgNR5JkqH6mj36m",
+        "slot": 457082921,
+        "blockTimeIso": "2026-10-15T03:10:55.000Z",
+        "amountRaw": "829049320",
+        "publicationId": 11399
+      },
+      "priorPrice": {
+        "signature": "28shxmsrboR6t5DoiQXFSSbhz3RYE1xo7QwnjfBTWzWVMJYtea32RmSy1v89ADDsdhEjagmTQxdKTFzn3XZTDZt2",
+        "slot": 457079911,
+        "blockTimeIso": "2026-10-15T02:59:52.000Z",
+        "raw": "1064604744828836813",
+        "observationTimestamp": "1792033164"
+      },
+      "nextPrice": {
+        "signature": "5f12ECnJqvH2LT6MHc2k1vDJk6nzN8PND6yLNnWP3RFroYCyXY4yPHXy5gXzqaHGRL1SCc89dL8eGxYYNDqdfjsT",
+        "slot": 457084275,
+        "blockTimeIso": "2026-10-15T03:15:51.000Z",
+        "raw": "1064606250258319829",
+        "observationTimestamp": "1792034124"
+      },
+      "openWindowSeconds": 296,
+      "priceDeltaRaw": "1505429483016",
+      "priceIncreasePartsPerBillion": "1414",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939315745921",
+        "assetsOutRaw": "1000001414073",
+        "netWyldsRaw": "1414073"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35323647098",
+        "assetsOutRaw": "37605775482",
+        "netWyldsRaw": "53176"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126665451371584",
+        "sharesMintedRaw": "118978852937527",
+        "assetsOutRaw": "126665630485856",
+        "netWyldsRaw": "179114272"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "vUxEFhFsquJgfERbSAzuLwYAsNJ7qNnBuUhAD61rXopJAVAUjywpoN9xwVvhTSutnNC3AT6WL1i6vFD5tsZEY87",
+        "slot": 457098350,
+        "blockTimeIso": "2026-10-15T04:06:51.000Z",
+        "raw": "1064611714299028504",
+        "secondsAfterPublish": 3356,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939315745921",
+          "assetsOutRaw": "1000006546533",
+          "netWyldsRaw": "6546533"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35323647098",
+          "assetsOutRaw": "37605968492",
+          "netWyldsRaw": "246186"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126665451371584",
+          "sharesMintedRaw": "118978852937527",
+          "assetsOutRaw": "126666280591152",
+          "netWyldsRaw": "829219568"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "3pxWGbeevWVGLD9QuYpVM5jwrvJrsJySxKQBpN3vQsAsWtf5m4L7dV8W13V7sg6ACPuyiuRNwAuHGP2Usd4WsaqB",
+        "slot": 457100758,
+        "blockTimeIso": "2026-10-15T04:15:33.000Z",
+        "amountRaw": "827827884",
+        "publicationId": 11402
+      },
+      "priorPrice": {
+        "signature": "vUxEFhFsquJgfERbSAzuLwYAsNJ7qNnBuUhAD61rXopJAVAUjywpoN9xwVvhTSutnNC3AT6WL1i6vFD5tsZEY87",
+        "slot": 457098350,
+        "blockTimeIso": "2026-10-15T04:06:51.000Z",
+        "raw": "1064611714299028504",
+        "observationTimestamp": "1792037184"
+      },
+      "nextPrice": {
+        "signature": "3Zf8oQfq8iHDJtX2NTtArrHWkHNtzmfLPr7gTgZWR7PahDigM33snsHH9eu8pdwYm1X2Ne6nbbJGtKpxTDhHspor",
+        "slot": 457103039,
+        "blockTimeIso": "2026-10-15T04:23:50.000Z",
+        "raw": "1064613218311423038",
+        "observationTimestamp": "1792038204"
+      },
+      "openWindowSeconds": 497,
+      "priceDeltaRaw": "1504012394534",
+      "priceIncreasePartsPerBillion": "1412",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939309596699",
+        "assetsOutRaw": "1000001412732",
+        "netWyldsRaw": "1412732"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35323415852",
+        "assetsOutRaw": "37605775431",
+        "netWyldsRaw": "53125"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126361821892591",
+        "sharesMintedRaw": "118692871960169",
+        "assetsOutRaw": "126362000408141",
+        "netWyldsRaw": "178515550"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "4swHKrYf8trJozbo8pD6uRxH4AKo3SsWZgauNEzuBYFBYbJe1ZF52A3sN3AQBeEx3xxoBFuZpLoCcXKreNTTXMNg",
+        "slot": 457112426,
+        "blockTimeIso": "2026-10-15T04:57:51.000Z",
+        "raw": "1064618689116208066",
+        "secondsAfterPublish": 2538,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939309596699",
+          "assetsOutRaw": "1000006551511",
+          "netWyldsRaw": "6551511"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35323415852",
+          "assetsOutRaw": "37605968679",
+          "netWyldsRaw": "246373"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126361821892591",
+          "sharesMintedRaw": "118692871960169",
+          "assetsOutRaw": "126362649753673",
+          "netWyldsRaw": "827861082"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "2MJknf15xW76JUMZLfdB6ocHtELHjSSaLhwDbBbn5pkaKR9yDv9JNpQi5vize1NeK9WhyjHvZf6bvzyEp1wH44JA",
+        "slot": 457118581,
+        "blockTimeIso": "2026-10-15T05:20:11.000Z",
+        "amountRaw": "827385224",
+        "publicationId": 11405
+      },
+      "priorPrice": {
+        "signature": "4swHKrYf8trJozbo8pD6uRxH4AKo3SsWZgauNEzuBYFBYbJe1ZF52A3sN3AQBeEx3xxoBFuZpLoCcXKreNTTXMNg",
+        "slot": 457112426,
+        "blockTimeIso": "2026-10-15T04:57:51.000Z",
+        "raw": "1064618689116208066",
+        "observationTimestamp": "1792040244"
+      },
+      "nextPrice": {
+        "signature": "64hx9HQauEwSLeHtR4bsb9zsygkuuG2R5NptFgiGmYTMHF4dKzsxuCXnKA5RzTQi2aQv6enPBozkQ8Sph8iY9F3A",
+        "slot": 457119040,
+        "blockTimeIso": "2026-10-15T05:21:51.000Z",
+        "raw": "1064620192324380090",
+        "observationTimestamp": "1792041684"
+      },
+      "openWindowSeconds": 100,
+      "priceDeltaRaw": "1503208172024",
+      "priceIncreasePartsPerBillion": "1411",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939303442841",
+        "assetsOutRaw": "1000001411968",
+        "netWyldsRaw": "1411968"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35323184432",
+        "assetsOutRaw": "37605775403",
+        "netWyldsRaw": "53097"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126354919300556",
+        "sharesMintedRaw": "118685610718941",
+        "assetsOutRaw": "126355097709735",
+        "netWyldsRaw": "178409179"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "3nD91cg3X6KRrUY57YxrzbkXABhgStKEfjhYbTyT8FxZq38LpFBx7fWSs2peT5tMj3zn22GEdWN9LeMSf7CtwJ88",
+        "slot": 457133126,
+        "blockTimeIso": "2026-10-15T06:12:50.000Z",
+        "raw": "1064625660538318150",
+        "secondsAfterPublish": 3159,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939303442841",
+          "assetsOutRaw": "1000006548280",
+          "netWyldsRaw": "6548280"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35323184432",
+          "assetsOutRaw": "37605968558",
+          "netWyldsRaw": "246252"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126354919300556",
+          "sharesMintedRaw": "118685610718941",
+          "assetsOutRaw": "126355746708046",
+          "netWyldsRaw": "827407490"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "4g9mQUmvRoGyFe7yHKgVcYEcAZfRu92uNEryE83HWn5XwhV2R6kaH74vBgxGZKXA2M1csZKjyeDQgj3JV3MDLQmW",
+        "slot": 457136457,
+        "blockTimeIso": "2026-10-15T06:24:49.000Z",
+        "amountRaw": "828147024",
+        "publicationId": 11408
+      },
+      "priorPrice": {
+        "signature": "3nD91cg3X6KRrUY57YxrzbkXABhgStKEfjhYbTyT8FxZq38LpFBx7fWSs2peT5tMj3zn22GEdWN9LeMSf7CtwJ88",
+        "slot": 457133126,
+        "blockTimeIso": "2026-10-15T06:12:50.000Z",
+        "raw": "1064625660538318150",
+        "observationTimestamp": "1792044743"
+      },
+      "nextPrice": {
+        "signature": "4QUpRdwAH87AtjKbsTpLWgnQKY6UNVG7mV3fpeCfVcoNK8D4ytRejN4UDthyWyG4ggbbbTsrEE7x6degnmwCxbfY",
+        "slot": 457137846,
+        "blockTimeIso": "2026-10-15T06:29:49.000Z",
+        "raw": "1064627165082714391",
+        "observationTimestamp": "1792045764"
+      },
+      "openWindowSeconds": 300,
+      "priceDeltaRaw": "1504544396241",
+      "priceIncreasePartsPerBillion": "1413",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939297292058",
+        "assetsOutRaw": "1000001413213",
+        "netWyldsRaw": "1413213"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35322953127",
+        "assetsOutRaw": "37605775449",
+        "netWyldsRaw": "53143"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126374374364395",
+        "sharesMintedRaw": "118703107626106",
+        "assetsOutRaw": "126374552958489",
+        "netWyldsRaw": "178594094"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "49vNG6kCTZNYe4sfnrUbdEb1s5DgZ35yBHt6jJGndbodaBSDrcFD4jkpU7YD3ZNK7EybCGBWGwZfbgZd1pUHW7cZ",
+        "slot": 457142560,
+        "blockTimeIso": "2026-10-15T06:46:51.000Z",
+        "raw": "1064632638173560273",
+        "secondsAfterPublish": 1322,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939297292058",
+          "assetsOutRaw": "1000006554072",
+          "netWyldsRaw": "6554072"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35322953127",
+          "assetsOutRaw": "37605968775",
+          "netWyldsRaw": "246469"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126374374364395",
+          "sharesMintedRaw": "118703107626106",
+          "assetsOutRaw": "126375202631381",
+          "netWyldsRaw": "828266986"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "JtG2EMom9V8965XB6yn9e4QXR5HK1nouHVp7kXMeSrsKvM4GfnSsZYwHGCS6Kngg4JorsXo2MFwWNP4SHpmhHuR",
+        "slot": 457154361,
+        "blockTimeIso": "2026-10-15T07:29:27.000Z",
+        "amountRaw": "828054280",
+        "publicationId": 11411
+      },
+      "priorPrice": {
+        "signature": "3Ce1h9CCV12qzxAMzpZuyppAsgTBcJL7Uum3pResprZyoTi844MshtKe1hb1PQLfM17wjopofphk8C1J3XygEJtT",
+        "slot": 457151112,
+        "blockTimeIso": "2026-10-15T07:17:51.000Z",
+        "raw": "1064632638173560273",
+        "observationTimestamp": "1792048644"
+      },
+      "nextPrice": {
+        "signature": "3V8F7cypGe3Lk6YKyUSJsrh85f4p2ijWNq5TqmqJAfGmuWyj3oyR9pih3qwxNG7vfPZphCwgbpQYu98tMPs1JBn7",
+        "slot": 457155032,
+        "blockTimeIso": "2026-10-15T07:31:49.000Z",
+        "raw": "1064634142549462924",
+        "observationTimestamp": "1792049484"
+      },
+      "openWindowSeconds": 142,
+      "priceDeltaRaw": "1504375902651",
+      "priceIncreasePartsPerBillion": "1413",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939291135875",
+        "assetsOutRaw": "1000001413046",
+        "netWyldsRaw": "1413046"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35322721620",
+        "assetsOutRaw": "37605775444",
+        "netWyldsRaw": "53138"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126375202511419",
+        "sharesMintedRaw": "118703107513426",
+        "assetsOutRaw": "126375381085512",
+        "netWyldsRaw": "178574093"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "2XneRRFP2YuEFyuQS66CKkUA2YFJKU72CrZKkRz1qjc3L8MCV1rAbJtxbL1coDmKcdivVUBJkJRqGSEhauEsGpQV",
+        "slot": 457170023,
+        "blockTimeIso": "2026-10-15T08:25:49.000Z",
+        "raw": "1064639618382261917",
+        "secondsAfterPublish": 3382,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939291135875",
+          "assetsOutRaw": "1000006556447",
+          "netWyldsRaw": "6556447"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35322721620",
+          "assetsOutRaw": "37605968865",
+          "netWyldsRaw": "246559"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126375202511419",
+          "sharesMintedRaw": "118703107513426",
+          "assetsOutRaw": "126376031083882",
+          "netWyldsRaw": "828572463"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "21rMwHoLQVJ8x6R8pWgZgnv2rYw63Wen2CULtRWrLUu6ocMFTEk3JVAwVVJKppDEu1gZucokd3DQwHHorMXvagu7",
+        "slot": 457172317,
+        "blockTimeIso": "2026-10-15T08:34:05.000Z",
+        "amountRaw": "828813043",
+        "publicationId": 11414
+      },
+      "priorPrice": {
+        "signature": "2XneRRFP2YuEFyuQS66CKkUA2YFJKU72CrZKkRz1qjc3L8MCV1rAbJtxbL1coDmKcdivVUBJkJRqGSEhauEsGpQV",
+        "slot": 457170023,
+        "blockTimeIso": "2026-10-15T08:25:49.000Z",
+        "raw": "1064639618382261917",
+        "observationTimestamp": "1792052724"
+      },
+      "nextPrice": {
+        "signature": "4PtZqjqKZbtgpAssF1cqFQvhqpDoQ6NGJ4DmBRgANj5SftFNKbsnTzcyzb1gamspLA1gbei9zBwEVyZs9w6G6MJE",
+        "slot": 457174743,
+        "blockTimeIso": "2026-10-15T08:42:49.000Z",
+        "raw": "1064646602395773196",
+        "observationTimestamp": "1792053744"
+      },
+      "openWindowSeconds": 524,
+      "priceDeltaRaw": "6984013511279",
+      "priceIncreasePartsPerBillion": "6559",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939284977502",
+        "assetsOutRaw": "1000006559978",
+        "netWyldsRaw": "6559978"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35322490030",
+        "assetsOutRaw": "37605968998",
+        "netWyldsRaw": "246692"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126290663883047",
+        "sharesMintedRaw": "118622923384109",
+        "assetsOutRaw": "126291492347145",
+        "netWyldsRaw": "828464098"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "soDiEXLmN2S5bvd7qtY1BAfd9xPFaak9tUmVf6s1d5xofSpiqna65TBHHSVNyvdFLopE7VvTD1jNFDaX7sbktht",
+        "slot": 457189490,
+        "blockTimeIso": "2026-10-15T09:35:43.000Z",
+        "raw": "1064652079837943922",
+        "secondsAfterPublish": 3698,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939284977502",
+          "assetsOutRaw": "1000011704858",
+          "netWyldsRaw": "11704858"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35322490030",
+          "assetsOutRaw": "37606162475",
+          "netWyldsRaw": "440169"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126290663883047",
+          "sharesMintedRaw": "118622923384109",
+          "assetsOutRaw": "126292142097348",
+          "netWyldsRaw": "1478214301"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "4oaUQhdmf8C39KAa4zc8Rk8KLKoaBfgd7YNUFVnCLYJcAxWDEgE8KV2t1DB6evqWzNdTZme4mfL7KRy4sZKbvngx",
+        "slot": 457190319,
+        "blockTimeIso": "2026-10-15T09:38:43.000Z",
+        "amountRaw": "828029683",
+        "publicationId": 11417
+      },
+      "priorPrice": {
+        "signature": "soDiEXLmN2S5bvd7qtY1BAfd9xPFaak9tUmVf6s1d5xofSpiqna65TBHHSVNyvdFLopE7VvTD1jNFDaX7sbktht",
+        "slot": 457189490,
+        "blockTimeIso": "2026-10-15T09:35:43.000Z",
+        "raw": "1064652079837943922",
+        "observationTimestamp": "1792056923"
+      },
+      "nextPrice": {
+        "signature": "2Ce7MkNVrNYUWwEqHH1DQDpbPFAWz1wfmuPrurS2C6xQVL7zQJFpgvU3BvcJazAARs8QdMJD9Q31231FteF58gMp",
+        "slot": 457194266,
+        "blockTimeIso": "2026-10-15T09:52:50.000Z",
+        "raw": "1064653585713489455",
+        "observationTimestamp": "1792057944"
+      },
+      "openWindowSeconds": 847,
+      "priceDeltaRaw": "1505875545533",
+      "priceIncreasePartsPerBillion": "1414",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939273983433",
+        "assetsOutRaw": "1000001414429",
+        "netWyldsRaw": "1414429"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35322076590",
+        "assetsOutRaw": "37605775496",
+        "netWyldsRaw": "53190"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126242138242475",
+        "sharesMintedRaw": "118575956064154",
+        "assetsOutRaw": "126242316803106",
+        "netWyldsRaw": "178560631"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "3Kx7hRdHEdGqezrT7DL1jfi8iZ3D78pn9d11yG2x1mspGqY4AZjawtc1QLZgvhAfnD6YnhcXpYS6pfQEN1HASEho",
+        "slot": 457206226,
+        "blockTimeIso": "2026-10-15T10:35:49.000Z",
+        "raw": "1064659060244263416",
+        "secondsAfterPublish": 3426,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939273983433",
+          "assetsOutRaw": "1000006556513",
+          "netWyldsRaw": "6556513"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35322076590",
+          "assetsOutRaw": "37605968868",
+          "netWyldsRaw": "246562"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126242138242475",
+          "sharesMintedRaw": "118575956064154",
+          "assetsOutRaw": "126242965950827",
+          "netWyldsRaw": "827708352"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "3NX2VXBFVPy5d8yftZspqF7PbH5poZDd1PaGybUk2Xqbm6BzrnCqvZ8sR5RhJhhRd6DDRofWgrbV2xd1t4XJreAC",
+        "slot": 457208338,
+        "blockTimeIso": "2026-10-15T10:43:21.000Z",
+        "amountRaw": "827436797",
+        "publicationId": 11420
+      },
+      "priorPrice": {
+        "signature": "3Kx7hRdHEdGqezrT7DL1jfi8iZ3D78pn9d11yG2x1mspGqY4AZjawtc1QLZgvhAfnD6YnhcXpYS6pfQEN1HASEho",
+        "slot": 457206226,
+        "blockTimeIso": "2026-10-15T10:35:49.000Z",
+        "raw": "1064659060244263416",
+        "observationTimestamp": "1792060524"
+      },
+      "nextPrice": {
+        "signature": "3YEq66EBntvkgNx6wdCmBv1iikkQwgCDb84YmKrW35sBYrG5eJMTveYw41p73RbJtpTNic73a9NekBgi7ucwPzBK",
+        "slot": 457211012,
+        "blockTimeIso": "2026-10-15T10:52:51.000Z",
+        "raw": "1064660565813332978",
+        "observationTimestamp": "1792061544"
+      },
+      "openWindowSeconds": 570,
+      "priceDeltaRaw": "1505569069562",
+      "priceIncreasePartsPerBillion": "1414",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939267825110",
+        "assetsOutRaw": "1000001414131",
+        "netWyldsRaw": "1414131"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35321845002",
+        "assetsOutRaw": "37605775485",
+        "netWyldsRaw": "53179"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "126223796296178",
+        "sharesMintedRaw": "118557950624323",
+        "assetsOutRaw": "126223974793360",
+        "netWyldsRaw": "178497182"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "4bLoU9Kbhjy1hnZyWFtKwTzQsCeLnJLwuhY69k1N8uTLJp1mmPfUxADvocsttvi1aPFhkD5kvuFSmeVgjYKCNeNN",
+        "slot": 457223049,
+        "blockTimeIso": "2026-10-15T11:35:49.000Z",
+        "raw": "1064660565813333660",
+        "secondsAfterPublish": 3148,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939267825110",
+          "assetsOutRaw": "1000001414131",
+          "netWyldsRaw": "1414131"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35321845002",
+          "assetsOutRaw": "37605775485",
+          "netWyldsRaw": "53179"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "126223796296178",
+          "sharesMintedRaw": "118557950624323",
+          "assetsOutRaw": "126223974793360",
+          "netWyldsRaw": "178497182"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "5Axi55LUsSNxDJ51NBWGkjDxhSLZnhnTLQnh6vEcSkFiuTZ1bVngmo3LM1HwCJY8PH47GFReABS8AnovsaQ6o56u",
+        "slot": 457226422,
+        "blockTimeIso": "2026-10-15T11:47:59.000Z",
+        "amountRaw": "827475868",
+        "publicationId": 11423
+      },
+      "priorPrice": {
+        "signature": "4bLoU9Kbhjy1hnZyWFtKwTzQsCeLnJLwuhY69k1N8uTLJp1mmPfUxADvocsttvi1aPFhkD5kvuFSmeVgjYKCNeNN",
+        "slot": 457223049,
+        "blockTimeIso": "2026-10-15T11:35:49.000Z",
+        "raw": "1064660565813333660",
+        "observationTimestamp": "1792064124"
+      },
+      "nextPrice": {
+        "signature": "2Vxry4spJYoXfbeAfHWML6SioMxtPpa5UVcmXefGdV8YuAoeLxTniUGPvfHTnxnLrhVxvY5Jhej2LeDk1DEo4yxv",
+        "slot": 457227774,
+        "blockTimeIso": "2026-10-15T11:52:49.000Z",
+        "raw": "1064667577293027726",
+        "observationTimestamp": "1792065144"
+      },
+      "openWindowSeconds": 290,
+      "priceDeltaRaw": "7011479694066",
+      "priceIncreasePartsPerBillion": "6585",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939266496863",
+        "assetsOutRaw": "1000006585647",
+        "netWyldsRaw": "6585647"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35321795052",
+        "assetsOutRaw": "37605969963",
+        "netWyldsRaw": "247657"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "125924532248724",
+        "sharesMintedRaw": "118276694274409",
+        "assetsOutRaw": "125925361543363",
+        "netWyldsRaw": "829294639"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "3UhVd3CmHJKffAykUMykhu4HTg47dagBaoBQTXsxybxDSKm61kwhdYGDh6gdhZuHVJV8fmxFxTusFTgSe9AgkKrU",
+        "slot": 457241927,
+        "blockTimeIso": "2026-10-15T12:43:49.000Z",
+        "raw": "1064673078808849914",
+        "secondsAfterPublish": 3350,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939266496863",
+          "assetsOutRaw": "1000011753037",
+          "netWyldsRaw": "11753037"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35321795052",
+          "assetsOutRaw": "37606164287",
+          "netWyldsRaw": "441981"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "125924532248724",
+          "sharesMintedRaw": "118276694274409",
+          "assetsOutRaw": "125926012244468",
+          "netWyldsRaw": "1479995744"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "65w4BCGe6JLwSbFM3NXiXpZCr6oo34Levshb5j8fyLsSNSS8yin9k2E2MUa4r2hctb2mMdeJdYqgmmYqadviuKhe",
+        "slot": 457244371,
+        "blockTimeIso": "2026-10-15T12:52:37.000Z",
+        "amountRaw": "827949066",
+        "publicationId": 11426
+      },
+      "priorPrice": {
+        "signature": "3UhVd3CmHJKffAykUMykhu4HTg47dagBaoBQTXsxybxDSKm61kwhdYGDh6gdhZuHVJV8fmxFxTusFTgSe9AgkKrU",
+        "slot": 457241927,
+        "blockTimeIso": "2026-10-15T12:43:49.000Z",
+        "raw": "1064673078808849914",
+        "observationTimestamp": "1792068204"
+      },
+      "nextPrice": {
+        "signature": "J9QMW1qDfdHxTDo4M9XCDmhmEfUi5jyLiDyVSEjfxFAvL3rnW6BbuKKLfvJNskZoFkAFKzXRLjHbqyQiMWjKzXb",
+        "slot": 457246651,
+        "blockTimeIso": "2026-10-15T13:00:51.000Z",
+        "raw": "1064674591657342050",
+        "observationTimestamp": "1792069224"
+      },
+      "openWindowSeconds": 494,
+      "priceDeltaRaw": "1512848492136",
+      "priceIncreasePartsPerBillion": "1420",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939255457758",
+        "assetsOutRaw": "1000001420950",
+        "netWyldsRaw": "1420950"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35321379918",
+        "assetsOutRaw": "37605775740",
+        "netWyldsRaw": "53434"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "124737908003361",
+        "sharesMintedRaw": "117160760881562",
+        "assetsOutRaw": "124738085249840",
+        "netWyldsRaw": "177246479"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "5qK4SvFBkeqVquUwuTZDc95vxFiQm181oS2ak2W4Dx2yL6jGmGLVAup7uxFetLBtvh5V8Ccidbhz45g3yX4nHq88",
+        "slot": 457261031,
+        "blockTimeIso": "2026-10-15T13:52:50.000Z",
+        "raw": "1064680128265823052",
+        "secondsAfterPublish": 3613,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939255457758",
+          "assetsOutRaw": "1000006621240",
+          "netWyldsRaw": "6621240"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35321379918",
+          "assetsOutRaw": "37605971301",
+          "netWyldsRaw": "248995"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "124737908003361",
+          "sharesMintedRaw": "117160760881562",
+          "assetsOutRaw": "124738733923102",
+          "netWyldsRaw": "825919741"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "36R7BKZ6uLeMSZLq9ffjS335WgitKPeZ64UJa25YzmfaW7e8StFuiehtk9tdRACbXvXHchgsnnPqov59uuU2TUKa",
+        "slot": 457262264,
+        "blockTimeIso": "2026-10-15T13:57:15.000Z",
+        "amountRaw": "1651054801",
+        "publicationId": 11429
+      },
+      "priorPrice": {
+        "signature": "5qK4SvFBkeqVquUwuTZDc95vxFiQm181oS2ak2W4Dx2yL6jGmGLVAup7uxFetLBtvh5V8Ccidbhz45g3yX4nHq88",
+        "slot": 457261031,
+        "blockTimeIso": "2026-10-15T13:52:50.000Z",
+        "raw": "1064680128265823052",
+        "observationTimestamp": "1792072343"
+      },
+      "nextPrice": {
+        "signature": "3Yp8WLFxyg9xnFAk6JKp1Z3A9yrfQRLPbMXje5XwJB7XANo4vewPKF8mrmjShBPzaLpWMLWLTRT45c63YaBbwuAa",
+        "slot": 457265751,
+        "blockTimeIso": "2026-10-15T14:09:51.000Z",
+        "raw": "1064683148469077910",
+        "observationTimestamp": "1792073364"
+      },
+      "openWindowSeconds": 756,
+      "priceDeltaRaw": "3020203254858",
+      "priceIncreasePartsPerBillion": "2836",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939249238763",
+        "assetsOutRaw": "1000002836723",
+        "netWyldsRaw": "2836723"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35321146049",
+        "assetsOutRaw": "37605828982",
+        "netWyldsRaw": "106676"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "124721255782100",
+        "sharesMintedRaw": "117144344550930",
+        "assetsOutRaw": "124721609581830",
+        "netWyldsRaw": "353799730"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "38vWADTTxuUhnPhKsaZXcWQnrCL8K1AH2vC5n2mXd3Y6dp4S7kwzypc64wSZJaJQpsAQhYKhLLJT36yRrgiMZEPR",
+        "slot": 457279660,
+        "blockTimeIso": "2026-10-15T14:59:49.000Z",
+        "raw": "1064688688122449572",
+        "secondsAfterPublish": 3754,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939249238763",
+          "assetsOutRaw": "1000008039838",
+          "netWyldsRaw": "8039838"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35321146049",
+          "assetsOutRaw": "37606024649",
+          "netWyldsRaw": "302343"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "124721255782100",
+          "sharesMintedRaw": "117144344550930",
+          "assetsOutRaw": "124722258520893",
+          "netWyldsRaw": "1002738793"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "4wTfBAYfPTs8nx2r55whmCifCi5x3p5C2PnhwnuSNueTnZcQ97GyWVbB4niuMSznWTTSRrCSeqstkmXy5pXrpVrM",
+        "slot": 457280235,
+        "blockTimeIso": "2026-10-15T15:01:53.000Z",
+        "amountRaw": "824420258",
+        "publicationId": 11435
+      },
+      "priorPrice": {
+        "signature": "38vWADTTxuUhnPhKsaZXcWQnrCL8K1AH2vC5n2mXd3Y6dp4S7kwzypc64wSZJaJQpsAQhYKhLLJT36yRrgiMZEPR",
+        "slot": 457279660,
+        "blockTimeIso": "2026-10-15T14:59:49.000Z",
+        "raw": "1064688688122449572",
+        "observationTimestamp": "1792076364"
+      },
+      "nextPrice": {
+        "signature": "3YPmVLGTVwk9AjR7GYEMQrVdQixmWPuLtPKGrH6xtzaFVxm7u3YR4purPRVbzViNyf1JwB1jwu4XycwraZHqVZow",
+        "slot": 457284379,
+        "blockTimeIso": "2026-10-15T15:16:49.000Z",
+        "raw": "1064690196639653304",
+        "observationTimestamp": "1792077383"
+      },
+      "openWindowSeconds": 896,
+      "priceDeltaRaw": "1508517203732",
+      "priceIncreasePartsPerBillion": "1416",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939241687411",
+        "assetsOutRaw": "1000001416861",
+        "netWyldsRaw": "1416861"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35320862075",
+        "assetsOutRaw": "37605775588",
+        "netWyldsRaw": "53282"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "124580981036762",
+        "sharesMintedRaw": "117011650848340",
+        "assetsOutRaw": "124581157550849",
+        "netWyldsRaw": "176514087"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "4K1adUqzkFbQqXog3P1wVNqcUAx9r8UjAAyFqtbbdL88ixYWHxmqhH37VAsv9DwJJ6Ww71yxCfV6LsCi5HXL8gBy",
+        "slot": 457293500,
+        "blockTimeIso": "2026-10-15T15:49:43.000Z",
+        "raw": "1064695733973495807",
+        "secondsAfterPublish": 2870,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939241687411",
+          "assetsOutRaw": "1000006617756",
+          "netWyldsRaw": "6617756"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35320862075",
+          "assetsOutRaw": "37605971171",
+          "netWyldsRaw": "248865"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "124580981036762",
+          "sharesMintedRaw": "117011650848340",
+          "assetsOutRaw": "124581805483423",
+          "netWyldsRaw": "824446661"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "33o6HS9171q3jGeGk79jHMSowMYsVXPN9upRKKaQSQ3kWLhDSQg9h5X6ksWYfzv4RKitbAX1Va4ZgXzjLJ3w1T9k",
+        "slot": 457298143,
+        "blockTimeIso": "2026-10-15T16:06:32.000Z",
+        "amountRaw": "824538745",
+        "publicationId": 11438
+      },
+      "priorPrice": {
+        "signature": "4K1adUqzkFbQqXog3P1wVNqcUAx9r8UjAAyFqtbbdL88ixYWHxmqhH37VAsv9DwJJ6Ww71yxCfV6LsCi5HXL8gBy",
+        "slot": 457293500,
+        "blockTimeIso": "2026-10-15T15:49:43.000Z",
+        "raw": "1064695733973495807",
+        "observationTimestamp": "1792079363"
+      },
+      "nextPrice": {
+        "signature": "3xNawxnHasG7k8Et1YewHPK75NY8gHK26VdsrvFsrqy2C9hVWYV7H3FujJdt4BPFMu4LwLMWnc7eUJwA2o8GLXxR",
+        "slot": 457298221,
+        "blockTimeIso": "2026-10-15T16:06:49.000Z",
+        "raw": "1064695733973497669",
+        "observationTimestamp": "1792080384"
+      },
+      "openWindowSeconds": 17,
+      "priceDeltaRaw": "1862",
+      "priceIncreasePartsPerBillion": "0",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939235471779",
+        "assetsOutRaw": "999999999999",
+        "netWyldsRaw": "-1"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35320628331",
+        "assetsOutRaw": "37605722305",
+        "netWyldsRaw": "-1"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "123509019073484",
+        "sharesMintedRaw": "116004051798481",
+        "assetsOutRaw": "123509019073483",
+        "netWyldsRaw": "-1"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "22816mSYmNNvkURgKR3LZdy1kMbaQQM9sNyezBEf6Q3X1Cii9dk8xFcuuh4QnKLMQLySUkjS7n2hmEe9BH7R9xuA",
+        "slot": 457312366,
+        "blockTimeIso": "2026-10-15T16:57:51.000Z",
+        "raw": "1064702795134965554",
+        "secondsAfterPublish": 3079,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939235471779",
+          "assetsOutRaw": "1000006632093",
+          "netWyldsRaw": "6632093"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35320628331",
+          "assetsOutRaw": "37605971709",
+          "netWyldsRaw": "249403"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "123509019073484",
+          "sharesMintedRaw": "116004051798481",
+          "assetsOutRaw": "123509838196824",
+          "netWyldsRaw": "819123340"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "66gpF13MujGZNCGejtcMtkxivbz2hiuM5FHhD6jsCF7Hh7sTuaZq1e8DdxZZShrNzMHQqkVM3R8nqc5yaA4V6QWR",
+        "slot": 457316040,
+        "blockTimeIso": "2026-10-15T17:11:09.000Z",
+        "amountRaw": "820783068",
+        "publicationId": 11441
+      },
+      "priorPrice": {
+        "signature": "22816mSYmNNvkURgKR3LZdy1kMbaQQM9sNyezBEf6Q3X1Cii9dk8xFcuuh4QnKLMQLySUkjS7n2hmEe9BH7R9xuA",
+        "slot": 457312366,
+        "blockTimeIso": "2026-10-15T16:57:51.000Z",
+        "raw": "1064702795134965554",
+        "observationTimestamp": "1792083444"
+      },
+      "nextPrice": {
+        "signature": "4NoSpdW2iz5wBHDYd3pi3EH1FzkSav62NWdd3FKvJvF1wSewVUMPmA9iQJ794drxEgk9Z1y5Xk3jLzFnc29GPPSa",
+        "slot": 457317076,
+        "blockTimeIso": "2026-10-15T17:14:52.000Z",
+        "raw": "1064704296771223496",
+        "observationTimestamp": "1792084465"
+      },
+      "openWindowSeconds": 223,
+      "priceDeltaRaw": "1501636257942",
+      "priceIncreasePartsPerBillion": "1410",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939229242723",
+        "assetsOutRaw": "1000001410380",
+        "netWyldsRaw": "1410380"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35320394083",
+        "assetsOutRaw": "37605775343",
+        "netWyldsRaw": "53037"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "123499897346168",
+        "sharesMintedRaw": "115994715060847",
+        "assetsOutRaw": "123500071528037",
+        "netWyldsRaw": "174181869"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "HrK7MWB5ZXC6WcAjXH9KReh1Zcg6ntDbMrjRZao1A2YhmCNkavtpcrZsXqSnX7kw45FKK4n52fbk7FMc28hCEHy",
+        "slot": 457331288,
+        "blockTimeIso": "2026-10-15T18:05:51.000Z",
+        "raw": "1064709843152990835",
+        "secondsAfterPublish": 3282,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939229242723",
+          "assetsOutRaw": "1000006619704",
+          "netWyldsRaw": "6619704"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35320394083",
+          "assetsOutRaw": "37605971244",
+          "netWyldsRaw": "248938"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "123499897346168",
+          "sharesMintedRaw": "115994715060847",
+          "assetsOutRaw": "123500714879010",
+          "netWyldsRaw": "817532842"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "3XJYzxX3HjLsDotxP5LEYrEnX6HJyUJLxEhpjNj83E9mZKHYfXUSJ6kJ6En7Cec8rX4sovqCp64DLZHkvC37QSv5",
+        "slot": 457334027,
+        "blockTimeIso": "2026-10-15T18:15:47.000Z",
+        "amountRaw": "816705827",
+        "publicationId": 11444
+      },
+      "priorPrice": {
+        "signature": "HrK7MWB5ZXC6WcAjXH9KReh1Zcg6ntDbMrjRZao1A2YhmCNkavtpcrZsXqSnX7kw45FKK4n52fbk7FMc28hCEHy",
+        "slot": 457331288,
+        "blockTimeIso": "2026-10-15T18:05:51.000Z",
+        "raw": "1064709843152990835",
+        "observationTimestamp": "1792087524"
+      },
+      "nextPrice": {
+        "signature": "3W4B52xEVsXB3AJWXaGUPF5cySo4y3XS1X2YjLijZ8cwvw9XgCq9pvcZ3RziaX9CtzdojyRkcHW8aF9VfW6RBTXV",
+        "slot": 457335978,
+        "blockTimeIso": "2026-10-15T18:22:51.000Z",
+        "raw": "1064711333681610776",
+        "observationTimestamp": "1792088544"
+      },
+      "openWindowSeconds": 424,
+      "priceDeltaRaw": "1490528619941",
+      "priceIncreasePartsPerBillion": "1399",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939223025344",
+        "assetsOutRaw": "1000001399938",
+        "netWyldsRaw": "1399938"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35320160274",
+        "assetsOutRaw": "37605774951",
+        "netWyldsRaw": "52645"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "123500718129236",
+        "sharesMintedRaw": "115994718113533",
+        "assetsOutRaw": "123500891022682",
+        "netWyldsRaw": "172893446"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "36sNcGnR14keDTwNrFra97mWCTDWW4tj25CDrnztFm1Y8HkYDEBch2NaSnZozR7RPKz2pnnirYhpMMmoKXHdQZUG",
+        "slot": 457345403,
+        "blockTimeIso": "2026-10-15T18:56:51.000Z",
+        "raw": "1064716884235726713",
+        "secondsAfterPublish": 2464,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939223025344",
+          "assetsOutRaw": "1000006613146",
+          "netWyldsRaw": "6613146"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35320160274",
+          "assetsOutRaw": "37605970997",
+          "netWyldsRaw": "248691"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "123500718129236",
+          "sharesMintedRaw": "115994718113533",
+          "assetsOutRaw": "123501534857642",
+          "netWyldsRaw": "816728406"
+        }
+      }
+    },
+    {
+      "publish": {
+        "signature": "TCRGVmYqyjTpXfnT3jkhpD2WirW2xzWiFtEwr8REZZJpBKTR5AuJEhrz42deZ1zSVbMGYsRfPEULbBBZHhaLFEJ",
+        "slot": 457351954,
+        "blockTimeIso": "2026-10-15T19:20:25.000Z",
+        "amountRaw": "813853565",
+        "publicationId": 11447
+      },
+      "priorPrice": {
+        "signature": "36sNcGnR14keDTwNrFra97mWCTDWW4tj25CDrnztFm1Y8HkYDEBch2NaSnZozR7RPKz2pnnirYhpMMmoKXHdQZUG",
+        "slot": 457345403,
+        "blockTimeIso": "2026-10-15T18:56:51.000Z",
+        "raw": "1064716884235726713",
+        "observationTimestamp": "1792090584"
+      },
+      "nextPrice": {
+        "signature": "DHiUji3MPDprRJ8NUyQPoWHs2Ej1TP8f9VNkMcF9ADKFDsDC8YDF5DsCogJB84xgnXDo4BaYmdpDT7KFUiCFQem",
+        "slot": 457352632,
+        "blockTimeIso": "2026-10-15T19:22:51.000Z",
+        "raw": "1064718370320839103",
+        "observationTimestamp": "1792092144"
+      },
+      "openWindowSeconds": 146,
+      "priceDeltaRaw": "1486085112390",
+      "priceIncreasePartsPerBillion": "1395",
+      "depositsObservedInsideWindow": [],
+      "modeledAtOneMillionWylds": {
+        "assetsInRaw": "1000000000000",
+        "sharesMintedRaw": "939216814165",
+        "assetsOutRaw": "1000001395755",
+        "netWyldsRaw": "1395755"
+      },
+      "modeledAtLiveWyldsLenderInventory": {
+        "assetsInRaw": "37605722306",
+        "sharesMintedRaw": "35319926698",
+        "assetsOutRaw": "37605774793",
+        "netWyldsRaw": "52487"
+      },
+      "modeledAtPreRewardVaultAssets": {
+        "assetsInRaw": "123202392693474",
+        "sharesMintedRaw": "115713758763120",
+        "assetsOutRaw": "123202564653967",
+        "netWyldsRaw": "171960493"
+      },
+      "bestObservedExitBeforeNextReward": {
+        "signature": "5P1kUokbVTadrrxLcbRWTtxY1ZR8VPbTvpJ6pgYKCLLioDQ3kkkokMuKTjLjq9UuVt5CBeKVSX5xLU3U1NWuF5xn",
+        "slot": 457357363,
+        "blockTimeIso": "2026-10-15T19:39:50.000Z",
+        "raw": "1064723917765092433",
+        "secondsAfterPublish": 1165,
+        "modeledAtOneMillionWylds": {
+          "assetsInRaw": "1000000000000",
+          "sharesMintedRaw": "939216814165",
+          "assetsOutRaw": "1000006606008",
+          "netWyldsRaw": "6606008"
+        },
+        "modeledAtLiveWyldsLenderInventory": {
+          "assetsInRaw": "37605722306",
+          "sharesMintedRaw": "35319926698",
+          "assetsOutRaw": "37605970729",
+          "netWyldsRaw": "248423"
+        },
+        "modeledAtPreRewardVaultAssets": {
+          "assetsInRaw": "123202392693474",
+          "sharesMintedRaw": "115713758763120",
+          "assetsOutRaw": "123203206569593",
+          "netWyldsRaw": "813876119"
+        }
+      }
+    }
+  ]
+}

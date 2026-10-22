@@ -1,0 +1,412 @@
+{
+  "timestamp": "2026-10-15T19:21:11.045Z",
+  "selectedBaseMint": "CkFm8Gk8zAzMUW9NAMobHuQvfzSNT7W8HgM3PsJ8moon",
+  "conclusion": "HuT and Titan are routing layers in these selected-base transactions; both invoke DBC for the selected base-token leg.",
+  "traces": [
+    {
+      "label": "HuT route: Quantum then DBC",
+      "signature": "45i6JD86FfTM3xHetakFnK8Su8s7FwMw1k7NLyebtmrDw1ACvdHJbJK7E926UW14m6DsTpEUU7475r7jqg1wuyXX",
+      "router": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+      "slot": 451705355,
+      "succeeded": true,
+      "selectedBaseAccountIndexes": [
+        2,
+        4
+      ],
+      "selectedBaseAccounts": [
+        "EHeZSurvebxvpST3Y3BxP3BdjUYHRNy2P69x67acNZF3",
+        "GkztbqH19K5zPvfyDXpHHW6nQ2DzNzhnqKfbedknnREu"
+      ],
+      "innerProgramSequence": [
+        {
+          "outerIndex": 1,
+          "programId": "11111111111111111111111111111111",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "11111111111111111111111111111111",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "QuaNtZsgYRe5Z9Bk4LZ4cTD9tbkVoyCNf1R2BN9bBDv",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        }
+      ],
+      "relevantLogs": [
+        "Program log: Instruction: SwapWithSolFeeLog",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ invoke [2]",
+        "Program log: Instruction: Swap",
+        "Program log: dex: Quantum, amount_in: 29850000, offset: 0, hop: 0, proxy_swap: true",
+        "Program log: SwapEvent { dex: Quantum, amount_in: 29850000, amount_out: 3523465 }",
+        "Program log: dex: MeteoraDBCV2, amount_in: 3523465, offset: 11, hop: 1, proxy_swap: true",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [3]",
+        "Program log: Instruction: Swap2",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 82186 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 78525 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 30169 of 107334 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program log: SwapEvent { dex: MeteoraDBCV2, amount_in: 3523465, amount_out: 31594059218 }",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ invoke [3]",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ consumed 3485 of 60877 compute units",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ success",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ consumed 187485 of 243828 compute units",
+        "Program return: HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ 0hUnWwcAAAA=",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ success"
+      ],
+      "routeInvokesDbc": true,
+      "classification": "router/proxy; selected base-token route CPI-invokes DBC, not an independent price consumer"
+    },
+    {
+      "label": "HuT route: DLMM, ZeroFi, then DBC",
+      "signature": "2gYDJXiEgtqLUB2Awh3NsrZkco78P6iPz9Y8eUsxtxGmDh1fUtUKwgny4WJEdZ57yGL7XKGNDhqauYW5eDEjMJ6e",
+      "router": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+      "slot": 451037399,
+      "succeeded": true,
+      "selectedBaseAccountIndexes": [
+        3,
+        5
+      ],
+      "selectedBaseAccounts": [
+        "EHeZSurvebxvpST3Y3BxP3BdjUYHRNy2P69x67acNZF3",
+        "Bc8fzLk9PJfPAzSdoJvANoNncQ36FRSq46vo7Uwixq1"
+      ],
+      "innerProgramSequence": [
+        {
+          "outerIndex": 1,
+          "programId": "11111111111111111111111111111111",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "11111111111111111111111111111111",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "ZERor4xhbUycZ6gb9ntrhqscUcZmAbQDjEAtCf4hbZY",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 1,
+          "programId": "HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        }
+      ],
+      "relevantLogs": [
+        "Program log: Instruction: SwapWithSolFeeLog",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ invoke [2]",
+        "Program log: Instruction: Swap",
+        "Program log: dex: MeteoraDlmm, amount_in: 29850000, offset: 0, hop: 0, proxy_swap: false",
+        "Program log: Instruction: Swap2",
+        "Program log: SwapEvent { dex: MeteoraDlmm, amount_in: 29850000, amount_out: 98172376749 }",
+        "Program log: dex: ZeroFi, amount_in: 98172376749, offset: 19, hop: 1, proxy_swap: false",
+        "Program log: SwapEvent { dex: ZeroFi, amount_in: 98172376749, amount_out: 3622153 }",
+        "Program log: dex: MeteoraDBCV2, amount_in: 3622153, offset: 34, hop: 2, proxy_swap: false",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [3]",
+        "Program log: Instruction: Swap2",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 108535 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 104874 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 30161 of 133675 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program log: SwapEvent { dex: MeteoraDBCV2, amount_in: 3622153, amount_out: 32499052015 }",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ invoke [3]",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ consumed 3485 of 87226 compute units",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ success",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ consumed 263238 of 345546 compute units",
+        "Program return: HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ 7y0YkQcAAAA=",
+        "Program HuTkmnrv4zPnArMqpbMbFhfwzTR7xfWQZHH1aQKzDKFZ success"
+      ],
+      "routeInvokesDbc": true,
+      "classification": "router/proxy; selected base-token route CPI-invokes DBC, not an independent price consumer"
+    },
+    {
+      "label": "Titan SwapRouteV3 into DBC",
+      "signature": "61CzVCJxe6uBnR8CuTtxHts9cjDzxXAbGgYA6dtVKSxdb2wtLDnevD1pMGgsA1ead6V2Dq76jdHxLw1qDz2kNADw",
+      "router": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+      "slot": 438374065,
+      "succeeded": true,
+      "selectedBaseAccountIndexes": [
+        2,
+        4,
+        5
+      ],
+      "selectedBaseAccounts": [
+        "EHeZSurvebxvpST3Y3BxP3BdjUYHRNy2P69x67acNZF3",
+        "FyCiRBEpBacC1W8mTUDhw459g1c4Xm1uB7XHFvG597tq",
+        "HRyUhT6VPBRSx5Ce1Vwdhkk3dBbKZVXgdgmpcyfd3iga"
+      ],
+      "innerProgramSequence": [
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT",
+          "stackHeight": 2,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": true
+        },
+        {
+          "outerIndex": 3,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN",
+          "stackHeight": 4,
+          "touchesSelectedBaseAccount": false
+        },
+        {
+          "outerIndex": 3,
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "stackHeight": 3,
+          "touchesSelectedBaseAccount": true
+        }
+      ],
+      "relevantLogs": [
+        "Program log: Instruction: SwapWithFeeLog",
+        "Program T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT invoke [2]",
+        "Program log: Instruction: SwapRouteV3",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [3]",
+        "Program log: Instruction: Swap2",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 38027 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN invoke [4]",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 643 of 34366 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN consumed 29746 of 62793 compute units",
+        "Program dbcij3LWUppWqq96dh6gJWwBifmcGfLSB5D4DuSMaqN success",
+        "Program T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT consumed 56061 of 83874 compute units",
+        "Program T1TANpTeScyeqVzzgNViGDNrkQ6qHz9KrSBS4aNXvGT success"
+      ],
+      "routeInvokesDbc": true,
+      "classification": "router/proxy; selected base-token route CPI-invokes DBC, not an independent price consumer"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "network": "local-mainnet-fork",
+  "syntheticAccounts": [
+    "pool",
+    "claim",
+    "destination"
+  ],
+  "noSubmission": true,
+  "slot": 458743080,
+  "error": null,
+  "logs": [
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+    "Program log: Instruction: ProcessPayout",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 187028 compute units",
+    "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [2]",
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA consumed 584 of 183671 compute units",
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success",
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA consumed 17856 of 200000 compute units",
+    "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success"
+  ],
+  "innerInstructions": [
+    {
+      "index": 0,
+      "instructions": [
+        {
+          "program": "spl-token",
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "parsed": {
+            "type": "transferChecked",
+            "info": {
+              "source": "4JC3vamWCnD4WwmJQyykBmXHbXjPyH9LiW6tEtniMvZP",
+              "mint": "JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD",
+              "destination": "GMn8j1EtUqtmDbS867b3gMS39E9HvXhJiqhzRvTRaWG3",
+              "tokenAmount": {
+                "uiAmount": 0.000001,
+                "decimals": 6,
+                "amount": "1",
+                "uiAmountString": "0.000001"
+              },
+              "authority": "6gZ56UYfVGgw8p3B6UEHQmM4CrHsfzQgYWkdFg7gMNNX"
+            }
+          },
+          "stackHeight": 2
+        },
+        {
+          "programId": "yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA",
+          "accounts": [
+            "5dw5o617DrzUV2RWXjmBkmk1Fc67uaGcKTVxoxV8CYrK"
+          ],
+          "data": "5H2mQahfhqnGiEBjS3v6Zdv6R1ouKC2YMMFxc5p31WijjhxLQYfr22EHooMzAyStd4AaosABJUDe8bDP9zo8ZQmqDW3DXxogvYW2FQA3SDS3FWxYquiivH3jXs9VBkzHPgazozPKdrVcTbKSgJqKMht9GigBnxJ9ck5jh1riUTm5CNRfBJmQhynrZoCN6n6EbbKWRsWP",
+          "stackHeight": 2
+        }
+      ]
+    }
+  ],
+  "units": 17856,
+  "claimBefore": {
+    "sequence": "17",
+    "owner": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+    "amount": "1"
+  },
+  "poolBefore": {
+    "pending": "1",
+    "head": "17",
+    "tail": "18"
+  },
+  "poolAfter": {
+    "pending": "0",
+    "head": "18",
+    "tail": "18"
+  },
+  "claimAfter": {
+    "lamports": 0,
+    "dataBytes": 0
+  },
+  "destinationAfter": "12802688",
+  "vaultAfter": "127583240177"
+}

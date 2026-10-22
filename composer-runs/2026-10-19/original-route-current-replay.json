@@ -1,0 +1,32 @@
+{
+  "purpose": "Diagnostic replay of the exact previously landed Jupiter/Bison/HBV transaction against later current fork state",
+  "sourceSignature": "3iZaw2tCKtjAHVmT6ddWbYokYm18KhgejPaAG7VyTpAMdBM61hcXF5uEPnPgq8QzdSbUxi4BfQurppWPzYM8jEVU",
+  "sourceSlot": 458746708,
+  "replayForkSlot": 458757287,
+  "simulationOnly": true,
+  "broadcast": false,
+  "sigVerify": false,
+  "replaceRecentBlockhash": true,
+  "reasonSigVerifyDisabled": "Historical signature cannot verify after replacing the expired blockhash; this replay is only an unchanged-route current-state control.",
+  "result": {
+    "err": {
+      "InstructionError": [
+        3,
+        {
+          "Custom": 4
+        }
+      ]
+    },
+    "unitsConsumed": 55328,
+    "bisonSucceeded": true,
+    "reverseProgram": "HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z",
+    "reverseFailedCustomError": 4,
+    "atomicCommittedEquityDelta": 0
+  },
+  "terminalLogs": [
+    "Program BiSoNHVpsVZW2F7rx2eQ59yQwKxzU5NvBcmKshCSUypi success",
+    "Program HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z consumed 210 compute units",
+    "Program HBVw6bZtcCaezhcBrmfyXBSBRWCdv72271xQ4GPvms2z failed: custom program error: 0x4",
+    "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 failed: custom program error: 0x4"
+  ]
+}

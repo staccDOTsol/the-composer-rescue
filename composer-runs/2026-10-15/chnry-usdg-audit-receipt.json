@@ -1,0 +1,92 @@
+{
+  "schema": "composer-security-audit-receipt/v1",
+  "subject": {
+    "programId": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+    "programData": "BWgWFgZxxF2ndC9PgKS5Fa8c2Nv3PUS34mGbvuBw95Ln",
+    "vault": "6gXnsjMkrgC7zKsniUFPasEnPRVSecH3AwoKWjUTdXHg",
+    "reserveAuthorityPda": "8anxfyoftY9hPwxdvReet2beFS2HXjcXraPEamo4nGyB",
+    "usdGMint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+    "usdVMint": "USDvUSpnhCr9yBgj3UyVrD239HRUv4RsHwH2FxsWuMk"
+  },
+  "observation": {
+    "stateObservedAt": "2026-10-15T19:49:25.980Z",
+    "stateSlot": 457356505,
+    "simulationBatchObservedAt": "2026-10-15T19:49:38.821Z",
+    "historicalControlSlot": 456023812,
+    "readOnly": true,
+    "noSubmission": true,
+    "rpcCredentialsPrinted": false
+  },
+  "provenance": {
+    "sourceRevision": "0dafa95d1aded954de098208f0f515d436aa496c",
+    "sourceTag": "chancery-v1.0.1",
+    "programDataPayloadBytes": 1039312,
+    "programDataPayloadSha256": "fda96ab287bbd8b17f795f49e24693a0354bde874a9cf5f66a2ac4b6022c9f71",
+    "releaseArtifactBytes": 1036752,
+    "releaseArtifactSha256": "1460e69a8e0330a67d73556e6c7690a1b449d54e7e1c3f3f6ab638768c714830",
+    "releaseArtifactIsExactPayloadPrefix": true,
+    "remainingPayloadBytesAreZeroPadding": true,
+    "idlSha256": "8a0bf05c739af32cb15dfec02be5680b9e28813185afebd0f90b4237019e1002",
+    "upgradeAuthority": "934modVoNj5TUV69Ub3YXJAvGxWvpqRiHAydTadJxA2L"
+  },
+  "liveValue": {
+    "vaultUsdGRaw": "8082639810000",
+    "vaultUsdG": "8082639.810000",
+    "klendEligibleExactZeroFeeReserves": 28,
+    "klendTotalBorrowableUpperBoundRaw": "5690289663674",
+    "klendTotalBorrowableUpperBoundUsdG": "5690289.663674",
+    "selectedKlendReserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+    "selectedKlendBorrowableRaw": "3153959608819",
+    "selectedKlendBorrowableUsdG": "3153959.608819"
+  },
+  "simulation": {
+    "transactionVersion": 1,
+    "exactWireLimitBytes": 4096,
+    "caseCount": 35,
+    "successfulCaseCount": 8,
+    "failedCaseCount": 27,
+    "chanceryOutsiderCaseCount": 5,
+    "chanceryOutsiderSuccessfulTransactionCount": 0,
+    "positiveNetEquityCases": [],
+    "requiredComposition": {
+      "label": "operator_flash_mint_redeem_minimum",
+      "wireBytes": 1437,
+      "addressCount": 34,
+      "instructionCount": 4,
+      "unitsConsumed": 282083,
+      "requestedFlashPrincipalRaw": "1000000000",
+      "outstandingLiabilityRaw": "0",
+      "netEquityAfterLiabilitiesRaw": "0"
+    },
+    "nearLiquidityStress": {
+      "label": "operator_flash_five_max_mints_then_five_redeems",
+      "wireBytes": 2117,
+      "addressCount": 34,
+      "instructionCount": 12,
+      "unitsConsumed": 1052331,
+      "requestedFlashPrincipalRaw": "2500000000000",
+      "outstandingLiabilityRaw": "0",
+      "netEquityAfterLiabilitiesRaw": "0"
+    }
+  },
+  "sourceTests": {
+    "command": "cargo test -p chancery --lib",
+    "passed": 1005,
+    "failed": 0,
+    "ignored": 0
+  },
+  "conclusion": {
+    "positiveUnauthorizedNetAssetGainObserved": false,
+    "operatorCasesAreControlsNotFindings": true,
+    "reportableOutsiderAssetGainFinding": false,
+    "residualTrustBoundary": "non-null upgrade authority"
+  },
+  "artifactSha256": {
+    "chnry-usdg-audit.md": "4deb83a5b3ef09695aad77ee4a29ff9dd67ec3da8089b2e5d0903adf41f2e47f",
+    "chnry-usdg-current-state.js": "6c4e5ccf935745d706a996c39deebdf108aa643e7c9d7f110914e14f854701d8",
+    "chnry-usdg-current-state.json": "b810a116d75eac50efb995a0cd7f65f6e09acd5be0027aca31fa82bb7fe044c1",
+    "chnry-usdg-v1-composition.js": "a72f6711b929292be68219c6c2a56a75e13987baa3e134e91fee4fe934d68d0d",
+    "chnry-usdg-v1-simulations.json": "db7b5ff9ef7bc65bb06430ffd188aef3595352bfbb7d34832f1cd8effa04ecc1",
+    "chnry-usdg-current.so": "fda96ab287bbd8b17f795f49e24693a0354bde874a9cf5f66a2ac4b6022c9f71"
+  }
+}

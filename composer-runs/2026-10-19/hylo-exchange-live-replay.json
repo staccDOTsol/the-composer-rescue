@@ -1,0 +1,508 @@
+{
+  "generatedAt": "2026-10-19T07:48:41.440Z",
+  "environment": "current-mainnet-backed isolated Surfpool fork; simulateTransaction only",
+  "noMainnetTransactionsSubmitted": true,
+  "noForkTransactionsSubmitted": true,
+  "rpcEndpointRedacted": true,
+  "genesisHash": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "source": {
+    "signature": "21EAYwNzEAEk5Ja8kL9NfEL9EjATZuDL2TR34wWrpr6xhZjokB4uKNgVzYF3tvZ1Ck8EV9mbKCkzmV4ivztMZBN6",
+    "slot": 458751852,
+    "blockTime": 1792395262,
+    "instruction": {
+      "outerIndex": 3,
+      "innerIndex": 8,
+      "name": "redeem_levercoin_exo",
+      "discriminatorHex": "3362dfca0d61b702",
+      "dataHex": "3362dfca0d61b70253beec020000000000",
+      "accounts": [
+        {
+          "name": "user",
+          "address": "B4isdCoFShf5CijAf1ACyyT2vLhXjk2DV8TVvg13wiLv",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "name": "hylo",
+          "address": "9cd2sAfbBvKs4SX9YKo4dcjwP3TgTVQ8dT5koshGcDND",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "exo_pair",
+          "address": "8mgw2TsNxTMndWPyswLELw3V2tPrPvtqS7Ex9RyiGhML",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "vault_auth",
+          "address": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "fee_auth",
+          "address": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "collateral_vault",
+          "address": "Hrdm1Q417g1kChwzZbdV1KhyPVGgzWvKnCSdafpqXNy",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "name": "fee_vault",
+          "address": "oacVCceELzvyK944xDJaMGhVKzwkaY9yBHw2uifhLJ8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "name": "user_levercoin_ta",
+          "address": "HW2g7m6ePUGtqTYddkMWtLrjKvo7L82qHjuh2y4iuPYt",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "name": "user_collateral_ta",
+          "address": "9vQ7xLYXNJBT1LPKsZRZ9Lb2za1qpZwKsXasG6fets8T",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "name": "collateral_mint",
+          "address": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "levercoin_mint",
+          "address": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "name": "collateral_usd_pyth_feed",
+          "address": "APgzQGGdv2qCgBkX6aHVkrGePtBVDDg68GiqaM7rmtf5",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "token_program",
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "event_authority",
+          "address": "4VzpNE51Be5vD5Yg8MC3z6TVHq5gGbLJptjv18QbD6WP",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "name": "program",
+          "address": "HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn",
+          "signer": false,
+          "writable": false
+        }
+      ]
+    }
+  },
+  "syntheticStartingInventory": {
+    "levercoinRaw": "49069652",
+    "collateralRaw": "0",
+    "reason": "Replays the permissionless value-release branch with a fresh controllable signer; all final equity is reconciled and no synthetic balance is treated as profit."
+  },
+  "cases": [
+    {
+      "label": "fresh_outsider_live_replay",
+      "sourceSignature": "21EAYwNzEAEk5Ja8kL9NfEL9EjATZuDL2TR34wWrpr6xhZjokB4uKNgVzYF3tvZ1Ck8EV9mbKCkzmV4ivztMZBN6",
+      "sourceSlot": 458751852,
+      "sourceBlockTime": 1792395262,
+      "amountRaw": "49069651",
+      "mutation": "Only the live user signer and both user token accounts are replaced by fresh outsider-owned accounts.",
+      "forkBaselineSlot": 458755807,
+      "simulationSlot": 458755807,
+      "err": null,
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "noSend": true,
+      "wire": {
+        "version": 1,
+        "sizeBytes": 630,
+        "addressCount": 15,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "maximumBytes": 4096,
+        "maximumAddresses": 64,
+        "sha256": "fcc7a7ee077943427f14cc386628a1d2537f57f48a439d4beaef65f65d00d715"
+      },
+      "unitsConsumed": 52246,
+      "watched": [
+        {
+          "address": "zY5vz96xVjtj9AVoUN3hMrTwYwPbNknQ5dHddiXBToy",
+          "before": {
+            "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "49069652",
+            "sha256": "69d698f624087e61b47201db50d4e1e94c217741783c1cf28da948c2edde914d"
+          },
+          "after": {
+            "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "1",
+            "sha256": "34394469ace5e1d0b3fa26cdb0e9fbaba38d22d9368fcccec28c0c179d42b7de"
+          },
+          "deltaRaw": "-49069651"
+        },
+        {
+          "address": "6eryWNfQsYqdL3zwx8vCT3gLycS3Z4r4ZsqxNy2ixbab",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "0",
+            "sha256": "4ea80e01eed985312d81d704fea4790d0b09303ea3c95dacaa471d12237747a3"
+          },
+          "after": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "120251",
+            "sha256": "cd53a632036670e50ee4aa72eeec77f5f6ef2817f5c1f515e645ef3169b749cb"
+          },
+          "deltaRaw": "120251"
+        },
+        {
+          "address": "Hrdm1Q417g1kChwzZbdV1KhyPVGgzWvKnCSdafpqXNy",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+            "amountRaw": "4368511087",
+            "sha256": "82a0d4d56f01b3a3bfc15d743c034cc85c8d81434b413d98c9cf8e5e035e96f2"
+          },
+          "after": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+            "amountRaw": "4368389622",
+            "sha256": "5bb9efd9d6d619442dd01f29e931466c9fa36e5d9502cecfbf63fd3ac55460cb"
+          },
+          "deltaRaw": "-121465"
+        },
+        {
+          "address": "oacVCceELzvyK944xDJaMGhVKzwkaY9yBHw2uifhLJ8",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+            "amountRaw": "17603157",
+            "sha256": "0405e741f432f425e13bd7e23a2d1a712eed178752846a1a9a720dfa0df0cce3"
+          },
+          "after": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+            "amountRaw": "17604371",
+            "sha256": "64be4d32d708f8e3c766285335d0bcd80ea8b0f2cb20bb49d517002f37065ec3"
+          },
+          "deltaRaw": "1214"
+        },
+        {
+          "address": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+          "before": null,
+          "after": null,
+          "deltaRaw": null
+        }
+      ],
+      "logs": [
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn invoke [1]",
+        "Program log: Instruction: RedeemLevercoinExo",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1362037 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1359705 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 123 of 1357775 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn invoke [2]",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn consumed 6548 of 1355302 compute units",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn success",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn consumed 52246 of 1400000 compute units",
+        "Program return: HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn CR5z0XpVJtRI5Ymupa/nwizWHFtmqGpCerJiMJUU5VxTvuwCAAAAAPr6ggF6AAAAAPe+y83EKUsAAPdC0PQuCwAAAPdWWRIAAAAAAPdzLwAAAAAAAPc=",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn success"
+      ]
+    },
+    {
+      "label": "third_party_lever_account_substitution",
+      "amountRaw": "49069651",
+      "mutation": "Fresh outsider signer with the successful live user lever-token account.",
+      "forkBaselineSlot": 458755808,
+      "simulationSlot": 458755808,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "noSend": true,
+      "wire": {
+        "version": 1,
+        "sizeBytes": 630,
+        "addressCount": 15,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "maximumBytes": 4096,
+        "maximumAddresses": 64,
+        "sha256": "907e755f55bdce8739f361c1e37ee2b802e5ae2603421d794b79939a7f102147"
+      },
+      "unitsConsumed": 24908,
+      "watched": [
+        {
+          "address": "zY5vz96xVjtj9AVoUN3hMrTwYwPbNknQ5dHddiXBToy",
+          "before": {
+            "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "49069652",
+            "sha256": "69d698f624087e61b47201db50d4e1e94c217741783c1cf28da948c2edde914d"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "6eryWNfQsYqdL3zwx8vCT3gLycS3Z4r4ZsqxNy2ixbab",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "0",
+            "sha256": "4ea80e01eed985312d81d704fea4790d0b09303ea3c95dacaa471d12237747a3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "Hrdm1Q417g1kChwzZbdV1KhyPVGgzWvKnCSdafpqXNy",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+            "amountRaw": "4368511087",
+            "sha256": "82a0d4d56f01b3a3bfc15d743c034cc85c8d81434b413d98c9cf8e5e035e96f2"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "oacVCceELzvyK944xDJaMGhVKzwkaY9yBHw2uifhLJ8",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+            "amountRaw": "17603157",
+            "sha256": "0405e741f432f425e13bd7e23a2d1a712eed178752846a1a9a720dfa0df0cce3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+          "before": null,
+          "after": null,
+          "deltaRaw": null
+        }
+      ],
+      "logs": [
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn invoke [1]",
+        "Program log: Instruction: RedeemLevercoinExo",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn consumed 24908 of 1400000 compute units",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "label": "collateral_vault_substitution",
+      "amountRaw": "49069651",
+      "mutation": "Canonical protocol collateral vault replaced by the outsider collateral account.",
+      "forkBaselineSlot": 458755809,
+      "simulationSlot": 458755809,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "noSend": true,
+      "wire": {
+        "version": 1,
+        "sizeBytes": 598,
+        "addressCount": 14,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "maximumBytes": 4096,
+        "maximumAddresses": 64,
+        "sha256": "554304268e8b679c32d1c8723a4b8b276e346b31cec7da4cd2c472e2f80f3c5c"
+      },
+      "unitsConsumed": 17625,
+      "watched": [
+        {
+          "address": "zY5vz96xVjtj9AVoUN3hMrTwYwPbNknQ5dHddiXBToy",
+          "before": {
+            "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "49069652",
+            "sha256": "69d698f624087e61b47201db50d4e1e94c217741783c1cf28da948c2edde914d"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "6eryWNfQsYqdL3zwx8vCT3gLycS3Z4r4ZsqxNy2ixbab",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "0",
+            "sha256": "4ea80e01eed985312d81d704fea4790d0b09303ea3c95dacaa471d12237747a3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "Hrdm1Q417g1kChwzZbdV1KhyPVGgzWvKnCSdafpqXNy",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+            "amountRaw": "4368511087",
+            "sha256": "82a0d4d56f01b3a3bfc15d743c034cc85c8d81434b413d98c9cf8e5e035e96f2"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "oacVCceELzvyK944xDJaMGhVKzwkaY9yBHw2uifhLJ8",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+            "amountRaw": "17603157",
+            "sha256": "0405e741f432f425e13bd7e23a2d1a712eed178752846a1a9a720dfa0df0cce3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+          "before": null,
+          "after": null,
+          "deltaRaw": null
+        }
+      ],
+      "logs": [
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn invoke [1]",
+        "Program log: Instruction: RedeemLevercoinExo",
+        "Program log: AnchorError caused by account: collateral_vault. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: 4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+        "Program log: Right:",
+        "Program log: 7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn consumed 17625 of 1400000 compute units",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "label": "pyth_feed_substitution",
+      "amountRaw": "49069651",
+      "mutation": "Canonical exogenous-collateral price account replaced by the live JitoSOL/SOL Pyth update.",
+      "forkBaselineSlot": 458755810,
+      "simulationSlot": 458755810,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "sigVerify": true,
+      "replaceRecentBlockhash": false,
+      "noSend": true,
+      "wire": {
+        "version": 1,
+        "sizeBytes": 630,
+        "addressCount": 15,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "maximumBytes": 4096,
+        "maximumAddresses": 64,
+        "sha256": "ea50edff2c3182b7406d089f9bc068c599a29080739d4a10ad90f630d1525e0d"
+      },
+      "unitsConsumed": 26790,
+      "watched": [
+        {
+          "address": "zY5vz96xVjtj9AVoUN3hMrTwYwPbNknQ5dHddiXBToy",
+          "before": {
+            "mint": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "49069652",
+            "sha256": "69d698f624087e61b47201db50d4e1e94c217741783c1cf28da948c2edde914d"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "6eryWNfQsYqdL3zwx8vCT3gLycS3Z4r4ZsqxNy2ixbab",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "4Z8fmhK8ASyJwuU7Ekxi8eW5MeYcnQFFexRHJ5JLWfMa",
+            "amountRaw": "0",
+            "sha256": "4ea80e01eed985312d81d704fea4790d0b09303ea3c95dacaa471d12237747a3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "Hrdm1Q417g1kChwzZbdV1KhyPVGgzWvKnCSdafpqXNy",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "7mxHjVnX6BdWo9Zv4t67ZSKkqpe98PNXV9Afgi9n8Cmy",
+            "amountRaw": "4368511087",
+            "sha256": "82a0d4d56f01b3a3bfc15d743c034cc85c8d81434b413d98c9cf8e5e035e96f2"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "oacVCceELzvyK944xDJaMGhVKzwkaY9yBHw2uifhLJ8",
+          "before": {
+            "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+            "authority": "BqhiD7AdKeYfR6mex2zYhhheoEXpPTfsYG6vnTJ9ERk2",
+            "amountRaw": "17603157",
+            "sha256": "0405e741f432f425e13bd7e23a2d1a712eed178752846a1a9a720dfa0df0cce3"
+          },
+          "after": null,
+          "deltaRaw": null
+        },
+        {
+          "address": "2zCo6bUowJMvr89ajxuWsPadAqJ2F9akCkxumNsSdgsL",
+          "before": null,
+          "after": null,
+          "deltaRaw": null
+        }
+      ],
+      "logs": [
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn invoke [1]",
+        "Program log: Instruction: RedeemLevercoinExo",
+        "Program log: AnchorError caused by account: collateral_usd_pyth_feed. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn consumed 26790 of 1400000 compute units",
+        "Program HYEXCHtHkBagdStcJCp3xbbb9B7sdMdWXFNj6mdsG4hn failed: custom program error: 0x7d3"
+      ]
+    }
+  ],
+  "conclusion": {
+    "liveReplaySucceeded": true,
+    "substitutionSuccesses": [],
+    "unauthorizedGainObserved": false
+  }
+}

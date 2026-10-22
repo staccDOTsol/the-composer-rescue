@@ -1,0 +1,872 @@
+{
+  "generatedAt": "2026-10-15T19:05:50.599Z",
+  "transport": "get* and simulateTransaction only; no signing, no send",
+  "caveat": "sigVerify:false with synthetic signer bit is a privilege counterfactual and cannot show attacker feasibility",
+  "adminAccount": {
+    "address": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+    "onCurve": false,
+    "owner": "11111111111111111111111111111111",
+    "lamports": 24811787527,
+    "dataLength": ""
+  },
+  "stateAccount": {
+    "address": "Cst5bqk7QJAj1tR7qH9eiYnT7ygDEashKYTFvV1obRGK",
+    "onCurve": false,
+    "owner": "5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9"
+  },
+  "vaultAmounts": {
+    "MIM": "2032443364232",
+    "DOG": "9709562711505337",
+    "PUPS": "716632732762402445"
+  },
+  "cases": [
+    {
+      "label": "historical-wrapper-MIM-replay-current-state",
+      "currentSlot": 457347907,
+      "err": null,
+      "unitsConsumed": 112308,
+      "logSummary": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 136618 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 56754 of 170195 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [2]",
+        "Program log: Instruction: Unlock",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 21381 of 79864 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 55254 of 113441 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    },
+    {
+      "label": "direct-unlock-missing-admin-signature",
+      "bytes": 484,
+      "currentSlot": 457347907,
+      "snapshotSlot": 457347907,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 4585,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: AnchorError caused by account: signer. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 4585 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 failed: custom program error: 0xbc2"
+      ]
+    },
+    {
+      "label": "direct-unlock-other-signer",
+      "bytes": 452,
+      "currentSlot": 457347907,
+      "snapshotSlot": 457347908,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 17344,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: AnchorError caused by account: bridge. Error Code: Unauthorized. Error Number: 6000. Error Message: unauthorized.",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 17344 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-min-MIM",
+      "bytes": 548,
+      "currentSlot": 457347908,
+      "snapshotSlot": 457347908,
+      "err": null,
+      "unitsConsumed": 22881,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364231",
+          "delta": "-1"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075608",
+          "delta": "1"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 177541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-alternate-recipient",
+      "bytes": 548,
+      "currentSlot": 457347909,
+      "snapshotSlot": 457347909,
+      "err": null,
+      "unitsConsumed": 21381,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364231",
+          "delta": "-1"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024373",
+          "delta": "1"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 179041 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 21381 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-zero-MIM",
+      "bytes": 548,
+      "currentSlot": 457347910,
+      "snapshotSlot": 457347909,
+      "err": null,
+      "unitsConsumed": 22899,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364232",
+          "delta": "0"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 94 of 177541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22899 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-full-MIM",
+      "bytes": 548,
+      "currentSlot": 457347909,
+      "snapshotSlot": 457347910,
+      "err": null,
+      "unitsConsumed": 22881,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "0",
+          "delta": "-2032443364232"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "2033944439839",
+          "delta": "2032443364232"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 177541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-over-balance-MIM",
+      "bytes": 548,
+      "currentSlot": 457347911,
+      "snapshotSlot": 457347911,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 22640,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 181 of 177541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22640 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-source-destination-alias",
+      "bytes": 484,
+      "currentSlot": 457347911,
+      "snapshotSlot": 457347911,
+      "err": null,
+      "unitsConsumed": 22590,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364232",
+          "delta": "0"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 125 of 177867 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22590 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-wrong-mint",
+      "bytes": 548,
+      "currentSlot": 457347912,
+      "snapshotSlot": 457347912,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2014
+          }
+        ]
+      },
+      "unitsConsumed": 10565,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: AnchorError caused by account: to. Error Code: ConstraintTokenMint. Error Number: 2014. Error Message: A token mint constraint was violated.",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 10565 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 failed: custom program error: 0x7de"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-mint-vault-swapped",
+      "bytes": 548,
+      "currentSlot": 457347910,
+      "snapshotSlot": 457347912,
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidAccountData"
+        ]
+      },
+      "unitsConsumed": 5326,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": null,
+          "delta": null
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": null,
+          "delta": null
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: ProgramError caused by account: mint. Error Code: InvalidAccountData. Error Number: 17179869184. Error Message: An account's data contents was invalid.",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 5326 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 failed: invalid account data for instruction"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-two-MIM-legs",
+      "bytes": 576,
+      "currentSlot": 457347912,
+      "snapshotSlot": 457347913,
+      "err": null,
+      "unitsConsumed": 45762,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364230",
+          "delta": "-2"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075609",
+          "delta": "2"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 377541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 400000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 354660 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 377119 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-min-DOG",
+      "bytes": 548,
+      "currentSlot": 457347912,
+      "snapshotSlot": 457347913,
+      "err": null,
+      "unitsConsumed": 22881,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364232",
+          "delta": "0"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505336",
+          "delta": "-1"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154256",
+          "delta": "1"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402445",
+          "delta": "0"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "0",
+          "delta": "0"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 177541 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 22881 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    },
+    {
+      "label": "counterfactual-admin-signer-min-PUPS",
+      "bytes": 548,
+      "currentSlot": 457347914,
+      "snapshotSlot": 457347914,
+      "err": null,
+      "unitsConsumed": 18381,
+      "observations": [
+        {
+          "address": "7Lzp4oZietdSBSojPsXsD8VSffBNnmuEZPrYzpuDQ83w",
+          "pre": "2032443364232",
+          "post": "2032443364232",
+          "delta": "0"
+        },
+        {
+          "address": "4rfDdc8xLDWBiqRKpVQS689ivWAqe6ae9ckfc9c8HNDi",
+          "pre": "1501075607",
+          "post": "1501075607",
+          "delta": "0"
+        },
+        {
+          "address": "GQZmALKPHca7XHiXDCNiogXUP4rKWqj28CVQb4EEfCRE",
+          "pre": "176024372",
+          "post": "176024372",
+          "delta": "0"
+        },
+        {
+          "address": "5yXSQmeFkxCYrfcPpgu8UBpy3gqThvXXGVAUyRPAvVWb",
+          "pre": "9709562711505337",
+          "post": "9709562711505337",
+          "delta": "0"
+        },
+        {
+          "address": "9XruDz444Wc6DwtM4rAooBgAZUGNeFnEwkyArjbBf2dA",
+          "pre": "136868154255",
+          "post": "136868154255",
+          "delta": "0"
+        },
+        {
+          "address": "A7w8ytRtX225qiPmn52kMGsob5aR3obVfL4qcqVBHeK1",
+          "pre": "716632732762402445",
+          "post": "716632732762402444",
+          "delta": "-1"
+        },
+        {
+          "address": "yBvRQpgBbyrNtoWCAW6BxBHDGcqyDXgZzy2fZgiBYNC",
+          "pre": "0",
+          "post": "1",
+          "delta": "1"
+        }
+      ],
+      "logSummary": [
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 182041 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 consumed 18381 of 200000 compute units",
+        "Program 5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9 success"
+      ]
+    }
+  ]
+}

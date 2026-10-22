@@ -1,0 +1,230 @@
+{
+  "method": "simulateTransaction(sigVerify=false, replaceRecentBlockhash=true)",
+  "submittedTransactions": 0,
+  "caveat": "Positive controls use unsigned counterfactual creator signatures; they prove program behavior only, not key access.",
+  "deployedProgram": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+  "escrow": "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q",
+  "mint": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
+  "cancelMode": 1,
+  "updateRecipientMode": 1,
+  "creator": "G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+  "recipient": "A8t1fdhaftyUZ1iBxCGJ681SE79Atzuxnk9t4bKzxznj",
+  "outsider": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+  "eventAuthority": "AqUDk3wybxjZujrNbKmjr2YTUZ8RA1a1nyGgs1zSmvTG",
+  "creatorToken": "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS",
+  "recipientToken": "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh",
+  "metadata": "7dLvQZZpE4KBEQoq8hyXanCjZjE5dXwSJ8DmDsdE8VdF",
+  "preObservationSlot": 457348419,
+  "pre": {
+    "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": {
+      "recipient": "A8t1fdhaftyUZ1iBxCGJ681SE79Atzuxnk9t4bKzxznj",
+      "totalClaimed": "0",
+      "cancelledAt": "0"
+    },
+    "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": "320000000000000",
+    "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": "0",
+    "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": "59249986000000"
+  },
+  "tests": [
+    {
+      "label": "cancel_creator_counterfactual_positive",
+      "signer": "G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+      "serializedBytes": 445,
+      "err": null,
+      "unitsConsumed": 28312,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 185231 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 182425 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 118 of 179946 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [2]",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 5035 of 177286 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 28312 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": {
+          "recipient": "A8t1fdhaftyUZ1iBxCGJ681SE79Atzuxnk9t4bKzxznj",
+          "totalClaimed": "0",
+          "cancelledAt": "1792091261"
+        },
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": "240000000000000",
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": "139249986000000"
+      }
+    },
+    {
+      "label": "cancel_outsider",
+      "signer": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+      "serializedBytes": 477,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 13779,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:161. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 13779 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": null,
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": null,
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": null
+      }
+    },
+    {
+      "label": "cancel_creator_wrong_payout_owner",
+      "signer": "G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+      "serializedBytes": 413,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "unitsConsumed": 7989,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CancelVestingEscrow",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 7989 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x7df"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": null,
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": null,
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": null
+      }
+    },
+    {
+      "label": "close_creator_before_full_claim",
+      "signer": "G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+      "serializedBytes": 444,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6019
+          }
+        ]
+      },
+      "unitsConsumed": 12262,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CloseVestingEscrow",
+        "Program log: AnchorError thrown in programs/locker/src/instructions/escrow_instructions/close_vesting_escrow.rs:63. Error Code: ClaimingIsNotFinished. Error Number: 6019. Error Message: Claiming is not finished.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 12262 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1783"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": null,
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": null,
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": null
+      }
+    },
+    {
+      "label": "close_outsider",
+      "signer": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+      "serializedBytes": 444,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 6151,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: CloseVestingEscrow",
+        "Program log: AnchorError caused by account: escrow. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+        "Program log: Right:",
+        "Program log: FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 6151 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x7d1"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": null,
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": null,
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": null
+      }
+    },
+    {
+      "label": "update_recipient_creator_counterfactual_positive",
+      "signer": "G9E6nB4ZDdfyKrg3FJuGvMrGQE2cXnuAEKR1ECQUiPXu",
+      "serializedBytes": 312,
+      "err": null,
+      "unitsConsumed": 14915,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: UpdateVestingEscrowRecipient",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [2]",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 5035 of 190471 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 14915 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": {
+          "recipient": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+          "totalClaimed": "0",
+          "cancelledAt": "0"
+        },
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": "320000000000000",
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": "0",
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": "59249986000000"
+      }
+    },
+    {
+      "label": "update_recipient_outsider",
+      "signer": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+      "serializedBytes": 312,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6005
+          }
+        ]
+      },
+      "unitsConsumed": 8441,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: UpdateVestingEscrowRecipient",
+        "Program log: AnchorError thrown in programs/locker/src/state/vesting_escrow.rs:170. Error Code: NotPermitToDoThisAction. Error Number: 6005. Error Message: Not permit to do this action.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 8441 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1775"
+      ],
+      "post": {
+        "BtZ8jPfdN8mVmok3x55He1CMwdS1xWpXBTMTigsjVH3Q": null,
+        "8SyqVYdtzjwCRr6HnnBXfdJiorHVMZ2v1E8q1oaph1ke": null,
+        "FBRCJEfsmRL1FWMe6gLvhikozXUDxGT6Tir6gQhavqnS": null,
+        "6N4QkLLHHRm4dvc5GrhwMvncDX54mNKJnj5qvsHuZymh": null
+      }
+    }
+  ]
+}

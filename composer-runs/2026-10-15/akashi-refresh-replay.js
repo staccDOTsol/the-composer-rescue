@@ -1,0 +1,8 @@
+// Current-state read-only replay of landed Akashi RefreshLeg; no sendTransaction.
+const fs=require('fs');
+const RPC=process.env.HEAVY_RPC_URL||process.env.RPC_URL;
+if(!RPC)throw Error('RPC_URL required');
+const sig='42qqNc8eibpVd62RFrPzN9VaJLsGPwiixEMfjjQ4oYbtiznd4jtm1fHPzqkN383Jd1D1owfZoqM7Aju2zqKgo36x';
+async function rpc(method,params){for(let i=0;i<5;i++){const r=await fetch(RPC,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method,params})});const b=await r.json();if(!b.error)return b.result;if(i===4)throw Error(JSON.stringify(b.error));await new Promise(y=>setTimeout(y,250*(i+1)))}}
+async function main(){const tx=await rpc('getTransaction',[sig,{encoding:'base64',maxSupportedTransactionVersion:1,commitment:'confirmed'}]);const wire=tx.transaction[0],bytes=Buffer.from(wire,'base64');const sim=await rpc('simulateTransaction',[wire,{encoding:'base64',sigVerify:false,replaceRecentBlockhash:true,commitment:'confirmed',innerInstructions:true}]);const out={observedAt:new Date().toISOString(),sourceSignature:sig,sourceSlot:tx.slot,sourceVersion:tx.version,sourceWireBytes:bytes.length,sourceWireBase64:wire,currentSlot:sim.context.slot,error:sim.value.err,unitsConsumed:sim.value.unitsConsumed,logs:sim.value.logs,returnData:sim.value.returnData};fs.writeFileSync('composer-runs/2026-10-15/akashi-refresh-replay.json',JSON.stringify(out,null,2));console.log(JSON.stringify({sourceSlot:out.sourceSlot,sourceVersion:out.sourceVersion,sourceWireBytes:out.sourceWireBytes,currentSlot:out.currentSlot,error:out.error,unitsConsumed:out.unitsConsumed,logs:out.logs?.slice(-20)}))}
+main().catch(e=>{console.error(e.stack);process.exitCode=1});

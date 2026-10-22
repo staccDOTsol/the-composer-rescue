@@ -1,0 +1,416 @@
+{
+  "generatedAt": "2026-10-15T20:07:58.755Z",
+  "scope": "local mainnet fork simulation only",
+  "mainnetSubmission": false,
+  "sigVerify": true,
+  "replaceRecentBlockhash": false,
+  "attacker": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+  "attackerTokenAccounts": {
+    "sUSDai": "21tGB4Wer7W6Da8FaVq147kFWazvRCYBeNXkSWeoCJVn",
+    "usdc": "2QTyDJKwAwRKUoerN4PxupGNgoMmEfBC4eJo6m9pmt9F"
+  },
+  "diagnosticSeededBalancesRaw": {
+    "sUSDai": "15000000000000",
+    "usdc": "15000000000000"
+  },
+  "results": [
+    {
+      "label": "oracle_control",
+      "err": null,
+      "unitsConsumed": 52283,
+      "wire": {
+        "version": 1,
+        "bytes": 456,
+        "accounts": 10,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "sha256": "222a424a4900362c8ccb25ba9b676f7c0b4d48b0c80c94c5afc2a27e52436c6a"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": null,
+        "usdc": null
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52283 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "susdai_to_usdc_1m",
+      "err": null,
+      "unitsConsumed": 220915,
+      "wire": {
+        "version": 1,
+        "bytes": 1045,
+        "accounts": 26,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "eb67f15826d7d3c731fe0787b7427a024cd844336991a920e325b4fe243052b9"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        },
+        {
+          "supplyRateX15": "2002584810945931",
+          "borrowRateX15": "2002584810945931"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": {
+          "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "mint": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "14000000000000"
+        },
+        "usdc": {
+          "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "16116127181452"
+        }
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52273 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4659 of 1333176 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: PreOperate",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 4722 of 1285202 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3254 of 1277782 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DgB+q0egAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 13724 of 1267249 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1222759 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hdMWiIfz+/////////////wAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23223 of 1244184 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIKAAEAEKXU6AAAAIw6Xd4DAQAAd/z2xnag3+49KLjHrAazYEcmg0GSre9PfDIxHHn+QUA=",
+        "Program data: k/WGuEchdPYKAAF3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAABCl1OgAAACMOl3eAwEAAADC6wsAAAAA/XC68+MJAAAAAAAAAAAAAAoJvo3MAAAAAAAAAAAAAACjPzq4DfcDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 131459 of 1347727 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd jDpd3gMBAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002584810945931",
+        "Program log: smart_col_exchange_rate: 2002584810945931",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37183 of 1216268 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc i/1JHFcdBwAAAAAAAAAAAIv9SRxXHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "susdai_to_usdc_5m",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 106150,
+      "wire": {
+        "version": 1,
+        "bytes": 1045,
+        "accounts": 26,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "781fafe958389dc0d4d7f3967f77585dfa4f1046a08519574edc51a8a3720ab2"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": null,
+        "usdc": null
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52273 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4659 of 1333176 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:160",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53877 of 1347727 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "label": "susdai_to_usdc_8m",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 106149,
+      "wire": {
+        "version": 1,
+        "bytes": 1045,
+        "accounts": 26,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "3426df34da8889b3cc00762236b7707b22e1d96bdf75ed6705a470be5c0a1680"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": null,
+        "usdc": null
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52273 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4659 of 1333176 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:160",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53876 of 1347727 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "label": "usdc_to_susdai_1m",
+      "err": null,
+      "unitsConsumed": 220531,
+      "wire": {
+        "version": 1,
+        "bytes": 1045,
+        "accounts": 26,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "8c5f8141372cde7e45aca87db862eec9eecee79a735254bb362e0ace832f5d62"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        },
+        {
+          "supplyRateX15": "2001895524185070",
+          "borrowRateX15": "2001895524185070"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": {
+          "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "mint": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "15895160225513"
+        },
+        "usdc": {
+          "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "14000000000000"
+        }
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52273 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4659 of 1333176 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: PreOperate",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 4664 of 1284831 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1277441 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hgB+q0egAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19481 of 1270059 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3254 of 1226295 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DF/FKlC///////////////wAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 20208 of 1241556 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIKAAAAEKXU6AAAAOkOtWvQAAAAd/z2xnag3+49KLjHrAazYEcmg0GSre9PfDIxHHn+QUA=",
+        "Program data: k/WGuEchdPYKAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAABCl1OgAAADpDrVr0AAAAADC6wsAAAAAk0JbtioIAAAAAAAAAAAAABdjxT25AgAAAAAAAAAAAAAMUR1SC/gDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 131073 of 1347727 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 6Q61a9AAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2001895524185070",
+        "Program log: smart_col_exchange_rate: 2001895524185070",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37185 of 1216654 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 7rOYn7YcBwAAAAAAAAAAAO6zmJ+2HAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "usdc_to_susdai_5m",
+      "err": null,
+      "unitsConsumed": 220918,
+      "wire": {
+        "version": 1,
+        "bytes": 1045,
+        "accounts": 26,
+        "instructions": 3,
+        "requiredSignatures": 1,
+        "sha256": "4cc28b5358fe148783fb0914973e735eda54372f87304d638dbe9370882a7c06"
+      },
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2002157341251396",
+          "borrowRateX15": "2002157341251396"
+        },
+        {
+          "supplyRateX15": "2001556014369938",
+          "borrowRateX15": "2001556014369938"
+        }
+      ],
+      "attackerPost": {
+        "sUSDai": {
+          "program": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "mint": "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "19471680293940"
+        },
+        "usdc": {
+          "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "95PEqoxU8aUWUqzM75NYakudPaPvuFZUPjNXry3JPV1H",
+          "amountRaw": "10000000000000"
+        }
+      },
+      "logs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program log: smart_col_exchange_rate: 2002157341251396",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52273 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc RBcclfMcBwAAAAAAAAAAAEQXHJXzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4659 of 1333176 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc udITEbL5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: PreOperate",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 4664 of 1284828 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1277438 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hgJ1SGIwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19876 of 1270056 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ZHjvJfMAAAAsrVrY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 3254 of 1225897 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DzKMV2+77/////////////wAAAAAAAAAAAAAAAAAAAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 20208 of 1241158 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIKAAAAUDknjAQAADRc6iQRBAAAd/z2xnag3+49KLjHrAazYEcmg0GSre9PfDIxHHn+QUA=",
+        "Program data: k/WGuEchdPYKAAB3/PbGdqDf7j0ouMesBrNgRyaDQZKt7098MjEcef5BQHf89sZ2oN/uPSi4x6wGs2BHJoNBkq3vT3wyMRx5/kFAAFA5J4wEAAA0XOokEQQAAADKmjsAAAAASPUl/ekEAAAAAAAAAAAAABfhbYRcBgAAAAAAAAAAAABhTfX56vkDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 131470 of 1347727 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd NFzqJBEEAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2001556014369938",
+        "Program log: smart_col_exchange_rate: 2001556014369938",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37175 of 1216257 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc kgw8k2ccBwAAAAAAAAAAAJIMPJNnHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    }
+  ]
+}

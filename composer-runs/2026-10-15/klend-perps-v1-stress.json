@@ -1,0 +1,2306 @@
+{
+  "timestamp": "2026-10-15T19:08:45.545Z",
+  "transport": "read-only mainnet simulateTransaction",
+  "liveSubmission": false,
+  "signed": false,
+  "sigVerify": false,
+  "sigVerifyCaveat": "All successful paths require the on-curve owner signature in a real transaction; sigVerify:false proves runtime account/state behavior, not possession of that key.",
+  "v1Limits": {
+    "maxWireBytes": 4096,
+    "maxInlineAddresses": 64,
+    "maxInstructions": 64,
+    "addressLookupTables": false
+  },
+  "programs": {
+    "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "perps": "PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu"
+  },
+  "sourceFlash": {
+    "signature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+    "slot": 457338071
+  },
+  "owner": {
+    "address": "HnSDB6BB2m72Mdg79khmoUAXUMTFSZZWyH9wiZ6aYRN7",
+    "onCurve": true,
+    "usdc": "52ve2co1xFcb4TuqQ9ZumoM7hWbMH4BsLeN32dG6xJv6",
+    "jlp": "3V2HqMjR1jRtZtRVFfx4wcF5PuwDiiJebyMxBJ9AE35p"
+  },
+  "flash": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "supply": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "supplyRaw": "7820864800722",
+    "accountedAvailableRaw": "7820864730717",
+    "flashLoanFeeSf": "0",
+    "configuredZeroFee": true,
+    "zeroFeeEvidence": "Reserve config field is exactly zero; successful one-raw and near-available loans are not fee-rounding evidence."
+  },
+  "tracked": {
+    "ownerUsdc": "52ve2co1xFcb4TuqQ9ZumoM7hWbMH4BsLeN32dG6xJv6",
+    "ownerJlp": "3V2HqMjR1jRtZtRVFfx4wcF5PuwDiiJebyMxBJ9AE35p",
+    "perpsUsdcVault": "WzWUoCmtVv7eqAbU3BfKPU3fhLP6CXR8NCJH78UK9VS",
+    "jlpMint": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+    "klendFlashSupply": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "klendFlashFeeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "klendReserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "perpsPool": "5BUwFW4nRbftYTDMbgxykoFWqWHPzahFSNAaaaJtVKsq",
+    "perpsUsdcCustody": "G18jKKXQwBbrHeiK3C9MRXhkHsLHf7XgCSisykV46EZa"
+  },
+  "preSlot": 457348701,
+  "pre": {
+    "ownerUsdc": {
+      "kind": "splToken",
+      "amountRaw": "446840686957"
+    },
+    "ownerJlp": {
+      "kind": "splToken",
+      "amountRaw": "2389550000000"
+    },
+    "perpsUsdcVault": {
+      "kind": "splToken",
+      "amountRaw": "100575263621391"
+    },
+    "jlpMint": {
+      "kind": "splMint",
+      "supplyRaw": "191812392985502"
+    },
+    "klendFlashSupply": {
+      "kind": "splToken",
+      "amountRaw": "7820864800722"
+    },
+    "klendFlashFeeVault": {
+      "kind": "splToken",
+      "amountRaw": "0"
+    },
+    "klendReserve": {
+      "kind": "programState",
+      "sha256": "3976e841a19240d9b097a334228e0805ce3d87f69a6f8b25810af0a30ea68ebf",
+      "availableLiquidityRaw": "7820864730717",
+      "flashLoanFeeSf": "0"
+    },
+    "perpsPool": {
+      "kind": "programState",
+      "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+    },
+    "perpsUsdcCustody": {
+      "kind": "programState",
+      "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+    }
+  },
+  "derived": {
+    "roundTripPilotAmountRaw": "100000000",
+    "roundTripPilotMintedJlpRaw": "21782058"
+  },
+  "repaymentAccounting": "KLend flash loans use the indexed repay instruction rather than a persistent obligation account. A successful simulation plus restored flash supply and unchanged fee vault establishes full same-transaction repayment for this zero-fee reserve.",
+  "results": [
+    {
+      "name": "flash_pair_1",
+      "slot": 457348702,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55217,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "6d692a4e7448f3493d31bd2b8c9307cd2dd5cfb58c79376fe2477feb65b38427",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_pair_2",
+      "slot": 457348702,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55217,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "6d692a4e7448f3493d31bd2b8c9307cd2dd5cfb58c79376fe2477feb65b38427",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_pair_1000",
+      "slot": 457348702,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55217,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "6d692a4e7448f3493d31bd2b8c9307cd2dd5cfb58c79376fe2477feb65b38427",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_pair_100000",
+      "slot": 457348703,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55217,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "7f0bc5ec9f9dce662821f5e56aa7012264e7d3459c492e5a7f90803eb314a8d6",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_1_repay",
+      "slot": 457348703,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6019
+          }
+        ]
+      },
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 130967,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594481314, publish time: 1792091321",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: AnchorError thrown in programs/perpetuals/src/instructions/add_liquidity2.rs:180. Error Code: InsufficientTokenAmount. Error Number: 6019. Error Message: Insufficient token amount.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1783"
+      ]
+    },
+    {
+      "name": "flash_add_2_repay",
+      "slot": 457348704,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179194,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686955"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621393"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "9fc0a30d3269ad4b4b39f95bdd1c16ef29770b9d3a5e8d36dc29a446723f2e9a",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "c8c7c1c6f9e7f2ed7c542f902c905e81be92fdc7b34b93b520b30b3e5c50dbeb"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "a7dee2c034ba19388c745f9da37c34c7f913e5e2ea2abe2553ee28495714baf6"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 0",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_3_repay",
+      "slot": 457348704,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179194,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686954"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621394"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "9fc0a30d3269ad4b4b39f95bdd1c16ef29770b9d3a5e8d36dc29a446723f2e9a",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "df42e6ec1dac2697e554b07213386c9020a70de66e98dd548e8819a009151a26"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "0cddb0fffdf6ff0b6930e2959fa19db6c7fdcf9558ac24a1dd6e381a7b9ea850"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 0",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_4_repay",
+      "slot": 457348704,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179194,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686953"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621395"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "9fc0a30d3269ad4b4b39f95bdd1c16ef29770b9d3a5e8d36dc29a446723f2e9a",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "5599772ad8863c584eb716c8fbec26f0d39105d38cbfd69763ef0ae1c8f15fc9"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "c4b48a376b44c79fb5c7895b9f46a474f6139d9e9f942992ecbf01122c8003e1"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 0",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_5_repay",
+      "slot": 457348705,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179194,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686952"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621396"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "90e2d76d8224eaf37ccdb02acb939069d22a3d501a80b4e7e06e45444da2da59",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "109b73de06c9f2e1d4386a5207eb32ed051d514b2b9e558a0c0cf97855bc319f"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "a1481dbf7942d357ef7807420c30d1b955717d3da0cdbb37a476d2353dec3ca1"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 0",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_6_repay",
+      "slot": 457348705,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179195,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686951"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000001"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621397"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985503"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "90e2d76d8224eaf37ccdb02acb939069d22a3d501a80b4e7e06e45444da2da59",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "cf23f7b0884b101555abb3bce10cd8d155f56c33f86982a02d66e3447d25e0ad"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "db6132d5b89ea98abee9902f48ae6d565d39193a472b6e2b0988894d0ed22b42"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 1",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_7_repay",
+      "slot": 457348705,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179184,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686950"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000001"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621398"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985503"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "90e2d76d8224eaf37ccdb02acb939069d22a3d501a80b4e7e06e45444da2da59",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "516b2eb3e24676e9f9eddc0839255938a39b4a86150e7592c573d27130dce14e"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "f93f45a2a4041bd5d7c3cf32b4040379aff257e3e8b1d6e5fde00651382f089b"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 1",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_8_repay",
+      "slot": 457348705,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179184,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686949"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000001"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621399"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985503"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "90e2d76d8224eaf37ccdb02acb939069d22a3d501a80b4e7e06e45444da2da59",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "e7e6b0256d9d5e53e4c42b7c67eb4af10dff8c07be3e279af5f7e6ec8e69e982"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "8f38be41d55a91c132562baa9cdd0b0aff64d10bf9202c72905d60dd82c2d76d"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 1",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_9_repay",
+      "slot": 457348705,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179184,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686948"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000001"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621400"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985503"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "90e2d76d8224eaf37ccdb02acb939069d22a3d501a80b4e7e06e45444da2da59",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "ca859dfd14d6f142858c496f303d1b84701fbf8889268f1332dea14329232867"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "381278b7b582c5ed57cf1dbb5c888ccc24c62e595978a3a01896cbd9883a2932"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 1",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_10_repay",
+      "slot": 457348706,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179184,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686947"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000001"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621401"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985503"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "215ab2291bc4b5110b5948b375959ad546aa397caae1f5a847b6a376873c9b28",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "2a1225462bece4c6c17ce74b7989caf188f2d8d6b669ee7dae2baaffe11d1c9a"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "ca2c5170fcf2504c8d59e89ddaaaa22adaddd0a4dbfe990ac0bff5fbb76d8abd"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 1",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_100_repay",
+      "slot": 457348706,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179197,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686857"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000021"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621491"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985523"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "215ab2291bc4b5110b5948b375959ad546aa397caae1f5a847b6a376873c9b28",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "a9568f84d17ff6f25b125f319cd235c59becf795e9abd3ea84beb52d4b3df99b"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "3f91e8fcf72f2761fe4ddacf225f80bf78a15c8295678b2094b5689ac99e5808"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 21",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_1000_repay",
+      "slot": 457348707,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179231,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840685957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000217"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263622391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985719"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "cb3c64f983ae1b244bddfb19f74723a2aa7497f09d31732bae1f061ece0227be",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "7f4e6c08537be93b12ca8b84c4c36c8b9e2e32ffafcc91419a7c9cc0f4e3110e"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "90c9924d0f0a3f88b810669776690220dae5a8c7eeb8fcf6a3b654f4c8597394"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_100000_repay",
+      "slot": 457348707,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179433,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840586957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550021782"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263721391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812393007284"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "cb3c64f983ae1b244bddfb19f74723a2aa7497f09d31732bae1f061ece0227be",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "346901c310120af941dc648cc6fc8d06bf2937ed40df33987f823d35ec2fc26f"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "1867195cb679eea6f2fe7f26440e6ff8b5149487f5a69dca55dd3f0cfcd67a05"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 21782",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_100_usdc_pilot",
+      "slot": 457348707,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179424,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446740686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389571782058"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575363621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812414767560"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "cb3c64f983ae1b244bddfb19f74723a2aa7497f09d31732bae1f061ece0227be",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "e3b2236ab47ed887fdf728c75c129863b87b6a62b47827031e752d8b2fb77f05"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "bced97a175cece36f51f5c0cede61f5e67bebe7a93e4bb68cd3712f74e1d9069"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 21782058",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_remove_100_usdc_roundtrip",
+      "slot": 457348707,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1280,
+      "v0Bytes": 1266,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 296253,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840268563"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575264039785"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "cb3c64f983ae1b244bddfb19f74723a2aa7497f09d31732bae1f061ece0227be",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "462441d1cefe67549cb8bccab5d039b5c1c37c6882b3945f29d10602b92bd1ae"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "e49bb820fdeace2d2b7b5d1438063dd600eb657525ad0336ecbcc2726f5d5193"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 21782058",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594389304, publish time: 1792091323",
+        "Program log: doves ag price: 244927754380, publish time: 1792091321",
+        "Program log: doves ag price: 8238964304021, publish time: 1792091321",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 99581606",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_add_1_usdc_cycle_pilot",
+      "slot": 457348708,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179442,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446839686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550217820"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575264621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812393203322"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "84d2a8c2236275adce79910e749afd0f2bb5334fb5c8cea9490395843d69f832",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "8631f8ac19a5daed317827bde841d3e490fa8c2cd3a16f5f9de163e059d4fa1b"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "1e5b0d6075e49600c8b0242de4f1d70cdc8da5882c398b2d5165ad2b3890ed4f"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_2_perps_add_remove_cycles",
+      "slot": 457348708,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1389,
+      "v0Bytes": 1373,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 6,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 530018,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840678587"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263629761"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "84d2a8c2236275adce79910e749afd0f2bb5334fb5c8cea9490395843d69f832",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "c03d2917260a0bb2edc54135deb828ac3544a7f0f334767abb0609df8e7f125f"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "7e207472318fd8119017becf35489b063651ed1bcb35a8aecb9cdda55942291c"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_4_perps_add_remove_cycles",
+      "slot": 457348709,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1607,
+      "v0Bytes": 1587,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 10,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 997472,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840670217"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263638131"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "7f81654f5e488c453034389d32a56f016ae94fc66a6f1605f348125d21965e27",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "749c41ae09c607c7cfd8fe393a57a7d0403e1b6e6505087abcddb7cc9d05bd9a"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "8b93064aa6a2de96986b520dd71cf13d101b0b25f3748ed468489ee51b639cbc"
+        }
+      },
+      "logs": [
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: LP tokens to mint: 217820"
+      ]
+    },
+    {
+      "name": "flash_8_perps_add_remove_cycles",
+      "slot": 457348709,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          12,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "sizeBytes": 2043,
+      "v0Bytes": 2015,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 18,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 1400000,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 217820",
+        "Program log: Instruction: RemoveLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Burn LP tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: Amount out: 995815",
+        "Program log: Transfer tokens",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321"
+      ]
+    },
+    {
+      "name": "flash_16_perps_add_remove_cycles",
+      "slot": 457348709,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          0,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "sizeBytes": 2915,
+      "v0Bytes": 2871,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 34,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 106355,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Error: memory allocation failed, out of memory",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: SBF program panicked"
+      ]
+    },
+    {
+      "name": "flash_31_perps_add_remove_cycles",
+      "localError": "Error: v1 size limit: 4550\n    at encodeV1 (/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/klend-v1-composition.js:114:33)\n    at simulate (/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/klend-perps-v1-stress.js:146:21)\n    at run (/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/klend-perps-v1-stress.js:179:26)\n    at main (/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/klend-perps-v1-stress.js:210:15)\n    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)"
+    },
+    {
+      "name": "flash_accounted_available_minus_one_pair",
+      "slot": 457348709,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55213,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "7f81654f5e488c453034389d32a56f016ae94fc66a6f1605f348125d21965e27",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_accounted_available_pair",
+      "slot": 457348710,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 55213,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "446840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2389550000000"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100575263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191812392985502"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "b780b96291e7051d1b7e2b3eacab3a897bc7f6ca9ce60abdc217059524c57e82",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "76eadad2f72656b4eab109d6d78c6e15f36735c01a9d6ccd213768c4e913f5fd"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "967022f07a6f34e3ef3acc50a3c9647a98141cd828f14f8489d230d294663273"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "flash_accounted_available_plus_one_pair",
+      "slot": 457348709,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6008
+          }
+        ]
+      },
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 32644,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Withdraw amount 7820864730718 cannot exceed the total available amount 7820864730717",
+        "Program log: AnchorError thrown in programs/klend/src/state/reserve.rs:1010. Error Code: InsufficientLiquidity. Error Number: 6008. Error Message: Insufficient liquidity available.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1778"
+      ]
+    },
+    {
+      "name": "flash_near_available_add_400k_usdc_to_perps_repay",
+      "slot": 457348710,
+      "rpcError": null,
+      "err": null,
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 179571,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": {
+          "kind": "splToken",
+          "amountRaw": "46840686957"
+        },
+        "ownerJlp": {
+          "kind": "splToken",
+          "amountRaw": "2476564692537"
+        },
+        "perpsUsdcVault": {
+          "kind": "splToken",
+          "amountRaw": "100975263621391"
+        },
+        "jlpMint": {
+          "kind": "splMint",
+          "supplyRaw": "191899407678039"
+        },
+        "klendFlashSupply": {
+          "kind": "splToken",
+          "amountRaw": "7820864800722"
+        },
+        "klendFlashFeeVault": {
+          "kind": "splToken",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "kind": "programState",
+          "sha256": "b780b96291e7051d1b7e2b3eacab3a897bc7f6ca9ce60abdc217059524c57e82",
+          "availableLiquidityRaw": "7820864730717",
+          "flashLoanFeeSf": "0"
+        },
+        "perpsPool": {
+          "kind": "programState",
+          "sha256": "dd5a094595efc289eb55f3ec82ee03220a9cb1a42a0a7c8ed8e544cec31d342a"
+        },
+        "perpsUsdcCustody": {
+          "kind": "programState",
+          "sha256": "523c6027dce1c983840188259562c9a489065c3cc89b8e875f1433cd38a57031"
+        }
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: Check permissions",
+        "Program log: Validate inputs",
+        "Program log: Compute assets under management",
+        "Program log: doves ag price: 10594372888, publish time: 1792091324",
+        "Program log: doves ag price: 244936275812, publish time: 1792091324",
+        "Program log: doves ag price: 8238923104820, publish time: 1792091324",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: doves ag price: 99951649, publish time: 1792091313",
+        "Program log: Transfer tokens",
+        "Program log: doves ag price: 99986048, publish time: 1792091321",
+        "Program log: LP tokens to mint: 87014692537",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "name": "alias_flash_destination_and_repay_source_to_perps_vault",
+      "slot": 457348711,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 4
+          }
+        ]
+      },
+      "sizeBytes": 531,
+      "v0Bytes": 519,
+      "addressCount": 11,
+      "writableCount": 5,
+      "instructionCount": 2,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 54205,
+      "loadedAccountsDataSize": 10609046,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Error: owner does not match",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x4",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x4"
+      ]
+    },
+    {
+      "name": "alias_perps_add_funding_to_custody_vault",
+      "slot": 457348711,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 60338,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: AnchorError caused by account: funding_account. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: AVzP2GeRmqGphJsMxWoqjpUifPpCret7LqWhD8NWQK49",
+        "Program log: Right:",
+        "Program log: HnSDB6BB2m72Mdg79khmoUAXUMTFSZZWyH9wiZ6aYRN7",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "alias_perps_add_jlp_destination_to_other_owner",
+      "slot": 457348711,
+      "rpcError": null,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "sizeBytes": 1226,
+      "v0Bytes": 1213,
+      "addressCount": 31,
+      "writableCount": 10,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "config": {
+        "computeLimit": 1400000,
+        "dataLimit": 67108864
+      },
+      "unitsConsumed": 60632,
+      "loadedAccountsDataSize": 21112146,
+      "post": {
+        "ownerUsdc": null,
+        "ownerJlp": null,
+        "perpsUsdcVault": null,
+        "jlpMint": null,
+        "klendFlashSupply": null,
+        "klendFlashFeeVault": null,
+        "klendReserve": null,
+        "perpsPool": null,
+        "perpsUsdcCustody": null
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: AddLiquidity2",
+        "Program log: AnchorError caused by account: lp_token_account. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: 7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+        "Program log: Right:",
+        "Program log: HnSDB6BB2m72Mdg79khmoUAXUMTFSZZWyH9wiZ6aYRN7",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    }
+  ]
+}

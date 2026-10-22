@@ -1,0 +1,254 @@
+{
+  "generatedAtUtc": "2026-10-19T09:15:50.556Z",
+  "network": "mainnet-beta-backed Surfpool",
+  "safety": {
+    "broadcast": false,
+    "sendTransactionPathPresent": false,
+    "sigVerify": true,
+    "freshEphemeralSigner": true,
+    "privateKeyPersisted": false,
+    "signedWirePersisted": false,
+    "forkMutations": "fresh outsider accounts plus exact byte-for-byte captured mainnet pool/global/price/vault/mint images when tessera-pin-state.js is used; no synthetic target-state edits"
+  },
+  "rubric": [
+    "Current executable identity and Composer schema must match the pinned baseline.",
+    "A held-out current successful receipt must confirm the live swap selector, accounts, and vault outflow.",
+    "Every tested route must be fresh-signed, sigVerify:true, no-broadcast, and reconcile wallet/vault deltas.",
+    "Small controls and high inputs must run against the same fixed fork bank without committing state.",
+    "A flash packet is warranted only if a positive pricing precursor survives an independent exit and fees."
+  ],
+  "cases": [
+    {
+      "direction": "wsol_to_usdc",
+      "label": "small_control",
+      "amountRaw": "100000000",
+      "quote": {
+        "status": 200,
+        "contextSlot": 458778548,
+        "inAmount": "100000000",
+        "outAmount": "10536999",
+        "otherAmountThreshold": "5268500",
+        "priceImpactPct": "0.000058401528979893560551256",
+        "error": null,
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+            "inputMint": "So11111111111111111111111111111111111111112",
+            "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+          }
+        ]
+      },
+      "fixedBankSlot": 458779291,
+      "simulationSlot": 458779291,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 65535
+          }
+        ]
+      },
+      "unitsConsumed": 91719,
+      "loadedAccountsDataSize": 127474,
+      "envelope": {
+        "version": 0,
+        "bytes": 621,
+        "addresses": 19,
+        "instructions": 7,
+        "requiredSignatures": 1,
+        "sigVerify": true,
+        "withinRequestedLimits": true,
+        "signedWireSha256": "3bbb3aea9e12b5f07b9d38cdc9763455c9d803e6ce0a80fb05162afb3e1cb8ff",
+        "signedWirePersisted": false
+      },
+      "changes": {
+        "userWsol": {
+          "amountRaw": null,
+          "lamports": null,
+          "dataChanged": false
+        },
+        "userUsdc": {
+          "amountRaw": "-33022819",
+          "lamports": null,
+          "dataChanged": true
+        },
+        "wsolVault": {
+          "amountRaw": "-24417793470862",
+          "lamports": null,
+          "dataChanged": true
+        },
+        "usdcVault": {
+          "amountRaw": "-3226694305620",
+          "lamports": null,
+          "dataChanged": true
+        },
+        "pool": {
+          "amountRaw": "-3563694943227831613",
+          "lamports": null,
+          "dataChanged": true
+        }
+      },
+      "reconciliation": null,
+      "tesseraLogs": [
+        "Program TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH invoke [2]",
+        "Program TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH consumed 62292 of 1370573 compute units",
+        "Program TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH failed: custom program error: 0xffff",
+        "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 failed: custom program error: 0xffff"
+      ],
+      "disposition": "simulation_failed",
+      "broadcast": false
+    }
+  ],
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "fixedBankSlot": 458779291,
+  "heldoutTemplate": {
+    "signature": "5RE75HJkSiEyFwRpMbj7rVvpxyR7pNxrQWXoZRZzMzR5QdmixYg3fHJAXQn5MiSf5UhenqCivjeZfZg7YcMxTVuL",
+    "slot": 458775988,
+    "version": 1,
+    "selector": "1100",
+    "dataHex": "1100424b550000000000000000000000000000",
+    "accountCount": 14,
+    "accounts": [
+      {
+        "index": 0,
+        "address": "8ekCy2jHHUbW2yeNGFWYJT9Hm9FW7SvZcZK66dSZCDiF",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 1,
+        "address": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+        "signer": false,
+        "writable": true
+      },
+      {
+        "index": 2,
+        "address": "8jwtx2UB4zWQrdSFZVFZ6Pz5HNwzsK5gEa6VriqFZJVQ",
+        "signer": true,
+        "writable": true
+      },
+      {
+        "index": 3,
+        "address": "5pVN5XZB8cYBjNLFrsBCPWkCQBan5K5Mq2dWGzwPgGJV",
+        "signer": false,
+        "writable": true
+      },
+      {
+        "index": 4,
+        "address": "9t4P5wMwfFkyn92Z7hf463qYKEZf8ERVZsGBEPNp8uJx",
+        "signer": false,
+        "writable": true
+      },
+      {
+        "index": 5,
+        "address": "6NguToJ2v7N4MiFqRQ72D4L81Z2eYkpdM74943TiN81d",
+        "signer": false,
+        "writable": true
+      },
+      {
+        "index": 6,
+        "address": "JA2AZU7bdzNVmbQKXFKFR7dPTsgRNxxuMhz6jqL47m8p",
+        "signer": false,
+        "writable": true
+      },
+      {
+        "index": 7,
+        "address": "So11111111111111111111111111111111111111112",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 8,
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 9,
+        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 10,
+        "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 11,
+        "address": "8xeaWCsJYxRoudEZGJWURdfrtFhLYZz9b4iHJnW5tb3d",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 12,
+        "address": "BAT1Ndpu5gbLTp2AZkSXP79LJBZfCH4B3zGhi6LtvdhK",
+        "signer": false,
+        "writable": false
+      },
+      {
+        "index": 13,
+        "address": "4cG31VNF9TzFinNc7BmnjhFvGjxkY3sCETVMtMgbrhPs",
+        "signer": false,
+        "writable": false
+      }
+    ],
+    "vaultDeltas": [
+      {
+        "address": "5pVN5XZB8cYBjNLFrsBCPWkCQBan5K5Mq2dWGzwPgGJV",
+        "mint": "So11111111111111111111111111111111111111112",
+        "delta": "-53030120"
+      },
+      {
+        "address": "9t4P5wMwfFkyn92Z7hf463qYKEZf8ERVZsGBEPNp8uJx",
+        "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "delta": "5589826"
+      }
+    ]
+  },
+  "outsider": {
+    "authority": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+    "userWsol": "DrfWXM7aEjsYNBCYHWRv57aor2etiuum97HedhcPmPdu",
+    "userUsdc": "BgfAes9oQmYS6sa2LefzNwdkAA1mwTq9iDZxVDhaxKDZ"
+  },
+  "preSlot": 458779291,
+  "pre": {
+    "userWsol": null,
+    "userUsdc": {
+      "lamports": "1488440",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "authority": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+      "amountRaw": "33022819",
+      "dataSha256": "73209841b954ee591e0e1e51b6adb2f9c302920ef23dd795e6973b9d9d6d3640"
+    },
+    "wsolVault": {
+      "lamports": "24417803810366",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "mint": "So11111111111111111111111111111111111111112",
+      "authority": "8ekCy2jHHUbW2yeNGFWYJT9Hm9FW7SvZcZK66dSZCDiF",
+      "amountRaw": "24417793470862",
+      "dataSha256": "1712ee3769ce9038c0377d8833361c6858b187b026afbb8f98dac695ca301772"
+    },
+    "usdcVault": {
+      "lamports": "2696342",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+      "authority": "8ekCy2jHHUbW2yeNGFWYJT9Hm9FW7SvZcZK66dSZCDiF",
+      "amountRaw": "3226694305620",
+      "dataSha256": "fd79c8346181da563578db3149d76f0c152e22a18b4b57fcb5766ecf2e14683a"
+    },
+    "pool": {
+      "lamports": "10683329",
+      "owner": "TessVdML9pBGgG9yGks7o4HewRaXVAMuoVj4x83GLQH",
+      "mint": "1111111111111111111126UzHWnE3oX6brD9",
+      "authority": "HvPkXBqbAD9PZLojpzakBm4KERtS3ZrEwds5WYf4wZzq",
+      "amountRaw": "3563694943227831613",
+      "dataSha256": "804383ad3a3c5b593422098d3a9031c0d6385fc23b14276c8a52c7f66e3bd3dc"
+    }
+  },
+  "postSweepBankSlot": 458779291,
+  "sameBank": true
+}

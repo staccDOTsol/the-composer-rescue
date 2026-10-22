@@ -1,0 +1,104 @@
+{
+  "observedAt": "2026-10-19T06:58:13.488Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "method": "simulateTransaction",
+  "sigVerify": true,
+  "broadcast": false,
+  "probes": [
+    {
+      "name": "open_position",
+      "receiptSignature": "2NX47m8N8qyiUBhkVXfEwo9Ws8yiQmqo84ehcMGowcStt6wYGybn5ux9EWTyXMbJ6L7NPjnPWCPJp7LrDPB51sv2",
+      "receiptSlot": 458739721,
+      "operator": "A2rCQdCqQB4wu72x9Q7iq1QugtdZmcyWsiSPfgfZzu2u",
+      "operatorListedSigner": true,
+      "noOperatorSignature": {
+        "label": "open_position_operator_not_signer",
+        "slot": 458741828,
+        "wireBytes": 602,
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "computeUnits": 6107,
+        "logs": [
+          "Program log: Instruction: OpenPosition",
+          "Program log: AnchorError caused by account: keeper. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+          "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbc2"
+        ]
+      },
+      "selfAsOperator": {
+        "label": "open_position_self_as_operator",
+        "slot": 458741829,
+        "wireBytes": 570,
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 2006
+            }
+          ]
+        },
+        "computeUnits": 11532,
+        "logs": [
+          "Program log: Instruction: OpenPosition",
+          "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+          "Program log: Left:",
+          "Program log: 9qBvkWum5thhXo5w6fZRTejFFk1DwkhUsnNndHdLpzZW",
+          "Program log: Right:",
+          "Program log: 67ZZBUNhX8iqXBf8DwEfrs63x9x44FNHzVbCrqXYQVJP",
+          "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0x7d6"
+        ]
+      }
+    },
+    {
+      "name": "close_position",
+      "receiptSignature": "ZFgcNGjsfZxmANaDe8Ndo23diEubVezxfPZv9BuyqPfR6dFxuWcqz1ZVk6pgdgabVHgpkHNNq7bMj9nFKo3wWU5",
+      "receiptSlot": 458739820,
+      "operator": "A2rCQdCqQB4wu72x9Q7iq1QugtdZmcyWsiSPfgfZzu2u",
+      "operatorListedSigner": true,
+      "noOperatorSignature": {
+        "label": "close_position_operator_not_signer",
+        "slot": 458741829,
+        "wireBytes": 616,
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "computeUnits": 6405,
+        "logs": [
+          "Program log: Instruction: ClosePosition",
+          "Program log: AnchorError caused by account: keeper. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+          "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbc2"
+        ]
+      },
+      "selfAsOperator": {
+        "label": "close_position_self_as_operator",
+        "slot": 458741830,
+        "wireBytes": 584,
+        "error": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3012
+            }
+          ]
+        },
+        "computeUnits": 8190,
+        "logs": [
+          "Program log: Instruction: ClosePosition",
+          "Program log: AnchorError caused by account: destination. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.",
+          "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbc4"
+        ]
+      }
+    }
+  ]
+}

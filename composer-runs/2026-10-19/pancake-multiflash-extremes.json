@@ -1,0 +1,76 @@
+{
+  "generatedAtUtc": "2026-10-19T08:25:40.793Z",
+  "network": "current mainnet-beta-backed Surfpool fork",
+  "safety": {
+    "broadcast": false,
+    "sendTransactionPathPresent": false,
+    "sigVerify": true,
+    "freshOutsider": true,
+    "privateKeysPersisted": false,
+    "signedWirePersisted": false
+  },
+  "cases": [
+    {
+      "label": "small_control",
+      "completeRepayment": false,
+      "constructionBlocker": "fresh independent exit unavailable: {\"status\":429,\"body\":{\"error\":\"{\\\"code\\\":429,\\\"message\\\":\\\"[API Gateway] Too many requests\\\"}\"}}"
+    },
+    {
+      "label": "near_executable_upper_edge",
+      "completeRepayment": false,
+      "constructionBlocker": "fresh independent exit unavailable: {\"status\":429,\"body\":{\"error\":\"{\\\"code\\\":429,\\\"message\\\":\\\"[API Gateway] Too many requests\\\"}\"}}"
+    }
+  ],
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "outsider": {
+    "authority": "49SimBn1ggy8cEhsznhcQWcNbRhFcGVjBDzRjskviz1L",
+    "margin": "Aj61TC6cGFDCwQsY7nJxcN7xReL2YyH1HkatVr68sdsT",
+    "wsolAta": "8M5Fv7W9RkNTuTrtjVNwWL9pV9L9EvoGn9tgWBkeFc1Z",
+    "usdtAta": "FBP1SXngVcmuyTJFPFQZ9hNh83EpVmCrhgLBhyGrmvGK",
+    "syntheticLamports": "2000000000000"
+  },
+  "providerSourceSlots": {
+    "save": 457071342,
+    "project0": 457301026,
+    "klend": 457338071
+  },
+  "capacitiesRaw": {
+    "saveAvailable": "77688327630060",
+    "saveSupply": "77688421863688",
+    "klendAvailable": "6226048761096",
+    "klendFlashFeeSf": "0",
+    "klendSupply": "6226048761096",
+    "project0Vault": "507499987163"
+  },
+  "boundaryProbes": [
+    {
+      "amountRaw": "198000000000",
+      "status": 400,
+      "accepted": false,
+      "error": "No routes found",
+      "contextSlot": null
+    },
+    {
+      "amountRaw": "197500000000",
+      "status": 400,
+      "accepted": false,
+      "error": "No routes found",
+      "contextSlot": null
+    },
+    {
+      "amountRaw": "197000000000",
+      "status": 400,
+      "accepted": false,
+      "error": "No routes found",
+      "contextSlot": null
+    },
+    {
+      "amountRaw": "195000000000",
+      "status": 200,
+      "accepted": true,
+      "error": null,
+      "contextSlot": 458766086
+    }
+  ],
+  "conclusion": "No executed finding: one or more required fresh atomic packets could not be completed; exact blockers are preserved."
+}

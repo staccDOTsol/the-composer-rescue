@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-10-15T19:15:11.374Z",
+  "transport": "get* and simulateTransaction only; no signing or send",
+  "loaderInstruction": "SetAuthority bincode variant 4",
+  "caveat": "sigVerify:false and a zero signature model the only-A key signing; no chain state changed",
+  "tests": [
+    {
+      "target": "thirdBridge",
+      "alias": false,
+      "wireBytes": 378,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledFirstThreeIndices": [
+        0,
+        3,
+        4
+      ],
+      "currentSlot": 457350485,
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidArgument"
+        ]
+      },
+      "unitsConsumed": 26421,
+      "before": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "tag": 3,
+        "slot": "275222934",
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      },
+      "simulatedPost": null,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 26421 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: invalid program argument"
+      ]
+    },
+    {
+      "target": "thirdBridge",
+      "alias": true,
+      "wireBytes": 346,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledFirstThreeIndices": [
+        0,
+        0,
+        3
+      ],
+      "currentSlot": 457350486,
+      "err": null,
+      "unitsConsumed": 35372,
+      "before": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "tag": 3,
+        "slot": "275222934",
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      },
+      "simulatedPost": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "tag": 3,
+        "slot": "275222934",
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      },
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 35372 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ]
+    }
+  ],
+  "chainAfter": {
+    "thirdBridge": {
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "tag": 3,
+      "slot": "275222934",
+      "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+    }
+  }
+}

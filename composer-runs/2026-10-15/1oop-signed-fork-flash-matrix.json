@@ -1,0 +1,3485 @@
+{
+  "generatedAt": "2026-10-15T20:10:38.680Z",
+  "scope": "local Surfpool fork only; signed simulations with sigVerify:true; no sendTransaction",
+  "programId": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+  "forkBaselineSlot": 457365396,
+  "attacker": {
+    "authority": "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+    "freshMarginfiAccount": "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn",
+    "generatedEphemeralKeysOnly": true,
+    "syntheticLamports": "20000000000",
+    "syntheticUsdcFeeSeedRaw": "2000000000",
+    "feeSeedReason": "Pay the real fee of the independent Save lender in positive controls; excluded from exploit proceeds and reconciled by raw delta."
+  },
+  "sources": {
+    "project0": {
+      "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "sourceSignature": "2b8NLAe4HL5JsdwPRM4CUaeBRVRWLbWQp2pzgWjBLigE8sgpCX541aQKkd5qg9jrhhXaPh8bLd95r2tFNpZCF2yG",
+      "sourceSlot": 457301026,
+      "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+      "bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+      "liquidityVault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+      "observedAvailableRaw": "282171498456",
+      "fee": "No same-transaction principal fee observed in positive controls.",
+      "currentBankGroup": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8"
+    },
+    "klend": {
+      "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "sourceSignature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+      "sourceSlot": 457338071,
+      "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+      "market": "47tfyEG9SsdEnUm9cw5kY9BXngQGqu3LBoop9j5uTAv8",
+      "supplyVault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+      "feeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+      "observedAvailableRaw": "8009393732715",
+      "observedSupplyRaw": "8009393802720",
+      "flashLoanFeeSf": "0",
+      "repeatBorrowConstraint": "A separate signed-fork duplicate-borrow case is included."
+    },
+    "save": {
+      "program": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "sourceSignature": "2qayMSpGb2jDgx4ovSEYSNkpY3nVH622kJ6rTNyWSMBeoTFXPLpWKdNnHoAQ3sK9KrjfaKQMLkNTmvbRLHX5CHtA",
+      "sourceSlot": 457071342,
+      "matchingUsdcReserveCount": 153,
+      "reserve": "BgxfHJDzm44T7XG68MYKx7YisTjZu73tVovyZSjJMpmw",
+      "market": "4UpD2fh7xH3VP9QQaXtsS1YY3bxzWhtfpks7FatyKvdY",
+      "marketAuthority": "DdZR6zRFiUt4S5mg7AV1uKB2z1f1WzcNYCaTEEWPAuby",
+      "supplyVault": "8SheGtsopRUDzdiD6v6BR9a6bqZ9QwywYQY99Fp5meNf",
+      "feeReceiver": "5Gdxn4yquneifE6uk9tK8X4CqHfWKjW2BvYU25hAykwP",
+      "observedAvailableRaw": "4183714129197",
+      "observedSupplyRaw": "4189279868177",
+      "flashLoanFeeWad": "500000000000000",
+      "flashLoanFeeScale": "1e18",
+      "hostFeePercentage": 20,
+      "repeatBorrowConstraint": "Current program rejects multiple flash borrows in one transaction; a signed-fork duplicate-borrow case is included."
+    }
+  },
+  "limits": {
+    "maxBytes": 4096,
+    "maxInlineAccounts": 64,
+    "transactionVersion": 1
+  },
+  "forkRuntimeNormalization": {
+    "strategyTokenAccount": "F488bJXts4G2e5eeFqLCuT5A4ebifSqEZmwLX7qeKurV",
+    "copiedMainnetLamports": "1944231",
+    "copiedDataLength": 179,
+    "forkRentMinimumLamports": "2136720",
+    "outsiderTransferTopupRawLamports": "192489",
+    "reason": "Surfpool rent parameters exceed the copied mainnet account balance. A normal signed System transfer inside only the withdraw_user_vault test removes this emulator-only precondition; the failed transaction rolls the transfer back."
+  },
+  "watched": {
+    "attacker": "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+    "attackerUSDC": "H2chJWFRZyM1kNdwBMXHzrhcQkbcPinrvxqb7HnfMqa8",
+    "attackerBONK": "2soArgAUBbsNn1KdhktKFNuyK3of4wfXrptBGp7ALp65",
+    "attackerUSDinfra": "ECj6EK9FDXSBBw36yAHuy3R5PPhXiksRrmoYWpCjXGR8",
+    "attackerLP": "gQPnfZs5eUbmAwEHtKUKXKW4CsvPt6pMfK3giW5GaKo",
+    "freshMarginfiAccount": "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn",
+    "project0Bank": "2s37akK2eyBbp8DZgCm7RtsaEz8eJP3Nxd4urLHQv7yB",
+    "project0LiquidityVault": "7jaiZR5Sk8hdYN9MxTpczTcwbWpb5WEoxSANuUwveuat",
+    "klendReserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "klendSupplyVault": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB",
+    "klendFeeVault": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj",
+    "saveReserve": "BgxfHJDzm44T7XG68MYKx7YisTjZu73tVovyZSjJMpmw",
+    "saveSupplyVault": "8SheGtsopRUDzdiD6v6BR9a6bqZ9QwywYQY99Fp5meNf",
+    "saveFeeReceiver": "5Gdxn4yquneifE6uk9tK8X4CqHfWKjW2BvYU25hAykwP",
+    "bonkLoan": "634QWfYYzXuqdDWoVtNgQisVYkTdBmfBbBPYZoNZyHwE",
+    "bonkCollateralVault": "9FXfaV6eVe5RfD8vLg137u8kzA1aNmNsV3kDHCZhdqzF",
+    "bonkStrategy": "6tv6XYnXUFjLSaAeap4T1GQusYeEw3nK6KTcVyyHf3ns",
+    "bonkStrategyUSDC": "3GAu8zG1bLHEd2K5JUvysEjLSkfTw4aXYCFaUcQCYsA2",
+    "usdVaultPda": "4rXteUmbxiXvgLqP14eQwtqkLyVNXVCBHnXyLQ9vZkSh",
+    "usdStrategy": "836SQM4FLXELjrSu2cLLvi32aiqn22uNbZsZvBNdDHFm",
+    "usdStrategyTokenAccount": "F488bJXts4G2e5eeFqLCuT5A4ebifSqEZmwLX7qeKurV",
+    "usdVaultTokenAccount": "Gxrd8UFDBMLdFwFwAewXRHiDj6wvF9XCpF68C9qUWYqH",
+    "protocolAdminState": "HcgXEnEsgvGowVnSjMmrzSewdx9yGvfXixiuMJPhyW2z"
+  },
+  "baselineAccounts": {
+    "attacker": {
+      "owner": "11111111111111111111111111111111",
+      "lamports": 20000000000,
+      "dataLength": 0,
+      "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "tokenAmountRaw": null
+    },
+    "attackerUSDC": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+      "tokenAmountRaw": "2000000000"
+    },
+    "attackerBONK": null,
+    "attackerUSDinfra": null,
+    "attackerLP": null,
+    "freshMarginfiAccount": null,
+    "project0Bank": {
+      "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "lamports": 20523200,
+      "dataLength": 3912,
+      "dataSha256": "f81cc11fbafe5c79b3583e9a3f650a1aac9fc12317aa38517732a928f64e799d",
+      "tokenAmountRaw": null
+    },
+    "project0LiquidityVault": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039384,
+      "dataLength": 165,
+      "dataSha256": "8ef7d58003f0f40688fa783fa00a68a7fd6303f241ef53e83f3a9c50d0a43c6a",
+      "tokenAmountRaw": "282171498456"
+    },
+    "klendReserve": {
+      "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "lamports": 60913931,
+      "dataLength": 8624,
+      "dataSha256": "8d46b0b97b97b9aaac2bc635befaa0c20ca64cb67fa94a91238f64faa76db87d",
+      "tokenAmountRaw": null
+    },
+    "klendSupplyVault": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+      "tokenAmountRaw": "8009393802720"
+    },
+    "klendFeeVault": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+      "tokenAmountRaw": "0"
+    },
+    "saveReserve": {
+      "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "lamports": 25199120,
+      "dataLength": 619,
+      "dataSha256": "8c9195957f1e566e21cafcc1056c787924cf3c989f678cabb7eccae7492413cd",
+      "tokenAmountRaw": null
+    },
+    "saveSupplyVault": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 72042322,
+      "dataLength": 165,
+      "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+      "tokenAmountRaw": "4189279868177"
+    },
+    "saveFeeReceiver": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "dataSha256": "0b2f02b1c3a6cb4cc7dc01c9540a1a88c082d7a06490cd0f9f1421327e32a270",
+      "tokenAmountRaw": "3751301424"
+    },
+    "bonkLoan": {
+      "owner": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "lamports": 13065563,
+      "dataLength": 1658,
+      "dataSha256": "4bb586c144ecf2f1ba647ec83b70e5d008094d6d512e311e930febe0f481f271",
+      "tokenAmountRaw": null
+    },
+    "bonkCollateralVault": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039281,
+      "dataLength": 165,
+      "dataSha256": "8f918117b3f8aa5d1dd4c8cf4bcca8b122a8a3085abaced2dbdc7d9ffe29a304",
+      "tokenAmountRaw": "87205876845651877"
+    },
+    "bonkStrategy": {
+      "owner": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "lamports": 66302498,
+      "dataLength": 8460,
+      "dataSha256": "38f4a5a6d983d4693949e0d8429608e023a9bff49f6e5ca0eacc75cc97ec97de",
+      "tokenAmountRaw": null
+    },
+    "bonkStrategyUSDC": {
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 1488440,
+      "dataLength": 165,
+      "dataSha256": "611441f800bec0507015265cc78333e088605e230f6d1214647c2e48a7afbad4",
+      "tokenAmountRaw": "622271074424"
+    },
+    "usdVaultPda": {
+      "owner": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "lamports": 1836570,
+      "dataLength": 162,
+      "dataSha256": "ae8da8de2455217fe5b5f72df559349ac9e6f517d54106422d22e2bbc2adfb41",
+      "tokenAmountRaw": null
+    },
+    "usdStrategy": {
+      "owner": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "lamports": 54387804,
+      "dataLength": 8460,
+      "dataSha256": "b4470216c2af96393a30981b1b6eb430fdc2877362003109997127aaa9db997d",
+      "tokenAmountRaw": null
+    },
+    "usdStrategyTokenAccount": {
+      "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+      "lamports": 1944231,
+      "dataLength": 179,
+      "dataSha256": "b27ea31e1c4f7058bb56104488461eeb8ef0be8a8bf5c1252a92599b157ad315",
+      "tokenAmountRaw": "8494282242708"
+    },
+    "usdVaultTokenAccount": null,
+    "protocolAdminState": {
+      "owner": "1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78",
+      "lamports": 1621680,
+      "dataLength": 105,
+      "dataSha256": "05594ba9e37e7e9891a8763d7df11fc9e2e81d2ee08603d6ee3a098e34422d6c",
+      "tokenAmountRaw": null
+    }
+  },
+  "sourceBoundaries": {
+    "project0": {
+      "observedAvailableRaw": "282171498456",
+      "observedStateBoundary": [
+        {
+          "label": "project0_observed_available_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "unitsConsumed": 46605,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "e413fdcf12eaae8dd058b9b998e5b7445346494315a23ebd6cafde4867ed9c58",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "282171498455"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "project0_observed_available_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "unitsConsumed": 46603,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "1b7b385692067a41ad09da5af8c88ef8481d4118ccf51f1c9ab260aa6612c0b5",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "282171498456"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "project0_observed_available_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "unitsConsumed": 46608,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "ea81a9cdcd6aae401bd255af62629a1a63d22f0ca9d29b4f54c7b5b44c2474be",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "282171498457"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ],
+      "searchTrace": [
+        {
+          "amountRaw": "141085749228",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "211628623842",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "246900061149",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "264535779802",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "273353639129",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "277762568792",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "279967033624",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281069266040",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281620382248",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281344824144",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281207045092",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281138155566",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281103710803",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281120933184",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112321993",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281116627588",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281114474790",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281113398391",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112860192",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112591092",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112456542",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112389267",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112355630",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112338811",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112347220",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112343015",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112340913",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112339862",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340387",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340650",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112340518",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112340452",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112340419",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340435",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340443",
+          "passes": false,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ]
+        },
+        {
+          "amountRaw": "281112340439",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340441",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        },
+        {
+          "amountRaw": "281112340442",
+          "passes": true,
+          "err": null,
+          "relevantLogs": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ]
+        }
+      ],
+      "maximumRouteValidRaw": "281112340442",
+      "maximumRouteBoundary": [
+        {
+          "label": "project0_route_maximum_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 131217,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "abf0481ceb5831af5772c35e3e5586c01c23d94f7a57e464e22dfab24d5eed88",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "281112340441"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19983007600,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": {
+              "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+              "lamports": 16982400,
+              "dataLength": 2312,
+              "dataSha256": "f1d40df459e898027258478dcb566d04cee6d697e6358216cd64fe1a03f06b7e",
+              "tokenAmountRaw": null
+            },
+            "project0Bank": {
+              "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+              "lamports": 20523200,
+              "dataLength": 3912,
+              "dataSha256": "61a67186db18f80eb3cfdd2773ce91c50259cf82b90e547a29fc7a4dde168c9b",
+              "tokenAmountRaw": null
+            },
+            "project0LiquidityVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039384,
+              "dataLength": 165,
+              "dataSha256": "8ef7d58003f0f40688fa783fa00a68a7fd6303f241ef53e83f3a9c50d0a43c6a",
+              "tokenAmountRaw": "282171498456"
+            },
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": "0",
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "project0_route_maximum_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 131219,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "946d58a826f8324d71cc5161cd1cf0b53318942f191873b3f6b8577aba6678cb",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "281112340442"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19983007600,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": {
+              "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+              "lamports": 16982400,
+              "dataLength": 2312,
+              "dataSha256": "f1d40df459e898027258478dcb566d04cee6d697e6358216cd64fe1a03f06b7e",
+              "tokenAmountRaw": null
+            },
+            "project0Bank": {
+              "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+              "lamports": 20523200,
+              "dataLength": 3912,
+              "dataSha256": "61a67186db18f80eb3cfdd2773ce91c50259cf82b90e547a29fc7a4dde168c9b",
+              "tokenAmountRaw": null
+            },
+            "project0LiquidityVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039384,
+              "dataLength": 165,
+              "dataSha256": "8ef7d58003f0f40688fa783fa00a68a7fd6303f241ef53e83f3a9c50d0a43c6a",
+              "tokenAmountRaw": "282171498456"
+            },
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": "0",
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "project0_route_maximum_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              2,
+              {
+                "Custom": 6026
+              }
+            ]
+          },
+          "unitsConsumed": 46607,
+          "wire": {
+            "version": 1,
+            "bytes": 676,
+            "inlineAccounts": 12,
+            "instructions": 5,
+            "requiredSignatures": 2,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+              "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+            ],
+            "signedSha256": "32edc40b7656259bca9d2e44adf416f52f9ec4f69dab46b2260cc54cd6ca2a3d",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: MarginfiAccountInitialize",
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+          ],
+          "metadata": {
+            "provider": "project0",
+            "amountRaw": "281112340443"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ]
+    },
+    "klend": {
+      "observedAvailableRaw": "8009393732715",
+      "observedStateBoundary": [
+        {
+          "label": "klend_observed_available_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 45763,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "f1af19913356363688afa52de2bb0d4821ded41a99320e3e5a52c30522d1084b",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: Instruction: FlashRepayReserveLiquidity"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732714"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": {
+              "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "lamports": 60913931,
+              "dataLength": 8624,
+              "dataSha256": "d937b5d11081841ecc6c1ea1df3e5466447b2a104bb954f3308e11f09bc3b336",
+              "tokenAmountRaw": null
+            },
+            "klendSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+              "tokenAmountRaw": "8009393802720"
+            },
+            "klendFeeVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+              "tokenAmountRaw": "0"
+            },
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": "0",
+            "klendFeeVault": "0",
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "klend_observed_available_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 45763,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "ae83728e931854a5c89f1534c872f5187167ed2b94c3fb0e51ab3b7095b042b1",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: Instruction: FlashRepayReserveLiquidity"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732715"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": {
+              "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "lamports": 60913931,
+              "dataLength": 8624,
+              "dataSha256": "d937b5d11081841ecc6c1ea1df3e5466447b2a104bb954f3308e11f09bc3b336",
+              "tokenAmountRaw": null
+            },
+            "klendSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+              "tokenAmountRaw": "8009393802720"
+            },
+            "klendFeeVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+              "tokenAmountRaw": "0"
+            },
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": "0",
+            "klendFeeVault": "0",
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "klend_observed_available_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              0,
+              {
+                "Custom": 6008
+              }
+            ]
+          },
+          "unitsConsumed": 23186,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "588733ee5a64e5def4c595987bddf36b2f7ee87d028f7b3b89a48472648355ea",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: AnchorError thrown in programs/klend/src/state/reserve.rs:1010. Error Code: InsufficientLiquidity. Error Number: 6008. Error Message: Insufficient liquidity available.",
+            "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1778"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732716"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ],
+      "searchTrace": [],
+      "maximumRouteValidRaw": "8009393732715",
+      "maximumRouteBoundary": [
+        {
+          "label": "klend_route_maximum_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 45763,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "f1af19913356363688afa52de2bb0d4821ded41a99320e3e5a52c30522d1084b",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: Instruction: FlashRepayReserveLiquidity"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732714"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": {
+              "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "lamports": 60913931,
+              "dataLength": 8624,
+              "dataSha256": "d937b5d11081841ecc6c1ea1df3e5466447b2a104bb954f3308e11f09bc3b336",
+              "tokenAmountRaw": null
+            },
+            "klendSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+              "tokenAmountRaw": "8009393802720"
+            },
+            "klendFeeVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+              "tokenAmountRaw": "0"
+            },
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": "0",
+            "klendFeeVault": "0",
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "klend_route_maximum_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 45763,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "ae83728e931854a5c89f1534c872f5187167ed2b94c3fb0e51ab3b7095b042b1",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: Instruction: FlashRepayReserveLiquidity"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732715"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "ff5223b972602a7a1dc0eb0bd3f5be9fe26744f597fab42f489bae4e5d684092",
+              "tokenAmountRaw": "2000000000"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": {
+              "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+              "lamports": 60913931,
+              "dataLength": 8624,
+              "dataSha256": "d937b5d11081841ecc6c1ea1df3e5466447b2a104bb954f3308e11f09bc3b336",
+              "tokenAmountRaw": null
+            },
+            "klendSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+              "tokenAmountRaw": "8009393802720"
+            },
+            "klendFeeVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+              "tokenAmountRaw": "0"
+            },
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "0",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": "0",
+            "klendFeeVault": "0",
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "klend_route_maximum_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              0,
+              {
+                "Custom": 6008
+              }
+            ]
+          },
+          "unitsConsumed": 23186,
+          "wire": {
+            "version": 1,
+            "bytes": 531,
+            "inlineAccounts": 11,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "588733ee5a64e5def4c595987bddf36b2f7ee87d028f7b3b89a48472648355ea",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: FlashBorrowReserveLiquidity",
+            "Program log: AnchorError thrown in programs/klend/src/state/reserve.rs:1010. Error Code: InsufficientLiquidity. Error Number: 6008. Error Message: Insufficient liquidity available.",
+            "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1778"
+          ],
+          "metadata": {
+            "provider": "klend",
+            "amountRaw": "8009393732716"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ]
+    },
+    "save": {
+      "observedAvailableRaw": "4183714129197",
+      "observedStateBoundary": [
+        {
+          "label": "save_observed_available_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 70525,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "ef6fb31752d8ecb337f319c57ba40697a4c4408d2f2b5b823cc648048815f94a",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Instruction: Flash Repay Reserve Liquidity"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129196"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "e26d169208038d712c8968a5c4a328b80ce3a8278b8ca7dafdbe446b06518a24",
+              "tokenAmountRaw": "326514348"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": {
+              "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+              "lamports": 25199120,
+              "dataLength": 619,
+              "dataSha256": "baa3f2a4becfd7e5df90900df68b337a813a852759273694ec34ae30178a1f95",
+              "tokenAmountRaw": null
+            },
+            "saveSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 72042322,
+              "dataLength": 165,
+              "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+              "tokenAmountRaw": "4189279868177"
+            },
+            "saveFeeReceiver": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "fc33d39bed415387c6550b09f44b5d8b6661b8f96894dc60ffe94367f8db6251",
+              "tokenAmountRaw": "5424787076"
+            },
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "-1673485652",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": "0",
+            "saveFeeReceiver": "1673485652",
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "save_observed_available_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 70525,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "e605a8872b12e10edaff4d811745f2e29da9ca65b6a621bd1ba4020029080344",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Instruction: Flash Repay Reserve Liquidity"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129197"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "e26d169208038d712c8968a5c4a328b80ce3a8278b8ca7dafdbe446b06518a24",
+              "tokenAmountRaw": "326514348"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": {
+              "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+              "lamports": 25199120,
+              "dataLength": 619,
+              "dataSha256": "baa3f2a4becfd7e5df90900df68b337a813a852759273694ec34ae30178a1f95",
+              "tokenAmountRaw": null
+            },
+            "saveSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 72042322,
+              "dataLength": 165,
+              "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+              "tokenAmountRaw": "4189279868177"
+            },
+            "saveFeeReceiver": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "fc33d39bed415387c6550b09f44b5d8b6661b8f96894dc60ffe94367f8db6251",
+              "tokenAmountRaw": "5424787076"
+            },
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "-1673485652",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": "0",
+            "saveFeeReceiver": "1673485652",
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "save_observed_available_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              0,
+              {
+                "Custom": 20
+              }
+            ]
+          },
+          "unitsConsumed": 41882,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "2e5cab0ca84f921bf391fa028d239f69b962b6b0f6aecf58d7308b6c5ee9f3d5",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Insufficient liquidity available",
+            "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x14"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129198"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ],
+      "searchTrace": [],
+      "maximumRouteValidRaw": "4183714129197",
+      "maximumRouteBoundary": [
+        {
+          "label": "save_route_maximum_minus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 70525,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "ef6fb31752d8ecb337f319c57ba40697a4c4408d2f2b5b823cc648048815f94a",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Instruction: Flash Repay Reserve Liquidity"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129196"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "e26d169208038d712c8968a5c4a328b80ce3a8278b8ca7dafdbe446b06518a24",
+              "tokenAmountRaw": "326514348"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": {
+              "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+              "lamports": 25199120,
+              "dataLength": 619,
+              "dataSha256": "baa3f2a4becfd7e5df90900df68b337a813a852759273694ec34ae30178a1f95",
+              "tokenAmountRaw": null
+            },
+            "saveSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 72042322,
+              "dataLength": 165,
+              "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+              "tokenAmountRaw": "4189279868177"
+            },
+            "saveFeeReceiver": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "fc33d39bed415387c6550b09f44b5d8b6661b8f96894dc60ffe94367f8db6251",
+              "tokenAmountRaw": "5424787076"
+            },
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "-1673485652",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": "0",
+            "saveFeeReceiver": "1673485652",
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "save_route_maximum_exact",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": null,
+          "unitsConsumed": 70525,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "e605a8872b12e10edaff4d811745f2e29da9ca65b6a621bd1ba4020029080344",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Instruction: Flash Repay Reserve Liquidity"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129197"
+          },
+          "simulatedPostAccounts": {
+            "attacker": {
+              "owner": "11111111111111111111111111111111",
+              "lamports": 19999995000,
+              "dataLength": 0,
+              "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "tokenAmountRaw": null
+            },
+            "attackerUSDC": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "e26d169208038d712c8968a5c4a328b80ce3a8278b8ca7dafdbe446b06518a24",
+              "tokenAmountRaw": "326514348"
+            },
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": {
+              "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+              "lamports": 25199120,
+              "dataLength": 619,
+              "dataSha256": "baa3f2a4becfd7e5df90900df68b337a813a852759273694ec34ae30178a1f95",
+              "tokenAmountRaw": null
+            },
+            "saveSupplyVault": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 72042322,
+              "dataLength": 165,
+              "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+              "tokenAmountRaw": "4189279868177"
+            },
+            "saveFeeReceiver": {
+              "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "lamports": 2039280,
+              "dataLength": 165,
+              "dataSha256": "fc33d39bed415387c6550b09f44b5d8b6661b8f96894dc60ffe94367f8db6251",
+              "tokenAmountRaw": "5424787076"
+            },
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": "-1673485652",
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": "0",
+            "saveFeeReceiver": "1673485652",
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        },
+        {
+          "label": "save_route_maximum_plus_one",
+          "simulationSlot": 457365396,
+          "sigVerify": true,
+          "err": {
+            "InstructionError": [
+              0,
+              {
+                "Custom": 20
+              }
+            ]
+          },
+          "unitsConsumed": 41882,
+          "wire": {
+            "version": 1,
+            "bytes": 477,
+            "inlineAccounts": 10,
+            "instructions": 2,
+            "requiredSignatures": 1,
+            "signerOrder": [
+              "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+            ],
+            "signedSha256": "2e5cab0ca84f921bf391fa028d239f69b962b6b0f6aecf58d7308b6c5ee9f3d5",
+            "within4096Bytes": true,
+            "within64Accounts": true
+          },
+          "relevantLogs": [
+            "Program log: Instruction: Flash Borrow Reserve Liquidity",
+            "Program log: Insufficient liquidity available",
+            "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x14"
+          ],
+          "metadata": {
+            "provider": "save",
+            "amountRaw": "4183714129198"
+          },
+          "simulatedPostAccounts": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          },
+          "simulatedTokenDeltasRaw": {
+            "attacker": null,
+            "attackerUSDC": null,
+            "attackerBONK": null,
+            "attackerUSDinfra": null,
+            "attackerLP": null,
+            "freshMarginfiAccount": null,
+            "project0Bank": null,
+            "project0LiquidityVault": null,
+            "klendReserve": null,
+            "klendSupplyVault": null,
+            "klendFeeVault": null,
+            "saveReserve": null,
+            "saveSupplyVault": null,
+            "saveFeeReceiver": null,
+            "bonkLoan": null,
+            "bonkCollateralVault": null,
+            "bonkStrategy": null,
+            "bonkStrategyUSDC": null,
+            "usdVaultPda": null,
+            "usdStrategy": null,
+            "usdStrategyTokenAccount": null,
+            "usdVaultTokenAccount": null,
+            "protocolAdminState": null
+          }
+        }
+      ]
+    }
+  },
+  "cases": [
+    {
+      "label": "maximum_three_provider_control",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": null,
+      "unitsConsumed": 257895,
+      "wire": {
+        "version": 1,
+        "bytes": 1200,
+        "inlineAccounts": 25,
+        "instructions": 9,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "e243f58355b11c2f68f0cd7da8f1592ce461220fc2f8be8774dcbdd5c64b6729",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: LendingAccountRepay",
+        "Program log: Instruction: Flash Repay Reserve Liquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Instruction: LendingAccountEndFlashloan"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "project0": "281112340442",
+          "klend": "8009393732715",
+          "save": "4183714129197",
+          "combined": "12474220202354"
+        },
+        "asymmetric": true,
+        "expected": "All three lenders borrow and repay in one atomic signed v1 control."
+      },
+      "simulatedPostAccounts": {
+        "attacker": {
+          "owner": "11111111111111111111111111111111",
+          "lamports": 19983007600,
+          "dataLength": 0,
+          "dataSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "tokenAmountRaw": null
+        },
+        "attackerUSDC": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "dataLength": 165,
+          "dataSha256": "e26d169208038d712c8968a5c4a328b80ce3a8278b8ca7dafdbe446b06518a24",
+          "tokenAmountRaw": "326514348"
+        },
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": {
+          "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "lamports": 16982400,
+          "dataLength": 2312,
+          "dataSha256": "f1d40df459e898027258478dcb566d04cee6d697e6358216cd64fe1a03f06b7e",
+          "tokenAmountRaw": null
+        },
+        "project0Bank": {
+          "owner": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "lamports": 20523200,
+          "dataLength": 3912,
+          "dataSha256": "61a67186db18f80eb3cfdd2773ce91c50259cf82b90e547a29fc7a4dde168c9b",
+          "tokenAmountRaw": null
+        },
+        "project0LiquidityVault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039384,
+          "dataLength": 165,
+          "dataSha256": "8ef7d58003f0f40688fa783fa00a68a7fd6303f241ef53e83f3a9c50d0a43c6a",
+          "tokenAmountRaw": "282171498456"
+        },
+        "klendReserve": {
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "lamports": 60913931,
+          "dataLength": 8624,
+          "dataSha256": "d937b5d11081841ecc6c1ea1df3e5466447b2a104bb954f3308e11f09bc3b336",
+          "tokenAmountRaw": null
+        },
+        "klendSupplyVault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "dataLength": 165,
+          "dataSha256": "188c6b7b5d3c008a92088bd5934f5c5817df2c6d1adecfede18653e766e9a777",
+          "tokenAmountRaw": "8009393802720"
+        },
+        "klendFeeVault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "dataLength": 165,
+          "dataSha256": "111f94911819a91a17373903e57560589700c28302f03748e06cd2266384e1da",
+          "tokenAmountRaw": "0"
+        },
+        "saveReserve": {
+          "owner": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+          "lamports": 25199120,
+          "dataLength": 619,
+          "dataSha256": "baa3f2a4becfd7e5df90900df68b337a813a852759273694ec34ae30178a1f95",
+          "tokenAmountRaw": null
+        },
+        "saveSupplyVault": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 72042322,
+          "dataLength": 165,
+          "dataSha256": "d3a003d6a4ec28ac954f81cd12b02c459445e07677d566a65b1a7a837e57002a",
+          "tokenAmountRaw": "4189279868177"
+        },
+        "saveFeeReceiver": {
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "lamports": 2039280,
+          "dataLength": 165,
+          "dataSha256": "fc33d39bed415387c6550b09f44b5d8b6661b8f96894dc60ffe94367f8db6251",
+          "tokenAmountRaw": "5424787076"
+        },
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": "-1673485652",
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": "0",
+        "klendReserve": null,
+        "klendSupplyVault": "0",
+        "klendFeeVault": "0",
+        "saveReserve": null,
+        "saveSupplyVault": "0",
+        "saveFeeReceiver": "1673485652",
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "klend_duplicate_flash_borrow_blocker",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6035
+          }
+        ]
+      },
+      "unitsConsumed": 23015,
+      "wire": {
+        "version": 1,
+        "bytes": 596,
+        "inlineAccounts": 11,
+        "instructions": 4,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+        ],
+        "signedSha256": "63cd54c42e2418713c9aacae98194fb83023f74ab0ce780fa06bd5f36dada551",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Multiple flash borrows not allowed",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:123. Error Code: MultipleFlashBorrows. Error Number: 6035. Error Message: Multiple flash borrows not allowed in the same transaction.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1793"
+      ],
+      "metadata": {
+        "amountEachRaw": "1"
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "save_duplicate_flash_borrow_blocker",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 51
+          }
+        ]
+      },
+      "unitsConsumed": 41342,
+      "wire": {
+        "version": 1,
+        "bytes": 520,
+        "inlineAccounts": 10,
+        "instructions": 4,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS"
+        ],
+        "signedSha256": "5c7b02ae0e77943df43c945643a22d2505806f5eea99327fc89368fe9a5420ea",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Multiple flash borrows not allowed",
+        "Program log: Multiple flash borrows not allowed in the same transaction",
+        "Program So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo failed: custom program error: 0x33"
+      ],
+      "metadata": {
+        "amountEachRaw": "1000"
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "bonk_liquidation_asymmetric_debt_cover",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "unitsConsumed": 220350,
+      "wire": {
+        "version": 1,
+        "bytes": 1702,
+        "inlineAccounts": 39,
+        "instructions": 11,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "c8ab6189ec35729ad6c159d28db67286e944d3a85ce1f0852b98e419e1934978",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: LiquidateLedger",
+        "Program log: AnchorError caused by account: liquidator. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0x7d3"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "p0": "123456789123",
+          "klend": "543210987654",
+          "save": "233332223223"
+        },
+        "combinedRaw": "900000000000",
+        "route": [
+          "create attacker BONK ATA",
+          "Project0 start",
+          "KLend borrow",
+          "Save borrow",
+          "Project0 borrow",
+          "Loopscale liquidate_ledger",
+          "Project0 repay",
+          "Save repay",
+          "KLend repay",
+          "Project0 end"
+        ],
+        "unwind": "No swap is inserted because current Loopscale rejects before any BONK transfer. The later lender repayments are encoded but unreachable; transaction failure atomically restores every lender and target account."
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "bonk_liquidation_maximum_three_provider",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "unitsConsumed": 220358,
+      "wire": {
+        "version": 1,
+        "bytes": 1702,
+        "inlineAccounts": 39,
+        "instructions": 11,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "340d1fa3d387e843bc8e1059dfd29c3e48c3468e59e86d6c68d69c7374f4d50a",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: LiquidateLedger",
+        "Program log: AnchorError caused by account: liquidator. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0x7d3"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "p0": "281112340442",
+          "klend": "8009393732715",
+          "save": "4183714129197"
+        },
+        "combinedRaw": "12474220202354",
+        "route": [
+          "create attacker BONK ATA",
+          "Project0 start",
+          "KLend borrow",
+          "Save borrow",
+          "Project0 borrow",
+          "Loopscale liquidate_ledger",
+          "Project0 repay",
+          "Save repay",
+          "KLend repay",
+          "Project0 end"
+        ],
+        "unwind": "No swap is inserted because current Loopscale rejects before any BONK transfer. The later lender repayments are encoded but unreachable; transaction failure atomically restores every lender and target account."
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "usd_withdraw_strategy_three_provider_auth_gate",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 208051,
+      "wire": {
+        "version": 1,
+        "bytes": 1598,
+        "inlineAccounts": 36,
+        "instructions": 11,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "05092d788a1047ee5b090723f349358890ae5872d8720dc935e6a678bae8794c",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: WithdrawStrategy",
+        "Program log: AnchorError caused by account: lender. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0xbc2"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "p0": "1000",
+          "klend": "1000",
+          "save": "1000"
+        },
+        "blocker": "Real lender is an off-curve Vault PDA and cannot sign this top-level outsider transaction.",
+        "capitalSensitivity": "Flash balances cannot create the required signer/PDA/admin/LP authority."
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "bonk_withdraw_collateral_three_provider_auth_gate",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 6136
+          }
+        ]
+      },
+      "unitsConsumed": 216589,
+      "wire": {
+        "version": 1,
+        "bytes": 1537,
+        "inlineAccounts": 33,
+        "instructions": 11,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "bc9a3ba0e0696369e934315014eff0728d1b156fb84dc9577b7c26d043331b16",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: WithdrawCollateral",
+        "Program log: AnchorError caused by account: protocol_admin. Error Code: InvalidAuthority. Error Number: 6136. Error Message: Invalid authority.",
+        "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0x17f8"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "p0": "1000",
+          "klend": "1000",
+          "save": "1000"
+        },
+        "blocker": "Outsider is not the current protocol admin and is not the selected loan borrower.",
+        "capitalSensitivity": "Flash balances cannot create the required signer/PDA/admin/LP authority."
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    },
+    {
+      "label": "usd_withdraw_user_vault_three_provider_auth_and_equity_gate",
+      "simulationSlot": 457365396,
+      "sigVerify": true,
+      "err": {
+        "InstructionError": [
+          8,
+          {
+            "Custom": 6136
+          }
+        ]
+      },
+      "unitsConsumed": 245065,
+      "wire": {
+        "version": 1,
+        "bytes": 1703,
+        "inlineAccounts": 38,
+        "instructions": 13,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "FgtCxrHz6cMx16XRTqYyAcUYtmrrTZ8YDD3r4pHgz4yS",
+          "FqwGLcW83rWEcoq1Czsp7NPddWRPBrcn3Ru4aHNipaqn"
+        ],
+        "signedSha256": "13ac49cd500960001cfc5d1243f9941e43e63baf0872e7225322410d712b2ad0",
+        "within4096Bytes": true,
+        "within64Accounts": true
+      },
+      "relevantLogs": [
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program log: Instruction: InitializeAccount3",
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: Flash Borrow Reserve Liquidity",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program log: Instruction: WithdrawUserVault",
+        "Program log: AnchorError caused by account: protocol_admin. Error Code: InvalidAuthority. Error Number: 6136. Error Message: Invalid authority.",
+        "Program 1oopBoJG58DgkUVKkEzKgyG9dvRmpgeEm1AVjoHkF78 failed: custom program error: 0x17f8"
+      ],
+      "metadata": {
+        "allocationRaw": {
+          "p0": "1000",
+          "klend": "1000",
+          "save": "1000"
+        },
+        "blocker": "Outsider is not protocol admin and has no victim LP shares to burn.",
+        "capitalSensitivity": "Flash balances cannot create the required signer/PDA/admin/LP authority."
+      },
+      "simulatedPostAccounts": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "simulatedTokenDeltasRaw": {
+        "attacker": null,
+        "attackerUSDC": null,
+        "attackerBONK": null,
+        "attackerUSDinfra": null,
+        "attackerLP": null,
+        "freshMarginfiAccount": null,
+        "project0Bank": null,
+        "project0LiquidityVault": null,
+        "klendReserve": null,
+        "klendSupplyVault": null,
+        "klendFeeVault": null,
+        "saveReserve": null,
+        "saveSupplyVault": null,
+        "saveFeeReceiver": null,
+        "bonkLoan": null,
+        "bonkCollateralVault": null,
+        "bonkStrategy": null,
+        "bonkStrategyUSDC": null,
+        "usdVaultPda": null,
+        "usdStrategy": null,
+        "usdStrategyTokenAccount": null,
+        "usdVaultTokenAccount": null,
+        "protocolAdminState": null
+      },
+      "persistedForkAfterSlot": 457365396,
+      "persistedStateMatchesBaseline": true
+    }
+  ],
+  "inventoryNotes": [
+    "Project0 has six current USDC Banks in the same group, but only the selected Bank has material liquidity; the other nonzero vaults total 179 raw USDC at the inventory snapshot. The maximum figure is the signed route-valid maximum of the material Bank, not the sum of displayed vault balances.",
+    "KLend has multiple USDC Reserves, but its current program rejects a second flash borrow anywhere in the same transaction (MultipleFlashBorrows). The selected reserve is the largest observed exact-zero-fee USDC reserve.",
+    "Save has 153 matching USDC Reserves, but its current program likewise rejects multiple flash borrows in one transaction. The selected reserve is the largest observed USDC reserve and charges the decoded live fee.",
+    "Jupiter Lend native flash inventory in this workspace has USDe, PYUSD, and USDG but no USDC reserve; adding a stable-swap leg cannot influence the Loopscale liquidation eligibility or signer gates and would only add route/price risk.",
+    "Mango v4 and Drift expose flash/swap-style facilities but require protocol account/health or two-market swap state not reconstructed in this target task. They are not counted as validated capacity. This does not weaken the target conclusion because every tested Loopscale path rejects before capital amount can affect target state."
+  ],
+  "maximumValidatedThreeProviderRaw": "12474220202354",
+  "maximumValidatedThreeProviderUiUsdc": 12474220.202354,
+  "conclusion": {
+    "validatedDrain": false,
+    "reason": "The only outsider asset-transfer candidate, liquidate_ledger, is rejected by the current Loopscale account constraint before collateral transfer at both debt-covering asymmetric and maximum validated three-provider capital. Direct exits are independently signer/admin/PDA/LP gated.",
+    "realizedOutsiderGainRaw": "0",
+    "liveSubmission": false
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-10-19T09:21:50.231Z",
+  "endpoint": "http://127.0.0.1:9497",
+  "program": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+  "fixture": {
+    "position": "9nZ1VUEvGC7TtFdAMPHHmZhEaqEXrv4aMaqkuUeeHtEH",
+    "owner": "5tYTBBhDbaKw9eJokNLNjtqm4sKworubxvsBWUgrZpLv",
+    "marketResult": "3SYABE4TrhwT9BhYcp9gpoVjvdepKY9cAFh6qNhQDo82",
+    "contractsRaw": "759870000",
+    "marketId": "df233ad7567c7530364453bde905a35b",
+    "ownerAta": "BCA1n7W7NZzjLsZD7mXdUB4orLcAtdUDBwdz5kY8ecjN"
+  },
+  "attacker": "D5Q7iNStZNWTX4s2dQKuVxbzrNSfW8ZtCuiavW4KQkjJ",
+  "attackerAta": "GPuSTVzLU8wGsy6UMj2XSg3bv6jBArVBai9S7WPPsTh9",
+  "signatureMode": "six outsider cases use sigVerify:true; live-fixture positive control uses sigVerify:false",
+  "mainnetSubmitted": false,
+  "forkSubmitted": false,
+  "results": [
+    {
+      "label": "claim_payout_outsider_original_destination",
+      "sigVerify": true,
+      "bytes": 378,
+      "inlineAccountKeys": 8,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 9972,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": "2725630458"
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program log: Left:",
+        "Program log: 9nZ1VUEvGC7TtFdAMPHHmZhEaqEXrv4aMaqkuUeeHtEH",
+        "Program log: Right:",
+        "Program log: BSrAs2V3fNynzUe17RcLuK3jdji1WUtNRwbYyKnLRvvB",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 9972 of 200000 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "claim_payout_outsider_attacker_destination",
+      "sigVerify": true,
+      "bytes": 484,
+      "inlineAccountKeys": 11,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 27896,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": null
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 390149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 385056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 382594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program log: Left:",
+        "Program log: 9nZ1VUEvGC7TtFdAMPHHmZhEaqEXrv4aMaqkuUeeHtEH",
+        "Program log: Right:",
+        "Program log: BSrAs2V3fNynzUe17RcLuK3jdji1WUtNRwbYyKnLRvvB",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 9972 of 382076 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "claim_payout_outsider_second_position_alias",
+      "sigVerify": true,
+      "bytes": 484,
+      "inlineAccountKeys": 11,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 27337,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": null
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 390149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 385056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 382594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 9413 of 382076 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "claim_payout2_outsider_original_destination",
+      "sigVerify": true,
+      "bytes": 378,
+      "inlineAccountKeys": 8,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6002
+          }
+        ]
+      },
+      "unitsConsumed": 17947,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": "2725630458"
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout2",
+        "Program log: AnchorError thrown in programs/prediction-market/src/instructions/keeper/claim_payout2.rs:73. Error Code: InvalidKeeper. Error Number: 6002. Error Message: Invalid keeper.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 17947 of 200000 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "label": "claim_payout2_outsider_attacker_destination",
+      "sigVerify": true,
+      "bytes": 484,
+      "inlineAccountKeys": 11,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6037
+          }
+        ]
+      },
+      "unitsConsumed": 29047,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": null
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 390149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 385056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 382594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout2",
+        "Program log: AnchorError caused by account: owner_token_account. Error Code: InvalidTokenAccount. Error Number: 6037. Error Message: Invalid token account owner.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 11123 of 382076 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x1795"
+      ]
+    },
+    {
+      "label": "claim_refund_outsider_original_destination",
+      "sigVerify": true,
+      "bytes": 378,
+      "inlineAccountKeys": 8,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6002
+          }
+        ]
+      },
+      "unitsConsumed": 17914,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": "2725630458"
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimRefund",
+        "Program log: AnchorError thrown in programs/prediction-market/src/instructions/keeper/claim_refund.rs:72. Error Code: InvalidKeeper. Error Number: 6002. Error Message: Invalid keeper.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 17914 of 200000 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "label": "claim_refund_outsider_attacker_destination",
+      "sigVerify": true,
+      "bytes": 484,
+      "inlineAccountKeys": 11,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6037
+          }
+        ]
+      },
+      "unitsConsumed": 29050,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": null
+      },
+      "after": {
+        "vaultTokenRaw": null,
+        "destinationRaw": null
+      },
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 390149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 385056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 382594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimRefund",
+        "Program log: AnchorError caused by account: owner_token_account. Error Code: InvalidTokenAccount. Error Number: 6037. Error Message: Invalid token account owner.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 11126 of 382076 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x1795"
+      ]
+    },
+    {
+      "label": "claim_payout_live_fixture_positive_control",
+      "sigVerify": false,
+      "bytes": 474,
+      "inlineAccountKeys": 9,
+      "err": null,
+      "unitsConsumed": 30028,
+      "before": {
+        "vaultTokenRaw": "143302559545",
+        "destinationRaw": "2725630458"
+      },
+      "after": {
+        "vaultTokenRaw": "142542689545",
+        "destinationRaw": "3485500458"
+      },
+      "logs": [
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 180176 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Payout claimed: owner=5tYTBBhDbaKw9eJokNLNjtqm4sKworubxvsBWUgrZpLv, position=9nZ1VUEvGC7TtFdAMPHHmZhEaqEXrv4aMaqkuUeeHtEH, market_id=df233ad7567c7530364453bde905a35b, side=NO, contracts=759870000, net_payout_usd=759870000, fee_usd=0, realized_pnl=28717300",
+        "Program data: yCdpcHQ/OpUgAAAAZGYyMzNhZDc1NjdjNzUzMDM2NDQ1M2JkZTkwNWEzNWKCiNLrWuYpH8VquDAwprYyZFOXTy4RguYnbG75ZOWQ3kii7lqfG1EMvYVudXB8AwW5LhDE5dTcrXm1oZwpFeHPADCySi0AAAAAMLJKLQAAAAAwskotAAAAAAAAAAAAAAAA9DC2AQAAAABIou5anxtRDL2FbnVwfAMFuS4QxOXU3K15taGcKRXhzyrh1WoAAAAAQGgCAAAAAAD0MLYBAAAAAPwYkisAAAAAAEBCDwAAAAAA",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 30028 of 200000 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp success"
+      ]
+    }
+  ]
+}

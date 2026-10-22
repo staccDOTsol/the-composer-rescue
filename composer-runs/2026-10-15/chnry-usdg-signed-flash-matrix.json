@@ -1,0 +1,4661 @@
+{
+  "observedAt": "2026-10-15T20:18:31.196Z",
+  "scope": "local fork simulation only; no live submission",
+  "fork": {
+    "endpointClass": "localhost only",
+    "baselineSlot": 457366053
+  },
+  "transactionRequirements": {
+    "version": 1,
+    "sigVerify": true,
+    "maximumBytes": 4096,
+    "maximumAccounts": 64,
+    "allSimulatedTransactionsLocallySigned": true
+  },
+  "programs": {
+    "chancery": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+    "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "project0": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA"
+  },
+  "instructionTemplateProvenance": {
+    "project0": {
+      "kind": "recorded-signed-fork-control",
+      "artifact": "p0-klend-single-attacker-control.json",
+      "wireSha256": "78343e507774f7c991c3ed81cf3a09c850a65778a2dbc8d522ea2ececa877862",
+      "originalSignature": "2b8NLAe4HL5JsdwPRM4CUaeBRVRWLbWQp2pzgWjBLigE8sgpCX541aQKkd5qg9jrhhXaPh8bLd95r2tFNpZCF2yG",
+      "originalSlot": 457301026
+    },
+    "klend": {
+      "artifact": "kamino-flash-history.json"
+    },
+    "chancery": {
+      "signature": "32sBxLB3zYh4efsMnBPnsCNdEenL2zfnjk48q8YVxAV9cXDZT44AFHiyHnvbypwq724uy94Jg9k2qRjKpiwqovXX",
+      "slot": 456023812
+    }
+  },
+  "actors": {
+    "attacker": "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+    "principalB": "APhFkGeuiC7Q8esch9HS8KgDDsRdkFwSs5gs2Rok97Mr",
+    "executor": "4RTShWzaKFVRMMMfca5K4ck22vY8wrHLbzsiEUGU7Ah3",
+    "marginfiAccount": "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4",
+    "attackerUsdG": "HH4hH3Sbdzv5hby6oeuYW7g8NcomwgwgZXQBNJ2eHNuM",
+    "attackerUsdV": "2izaKybUGWhXigC5aahJrRvTp42FQvoyUeVRdX2TUj8Z"
+  },
+  "providerInventory": {
+    "sourceArtifactTimestamp": "2026-10-15T19:04:54.108Z",
+    "exactVerifiedUsdGEntries": [],
+    "independentProviderPrograms": [],
+    "independentProviderProgramCount": 0,
+    "triProviderAvailableInVerifiedInventory": false,
+    "thirdIndependentProviderBlocker": "The verified same-mint inventory contains only KLend and Project0/marginfi program IDs; multiple reserves/banks do not create another independent provider.",
+    "usdVCompatibleProviderEntries": [],
+    "usdVFlashBlocker": "No verified same-mint USDv flash source exists in the current inventory; standalone redeem uses disclosed synthetic fork inventory.",
+    "klendSources": [
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+        "market": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+        "supplyVault": "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+        "feeVault": "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "3152147555477",
+        "supplyBalanceRaw": "3152147555477",
+        "currentDisplayedCapacityRaw": "3152147555477",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "JBmLCoKqjdKSStK45onRqe6U6sxVgSpdXoeXe4h7NwJw",
+        "market": "47tfyEG9SsdEnUm9cw5kY9BXngQGqu3LBoop9j5uTAv8",
+        "supplyVault": "3oHtmrDBP3qGb3PNkCg9kW59D3qUeCD96EBugr9zNcpf",
+        "feeVault": "Fy1rhevyJfAQ3KJhfF783G5kA1tV4N63qDfhN2BurdiW",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "1339052016862",
+        "supplyBalanceRaw": "1339052016862",
+        "currentDisplayedCapacityRaw": "1339052016862",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "s6arbQamACXnbhLV9ke7gfvcTH1TKK7kQXKH9LG9HTS",
+        "market": "45MBhfB6SNw2rRSWzUwBqG3e9JJnS6UWvDDdQvBsUnds",
+        "supplyVault": "FuvGkGRtTU7giWvdZhCajEH53m4LDTGHopLM3yof1Wat",
+        "feeVault": "9BnKwxE177Px5W2EzUnPVNLEr74CNUFxpp3GzDpZ3QAL",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "588792131576",
+        "supplyBalanceRaw": "588792131576",
+        "currentDisplayedCapacityRaw": "588792131576",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "3u3earD5RAUn66zrjsmZPCGJ1zRFpmMtDTKv7ozDx96p",
+        "market": "7G9hUEyKbxLdRmvNwpe5V1D23gXdcXoSuwoFRCBa2c2j",
+        "supplyVault": "5sygqcWHEdFPBmDuEdgA7D5XokoZYMH6eaKDRcVFaCyk",
+        "feeVault": "21mqcdEejMz4DDwvCmaArhAmqRWEswgKy2scFkQaEpdE",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "315013792578",
+        "supplyBalanceRaw": "315013792578",
+        "currentDisplayedCapacityRaw": "315013792578",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "C1AUGC9ni23M2QBweDr4FwdMGHiVUSiKcpKzUpeqguqh",
+        "market": "9tN8sAJfHU4FppipfRdByfxH9xtWSjzDBor1nwemM6FZ",
+        "supplyVault": "9dUVmwHtxJpaYdFrKvAjHVQfonwtKe16LBxrgoeQXJoj",
+        "feeVault": "AAqAGQwnDPypSMonUciKehenwXy6PNy3Z8E81VPNR1gx",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "123875664379",
+        "supplyBalanceRaw": "123875664379",
+        "currentDisplayedCapacityRaw": "123875664379",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "HokDw9LaDf9qNzJf4F21RjHU3K4pRBkGQENvWnRGyRbn",
+        "market": "6WEGfej9B9wjxRs6t4BYpb9iCXd8CpTpJ8fVSNzHCC5y",
+        "supplyVault": "Go9MPjSG2tL5SjtpM3QCw2rybxJJBMSFZabz9Fn4o2Xs",
+        "feeVault": "AHLKVRaWPHWw3Jt3phs2peLFxsnYwdh9vJ28GAjqVYSc",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "56310761665",
+        "supplyBalanceRaw": "56310761665",
+        "currentDisplayedCapacityRaw": "56310761665",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "8rM1AY8M4YP4xNVmxhKnEUnj5CRWrcbcHpcgMoDfgqVi",
+        "market": "DxXdAyU3kCjnyggvHmY5nAwg5cRbbmdyX3npfDMjjMek",
+        "supplyVault": "7Ce6ir6uDB41ipLaZxtfrMw9YHyf3xeY8ueuwVugoVZM",
+        "feeVault": "AxztG5qkztPvRyuLBDRojKBVS34MUtjwHULmzjjCpDLH",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "36630511751",
+        "supplyBalanceRaw": "36630511751",
+        "currentDisplayedCapacityRaw": "36630511751",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "34Bb1oLf9F7H4CAGefC56HFBsuJQ1tSJafmZnYkFCd83",
+        "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+        "supplyVault": "GxdJiLD16gJzz1QfyJ53dkrWWB2ur6uVos9fhmo5goYf",
+        "feeVault": "5UNsU3BJkuoYyhEuPcxyZ8wSjchgnsb1fQL9DP1pH9bA",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "28224125169",
+        "supplyBalanceRaw": "28224125169",
+        "currentDisplayedCapacityRaw": "28224125169",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "AZJAPDubfJuqzSsdeWQS3EG44nQRpwmKDTG1SKHrEMVy",
+        "market": "GMqmFygF5iSm5nkckYU6tieggFcR42SyjkkhK5rswFRs",
+        "supplyVault": "6KhMNAKZRXdkfsS7RCE5KF46ydtz8g2xpW4uNUHfXs7x",
+        "feeVault": "FjQFqwE5QzE1J2YzuX251wrK8sq76dWKAkPyVkyUFDBf",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "9675377351",
+        "supplyBalanceRaw": "9675377351",
+        "currentDisplayedCapacityRaw": "9675377351",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "7hhG1B8G3XNRFZUNM8LrWRiSpAwNNyEx7hcAzpPuCGzh",
+        "market": "9wmqLq3n3KdQBbNfwqrF3PwcLgZ9edZ7hW5TsaC3o6uj",
+        "supplyVault": "4kvaWiX7H883TYkVws6prc5S98mnFa2jiaNegHYq4fge",
+        "feeVault": "DLj4yoEEiNjcvnHJF92ENA1NmALVvgEiZt8bCCP8BD6c",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "8345305668",
+        "supplyBalanceRaw": "8345305668",
+        "currentDisplayedCapacityRaw": "8345305668",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "F1xMZ8em6SrQkCnKQR1pzcxQieSUth35sYDQ2kK6o8tX",
+        "market": "5wJeMrUYECGq41fxRESKALVcHnNX26TAWy4W98yULsua",
+        "supplyVault": "C4diPmC7KL366qyBVQQTXA4Ny8bFSSkGJQSgjej5KuY1",
+        "feeVault": "GySHtWWHnn75WtJHkvkoLycQWBqeBeRdvSKbQ1pbYwXW",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "2114343639",
+        "supplyBalanceRaw": "2114343639",
+        "currentDisplayedCapacityRaw": "2114343639",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "Q5av3wh8j9KCqSjs9njUdsPhrMSKBCUyr4VyUndUUFA",
+        "market": "BJnbcRHqvppTyGesLzWASGKnmnF1wq9jZu6ExrjT7wvF",
+        "supplyVault": "GZcAe6WMYn4qHHYGsvKeR1vmRSZd286MrBWz1bDBnBiL",
+        "feeVault": "8mbKNFpRjWm2p7C1LBYaatHVNCvki2vfdwvkFz3CC5RH",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "1816692344",
+        "supplyBalanceRaw": "1816692344",
+        "currentDisplayedCapacityRaw": "1816692344",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "Adk21h55pWks3hymqA6NpRGpfdptFzXeuyRJ2NHaTqHv",
+        "market": "7WQeTuLsFrZsgnHW7ddFdNfhfJAViqH4mvcFZPQ5zuQ9",
+        "supplyVault": "44riKhpfnezEtLUpb3aip7DoTmujBtHvfkie6mGVUxuA",
+        "feeVault": "GdjViZzB3B8ToG5ZL3VHoDW1tSWAqWUzyYx76Ytsd96t",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "10124781",
+        "supplyBalanceRaw": "10124781",
+        "currentDisplayedCapacityRaw": "10124781",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "Gd5WdkCf7ypnydApWUDjUUVPs8yNNXKuhZyrv75WhCbd",
+        "market": "3EZEy7vBTJ8Q9PWxKwdLVULRdsvVLT51rpBG3gH1TSJ5",
+        "supplyVault": "5vd4bYzJij6mocaHTnxEhSTc7FsgYLteyZGxWGdeGHZ2",
+        "feeVault": "HXED9onniFaC1iy3sSu23gdDUmXmJa1mixYRhvnmsytZ",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "5137532",
+        "supplyBalanceRaw": "5137532",
+        "currentDisplayedCapacityRaw": "5137532",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "558WJv5Jpcjb7xGERhndxLfhHddU8iTRkWx1Y5EVKKmw",
+        "market": "82MBsafZDuhk81wzh5WR5CXin57RoeshmQQ5bjqaJnpD",
+        "supplyVault": "5qWaHi7yJw37aEbwn66S1jwnW4P2F4UHnGL4EoTsRi7f",
+        "feeVault": "BHEQJQv6eWLBrxagQ51dMpYotLEy9U7QGvLVXzt2UwvQ",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "2099802",
+        "supplyBalanceRaw": "2099802",
+        "currentDisplayedCapacityRaw": "2099802",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "4wgEPiKPrMLHWPtsL284ucVo9qMossQGqvM5yeLND9T4",
+        "market": "Dwg1aeZFYtsyMEkoyJn2ak8pPqaXMWd1uui6FBkM1872",
+        "supplyVault": "F5hV6PkKbPHTeNM89PRLMAqmsn1YnqzeN5diGJJrFDyi",
+        "feeVault": "CkhXDaH3X8Q5EEwNwdTtuoHspupKqrQxguwZoDbVeEh4",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "956900",
+        "supplyBalanceRaw": "956900",
+        "currentDisplayedCapacityRaw": "956900",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "2NhrhA94Fmx9dpEc9FEv3SDwvHheXQuScwhPCJPzg8r3",
+        "market": "3koBPZPPV4Ag4DPWCyTdAVGxzxABWw9vEZ9vX8sjbbM2",
+        "supplyVault": "ChPGi3J75VDrcdsx5hPtFYnce2UUCCDZMiK35pEhmAnN",
+        "feeVault": "HYnEBwBdZnBJnsygcSe9vRSA5EpctEWCUGrCohHeyZHJ",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "600000",
+        "supplyBalanceRaw": "600000",
+        "currentDisplayedCapacityRaw": "600000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "96hNQRtVaNnvjePZwTnPWrzbAud2UghGo42TCHVnFc93",
+        "market": "AYninZeX272BYiEVZNa7wnebFVN49ncEMfNK1M1rAg4X",
+        "supplyVault": "9wmz2J1iyk48RSUbFBRKh4huffaKmotP9NsjZKWbNgMq",
+        "feeVault": "5ABh3FbsqEccp5maLpbMscThLpwjwW5V5mGYLfNr7bak",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "328572",
+        "supplyBalanceRaw": "328572",
+        "currentDisplayedCapacityRaw": "328572",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "9sGLZFtEircTUN7M2u8ycv4reCnHbb7gQ7ZaC5DKdPX",
+        "market": "H6euL2N9Qk8HY7LwKKgVwYkXE7WVbvdWwPPU18R1qQ9e",
+        "supplyVault": "4s2Y1Jb5UvS2fGN6n6G6DbVCUorsevdRjEduYqnNKnrS",
+        "feeVault": "6uKgza5TTt6F2Uf7zJ8HRKR1Qxz1wULDN5BHWDQTrxv8",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "4pismkrb6Fxb5D9N2FAj9vMXj4Eh549Mk1WyKbkPVGbE",
+        "market": "8jhQRpCZSQc5yoCMZygQgkcpbiKG4CvHfVM1pgkAkX7k",
+        "supplyVault": "7mbhoJsAtqy6JSBjrEAmoGtwDqvLfzxPKKBwDWn5kRjD",
+        "feeVault": "7jZNYaC3aHPgBVAm1jQMzYPPUAscoUsRy83onHnPSM4x",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "59AWRe5252xqLrdsbz6KckgyP4DNtWTo9QZq6C4CFVok",
+        "market": "DyJESd8ezfgB1JsyaHybM6fUK63D7r7EFe5JAvRw26Tq",
+        "supplyVault": "GwSfUKiRjsX23vrtten27mGUBaTivwg7gQ48DbQfJDhY",
+        "feeVault": "8biy1ftSwScMWEqSr4PmsDiweNRJs1MjgPHfCpTG4s4p",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "5BoF2iM7yk8cUiKmfHsXaErCxCGHq2Gk66LF1MyX6xFc",
+        "market": "2XqjBVY1hQNqoihSVawnY1iXF57pp9KY9nwuh3FbFf3o",
+        "supplyVault": "58H42SQ59obAA9NmoEkrmUMgYAfRQZ4EjuDKgLe1tfr",
+        "feeVault": "29N6SeRGo2qm68mYAatQVPTkh1hUfA24SAb5Cro79jEQ",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "6M3xV4e8L2QWy8w7a55f9eKs9mJUhmSaJbaG2i58xFGb",
+        "market": "DTMCA4DDiKMSZJKSZjhevRsxuusCVHPSuiMVnHVTk75a",
+        "supplyVault": "FMgmnB7JmxAy4JSepSnRafoViSCUW1TSySg4dZspkZH9",
+        "feeVault": "AUWHy1jC8kg95KitumhcDk7wxUDsuGJ7q2evLuQSCCwy",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "6jF5BzuKn6a6SbFnsHDCUmXVHnd7bS3oFHvK5bHXAtXJ",
+        "market": "BmqR4QB8iZdsVhkuMZLnqCQMkZ3VuE1zrsTmJVV3LZXM",
+        "supplyVault": "8AH8T5WuBrqKozK4goKoGYsZaavwP32S7Ra7nv6ubWMa",
+        "feeVault": "CW5Vq9mdF9sGE5sEwVcRtJzkxwdXoZbAZQkdvDyvE28d",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "7CmxWtZjcjLB4vWTVhu3GdZSJHC3qRD8nb9FVVhGfkdb",
+        "market": "Dq6Jm6fN1ENYQpjo5XaiUdH6XU28KET1RXyfVUVfcxcT",
+        "supplyVault": "AbNcRcvAgpM8DucRQdKoU5ASbwiLVyymB9dKbdg7Tbzh",
+        "feeVault": "DoQcikGxjwAVHnXSM3doUe48YREL8fL1E7VRw3yYVVPX",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "89EtX1m7LVs9wwafKj3ndoWUhNHbZsHFHi1tqo7xv7zf",
+        "market": "3o7NtijcHWfjetiXyJvuifLNgrCPm9NmazVqTTwuAPiB",
+        "supplyVault": "EuER3MvFC2Jt6hW4GpKpAaUaey4FGGkkrFGc28WhubF",
+        "feeVault": "DDn4B6CtgF9eZMxHGEAP71xJTqDpkH5e1EUz9aAe3esz",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "9apwDUdPfMak3Ao5uT3qLYoWFaAC8whsaQV2t7mwiLXo",
+        "market": "3FgMPrMmtBRzPVsjPdDXYvEJvc3R4pg1c3SmG95Tgznc",
+        "supplyVault": "D2b179ABBUUt4kiNV9gsoMe3c7BuTQ7MpUz678R5tBp6",
+        "feeVault": "GusykuA96gACxZHbTXCPBRsT1qB8rFRrwAmYc1tQzUBW",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      },
+      {
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "reserve": "F1nWuYNbeeRhTdDwZXYp6gJc387cRBDMRqAh3RukhgmP",
+        "market": "e9X49MS2NSz7uN1RkfZwdViDDVS8gMmxGynB7oCkQET",
+        "supplyVault": "GA4767ncJXGYydtsMrnehnA4enjvjd6iAEwa7XsFqPCk",
+        "feeVault": "7vp5CsfjbgKDr9gaXAfPX9mjsfQ2qWFx3rUjN5uheUgY",
+        "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+        "observationSlot": 457366053,
+        "reserveAvailableRaw": "100000",
+        "supplyBalanceRaw": "100000",
+        "currentDisplayedCapacityRaw": "100000",
+        "flashFeeSf": "0",
+        "status": 0,
+        "emergencyMode": 0,
+        "compatibleExactZero": true
+      }
+    ],
+    "project0Sources": [
+      {
+        "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+        "bank": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+        "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+        "vault": "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ",
+        "vaultAuthority": "EBUqjTVD6Xp6iwbVvkMTphttgEAbmy5yY1jfBQyj86DV",
+        "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "observationSlot": 457366053,
+        "displayedVaultBalanceRaw": "16",
+        "bankConfig": {
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "operationalState": "Operational",
+          "riskTier": "Collateral",
+          "assetTag": 3,
+          "configFlags": 1,
+          "bankFlags": "2192",
+          "borrowLimitRawField": "0",
+          "protocolOriginationFeeRawI80F48": "0",
+          "assetSharesRawI80F48": "229596743432305268228096",
+          "liabilitySharesRawI80F48": "0"
+        },
+        "compatibleTokenProgram": true,
+        "measuredUsableCapacityRaw": "0"
+      },
+      {
+        "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+        "bank": "B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT",
+        "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+        "vault": "GVafRPhx4DbvDDyyoVcYJQ5mxjYinmjRAYJgxtFK52th",
+        "vaultAuthority": "21MeDz5tJ5NVtU4BwjttvHakvBhF7SNLB4nwig6WVjd8",
+        "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "observationSlot": 457366053,
+        "displayedVaultBalanceRaw": "1",
+        "bankConfig": {
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "operationalState": "Operational",
+          "riskTier": "Collateral",
+          "assetTag": 3,
+          "configFlags": 0,
+          "bankFlags": "2448",
+          "borrowLimitRawField": "0",
+          "protocolOriginationFeeRawI80F48": "0",
+          "assetSharesRawI80F48": "927653155576758749102080",
+          "liabilitySharesRawI80F48": "0"
+        },
+        "compatibleTokenProgram": true,
+        "measuredUsableCapacityRaw": "0"
+      },
+      {
+        "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+        "bank": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+        "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+        "vault": "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK",
+        "vaultAuthority": "J2RutaNtmw5Ri32iiZTexxNYHyDqJKbt6gVWCmv6hmnx",
+        "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "observationSlot": 457366053,
+        "displayedVaultBalanceRaw": "3223467792",
+        "bankConfig": {
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "operationalState": "Operational",
+          "riskTier": "Collateral",
+          "assetTag": 0,
+          "configFlags": 1,
+          "bankFlags": "2432",
+          "borrowLimitRawField": "2500000000000",
+          "protocolOriginationFeeRawI80F48": "0",
+          "assetSharesRawI80F48": "8607790620883239963402414",
+          "liabilitySharesRawI80F48": "7205900156106027210992923"
+        },
+        "compatibleTokenProgram": true,
+        "measuredUsableCapacityRaw": "0"
+      }
+    ],
+    "klendSelection": {
+      "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+      "market": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+      "supplyVault": "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+      "feeVault": "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs",
+      "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+      "observationSlot": 457366053,
+      "reserveAvailableRaw": "3152147555477",
+      "supplyBalanceRaw": "3152147555477",
+      "currentDisplayedCapacityRaw": "3152147555477",
+      "flashFeeSf": "0",
+      "status": 0,
+      "emergencyMode": 0,
+      "compatibleExactZero": true
+    },
+    "klendRepeatBorrowConstraint": {
+      "instructionIndex": 0,
+      "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "customCode": 6035,
+      "name": "MultipleFlashBorrows",
+      "message": "KLend permits only one flash borrow per transaction",
+      "raw": {
+        "Custom": 6035
+      }
+    },
+    "maximumCombination": {
+      "sourceCount": 1,
+      "independentProviderCount": 1,
+      "principalRaw": "3152147555477",
+      "actionInputRaw": "500000000000",
+      "sources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "3152147555477"
+        }
+      ]
+    }
+  },
+  "currentChanceryGuards": {
+    "minimumRaw": "1000000000",
+    "maximumRaw": "500000000000",
+    "currentPathwayKind": 0,
+    "migrationModuleStatus": {
+      "id": 10,
+      "value": 0,
+      "status": "disabled"
+    },
+    "crossChainModuleStatus": {
+      "id": 16,
+      "value": 0,
+      "status": "disabled"
+    }
+  },
+  "providerControls": {
+    "klend": [
+      {
+        "label": "provider_klend_ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp_3152147555476",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "KLend",
+              "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+              "amountRaw": "3152147555476"
+            }
+          ],
+          "lenderVaults": [
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555476"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 531,
+          "sizeLimitBytes": 4096,
+          "addressCount": 11,
+          "addressLimit": 64,
+          "instructionCount": 2,
+          "instructionLimit": 64,
+          "requiredSignatures": 1,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+        ],
+        "wireSha256": "c36095884938ee2d81de4c05f04510ee0a699296d015f3169788703f93df3a7f",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366053,
+        "err": null,
+        "decodedError": null,
+        "unitsConsumed": 68749,
+        "atomicRollbackAppliedToAccounting": false,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: FlashBorrowReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+          "Program log: Instruction: FlashRepayReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+        ]
+      },
+      {
+        "label": "provider_klend_ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp_3152147555477",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "KLend",
+              "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+              "amountRaw": "3152147555477"
+            }
+          ],
+          "lenderVaults": [
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555477"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 531,
+          "sizeLimitBytes": 4096,
+          "addressCount": 11,
+          "addressLimit": 64,
+          "instructionCount": 2,
+          "instructionLimit": 64,
+          "requiredSignatures": 1,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+        ],
+        "wireSha256": "92fd462b7219b0e2ac99f4ed6cc29db0460187a0cffe0f8cc614f1aae5913754",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366053,
+        "err": null,
+        "decodedError": null,
+        "unitsConsumed": 68749,
+        "atomicRollbackAppliedToAccounting": false,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: FlashBorrowReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+          "Program log: Instruction: FlashRepayReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+        ]
+      },
+      {
+        "label": "provider_klend_ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp_3152147555478",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "KLend",
+              "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+              "amountRaw": "3152147555478"
+            }
+          ],
+          "lenderVaults": [
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555478"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 531,
+          "sizeLimitBytes": 4096,
+          "addressCount": 11,
+          "addressLimit": 64,
+          "instructionCount": 2,
+          "instructionLimit": 64,
+          "requiredSignatures": 1,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+        ],
+        "wireSha256": "da68e23d42b9b745865da774e7fb9ee16a06318ad31063a3f8f5f793c879935d",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366255,
+        "err": "BlockhashNotFound",
+        "decodedError": {
+          "raw": "BlockhashNotFound"
+        },
+        "unitsConsumed": 0,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": []
+      }
+    ],
+    "project0": [
+      {
+        "label": "provider_project0_6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS_15",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+              "amountRaw": "15"
+            }
+          ],
+          "lenderVaults": [
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+            "amountRaw": "15"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "1d3e07a9228ee37109e46b387d0afd2058e163ba488e2b51ce66021041485bd1",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366280,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6200
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6200,
+          "name": "WrongAssetTagForStandardInstructions",
+          "message": "Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag",
+          "raw": {
+            "Custom": 6200
+          }
+        },
+        "unitsConsumed": 18783,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError caused by account: bank. Error Code: WrongAssetTagForStandardInstructions. Error Number: 6200. Error Message: Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1838"
+        ]
+      },
+      {
+        "label": "provider_project0_6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS_16",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+              "amountRaw": "16"
+            }
+          ],
+          "lenderVaults": [
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+            "amountRaw": "16"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "38b63204b296d0785757fee1744f47cd7009dc87536f761a0ee789b4d0afad12",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366355,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6200
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6200,
+          "name": "WrongAssetTagForStandardInstructions",
+          "message": "Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag",
+          "raw": {
+            "Custom": 6200
+          }
+        },
+        "unitsConsumed": 18783,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError caused by account: bank. Error Code: WrongAssetTagForStandardInstructions. Error Number: 6200. Error Message: Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1838"
+        ]
+      },
+      {
+        "label": "provider_project0_6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS_17",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+              "amountRaw": "17"
+            }
+          ],
+          "lenderVaults": [
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "6KP94PsCrBk2gPqtqT4WSvZ8Zss7r1auz3azXpv5ptrS",
+            "amountRaw": "17"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "bd0bb5a38501463b4ac6902389649da88a4e15969871ccf6390b5b8061ecff95",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366355,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6200
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6200,
+          "name": "WrongAssetTagForStandardInstructions",
+          "message": "Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag",
+          "raw": {
+            "Custom": 6200
+          }
+        },
+        "unitsConsumed": 18783,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "3daECBzxvpgcyuB6KPfUXu5HtewGVjTzQ6RwvYvA3aVQ": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError caused by account: bank. Error Code: WrongAssetTagForStandardInstructions. Error Number: 6200. Error Message: Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1838"
+        ]
+      },
+      {
+        "label": "provider_project0_B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT_1",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT",
+              "amountRaw": "1"
+            }
+          ],
+          "lenderVaults": [
+            "GVafRPhx4DbvDDyyoVcYJQ5mxjYinmjRAYJgxtFK52th"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT",
+            "amountRaw": "1"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "e12bc4e335c40bc2cc02cedf78ab4e77e1b1694eaeb8fe0681e57988eaaa912f",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366381,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6200
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6200,
+          "name": "WrongAssetTagForStandardInstructions",
+          "message": "Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag",
+          "raw": {
+            "Custom": 6200
+          }
+        },
+        "unitsConsumed": 18783,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "GVafRPhx4DbvDDyyoVcYJQ5mxjYinmjRAYJgxtFK52th": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError caused by account: bank. Error Code: WrongAssetTagForStandardInstructions. Error Number: 6200. Error Message: Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1838"
+        ]
+      },
+      {
+        "label": "provider_project0_B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT_2",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT",
+              "amountRaw": "2"
+            }
+          ],
+          "lenderVaults": [
+            "GVafRPhx4DbvDDyyoVcYJQ5mxjYinmjRAYJgxtFK52th"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "B5nEYndavwuzEX1pQZUYcvfuhk1fMGgqrBrJkkEAe7iT",
+            "amountRaw": "2"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "56e938757029133d3092be4498cb90449d4c43914a60eb24bb5eb9550be5405c",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366406,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6200
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6200,
+          "name": "WrongAssetTagForStandardInstructions",
+          "message": "Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag",
+          "raw": {
+            "Custom": 6200
+          }
+        },
+        "unitsConsumed": 18783,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "GVafRPhx4DbvDDyyoVcYJQ5mxjYinmjRAYJgxtFK52th": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError caused by account: bank. Error Code: WrongAssetTagForStandardInstructions. Error Number: 6200. Error Message: Wrong asset tag for standard instructions, expected DEFAULT, SOL, or STAKED asset tag.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1838"
+        ]
+      },
+      {
+        "label": "provider_project0_Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva_3223467791",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+              "amountRaw": "3223467791"
+            }
+          ],
+          "lenderVaults": [
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+            "amountRaw": "3223467791"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "c8afb83dd3d16d932b3e3052052567d27dbc8220ff10bb5ffdd12e787a58fb9f",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366482,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6044
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6044,
+          "name": "T22MintRequired",
+          "message": "Token22 Banks require mint account as first remaining account",
+          "raw": {
+            "Custom": 6044
+          }
+        },
+        "unitsConsumed": 21012,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError thrown in programs/marginfi/src/utils/general.rs:157. Error Code: T22MintRequired. Error Number: 6044. Error Message: Token22 Banks require mint account as first remaining account.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x179c"
+        ]
+      },
+      {
+        "label": "provider_project0_Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva_3223467792",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+              "amountRaw": "3223467792"
+            }
+          ],
+          "lenderVaults": [
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+            "amountRaw": "3223467792"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "a8c04d9e3635918b9fa49f220d58f817e693aeef6b0cc8acfad6899c88c046dc",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366482,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6044
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6044,
+          "name": "T22MintRequired",
+          "message": "Token22 Banks require mint account as first remaining account",
+          "raw": {
+            "Custom": 6044
+          }
+        },
+        "unitsConsumed": 21012,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError thrown in programs/marginfi/src/utils/general.rs:157. Error Code: T22MintRequired. Error Number: 6044. Error Message: Token22 Banks require mint account as first remaining account.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x179c"
+        ]
+      },
+      {
+        "label": "provider_project0_Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva_3223467793",
+        "category": "provider-boundary",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "Project0",
+              "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+              "amountRaw": "3223467793"
+            }
+          ],
+          "lenderVaults": [
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "Project0",
+            "id": "Dj2CwMF3GM7mMT5hcyGXKuYSQ2kQ5zaVCkA1zX1qaTva",
+            "amountRaw": "3223467793"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 743,
+          "sizeLimitBytes": 4096,
+          "addressCount": 14,
+          "addressLimit": 64,
+          "instructionCount": 5,
+          "instructionLimit": 64,
+          "requiredSignatures": 2,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+          "43CkPynwCef1KeKahBrHKBUxqifsGcTsaDrWnrbsPRT4"
+        ],
+        "wireSha256": "08f364594ae6434ca721b20c6ab31fe573a31c3c69c9c5316906bb6cbbeaaab4",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366482,
+        "err": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 6044
+            }
+          ]
+        },
+        "decodedError": {
+          "instructionIndex": 2,
+          "program": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+          "customCode": 6044,
+          "name": "T22MintRequired",
+          "message": "Token22 Banks require mint account as first remaining account",
+          "raw": {
+            "Custom": 6044
+          }
+        },
+        "unitsConsumed": 21012,
+        "atomicRollbackAppliedToAccounting": true,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "5Euy1GJaWcF8BcZa2wbvKZq9ZU95anedL9TW416ZJNpK": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: MarginfiAccountInitialize",
+          "Program 11111111111111111111111111111111 success",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountStartFlashloan",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+          "Program log: Instruction: LendingAccountBorrow",
+          "Program log: AnchorError thrown in programs/marginfi/src/utils/general.rs:157. Error Code: T22MintRequired. Error Number: 6044. Error Message: Token22 Banks require mint account as first remaining account.",
+          "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x179c"
+        ]
+      }
+    ],
+    "repeatBorrow": {
+      "label": "provider_klend_two_reserves_repeat_guard",
+      "category": "provider-repeat-borrow",
+      "metadata": {
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          },
+          {
+            "provider": "KLend",
+            "id": "JBmLCoKqjdKSStK45onRqe6U6sxVgSpdXoeXe4h7NwJw",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs",
+          "3oHtmrDBP3qGb3PNkCg9kW59D3qUeCD96EBugr9zNcpf",
+          "Fy1rhevyJfAQ3KJhfF783G5kA1tV4N63qDfhN2BurdiW"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        },
+        {
+          "provider": "KLend",
+          "id": "JBmLCoKqjdKSStK45onRqe6U6sxVgSpdXoeXe4h7NwJw",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 756,
+        "sizeLimitBytes": 4096,
+        "addressCount": 16,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "6b76d195a3d5675f3561f46a14165133f6855985ae012b16f3fab7dee715909d",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366532,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6035
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 0,
+        "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+        "customCode": 6035,
+        "name": "MultipleFlashBorrows",
+        "message": "KLend permits only one flash borrow per transaction",
+        "raw": {
+          "Custom": 6035
+        }
+      },
+      "unitsConsumed": 26533,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0",
+          "3oHtmrDBP3qGb3PNkCg9kW59D3qUeCD96EBugr9zNcpf": "0",
+          "Fy1rhevyJfAQ3KJhfF783G5kA1tV4N63qDfhN2BurdiW": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Multiple flash borrows not allowed",
+        "Program log: AnchorError thrown in programs/klend/src/lending_market/flash_ixs.rs:123. Error Code: MultipleFlashBorrows. Error Number: 6035. Error Message: Multiple flash borrows not allowed in the same transaction.",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1793"
+      ]
+    },
+    "combinations": [
+      {
+        "label": "provider_maximum_joint_route_control",
+        "category": "provider-maximum-combination",
+        "metadata": {
+          "sources": [
+            {
+              "provider": "KLend",
+              "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+              "amountRaw": "3152147555477"
+            }
+          ],
+          "lenderVaults": [
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+          ]
+        },
+        "requestedSources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555477"
+          }
+        ],
+        "transaction": {
+          "version": 1,
+          "sizeBytes": 531,
+          "sizeLimitBytes": 4096,
+          "addressCount": 11,
+          "addressLimit": 64,
+          "instructionCount": 2,
+          "instructionLimit": 64,
+          "requiredSignatures": 1,
+          "withinLimits": true,
+          "sigVerifyRequested": true
+        },
+        "simulated": true,
+        "signaturesVerified": true,
+        "signerOrder": [
+          "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+        ],
+        "wireSha256": "420ded4cd58b85c5679663f421da432862f47393b5afe9e008d7c433d01e4d4c",
+        "baselineSlot": 457366053,
+        "simulationSlot": 457366532,
+        "err": null,
+        "decodedError": null,
+        "unitsConsumed": 68743,
+        "atomicRollbackAppliedToAccounting": false,
+        "accounting": {
+          "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+          "attackerUsdGDeltaRaw": "0",
+          "attackerUsdVDeltaRaw": "0",
+          "attackerNetEquityDeltaRaw": "0",
+          "positiveAttackerNetEquity": false,
+          "chanceryVaultUsdGDeltaRaw": "0",
+          "usdGMintSupplyDeltaRaw": "0",
+          "usdVMintSupplyDeltaRaw": "0",
+          "lenderDeltas": {
+            "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+            "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+          },
+          "allBorrowInstructionsHavePlannedRepay": true,
+          "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+        },
+        "logs": [
+          "Program log: Instruction: FlashBorrowReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+          "Program log: Instruction: FlashRepayReserveLiquidity",
+          "Program log: Instruction: TransferChecked",
+          "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+          "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+        ]
+      }
+    ]
+  },
+  "targetResults": [
+    {
+      "label": "outsider_direct_mint_unwind_1",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1",
+        "note": "Mint followed by redeem is the unwind needed to restore USDG for lender repayment.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "7a3287fc2aa43a8ca52ec581f36bfd7bb0812021d8c75b9b623a8cf1d5f3f6f5",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366558,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81902,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_1",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1",
+        "note": "Fork seeds pre-existing attacker USDv; provider inventory found no USDv flash source.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "fc8dde48d06cace922fc598176f299c3a76732866a5e83b57fb7c128d214bd3d",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366583,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79211,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_mint_unwind_999999999",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "999999999",
+        "note": "Mint followed by redeem is the unwind needed to restore USDG for lender repayment.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "6a9cc0aeb014ba41f96e9992ae9c9f51ab5b4532fbd78fdc3f1c8526a65d8ee0",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366583,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81912,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_999999999",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "999999999",
+        "note": "Fork seeds pre-existing attacker USDv; provider inventory found no USDv flash source.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "9355ea0dcfe5ad85f89e0bd0f1205076a7228edbf17c5eb18b0c74b8278f5b8c",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366583,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79211,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_mint_unwind_1000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Mint followed by redeem is the unwind needed to restore USDG for lender repayment.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "45302e2b323fb4acfb862cd913715b34cd2f6e22848c0620bfa7b3fc53ff6e6a",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366584,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81906,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_1000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Fork seeds pre-existing attacker USDv; provider inventory found no USDv flash source.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "314797064d9714cd7b426bf3dad0be3f2367947fd13c1e0d6324d96fd2a729a3",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79209,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_mint_unwind_500000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000000",
+        "note": "Mint followed by redeem is the unwind needed to restore USDG for lender repayment.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "94d45b61e9d147694c7ad7afeb1357add76b2e5baba550fefc582035ff618824",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81910,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_500000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000000",
+        "note": "Fork seeds pre-existing attacker USDv; provider inventory found no USDv flash source.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "42813784a86a3880efc949da2d7703ffec5a4ec4fa3e811a30cff3d8657c86e0",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79209,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_mint_unwind_500000000001",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000001",
+        "note": "Mint followed by redeem is the unwind needed to restore USDG for lender repayment.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "fca4fe9e505095644d0c39de3ebced29d3e56f4ca73b7a88879712ab8c616b26",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81910,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_500000000001",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000001",
+        "note": "Fork seeds pre-existing attacker USDv; provider inventory found no USDv flash source.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "9a27844be6bf2573fb882c0e50d468eef4659893b14d1ec4126973eb1145b9a3",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79209,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_mint_unwind_max_joint_500000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000000",
+        "note": "Maximum jointly usable provider allocation; action input capped by Chancery per-settlement maximum.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555477"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "3152147555477"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1437,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 4,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "7e43d151d8288298a1b8077a3ff650f6a64482570ed1012903bf140abff8207a",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366609,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 81910,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "outsider_direct_redeem_max_joint_500000000000",
+      "category": "direct-settlement",
+      "metadata": {
+        "candidateAmountRaw": "500000000000",
+        "note": "Maximum provider allocation accompanies the action; USDv source is synthetic fork inventory, not lender liquidity.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "3152147555477"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "3152147555477"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "0c52ae1d4849119f9ca2741793972dba73e8e0dadc000e2fa10cf103b6467e68",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366635,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79206,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_operator_permission_attacker_principal",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "live operator permission record paired with attacker principal",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "148e16439df7006ba5806aece8637035cac9cc4305c980c03401c6f1212e272b",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366635,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 770
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 770,
+        "name": "PermissionScopeMismatch",
+        "message": "permission scope mismatch",
+        "raw": {
+          "Custom": 770
+        }
+      },
+      "unitsConsumed": 80854,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x302"
+      ]
+    },
+    {
+      "label": "substitution_noncanonical_permission",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "noncanonical permission account",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "7fd5884502889520e86d720ed6914c195525a1f4ca9632d0279b2be717121755",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366635,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79206,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_destination_operator_account",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "destination token owner differs from attacker principal",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1352,
+        "sizeLimitBytes": 4096,
+        "addressCount": 34,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "1b03812035adf27d4e1e9071b71fd2f0320c8166b2c945aa9611dbeb699e133c",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366635,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79206,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_reserve_klend_supply",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "reserve vault replaced by KLend supply",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1288,
+        "sizeLimitBytes": 4096,
+        "addressCount": 32,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "dd1690d5b6ac3791980128c4981439ffc4c3cd068478b3d0f3971e738bc73d53",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366635,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79206,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_reserve_authority_mint_authority",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "reserve authority replaced by mint authority",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "ab4c1b4bdbafdb87a0e439fc18ecb5cacea1810a3866839c57a3c7401348a709",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366660,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79210,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_mint_authority_reserve_authority",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "mint authority replaced by reserve authority",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "4706116e060510b5e3d7fd98164795e0b6adfc958befee414f6157b43edaf379",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366661,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79207,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "substitution_asset_mint_issued_mint",
+      "category": "account-substitution",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "asset mint alias",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "9a9eed456cbf336d95b4d6a497b4b68d47aed61d4cd5a120f8108d3b99aa29ab",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366661,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 524
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 524,
+        "name": "AccountAliasNotAllowed",
+        "message": "semantically distinct accounts may not alias",
+        "raw": {
+          "Custom": 524
+        }
+      },
+      "unitsConsumed": 59578,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x20c"
+      ]
+    },
+    {
+      "label": "principal_not_instruction_signer",
+      "category": "signer-auth",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Signed transaction, but principal meta deliberately lacks signer privilege.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1320,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "749b0ae5b889bf7d41f311470456357cc8f5f3d5149a57a9f147456ad92c200f",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366686,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 514
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 514,
+        "name": "AccountOwnerMismatch",
+        "message": "invalid account owner",
+        "raw": {
+          "Custom": 514
+        }
+      },
+      "unitsConsumed": 79208,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x202"
+      ]
+    },
+    {
+      "label": "program_pda_as_external_principal",
+      "category": "signer-auth",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Expected local signing blocker: program PDA has no external private key.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1384,
+        "sizeLimitBytes": 4096,
+        "addressCount": 33,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 2,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": false,
+      "signaturesVerified": false,
+      "concreteBlocker": "required signer is not locally controlled: 5sPq2NzkiVD2SwWhtBh2mjXbVoDdxrYPLFEtYmsJegek",
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+        "5sPq2NzkiVD2SwWhtBh2mjXbVoDdxrYPLFEtYmsJegek"
+      ]
+    },
+    {
+      "label": "outsider_self_grant_mint_redeem_roles",
+      "category": "privilege-escalation",
+      "metadata": {
+        "candidateAmountRaw": null,
+        "note": "Attempts to create a new capability-bearing permission directly.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 825,
+        "sizeLimitBytes": 4096,
+        "addressCount": 17,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "de90d5e42a63b042642868ce0e51e649e4171ced0294bcdb6e879941cf5b9ac6",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366686,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 4864
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 4864,
+        "name": "ConfigChangeRequiresTimelock",
+        "message": "config change requires accepted pending change with timelock",
+        "raw": {
+          "Custom": 4864
+        }
+      },
+      "unitsConsumed": 59520,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x1300"
+      ]
+    },
+    {
+      "label": "outsider_enable_migration_module",
+      "category": "privilege-escalation",
+      "metadata": {
+        "candidateAmountRaw": null,
+        "note": "Attempts to enable disabled migration module.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 672,
+        "sizeLimitBytes": 4096,
+        "addressCount": 15,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "fd434c8c8ba09fd4b076f39ad58bafec40a2c8ed0a2832ab51aa202d2974e714",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366686,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 4864
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 4864,
+        "name": "ConfigChangeRequiresTimelock",
+        "message": "config change requires accepted pending change with timelock",
+        "raw": {
+          "Custom": 4864
+        }
+      },
+      "unitsConsumed": 53452,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x1300"
+      ]
+    },
+    {
+      "label": "outsider_change_deposit_rate",
+      "category": "privilege-escalation",
+      "metadata": {
+        "candidateAmountRaw": null,
+        "note": "Attempts to double the mint conversion rate.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 687,
+        "sizeLimitBytes": 4096,
+        "addressCount": 15,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "f98837c21bb2da32d083daec599dcbabd85461d148eff38c0dd810fdf9d0aa97",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366686,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 772
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 772,
+        "name": "AuthorityMismatch",
+        "message": "authority mismatch",
+        "raw": {
+          "Custom": 772
+        }
+      },
+      "unitsConsumed": 51800,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x304"
+      ]
+    },
+    {
+      "label": "outsider_create_delegated_intent_on_direct_pathway",
+      "category": "settlement-prerequisite",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Current USDG pathway kind is DIRECT, not DELEGATED.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1217,
+        "sizeLimitBytes": 4096,
+        "addressCount": 21,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "b49577f825a40ce409baa745bbe447484f37a47e0f3b0b73a9c36cbd91347422",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366737,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1799
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 1799,
+        "name": "IntentInvalidParameters",
+        "message": "settlement intent parameters are not executable",
+        "raw": {
+          "Custom": 1799
+        }
+      },
+      "unitsConsumed": 57890,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x707"
+      ]
+    },
+    {
+      "label": "outsider_mint_delegated_on_direct_pathway",
+      "category": "delegated-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Current USDG pathway kind is DIRECT and the attacker intent is absent.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1279,
+        "sizeLimitBytes": 4096,
+        "addressCount": 29,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 2,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+        "4RTShWzaKFVRMMMfca5K4ck22vY8wrHLbzsiEUGU7Ah3"
+      ],
+      "wireSha256": "66f68cfb94e1b72803d7bb304d9c1b8d7d3ce37c03ccd008981b222bfebcfa92",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366737,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1538
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 1538,
+        "name": "PathwayKindMismatch",
+        "message": "pathway kind mismatch",
+        "raw": {
+          "Custom": 1538
+        }
+      },
+      "unitsConsumed": 77677,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x602"
+      ]
+    },
+    {
+      "label": "outsider_redeem_delegated_on_direct_pathway",
+      "category": "delegated-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Current USDG pathway kind is DIRECT and the attacker intent is absent.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1279,
+        "sizeLimitBytes": 4096,
+        "addressCount": 29,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 2,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+        "4RTShWzaKFVRMMMfca5K4ck22vY8wrHLbzsiEUGU7Ah3"
+      ],
+      "wireSha256": "03b386098a777dade10eca21c09b063afc88910022ff083a0ee4d41a553d92d0",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366737,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1538
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 1538,
+        "name": "PathwayKindMismatch",
+        "message": "pathway kind mismatch",
+        "raw": {
+          "Custom": 1538
+        }
+      },
+      "unitsConsumed": 77683,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x602"
+      ]
+    },
+    {
+      "label": "outsider_mint_trilateral_on_direct_pathway",
+      "category": "trilateral-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "All three local actors sign; current pathway is not TRILATERAL.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1410,
+        "sizeLimitBytes": 4096,
+        "addressCount": 31,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 3,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+        "4RTShWzaKFVRMMMfca5K4ck22vY8wrHLbzsiEUGU7Ah3",
+        "APhFkGeuiC7Q8esch9HS8KgDDsRdkFwSs5gs2Rok97Mr"
+      ],
+      "wireSha256": "16be056637884d832ff8f7b2380d67dac747f445515acc52d01dbe2208ca90fc",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1538
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 1538,
+        "name": "PathwayKindMismatch",
+        "message": "pathway kind mismatch",
+        "raw": {
+          "Custom": 1538
+        }
+      },
+      "unitsConsumed": 79022,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x602"
+      ]
+    },
+    {
+      "label": "outsider_redeem_trilateral_on_direct_pathway",
+      "category": "trilateral-settlement",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "All three local actors sign; current pathway is not TRILATERAL.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 1410,
+        "sizeLimitBytes": 4096,
+        "addressCount": 31,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 3,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V",
+        "4RTShWzaKFVRMMMfca5K4ck22vY8wrHLbzsiEUGU7Ah3",
+        "APhFkGeuiC7Q8esch9HS8KgDDsRdkFwSs5gs2Rok97Mr"
+      ],
+      "wireSha256": "7baee9defb73cc9f1d5d2da0ef298f987d4d1052c836fac1c5786717421d43c7",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1538
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 1538,
+        "name": "PathwayKindMismatch",
+        "message": "pathway kind mismatch",
+        "raw": {
+          "Custom": 1538
+        }
+      },
+      "unitsConsumed": 79023,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x602"
+      ]
+    },
+    {
+      "label": "migration_enable_legacy",
+      "category": "disabled-module",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Module dispatch gate precedes all enable_legacy_migration accounts and capital-sensitive logic.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 666,
+        "sizeLimitBytes": 4096,
+        "addressCount": 13,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "7b2515fd8ac3029696f45ef4f9e67b111d4127e30abdc5f04c3f9b9b94a12530",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 259
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 259,
+        "name": "ModuleNotEnabled",
+        "message": "module not enabled",
+        "raw": {
+          "Custom": 259
+        }
+      },
+      "unitsConsumed": 45823,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x103"
+      ]
+    },
+    {
+      "label": "migration_convert_legacy",
+      "category": "disabled-module",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Module dispatch gate precedes all migrate_legacy_to_token2022 accounts and capital-sensitive logic.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 610,
+        "sizeLimitBytes": 4096,
+        "addressCount": 13,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "13ea6dc0ad2d7a5ab92c4546110715ec10d70b9b8e21f9ca5f1b62f341a9e8db",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 259
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 259,
+        "name": "ModuleNotEnabled",
+        "message": "module not enabled",
+        "raw": {
+          "Custom": 259
+        }
+      },
+      "unitsConsumed": 45761,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x103"
+      ]
+    },
+    {
+      "label": "cross_chain_consume_inbound",
+      "category": "disabled-module",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Module dispatch gate precedes all consume_inbound_message accounts and capital-sensitive logic.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 800,
+        "sizeLimitBytes": 4096,
+        "addressCount": 13,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "449b6f13752cf7298e498445585e47d00006186891e7a6415ce9c0b9e32bae7b",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 259
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 259,
+        "name": "ModuleNotEnabled",
+        "message": "module not enabled",
+        "raw": {
+          "Custom": 259
+        }
+      },
+      "unitsConsumed": 45722,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x103"
+      ]
+    },
+    {
+      "label": "cross_chain_emit_outbound",
+      "category": "disabled-module",
+      "metadata": {
+        "candidateAmountRaw": "1000000000",
+        "note": "Module dispatch gate precedes all emit_outbound_message accounts and capital-sensitive logic.",
+        "sources": [
+          {
+            "provider": "KLend",
+            "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+            "amountRaw": "1000000000"
+          }
+        ],
+        "lenderVaults": [
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs"
+        ]
+      },
+      "requestedSources": [
+        {
+          "provider": "KLend",
+          "id": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+          "amountRaw": "1000000000"
+        }
+      ],
+      "transaction": {
+        "version": 1,
+        "sizeBytes": 732,
+        "sizeLimitBytes": 4096,
+        "addressCount": 13,
+        "addressLimit": 64,
+        "instructionCount": 3,
+        "instructionLimit": 64,
+        "requiredSignatures": 1,
+        "withinLimits": true,
+        "sigVerifyRequested": true
+      },
+      "simulated": true,
+      "signaturesVerified": true,
+      "signerOrder": [
+        "9hHKJ4k7z2Mzedb9trxeABbWAZFk5edscY6VcodLTJ1V"
+      ],
+      "wireSha256": "7e140711f4dad2d6a4bd83cbadedfb90e3e34bdbdca160caa0f4d5aa432d003a",
+      "baselineSlot": 457366053,
+      "simulationSlot": 457366738,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 259
+          }
+        ]
+      },
+      "decodedError": {
+        "instructionIndex": 1,
+        "program": "ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz",
+        "customCode": 259,
+        "name": "ModuleNotEnabled",
+        "message": "module not enabled",
+        "raw": {
+          "Custom": 259
+        }
+      },
+      "unitsConsumed": 45722,
+      "atomicRollbackAppliedToAccounting": true,
+      "accounting": {
+        "valuation": "raw 6-decimal units; USDG and USDv valued 1:1 per current Chancery config",
+        "attackerUsdGDeltaRaw": "0",
+        "attackerUsdVDeltaRaw": "0",
+        "attackerNetEquityDeltaRaw": "0",
+        "positiveAttackerNetEquity": false,
+        "chanceryVaultUsdGDeltaRaw": "0",
+        "usdGMintSupplyDeltaRaw": "0",
+        "usdVMintSupplyDeltaRaw": "0",
+        "lenderDeltas": {
+          "DGBo8HmL7pBWBZLGePjHQ73JKRE37HVZ7ZbjA2FYUZHZ": "0",
+          "39M8hy7EUypjxsHqsZQmNQqXGpknCwoCXzF7r8WMBbAs": "0"
+        },
+        "allBorrowInstructionsHavePlannedRepay": true,
+        "outstandingFlashLiabilityAfterCommittedTransactionRaw": "0"
+      },
+      "logs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program ChnryP5RcZtMvP8vvVyPGUhwCg6uDJc53vCe3sxr11Sz failed: custom program error: 0x103"
+      ]
+    }
+  ],
+  "conclusion": {
+    "targetCaseCount": 33,
+    "fullySignedSimulatedTargetCases": 32,
+    "locallyBlockedTargetCases": [
+      {
+        "label": "program_pda_as_external_principal",
+        "blocker": "required signer is not locally controlled: 5sPq2NzkiVD2SwWhtBh2mjXbVoDdxrYPLFEtYmsJegek",
+        "bytes": 1384,
+        "accounts": 33
+      }
+    ],
+    "outsiderSuccessfulCases": [],
+    "positiveUnauthorizedNetEquityCases": [],
+    "validatedUnauthorizedDrain": false,
+    "noDrainQualification": "A failed auth/module/pathway gate or an unconstructible wrapper is a concrete blocker, not proof that a hypothetical bypass drains assets."
+  }
+}

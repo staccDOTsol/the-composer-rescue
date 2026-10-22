@@ -1,0 +1,129 @@
+{
+  "observedAt": "2026-10-19T07:07:50.906Z",
+  "network": "mainnet-beta",
+  "mode": "simulateTransaction only, sigVerify true, no send",
+  "program": "STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ",
+  "wallet": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+  "walletDusdAta": "E6yxUJeyVxAfRaNP9ia2Cf2LNp4T6bLMo8j3Tfp1wrzb",
+  "vault": "3GzZn1Qyzc6xzCgDn83teJysBW2bMCsK6DcRNhksMNo4",
+  "beforeRaw": [
+    "2937577692107",
+    null
+  ],
+  "results": [
+    {
+      "label": "outsider_ack_redirect_to_self",
+      "historicalSignature": "3tSzs7sXCesmSoZztVhvHuk6d9Hz4QqntnZmcrX5WckhPg5hmNU75HNMsKuRAwLnPU3A3hGsQg8Jp1bwTxcX5HCo",
+      "instructionDiscriminatorHex": "7a068c57ad840711",
+      "bytes": 544,
+      "accountKeys": 11,
+      "requiredSignatures": 1,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6001
+          }
+        ]
+      },
+      "unitsConsumed": 50852,
+      "postRaw": [
+        null,
+        null
+      ],
+      "logs": [
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ invoke [1]",
+        "Program log: Instruction: AckRemoteCall",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [2]",
+        "Program log: Create",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1523 of 176428 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb qgAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 170083 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [3]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2153 of 167012 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 20108 of 184684 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program log: AnchorError caused by account: signer. Error Code: VO. Error Number: 6001. Error Message: VO.",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ consumed 50852 of 200000 compute units",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ failed: custom program error: 0x1771"
+      ]
+    },
+    {
+      "label": "outsider_req_replaces_both_signers_old_caller_info",
+      "historicalSignature": "4vVzi6sr5VNoxNvzG6CtDqGwJ2SpG5jUPtVzaXFfkTqyuMj1kE9boir81ExbojiJ2TECfJonitpM4vGmgWci6pZs",
+      "instructionDiscriminatorHex": "447286d63adcdc30",
+      "bytes": 419,
+      "accountKeys": 7,
+      "requiredSignatures": 1,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 8324,
+      "postRaw": [
+        null,
+        null
+      ],
+      "logs": [
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ invoke [1]",
+        "Program log: Instruction: ReqRemoteCall",
+        "Program log: AnchorError caused by account: caller_info. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program log: Left:",
+        "Program log: BHBMacQvwSTpezKS2nYz8WeMPzDnmtn7FdkK7DmjVkDR",
+        "Program log: Right:",
+        "Program log: AEiYhWxESdcAKLyH6XPbrEAQ6Hzw9mgTAvNPgm5qKwtU",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ consumed 8324 of 200000 compute units",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "outsider_req_expected_caller_info",
+      "historicalSignature": "4vVzi6sr5VNoxNvzG6CtDqGwJ2SpG5jUPtVzaXFfkTqyuMj1kE9boir81ExbojiJ2TECfJonitpM4vGmgWci6pZs",
+      "instructionDiscriminatorHex": "447286d63adcdc30",
+      "bytes": 419,
+      "accountKeys": 7,
+      "requiredSignatures": 1,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 15778,
+      "postRaw": [
+        null,
+        null
+      ],
+      "logs": [
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ invoke [1]",
+        "Program log: Instruction: ReqRemoteCall",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: AnchorError caused by account: message_signer. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program log: Left:",
+        "Program log: 331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+        "Program log: Right:",
+        "Program log: BTJYrtunM9GcKgeutuWDnfb9P1SAGNziZdHCmWX3jaD6",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ consumed 15778 of 200000 compute units",
+        "Program STANDjrnkxme4tKsZSnW3WUQ9iKxbhJQj33dbW2F9sZ failed: custom program error: 0x7dc"
+      ]
+    }
+  ]
+}

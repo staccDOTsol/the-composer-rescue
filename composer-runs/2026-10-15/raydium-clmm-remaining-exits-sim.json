@@ -1,0 +1,2064 @@
+{
+  "transport": "read-only mainnet simulateTransaction; sigVerify=false; no sendTransaction",
+  "before": {
+    "slot": 457352622,
+    "accounts": [
+      {
+        "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+        "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+        "dataLen": 1544,
+        "protocolFees0": 2783762,
+        "protocolFees1": 329139,
+        "fundFees0": 5398594,
+        "fundFees1": 585001
+      },
+      {
+        "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 4510586700179
+      },
+      {
+        "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 327166597758
+      },
+      {
+        "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 54919719944
+      },
+      {
+        "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 19580970248
+      },
+      {
+        "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+        "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+        "dataLen": 1544,
+        "protocolFees0": 32820071,
+        "protocolFees1": 5614977,
+        "fundFees0": 715059,
+        "fundFees1": 61,
+        "rewardEnd": 1779778800,
+        "rewardLastUpdate": 1779778800,
+        "rewardTotalEmitted": 63007189032,
+        "rewardClaimed": 62453576793
+      },
+      {
+        "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 4725523085
+      },
+      {
+        "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 154372716343
+      },
+      {
+        "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "dataLen": 165,
+        "tokenAmount": 739575
+      }
+    ]
+  },
+  "results": [
+    {
+      "case": "collect_protocol_fee_control",
+      "contextSlot": 457352622,
+      "err": null,
+      "unitsConsumed": 15837,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2782762,
+          "protocolFees1": 328139,
+          "fundFees0": 5398594,
+          "fundFees1": 585001
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4510586699179
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327166596758
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 54919720944
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19580971248
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 32820071,
+          "protocolFees1": 5614977,
+          "fundFees0": 715059,
+          "fundFees1": 61,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4725523085
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_twice_atomic",
+      "contextSlot": 457352625,
+      "err": null,
+      "unitsConsumed": 31674,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectProtocolFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2781762,
+          "protocolFees1": 327463,
+          "fundFees0": 5398594,
+          "fundFees1": 585108
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4510330763285
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327193773437
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 55055492172
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19566554985
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 32820071,
+          "protocolFees1": 5614977,
+          "fundFees0": 715059,
+          "fundFees1": 61,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4725523085
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_attacker_authority_and_destinations",
+      "contextSlot": 457352627,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 11427,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_missing_authority_signature",
+      "contextSlot": 457352630,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 5230,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: owner. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc2"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_foreign_pool",
+      "contextSlot": 457352632,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 12007,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: amm_config. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_vaults_swapped",
+      "contextSlot": 457352635,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "unitsConsumed": 11568,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: token_vault_0. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7d3"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_mints_swapped",
+      "contextSlot": 457352637,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 12161,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: vault_0_mint. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_recipient0_is_vault0",
+      "contextSlot": 457352640,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2040
+          }
+        ]
+      },
+      "unitsConsumed": 9498,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: recipient_token_account_0. Error Code: ConstraintDuplicateMutableAccount. Error Number: 2040. Error Message: A duplicate mutable account constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7f8"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_recipient_mints_swapped",
+      "contextSlot": 457352642,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3
+          }
+        ]
+      },
+      "unitsConsumed": 12350,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x3"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_token_programs_swapped",
+      "contextSlot": 457352645,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 8508,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc0"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_valid_then_unauthorized_atomic_rollback",
+      "contextSlot": 457352648,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 27264,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_protocol_fee_unauthorized_then_valid_order",
+      "contextSlot": 457352650,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 11427,
+      "logs": [
+        "Program log: Instruction: CollectProtocolFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_control",
+      "contextSlot": 457352653,
+      "err": null,
+      "unitsConsumed": 15840,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2801430,
+          "protocolFees1": 330127,
+          "fundFees0": 5403481,
+          "fundFees1": 584328
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4511281266435
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327092878263
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 54285844321
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19648259972
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 33990150,
+          "protocolFees1": 5614977,
+          "fundFees0": 1105083,
+          "fundFees1": 61,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4725523085
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_fund_fee_twice_atomic",
+      "contextSlot": 457352655,
+      "err": null,
+      "unitsConsumed": 31680,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectFundFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        },
+        {
+          "index": 1,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2801430,
+          "protocolFees1": 330127,
+          "fundFees0": 5402481,
+          "fundFees1": 583328
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4511281265435
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 327092877263
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 54285845321
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19648260972
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 33990150,
+          "protocolFees1": 5614977,
+          "fundFees0": 1105083,
+          "fundFees1": 61,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4725523085
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_fund_fee_attacker_authority_and_destinations",
+      "contextSlot": 457352656,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 11430,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_missing_authority_signature",
+      "contextSlot": 457352659,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 5233,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: owner. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc2"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_foreign_pool",
+      "contextSlot": 457352661,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 12010,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: amm_config. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_vaults_swapped",
+      "contextSlot": 457352663,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "unitsConsumed": 11571,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: token_vault_0. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7d3"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_mints_swapped",
+      "contextSlot": 457352666,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 12164,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: vault_0_mint. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_recipient0_is_vault0",
+      "contextSlot": 457352668,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2040
+          }
+        ]
+      },
+      "unitsConsumed": 9501,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: recipient_token_account_0. Error Code: ConstraintDuplicateMutableAccount. Error Number: 2040. Error Message: A duplicate mutable account constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7f8"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_recipient_mints_swapped",
+      "contextSlot": 457352670,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3
+          }
+        ]
+      },
+      "unitsConsumed": 12353,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x3",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x3"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_token_programs_swapped",
+      "contextSlot": 457352672,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 8511,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc0"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_valid_then_unauthorized_atomic_rollback",
+      "contextSlot": 457352675,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 27270,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+                  "mint": "So11111111111111111111111111111111111111112",
+                  "source": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 9,
+                    "uiAmount": 1e-06,
+                    "uiAmountString": "0.000001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            },
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+                  "destination": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+                  "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+                  "source": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+                  "tokenAmount": {
+                    "amount": "1000",
+                    "decimals": 6,
+                    "uiAmount": 0.001,
+                    "uiAmountString": "0.001"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_fund_fee_unauthorized_then_valid_order",
+      "contextSlot": 457352677,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "unitsConsumed": 11430,
+      "logs": [
+        "Program log: Instruction: CollectFundFee",
+        "Program log: AnchorError caused by account: owner. Error Code: NotApproved. Error Number: 6000. Error Message: Not approved.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x1770"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_control",
+      "contextSlot": 457352679,
+      "err": null,
+      "unitsConsumed": 8537,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+                  "tokenAmount": {
+                    "amount": "4171910846",
+                    "decimals": 6,
+                    "uiAmount": 4171.910846,
+                    "uiAmountString": "4171.910846"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2814174,
+          "protocolFees1": 330127,
+          "fundFees0": 5408729,
+          "fundFees1": 585328
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4512343336712
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 326980147840
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 53947560126
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19684167725
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 35976481,
+          "protocolFees1": 5616897,
+          "fundFees0": 1767192,
+          "fundFees1": 701,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 553612239
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 158544627189
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_twice_atomic",
+      "contextSlot": 457352681,
+      "err": null,
+      "unitsConsumed": 14875,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+                  "tokenAmount": {
+                    "amount": "4171910846",
+                    "decimals": 6,
+                    "uiAmount": 4171.910846,
+                    "uiAmountString": "4171.910846"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2814174,
+          "protocolFees1": 330127,
+          "fundFees0": 5408729,
+          "fundFees1": 585328
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4512343336712
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 326980147840
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 53947560126
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19684167725
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 35976481,
+          "protocolFees1": 5616897,
+          "fundFees0": 1767192,
+          "fundFees1": 701,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 553612239
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 158544627189
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 739575
+        }
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_attacker_authority",
+      "contextSlot": 457352683,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "unitsConsumed": 8137,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/collect_remaining_rewards.rs:89. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_missing_signature",
+      "contextSlot": 457352686,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 4272,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError caused by account: reward_funder. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc2"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_destination_substitution_authorized",
+      "contextSlot": 457352689,
+      "err": null,
+      "unitsConsumed": 8537,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+                  "destination": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+                  "tokenAmount": {
+                    "amount": "4171910846",
+                    "decimals": 6,
+                    "uiAmount": 4171.910846,
+                    "uiAmountString": "4171.910846"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        {
+          "address": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 2814174,
+          "protocolFees1": 330127,
+          "fundFees0": 5408729,
+          "fundFees1": 585328
+        },
+        {
+          "address": "AbcuyoPeYnddzFoFQudsiFka8qd6tTwvLgxwtpTKTpKC",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4512343336712
+        },
+        {
+          "address": "2n6fxuD6PA5NYgEnXXYMh2iWD1JBJ1LGf76kFJAayZmX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 326980147840
+        },
+        {
+          "address": "481cLrKhWdQP8Qvs6ZbHUdxdjqiraS3m3fTQQ4SXCf9C",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 53947560126
+        },
+        {
+          "address": "2iVZ3HCepn76X18v4Cr5QbU6MebNTxVwYNHWTWWNSjQc",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 19684167725
+        },
+        {
+          "address": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+          "owner": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+          "dataLen": 1544,
+          "protocolFees0": 35976481,
+          "protocolFees1": 5616897,
+          "fundFees0": 1767192,
+          "fundFees1": 701,
+          "rewardEnd": 1779778800,
+          "rewardLastUpdate": 1779778800,
+          "rewardTotalEmitted": 63007189032,
+          "rewardClaimed": 62453576793
+        },
+        {
+          "address": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 553612239
+        },
+        {
+          "address": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 154372716343
+        },
+        {
+          "address": "Es1U9B9ok4Pi9u9pfQjDXmDGA59FP47TkZvaEMQxrgUL",
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLen": 165,
+          "tokenAmount": 4172650421
+        }
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_pool_substitution",
+      "contextSlot": 457352691,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "unitsConsumed": 8161,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/collect_remaining_rewards.rs:90. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_vault_substitution",
+      "contextSlot": 457352693,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "unitsConsumed": 8161,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/collect_remaining_rewards.rs:90. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_destination_is_vault",
+      "contextSlot": 457352696,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2040
+          }
+        ]
+      },
+      "unitsConsumed": 6547,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError caused by account: reward_token_vault. Error Code: ConstraintDuplicateMutableAccount. Error Number: 2040. Error Message: A duplicate mutable account constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7f8"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_mint_substitution",
+      "contextSlot": 457352698,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 7171,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError caused by account: reward_vault_mint. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x7dc"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_token_programs_swapped",
+      "contextSlot": 457352701,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 5996,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0xbc0"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_index_oob",
+      "contextSlot": 457352703,
+      "err": {
+        "InstructionError": [
+          0,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "unitsConsumed": 5661,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: SBF program Panicked in programs/amm/src/instructions/collect_remaining_rewards.rs at 80:23"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_valid_then_unauthorized_atomic_rollback",
+      "contextSlot": 457352706,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "unitsConsumed": 16674,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK success",
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/collect_remaining_rewards.rs:89. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "authority": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+                  "destination": "4u5GmwvqKjeSRnaWnSnqU3DsdDV1mwD8YBn486LLF9rL",
+                  "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+                  "source": "HsBUudV9Y2Z2dJTieWFgK3zhrpX4ELvnfHcAwSBVqDGX",
+                  "tokenAmount": {
+                    "amount": "4171910846",
+                    "decimals": 6,
+                    "uiAmount": 4171.910846,
+                    "uiAmountString": "4171.910846"
+                  }
+                },
+                "type": "transferChecked"
+              },
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "collect_remaining_rewards_unauthorized_then_valid_order",
+      "contextSlot": 457352708,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2502
+          }
+        ]
+      },
+      "unitsConsumed": 8137,
+      "logs": [
+        "Program log: Instruction: CollectRemainingRewards",
+        "Program log: AnchorError thrown in programs/amm/src/instructions/collect_remaining_rewards.rs:89. Error Code: RequireKeysEqViolated. Error Number: 2502. Error Message: A require_keys_eq expression was violated.",
+        "Program CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK failed: custom program error: 0x9c6"
+      ],
+      "innerInstructions": [],
+      "postAccounts": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ]
+}

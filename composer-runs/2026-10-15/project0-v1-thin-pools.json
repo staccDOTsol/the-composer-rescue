@@ -1,0 +1,3745 @@
+{
+  "generatedAt": "2026-10-15T19:10:13.929Z",
+  "readSource": "Solana public RPC",
+  "simulationSource": "configured mainnet RPC",
+  "sourceSignature": "2WxD766a1LAyiHiMYK8REpBsNpDhA8GQAkNb3occqXXooFF5xyUKz6Xim4m9tVQMiyFrhCYbKKcb6o4FibMBBdwG",
+  "sourceSlot": 457340229,
+  "authority": "3zdXwWm9GVGzSBmYEtWGBgP9E2A95TbUz7ccGavWMPL8",
+  "walletWsol": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+  "pools": [
+    {
+      "pool": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+      "apiPage": 350,
+      "stateOwner": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "poolState": {
+        "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+        "mint0": "So11111111111111111111111111111111111111112",
+        "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+        "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+        "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+        "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+        "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+        "lpSupply": "100",
+        "protocolFees0": "706500",
+        "protocolFees1": "0",
+        "fundFees0": "235500",
+        "fundFees1": "0",
+        "openTime": "1733224010",
+        "status": 0
+      },
+      "preSlot": 457345636,
+      "pre": [
+        {
+          "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+          "rawToken": "0",
+          "mintSupply": "10216089231191916320"
+        },
+        {
+          "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+          "rawToken": null,
+          "mintSupply": null
+        },
+        {
+          "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "rawToken": "11208583873143",
+          "mintSupply": "13969624989413576352"
+        },
+        {
+          "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+          "rawToken": "942001",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+          "rawToken": "97705",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+          "rawToken": "8729317423484577572",
+          "mintSupply": "9492976788909245391"
+        },
+        {
+          "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+          "rawToken": "0",
+          "mintSupply": "0"
+        }
+      ],
+      "cases": [
+        {
+          "name": "forward_repay_1",
+          "slot": 457349132,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 65646,
+          "err": {
+            "InstructionError": [
+              5,
+              {
+                "Custom": 6040
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Error \"Illegal balance state\" thrown at programs/marginfi/src/instructions/marginfi_account/borrow.rs:136",
+            "Program log: AnchorError occurred. Error Code: IllegalBalanceState. Error Number: 6040. Error Message: Illegal balance state.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1798"
+          ],
+          "transfers": [],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_2",
+          "slot": 457349134,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146837,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "2",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "2",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "48852",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "2",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999998",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "48852",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942003",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "48853",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_3",
+          "slot": 457349135,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146839,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "3",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "3",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "65136",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "3",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999997",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "65136",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942004",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "32569",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_4",
+          "slot": 457349135,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146837,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "4",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "4",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "73278",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "4",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999996",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "73278",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942005",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "24427",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10",
+          "slot": 457349136,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146843,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "10",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "87934",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "10",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999990",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "87934",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942011",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "9771",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100",
+          "slot": 457349138,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146830,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "100",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "96727",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "100",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999900",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "96727",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942101",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "978",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_400",
+          "slot": 457349139,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146830,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "400",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "400",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97460",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "400",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999600",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97460",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942401",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "245",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_401",
+          "slot": 457349140,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146829,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "401",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "401",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97460",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "401",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999599",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97460",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942402",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "245",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000",
+          "slot": 457349141,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146831,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "1000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97607",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "1000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999000",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97607",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "943001",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "98",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "0",
+                "fundFees0": "235500",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10000",
+          "slot": 457349142,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146839,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "10000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97695",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "10000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1990000",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97695",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "952001",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "10",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706503",
+                "protocolFees1": "0",
+                "fundFees0": "235501",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100000",
+          "slot": 457349143,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 146842,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "100000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97704",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1900000",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97704",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "1042001",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "1",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706530",
+                "protocolFees1": "0",
+                "fundFees0": "235510",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000000",
+          "slot": 457349144,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 147024,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "1000000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97704",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "1000000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1000000",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "97704",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "1942001",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "1",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706800",
+                "protocolFees1": "0",
+                "fundFees0": "235600",
+                "fundFees1": "0",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "roundtrip_repay_1000_reverse_96630",
+          "slot": 457349145,
+          "bytes": 1076,
+          "accounts": 23,
+          "instructions": 10,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 170937,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "1000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97607",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "destination": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "amount": "96630",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "999",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "1000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999999",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "977",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942002",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "96728",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706500",
+                "protocolFees1": "29",
+                "fundFees0": "235500",
+                "fundFees1": "9",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "roundtrip_repay_100000_reverse_96726",
+          "slot": 457349146,
+          "bytes": 1076,
+          "accounts": 23,
+          "instructions": 10,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 170948,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "100000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97704",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "destination": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "amount": "96726",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "99959",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999959",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "978",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942042",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "96727",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706530",
+                "protocolFees1": "29",
+                "fundFees0": "235510",
+                "fundFees1": "9",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "roundtrip_repay_1000000_reverse_96726",
+          "slot": 457349147,
+          "bytes": 1076,
+          "accounts": 23,
+          "instructions": 10,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 171126,
+          "err": null,
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: Instruction: LendingAccountRepay",
+            "Program log: Instruction: LendingAccountEndFlashloan"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000000",
+              "mint": null
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "amount": "1000000",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "destination": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "amount": "97704",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "destination": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "amount": "96726",
+              "mint": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1"
+            },
+            {
+              "source": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "999590",
+              "mint": "So11111111111111111111111111111111111111112"
+            },
+            {
+              "source": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "destination": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "amount": "1000000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": "1999590",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "CdzqrmYosZnjerNvtaf2KDVUQhFsAEHP5bZH2aTNqCY3",
+              "rawToken": "978",
+              "mintSupply": "10216089231191916320",
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": "11208583873143",
+              "mintSupply": "13969624989413576352",
+              "pool": null
+            },
+            {
+              "key": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+              "rawToken": "942411",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+              "rawToken": "96727",
+              "mintSupply": "4021933588448842418",
+              "pool": null
+            },
+            {
+              "key": "23C8LwwGWtg4TcnG1tj42pC6Tq6qwMuAFZbCrT4Zahhh",
+              "rawToken": "8729317423484577572",
+              "mintSupply": "9492976788909245391",
+              "pool": {
+                "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+                "mint0": "So11111111111111111111111111111111111111112",
+                "mint1": "FtBGZxy7yEF6QzjLCmpAKpQzBfVCVDHYda52ziSobQM1",
+                "vault0": "3vyDeyEaCEPULnJPnGxzPmkkXbajJeYHAmZzcuKgtj8U",
+                "vault1": "EnpaZJKAgxVSFGE8GaePKHY8wbn7dmgK5dRKFtiRLrrZ",
+                "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "observation": "2Y5vU1TCaZaondBvnWFfgLR2LfbGNsK69bDxYcV9HULe",
+                "lpMint": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+                "lpSupply": "100",
+                "protocolFees0": "706800",
+                "protocolFees1": "29",
+                "fundFees0": "235600",
+                "fundFees1": "9",
+                "openTime": "1733224010",
+                "status": 0
+              }
+            },
+            {
+              "key": "5LQWJXgpyo92XoCEiJ12dQbDrA4oTC1DX7NcJBihGZAd",
+              "rawToken": "0",
+              "mintSupply": "0",
+              "pool": null
+            }
+          ]
+        }
+      ],
+      "postPriceNote": "Quote quality to be evaluated from other on-chain pools; no profit inference from single-pool marginal price."
+    },
+    {
+      "pool": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+      "apiPage": 800,
+      "stateOwner": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "poolState": {
+        "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+        "mint0": "So11111111111111111111111111111111111111112",
+        "mint1": "5A9qLXsNwVDwfMFXoUqb4hE4ziSW9FUFB5xZDZHNYMva",
+        "vault0": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+        "vault1": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+        "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "tokenProgram1": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "observation": "A2aRNzRqLBU9Fpup3WMr1RzcDguXn35vmYFPaVNn9LnL",
+        "lpMint": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+        "lpSupply": "100",
+        "protocolFees0": "143876",
+        "protocolFees1": "1802541709",
+        "fundFees0": "47958",
+        "fundFees1": "600847236",
+        "openTime": "1734722593",
+        "status": 0
+      },
+      "preSlot": 457345669,
+      "pre": [
+        {
+          "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+          "rawToken": "0",
+          "mintSupply": "10216089231191916320"
+        },
+        {
+          "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+          "rawToken": null,
+          "mintSupply": null
+        },
+        {
+          "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "rawToken": "11208583873143",
+          "mintSupply": "13969624989413576352"
+        },
+        {
+          "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+          "rawToken": "59721778",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+          "rawToken": "2403388946",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+          "rawToken": "17207344072208429345",
+          "mintSupply": "14116437666337047503"
+        },
+        {
+          "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+          "rawToken": "0",
+          "mintSupply": "0"
+        }
+      ],
+      "cases": [
+        {
+          "name": "forward_repay_1",
+          "slot": 457349149,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 62626,
+          "err": {
+            "InstructionError": [
+              5,
+              {
+                "Custom": 6040
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Error \"Illegal balance state\" thrown at programs/marginfi/src/instructions/marginfi_account/borrow.rs:136",
+            "Program log: AnchorError occurred. Error Code: IllegalBalanceState. Error Number: 6040. Error Message: Illegal balance state.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1798"
+          ],
+          "transfers": [],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_2",
+          "slot": 457349150,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111922,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "2",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_3",
+          "slot": 457349151,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111920,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "3",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_4",
+          "slot": 457349152,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111923,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "4",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10",
+          "slot": 457349153,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111922,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100",
+          "slot": 457349155,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111919,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_400",
+          "slot": 457349156,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111918,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "400",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_401",
+          "slot": 457349157,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111918,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "401",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000",
+          "slot": 457349158,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111917,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10000",
+          "slot": 457349159,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111925,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100000",
+          "slot": 457349160,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 111920,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000000",
+          "slot": 457349161,
+          "bytes": 1035,
+          "accounts": 23,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 112099,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: LendingAccountStartFlashloan",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2rDUiGHRo73kYvJq8hiaHko2UVo9CwZUdcLoHqwTrLzp",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "FQgyL8PggXkjwxCrDrCSNZN31NwU3j8Yh4yXkPtokxrY",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "33RuUdyXNPkWm7uBXNL42XdEqXoWaABDjffavAenaYYi",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "AJUTQY17wZHv9sYJAw7FtU4DB7aMP4TYJUqkFfUXZjz2",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "F1e4vYpgjbjWnNUmevXesgYvtUeVezdQHuN2sSxescsq",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        }
+      ],
+      "postPriceNote": "Quote quality to be evaluated from other on-chain pools; no profit inference from single-pool marginal price."
+    },
+    {
+      "pool": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+      "apiPage": 800,
+      "stateOwner": "CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C",
+      "poolState": {
+        "ammConfig": "D4FPEruKEHrG5TenZ2mpDGEfu1iUvTiqBxvpU8HLBvC2",
+        "mint0": "So11111111111111111111111111111111111111112",
+        "mint1": "E1FmddmMcYiWg5cZCvEHMWVt4Q4qYex4sChnDCu91aCb",
+        "vault0": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+        "vault1": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+        "tokenProgram0": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "tokenProgram1": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+        "observation": "B5Zop7LQSdMyqfRQwKyfrUkZEYt3gxMYrknL44aZoNVh",
+        "lpMint": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+        "lpSupply": "100",
+        "protocolFees0": "28298674",
+        "protocolFees1": "97",
+        "fundFees0": "31499582",
+        "fundFees1": "115638",
+        "openTime": "1739843640",
+        "status": 0
+      },
+      "preSlot": 457345690,
+      "pre": [
+        {
+          "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+          "rawToken": "0",
+          "mintSupply": "10216089231191916320"
+        },
+        {
+          "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+          "rawToken": null,
+          "mintSupply": null
+        },
+        {
+          "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+          "rawToken": "11208583873143",
+          "mintSupply": "13969624989413576352"
+        },
+        {
+          "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+          "rawToken": "59800609",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+          "rawToken": "115770",
+          "mintSupply": "4021933588448842418"
+        },
+        {
+          "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+          "rawToken": "6584708263560269913",
+          "mintSupply": "11891631301200364495"
+        },
+        {
+          "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+          "rawToken": "0",
+          "mintSupply": "0"
+        }
+      ],
+      "cases": [
+        {
+          "name": "forward_repay_1",
+          "slot": 457349163,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 68520,
+          "err": {
+            "InstructionError": [
+              5,
+              {
+                "Custom": 6040
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Error \"Illegal balance state\" thrown at programs/marginfi/src/instructions/marginfi_account/borrow.rs:136",
+            "Program log: AnchorError occurred. Error Code: IllegalBalanceState. Error Number: 6040. Error Message: Illegal balance state.",
+            "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x1798"
+          ],
+          "transfers": [],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_2",
+          "slot": 457349164,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118746,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "2",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_3",
+          "slot": 457349165,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118745,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "3",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_4",
+          "slot": 457349166,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118745,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "4",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10",
+          "slot": 457349167,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118745,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100",
+          "slot": 457349168,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118973,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_400",
+          "slot": 457349169,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118960,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "400",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_401",
+          "slot": 457349170,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118960,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "401",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000",
+          "slot": 457349171,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118962,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_10000",
+          "slot": 457349172,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118970,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "10000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_100000",
+          "slot": 457349174,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 118973,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "100000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        },
+        {
+          "name": "forward_repay_1000000",
+          "slot": 457349175,
+          "bytes": 1067,
+          "accounts": 24,
+          "instructions": 9,
+          "signatures": 1,
+          "cuLimit": 1400000,
+          "dataLimit": 67108864,
+          "units": 119142,
+          "err": {
+            "InstructionError": [
+              6,
+              {
+                "Custom": 2505
+              }
+            ]
+          },
+          "tail": [
+            "Program log: Instruction: GetAccountDataSize",
+            "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb tgAAAAAAAAA=",
+            "Program log: Instruction: InitializeImmutableOwner",
+            "Program log: Instruction: InitializeAccount3",
+            "Program log: Instruction: LendingAccountBorrow",
+            "Program log: Instruction: SwapBaseInput",
+            "Program log: AnchorError thrown in programs/cp-swap/src/instructions/swap_base_input.rs:149. Error Code: RequireGtViolated. Error Number: 2505. Error Message: A require_gt expression was violated.",
+            "Program CPMMoo8L3F4NbTegBCKVNunggL7H1ZpdTHKxQB5qKP1C failed: custom program error: 0x9c9"
+          ],
+          "transfers": [
+            {
+              "source": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "destination": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "amount": "1000000",
+              "mint": null
+            }
+          ],
+          "post": [
+            {
+              "key": "8BNDYj9gCViaoq6CA5eVcXk5i2SmvNeLhBs8p3QkpUDm",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C2kZUMh2kxdLBrQTQi5rP685bjiF1qvP75r2wPTkYFPw",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "5LNgBZUSvcAC8tk6aAHaCnHTJsYmuDTWdc631Xo7qnMR",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "DxpPZ1vFLYWc7fpWWK2iceCt5gb1Jee8t1TNTPw4nA2n",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "C4PfFwR6pDjQ5DfZwAeptrZuwBzJeqQaz8Syq15HDcSW",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            },
+            {
+              "key": "kDuDyrTQww7KnWLkXPMjVLqTNGCMEgV43JgcMRqRims",
+              "rawToken": null,
+              "mintSupply": null,
+              "pool": null
+            }
+          ]
+        }
+      ],
+      "postPriceNote": "Quote quality to be evaluated from other on-chain pools; no profit inference from single-pool marginal price."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+
+ RUN  v3.2.4 /private/tmp/whirlpools-1396-post/legacy-sdk/whirlpool
+
+ × tests/integration/v1-ix/surfpool_pr1396_repro.test.ts > PR1396 on real Surfpool RPC > outsider updates between 20 one-unit fee swaps 12863ms
+   → Simulation failed. 
+Message: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x7d3: 7 log messages:
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]
+Program log: Instruction: InitializeConfig
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3. 
+Logs: 
+[
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+  "Program log: Instruction: InitializeConfig",
+  "Program 11111111111111111111111111111111 invoke [2]",
+  "Program 11111111111111111111111111111111 success",
+  "Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units",
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3"
+]. 
+Catch the `SendTransactionError` and call `getLogs()` on it for full details.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/integration/v1-ix/surfpool_pr1396_repro.test.ts > PR1396 on real Surfpool RPC > outsider updates between 20 one-unit fee swaps
+Error: Simulation failed. 
+Message: Transaction simulation failed: Error processing Instruction 0: custom program error: 0x7d3: 7 log messages:
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]
+Program log: Instruction: InitializeConfig
+Program 11111111111111111111111111111111 invoke [2]
+Program 11111111111111111111111111111111 success
+Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units
+Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3. 
+Logs: 
+[
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+  "Program log: Instruction: InitializeConfig",
+  "Program 11111111111111111111111111111111 invoke [2]",
+  "Program 11111111111111111111111111111111 success",
+  "Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units",
+  "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3"
+]. 
+Catch the `SendTransactionError` and call `getLogs()` on it for full details.
+ ❯ Connection.sendEncodedTransaction ../../node_modules/@solana/web3.js/src/connection.ts:6053:13
+ ❯ Connection.sendRawTransaction ../../node_modules/@solana/web3.js/src/connection.ts:6009:20
+ ❯ Connection.sendTransaction ../../node_modules/@solana/web3.js/src/connection.ts:5958:14
+ ❯ TransactionBuilder.buildAndExecute ../common/src/web3/transactions/transactions-builder.ts:529:14
+ ❯ buildTestPoolParams tests/utils/init-utils.ts:358:3
+    356|     admin.publicKey,
+    357|   );
+    358|   await toTx(ctx, WhirlpoolIx.initializeConfigIx(ctx.program, configIn…
+       |   ^
+    359|     .addSigner(admin)
+    360|     .buildAndExecute();
+ ❯ initTestPool tests/utils/init-utils.ts:399:22
+ ❯ initTestPoolWithTokens tests/utils/init-utils.ts:766:5
+ ❯ WhirlpoolTestFixture.init tests/utils/fixture.ts:70:9
+ ❯ tests/integration/v1-ix/surfpool_pr1396_repro.test.ts:43:21
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { signature: '', transactionMessage: 'Transaction simulation failed: Error processing Instruction 0: custom program error: 0x7d3: 7 log messages:\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]\nProgram log: Instruction: InitializeConfig\nProgram 11111111111111111111111111111111 invoke [2]\nProgram 11111111111111111111111111111111 success\nProgram log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3', transactionLogs: [ 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]', 'Program log: Instruction: InitializeConfig', 'Program 11111111111111111111111111111111 invoke [2]', 'Program 11111111111111111111111111111111 success', 'Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3' ], transactionError: { message: 'Transaction simulation failed: Error processing Instruction 0: custom program error: 0x7d3: 7 log messages:\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]\nProgram log: Instruction: InitializeConfig\nProgram 11111111111111111111111111111111 invoke [2]\nProgram 11111111111111111111111111111111 success\nProgram log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units\nProgram whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3', logs: [ 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]', 'Program log: Instruction: InitializeConfig', 'Program 11111111111111111111111111111111 invoke [2]', 'Program 11111111111111111111111111111111 success', 'Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3' ] }, logs: [ 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]', 'Program log: Instruction: InitializeConfig', 'Program 11111111111111111111111111111111 invoke [2]', 'Program 11111111111111111111111111111111 success', 'Program log: AnchorError caused by account: funder. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 5784 of 200000 compute units', 'Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: custom program error: 0x7d3' ], getLogs: 'Function<getLogs>' }
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed (1)
+   Start at  10:21:24
+   Duration  13.71s (transform 300ms, setup 0ms, collect 683ms, tests 12.86s, environment 0ms, prepare 40ms)
+

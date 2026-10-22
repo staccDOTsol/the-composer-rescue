@@ -1,0 +1,1618 @@
+{
+  "generatedAt": "2026-10-19T07:13:52.981Z",
+  "fork": "http://127.0.0.1:9033",
+  "scope": "signed current-state local-fork liquidation screen; no mainnet submission",
+  "signerSource": "~/hooked.json (private bytes not retained)",
+  "signatureVerification": true,
+  "liveSubmission": false,
+  "syntheticStartingBalances": {
+    "usdgRaw": "30000000000",
+    "usdcRaw": "30000000000"
+  },
+  "target": {
+    "vaultId": 95,
+    "vaultConfig": "8LxvfvLfT2sQWrhrwWqWywXMrVKhhmo9qTpr5FdWtzeq",
+    "oracle": "9JfwVjFMDpSVSKWt9sGXkPEsGKCLNtYo6YWvs9BAvs9h",
+    "dexPoolA": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy"
+  },
+  "liquidation": {
+    "accountCount": 76,
+    "preInstructions": 0,
+    "remainingAccountsIndices": [
+      6,
+      2,
+      0,
+      1,
+      0
+    ]
+  },
+  "watch": [
+    "2LjX6kHhQ6ohhrxLioZqN94jXCS1TeVTRPXseZj3QcRk",
+    "BgfAes9oQmYS6sa2LefzNwdkAA1mwTq9iDZxVDhaxKDZ",
+    "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+    "5nWhfcZipZ6acCn3JjnkYyLM1ZwfvkLNcMFrxJNX13bq",
+    "J8WWASwhyLzEwRjJjrTwtnJLv6PQw1r9cvMGskqV8Gcn",
+    "44LQTsYEozMwkwXpMi9EjJocwyd25dqnkdHTeZ4Sd8DR"
+  ],
+  "before": [
+    {
+      "amountRaw": "30000000000",
+      "lamports": 2192400
+    },
+    {
+      "amountRaw": "30000000000",
+      "lamports": 2039281
+    },
+    {
+      "amountRaw": "4972821327630360822",
+      "lamports": 3180720
+    },
+    {
+      "amountRaw": "13750206963523100944",
+      "lamports": 1753920
+    },
+    {
+      "amountRaw": "7015815767962855036",
+      "lamports": 1753920
+    },
+    {
+      "amountRaw": null,
+      "lamports": 1010920
+    }
+  ],
+  "results": [
+    {
+      "label": "oracle_control",
+      "manipulationInputRaw": null,
+      "err": null,
+      "unitsConsumed": 63459,
+      "wireBytes": 423,
+      "addressCount": 9,
+      "instructionCount": 1,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017994830939202",
+        "Program log: smart_col_exchange_rate: 2017994830939202",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 63459 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc QoQOCVsrBwAAAAAAAAAAAEKEDglbKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "direct_liquidation_control",
+      "manipulationInputRaw": null,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 95117,
+      "wireBytes": 1248,
+      "addressCount": 31,
+      "instructionCount": 1,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "liquidationRateX15": "2017994830939202"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017994830939202",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33109 of 1363443 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc QoQOCVsrBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 95117 of 1400000 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi QoQOCVsrBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_300_oracle",
+      "manipulationInputRaw": "300000000",
+      "err": null,
+      "unitsConsumed": 231453,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2017995045805849",
+          "borrowRateX15": "2017995045805849"
+        }
+      ],
+      "attackerUsdgPostRaw": "29700000000",
+      "attackerUsdcPostRaw": "30299987590",
+      "attackerUsdgDeltaRaw": "-300000000",
+      "attackerUsdcDeltaRaw": "299987590",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19527 of 1258399 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208241 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11heo0e7v///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229531 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAo+ERAAAAAIZy4REAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAKPhEQAAAACGcuERAAAAADB1AAAAAAAAXPhmTAUAAAAAAAAAAAAAAHN7NHAFAAAAAAAAAAAAAADoxcO/h40DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134739 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd hnLhEQAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017995045805849",
+        "Program log: smart_col_exchange_rate: 2017995045805849",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33265 of 1201812 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc GR/dFVsrBwAAAAAAAAAAABkf3RVbKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_300_liquidate",
+      "manipulationInputRaw": "300000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270659,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2017995045805849"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208241 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11heo0e7v///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229531 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAo+ERAAAAAIZy4REAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAKPhEQAAAACGcuERAAAAADB1AAAAAAAAXPhmTAUAAAAAAAAAAAAAAHN7NHAFAAAAAAAAAAAAAADoxcO/h40DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134739 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd hnLhEQAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017995045805849",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18017 of 1172803 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc GR/dFVsrBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72471 of 1201812 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi GR/dFVsrBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_400_oracle",
+      "manipulationInputRaw": "400000000",
+      "err": null,
+      "unitsConsumed": 231450,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2017995231396368",
+          "borrowRateX15": "2017995231396368"
+        }
+      ],
+      "attackerUsdgPostRaw": "29600000000",
+      "attackerUsdcPostRaw": "30399980849",
+      "attackerUsdgDeltaRaw": "-400000000",
+      "attackerUsdcDeltaRaw": "399980849",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19525 of 1258402 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208246 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hz8Yo6P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229536 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAhNcXAAAAADE51xcAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAITXFwAAAAAxOdcXAAAAAECcAAAAAAAAmM9cUgUAAAAAAAAAAAAAAMi0PmoFAAAAAAAAAAAAAACCeKm3hI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd MTnXFwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017995231396368",
+        "Program log: smart_col_exchange_rate: 2017995231396368",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33265 of 1201815 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc EALtIFsrBwAAAAAAAAAAABAC7SBbKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_400_liquidate",
+      "manipulationInputRaw": "400000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270658,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2017995231396368"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208246 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hz8Yo6P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229536 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAhNcXAAAAADE51xcAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAITXFwAAAAAxOdcXAAAAAECcAAAAAAAAmM9cUgUAAAAAAAAAAAAAAMi0PmoFAAAAAAAAAAAAAACCeKm3hI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd MTnXFwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017995231396368",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18017 of 1172806 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc EALtIFsrBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72473 of 1201815 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi EALtIFsrBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_500_oracle",
+      "manipulationInputRaw": "500000000",
+      "err": null,
+      "unitsConsumed": 231449,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2017995473832462",
+          "borrowRateX15": "2017995473832462"
+        }
+      ],
+      "attackerUsdgPostRaw": "29500000000",
+      "attackerUsdcPostRaw": "30499972807",
+      "attackerUsdgDeltaRaw": "-500000000",
+      "attackerUsdcDeltaRaw": "499972807",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19525 of 1258403 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208247 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hOQUz4v///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229537 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAZc0dAAAAAMf6zB0AAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAGXNHQAAAADH+swdAAAAAFDDAAAAAAAA1KZSWAUAAAAAAAAAAAAAADLzSGQFAAAAAAAAAAAAAAB6DJOvgY0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134733 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd x/rMHQAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017995473832462",
+        "Program log: smart_col_exchange_rate: 2017995473832462",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33267 of 1201818 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc DkpgL1srBwAAAAAAAAAAAA5KYC9bKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_500_liquidate",
+      "manipulationInputRaw": "500000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270653,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2017995473832462"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208247 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hOQUz4v///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229537 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAZc0dAAAAAMf6zB0AAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAGXNHQAAAADH+swdAAAAAFDDAAAAAAAA1KZSWAUAAAAAAAAAAAAAADLzSGQFAAAAAAAAAAAAAAB6DJOvgY0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134733 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd x/rMHQAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017995473832462",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18018 of 1172809 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc DkpgL1srBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72471 of 1201818 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi DkpgL1srBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_600_oracle",
+      "manipulationInputRaw": "600000000",
+      "err": null,
+      "unitsConsumed": 231180,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2017995773376698",
+          "borrowRateX15": "2017995773376698"
+        }
+      ],
+      "attackerUsdgPostRaw": "29400000000",
+      "attackerUsdcPostRaw": "30599963463",
+      "attackerUsdgDeltaRaw": "-600000000",
+      "attackerUsdcDeltaRaw": "599963463",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19524 of 1258400 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208245 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11huUg93P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229535 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEARsMjAAAAAEe3wiMAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAEbDIwAAAABHt8IjAAAAAGDqAAAAAAAAEH5IXgUAAAAAAAAAAAAAALI2U14FAAAAAAAAAAAAAADJgYCnfo0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd R7fCIwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017995773376698",
+        "Program log: smart_col_exchange_rate: 2017995773376698",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32995 of 1201815 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc uvg6QVsrBwAAAAAAAAAAALr4OkFbKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_600_liquidate",
+      "manipulationInputRaw": "600000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270518,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2017995773376698"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208245 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11huUg93P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229535 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEARsMjAAAAAEe3wiMAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAEbDIwAAAABHt8IjAAAAAGDqAAAAAAAAEH5IXgUAAAAAAAAAAAAAALI2U14FAAAAAAAAAAAAAADJgYCnfo0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd R7fCIwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017995773376698",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17882 of 1172806 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc uvg6QVsrBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72333 of 1201815 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi uvg6QVsrBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_800_oracle",
+      "manipulationInputRaw": "800000000",
+      "err": null,
+      "unitsConsumed": 231446,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2017996543308222",
+          "borrowRateX15": "2017996543308222"
+        }
+      ],
+      "attackerUsdgPostRaw": "29200000000",
+      "attackerUsdcPostRaw": "30799940869",
+      "attackerUsdgDeltaRaw": "-800000000",
+      "attackerUsdcDeltaRaw": "799940869",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19525 of 1258401 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208245 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h+95R0P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229535 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEACK8vAAAAAAUhri8AAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAAivLwAAAAAFIa4vAAAAAIA4AQAAAAAAiCw0agUAAAAAAAAAAAAAAPTMZ1IFAAAAAAAAAAAAAABTEGeXeI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd BSGuLwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2017996543308222",
+        "Program log: smart_col_exchange_rate: 2017996543308222",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33261 of 1201815 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vjEfb1srBwAAAAAAAAAAAL4xH29bKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_800_liquidate",
+      "manipulationInputRaw": "800000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270659,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2017996543308222"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208245 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h+95R0P///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23088 of 1229535 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEACK8vAAAAAAUhri8AAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAAivLwAAAAAFIa4vAAAAAIA4AQAAAAAAiCw0agUAAAAAAAAAAAAAAPTMZ1IFAAAAAAAAAAAAAABTEGeXeI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134736 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd BSGuLwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2017996543308222",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18015 of 1172806 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vjEfb1srBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72474 of 1201815 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi vjEfb1srBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_2000_oracle",
+      "manipulationInputRaw": "2000000000",
+      "err": null,
+      "unitsConsumed": 231459,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2018005947859440",
+          "borrowRateX15": "2018005947859440"
+        }
+      ],
+      "attackerUsdgPostRaw": "28000000000",
+      "attackerUsdcPostRaw": "31999695962",
+      "attackerUsdgDeltaRaw": "-2000000000",
+      "attackerUsdcDeltaRaw": "1999695962",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19525 of 1258398 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208230 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hpg/PiP///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23100 of 1229532 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAlDV3AAAAAFrwMHcAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAJQ1dwAAAABa8DB3AAAAAEANAwAAAAAAWEO6sQUAAAAAAAAAAAAAAJ/95AoFAAAAAAAAAAAAAAB1ShQ4VI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134751 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd WvAwdwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2018005947859440",
+        "Program log: smart_col_exchange_rate: 2018005947859440",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33259 of 1201800 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 8EGtn10rBwAAAAAAAAAAAPBBrZ9dKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_2000_liquidate",
+      "manipulationInputRaw": "2000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270676,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2018005947859440"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1208230 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hpg/PiP///////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23100 of 1229532 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAlDV3AAAAAFrwMHcAAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAJQ1dwAAAABa8DB3AAAAAEANAwAAAAAAWEO6sQUAAAAAAAAAAAAAAJ/95AoFAAAAAAAAAAAAAAB1ShQ4VI0DAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 134751 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd WvAwdwAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2018005947859440",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18014 of 1172791 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 8EGtn10rBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72476 of 1201800 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi 8EGtn10rBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_5000_oracle",
+      "manipulationInputRaw": "5000000000",
+      "err": null,
+      "unitsConsumed": 231572,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2018065336300455",
+          "borrowRateX15": "2018065336300455"
+        }
+      ],
+      "attackerUsdgPostRaw": "25000000000",
+      "attackerUsdcPostRaw": "34998263855",
+      "attackerUsdgDeltaRaw": "-5000000000",
+      "attackerUsdcDeltaRaw": "4998263855",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19664 of 1258273 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207853 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h0YsU1v7//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23213 of 1229268 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA8gUqAQAAAC906ykBAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAPIFKgEAAAAvdOspAQAAACChBwAAAAAAYHyJZAYAAAAAAAAAAAAAAMp5KlgEAAAAAAAAAAAAAACWklBT+YwDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135128 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd L3TrKQEAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2018065336300455",
+        "Program log: smart_col_exchange_rate: 2018065336300455",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32995 of 1201423 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc p/OAc2srBwAAAAAAAAAAAKfzgHNrKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_5000_liquidate",
+      "manipulationInputRaw": "5000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270917,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2018065336300455"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207853 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h0YsU1v7//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23213 of 1229268 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA8gUqAQAAAC906ykBAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAPIFKgEAAAAvdOspAQAAACChBwAAAAAAYHyJZAYAAAAAAAAAAAAAAMp5KlgEAAAAAAAAAAAAAACWklBT+YwDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135128 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd L3TrKQEAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2018065336300455",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17882 of 1172414 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc p/OAc2srBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72340 of 1201423 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi p/OAc2srBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_10000_oracle",
+      "manipulationInputRaw": "10000000000",
+      "err": null,
+      "unitsConsumed": 231854,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2018278144165996",
+          "borrowRateX15": "2018278144165996"
+        }
+      ],
+      "attackerUsdgPostRaw": "20000000000",
+      "attackerUsdcPostRaw": "39993275901",
+      "attackerUsdgDeltaRaw": "-10000000000",
+      "attackerUsdcDeltaRaw": "9993275901",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19658 of 1258274 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207853 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hA7ZarP3//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23220 of 1229275 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA5AtUAgAAAP1JpVMCAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAOQLVAIAAAD9SaVTAgAAAEBCDwAAAAAAGIaNjgcAAAAAAAAAAAAAAPyjcC4DAAAAAAAAAAAAAADca1D0YYwDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135128 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd /UmlUwIAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2018278144165996",
+        "Program log: smart_col_exchange_rate: 2018278144165996",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33277 of 1201423 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc bEjX/5wrBwAAAAAAAAAAAGxI1/+cKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_10000_liquidate",
+      "manipulationInputRaw": "10000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 271061,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2018278144165996"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207853 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hA7ZarP3//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23220 of 1229275 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA5AtUAgAAAP1JpVMCAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAOQLVAIAAAD9SaVTAgAAAEBCDwAAAAAAGIaNjgcAAAAAAAAAAAAAAPyjcC4DAAAAAAAAAAAAAADca1D0YYwDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135128 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd /UmlUwIAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2018278144165996",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 18023 of 1172414 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc bEjX/5wrBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72484 of 1201423 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi bEjX/5wrBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_15000_oracle",
+      "manipulationInputRaw": "15000000000",
+      "err": null,
+      "unitsConsumed": 231589,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2018633115769606",
+          "borrowRateX15": "2018633115769606"
+        }
+      ],
+      "attackerUsdgPostRaw": "15000000000",
+      "attackerUsdcPostRaw": "44985039309",
+      "attackerUsdgDeltaRaw": "-15000000000",
+      "attackerUsdcDeltaRaw": "14985039309",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19656 of 1258273 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207856 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hM3LSgvz//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23218 of 1229276 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA1hF+AwAAAM2NLX0DAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuANYRfgMAAADNjS19AwAAAGDjFgAAAAAA0I+RuAgAAAAAAAAAAAAAACxg6AQCAAAAAAAAAAAAAABX6By7yosDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135125 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd zY0tfQMAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2018633115769606",
+        "Program log: smart_col_exchange_rate: 2018633115769606",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33015 of 1201426 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc BhvMpe8rBwAAAAAAAAAAAAYbzKXvKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_15000_liquidate",
+      "manipulationInputRaw": "15000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 270921,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2018633115769606"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207856 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hM3LSgvz//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23218 of 1229276 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA1hF+AwAAAM2NLX0DAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuANYRfgMAAADNjS19AwAAAGDjFgAAAAAA0I+RuAgAAAAAAAAAAAAAACxg6AQCAAAAAAAAAAAAAABX6By7yosDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135125 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd zY0tfQMAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2018633115769606",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17892 of 1172417 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc BhvMpe8rBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 72347 of 1201426 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi BhvMpe8rBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_19000_oracle",
+      "manipulationInputRaw": "19000000000",
+      "err": null,
+      "unitsConsumed": 231661,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2019019357647143",
+          "borrowRateX15": "2019019357647143"
+        }
+      ],
+      "attackerUsdgPostRaw": "11000000000",
+      "attackerUsdcPostRaw": "48976113147",
+      "attackerUsdgDeltaRaw": "-19000000000",
+      "attackerUsdcDeltaRaw": "18976113147",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19657 of 1258158 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207745 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hBX7vlPv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23213 of 1229160 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA/nxsBAAAAPuBEGsEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAP58bAQAAAD7gRBrBAAAAOD9HAAAAAAAMDH7pgkAAAAAAAAAAAAAAP5rBRcBAAAAAAAAAAAAAAAyBbzbUYsDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135235 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd +4EQawQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2019019357647143",
+        "Program log: smart_col_exchange_rate: 2019019357647143",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32977 of 1201316 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc J3Gbk0ksBwAAAAAAAAAAACdxm5NJLAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_19000_liquidate",
+      "manipulationInputRaw": "19000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 273056,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2019019357647143"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207745 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hBX7vlPv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23213 of 1229160 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEA/nxsBAAAAPuBEGsEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAP58bAQAAAD7gRBrBAAAAOD9HAAAAAAAMDH7pgkAAAAAAAAAAAAAAP5rBRcBAAAAAAAAAAAAAAAyBbzbUYsDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135235 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd +4EQawQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2019019357647143",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17873 of 1172307 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc J3Gbk0ksBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 74372 of 1201316 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi J3Gbk0ksBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_20000_oracle",
+      "manipulationInputRaw": "20000000000",
+      "err": null,
+      "unitsConsumed": 231655,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2019130112388827",
+          "borrowRateX15": "2019130112388827"
+        }
+      ],
+      "attackerUsdgPostRaw": "10000000000",
+      "attackerUsdcPostRaw": "49973557249",
+      "attackerUsdgDeltaRaw": "-20000000000",
+      "attackerUsdcDeltaRaw": "19973557249",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19656 of 1258162 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207743 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h/7N7Wfv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23220 of 1229165 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAyBeoBAAAAAFMhKYEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAMgXqAQAAAABTISmBAAAAICEHgAAAAAAiJmV4gkAAAAAAAAAAAAAAPihkdsAAAAAAAAAAAAAAAA5c6mnM4sDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135237 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd AUyEpgQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2019130112388827",
+        "Program log: smart_col_exchange_rate: 2019130112388827",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32969 of 1201314 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 264aXWMsBwAAAAAAAAAAANuuGl1jLAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_20000_liquidate",
+      "manipulationInputRaw": "20000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 273060,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2019130112388827"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207743 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h/7N7Wfv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23220 of 1229165 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAyBeoBAAAAAFMhKYEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAMgXqAQAAAABTISmBAAAAICEHgAAAAAAiJmV4gkAAAAAAAAAAAAAAPihkdsAAAAAAAAAAAAAAAA5c6mnM4sDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135237 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd AUyEpgQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2019130112388827",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17869 of 1172305 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 264aXWMsBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 74374 of 1201314 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi 264aXWMsBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_21000_oracle",
+      "manipulationInputRaw": "21000000000",
+      "err": null,
+      "unitsConsumed": 231674,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2019246542498215",
+          "borrowRateX15": "2019246542498215"
+        }
+      ],
+      "attackerUsdgPostRaw": "9000000000",
+      "attackerUsdcPostRaw": "50970871659",
+      "attackerUsdgDeltaRaw": "-21000000000",
+      "attackerUsdcDeltaRaw": "20970871659",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19658 of 1258161 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207741 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hleQJHvv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229162 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAkrLjBAAAAGsb9uEEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAJKy4wQAAABrG/bhBAAAACALIAAAAAAA4AEwHgoAAAAAAAAAAAAAAI7SH6AAAAAAAAAAAAAAAACM8Bh1FYsDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135240 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd axv24QQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2019246542498215",
+        "Program log: smart_col_exchange_rate: 2019246542498215",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32985 of 1201311 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc pynheH4sBwAAAAAAAAAAAKcp4Xh+LAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_21000_liquidate",
+      "manipulationInputRaw": "21000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 273069,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2019246542498215"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207741 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hleQJHvv//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229162 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAkrLjBAAAAGsb9uEEAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAJKy4wQAAABrG/bhBAAAACALIAAAAAAA4AEwHgoAAAAAAAAAAAAAAI7SH6AAAAAAAAAAAAAAAACM8Bh1FYsDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135240 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd axv24QQAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2019246542498215",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17877 of 1172302 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc pynheH4sBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 74380 of 1201311 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi pynheH4sBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_22000_oracle",
+      "manipulationInputRaw": "22000000000",
+      "err": null,
+      "unitsConsumed": 231700,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2019368647012567",
+          "borrowRateX15": "2019368647012567"
+        }
+      ],
+      "attackerUsdgPostRaw": "8000000000",
+      "attackerUsdcPostRaw": "51968056402",
+      "attackerUsdgDeltaRaw": "-22000000000",
+      "attackerUsdcDeltaRaw": "21968056402",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19656 of 1258159 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207741 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hrg+a4vr//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229162 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAXE0fBQAAAFLwZR0FAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAFxNHwUAAABS8GUdBQAAAMCRIQAAAAAAOGrKWQoAAAAAAAAAAAAAAKf9r2QAAAAAAAAAAAAAAAB4YwpE94oDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135240 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd UvBlHQUAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2019368647012567",
+        "Program log: smart_col_exchange_rate: 2019368647012567",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33011 of 1201311 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 1zDg5posBwAAAAAAAAAAANcw4OaaLAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_22000_liquidate",
+      "manipulationInputRaw": "22000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 273079,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2019368647012567"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207741 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hrg+a4vr//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229162 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAXE0fBQAAAFLwZR0FAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuAFxNHwUAAABS8GUdBQAAAMCRIQAAAAAAOGrKWQoAAAAAAAAAAAAAAKf9r2QAAAAAAAAAAAAAAAB4YwpE94oDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135240 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd UvBlHQUAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2019368647012567",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17890 of 1172302 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 1zDg5posBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 74390 of 1201311 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi 1zDg5posBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    },
+    {
+      "label": "sell_23000_oracle",
+      "manipulationInputRaw": "23000000000",
+      "err": null,
+      "unitsConsumed": 231712,
+      "wireBytes": 977,
+      "addressCount": 24,
+      "instructionCount": 3,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "supplyRateX15": "2019496424794093",
+          "borrowRateX15": "2019496424794093"
+        }
+      ],
+      "attackerUsdgPostRaw": "7000000000",
+      "attackerUsdcPostRaw": "52965111504",
+      "attackerUsdgDeltaRaw": "-23000000000",
+      "attackerUsdcDeltaRaw": "22965111504",
+      "lastLogs": [
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19659 of 1258158 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC t/5aVvYAAACyCOJR+wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207737 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hMDUsp/r//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229158 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAJuhaBQAAANDK01gFAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuACboWgUAAADQytNYBQAAAGAYIwAAAAAAkNJklQoAAAAAAAAAAAAAACkjQikAAAAAAAAAAAAAAABLsn0U2YoDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135246 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 0MrTWAUAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2019496424794093",
+        "Program log: smart_col_exchange_rate: 2019496424794093",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33017 of 1201305 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 7WcGp7gsBwAAAAAAAAAAAO1nBqe4LAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "label": "sell_23000_liquidate",
+      "manipulationInputRaw": "23000000000",
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6027
+          }
+        ]
+      },
+      "unitsConsumed": 273087,
+      "wireBytes": 1407,
+      "addressCount": 33,
+      "instructionCount": 4,
+      "requiredSignatures": 1,
+      "oracleReturns": [
+        {
+          "supplyRateX15": "2017994830939202",
+          "borrowRateX15": "2017994830939202"
+        },
+        {
+          "liquidationRateX15": "2019496424794093"
+        }
+      ],
+      "attackerUsdgPostRaw": null,
+      "attackerUsdcPostRaw": null,
+      "attackerUsdgDeltaRaw": null,
+      "attackerUsdcDeltaRaw": null,
+      "lastLogs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1207737 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: tAhRRxOErQiJ3AQT1XCq2Y9Ezs9XhqWmuOhXW4sMu6BLSpb0LskJnMb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hMDUsp/r//////////////wAAAAAAAAAAAAAAAAAAAAAeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwu8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 23219 of 1229158 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 8GlaTPMAAABsoqIG9wAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program data: yvLkHCXCNCIHAAEAJuhaBQAAANDK01gFAAAAHjtqy+vS8NgfhjIH8qGOUtMwZzdrnAaB2lFxHPPK7C4=",
+        "Program data: k/WGuEchdPYHAAEeO2rL69Lw2B+GMgfyoY5S0zBnN2ucBoHaUXEc88rsLh47asvr0vDYH4YyB/KhjlLTMGc3a5wGgdpRcRzzyuwuACboWgUAAADQytNYBQAAAGAYIwAAAAAAkNJklQoAAAAAAAAAAAAAACkjQikAAAAAAAAAAAAAAABLsn0U2YoDAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 135246 of 1336551 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 0MrTWAUAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi invoke [1]",
+        "Program log: Instruction: LiquidatePerfectDex",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetExchangeRateLiquidate",
+        "Program log: smart_col_exchange_rate: 2019496424794093",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 17893 of 1172296 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 7WcGp7gsBwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/vaults/src/state/structs.rs:537. Error Code: VaultInvalidLiquidation. Error Number: 6027. Error Message: VAULT_INVALID_LIQUIDATION.",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi consumed 74392 of 1201305 compute units",
+        "Program return: jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi 7WcGp7gsBwAAAAAAAAAAAA==",
+        "Program jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi failed: custom program error: 0x178b"
+      ]
+    }
+  ]
+}

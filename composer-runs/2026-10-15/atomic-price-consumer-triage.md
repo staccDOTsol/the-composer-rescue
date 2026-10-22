@@ -1,0 +1,39 @@
+# Atomic AMM price consumer triage — 2026-10-15
+
+**Result:** One high-value AMM-state consumer was exercised on the current mainnet binary with complete atomic v1 flash-loan repayment. The tested outsider-callable paths showed **no positive net outsider gain**. Reproducible third-party drain: **$0**. This is a bounded sample, not a claim about every executable or strategy.
+
+## Surface and candidate ordering
+
+The broader campaign has **77,715** current executable IDs in a loader census and **ten named AMM executable families assigned**, as counted in [the surface ledger](./outsider-atomic-amm-surface.md). Those are separate denominators: neither is a count of validated AMM price consumers. For this cross-protocol pass I traced five consumer/controller families; **one** had a directly reachable AMM pool-state read in the sampled outsider-callable mint/withdraw instructions.
+
+| Rank | Consumer and value | AMM-state dependency and outsider path | Next-step judgment |
+| --- | --- | --- | --- |
+| 1 | Kamino Liquidity `6LtLpnUFNByNXLyCoK9wA2MykKAmQNZKBdY8s47dehDc`; five verified strategies hold ~$46.93M attributable Orca positions, led by PYUSD/USDC `Hmj82e48X9LNW8LeMLk186iE4UKPoUwWuLwoiqMpUiGm` at ~$16.74M | `deposit` passes live Orca pool `9tXiuRRw7kbejLhZXtxDxYs2REe43uH2e7k1kocgdM9B`, position, ticks, and Scope prices; `withdraw` passes live pool/position/ticks and performs Orca CPI. A permissionless share owner can call both. | **Tested** with `KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD` zero-rate USDC flash, Orca `whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc` forward/reverse swaps, full repay. See below. |
+| 2 | Kamino Kvault `KvauGMspG5k6rtzrqqn7WNn3oZdyKqLKwK2XWQ8FLjd`; partial priced PYUSD/USDC claims ~$380.25M, overlapping KLend | Sampled deposit/withdraw source refreshes KLend reserves and cToken claims of the **same mint**. No Orca/Raydium/DLMM spot account appears in those instructions. | Indirect AMM mark through external oracle feeds would need feed provenance; no direct same-transaction spot consumption established. |
+| 3 | Meteora Dynamic Vault `24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi`; sampled USDC vault ~$9.77M total accounting amount | Current-binary deposit/withdraw and strategy path use same-mint token vault, LP supply, and Jupiter Lend reserve/strategy state. No separate AMM spot input in sampled calls. | Direct AMM manipulation target is the integrating DAMM pool itself, assigned elsewhere. Dynamic Vault user exit requires own LP. |
+| 4 | Jupiter Fluid/Jupiter Lend sampled lending `jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9`, vault `jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi`, and oracle `jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc` paths | Oracle source module list uses Pyth, Chainlink, Redstone, stake-pool exchange rates, Marinade state, and Jupiter Lend reserve exchange rate. No direct Orca/Raydium/DLMM spot reader in the inspected module list. | Feed-configuration-specific AMM dependency remains to be proved on current accounts. |
+| 5 | Sanctum INF `5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx` sampled pricing/controller paths | The examined priced states are stake-pool/INF reserves, not a direct AMM pool spot. | Separate stake-pool exchange-rate and reserve-order tests continue; no AMM spot consumer established here. |
+
+The Kliquidity deployed binary was independently dumped at slot 457348296 (SHA-256 `ada7cbbbe96aaf2508dcfa0bd5de4534df5173e1b18435ee585907fbaac7402e`); the official SDK IDL and recent accepted transactions match the tested instruction shapes. Exact source-to-binary reproduction is **not** established. The current-binary custody evidence and prior control simulations are in [kliquidity-current-audit.json](./kliquidity-current-audit.json).
+
+## Replayed current-mainnet v1 composition
+
+The selected KLend USDC reserve `AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z` had decoded `flashFeeSf = 0` and `7,868,315.584088` USDC available in the retained zero-fee census. Its flash borrow→repay positive control succeeded on the current binary. The PYUSD/USDC Orca SwapV2 and Kamino Liquidity deposit/withdraw instructions were reconstructed from successful current-deployment transactions; exact source signatures and resolved account lists are saved in [the script](./atomic-price-consumer-kliquidity.js) and [simulation evidence](./atomic-price-consumer-kliquidity.json).
+
+All calls used the documented Solana v1 4,096-byte envelope with no ALTs, `simulateTransaction`, `sigVerify: false`, and no submitted transaction. Synthetic signer flags represent an account holder or a collaborating funder, not possession of their keys. Each successful row includes final wallet/share/reserve state after a **complete** KLend repay.
+
+For the successful 1M deposit/withdraw and 7M funded-share exit controls, the KLend USDC supply vault returned exactly to its pre-transaction raw balance `8,011,866,865,998`, and the fee vault stayed at zero. That distinguishes economic gains or losses from temporarily borrowed principal.
+
+| Path | Observed v1 envelope | Final economics |
+| --- | --- | --- |
+| 100,000 USDC zero-rate flash → Orca B→A → Kliquidity deposit → reverse Orca A→B → Kliquidity withdraw newly minted shares → repay | 1,622 bytes, 38 keys, ~604k CU; success | Wallet starts 0.004721 PYUSD + 3,642.811711 USDC, zero shares; ends 1.015991 PYUSD + 3,621.799652 USDC, zero shares. Combined near-dollar token value **down ~20.0008**. Reversing withdraw/swap order also loses ~20.0008. |
+| Same deposit/share roundtrip with 1,000,000 USDC flash | 1,622 bytes, 38 keys, ~630k CU; success | Ends 1.021809 PYUSD + 3,441.810172 USDC, zero shares; combined near-dollar token value **down ~199.9845**. Reverse order loses ~199.9844. Share mint/burn matches; no repeated claim. |
+| 100,000 USDC flash → holder withdraws 20,000,000,000 share units → reverse → repay | 1,472 bytes, 35 keys, ~375k CU; success | Same share burn as no-flash baseline, but output is lower by ~20 near-dollar units. |
+| 1,000,000 USDC flash → holder withdraws 150,000,000,000 share units → reverse → repay | 1,472 bytes, 35 keys, ~398k CU; success | Same share burn as no-flash baseline, but output is lower by ~200 near-dollar units. |
+| Funded holder: 3,000,000 and 7,000,000 USDC flash → withdraw 178,000,000,000 share units → reverse → repay | 1,618 bytes, 37 keys, ~432k and ~502k CU; both succeed | A second synthetic signer first contributes 2,000 USDC to cover swap costs; both wallet deltas are counted. Matched no-flash withdrawal is ~545.830875 near-dollar units. The 3M route is lower by ~599.8967; the 7M route lower by ~1,399.5503. |
+
+The `deposit` path reads the manipulated pool but checks it against Scope prices. At current slot ~457351557, 2.5M, 3M, and 7M USDC forward moves reached `deposit` and failed there with **`OrcaPriceTooDifferentFromScope` (6059)**, before any value-bearing deposit transfer. A 2M move passed in one nearby simulation but failed 6059 in another; the edge depends on changing pool/oracle state. `withdraw` could execute after 7M movement, but burns precisely the holder's shares and underperforms its same-share baseline. A failed unpaid flash replay is not evidence of a partial payout because the transaction rolls back.
+
+## Limits and next work
+
+This pass covered one PYUSD/USDC strategy and two current outsider-callable Kliquidity instruction families under one zero-rate USDC flash reserve. Other Kliquidity strategies, token pairs, fees, and non-spot oracle dependencies remain distinct targets. The comparison uses raw near-dollar PYUSD/USDC units; final dollar value would also depend on external prices and transaction costs, which only worsen the observed negative outcomes. The identified price guard and share burn support the bounded conclusion above; neither proves a global absence of vulnerabilities.

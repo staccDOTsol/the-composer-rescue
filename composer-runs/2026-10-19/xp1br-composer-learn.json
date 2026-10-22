@@ -1,0 +1,3549 @@
+{
+  "address": "XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy",
+  "cached": true,
+  "caveats": [
+    "a name shown here comes from another program that declared the same discriminator, not from this one — treat it as a strong hint, not a fact. `ix_<hex>` means no published IDL anywhere declares it.",
+    "an account marked `constant` was the same address in every sample, which usually means a fixed global — but a program used by only one caller will look that way too.",
+    "argument layout is NOT decoded. `argsHex` below is the observed bytes after the discriminator — pass them back verbatim as `argsHex` on the instruction spec. Without that the transaction carries the right accounts and an EMPTY payload, which the program will reject."
+  ],
+  "evidence": {
+    "discriminatorBytes": 1,
+    "distinctDiscriminators": 7,
+    "encoding": "not anchor: selector inferred from the data",
+    "encodingConfident": true,
+    "instructionSamples": 433,
+    "instructionsNamed": 0,
+    "rainbowEntries": 23302,
+    "seedBudgetExhausted": true,
+    "seedCandidates": 5071,
+    "seedDerivationsTried": 4342847,
+    "seedDictionary": 3868,
+    "seedLiteralsFromBinary": 1218,
+    "signaturesScanned": 250,
+    "transactionsParsed": 250
+  },
+  "howToUse": "pass this whole object as `idl` to /tx/build or /tx/batch. Account names are positional (`account_0`...) because transactions do not carry names; anything with a `pda` block is derived for you, the rest you supply.",
+  "instructions": [
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXNVmUwozu9QE6fGgX1reQDLLNXiKdaXQhGf9WnD",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "4hsu29PdUpfX9r7xbmHRhQDgnmSJVfKB7joJXHsPj8yd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "56McBSKG51H2RMQgiMTQqs39Jm6GAK6rVUpTWsXPKo8EWfyLPPCH6Y7YZJGHXXEqPmCpgK5XHFQugds9rNFQtM2U",
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav"
+      ],
+      "name": "ix_07#4",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 238,
+      "samplesGained": 35,
+      "samplesLost": 203,
+      "shapeNote": "selector 07 appears with several account counts; this is the 4-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWa3fTK2HDNsn1j6STWDY4qPRJnmd65TwKGGRCAi",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7sbRVngB9gnHBKUFLVHy5kvrykYjsgVsqaUa28XZAKJw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "Fy7SiHCwMzNMXYgygQhpYvjSg23G8B9TfZm3mHNgy6Bu",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "6XPT3FnRn3MBpBX3rAyBtd4AXBeGeCdChmTbfVPYnorN",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "Fy7SiHCwMzNMXYgygQhpYvjSg23G8B9TfZm3mHNgy6Bu",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7NSpRqs1ZNiZharyTwKyprfanQsaPprZSm1z84nVsbKn",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 27 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 27 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "2f081f280c000000",
+        "23111f280c000000",
+        "01fc6a280a000000"
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        6
+      ],
+      "exampleSignatures": [
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "2tnvGujdVCUzijtSgMzcwfTSPGioVYMNBpB6y6mJfNokHpg2nAuRMYmQw5dmDenxQseBTw54YApBxHBQkMpQLZKr"
+      ],
+      "name": "ix_06#9",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 27,
+      "samplesGained": 19,
+      "samplesLost": 8,
+      "shapeNote": "selector 06 appears with several account counts; this is the 9-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeY63vF1d6m4Ec9dVrBgR8yyZjpv2MA3rmhf9gQeV",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "DHAupLaxZbuaJ8Ucpi2MB2qxtBSYAmAzMnFLajpEyiUo",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa"
+      ],
+      "name": "ix_07#6",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 27,
+      "samplesGained": 8,
+      "samplesLost": 19,
+      "shapeNote": "selector 07 appears with several account counts; this is the 6-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXnCYxGeZstLs6wtQ7u7pRa99vNADmzstDufStog",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "45caweGjycv1EEyNCyrUZxFfsCoREziLhe9TeZ9pKHiw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "ESSpPVSqfyxcP2tV46QoRcDuMWKbJ8LNANYB3eqNsmdP",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp"
+      ],
+      "name": "ix_07#3",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 23,
+      "samplesGained": 10,
+      "samplesLost": 13,
+      "shapeNote": "selector 07 appears with several account counts; this is the 3-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "CAupqT2pnJ51116xnvMqffyzbZsRXsEnZx7YVHLiyy7m",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 21/21 samples (searched 7 combinations)",
+          "name": "account_4",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_5"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXNVmUwozu9QE6fGgX1reQDLLNXiKdaXQhGf9WnD",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "4hsu29PdUpfX9r7xbmHRhQDgnmSJVfKB7joJXHsPj8yd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXCBFStnamHYXqHFuPVRFyfytkG1JEKGxJqWLwv9",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "Hm9gFaFDZkKSUzoFQixSVRW1WB4p67Bc9jh5v67Uy6Cg",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 21 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "a919659909000000",
+        "2c19b5f400000000",
+        "fa7ca4cd04000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        2
+      ],
+      "exampleSignatures": [
+        "2tnvGujdVCUzijtSgMzcwfTSPGioVYMNBpB6y6mJfNokHpg2nAuRMYmQw5dmDenxQseBTw54YApBxHBQkMpQLZKr",
+        "53YhsFnjYiKyo6boNgVrEsaDzYqC4Z3o7f9qNFrW7R7vw2gqmuimF3W62XFm6L2AMZDGqtEhigVXKtf8nPwbiPxt",
+        "hRkKDKcELMrEdQmjgPztwqfY3LuKQJfurtjb3njzXHGKcySJsMZQqpyQxcWbTGoUAamXADDo6Rz9pv7qC6uqbaf"
+      ],
+      "name": "ix_02#10",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 21,
+      "samplesGained": 21,
+      "samplesLost": 0,
+      "shapeNote": "selector 02 appears with several account counts; this is the 10-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWa3fTK2HDNsn1j6STWDY4qPRJnmd65TwKGGRCAi",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7sbRVngB9gnHBKUFLVHy5kvrykYjsgVsqaUa28XZAKJw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "Fy7SiHCwMzNMXYgygQhpYvjSg23G8B9TfZm3mHNgy6Bu",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "6XPT3FnRn3MBpBX3rAyBtd4AXBeGeCdChmTbfVPYnorN",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "Fy7SiHCwMzNMXYgygQhpYvjSg23G8B9TfZm3mHNgy6Bu",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3Uf9ukCCFdpLpqiUUrG9b7pAz2cdgDTru4c3TuXq7S3i",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 14 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 14 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "4553122e0c000000",
+        "2f081f280c000000",
+        "d29e31d408000000"
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        5
+      ],
+      "exampleSignatures": [
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4YK21MYmYfvqeEHHmmr8P3r7L8j8gAEwKx5kNSpPvm44fAgEgJKVyoZqa4v1sQSaqf8wBm3bwyUGd55CHVkA29BL"
+      ],
+      "name": "ix_05#9",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 14,
+      "samplesGained": 5,
+      "samplesLost": 9,
+      "shapeNote": "selector 05 appears with several account counts; this is the 9-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeY63vF1d6m4Ec9dVrBgR8yyZjpv2MA3rmhf9gQeV",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "DHAupLaxZbuaJ8Ucpi2MB2qxtBSYAmAzMnFLajpEyiUo",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BRtkvQ6oBYSRZExMpa5zVrU3cDzpp9RxQsbfVK8az9ps",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 13 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 13 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "adecde0700000000",
+        "f3ecde0700000000",
+        "ab1c880600000000"
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        6
+      ],
+      "exampleSignatures": [
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "39KNkVjVup4BnhKNgvhokKWR8sj1RBzT2h1vfaQJ47ffyEpV1h4z93fAQNyJabwauhBgyqTw4SnEwvspn78hmRz1"
+      ],
+      "name": "ix_06#11",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 13,
+      "samplesGained": 7,
+      "samplesLost": 6,
+      "shapeNote": "selector 06 appears with several account counts; this is the 11-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWa3fTK2HDNsn1j6STWDY4qPRJnmd65TwKGGRCAi",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7sbRVngB9gnHBKUFLVHy5kvrykYjsgVsqaUa28XZAKJw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeVrzSkEykVuApG2ETEXBg7qy4H3YiByycuktX2rL",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "Ew9qVM7FMwNpZ6xQ8g4PbKR2tD1EpA3cM21WhVKhPZch",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 12/12 samples (searched 5 combinations)",
+          "name": "account_4",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_3"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 12/12 samples (searched 21 combinations)",
+          "name": "account_5",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_1"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_3"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 12/12 samples (searched 3 combinations)",
+          "name": "account_6",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_2"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 12 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 12 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "908c920600000000",
+        "a402df7c00000000",
+        "b4b6a04700000000"
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        1
+      ],
+      "exampleSignatures": [
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4vK13WnsWjyNiPKWVXaj5BHuRUKZQg3S8KGQPo7fZchxYPeUZUmPNxoMAGnPSdxDks9ZCQnXUQfXnQGvU3Fni99W",
+        "4YK21MYmYfvqeEHHmmr8P3r7L8j8gAEwKx5kNSpPvm44fAgEgJKVyoZqa4v1sQSaqf8wBm3bwyUGd55CHVkA29BL"
+      ],
+      "name": "ix_01#10",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 12,
+      "samplesGained": 3,
+      "samplesLost": 9,
+      "shapeNote": "selector 01 appears with several account counts; this is the 10-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 8/8 samples (searched 7 combinations)",
+          "name": "account_4",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_5"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeY63vF1d6m4Ec9dVrBgR8yyZjpv2MA3rmhf9gQeV",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "DHAupLaxZbuaJ8Ucpi2MB2qxtBSYAmAzMnFLajpEyiUo",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeVy328ajS2Da1WdwxppXY5jRFiM3tBRfz6xtuAkx",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GcmF62PMDPTw9DcpQKsMa1mo6DZv4nQoHZVWocKhVTsd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 8 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_11",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "20b2040000000000",
+        "f218020000000000",
+        "5ea9040000000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        2
+      ],
+      "exampleSignatures": [
+        "VmAh2iHgUUfShLCdMXMhbvFpGgAexE4qugtEoxqgBhpyB4Z4BMofZh8JxnSZF6QE9kohooMQcSRPXdVNCG3WRQi",
+        "A77BVGU9BDFC1YAo5qigSprhd7rGoffwb5Rkbwregx25dLymYbrQ8Gzj9Ld9Mo2aZGjTW5mV4qpiNehtN8yiCGH",
+        "2zqZMNWpxm1GD9ofyHS2N28EThnppuq1KkJYGe5KLSePiMmRaSKfeAcB1Xigi8nKMAA73yDAz2Fy5FSbXfzX6BSs"
+      ],
+      "name": "ix_02#12",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 8,
+      "samplesGained": 8,
+      "samplesLost": 0,
+      "shapeNote": "selector 02 appears with several account counts; this is the 12-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWa3fTK2HDNsn1j6STWDY4qPRJnmd65TwKGGRCAi",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7sbRVngB9gnHBKUFLVHy5kvrykYjsgVsqaUa28XZAKJw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "Fy7SiHCwMzNMXYgygQhpYvjSg23G8B9TfZm3mHNgy6Bu",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "6XPT3FnRn3MBpBX3rAyBtd4AXBeGeCdChmTbfVPYnorN",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 8 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        10
+      ],
+      "exampleSignatures": [
+        "4JjDsPVbHEwx6LyFh5oDhmFKeBPDS3wZEKwA41vHtN5a4XLS3HqWnPJFU8xWH35LWnGmfjVCm3PFbBDhMgkWpwav",
+        "4SUYfRj4qVsAA5kp15VBFuJ36V7jeJa9FRyfvjiNCqPrnRJLMHdvyoxiXvztzhtHrSYPBtb8vL3SVbbtXenS7XNu",
+        "4njVH35k2Gq9ErxbgjLEiGf2bNBGcbN4g2LGeHfkNgtBbPuHbKG3HUx48wb61EHSPLmrXb9B5d5SqiV7tJomfzpm"
+      ],
+      "name": "ix_0a#6",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 8,
+      "samplesGained": 2,
+      "samplesLost": 6,
+      "shapeNote": "selector 0a appears with several account counts; this is the 6-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+          "evidence": "identical in all 6 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+          "evidence": "identical in all 6 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GAMLeeUkCRFEbmTE9AUXZqh2FpxntDvRUBK92atWjLLq",
+          "evidence": "identical in all 6 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "P6LhSPjKmcRhLNc8QUMngYBhmQb9MPhdMbLrWA93jsa",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 6 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 6 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+          "evidence": "identical in all 6 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb",
+          "evidence": "identical in all 6 samples",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "EFh4seS6ijesiDmetFKN5wc7TeuD87QSYkNJuhrDfJMH",
+          "evidence": "identical in all 6 samples",
+          "name": "account_10",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "a7fbeb0700000000",
+        "adecde0700000000",
+        "8af1920600000000"
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        5
+      ],
+      "exampleSignatures": [
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "39KNkVjVup4BnhKNgvhokKWR8sj1RBzT2h1vfaQJ47ffyEpV1h4z93fAQNyJabwauhBgyqTw4SnEwvspn78hmRz1"
+      ],
+      "name": "ix_05#11",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 6,
+      "samplesGained": 0,
+      "samplesLost": 6,
+      "shapeNote": "selector 05 appears with several account counts; this is the 11-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "address": "6okwTPx6nqT4j6nnuy9VV6Co3NXdFLnqYEUvSgYXzywd",
+          "evidence": "identical in all 5 samples",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "address": "2JqgD3RkGVUk62rrkULcNLS8y9qKgpd5VQfVF3PiMCdZ",
+          "evidence": "identical in all 5 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "HJR45sRiFdGncL69HVzRK4HLS2SXcVW3KeTPkp2aFmWC",
+          "evidence": "identical in all 5 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "7mSn5MoBjyRLKoJShgkep8J17ueGG8rYioVAiSg5YWMF",
+          "evidence": "identical in all 5 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "DvhXV68YnA43KsnkKxnT2zW5ERj4vMPDwKB7nvFHyZdT",
+          "evidence": "identical in all 5 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "Gt9S41PtjR58CbG9JhJ3J6vxesqrNAswbWYbLNTMZA3c",
+          "evidence": "identical in all 5 samples",
+          "name": "account_5",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        571,
+        573,
+        574
+      ],
+      "args": [],
+      "argsHex": [
+        "39020000a0078000094baebfda9b87680d8e59aa20a3e565126640ee7caeab3cd965e5568b17ee006a01000c03f9f7d26a1f001004000000016a2000010100e0010566010000017a20001002c00000017e64006e010080e000076185d4b7a4961db969a90353e84a18a0125388535e6dda0f0faeeb4e8f516e3d000c6ad5d8d4e62000107780eae08966bc00185d5f4e8e59abbb72600004fd656280001c0e3dab5ca62d02936e4000f0c9000000060617638aa55f9a242dad010b9a4ae2e129dd1c4b613a22ef559cf14601ca3857dabebac1c7ed29b1d698e9788ec9469bb26e9aadb99010601482aa4028fb95f6e363c6997378c7883b6b51a312aa5b6b13c4af5e50436db24eb8c2b10a66db1f63c83b89ea92a2e1049114edaf448866f407fe9628a2a2e101b771d7b587eb4a9b4bfcd2067c9ca7b290fe8399c0288e29d437a670805867dae0e0c982fc9763e93e49949d8f6ddc52f3295e3bba7a3b7e469009351aaa275bd8d747dba41b5800000000000001cb520100f0c00624a30f049371813e8cf9e21fc90e8503aa87b3c4a737ecc702b01ce071a86cad6dc6d84dc387a2338a7b2d48d8c8d2819efd56c4e273aa54b43400ce3a06eaa471cd347898e4e490655ae7323d6568a147e5fd0a0ea9533399ba7cb5ec31dd727f5af59801f7ed36b47dca462c27f6db4dfc3ff256f9f495c40f3a4597a48def2405f0bbbe7c0d28baf933bf44ece699c42e0b3d0bf9f57d6d942110ff8f9c004504dd11b86d05fed2037a12299cee54108b2ddbb859858b89d5f7075491f3ed",
+        "3a020000a0078000094baebfda9b87680d8e59aa20a3e565126640ee7caeab3cd965e5568b17ee006a01000c03f9f3096a1f001004000000016a2000010100e0010566010000017a20001402c00001010182660066010080e000076185d4b7a4961db969a90353e84a18a0125388535e6dda0f0faeeb4e8f51663b001400006ad5d552e620001477a71b5e55c4624000185d67b0ccffd922622000018004fd626280001c0e3daad8d66388fe01286a0100f0c206ce115e2c9d7acc238d7ed96276e002bc2f748395127783dfc64458a0003bc57b81f0d85e086f0958c36dad3751a50bd66b20a99618c1b6ea42b2daebef28bfbb8ad3c8d9a7b91d5dae2cad525af2d2bf9584fa5c94b5a415a650df55f3c2c4607f64fb04ddb887743e36999b10f295a030d76c919e97732615892872b144b05f70b1a3590ac57cbd2bab69133940591cd0cd9801771ad11760d4ef571e69681e0b5dd982439770de61f152e84303553ab81885f43eb916e2c252bb2d1ddb755c00006ade00f0c20000064d9f02c6eb807ead4bbd5c5bb24a3428a3bcc40a1dd8706219c26fdcf3fec8391e49769ef7894fd0737ca5a555267e00932bb60cc7672b3ebe3707968826b6201809704c15023893ffeb4f89b208a4dbc4e8472e1b9ef94b826b62931dc37b721ebd2bb1f8bd47e04a3b41adf1ce5041c0cbce10ee46f812725aea4c2ef82313045ba06da8adc0d6ff1a6a6bce258a9035ef04fcf714ac2898625ee5e4f388dd248c3baabaa0cc83199f30d4951f5055827aea7cfdc28c80b0a46b83eb0abd56",
+        "37020000a0078000094baebfda9b87680d8e59aa20a3e565126640ee7caeab3cd965e5568b17ee006a01000c03f9ee406a1f001004000000016a2000010100e0010566010000017a20000802c00101620104d6010080e000076185d4b7a4961db969a90353e84a18a0125388535e6dda0f0faeeb4e8f516e57000c6ad5d1c9e620001477e914b5fb56624000145d7e5b464a57662000140000006afd5e6280001c0e3da086c0bd72a901286a0100f0c206d248471432b492610d451ad93cd216c49baef832774512d6dae85218b3651d3c3705830e020a35af1e81ca799853434434ea9d48cb262b13b59821de03d8dfffa9185c8c6707e34249b6b5f101a0190e0164ab48a49d566a5f4a103c11c0d44d6884c968ac2aa8b89d7aea841d302962ebb90b5dce59b3024aea450ec0c91c48ca64ce2d6da0e5a38a0061abb06b6d4d94ad535413ef0d0492e05e71f6b2372339838eea1082584bbc2d3970f5d7a2527ea5a900e7a72eba1d672c614d184fb500006ade00f0c20000067fd968736863d17fec5d562f6c39e0efbd750b9e51353a35f797c581b9aee168300c85954004b600d76b979c80e0bb1291d24fc09756d0cd048f524bad67dff03830d3ee3c85583f5bd0ccfbcc3e30b2cda2b5c3438b077096abd2406a8a822c4882ff3ffe440faca7b8c4d19ff2dae65495cfe4640b16f3bbac47325adc0a1b76da64f655990fe41a7ff9dcc9410c1cc684d37f003f20336a5c8eeb2d3e517963c9de88e890e2b106722d831c173872ae6deb554e284a5f38e53bf862a76a33"
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        13
+      ],
+      "exampleSignatures": [
+        "35Z6Zy5vSUdkcTo6d7xbPCXs6KvocNfK5bHmGYY8mckuosg7hKccRNqjKPTM2WwCyZgeQCvMBucTfts7GWqz67hD",
+        "5BUUWCYvVn39yurQCL61Z4ZS8Jv8yz4c1z96mxuWGDaxU4gBTHepNmyXz1SzXdnMYFdwr3i6YNViq1gHabHTADi9",
+        "5bUuDxPg56wxfPQZkjK5Tyk4NHmDXnQSnjpVq8vW9YgXmJZkEHjtj2gvqhof869wWgaNJDshbz8qKEwEsPHmnfsK"
+      ],
+      "name": "ix_0d",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 5,
+      "samplesGained": 0,
+      "samplesLost": 5,
+      "shapeNote": "all 5 samples had 6 accounts"
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeY63vF1d6m4Ec9dVrBgR8yyZjpv2MA3rmhf9gQeV",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "DHAupLaxZbuaJ8Ucpi2MB2qxtBSYAmAzMnFLajpEyiUo",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeVy328ajS2Da1WdwxppXY5jRFiM3tBRfz6xtuAkx",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GcmF62PMDPTw9DcpQKsMa1mo6DZv4nQoHZVWocKhVTsd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+            "mintIsAccount": "account_3",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3caiDkKgk7uVpmH8rbFyEQVQUjsvDNmHSAnSShqnz7uz",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+            "mintIsAccount": "account_3",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 4/4 samples (searched 3 combinations)",
+          "name": "account_6",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_2"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 4 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_11",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "87b40d0000000000",
+        "305e0b0000000000",
+        "81cf0c0000000000"
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        1
+      ],
+      "exampleSignatures": [
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "39KNkVjVup4BnhKNgvhokKWR8sj1RBzT2h1vfaQJ47ffyEpV1h4z93fAQNyJabwauhBgyqTw4SnEwvspn78hmRz1",
+        "3s72MUwEtoZJ3bAYnHbqxFXW7q62su1VcSsgzTWwufTCSE7vxBVbcSxcCw2SVxsy1Rm7CKb3EagKVp37VzWbix73"
+      ],
+      "name": "ix_01#12",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 4,
+      "samplesGained": 0,
+      "samplesLost": 4,
+      "shapeNote": "selector 01 appears with several account counts; this is the 12-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "ESSpPVSqfyxcP2tV46QoRcDuMWKbJ8LNANYB3eqNsmdP",
+          "evidence": "identical in all 4 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+          "evidence": "identical in all 4 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "JAEVx3tbuzMT9JnbGTY7eZxJnU8Z5CCaqTfWneh3smob",
+          "evidence": "identical in all 4 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "CQ3zv6J3LRYVLHx1Up4DQ96REeUStDNR4Y8j2N67jCg6",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 4 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 4 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "de9da86001000000",
+        "7171a35a01000000",
+        "09deb58f14000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        5
+      ],
+      "exampleSignatures": [
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "5vkSQzPkmTija8b5aL4aYzo1XJ3cCTp8WM8xbDzUd3tPL5n7WtytLnDbQqoFaZpRUGZiwK17XJufzajaPLHAWELH"
+      ],
+      "name": "ix_05#8",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 4,
+      "samplesGained": 4,
+      "samplesLost": 0,
+      "shapeNote": "selector 05 appears with several account counts; this is the 8-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "address": "55ixo4dpXkh294s1RQBasw4BWeurfpKeMn7ba2Toj66M",
+          "evidence": "identical in all 4 samples",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "ESSpPVSqfyxcP2tV46QoRcDuMWKbJ8LNANYB3eqNsmdP",
+          "evidence": "identical in all 4 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+          "evidence": "identical in all 4 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "HANAx7PEENhL1MnWDhEXj58F8uiK7s7UVBmpnW4PEJX4",
+          "evidence": "identical in all 4 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "JAEVx3tbuzMT9JnbGTY7eZxJnU8Z5CCaqTfWneh3smob",
+          "evidence": "identical in all 4 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "2ksnBs6Nwu37ZbBW8qoXDA2uN555tunMA7kUuMWQyKLQ",
+          "evidence": "identical in all 4 samples",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 4 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 4 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "7171a35a01000000",
+        "469aa35a01000000",
+        "84b06c3614000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        6
+      ],
+      "exampleSignatures": [
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "5vkSQzPkmTija8b5aL4aYzo1XJ3cCTp8WM8xbDzUd3tPL5n7WtytLnDbQqoFaZpRUGZiwK17XJufzajaPLHAWELH"
+      ],
+      "name": "ix_06#8",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 4,
+      "samplesGained": 4,
+      "samplesLost": 0,
+      "shapeNote": "selector 06 appears with several account counts; this is the 8-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXnCYxGeZstLs6wtQ7u7pRa99vNADmzstDufStog",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "45caweGjycv1EEyNCyrUZxFfsCoREziLhe9TeZ9pKHiw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeYLxwL4VqazdG8PcBBJxkWB66aixVgUuV2LUsd95",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "2DHvyiMmV1UkE7WJdT2ev7YPdnosLseNRmE3qNs3yB6P",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 3/3 samples (searched 5 combinations)",
+          "name": "account_4",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_3"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 3/3 samples (searched 19 combinations)",
+          "name": "account_5",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_1"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_3"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "seed recipe reproduces this address in 3/3 samples (searched 3 combinations)",
+          "name": "account_6",
+          "pda": {
+            "program": {
+              "kind": "const",
+              "value": [
+                140,
+                151,
+                37,
+                143,
+                78,
+                36,
+                137,
+                241,
+                187,
+                61,
+                16,
+                41,
+                20,
+                142,
+                13,
+                131,
+                11,
+                90,
+                19,
+                153,
+                218,
+                255,
+                16,
+                132,
+                4,
+                142,
+                123,
+                216,
+                219,
+                233,
+                248,
+                89
+              ]
+            },
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "account_0"
+              },
+              {
+                "kind": "const",
+                "value": [
+                  6,
+                  221,
+                  246,
+                  225,
+                  215,
+                  101,
+                  161,
+                  147,
+                  217,
+                  203,
+                  225,
+                  70,
+                  206,
+                  235,
+                  121,
+                  172,
+                  28,
+                  180,
+                  133,
+                  237,
+                  95,
+                  91,
+                  55,
+                  145,
+                  58,
+                  140,
+                  245,
+                  133,
+                  126,
+                  255,
+                  0,
+                  169
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "account_2"
+              }
+            ]
+          },
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 3 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "evidence": "identical in all 3 samples",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "6d2c050600000000",
+        "852d495900000000",
+        "31420f0000000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        1
+      ],
+      "exampleSignatures": [
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "5vkSQzPkmTija8b5aL4aYzo1XJ3cCTp8WM8xbDzUd3tPL5n7WtytLnDbQqoFaZpRUGZiwK17XJufzajaPLHAWELH",
+        "3BUvsb5SsiibauUGDzQxpEU3sDnjmLUk1TyKw5b3rEeFG5QjT2dWCaX7yGXWgprGL6aiVHdH8QBJoLAHAazzuSo5"
+      ],
+      "name": "ix_01#9",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 3,
+      "samplesGained": 3,
+      "samplesLost": 0,
+      "shapeNote": "selector 01 appears with several account counts; this is the 9-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "address": "A1miRE4nZkNDxwFzLyYm8yRNeYcgNtMHUaCS21qWvrXp",
+          "evidence": "identical in all 3 samples",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "8pzBfLDRjdKosU4AeXFPGTJTjk8ChYTNgMENpPJMwK3c",
+          "evidence": "identical in all 3 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "6VB3cbLSm1qX8nDhiEDXA6vfevBkstsnTaMenXiUbuNV",
+          "evidence": "identical in all 3 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "EqozKyMj7FVnLHc2cJj3VC25aBr4AhVh1cGM2WDajGe9",
+          "evidence": "identical in all 3 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+          "evidence": "identical in all 3 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "both directions: this selector serves buys AND sells. Only a buy can be replayed from a wallet with no inventory.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "46ZQrYtHUhUxeYir8XSHVTx2r7Uhp5QcKGBuy7PPu63xbZs3hqesWqxPney8wh18gwecL3uFbcpjpdV9gBsLqUwC",
+        "3cvDPFJJpgWauxyJTvKRYftdAyRCdL1BQgT1yf3secnG7CNGk4dY6vf2PUiX2jnGAmG4UzQxhaKUPmUra1NUiuY2",
+        "fRUHTTLkFfq61ifPDAC4F6NzFyxLbWzTzaLvMfDPCXdxaU3mqLZLR2JupYY53RnjUUskMckHZFBu9C81yersFvG"
+      ],
+      "name": "ix_07#5",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 3,
+      "samplesGained": 1,
+      "samplesLost": 2,
+      "shapeNote": "selector 07 appears with several account counts; this is the 5-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "address": "C1j3XTtPZ4y6RC8GpLsQGkssxcZEGf1FtAcfaiX4a2ik",
+          "evidence": "identical in all 3 samples",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GTFtrJGtTfH3C8c3jpkuraHpbwdaRR2jWuKuyfMb4mYh",
+          "evidence": "identical in all 3 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "7EtXTvy1NBEo51N3Bj3VYafgDFfPcTy5sjpVZvVGiiyR",
+          "evidence": "identical in all 3 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "GAMLeeUkCRFEbmTE9AUXZqh2FpxntDvRUBK92atWjLLq",
+          "evidence": "identical in all 3 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 3 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+          "evidence": "identical in all 3 samples",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb",
+          "evidence": "identical in all 3 samples",
+          "name": "account_6",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "EFh4seS6ijesiDmetFKN5wc7TeuD87QSYkNJuhrDfJMH",
+          "evidence": "identical in all 3 samples",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        "",
+        ""
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        10
+      ],
+      "exampleSignatures": [
+        "4eGRvxUyU9ccUFwyDHAd3JpiYu8vZSSVzKbNsTphY7PAsr7zmMVbYvLWZJ9K9FbzMLUTmfcnB3Kotkaomtb1N1pa",
+        "39KNkVjVup4BnhKNgvhokKWR8sj1RBzT2h1vfaQJ47ffyEpV1h4z93fAQNyJabwauhBgyqTw4SnEwvspn78hmRz1",
+        "3s72MUwEtoZJ3bAYnHbqxFXW7q62su1VcSsgzTWwufTCSE7vxBVbcSxcCw2SVxsy1Rm7CKb3EagKVp37VzWbix73"
+      ],
+      "name": "ix_0a#8",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 3,
+      "samplesGained": 0,
+      "samplesLost": 3,
+      "shapeNote": "selector 0a appears with several account counts; this is the 8-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXQvaRHc2nvBUvk7Bs5wwnkhGhhkSzfpWeDDcHeg",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "ARgH4B2f84PsVP8X4oeKGSEhDKw5J3aBJsv3JY84RDbD",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4w132pWqg2tnKRmYVgt3zGMvPNqurU665vmpNCqFhveK",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "C3E83Xov9vb9t1VsK6tTz4s3y9jhiJRE26EczXwCxVZ5",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "BNpztv9NfoqrGj4mar3UZx1pyAFSAv36PJrRSgToHatT",
+            "mintIsAccount": "account_9",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "AdWjE4BXWufXnD9xuwrmQ1t1xXWakFjS8Wr2HRjwd1A3",
+            "ownerIsAccount": "account_4",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "CCdzCo2TZKNzNcarwmVYbRx9udFT9jbNTHGC8TT7Etbe",
+            "mintIsAccount": "account_10",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "AdWjE4BXWufXnD9xuwrmQ1t1xXWakFjS8Wr2HRjwd1A3",
+            "ownerIsAccount": "account_4",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXCSJXhiRzV914YAJX63v8YxTW8Y3fYqdHHvAxTB",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3WyaquZf5DGw65uGzwCneSgrdB7393b6HonVDeM4njvX",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWJtqFMVrgNYG9C24GFRZHiCfvo6ooraRes78S7t",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "FZTyYPbt2T29rycgx3LSJE3sHBowApL4GoPj8ewu8ANb",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXXM4qtuxxvR5mG3Lh1F2wE6nvbq5aefTaVxt3pZ",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "E3pU3mrr79teLP8ufFN8JS36V2SUr7DFZeV1mF2Ruegw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        ""
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "33faMG3GMz6jAgA1w4dvDQU4pgwFnd3wqLQKc1Fr8z7v4ogAHYFoTsNcjbWYijHuD8fC1hWCYoigmmqJYWcjyeSr",
+        "2iAeG8t79oZhypzT2YhsuunJbuPepCrcDDzE3ySYts69BW25HzmRkEbhmTmNAcMnNR4snquEa23vA9p53uhiq7cx"
+      ],
+      "name": "ix_07#11",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 2,
+      "samplesGained": 0,
+      "samplesLost": 2,
+      "shapeNote": "selector 07 appears with several account counts; this is the 11-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "address": "HANAx7PEENhL1MnWDhEXj58F8uiK7s7UVBmpnW4PEJX4",
+          "evidence": "identical in all 2 samples",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "ESSpPVSqfyxcP2tV46QoRcDuMWKbJ8LNANYB3eqNsmdP",
+          "evidence": "identical in all 2 samples",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+          "evidence": "identical in all 2 samples",
+          "name": "account_2",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "JAEVx3tbuzMT9JnbGTY7eZxJnU8Z5CCaqTfWneh3smob",
+          "evidence": "identical in all 2 samples",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "address": "11111111111111111111111111111111",
+          "evidence": "identical in all 2 samples",
+          "name": "account_4",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        "",
+        ""
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        10
+      ],
+      "exampleSignatures": [
+        "42k4jj529MS89SJW2xoBGVt5jDiTiKS3GdVf548shPWP14Z37En79LroncGKiqwzaqMzukvT6tNFMWjfVZwzBwGp",
+        "5vkSQzPkmTija8b5aL4aYzo1XJ3cCTp8WM8xbDzUd3tPL5n7WtytLnDbQqoFaZpRUGZiwK17XJufzajaPLHAWELH"
+      ],
+      "name": "ix_0a#5",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 2,
+      "samplesGained": 2,
+      "samplesLost": 0,
+      "shapeNote": "selector 0a appears with several account counts; this is the 5-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "JA9nhGDGnRH8Vi5JahDHi7E2tLoD2RnBZXYuhet7wmcX",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4sWNB8zGWHkh6UnmwiEtzNxL4XrN7uK9tosbESbJFfVs",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "ESSpPVSqfyxcP2tV46QoRcDuMWKbJ8LNANYB3eqNsmdP",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "AbLVgZ12tDRf7PSYFKRjtHM1yvqXwhLk9sSiL8ocRqt3",
+            "mintIsAccount": "account_5",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "JA9nhGDGnRH8Vi5JahDHi7E2tLoD2RnBZXYuhet7wmcX",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXnCYxGeZstLs6wtQ7u7pRa99vNADmzstDufStog",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "45caweGjycv1EEyNCyrUZxFfsCoREziLhe9TeZ9pKHiw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeYLxwL4VqazdG8PcBBJxkWB66aixVgUuV2LUsd95",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "2DHvyiMmV1UkE7WJdT2ev7YPdnosLseNRmE3qNs3yB6P",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "fa552e1900000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        2
+      ],
+      "exampleSignatures": [
+        "2gQfG1iaTTrVgvF8miTQgtT7R3GtFPLzeWTBjG7MHx7ut5t3bKg6asdezQvNmiVrXCstoRUMzj5C2qujBj19JAAR"
+      ],
+      "name": "ix_02#9",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 1,
+      "samplesLost": 0,
+      "shapeNote": "selector 02 appears with several account counts; this is the 9-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": true,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "9hZ1gQA75KGVRnC28S1BV9NQxhDFUUzmUcPELyDX8MpT",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "HnnGv3HrSqjRpgdFmx7vQGjntNEoex1SU4e9Lxcxuihz",
+            "mintIsAccount": "account_6",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "A1miRE4nZkNDxwFzLyYm8yRNeYcgNtMHUaCS21qWvrXp",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "8pzBfLDRjdKosU4AeXFPGTJTjk8ChYTNgMENpPJMwK3c",
+            "mintIsAccount": "account_5",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "9hZ1gQA75KGVRnC28S1BV9NQxhDFUUzmUcPELyDX8MpT",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeX6yWFVSLFzDkh6yMZNLnziYmZyUUNiTeYaiXyxE",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BSyuVkEK7Ybg7pSbmngXs74TghGhGhQevCu3scmxWPy1",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWRMYP7pTD3Q9kuuVCbapA6Hp5WLbDyViQwP8hMt",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3uRYfaQLAp4sBgjsjLVEfxzQirGaZPVoArb4w2U5rJCP",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWRMYP7pTD3Q9kuuVCbapA6Hp5WLbDyViQwP8hMt",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3uRYfaQLAp4sBgjsjLVEfxzQirGaZPVoArb4w2U5rJCP",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "ed5e030100000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        2
+      ],
+      "exampleSignatures": [
+        "fRUHTTLkFfq61ifPDAC4F6NzFyxLbWzTzaLvMfDPCXdxaU3mqLZLR2JupYY53RnjUUskMckHZFBu9C81yersFvG"
+      ],
+      "name": "ix_02#11",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 1,
+      "samplesLost": 0,
+      "shapeNote": "selector 02 appears with several account counts; this is the 11-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeX6yWFVSLFzDkh6yMZNLnziYmZyUUNiTeYaiXyxE",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BSyuVkEK7Ybg7pSbmngXs74TghGhGhQevCu3scmxWPy1",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "8pzBfLDRjdKosU4AeXFPGTJTjk8ChYTNgMENpPJMwK3c",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "A1miRE4nZkNDxwFzLyYm8yRNeYcgNtMHUaCS21qWvrXp",
+            "ownerIsAccount": "account_1",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "8pzBfLDRjdKosU4AeXFPGTJTjk8ChYTNgMENpPJMwK3c",
+            "mintIsAccount": "account_2",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "EQGXZ3PfSw6n7cdetQhMAGqVTifgizW3BWin1DsdeYm2",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "5YMkXAYccHSGnHn9nob9xEvv6Pvka9DZWH7nTbotTu9E",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "5YrRAQag9BbJkauDtJkd1vsTquXT6N46oU8rJ66GDxHd",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWRMYP7pTD3Q9kuuVCbapA6Hp5WLbDyViQwP8hMt",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3uRYfaQLAp4sBgjsjLVEfxzQirGaZPVoArb4w2U5rJCP",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        8
+      ],
+      "args": [],
+      "argsHex": [
+        "ed5e030100000000"
+      ],
+      "direction": "the payer gained tokens in every sample — a buy",
+      "discriminator": [
+        6
+      ],
+      "exampleSignatures": [
+        "fRUHTTLkFfq61ifPDAC4F6NzFyxLbWzTzaLvMfDPCXdxaU3mqLZLR2JupYY53RnjUUskMckHZFBu9C81yersFvG"
+      ],
+      "name": "ix_06#10",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 1,
+      "samplesLost": 0,
+      "shapeNote": "selector 06 appears with several account counts; this is the 10-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeXHhfNSEyUsaGLmJNLYf3S4ouZ7Gek9Y9iduXJmi",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "7cu1JafAtCbEQTECPao8ey3qRBoVbizy8AaiQ6X2yqqH",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "7mx5hYYi5dxXcRJPkAa1nArp9cSDdFJsoTgtTHrEJ1Mx",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BDxtik6YkGxUryiyN1A5u5EmuLQ2ZMQb1TvUMwf6miZg",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "AuQaustGiaqxRvj2gtCdrd22PBzTn8kM3kEPEkZCtuDw",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "BDxtik6YkGxUryiyN1A5u5EmuLQ2ZMQb1TvUMwf6miZg",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        ""
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "2HmmTMs6afJkMiargBqsj9Bnc5M6y6fqXcjjDH2qPkCkZXsBKTq5Vgfb5mdYcFHAs7VUfYyqny744qhqqWBaGVmy"
+      ],
+      "name": "ix_07#9",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 0,
+      "samplesLost": 1,
+      "shapeNote": "selector 07 appears with several account counts; this is the 9-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeW6Yx5MTrqYmngnav7ApoFpR6wUBgz9vebW9wPn5",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "HkEHkakyzcap6VaPsgrcKXBndj4VNbrSNrXeLnSvNCsh",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "9HL5HvVmD6bnovRdra1wWhsfgsATZ2oqkEBvFs9e2Gfj",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3RUCygb3JEkoa9zhiRWRA9UaGewDAz8LDKgwn1ToLDa6",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "3RpEekjLE5cdcG15YcXJUpxSepemvq2FpmMcgo342BwC",
+            "mintIsAccount": "account_9",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "24NYE3hHQyUTrHUT4n1CcVrMP9Xy3ULuT1Uurw1HDeck",
+            "ownerIsAccount": "account_4",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "EZun6G5514FeqYtUv26cBHWLqXjAEdjGuoX6ThBpBtKj",
+            "mintIsAccount": "account_10",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "24NYE3hHQyUTrHUT4n1CcVrMP9Xy3ULuT1Uurw1HDeck",
+            "ownerIsAccount": "account_4",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeVtTs1fiEo6aCHoT9msqXoZKKsKmZgwerq6vXppj",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "Ho5QG2hmkhHcNgBEeEXuhP67qgMFxjbBsbbpHF5CT7e7",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeW4sBjQ6Dy8h8K98jfe2XiHyp6hqpBLjEz6aGKQa",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "wc6yBK3DTBMkcuvwjzvtfjRJQ4wEZ7yPxfJGaW2y8Uw",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWR9tLRbFHnpvYQT244BqCnUB1UZcXxZKNeJptqm",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "GgYzTJ6GFBKuzeCKjXNBriJUoM2AMySTBXePTgMgWq19",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_11",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "3RUCygb3JEkoa9zhiRWRA9UaGewDAz8LDKgwn1ToLDa6",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        ""
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "4BBmGdDvx7RMdjJDGqPrKjAKz89ffSoiuQrybvdhFjhm5Wm2aawV1ucbQYfEsoFS7fkZTbAZKU1KW3QYDMvYurzC"
+      ],
+      "name": "ix_07#12",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 0,
+      "samplesLost": 1,
+      "shapeNote": "selector 07 appears with several account counts; this is the 12-account route. They are different paths through the program, not noise."
+    },
+    {
+      "accounts": [
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_0",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_1",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4uQeWWf3QHCLqbL48UdBP3JorG46a6ezACQ8HAQQi7G",
+            "mintIsAccount": null,
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "F7C6QGrKxeEdEV8x1VYok4qxyigpNZ3phM8ajE3ZwUnK",
+            "ownerIsAccount": null,
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_2",
+          "signer": false,
+          "tokenAccount": {
+            "mint": "4RRRokQBy9aPFx97tYfFpqtmPcyZGhN3Mw7sQs97Rxz8",
+            "mintIsAccount": "account_1",
+            "note": "this is a token account, not a derived address. If you change the account it belongs to, you must change this one to match.",
+            "owner": "69CpwbPWnoLb25rVdWbRi36t8U4ueDXNVeXWX7UXqvbn",
+            "ownerIsAccount": "account_0",
+            "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+          },
+          "writable": false
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_3",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_4",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_5",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_6",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_7",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_8",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_9",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_10",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_11",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_12",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_13",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_14",
+          "signer": false,
+          "writable": true
+        },
+        {
+          "evidence": "varies across samples and no seed recipe reproduced it — caller must supply",
+          "name": "account_15",
+          "signer": false,
+          "writable": true
+        }
+      ],
+      "argBytes": [
+        0
+      ],
+      "args": [],
+      "argsHex": [
+        ""
+      ],
+      "direction": "the payer lost tokens in every sample — a sell. A wallet that does not already hold the token cannot replay this.",
+      "discriminator": [
+        7
+      ],
+      "exampleSignatures": [
+        "gEuKHgTrUcVSygf39ybicQm2JCS3KQjVgW9wcwLJHWmPueiGRFWB41CovjKesG4yGpT5DXnRcgv43fU5c78hRip"
+      ],
+      "name": "ix_07#16",
+      "nameSource": "unknown: no published IDL declares this discriminator, so only the discriminator is certain",
+      "observedIn": 1,
+      "samplesGained": 0,
+      "samplesLost": 1,
+      "shapeNote": "selector 07 appears with several account counts; this is the 16-account route. They are different paths through the program, not noise."
+    }
+  ],
+  "metadata": {
+    "name": "learned",
+    "source": "reconstructed from landed transactions",
+    "spec": "0.1.0"
+  },
+  "truncated": "the PDA seed search hit its budget: some accounts reported as caller-supplied may in fact be derivable. Raise `seedBudget`."
+}

@@ -1,0 +1,693 @@
+{
+  "observedAtUtc": "2026-10-19T07:31:40.373Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "pool": {
+    "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+    "cashVaultRaw": "25148330669",
+    "usdcVaultRaw": "364420612421",
+    "stateSlot": 458750771
+  },
+  "method": "ExactIn, direct AlphaQ leg constrained with dexes=AlphaQ; opposite leg constrained with excludeDexes=AlphaQ",
+  "rows": [
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 1,
+      "inputRaw": "1000000",
+      "first": {
+        "status": 200,
+        "inAmount": "1000000",
+        "outAmount": "1000126",
+        "priceImpactPct": "0.0000009694050281711216067154",
+        "contextSlot": 458750771,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "1000126",
+        "outAmount": "999995",
+        "priceImpactPct": "0.0000040305988791116983450517",
+        "contextSlot": 458750772,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-5",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 1,
+      "inputRaw": "1000000",
+      "first": {
+        "status": 200,
+        "inAmount": "1000000",
+        "outAmount": "1000127",
+        "priceImpactPct": "0",
+        "contextSlot": 458750774,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "1000127",
+        "outAmount": "999996",
+        "priceImpactPct": "0.0000040304678956196096585176",
+        "contextSlot": 458750774,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-4",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 10,
+      "inputRaw": "10000000",
+      "first": {
+        "status": 200,
+        "inAmount": "10000000",
+        "outAmount": "10001264",
+        "priceImpactPct": "0.0000005694558095346810666721",
+        "contextSlot": 458750775,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "10001264",
+        "outAmount": "10000032",
+        "priceImpactPct": "0",
+        "contextSlot": 458750818,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "32",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 10,
+      "inputRaw": "10000000",
+      "first": {
+        "status": 200,
+        "inAmount": "10000000",
+        "outAmount": "10001180",
+        "priceImpactPct": "0.00000768366402852791947896",
+        "contextSlot": 458750819,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "10001180",
+        "outAmount": "9999891",
+        "priceImpactPct": "0.0000032163606849069779122082",
+        "contextSlot": 458750820,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-109",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 100,
+      "inputRaw": "100000000",
+      "first": {
+        "status": 200,
+        "inAmount": "100000000",
+        "outAmount": "100012362",
+        "priceImpactPct": "0.0000020643702873812151169821",
+        "contextSlot": 458750821,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "100012362",
+        "outAmount": "99999969",
+        "priceImpactPct": "0",
+        "contextSlot": 458750822,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-31",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 100,
+      "inputRaw": "100000000",
+      "first": {
+        "status": 200,
+        "inAmount": "100000000",
+        "outAmount": "100011871",
+        "priceImpactPct": "0.0000053339552839280046395648",
+        "contextSlot": 458750864,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "100011871",
+        "outAmount": "99999330",
+        "priceImpactPct": "0.0000013660520025322923879881",
+        "contextSlot": 458750865,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-670",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 1000,
+      "inputRaw": "1000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "1000000000",
+        "outAmount": "1000118231",
+        "priceImpactPct": "0.0000058128958739259849778046",
+        "contextSlot": 458750866,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "1000118231",
+        "outAmount": "999987013",
+        "priceImpactPct": "0.0000071741458286367012477925",
+        "contextSlot": 458750867,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-12987",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 1000,
+      "inputRaw": "1000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "1000000000",
+        "outAmount": "1000114494",
+        "priceImpactPct": "0.0000095494323766868461970159",
+        "contextSlot": 458750868,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "1000114494",
+        "outAmount": "999987158",
+        "priceImpactPct": "0.0000028767790601652459701118",
+        "contextSlot": 458750914,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-12842",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 5000,
+      "inputRaw": "5000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "5000000000",
+        "outAmount": "5000464373",
+        "priceImpactPct": "0.0000315819591813928514842103",
+        "contextSlot": 458750914,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "5000464373",
+        "outAmount": "4999793436",
+        "priceImpactPct": "0.0000097311481473307256014359",
+        "contextSlot": 458750915,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-206564",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 5000,
+      "inputRaw": "5000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "5000000000",
+        "outAmount": "5000569540",
+        "priceImpactPct": "0.0000105511766828853332789629",
+        "contextSlot": 458750916,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "5000569540",
+        "outAmount": "4999805048",
+        "priceImpactPct": "0.00002843952338755070581815",
+        "contextSlot": 458750916,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-194952",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 10000,
+      "inputRaw": "10000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "10000000000",
+        "outAmount": "10000165723",
+        "priceImpactPct": "0.0001074589497033321333922662",
+        "contextSlot": 458750959,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "10000165723",
+        "outAmount": "9998807098",
+        "priceImpactPct": "0.0000118325218070335922111664",
+        "contextSlot": 458750961,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-1192902",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 10000,
+      "inputRaw": "10000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "10000000000",
+        "outAmount": "10001122710",
+        "priceImpactPct": "0.0000117721191359843189212859",
+        "contextSlot": 458750961,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "10001122710",
+        "outAmount": "9998827910",
+        "priceImpactPct": "0.0001054381220941504478782118",
+        "contextSlot": 458750962,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-1172090",
+      "independentEntry": true,
+      "alphaQPoolMatched": true
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 20000,
+      "inputRaw": "20000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "20000000000",
+        "outAmount": "19994311436",
+        "priceImpactPct": "0.0004129446262044040557524965",
+        "contextSlot": 458750963,
+        "error": null,
+        "route": [
+          {
+            "label": "AlphaQ",
+            "ammKey": "2YR8bXXn4tTnq8nVjvpYnBiQ7ZKjN3G16wxE8ShL3KaB",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 200,
+        "inAmount": "19994311436",
+        "outAmount": "19991516529",
+        "priceImpactPct": "0.0000092662828594753810853473",
+        "contextSlot": 458751005,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "netUsdcRawBeforeCosts": "-8483471",
+      "alphaQPoolMatched": true,
+      "independentExit": true
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 20000,
+      "inputRaw": "20000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "20000000000",
+        "outAmount": "20002195905",
+        "priceImpactPct": "0.0000207391158828990074960326",
+        "contextSlot": 458751006,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 400,
+        "inAmount": "20002195905",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "netUsdcRawBeforeCosts": null,
+      "independentEntry": true,
+      "alphaQPoolMatched": false
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 25000,
+      "inputRaw": "25000000000",
+      "first": {
+        "status": 400,
+        "inAmount": "25000000000",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "exit": null,
+      "netUsdcRawBeforeCosts": null
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 25000,
+      "inputRaw": "25000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "25000000000",
+        "outAmount": "25002706405",
+        "priceImpactPct": "0.0000222779650060385205366959",
+        "contextSlot": 458751009,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 400,
+        "inAmount": "25002706405",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "netUsdcRawBeforeCosts": null,
+      "independentEntry": true,
+      "alphaQPoolMatched": false
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 50000,
+      "inputRaw": "50000000000",
+      "first": {
+        "status": 400,
+        "inAmount": "50000000000",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "exit": null,
+      "netUsdcRawBeforeCosts": null
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 50000,
+      "inputRaw": "50000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "50000000000",
+        "outAmount": "50005046595",
+        "priceImpactPct": "0.0000321304691817489234934926",
+        "contextSlot": 458751054,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 400,
+        "inAmount": "50005046595",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "netUsdcRawBeforeCosts": null,
+      "independentEntry": true,
+      "alphaQPoolMatched": false
+    },
+    {
+      "direction": "alphaq-first",
+      "sizeUsdc": 100000,
+      "inputRaw": "100000000000",
+      "first": {
+        "status": 400,
+        "inAmount": "100000000000",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "exit": null,
+      "netUsdcRawBeforeCosts": null
+    },
+    {
+      "direction": "alphaq-second",
+      "sizeUsdc": 100000,
+      "inputRaw": "100000000000",
+      "first": {
+        "status": 200,
+        "inAmount": "100000000000",
+        "outAmount": "100008903976",
+        "priceImpactPct": "0.0000440765927433553983964304",
+        "contextSlot": 458751101,
+        "error": null,
+        "route": [
+          {
+            "label": "Manifest",
+            "ammKey": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+            "percent": 100
+          }
+        ]
+      },
+      "exit": {
+        "status": 400,
+        "inAmount": "100008903976",
+        "outAmount": null,
+        "priceImpactPct": null,
+        "contextSlot": null,
+        "error": "No routes found",
+        "route": []
+      },
+      "netUsdcRawBeforeCosts": null,
+      "independentEntry": true,
+      "alphaQPoolMatched": false
+    }
+  ],
+  "profitableCandidateCountBeforeCosts": 1,
+  "bestNetUsdcRawBeforeCosts": "32",
+  "candidateGate": "A route must be positive before lender and transaction costs before any signed atomic composition is attempted.",
+  "quoteOnly": true,
+  "noTransaction": true,
+  "limitations": [
+    "Quotes are discovery evidence, not realized or simulated profit.",
+    "A positive quote would require a signed one-transaction simulation before it could survive this gate."
+  ]
+}

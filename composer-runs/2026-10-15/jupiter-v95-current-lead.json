@@ -1,0 +1,92 @@
+{
+  "generatedDate": "2026-10-15",
+  "scope": "retained current-mainnet read-only and local-fork evidence only; no new deep simulation and no mainnet submission",
+  "candidate": "Jupiter Vault 95 USDG/USDC DEX-smart-collateral oracle cross-pool manipulation",
+  "disposition": "deferred",
+  "confidence": "medium",
+  "poolA": {
+    "vaultId": 95,
+    "vaultConfig": "8LxvfvLfT2sQWrhrwWqWywXMrVKhhmo9qTpr5FdWtzeq",
+    "oracle": "9JfwVjFMDpSVSKWt9sGXkPEsGKCLNtYo6YWvs9BAvs9h",
+    "oracleSource": "3ZGVR75zFLoDk9MVKmpaoh2Pmt4piZxuBZLF2DXwqj3o",
+    "dex": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy",
+    "usdgMint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+    "usdcMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "stateSlot": 457362048,
+    "usdgSupplyRaw": "21761231184",
+    "usdcSupplyRaw": "22096638397",
+    "feeBps4": "100",
+    "centerPriceX15": "1000000000000000",
+    "collateralFactorBps": 920,
+    "liquidationThresholdBps": 940,
+    "pegBufferPercent": "5000"
+  },
+  "consumerExposure": {
+    "positionCount": 41,
+    "borrowingPositions": 9,
+    "totalPositionSupplyRaw": "22727125893752",
+    "totalPositionDustDebtRaw": "508045807",
+    "perPositionHealthCreditAndLiquidation": "not decoded before branch pause"
+  },
+  "poolActivity": {
+    "recentSwapFixtureSlot": 457292360,
+    "instruction": "swap_in",
+    "signature": "jx3sTNAfbiVPjUWddQAoBmKJ33kiFVcBjEPTVah1obHUmAupNivvDA878zDZrsqehhj5tT4qZQXxrnn5TV4RQuD"
+  },
+  "oracleControl": {
+    "slot": 457362740,
+    "result": "InvalidParams",
+    "interpretation": "generic direct read omitted path-specific dynamic accounts; not a health or reachability result"
+  },
+  "flashInventory": {
+    "klend": {
+      "reserve": "ESCkPWKHmgNE7Msf77n9yzqJd5kQVWWGy3o5Mgxhvavp",
+      "market": "7u3HeHxYDLhnCoErrtycNokbQYbWGzLs6JSDqGAv5PfF",
+      "availableRawAtCensus": "3165411467527",
+      "decimals": 6,
+      "flashFeeSf": "0"
+    },
+    "jupiterNative": {
+      "decodedAvailableRaw": "287664050707",
+      "signedOutsiderControlsRaw": ["1000000000", "100000000000"],
+      "sigVerify": true,
+      "wireBytes": 662,
+      "accountCount": 15,
+      "completeRepayment": true,
+      "netWatchedDeltasRaw": "0"
+    },
+    "project0ForExactUsdgPath": "not established"
+  },
+  "programAuthority": {
+    "observedSlotRange": [457342445, 457342452],
+    "upgradeAuthority": "4MsgBB5VPoTrUSp5XnfbViV386C1UnsTdifLBw33ZMSJ",
+    "scope": "shared Jupiter program upgrade authority; not Vault 95-specific admin authority"
+  },
+  "independentExit": {
+    "status": "not established",
+    "samePoolReverseExcluded": true,
+    "externalUsdgUsdcDepth": "not decoded",
+    "routeValidCapacity": null
+  },
+  "proofGap": {
+    "freshAttackerSignedLocalFork": false,
+    "sigVerifyTrue": false,
+    "singleV1Within4096BytesAnd64Accounts": false,
+    "fullRepayment": false,
+    "atomicCrossPoolBorrowOrLiquidationExploit": false,
+    "attackerEquityRaw": null,
+    "protocolEquityRaw": null,
+    "transientPriceMovementOnly": "not tested for Vault 95",
+    "reason": "branch paused before independent-exit discovery, position-health decoding, and exploit transaction construction"
+  },
+  "sources": [
+    "jupiter-dex-peg-path-census.json",
+    "jupiter-dex-path-liquidity.json",
+    "jupiter-dex-oracle-all-paths.json",
+    "jupiter-dex-recent-swap-fixtures.json",
+    "klend-zero-fee-simulations.json",
+    "chnry-usdg-daybreak-provider-jupiter-main-signed-v1.md",
+    "chnry-usdg-daybreak-provider-jupiter-main-signed-v1.json",
+    "jupiter-current-deployments.json"
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "observedAt": "2026-10-15T18:58:04.822Z",
+  "simulationOnly": true,
+  "transactionNeverSubmitted": true,
+  "sigVerifyFalseCaveat": "Keeper/operator controls are privileged-branch behavior only; sigVerify:false cannot establish external signability.",
+  "variants": [
+    {
+      "name": "redeem_keeper_positive_control",
+      "error": null,
+      "unitsConsumed": 42432,
+      "postStakeInfo": {
+        "pool": "5BUwFW4nRbftYTDMbgxykoFWqWHPzahFSNAaaaJtVKsq",
+        "stakeAccount": "ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "currentStakedAmountLamports": "106373160650189",
+        "totalStakingRewardsLamports": "6373156328029",
+        "lastUpdatedAt": "1792090682",
+        "deactivating": "false",
+        "stakeAccountIndex": "70350",
+        "bump": "253"
+      },
+      "postStakeLamports": 106373160650189,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: Check permissions",
+        "Program log: Stake rewards: 14795271094",
+        "Program log: Updated stake info account: SvqK7cDijYwm5ChD9qMn4wMum3nrH172jXjqSspgDsg, total staked amount: 106373160650189",
+        "Program log: Updated custody total staked amount: 3511035958845225, and fees reserves: 17101713248",
+        "Program data: APFUjYuq2m5nWV3YRsAH8miW8q7TG6e1X9EszBWOCwB6nY/oRraf6ceoly+qIJGhyjAGKS/m0MPzCSV5x93QESbsT+YnLX8nBqRjrSqnImjIvpylHNnxlejRiogxDu4seXwUsJ75XrO2691xAwAAACnfHsNEeQwAzUV07r5gAABdErjdywUAADoi0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 42282 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "redeem_outsider",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6034
+          }
+        ]
+      },
+      "unitsConsumed": 19379,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: Check permissions",
+        "Program log: AnchorError thrown in programs/perpetuals/src/instructions/redeem_stake.rs:61. Error Code: InvalidKeeper. Error Number: 6034. Error Message: Invalid Keeper.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 19229 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1792"
+      ]
+    },
+    {
+      "name": "redeem_wrong_stake_alias",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 19330,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: AnchorError caused by account: stake_info. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "Program log: Right:",
+        "Program log: FG18JB9rn8P1jJEU1iLKy9h85KVfyNCeXzy67yqA9b42",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 19180 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "redeem_wrong_info_alias",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 19330,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: AnchorError caused by account: stake_info. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: FG18JB9rn8P1jJEU1iLKy9h85KVfyNCeXzy67yqA9b42",
+        "Program log: Right:",
+        "Program log: ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 19180 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "redeem_twice_atomic",
+      "error": null,
+      "unitsConsumed": 83995,
+      "postStakeInfo": {
+        "pool": "5BUwFW4nRbftYTDMbgxykoFWqWHPzahFSNAaaaJtVKsq",
+        "stakeAccount": "ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "currentStakedAmountLamports": "106373160650189",
+        "totalStakingRewardsLamports": "6373156328029",
+        "lastUpdatedAt": "1792090683",
+        "deactivating": "false",
+        "stakeAccountIndex": "70350",
+        "bump": "253"
+      },
+      "postStakeLamports": 106373160650189,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: Check permissions",
+        "Program log: Stake rewards: 14795271094",
+        "Program log: Updated stake info account: SvqK7cDijYwm5ChD9qMn4wMum3nrH172jXjqSspgDsg, total staked amount: 106373160650189",
+        "Program log: Updated custody total staked amount: 3511035958845225, and fees reserves: 17101713248",
+        "Program data: APFUjYuq2m5nWV3YRsAH8miW8q7TG6e1X9EszBWOCwB6nY/oRraf6ceoly+qIJGhyjAGKS/m0MPzCSV5x93QESbsT+YnLX8nBqRjrSqnImjIvpylHNnxlejRiogxDu4seXwUsJ75XrO2691xAwAAACnfHsNEeQwAzUV07r5gAABdErjdywUAADsi0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 42282 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: RedeemStake",
+        "Program log: Check permissions",
+        "Program log: Updated stake info account: SvqK7cDijYwm5ChD9qMn4wMum3nrH172jXjqSspgDsg, total staked amount: 106373160650189",
+        "Program log: Updated custody total staked amount: 3511035958845225, and fees reserves: 17101713248",
+        "Program data: APFUjYuq2m5nWV3YRsAH8miW8q7TG6e1X9EszBWOCwB6nY/oRraf6ceoly+qIJGhyjAGKS/m0MPzCSV5x93QESbsT+YnLX8nBqRjrSqnImjIvpylHNnxlejRiogxDu4seXwUsJ75XrMAAAAAAAAAACnfHsNEeQwAzUV07r5gAABdErjdywUAADsi0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 41563 of 457568 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "unstake_operator_positive_control",
+      "error": null,
+      "unitsConsumed": 47185,
+      "postStakeInfo": {
+        "pool": "5BUwFW4nRbftYTDMbgxykoFWqWHPzahFSNAaaaJtVKsq",
+        "stakeAccount": "ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "currentStakedAmountLamports": "106358365379095",
+        "totalStakingRewardsLamports": "6358361056935",
+        "lastUpdatedAt": "1792090683",
+        "deactivating": "true",
+        "stakeAccountIndex": "70350",
+        "bump": "253"
+      },
+      "postStakeLamports": 106373160650189,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Deactivate",
+        "Program Stake11111111111111111111111111111111111111 consumed 11190 of 477664 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Unstaked stake account ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 47035 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "unstake_outsider",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2012
+          }
+        ]
+      },
+      "unitsConsumed": 14301,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program log: AnchorError caused by account: operator. Error Code: ConstraintAddress. Error Number: 2012. Error Message: An address constraint was violated.",
+        "Program log: Left:",
+        "Program log: 7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+        "Program log: Right:",
+        "Program log: HVSZJ2juJnMxd6yCNarTL56YmgUqzfUiwM7y7LtTXKHR",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 14151 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7dc"
+      ]
+    },
+    {
+      "name": "unstake_wrong_stake_alias",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 22918,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program log: AnchorError caused by account: stake_info. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "Program log: Right:",
+        "Program log: FG18JB9rn8P1jJEU1iLKy9h85KVfyNCeXzy67yqA9b42",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 22768 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7d1"
+      ]
+    },
+    {
+      "name": "withdraw_keeper_active_stake",
+      "error": {
+        "InstructionError": [
+          1,
+          "InsufficientFunds"
+        ]
+      },
+      "unitsConsumed": 37731,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawStake",
+        "Program log: Check permissions",
+        "Program log: Stake rewards: 14795271094",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Withdraw",
+        "Program log: ERROR: An account's balance was too small to complete the instruction",
+        "Program Stake11111111111111111111111111111111111111 consumed 7761 of 470030 compute units",
+        "Program Stake11111111111111111111111111111111111111 failed: insufficient funds for instruction",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 37581 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: insufficient funds for instruction"
+      ]
+    },
+    {
+      "name": "withdraw_outsider_active_stake",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6034
+          }
+        ]
+      },
+      "unitsConsumed": 29355,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawStake",
+        "Program log: Check permissions",
+        "Program log: AnchorError thrown in programs/perpetuals/src/instructions/withdraw_stake.rs:104. Error Code: InvalidKeeper. Error Number: 6034. Error Message: Invalid Keeper.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 29205 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1792"
+      ]
+    },
+    {
+      "name": "unstake_then_withdraw_same_transaction",
+      "error": {
+        "InstructionError": [
+          2,
+          "InsufficientFunds"
+        ]
+      },
+      "unitsConsumed": 85778,
+      "postStakeInfo": null,
+      "postStakeLamports": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: Unstake",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Deactivate",
+        "Program Stake11111111111111111111111111111111111111 consumed 11190 of 477670 compute units",
+        "Program Stake11111111111111111111111111111111111111 success",
+        "Program log: Unstaked stake account ESPEatDYHWGPbXr91MqN1GQFtr92kDfhH8DwabaqnuPt",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 47029 of 499850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawStake",
+        "Program log: Check permissions",
+        "Program log: Stake rewards: 14795271094",
+        "Program Stake11111111111111111111111111111111111111 invoke [2]",
+        "Program log: Instruction: Withdraw",
+        "Program log: ERROR: An account's balance was too small to complete the instruction",
+        "Program Stake11111111111111111111111111111111111111 consumed 8781 of 423003 compute units",
+        "Program Stake11111111111111111111111111111111111111 failed: insufficient funds for instruction",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 38599 of 452821 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: insufficient funds for instruction"
+      ]
+    }
+  ]
+}

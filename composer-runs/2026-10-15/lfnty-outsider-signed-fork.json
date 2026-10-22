@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-15T20:51:40.388Z",
+  "scope": "signed current-binary local-fork outsider attempt only",
+  "mainnetSubmission": false,
+  "forkSubmission": false,
+  "sourceSignature": "45MDDNuZLciFn7GXzfDS2u2utTzwUorcNPdejxZLpcWDkMF3Dbg5zEsF7CLWeDgzNwAUEkjFFrWBxMv8QLkXDCez",
+  "sourceSlot": 456588704,
+  "targetProgram": "LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa",
+  "attacker": "h9144z4qoXwz2exGse2zGnzHJ4FmCJWfdh3A1Vpuon4",
+  "targetVault": "7h4m5Qggvp44FV8KDFv4NoiQtm1hTkCzhHp1t8MuANTk",
+  "attackerDestination": "FVvkFQhm6UPYqvACi7SkdLs1wQGwYhK7RtjrogzcgKkB",
+  "mint": "LFNTYraetVioAPnGJht4yNg2aUZFXR776cMeN9VMjXp",
+  "wireBytes": 364,
+  "addresses": 7,
+  "requiredSignatures": 1,
+  "signatureVerified": true,
+  "error": {
+    "InstructionError": [
+      0,
+      {
+        "Custom": 1100
+      }
+    ]
+  },
+  "computeUnits": 34229,
+  "vaultBeforeRaw": "37499360818281",
+  "attackerBeforeRaw": "0",
+  "vaultAfterRaw": null,
+  "attackerAfterRaw": null,
+  "logs": [
+    "Program LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa invoke [1]",
+    "Program log: Instruction: Withdraw",
+    "Program log: KeyMismatch: Keys do not match.",
+    "Program log: self.escrow.owner != self.escrow_owner",
+    "Program log: Left: 5GkjiD83hcerafxJefCL1D3dGwhho4G6zoPJNwChDcd1",
+    "Program log: Right: h9144z4qoXwz2exGse2zGnzHJ4FmCJWfdh3A1Vpuon4",
+    "Program log: Error thrown at programs/lifinity-locker/src/instructions/withdraw.rs:108",
+    "Program log: AnchorError thrown in programs/lifinity-locker/src/instructions/withdraw.rs:108. Error Code: KeyMismatch. Error Number: 1100. Error Message: Keys do not match..",
+    "Program LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa consumed 34229 of 1400000 compute units",
+    "Program LLoc8JX5dLAMVzbzTNKG6EFpkyJ9XCsVAGkqwQKUJoa failed: custom program error: 0x44c"
+  ]
+}

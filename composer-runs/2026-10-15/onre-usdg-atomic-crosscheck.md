@@ -1,0 +1,17 @@
+# OnRe USDG/ONyc atomic roundtrip crosscheck
+
+Observation: current mainnet program `onreuGhHHgVzMWSkj2oQDLDtvvGvoepBPkqyaubFcwe`, ELF SHA-256 `4e4b35c8d3c747fb5c775635115cfc0ce91f1a995805cad4a3cb34d4881e2d6e`, audit slots 457355951–457355967. The checked-in official source is commit `c0490831f438074562ebf51e437ca5f8e027596b`. Source behavior is corroborated by current-binary logs, but this is not an exact recompilation proof.
+
+## Bounded result
+
+No outsider-positive USDG→ONyc→USDG path emerged through the current permissionless offer and OnRe prop AMM sell, including a zero-fee KLend USDG flash borrow. The deployed USDG offer is enabled, permissionless and zero fee; the redemption offer charges 30 bp on prop AMM sells, and the pair state imposes a 1 ONyc minimum input fee. The current redemption USDG vault holds 29,899,026.662144 USDG. Both legs use the same offer price in one atomic transaction: `P=1,155,839,113` (nine-decimal USDG per ONyc), with 6-decimal USDG and 9-decimal ONyc.
+
+The buy code floors `Q=floor(U·10^12/P)` ONyc raw for `U` USDG raw (offer_utils.rs:95–153; token_utils.rs:143–177). The sell code deducts `F=max(ceil(30·Q/10000), 10^9)` ONyc raw and floors `R=floor((Q−F)·P/10^12)` USDG raw (redemption_utils.rs:56–105). The hard-wall factor can only reduce `R` (prop_amm/pricing.rs:129–190). Thus this same-price roundtrip cannot produce more USDG than was spent, and a positive fee makes it strictly loss-making for a successful redemption. Same-transaction time and boss-gated offer vectors prevent a permissionless price change between these two legs. Permissionless market-stats refresh recomputes the canonical price rather than accepting a supplied NAV; the current redemption offer has `vault_target_bps=0`, so hard-wall reserve uses actual vault liquidity.
+
+Current-binary v1 simulations succeeded for flash→offer buy→prop AMM sell→repay at 1.156840, 2 and 1,000 USDG input, 1,696 bytes/44 accounts/~383k CU. For 1,000 USDG, the buy issued 865.172313994 ONyc; the sell returned 996.999997 USDG; user USDG ended 3.000003 lower before transaction rent/fee. At dust scale the 1 ONyc fee consumed nearly all input; 1.156840 USDG input returned 0.001 USDG. Sell-before-buy fails for lack of ONyc; substituted buy destinations and sell vault/market stats fail (6031, 6029, 6110, 2006).
+
+## Evidence caveat and remaining surface
+
+The audit JSON's `allSuccessfulCyclesFullyRepaid=false` reflects cross-slot bookkeeping: it reports a supply-vault delta of −12,706,559,768 raw even for buy-only controls with no flash. A subsequent same-slot experiment at slot 457357300 compared a no-op v1 baseline and the 1,000-USDG atomic cycle, both with `err:null`. Exact treatment-minus-baseline deltas were outsider USDG −3,000,003 raw, OnRe redemption vault −996,999,997 raw, KLend supply vault 0, KLend fee vault 0, and KLend reserve account unchanged. Thus the loan is fully repaid in this tested cycle and outsider net USDG is negative. The original boolean should be corrected to avoid implying underrepayment. The OnRe direct redemption request fulfillment route requires the configured worker signer (fulfill_redemption_request.rs:220–226). This bounded result does not exclude external-venue arbitrage, other mints, or a distinct cross-program consumer.
+
+Evidence: `composer-runs/2026-10-15/onre-mainnet-audit.json`; `onre-source/programs/onreapp/src/instructions/{offer/offer_utils.rs,redemption/redemption_utils.rs,prop_amm/pricing.rs}`.

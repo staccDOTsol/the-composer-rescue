@@ -1,0 +1,2158 @@
+{
+  "generatedAt": "2026-10-15T19:06:04.933Z",
+  "sourceSnapshotSlot": 457347567,
+  "sourceBlockTime": 1792091076,
+  "quoteApi": "https://lite-api.jup.ag/swap/v1/quote",
+  "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "slippageBps": 100,
+  "methodology": "Independent single-transaction exact-in, read-only aggregator quotes; not executable transaction simulations, nor estimates for orderly staged liquidation.",
+  "observations": [
+    {
+      "mint": "DrZ26cKJDksVRWib3DVVsjo9eeXccc7hKhDJviiYEEZY",
+      "symbol": "YZY",
+      "decimals": 6,
+      "vaultCount": 15,
+      "balanceRaw": "697023833333379",
+      "claimableRaw": "405357166666704",
+      "censusPriceUsd": 0.2907591930822241,
+      "censusMarkUsd": 202666087.33909193,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "34392721667",
+          "requestedTokens": 34392.721667,
+          "requestedCensusMarkUsd": 9999.999999798445,
+          "error": "Unexpected token 'R', \"Rate limit\"... is not valid JSON"
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "343927216676",
+          "requestedTokens": 343927.216676,
+          "requestedCensusMarkUsd": 99999.999999729,
+          "error": "Unexpected token 'R', \"Rate limit\"... is not valid JSON"
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "3439272166769",
+          "requestedTokens": 3439272.166769,
+          "requestedCensusMarkUsd": 999999.9999999068,
+          "error": "Unexpected token 'R', \"Rate limit\"... is not valid JSON"
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "405357166666704",
+          "requestedTokens": 405357166.666704,
+          "requestedCensusMarkUsd": 117861322.69010748,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "697023833333379",
+          "requestedTokens": 697023833.333379,
+          "requestedCensusMarkUsd": 202666087.33909193,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      ]
+    },
+    {
+      "mint": "DBRiDgJAMsM95moTzJs7M9LnkGErpbv9v6CUR1DXnUu5",
+      "symbol": "DBR",
+      "decimals": 6,
+      "vaultCount": 4,
+      "balanceRaw": "4736923077324537",
+      "claimableRaw": "1984615384615387",
+      "censusPriceUsd": 0.019032144622483822,
+      "censusMarkUsd": 90153805.07322171,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "525426860627",
+          "requestedTokens": 525426.860627,
+          "requestedCensusMarkUsd": 9999.999999990714,
+          "status": 200,
+          "contextSlot": 457347901,
+          "inAmount": "525426860627",
+          "outAmount": "10053360071",
+          "outputUsdc": 10053.360071,
+          "priceImpactPct": "0.0039289917067593541884773037",
+          "swapUsdValue": "10049.015434737415952904604",
+          "routes": [
+            {
+              "ammKey": "GD5eJhDmVcosRoU2H27LoFCuYERMTe4Mf1ooban6ba9T",
+              "label": "HumidiFi",
+              "percent": 87,
+              "inAmount": "457121368749",
+              "outAmount": "8747430073",
+              "updateContextSlot": "457347883"
+            },
+            {
+              "ammKey": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+              "label": "Meteora",
+              "percent": 13,
+              "inAmount": "68305491878",
+              "outAmount": "1305929998",
+              "updateContextSlot": "457347858"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "5254268606274",
+          "requestedTokens": 5254268.606274,
+          "requestedCensusMarkUsd": 99999.99999998328,
+          "status": 200,
+          "contextSlot": 457347902,
+          "inAmount": "5254268606274",
+          "outAmount": "99600117213",
+          "outputUsdc": 99600.117213,
+          "priceImpactPct": "0.0131777984896733620881685271",
+          "swapUsdValue": "99557.074262389938105901812",
+          "routes": [
+            {
+              "ammKey": "A5Ax9Ct3Y6Wzp8KkkcbBu8bzioqh64CqxwF7EoZ4ZMHj",
+              "label": "ZeroFi",
+              "percent": 4,
+              "inAmount": "210170744248",
+              "outAmount": "3985063233",
+              "updateContextSlot": "457347901"
+            },
+            {
+              "ammKey": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+              "label": "Meteora",
+              "percent": 29,
+              "inAmount": "1523737895805",
+              "outAmount": "28860968684",
+              "updateContextSlot": "457347858"
+            },
+            {
+              "ammKey": "GD5eJhDmVcosRoU2H27LoFCuYERMTe4Mf1ooban6ba9T",
+              "label": "HumidiFi",
+              "percent": 67,
+              "inAmount": "3520359966221",
+              "outAmount": "66754085296",
+              "updateContextSlot": "457347883"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "52542686062748",
+          "requestedTokens": 52542686.062748,
+          "requestedCensusMarkUsd": 999999.999999985,
+          "status": 200,
+          "contextSlot": 457347903,
+          "inAmount": "52542686062748",
+          "outAmount": "802929458186",
+          "outputUsdc": 802929.458186,
+          "priceImpactPct": "0.2044701976705477579377233807",
+          "swapUsdValue": "802582.466094232131501997864",
+          "routes": [
+            {
+              "ammKey": "GD5eJhDmVcosRoU2H27LoFCuYERMTe4Mf1ooban6ba9T",
+              "label": "HumidiFi",
+              "percent": 13,
+              "inAmount": "6830549188151",
+              "outAmount": "127955565134",
+              "updateContextSlot": "457347903"
+            },
+            {
+              "ammKey": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+              "label": "Meteora",
+              "percent": 87,
+              "inAmount": "45712136874597",
+              "outAmount": "674973893052",
+              "updateContextSlot": "457347858"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "1984615384615387",
+          "requestedTokens": 1984615384.615387,
+          "requestedCensusMarkUsd": 37771487.0200064,
+          "status": 200,
+          "contextSlot": 457347903,
+          "inAmount": "1984615384615387",
+          "outAmount": "2777619006365",
+          "outputUsdc": 2777619.006365,
+          "priceImpactPct": "0.9271402537189672557008322561",
+          "swapUsdValue": "2776418.63711795524764056626",
+          "routes": [
+            {
+              "ammKey": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+              "label": "Meteora",
+              "percent": 99,
+              "inAmount": "1964769230769234",
+              "outAmount": "2743884006869",
+              "updateContextSlot": "457347858"
+            },
+            {
+              "ammKey": "A5Ax9Ct3Y6Wzp8KkkcbBu8bzioqh64CqxwF7EoZ4ZMHj",
+              "label": "ZeroFi",
+              "percent": 1,
+              "inAmount": "19846153846153",
+              "outAmount": "33734999496",
+              "updateContextSlot": "457347903"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "4736923077324537",
+          "requestedTokens": 4736923077.324537,
+          "requestedCensusMarkUsd": 90153805.07322171,
+          "status": 200,
+          "contextSlot": 457347904,
+          "inAmount": "4736923077324537",
+          "outAmount": "2899179054426",
+          "outputUsdc": 2899179.054426,
+          "priceImpactPct": "0.9681382196706747522986767271",
+          "swapUsdValue": "2897926.152076673281221483624",
+          "routes": [
+            {
+              "ammKey": "E5H5BXLranyJFHEzvR3R2j6kGDQ3Fnx8sPKSsgYqyya8",
+              "label": "Meteora",
+              "percent": 99,
+              "inAmount": "4689553846551292",
+              "outAmount": "2865444054930",
+              "updateContextSlot": "457347858"
+            },
+            {
+              "ammKey": "A5Ax9Ct3Y6Wzp8KkkcbBu8bzioqh64CqxwF7EoZ4ZMHj",
+              "label": "ZeroFi",
+              "percent": 1,
+              "inAmount": "47369230773245",
+              "outAmount": "33734999496",
+              "updateContextSlot": "457347903"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+      "symbol": "JUP",
+      "decimals": 6,
+      "vaultCount": 4,
+      "balanceRaw": "188829535001781",
+      "claimableRaw": "0",
+      "censusPriceUsd": 0.3094350181973359,
+      "censusMarkUsd": 58430470.59947057,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "32316962890",
+          "requestedTokens": 32316.96289,
+          "requestedCensusMarkUsd": 9999.999999949778,
+          "status": 200,
+          "contextSlot": 457347905,
+          "inAmount": "32316962890",
+          "outAmount": "10104341334",
+          "outputUsdc": 10104.341334,
+          "priceImpactPct": "0.0004650389536424608613249826",
+          "swapUsdValue": "10099.974665795619591638616",
+          "routes": [
+            {
+              "ammKey": "Et6HnPjetV8AzmxNAfzKJ6ax5VM82ZB7phY465Ns5iZW",
+              "label": "ZeroFi",
+              "percent": 100,
+              "inAmount": "32316962890",
+              "outAmount": "10104341334",
+              "updateContextSlot": "457347904"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "323169628901",
+          "requestedTokens": 323169.628901,
+          "requestedCensusMarkUsd": 99999.99999980722,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "3231696289016",
+          "requestedTokens": 3231696.289016,
+          "requestedCensusMarkUsd": 999999.9999999288,
+          "status": 200,
+          "contextSlot": 457347913,
+          "inAmount": "3231696289016",
+          "outAmount": "914388063646",
+          "outputUsdc": 914388.063646,
+          "priceImpactPct": "0.0952379494284013053020404293",
+          "swapUsdValue": "913992.903867444961988182904",
+          "routes": [
+            {
+              "ammKey": "AkxuRa1soguFpVRjnDrRsXAcfTkZjRv1XyNXySzVivmC",
+              "label": "GoonFi V2",
+              "percent": 7,
+              "inAmount": "226218740230",
+              "outAmount": "70468042456",
+              "updateContextSlot": "457347913"
+            },
+            {
+              "ammKey": "C1MgLojNLWBKADvu9BHdtgzz1oZX4dZ5zGdGcgvvW8Wz",
+              "label": "Whirlpool",
+              "percent": 12,
+              "inAmount": "387803554680",
+              "outAmount": "1063805263660",
+              "updateContextSlot": "457347909"
+            },
+            {
+              "ammKey": "C8Gr6AUuq9hEdSYJzoEpNcdjpojPZwqG5MtQbeouNNwg",
+              "label": "Meteora DLMM",
+              "percent": 81,
+              "inAmount": "2617673994106",
+              "outAmount": "6896202394476",
+              "updateContextSlot": "457346417"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 87,
+              "inAmount": "6896202394476",
+              "outAmount": "731155389118",
+              "updateContextSlot": "457347913"
+            },
+            {
+              "ammKey": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+              "label": "Whirlpool",
+              "percent": 13,
+              "inAmount": "1063805263660",
+              "outAmount": "112764632072",
+              "updateContextSlot": "457347909"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "188829535001781",
+          "requestedTokens": 188829535.001781,
+          "requestedCensusMarkUsd": 58430470.59947057,
+          "status": 200,
+          "contextSlot": 457347914,
+          "inAmount": "188829535001781",
+          "outAmount": "1000009142247",
+          "outputUsdc": 1000009.142247,
+          "priceImpactPct": "0.9830656545715999711018077913",
+          "swapUsdValue": "999576.980666032202910579228",
+          "routes": [
+            {
+              "ammKey": "C8Gr6AUuq9hEdSYJzoEpNcdjpojPZwqG5MtQbeouNNwg",
+              "label": "Meteora DLMM",
+              "percent": 2,
+              "inAmount": "3776590700036",
+              "outAmount": "9109480262961",
+              "updateContextSlot": "457346417"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 100,
+              "inAmount": "9109480262961",
+              "outAmount": "965672034466",
+              "updateContextSlot": "457347914"
+            },
+            {
+              "ammKey": "Et6HnPjetV8AzmxNAfzKJ6ax5VM82ZB7phY465Ns5iZW",
+              "label": "ZeroFi",
+              "percent": 98,
+              "inAmount": "185052944301745",
+              "outAmount": "34337107781",
+              "updateContextSlot": "457347913"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "WETZjtprkDMCcUxPi9PfWnowMRZkiGGHDb9rABuRZ2U",
+      "symbol": "WET",
+      "decimals": 6,
+      "vaultCount": 3,
+      "balanceRaw": "770000000000000",
+      "claimableRaw": "192500000000000",
+      "censusPriceUsd": 0.054369608524478696,
+      "censusMarkUsd": 41864598.5638486,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "183926282925",
+          "requestedTokens": 183926.282925,
+          "requestedCensusMarkUsd": 9999.999999994761,
+          "status": 200,
+          "contextSlot": 457347915,
+          "inAmount": "183926282925",
+          "outAmount": "9931749692",
+          "outputUsdc": 9931.749692,
+          "priceImpactPct": "0.0072542389404201931038464318",
+          "swapUsdValue": "9927.457610590597237063408",
+          "routes": [
+            {
+              "ammKey": "Cc2oMdeNDmZ7ZD8b7igQg1EHjBEinR1Vi6nx2VHpVm6H",
+              "label": "HumidiFi",
+              "percent": 96,
+              "inAmount": "176569231609",
+              "outAmount": "9535481646",
+              "updateContextSlot": "457347913"
+            },
+            {
+              "ammKey": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+              "label": "Meteora DAMM v2",
+              "percent": 4,
+              "inAmount": "7357051316",
+              "outAmount": "396268046",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "1839262829250",
+          "requestedTokens": 1839262.82925,
+          "requestedCensusMarkUsd": 99999.9999999476,
+          "status": 200,
+          "contextSlot": 457347915,
+          "inAmount": "1839262829250",
+          "outAmount": "96315872905",
+          "outputUsdc": 96315.872905,
+          "priceImpactPct": "0.0372575073432288952443489591",
+          "swapUsdValue": "96274.24926562667397850922",
+          "routes": [
+            {
+              "ammKey": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+              "label": "Meteora DAMM v2",
+              "percent": 12,
+              "inAmount": "220711539504",
+              "outAmount": "11525710590",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "Cc2oMdeNDmZ7ZD8b7igQg1EHjBEinR1Vi6nx2VHpVm6H",
+              "label": "HumidiFi",
+              "percent": 88,
+              "inAmount": "1618551289746",
+              "outAmount": "84790162315",
+              "updateContextSlot": "457347914"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "18392628292509",
+          "requestedTokens": 18392628.292509,
+          "requestedCensusMarkUsd": 999999.9999999654,
+          "status": 200,
+          "contextSlot": 457347915,
+          "inAmount": "18392628292509",
+          "outAmount": "346806393289",
+          "outputUsdc": 346806.393289,
+          "priceImpactPct": "0.6533434817400069999905772502",
+          "swapUsdValue": "346656.518259981020569040036",
+          "routes": [
+            {
+              "ammKey": "Cc2oMdeNDmZ7ZD8b7igQg1EHjBEinR1Vi6nx2VHpVm6H",
+              "label": "HumidiFi",
+              "percent": 9,
+              "inAmount": "1655336546325",
+              "outAmount": "86635982347",
+              "updateContextSlot": "457347914"
+            },
+            {
+              "ammKey": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+              "label": "Meteora DAMM v2",
+              "percent": 91,
+              "inAmount": "16737291746184",
+              "outAmount": "260170410942",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "192500000000000",
+          "requestedTokens": 192500000,
+          "requestedCensusMarkUsd": 10466149.64096215,
+          "status": 200,
+          "contextSlot": 457347916,
+          "inAmount": "192500000000000",
+          "outAmount": "353116296331",
+          "outputUsdc": 353116.296331,
+          "priceImpactPct": "0.9662756881434394872378074359",
+          "swapUsdValue": "352963.694429236380505948844",
+          "routes": [
+            {
+              "ammKey": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "192500000000000",
+              "outAmount": "353116296331",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "770000000000000",
+          "requestedTokens": 770000000,
+          "requestedCensusMarkUsd": 41864598.5638486,
+          "status": 200,
+          "contextSlot": 457347917,
+          "inAmount": "770000000000000",
+          "outAmount": "362361883295",
+          "outputUsdc": 362361.883295,
+          "priceImpactPct": "0.9913481724830138215476543174",
+          "swapUsdValue": "362205.28584228535670601958",
+          "routes": [
+            {
+              "ammKey": "A8dNMVhgTyA4fPEJnH1ZEUjXXgd7rcn8iCPbV4Wp4qtx",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "770000000000000",
+              "outAmount": "362361883295",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "vRseBFqTy9QLmmo5qGiwo74AVpdqqMTnxPqWoWMpump",
+      "symbol": "Verse",
+      "decimals": 6,
+      "vaultCount": 5,
+      "balanceRaw": "900000000000000",
+      "claimableRaw": "398666666666680",
+      "censusPriceUsd": 0.020039567754878036,
+      "censusMarkUsd": 18035610.979390234,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "499012759273",
+          "requestedTokens": 499012.759273,
+          "requestedCensusMarkUsd": 9999.999999999927,
+          "status": 200,
+          "contextSlot": 457347918,
+          "inAmount": "499012759273",
+          "outAmount": "9753410708",
+          "outputUsdc": 9753.410708,
+          "priceImpactPct": "0.0250804302856657401853130435",
+          "swapUsdValue": "9749.195697143272838746192",
+          "routes": [
+            {
+              "ammKey": "6LtBM9GxMtmff1VY6jEV5U3UrMCSGtSuquhfnwWTmTLi",
+              "label": "Pump.fun Amm",
+              "percent": 100,
+              "inAmount": "499012759273",
+              "outAmount": "91910316670",
+              "updateContextSlot": "457347917"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 20,
+              "inAmount": "18773474823",
+              "outAmount": "1992300700",
+              "updateContextSlot": "457347918"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 80,
+              "inAmount": "73136841847",
+              "outAmount": "7761110008",
+              "updateContextSlot": "457347918"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "4990127592730",
+          "requestedTokens": 4990127.59273,
+          "requestedCensusMarkUsd": 99999.99999999926,
+          "status": 200,
+          "contextSlot": 457347919,
+          "inAmount": "4990127592730",
+          "outAmount": "74495939680",
+          "outputUsdc": 74495.93968,
+          "priceImpactPct": "0.2553625430874186063188556594",
+          "swapUsdValue": "74463.74569125760655018432",
+          "routes": [
+            {
+              "ammKey": "6LtBM9GxMtmff1VY6jEV5U3UrMCSGtSuquhfnwWTmTLi",
+              "label": "Pump.fun Amm",
+              "percent": 100,
+              "inAmount": "4990127592730",
+              "outAmount": "702023591621",
+              "updateContextSlot": "457347919"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 34,
+              "inAmount": "236545487918",
+              "outAmount": "25100824700",
+              "updateContextSlot": "457347919"
+            },
+            {
+              "ammKey": "2dyTwqYbDT2NwvCSZ55mep3Cnom1YzBqBA5Rdwn6yqTn",
+              "label": "Obsidian",
+              "percent": 11,
+              "inAmount": "75255797073",
+              "outAmount": "7986071208",
+              "updateContextSlot": "457347918"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 55,
+              "inAmount": "390222306630",
+              "outAmount": "41409043772",
+              "updateContextSlot": "457347918"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "49901275927300",
+          "requestedTokens": 49901275.9273,
+          "requestedCensusMarkUsd": 999999.9999999927,
+          "status": 200,
+          "contextSlot": 457347920,
+          "inAmount": "49901275927300",
+          "outAmount": "221577976372",
+          "outputUsdc": 221577.976372,
+          "priceImpactPct": "0.778517780241144374650557558",
+          "swapUsdValue": "221482.219758854040555435728",
+          "routes": [
+            {
+              "ammKey": "6LtBM9GxMtmff1VY6jEV5U3UrMCSGtSuquhfnwWTmTLi",
+              "label": "Pump.fun Amm",
+              "percent": 100,
+              "inAmount": "49901275927300",
+              "outAmount": "2088198104098",
+              "updateContextSlot": "457347920"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 36,
+              "inAmount": "749786600276",
+              "outAmount": "79559301930",
+              "updateContextSlot": "457347920"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 28,
+              "inAmount": "585932793208",
+              "outAmount": "62173512800",
+              "updateContextSlot": "457347920"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 36,
+              "inAmount": "752478710614",
+              "outAmount": "79845161642",
+              "updateContextSlot": "457347920"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "398666666666680",
+          "requestedTokens": 398666666.66668,
+          "requestedCensusMarkUsd": 7989107.67827831,
+          "status": 200,
+          "contextSlot": 457347922,
+          "inAmount": "398666666666680",
+          "outAmount": "274192088067",
+          "outputUsdc": 274192.088067,
+          "priceImpactPct": "0.965694091893489232648938651",
+          "swapUsdValue": "274073.593864035375400096908",
+          "routes": [
+            {
+              "ammKey": "6LtBM9GxMtmff1VY6jEV5U3UrMCSGtSuquhfnwWTmTLi",
+              "label": "Pump.fun Amm",
+              "percent": 100,
+              "inAmount": "398666666666680",
+              "outAmount": "2584185775235",
+              "updateContextSlot": "457347922"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 38,
+              "inAmount": "969593001017",
+              "outAmount": "102876564700",
+              "updateContextSlot": "457347922"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 26,
+              "inAmount": "660882335409",
+              "outAmount": "70125893592",
+              "updateContextSlot": "457347922"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 36,
+              "inAmount": "953710438809",
+              "outAmount": "101189629775",
+              "updateContextSlot": "457347922"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "900000000000000",
+          "requestedTokens": 900000000,
+          "requestedCensusMarkUsd": 18035610.979390234,
+          "status": 200,
+          "contextSlot": 457347924,
+          "inAmount": "900000000000000",
+          "outAmount": "279442807228",
+          "outputUsdc": 279442.807228,
+          "priceImpactPct": "0.9845127484615921710546854796",
+          "swapUsdValue": "279322.043886686562997010672",
+          "routes": [
+            {
+              "ammKey": "6LtBM9GxMtmff1VY6jEV5U3UrMCSGtSuquhfnwWTmTLi",
+              "label": "Pump.fun Amm",
+              "percent": 100,
+              "inAmount": "900000000000000",
+              "outAmount": "2634049586622",
+              "updateContextSlot": "457347924"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 33,
+              "inAmount": "873474343646",
+              "outAmount": "92657700206",
+              "updateContextSlot": "457347924"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 27,
+              "inAmount": "714935194298",
+              "outAmount": "75852971922",
+              "updateContextSlot": "457347924"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 40,
+              "inAmount": "1045640048678",
+              "outAmount": "110932135100",
+              "updateContextSlot": "457347924"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "HnGCbLLonRzNRAFHqv5AbvZ4FixMkUQztE2egh4sAmqZ",
+      "symbol": "ZYLO",
+      "decimals": 9,
+      "vaultCount": 7,
+      "balanceRaw": "724722222225454986",
+      "claimableRaw": "53611111111600000",
+      "censusPriceUsd": 0.024554535503520422,
+      "censusMarkUsd": 17795217.535825152,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "407256736685826",
+          "requestedTokens": 407256.736685826,
+          "requestedCensusMarkUsd": 9999.999999999982,
+          "status": 200,
+          "contextSlot": 457347925,
+          "inAmount": "407256736685826",
+          "outAmount": "7744480027",
+          "outputUsdc": 7744.480027,
+          "priceImpactPct": "0.2258866809134628164623194204",
+          "swapUsdValue": "7741.133190865360763507948",
+          "routes": [
+            {
+              "ammKey": "9UBsygwQEr7GziZN4khaHmnMd1mVQSRrizKCkkhNJaku",
+              "label": "Meteora DLMM",
+              "percent": 100,
+              "inAmount": "407256736685826",
+              "outAmount": "7751717202",
+              "updateContextSlot": "457347568"
+            },
+            {
+              "ammKey": "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ",
+              "label": "Manifest",
+              "percent": 56,
+              "inAmount": "4368171852",
+              "outAmount": "4364090237",
+              "updateContextSlot": "457347924"
+            },
+            {
+              "ammKey": "FpPP9PDMPSTEwpX1ykS5QEkA5MSrEuWzV55hoWG3pKoN",
+              "label": "ZeroFi",
+              "percent": 14,
+              "inAmount": "1100810597",
+              "outAmount": "1099785934",
+              "updateContextSlot": "457347920"
+            },
+            {
+              "ammKey": "H7o7KCr5n3whqcPsPkeCPWrzivKrarqzidD3kt8fijvB",
+              "label": "Deriverse",
+              "percent": 30,
+              "inAmount": "2282734753",
+              "outAmount": "2280603856",
+              "updateContextSlot": "457347923"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "4072567366858267",
+          "requestedTokens": 4072567.366858267,
+          "requestedCensusMarkUsd": 100000,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "40725673668582672",
+          "requestedTokens": 40725673.66858267,
+          "requestedCensusMarkUsd": 1000000,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "53611111111600000",
+          "requestedTokens": 53611111.1116,
+          "requestedCensusMarkUsd": 1316395.9311729604,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "724722222225454986",
+          "requestedTokens": 724722222.2254549,
+          "requestedCensusMarkUsd": 17795217.535825152,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      ]
+    },
+    {
+      "mint": "C751KzNWYDdhELHvZGChnadMhWxpGT8FCGzNWfJJzfh3",
+      "symbol": "NYC",
+      "decimals": 6,
+      "vaultCount": 19,
+      "balanceRaw": "95331666991860",
+      "claimableRaw": "9846064898229",
+      "censusPriceUsd": 0.10690264683237381,
+      "censusMarkUsd": 10191207.528372278,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "93543053388",
+          "requestedTokens": 93543.053388,
+          "requestedCensusMarkUsd": 9999.999999959253,
+          "status": 200,
+          "contextSlot": 457347928,
+          "inAmount": "93543053388",
+          "outAmount": "7473430633",
+          "outputUsdc": 7473.430633,
+          "priceImpactPct": "0.2525059543503397784404527545",
+          "swapUsdValue": "7470.200932929105339481892",
+          "routes": [
+            {
+              "ammKey": "6M46xqwp4mfjLviaTQLCkRjCPwwmJcyduNffXP46TfBT",
+              "label": "Meteora DAMM v2",
+              "percent": 80,
+              "inAmount": "74834442720",
+              "outAmount": "5554422828",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "8UFnwxmnpQmc8MaYCu6rSLomTVf6zbhw3kcCqykbo3RV",
+              "label": "Meteora DLMM",
+              "percent": 6,
+              "inAmount": "5612583198",
+              "outAmount": "562772846",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "mxW3foV4fWuABnZzYXtGb38Syg7X8HPZR5exSYrL71N",
+              "label": "Meteora DLMM",
+              "percent": 14,
+              "inAmount": "13096027470",
+              "outAmount": "1356234959",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "935430533883",
+          "requestedTokens": 935430.533883,
+          "requestedCensusMarkUsd": 99999.99999991324,
+          "status": 200,
+          "contextSlot": 457347928,
+          "inAmount": "935430533883",
+          "outAmount": "16621685869",
+          "outputUsdc": 16621.685869,
+          "priceImpactPct": "0.8337495612679656551165189919",
+          "swapUsdValue": "16614.502680626985221403956",
+          "routes": [
+            {
+              "ammKey": "6M46xqwp4mfjLviaTQLCkRjCPwwmJcyduNffXP46TfBT",
+              "label": "Meteora DAMM v2",
+              "percent": 99,
+              "inAmount": "926076228545",
+              "outAmount": "15651425579",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "mxW3foV4fWuABnZzYXtGb38Syg7X8HPZR5exSYrL71N",
+              "label": "Meteora DLMM",
+              "percent": 1,
+              "inAmount": "9354305338",
+              "outAmount": "970260290",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "9354305338838",
+          "requestedTokens": 9354305.338838,
+          "requestedCensusMarkUsd": 999999.9999999875,
+          "status": 200,
+          "contextSlot": 457347929,
+          "inAmount": "9354305338838",
+          "outAmount": "18284123773",
+          "outputUsdc": 18284.123773,
+          "priceImpactPct": "0.9817121823679829435666911152",
+          "swapUsdValue": "18276.222149402244068603252",
+          "routes": [
+            {
+              "ammKey": "6M46xqwp4mfjLviaTQLCkRjCPwwmJcyduNffXP46TfBT",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9354305338838",
+              "outAmount": "18284123773",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "9846064898229",
+          "requestedTokens": 9846064.898229,
+          "requestedCensusMarkUsd": 1052570.3985040074,
+          "status": 200,
+          "contextSlot": 457347930,
+          "inAmount": "9846064898229",
+          "outAmount": "18301017401",
+          "outputUsdc": 18301.017401,
+          "priceImpactPct": "0.9826095103007111888994678786",
+          "swapUsdValue": "18293.108476692004203047524",
+          "routes": [
+            {
+              "ammKey": "6M46xqwp4mfjLviaTQLCkRjCPwwmJcyduNffXP46TfBT",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9846064898229",
+              "outAmount": "18301017401",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "95331666991860",
+          "requestedTokens": 95331666.99186,
+          "requestedCensusMarkUsd": 10191207.528372278,
+          "status": 200,
+          "contextSlot": 457347930,
+          "inAmount": "95331666991860",
+          "outAmount": "18594064639",
+          "outputUsdc": 18594.064639,
+          "priceImpactPct": "0.9981751111374981725268778529",
+          "swapUsdValue": "18586.029072092129805517436",
+          "routes": [
+            {
+              "ammKey": "6M46xqwp4mfjLviaTQLCkRjCPwwmJcyduNffXP46TfBT",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "95331666991860",
+              "outAmount": "18594064639",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "Bb7yeJNz1CBsXetysWwHjkk9ospkNExiVTVVKXXWAgDd",
+      "symbol": "TOR",
+      "decimals": 6,
+      "vaultCount": 19,
+      "balanceRaw": "95331666991860",
+      "claimableRaw": "9846064898229",
+      "censusPriceUsd": 0.1022314392169796,
+      "censusMarkUsd": 9745893.519531677,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "97817267140",
+          "requestedTokens": 97817.26714,
+          "requestedCensusMarkUsd": 9999.999999993965,
+          "status": 200,
+          "contextSlot": 457347931,
+          "inAmount": "97817267140",
+          "outAmount": "6852551851",
+          "outputUsdc": 6852.551851,
+          "priceImpactPct": "0.3111338276318171221520763796",
+          "swapUsdValue": "6849.590468432098932929324",
+          "routes": [
+            {
+              "ammKey": "2okY6to9XEjEV6JJ6Pnq6S6eKvA7xSeFCoCwQxgFNrGq",
+              "label": "Meteora DLMM",
+              "percent": 5,
+              "inAmount": "4890863355",
+              "outAmount": "500533519",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "5AXM1pBhUnSbtcHiJue5YJadHNsaxmQ5LWcwbrqu9DY5",
+              "label": "Meteora DAMM v2",
+              "percent": 89,
+              "inAmount": "87057367759",
+              "outAmount": "5769463705",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "G9vw3bZgYGGhfwvscNBxLbUmKWazxWQjAab6iZRvW92f",
+              "label": "Meteora DLMM",
+              "percent": 6,
+              "inAmount": "5869036026",
+              "outAmount": "582554627",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "978172671400",
+          "requestedTokens": 978172.6714,
+          "requestedCensusMarkUsd": 99999.99999993965,
+          "status": 200,
+          "contextSlot": 457347931,
+          "inAmount": "978172671400",
+          "outAmount": "14426191852",
+          "outputUsdc": 14426.191852,
+          "priceImpactPct": "0.8549778859172574340225065007",
+          "swapUsdValue": "14419.957463118217978659248",
+          "routes": [
+            {
+              "ammKey": "5AXM1pBhUnSbtcHiJue5YJadHNsaxmQ5LWcwbrqu9DY5",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "978172671400",
+              "outAmount": "14426191852",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "9781726714005",
+          "requestedTokens": 9781726.714005,
+          "requestedCensusMarkUsd": 999999.9999999078,
+          "status": 200,
+          "contextSlot": 457347932,
+          "inAmount": "9781726714005",
+          "outAmount": "16618631986",
+          "outputUsdc": 16618.631986,
+          "priceImpactPct": "0.9832937952822424814833151086",
+          "swapUsdValue": "16611.450117385825030789064",
+          "routes": [
+            {
+              "ammKey": "5AXM1pBhUnSbtcHiJue5YJadHNsaxmQ5LWcwbrqu9DY5",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9781726714005",
+              "outAmount": "16618631986",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "9846064898229",
+          "requestedTokens": 9846064.898229,
+          "requestedCensusMarkUsd": 1006577.3851697344,
+          "status": 200,
+          "contextSlot": 457347932,
+          "inAmount": "9846064898229",
+          "outAmount": "16620465915",
+          "outputUsdc": 16620.465915,
+          "priceImpactPct": "0.9834011288581440767484105404",
+          "swapUsdValue": "16613.28325383941466314046",
+          "routes": [
+            {
+              "ammKey": "5AXM1pBhUnSbtcHiJue5YJadHNsaxmQ5LWcwbrqu9DY5",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9846064898229",
+              "outAmount": "16620465915",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "95331666991860",
+          "requestedTokens": 95331666.99186,
+          "requestedCensusMarkUsd": 9745893.519531677,
+          "status": 200,
+          "contextSlot": 457347933,
+          "inAmount": "95331666991860",
+          "outAmount": "16874339109",
+          "outputUsdc": 16874.339109,
+          "priceImpactPct": "0.9982594454506884137944095886",
+          "swapUsdValue": "16867.046734601555798557716",
+          "routes": [
+            {
+              "ammKey": "5AXM1pBhUnSbtcHiJue5YJadHNsaxmQ5LWcwbrqu9DY5",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "95331666991860",
+              "outAmount": "16874339109",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "FXdwYhavxUufiDfEA3kPyVzJSYoQ16euB1EdPfBakXX5",
+      "symbol": "CHI",
+      "decimals": 6,
+      "vaultCount": 19,
+      "balanceRaw": "95331666991860",
+      "claimableRaw": "9846064898229",
+      "censusPriceUsd": 0.10131698729513006,
+      "censusMarkUsd": 9658717.29343785,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "98700131803",
+          "requestedTokens": 98700.131803,
+          "requestedCensusMarkUsd": 9999.999999912212,
+          "status": 200,
+          "contextSlot": 457347933,
+          "inAmount": "98700131803",
+          "outAmount": "6972177577",
+          "outputUsdc": 6972.177577,
+          "priceImpactPct": "0.3030835502676968161304128419",
+          "swapUsdValue": "6969.164497261854651994148",
+          "routes": [
+            {
+              "ammKey": "DmSHfSZbFikYvq7E8MvPxeqT5SUtbFso1opw5oVAi4Us",
+              "label": "Meteora DLMM",
+              "percent": 6,
+              "inAmount": "5922007908",
+              "outAmount": "564668208",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "GMomt1rzyb1KXnKYsg8pCbn7ZGmnimZEi4djE2trJ4dC",
+              "label": "Meteora DLMM",
+              "percent": 5,
+              "inAmount": "4935006590",
+              "outAmount": "485550486",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "G1fHhcAqZdHChaWUZBRVEDjnYY3vaUbyYUUpHw3Soc4o",
+              "label": "Meteora DAMM v2",
+              "percent": 89,
+              "inAmount": "87843117305",
+              "outAmount": "5921958883",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "987001318038",
+          "requestedTokens": 987001.318038,
+          "requestedCensusMarkUsd": 99999.99999993267,
+          "status": 200,
+          "contextSlot": 457347934,
+          "inAmount": "987001318038",
+          "outAmount": "15200767053",
+          "outputUsdc": 15200.767053,
+          "priceImpactPct": "0.8480580207445473752514880644",
+          "swapUsdValue": "15194.197925535038177313972",
+          "routes": [
+            {
+              "ammKey": "G1fHhcAqZdHChaWUZBRVEDjnYY3vaUbyYUUpHw3Soc4o",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "987001318038",
+              "outAmount": "15200767053",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "9870013180386",
+          "requestedTokens": 9870013.180386,
+          "requestedCensusMarkUsd": 999999.9999999345,
+          "status": 200,
+          "contextSlot": 457347934,
+          "inAmount": "9870013180386",
+          "outAmount": "17629507644",
+          "outputUsdc": 17629.507644,
+          "priceImpactPct": "0.9823781110822416922362152328",
+          "swapUsdValue": "17621.888917757162233699056",
+          "routes": [
+            {
+              "ammKey": "G1fHhcAqZdHChaWUZBRVEDjnYY3vaUbyYUUpHw3Soc4o",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9870013180386",
+              "outAmount": "17629507644",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "9846064898229",
+          "requestedTokens": 9846064.898229,
+          "requestedCensusMarkUsd": 997573.6322008935,
+          "status": 200,
+          "contextSlot": 457347935,
+          "inAmount": "9846064898229",
+          "outAmount": "17628746431",
+          "outputUsdc": 17628.746431,
+          "priceImpactPct": "0.9823360126361353358045499088",
+          "swapUsdValue": "17621.128033721168296741244",
+          "routes": [
+            {
+              "ammKey": "G1fHhcAqZdHChaWUZBRVEDjnYY3vaUbyYUUpHw3Soc4o",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "9846064898229",
+              "outAmount": "17628746431",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "95331666991860",
+          "requestedTokens": 95331666.99186,
+          "requestedCensusMarkUsd": 9658717.29343785,
+          "status": 200,
+          "contextSlot": 457347935,
+          "inAmount": "95331666991860",
+          "outAmount": "17914619190",
+          "outputUsdc": 17914.61919,
+          "priceImpactPct": "0.9981460398201329389208561416",
+          "swapUsdValue": "17906.87725062713556924156",
+          "routes": [
+            {
+              "ammKey": "G1fHhcAqZdHChaWUZBRVEDjnYY3vaUbyYUUpHw3Soc4o",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "95331666991860",
+              "outAmount": "17914619190",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "ARENA551cbiMFSFzXv1V1RDxufZEw9Q2Kbd5uD7FrFeR",
+      "symbol": "ARENA",
+      "decimals": 6,
+      "vaultCount": 1,
+      "balanceRaw": "900000000000000",
+      "claimableRaw": "0",
+      "censusPriceUsd": 0.004711090986217042,
+      "censusMarkUsd": 4239981.887595338,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "2122650576959",
+          "requestedTokens": 2122650.576959,
+          "requestedCensusMarkUsd": 9999.999999999949,
+          "status": 200,
+          "contextSlot": 457347936,
+          "inAmount": "2122650576959",
+          "outAmount": "8928400834",
+          "outputUsdc": 8928.400834,
+          "priceImpactPct": "0.095387500602256100600599847",
+          "swapUsdValue": "8924.542357455209978116616",
+          "routes": [
+            {
+              "ammKey": "CxKu5DQgzCPGZCwkHF3pCL3ngPWunkEoHCcMmSr65u71",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "2122650576959",
+              "outAmount": "8928400834",
+              "updateContextSlot": "457347874"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "21226505769590",
+          "requestedTokens": 21226505.76959,
+          "requestedCensusMarkUsd": 99999.9999999995,
+          "status": 200,
+          "contextSlot": 457347937,
+          "inAmount": "21226505769590",
+          "outAmount": "48569959609",
+          "outputUsdc": 48569.959609,
+          "priceImpactPct": "0.5078962809305145269023993195",
+          "swapUsdValue": "48548.969730362487516399716",
+          "routes": [
+            {
+              "ammKey": "CxKu5DQgzCPGZCwkHF3pCL3ngPWunkEoHCcMmSr65u71",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "21226505769590",
+              "outAmount": "48569959609",
+              "updateContextSlot": "457347874"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "212265057695901",
+          "requestedTokens": 212265057.695901,
+          "requestedCensusMarkUsd": 999999.9999999997,
+          "status": 200,
+          "contextSlot": 457347937,
+          "inAmount": "212265057695901",
+          "outAmount": "87355090579",
+          "outputUsdc": 87355.090579,
+          "priceImpactPct": "0.9114931012921578594551933865",
+          "swapUsdValue": "87317.339410080305045345996",
+          "routes": [
+            {
+              "ammKey": "CxKu5DQgzCPGZCwkHF3pCL3ngPWunkEoHCcMmSr65u71",
+              "label": "Meteora DAMM v2",
+              "percent": 100,
+              "inAmount": "212265057695901",
+              "outAmount": "87355090579",
+              "updateContextSlot": "457347874"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "900000000000000",
+          "requestedTokens": 900000000,
+          "requestedCensusMarkUsd": 4239981.887595338,
+          "error": "Unexpected token 'R', \"Rate limit\"... is not valid JSON"
+        }
+      ]
+    },
+    {
+      "mint": "METvsvVRapdj9cFLzq4Tr43xK4tAjQfwX76z3n6mWQL",
+      "symbol": "MET",
+      "decimals": 6,
+      "vaultCount": 1,
+      "balanceRaw": "8962500000000",
+      "claimableRaw": "5623047944328",
+      "censusPriceUsd": 0.37466008315352634,
+      "censusMarkUsd": 3357890.9952634797,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "26690860461",
+          "requestedTokens": 26690.860461,
+          "requestedCensusMarkUsd": 9999.999999757429,
+          "status": 200,
+          "contextSlot": 457347962,
+          "inAmount": "26690860461",
+          "outAmount": "10046255332",
+          "outputUsdc": 10046.255332,
+          "priceImpactPct": "0.0058981408537336227829466083",
+          "swapUsdValue": "10041.913766104584501434768",
+          "routes": [
+            {
+              "ammKey": "5hbf9JP8k5zdrZp9pokPypFQoBse5mGCmW6nqodurGcd",
+              "label": "Meteora DLMM",
+              "percent": 11,
+              "inAmount": "2935994644",
+              "outAmount": "1105570128",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "4zgBzkjb9Vbgcgvpg19EnFPh1FkqtJgwjDimWLBnSfVg",
+              "label": "Scorch",
+              "percent": 10,
+              "inAmount": "2669086040",
+              "outAmount": "1004396200",
+              "updateContextSlot": "457347961"
+            },
+            {
+              "ammKey": "AsSyvUnbfaZJPRrNh3kUuvZTeHKoMVWEoHz86f4Q5D9x",
+              "label": "Meteora DLMM",
+              "percent": 79,
+              "inAmount": "21085779777",
+              "outAmount": "74767862729",
+              "updateContextSlot": "457347741"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 100,
+              "inAmount": "74767862729",
+              "outAmount": "7936289004",
+              "updateContextSlot": "457347962"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "266908604616",
+          "requestedTokens": 266908.604616,
+          "requestedCensusMarkUsd": 99999.99999982225,
+          "status": 200,
+          "contextSlot": 457347963,
+          "inAmount": "266908604616",
+          "outAmount": "98722353902",
+          "outputUsdc": 98722.353902,
+          "priceImpactPct": "0.0231178453282445923251547653",
+          "swapUsdValue": "98679.690283502187528843448",
+          "routes": [
+            {
+              "ammKey": "4zgBzkjb9Vbgcgvpg19EnFPh1FkqtJgwjDimWLBnSfVg",
+              "label": "Scorch",
+              "percent": 11,
+              "inAmount": "29359946506",
+              "outAmount": "10908118300",
+              "updateContextSlot": "457347963"
+            },
+            {
+              "ammKey": "BnztueWcXv93mgW7yJe8WYpnCxpz34nujPhfjQT6SLu1",
+              "label": "Meteora DAMM v2",
+              "percent": 23,
+              "inAmount": "61388979058",
+              "outAmount": "22539774495",
+              "updateContextSlot": "457347912"
+            },
+            {
+              "ammKey": "AsSyvUnbfaZJPRrNh3kUuvZTeHKoMVWEoHz86f4Q5D9x",
+              "label": "Meteora DLMM",
+              "percent": 66,
+              "inAmount": "176159679052",
+              "outAmount": "614971404047",
+              "updateContextSlot": "457347741"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 100,
+              "inAmount": "614971404047",
+              "outAmount": "65274461107",
+              "updateContextSlot": "457347962"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "2669086046164",
+          "requestedTokens": 2669086.046164,
+          "requestedCensusMarkUsd": 999999.9999997211,
+          "status": 200,
+          "contextSlot": 457347964,
+          "inAmount": "2669086046164",
+          "outAmount": "876504096855",
+          "outputUsdc": 876504.096855,
+          "priceImpactPct": "0.1326774769136620591590729804",
+          "swapUsdValue": "876125.30892175123843498902",
+          "routes": [
+            {
+              "ammKey": "AvpjYo2akRt8xCSWHVgcnXD6JwjiSdMK3gBFwCERWEyB",
+              "label": "Meteora DLMM",
+              "percent": 18,
+              "inAmount": "480435488298",
+              "outAmount": "1471262070290",
+              "updateContextSlot": "457347727"
+            },
+            {
+              "ammKey": "AsSyvUnbfaZJPRrNh3kUuvZTeHKoMVWEoHz86f4Q5D9x",
+              "label": "Meteora DLMM",
+              "percent": 54,
+              "inAmount": "1441306464948",
+              "outAmount": "4482371103097",
+              "updateContextSlot": "457347741"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 100,
+              "inAmount": "5953633173387",
+              "outAmount": "631575314212",
+              "updateContextSlot": "457347964"
+            },
+            {
+              "ammKey": "BnztueWcXv93mgW7yJe8WYpnCxpz34nujPhfjQT6SLu1",
+              "label": "Meteora DAMM v2",
+              "percent": 28,
+              "inAmount": "747344092918",
+              "outAmount": "244928782643",
+              "updateContextSlot": "457347912"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "5623047944328",
+          "requestedTokens": 5623047.944328,
+          "requestedCensusMarkUsd": 2106731.610398194,
+          "status": 200,
+          "contextSlot": 457347965,
+          "inAmount": "5623047944328",
+          "outAmount": "1612725487072",
+          "outputUsdc": 1612725.487072,
+          "priceImpactPct": "0.2425082416973994208666976827",
+          "swapUsdValue": "1612028.535447543801703622528",
+          "routes": [
+            {
+              "ammKey": "BnztueWcXv93mgW7yJe8WYpnCxpz34nujPhfjQT6SLu1",
+              "label": "Meteora DAMM v2",
+              "percent": 37,
+              "inAmount": "2080527739391",
+              "outAmount": "564112374432",
+              "updateContextSlot": "457347965"
+            },
+            {
+              "ammKey": "AsSyvUnbfaZJPRrNh3kUuvZTeHKoMVWEoHz86f4Q5D9x",
+              "label": "Meteora DLMM",
+              "percent": 34,
+              "inAmount": "1911836301090",
+              "outAmount": "5749209928863",
+              "updateContextSlot": "457347741"
+            },
+            {
+              "ammKey": "AvpjYo2akRt8xCSWHVgcnXD6JwjiSdMK3gBFwCERWEyB",
+              "label": "Meteora DLMM",
+              "percent": 29,
+              "inAmount": "1630683903847",
+              "outAmount": "4138044431907",
+              "updateContextSlot": "457347727"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 100,
+              "inAmount": "9887254360770",
+              "outAmount": "1048613112640",
+              "updateContextSlot": "457347965"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "8962500000000",
+          "requestedTokens": 8962500,
+          "requestedCensusMarkUsd": 3357890.9952634797,
+          "status": 200,
+          "contextSlot": 457347966,
+          "inAmount": "8962500000000",
+          "outAmount": "2057637155756",
+          "outputUsdc": 2057637.155756,
+          "priceImpactPct": "0.3936423321922927018859170443",
+          "swapUsdValue": "2056747.932159212165757882544",
+          "routes": [
+            {
+              "ammKey": "AsSyvUnbfaZJPRrNh3kUuvZTeHKoMVWEoHz86f4Q5D9x",
+              "label": "Meteora DLMM",
+              "percent": 21,
+              "inAmount": "1882125000000",
+              "outAmount": "5670963023754",
+              "updateContextSlot": "457347741"
+            },
+            {
+              "ammKey": "AvpjYo2akRt8xCSWHVgcnXD6JwjiSdMK3gBFwCERWEyB",
+              "label": "Meteora DLMM",
+              "percent": 17,
+              "inAmount": "1523625000000",
+              "outAmount": "3930946689000",
+              "updateContextSlot": "457347727"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 100,
+              "inAmount": "9601909712754",
+              "outAmount": "1018467918272",
+              "updateContextSlot": "457347966"
+            },
+            {
+              "ammKey": "BnztueWcXv93mgW7yJe8WYpnCxpz34nujPhfjQT6SLu1",
+              "label": "Meteora DAMM v2",
+              "percent": 62,
+              "inAmount": "5556750000000",
+              "outAmount": "1039169237484",
+              "updateContextSlot": "457347965"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "QUESTP8xKMfot3ErcdfWXsHbG3kN9mutieAqrVNw74s",
+      "symbol": "QUEST",
+      "decimals": 9,
+      "vaultCount": 5,
+      "balanceRaw": "533999999999999110",
+      "claimableRaw": "25000000000000000",
+      "censusPriceUsd": 0.004297198071324352,
+      "censusMarkUsd": 2294703.7700872,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "2327097758590891",
+          "requestedTokens": 2327097.758590891,
+          "requestedCensusMarkUsd": 10000,
+          "status": 200,
+          "contextSlot": 457347967,
+          "inAmount": "2327097758590891",
+          "outAmount": "7979219275",
+          "outputUsdc": 7979.219275,
+          "priceImpactPct": "0.1731374460704525949613888654",
+          "swapUsdValue": "7975.7709945082592610851",
+          "routes": [
+            {
+              "ammKey": "6e11zRwK3BPQx4zgcdx7CUbrNjH8Xf2sLNQGchp7CZLx",
+              "label": "Meteora DLMM",
+              "percent": 100,
+              "inAmount": "2327097758590891",
+              "outAmount": "75143454781",
+              "updateContextSlot": "457347707"
+            },
+            {
+              "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+              "label": "GoonFi V2",
+              "percent": 51,
+              "inAmount": "37964434768",
+              "outAmount": "4031351909",
+              "updateContextSlot": "457347967"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 9,
+              "inAmount": "6532538356",
+              "outAmount": "693648870",
+              "updateContextSlot": "457347966"
+            },
+            {
+              "ammKey": "CNC5TaeNQEoSPfQKZ7GgfM4R8WYAJRKRSHFCHkf2H7ko",
+              "label": "Aquifer",
+              "percent": 40,
+              "inAmount": "30646481657",
+              "outAmount": "3254218496",
+              "updateContextSlot": "457347967"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "23270977585908912",
+          "requestedTokens": 23270977.585908912,
+          "requestedCensusMarkUsd": 100000,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "232709775859089120",
+          "requestedTokens": 232709775.8590891,
+          "requestedCensusMarkUsd": 1000000,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "25000000000000000",
+          "requestedTokens": 25000000,
+          "requestedCensusMarkUsd": 107429.9517831088,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "533999999999999110",
+          "requestedTokens": 533999999.9999991,
+          "requestedCensusMarkUsd": 2294703.7700872,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      ]
+    },
+    {
+      "mint": "PAYmo6moDF3Ro3X6bU2jwe2UdBnBhv8YjLgL1j4DxGu",
+      "symbol": "PAYAI",
+      "decimals": 9,
+      "vaultCount": 4,
+      "balanceRaw": "156275044705479056",
+      "claimableRaw": "76275044705479056",
+      "censusPriceUsd": 0.007990973704165108,
+      "censusMarkUsd": 1248789.7728587096,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "1251411951811045",
+          "requestedTokens": 1251411.951811045,
+          "requestedCensusMarkUsd": 9999.999999999995,
+          "status": 200,
+          "contextSlot": 457347970,
+          "inAmount": "1251411951811045",
+          "outAmount": "9661717905",
+          "outputUsdc": 9661.717905,
+          "priceImpactPct": "0.0173977730523154325167288879",
+          "swapUsdValue": "9657.54251988771234428922",
+          "routes": [
+            {
+              "ammKey": "6NLvUzfYH4TC98mYcKRnYjWsH6879tJwxEy2vopzLfzu",
+              "label": "Meteora DLMM",
+              "percent": 13,
+              "inAmount": "162683553735430",
+              "outAmount": "11843364918",
+              "updateContextSlot": "457327538"
+            },
+            {
+              "ammKey": "dAVkU4eGCj9qzEV2pDFynpF3nwL97odmbFHfDBKDvLz",
+              "label": "Raydium CLMM",
+              "percent": 87,
+              "inAmount": "1088728398075615",
+              "outAmount": "79147329578",
+              "updateContextSlot": "457343794"
+            },
+            {
+              "ammKey": "CNC5TaeNQEoSPfQKZ7GgfM4R8WYAJRKRSHFCHkf2H7ko",
+              "label": "Aquifer",
+              "percent": 45,
+              "inAmount": "40520026368",
+              "outAmount": "4302518627",
+              "updateContextSlot": "457347970"
+            },
+            {
+              "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+              "label": "GoonFi V2",
+              "percent": 55,
+              "inAmount": "50470668128",
+              "outAmount": "5359199278",
+              "updateContextSlot": "457347970"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "12514119518110458",
+          "requestedTokens": 12514119.518110458,
+          "requestedCensusMarkUsd": 100000,
+          "status": 200,
+          "contextSlot": 457347972,
+          "inAmount": "12514119518110458",
+          "outAmount": "78078243719",
+          "outputUsdc": 78078.243719,
+          "priceImpactPct": "0.2059398037821989579462298021",
+          "swapUsdValue": "78044.501610233900627507356",
+          "routes": [
+            {
+              "ammKey": "6NLvUzfYH4TC98mYcKRnYjWsH6879tJwxEy2vopzLfzu",
+              "label": "Meteora DLMM",
+              "percent": 13,
+              "inAmount": "1626835537354352",
+              "outAmount": "94339481431",
+              "updateContextSlot": "457327538"
+            },
+            {
+              "ammKey": "dAVkU4eGCj9qzEV2pDFynpF3nwL97odmbFHfDBKDvLz",
+              "label": "Raydium CLMM",
+              "percent": 87,
+              "inAmount": "10887283980756106",
+              "outAmount": "641031454231",
+              "updateContextSlot": "457343794"
+            },
+            {
+              "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+              "label": "GoonFi V2",
+              "percent": 34,
+              "inAmount": "247764801384",
+              "outAmount": "26306448599",
+              "updateContextSlot": "457347972"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 66,
+              "inAmount": "487606134278",
+              "outAmount": "51771795120",
+              "updateContextSlot": "457347971"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "125141195181104576",
+          "requestedTokens": 125141195.18110457,
+          "requestedCensusMarkUsd": 1000000,
+          "status": 200,
+          "contextSlot": 457347973,
+          "inAmount": "125141195181104576",
+          "outAmount": "236806061278",
+          "outputUsdc": 236806.061278,
+          "priceImpactPct": "0.7591668837215212471326096174",
+          "swapUsdValue": "236703.723731770467488202872",
+          "routes": [
+            {
+              "ammKey": "dAVkU4eGCj9qzEV2pDFynpF3nwL97odmbFHfDBKDvLz",
+              "label": "Raydium CLMM",
+              "percent": 100,
+              "inAmount": "125141195181104576",
+              "outAmount": "2230399562367",
+              "updateContextSlot": "457343794"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 36,
+              "inAmount": "792017558631",
+              "outAmount": "84089373479",
+              "updateContextSlot": "457347973"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 46,
+              "inAmount": "1035907284542",
+              "outAmount": "109985676400",
+              "updateContextSlot": "457347973"
+            },
+            {
+              "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+              "label": "GoonFi V2",
+              "percent": 18,
+              "inAmount": "402474719194",
+              "outAmount": "42731011399",
+              "updateContextSlot": "457347973"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "76275044705479056",
+          "requestedTokens": 76275044.70547906,
+          "requestedCensusMarkUsd": 609511.8765255013,
+          "status": 200,
+          "contextSlot": 457347975,
+          "inAmount": "76275044705479056",
+          "outAmount": "206575241580",
+          "outputUsdc": 206575.24158,
+          "priceImpactPct": "0.6553172987354135672842103393",
+          "swapUsdValue": "206485.96851316641002623992",
+          "routes": [
+            {
+              "ammKey": "dAVkU4eGCj9qzEV2pDFynpF3nwL97odmbFHfDBKDvLz",
+              "label": "Raydium CLMM",
+              "percent": 100,
+              "inAmount": "76275044705479056",
+              "outAmount": "1945543348714",
+              "updateContextSlot": "457343794"
+            },
+            {
+              "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+              "label": "BisonFi",
+              "percent": 39,
+              "inAmount": "754246765522",
+              "outAmount": "80087185343",
+              "updateContextSlot": "457347975"
+            },
+            {
+              "ammKey": "FJnaiidSLXFweWkgbinxEHRykVHsnkzDcYbNDR3RF5LN",
+              "label": "BisonFi",
+              "percent": 10,
+              "inAmount": "202415110795",
+              "outAmount": "21513007080",
+              "updateContextSlot": "457347975"
+            },
+            {
+              "ammKey": "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ",
+              "label": "Manifest",
+              "percent": 100,
+              "inAmount": "21513007080",
+              "outAmount": "21492895737",
+              "updateContextSlot": "457347975"
+            },
+            {
+              "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+              "label": "Scorch",
+              "percent": 51,
+              "inAmount": "988881472397",
+              "outAmount": "104995160500",
+              "updateContextSlot": "457347975"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "156275044705479056",
+          "requestedTokens": 156275044.70547903,
+          "requestedCensusMarkUsd": 1248789.7728587096,
+          "status": 200,
+          "contextSlot": 457347977,
+          "inAmount": "156275044705479056",
+          "outAmount": "257213416915",
+          "outputUsdc": 257213.416915,
+          "priceImpactPct": "0.7905271814719313919959342073",
+          "swapUsdValue": "257102.26017432226346886446",
+          "routes": [
+            {
+              "ammKey": "6NLvUzfYH4TC98mYcKRnYjWsH6879tJwxEy2vopzLfzu",
+              "label": "Meteora DLMM",
+              "percent": 1,
+              "inAmount": "1562750447054790",
+              "outAmount": "91397033083",
+              "updateContextSlot": "457327538"
+            },
+            {
+              "ammKey": "dAVkU4eGCj9qzEV2pDFynpF3nwL97odmbFHfDBKDvLz",
+              "label": "Raydium CLMM",
+              "percent": 99,
+              "inAmount": "154712294258424266",
+              "outAmount": "2331522835788",
+              "updateContextSlot": "457343794"
+            },
+            {
+              "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+              "label": "TesseraV",
+              "percent": 86,
+              "inAmount": "2082006814281",
+              "outAmount": "221012527062",
+              "updateContextSlot": "457347977"
+            },
+            {
+              "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+              "label": "Kipseli",
+              "percent": 14,
+              "inAmount": "340913054590",
+              "outAmount": "36200889853",
+              "updateContextSlot": "457347976"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "mint": "j14XLJZSVMcUYpAfajdZRpnfHUpJieZHS4aPektLWvh",
+      "symbol": "jlUSDS",
+      "decimals": 6,
+      "vaultCount": 5,
+      "balanceRaw": "646433817016",
+      "claimableRaw": "143519208000",
+      "censusPriceUsd": 1.0672779870573732,
+      "censusMarkUsd": 689924.5829906509,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "9369630144",
+          "requestedTokens": 9369.630144,
+          "requestedCensusMarkUsd": 9999.999999560407,
+          "status": 200,
+          "contextSlot": 457347978,
+          "inAmount": "9369630144",
+          "outAmount": "10005292735",
+          "outputUsdc": 10005.292735,
+          "priceImpactPct": "0",
+          "swapUsdValue": "10000.96887140342577970214",
+          "routes": [
+            {
+              "ammKey": "Ey9UTFK5KDMZJuHqndU8kYrSrWHQb5uQqNEaTk57Toc",
+              "label": "Jupiter Lend Earn",
+              "percent": 100,
+              "inAmount": "9369630144",
+              "outAmount": "10006070006",
+              "updateContextSlot": "457346635"
+            },
+            {
+              "ammKey": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+              "label": "AlphaQ",
+              "percent": 46,
+              "inAmount": "4602792222",
+              "outAmount": "4602458859",
+              "updateContextSlot": "457347977"
+            },
+            {
+              "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+              "label": "Manifest",
+              "percent": 54,
+              "inAmount": "5403277784",
+              "outAmount": "5402833876",
+              "updateContextSlot": "457347978"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "93696301444",
+          "requestedTokens": 93696.301444,
+          "requestedCensusMarkUsd": 99999.99999987317,
+          "status": 200,
+          "contextSlot": 457347978,
+          "inAmount": "93696301444",
+          "outAmount": "100034519695",
+          "outputUsdc": 100034.519695,
+          "priceImpactPct": "0.0000871098583034432688045861",
+          "swapUsdValue": "99991.28901404281785365318",
+          "routes": [
+            {
+              "ammKey": "Ey9UTFK5KDMZJuHqndU8kYrSrWHQb5uQqNEaTk57Toc",
+              "label": "Jupiter Lend Earn",
+              "percent": 100,
+              "inAmount": "93696301444",
+              "outAmount": "100060700071",
+              "updateContextSlot": "457346635"
+            },
+            {
+              "ammKey": "6R3LknvRLwPg7c8Cww7LKqBHRDcGioPoj29uURX9anug",
+              "label": "AlphaQ",
+              "percent": 12,
+              "inAmount": "12007284003",
+              "outAmount": "12004917729",
+              "updateContextSlot": "457347977"
+            },
+            {
+              "ammKey": "AS5MV3ear4NZPMWXbCsEz3AdbCaXEnq4ChdaWsvLgkcM",
+              "label": "Raydium CLMM",
+              "percent": 65,
+              "inAmount": "65039455062",
+              "outAmount": "65019819308",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+              "label": "Manifest",
+              "percent": 23,
+              "inAmount": "23013961006",
+              "outAmount": "23009782658",
+              "updateContextSlot": "457347978"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "143519208000",
+          "requestedTokens": 143519.208,
+          "requestedCensusMarkUsd": 153174.89141830846,
+          "status": 200,
+          "contextSlot": 457347979,
+          "inAmount": "143519208000",
+          "outAmount": "153206182215",
+          "outputUsdc": 153206.182215,
+          "priceImpactPct": "0.0002279644111650799701177993",
+          "swapUsdValue": "153139.97299438097377970166",
+          "routes": [
+            {
+              "ammKey": "Ey9UTFK5KDMZJuHqndU8kYrSrWHQb5uQqNEaTk57Toc",
+              "label": "Jupiter Lend Earn",
+              "percent": 100,
+              "inAmount": "143519208000",
+              "outAmount": "153267868687",
+              "updateContextSlot": "457346635"
+            },
+            {
+              "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+              "label": "Manifest",
+              "percent": 15,
+              "inAmount": "22990180303",
+              "outAmount": "22986012240",
+              "updateContextSlot": "457347978"
+            },
+            {
+              "ammKey": "AS5MV3ear4NZPMWXbCsEz3AdbCaXEnq4ChdaWsvLgkcM",
+              "label": "Raydium CLMM",
+              "percent": 85,
+              "inAmount": "130277688384",
+              "outAmount": "130220169975",
+              "updateContextSlot": "457347871"
+            }
+          ]
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "646433817016",
+          "requestedTokens": 646433.817016,
+          "requestedCensusMarkUsd": 689924.5829906509,
+          "status": 200,
+          "contextSlot": 457347979,
+          "inAmount": "646433817016",
+          "outAmount": "523733035302",
+          "outputUsdc": 523733.035302,
+          "priceImpactPct": "0.2412117020016874269506346169",
+          "swapUsdValue": "523506.700074671377635057048",
+          "routes": [
+            {
+              "ammKey": "Ey9UTFK5KDMZJuHqndU8kYrSrWHQb5uQqNEaTk57Toc",
+              "label": "Jupiter Lend Earn",
+              "percent": 100,
+              "inAmount": "646433817016",
+              "outAmount": "690343367706",
+              "updateContextSlot": "457346635"
+            },
+            {
+              "ammKey": "AS5MV3ear4NZPMWXbCsEz3AdbCaXEnq4ChdaWsvLgkcM",
+              "label": "Raydium CLMM",
+              "percent": 57,
+              "inAmount": "393495719600",
+              "outAmount": "392845413072",
+              "updateContextSlot": "457347871"
+            },
+            {
+              "ammKey": "CgPgXrTQYe9Qqq77wWoHMaqURP2tya4iA4mcyxhD194z",
+              "label": "Manifest",
+              "percent": 43,
+              "inAmount": "296847648106",
+              "outAmount": "130887622230",
+              "updateContextSlot": "457347978"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

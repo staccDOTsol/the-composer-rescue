@@ -1,0 +1,387 @@
+{
+  "generatedAt": "2026-10-15T19:10:05.093Z",
+  "transport": "read-only mainnet getAccountInfo + simulateTransaction; sigVerify false; no sendTransaction",
+  "transactionFormat": {
+    "version": 1,
+    "maxBytes": 4096,
+    "maxAccounts": 64
+  },
+  "klend": {
+    "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "reserve": "4oigbthMAgjTMPyw8dBxhxU59YMtvNDHqhpR3W4HAzBM",
+    "lendingMarket": "C7h9YnjPrDvNhe2cWWDhCu4CZEB1XTTH4RzjmsHuengV",
+    "mint": "So11111111111111111111111111111111111111112",
+    "supplyVault": "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR",
+    "feeVault": "DW718KwF5d9URykynv8dcmHSQNXKTv7V5VxW5ozckbGS",
+    "flashLoanFeeSf": "0",
+    "configuredFeeRateIsExactlyZero": true,
+    "reserveAvailableRaw": "6583112759818",
+    "supplyVaultRaw": "6583112759818",
+    "feeVaultRaw": "0"
+  },
+  "sp12": {
+    "program": "SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY",
+    "stakePool": "2iZHumJq19hyCYkD3xFoZ6dbiFbJ5nqbwALMdJBYQsJa",
+    "withdrawAuthority": "3ndMuPC9Cz5VC4RJkpoPaZz6Px6eVXtRenw9Yi1o2xnA",
+    "withdrawBump": 255,
+    "reserveStake": "FDjBN7LDysGEDvyy4hgh8sSP9ugVyGAS7spoYBkUnbTb",
+    "poolMint": "cPQPBN7WubB3zyQDpzTK2ormx1BMdAym9xkrYUJsctm",
+    "managerFeeAccount": "65Yk58ozpXDEgywHewvP1Z7KWhW4w7aSftwiDrsj48V8",
+    "userPoolAta": "7kJqhR7cG8g4vsiijCcscueScP9ZHwx4QqeLSruhQGsg",
+    "totalLamports": "2390369484567868",
+    "poolTokenSupply": "2268541930578118",
+    "minimumNonzeroDepositLamports": "2",
+    "minimumDepositPoolTokens": "1",
+    "minimumRoundTripDepositLamports": "3",
+    "minimumRoundTripPoolTokens": "2",
+    "depositLamports": "1000000",
+    "expectedMintedPoolTokens": "949034",
+    "configuredSolDepositFee": {
+      "numerator": "0",
+      "denominator": "0"
+    },
+    "configuredSolWithdrawalFee": {
+      "numerator": "1",
+      "denominator": "1000"
+    },
+    "computedWithdrawalFeePoolTokens": "950",
+    "expectedWithdrawLamports": "998998"
+  },
+  "user": {
+    "owner": "Dsg7ZFQzXuiKsBAmL78Y5V5VjN6ASkfKDxB7VUNpp6aM",
+    "wsolAta": "GGndpdVwG4g4AegawJQ87aRs4nTERouaaGgowv36AyKR"
+  },
+  "results": [
+    {
+      "label": "klend_wsol_pair_1",
+      "slot": 457349081,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 606,
+      "accountCount": 13,
+      "instructionCount": 3,
+      "unitsConsumed": 68576,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": null,
+        "sp12ReserveLamports": 13806865893,
+        "poolMintSupply": "2268541930578118"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "klend_wsol_pair_1000000",
+      "slot": 457349081,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 606,
+      "accountCount": 13,
+      "instructionCount": 3,
+      "unitsConsumed": 68578,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": null,
+        "sp12ReserveLamports": 13806865893,
+        "poolMintSupply": "2268541930578118"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "klend_wsol_pair_6583112759817",
+      "slot": 457349081,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 606,
+      "accountCount": 13,
+      "instructionCount": 3,
+      "unitsConsumed": 68578,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": null,
+        "sp12ReserveLamports": 13806865893,
+        "poolMintSupply": "2268541930578118"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "smallest_nonzero_flash_sp12_leg",
+      "slot": 457349082,
+      "err": {
+        "InstructionError": [
+          5,
+          {
+            "Custom": 28
+          }
+        ]
+      },
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 87353,
+      "post": null,
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Error: Not enough pool tokens provided to withdraw 1-lamport stake",
+        "Program SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY failed: custom program error: 0x1c"
+      ]
+    },
+    {
+      "label": "smallest_successful_flash_sp12_roundtrip",
+      "slot": 457349082,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 137979,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806865895,
+        "poolMintSupply": "2268541930578119"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "flash_sp12_deposit_withdraw_rewrap_repay",
+      "slot": 457349082,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 138356,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806866895,
+        "poolMintSupply": "2268541930579068"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "flash_sp12_two_deposit_withdraw_legs",
+      "slot": 457349082,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1076,
+      "accountCount": 23,
+      "instructionCount": 12,
+      "unitsConsumed": 174759,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806867897,
+        "poolMintSupply": "2268541930580018"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "flash_sp12_update_between_deposit_withdraw",
+      "slot": 457349083,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1072,
+      "accountCount": 24,
+      "instructionCount": 11,
+      "unitsConsumed": 146640,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806866895,
+        "poolMintSupply": "2268541930579068"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: UpdateStakePoolBalance",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "flash_sp12_update_before_and_after_leg",
+      "slot": 457349083,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1084,
+      "accountCount": 24,
+      "instructionCount": 12,
+      "unitsConsumed": 154925,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806866895,
+        "poolMintSupply": "2268541930579068"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: UpdateStakePoolBalance",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: UpdateStakePoolBalance",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "sp12_leg_before_flash_pair",
+      "slot": 457349083,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 134523,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806866895,
+        "poolMintSupply": "2268541930579068"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "flash_sp12_withdraw_before_deposit",
+      "slot": 457349083,
+      "err": {
+        "InstructionError": [
+          4,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 78355,
+      "post": null,
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "label": "flash_sp12_destination_alias_manager_fee",
+      "slot": 457349083,
+      "err": {
+        "InstructionError": [
+          5,
+          {
+            "Custom": 4
+          }
+        ]
+      },
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 89202,
+      "post": null,
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Error: owner does not match",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x4",
+        "Program SP12tWFxD9oJsVWNavTTBZvMbA6gkAmxtVgxdqvyvhY failed: custom program error: 0x4"
+      ]
+    },
+    {
+      "label": "near_liquidity_flash_sp12_leg",
+      "slot": 457349083,
+      "err": null,
+      "localError": null,
+      "v1Bytes": 1028,
+      "accountCount": 23,
+      "instructionCount": 10,
+      "unitsConsumed": 138353,
+      "post": {
+        "klendSupplyRaw": "6583112759818",
+        "klendFeeVaultRaw": "0",
+        "userWsolRaw": "0",
+        "userPoolTokenRaw": "0",
+        "sp12ReserveLamports": 13806866895,
+        "poolMintSupply": "2268541930579068"
+      },
+      "instructionLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program log: Instruction: DepositSol",
+        "Program log: Instruction: WithdrawSol",
+        "Program log: Instruction: Withdraw",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    }
+  ],
+  "pre": {
+    "klendSupplyRaw": "6583112759818",
+    "klendFeeVaultRaw": "0",
+    "userWsol": null,
+    "userPoolToken": null,
+    "sp12ReserveLamports": 13806865893,
+    "poolMintSupply": "2268541930578118"
+  }
+}

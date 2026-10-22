@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-15T21:28:33.268Z",
+  "program": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+  "sourceSignature": "3nNFqDdGfKjWjot2jUCxBzLwifAvafZcvBDR7HJkqzAtjtqRJpF8Vma6CTGejKAPmoxyvwR4YzjMsn5wZN7CUYbP",
+  "sourceSlot": 457387108,
+  "attacker": "4SaCBHrYdPutKJuwpags2H3xQx8N6hXLJKLG1Nag8kz4",
+  "sourceVault": "8zNYCcMUSm4JgTCAYp9JQCAth5Dx8BotpTNcRWGZJnfy",
+  "sourcePosition": "ELhkAYJi1fBGwvWqeiEibxya3nLFagzE8tgp2Tb5YZWg",
+  "originalRecipient": "5wzHj5BRhsViwc79VUtPv1DpAbafkFnYLc81hK2AT2be",
+  "attackerDestination": "2hJPWXsrjh3oX4HhomQT1HKAWCPEMTU2AonnhN1TG9iU",
+  "sigVerify": true,
+  "mainnetSubmitted": false,
+  "forkSubmitted": false,
+  "results": [
+    {
+      "label": "fresh_signer_original_destination",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "bytes": 378,
+      "accountKeys": 8,
+      "unitsConsumed": 9416,
+      "logs": [
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 9416 of 200000 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x7d6"
+      ]
+    },
+    {
+      "label": "fresh_signer_attacker_destination",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "bytes": 484,
+      "accountKeys": 11,
+      "unitsConsumed": 24340,
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 183 of 393149 compute units",
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 38 of 388056 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 235 of 385594 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 14924 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp invoke [1]",
+        "Program log: Instruction: ClaimPayout",
+        "Program log: AnchorError caused by account: position. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp consumed 9416 of 385076 compute units",
+        "Program 3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp failed: custom program error: 0x7d6"
+      ]
+    }
+  ]
+}

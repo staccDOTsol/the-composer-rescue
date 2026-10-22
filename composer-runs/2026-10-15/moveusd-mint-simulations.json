@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-10-15T19:38:58.401Z",
+  "transport": "current-mainnet read-only simulateTransaction; unsigned custom Solana v1; sigVerify=false; no sendTransaction",
+  "programId": "EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+  "sourceTransaction": "5voEfq87WCsH2mayahu3NkA7fMaPsSur92dXvE7mFu7pqB3fxAcckT3k1e7GY5ScVuURapckrZ2V2ypBohw9mGDQ",
+  "before": {
+    "slot": 457357111,
+    "supplyRaw": "115794133639254",
+    "controllerMintAtaRaw": "0",
+    "destinationRaw": "33743049994"
+  },
+  "importantInterpretation": "Cases retaining OPERATOR as a declared signer bypass cryptographic signature verification only to exercise current program logic; they are operator-equivalent controls and not outsider attack paths.",
+  "results": [
+    {
+      "label": "operator_equivalent_fresh_mint_1",
+      "simulationSlot": 457357111,
+      "err": null,
+      "unitsConsumed": 35768,
+      "supplyPostRaw": "115794133639255",
+      "controllerMintAtaPostRaw": "0",
+      "destinationPostRaw": "33743049995",
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [2]",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 423 of 1365334 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 35768 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "291930fd8ef8d1ead0177a27cf87c025913c60c77d8f3946e10f32258cac0275"
+    },
+    {
+      "label": "outsider_substitutes_authority_against_operator_permission",
+      "simulationSlot": 457357111,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 29759,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: authority_permissions. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 29759 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x7d6"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "6mgztPM3Br7Sn8Jqe49jT2RRMmZbMRK6iH2xRZ6XVLL3"
+      ],
+      "wireSha256": "4b1fce391b64ee07b27fc2fcd2ad3063fecbd39dfdc7666b341330a68d5ee66b"
+    },
+    {
+      "label": "operator_account_not_marked_signer",
+      "simulationSlot": 457357111,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "unitsConsumed": 6824,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: authority. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 6824 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbc2"
+      ],
+      "sizeBytes": 560,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 1,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ"
+      ],
+      "wireSha256": "727ff6935284e2a798778950495ff5062f0f4f468db7250f13010f4eaf31bd75"
+    },
+    {
+      "label": "replay_completed_mint_id",
+      "simulationSlot": 457357112,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 0
+          }
+        ]
+      },
+      "unitsConsumed": 8449,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program 11111111111111111111111111111111 failed: custom program error: 0x0",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 8449 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x0"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "38524fb788e7c2605b22aa3a3f35d940c92bd236acd1e430536a5678ae997f75"
+    },
+    {
+      "label": "token_info_substituted_with_system_program",
+      "simulationSlot": 457357112,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3007
+          }
+        ]
+      },
+      "unitsConsumed": 6584,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: token_info. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program log: EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 6584 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbbf"
+      ],
+      "sizeBytes": 592,
+      "addressCount": 11,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "570a841e57a90049f08334842eaca000d3e57745e94868232e050401f45c1bc0"
+    },
+    {
+      "label": "mint_substituted_with_usdc",
+      "simulationSlot": 457357113,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "unitsConsumed": 17543,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: mint. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 17543 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0x7d6"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "45faeaeb869234f98f478341207e0dd0b4acc4e1b3013774069585840f4bbfc7"
+    },
+    {
+      "label": "controller_mint_ata_substituted_with_system_program",
+      "simulationSlot": 457357113,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3007
+          }
+        ]
+      },
+      "unitsConsumed": 12657,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: mint_escrow. Error Code: AccountOwnedByWrongProgram. Error Number: 3007. Error Message: The given account is owned by a different program than expected.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 12657 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbbf"
+      ],
+      "sizeBytes": 592,
+      "addressCount": 11,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "dbe775607b723643ead73dad4c3a91a96b4d60726426955d55360e4ba285a2f0"
+    },
+    {
+      "label": "token_program_substituted_with_system_program",
+      "simulationSlot": 457357113,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3008
+          }
+        ]
+      },
+      "unitsConsumed": 13194,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: AnchorError caused by account: token_program. Error Code: InvalidProgramId. Error Number: 3008. Error Message: Program ID was not as expected.",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 13194 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xbc0"
+      ],
+      "sizeBytes": 592,
+      "addressCount": 11,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "dd193bf94baf31709c5bab00e548482144c0ceb2926c92868dadfdf92b4bd047"
+    },
+    {
+      "label": "operator_equivalent_zero_amount",
+      "simulationSlot": 457357114,
+      "err": null,
+      "unitsConsumed": 32791,
+      "supplyPostRaw": "115794133639254",
+      "controllerMintAtaPostRaw": "0",
+      "destinationPostRaw": "33743049994",
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [2]",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 423 of 1368311 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 32791 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC success"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "d1ebb1315d3ca488a4fd99eafa620b16fb3b9db5f1f264bed5969a52a1dc5dd6"
+    },
+    {
+      "label": "operator_equivalent_u64_max",
+      "simulationSlot": 457357114,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 14
+          }
+        ]
+      },
+      "unitsConsumed": 27901,
+      "supplyPostRaw": null,
+      "controllerMintAtaPostRaw": null,
+      "destinationPostRaw": null,
+      "logs": [
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC invoke [1]",
+        "Program log: Instruction: Mint",
+        "Program log: Error: Operation overflowed",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0xe",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC consumed 27901 of 1400000 compute units",
+        "Program EmiytJ3zWX9koH3emPsWDEs9RqNm6NNFp4CkMLoiA1KC failed: custom program error: 0xe"
+      ],
+      "sizeBytes": 624,
+      "addressCount": 12,
+      "instructionCount": 1,
+      "requiredSignatures": 2,
+      "signerKeys": [
+        "payrXniZwqd31JT2hYU1VgQmb3T1QWD3rMNYEGtHKvJ",
+        "HAeqpi3coL6PCALPg1QkfdJexK2MBFfy2sx6FeVbxTN4"
+      ],
+      "wireSha256": "820588aec5a653f9f9206496ce73db8c99b8982b2a2dd7eb1243019988413510"
+    }
+  ]
+}

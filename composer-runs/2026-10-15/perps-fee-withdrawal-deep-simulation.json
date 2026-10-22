@@ -1,0 +1,212 @@
+{
+  "observedAt": "2026-10-15T18:56:58.334Z",
+  "simulationOnly": true,
+  "transactionNeverSubmitted": true,
+  "sigVerifyFalseCaveat": "The keeper control is privileged-branch behavior, not proof the off-curve/third-party keeper is externally signable.",
+  "preFeesReserves": "426698409",
+  "preTokenAmounts": [
+    "100574422787133",
+    "0",
+    "33693150807971"
+  ],
+  "variants": [
+    {
+      "name": "keeper_positive_control",
+      "error": null,
+      "unitsConsumed": 56015,
+      "postFeesReserves": "0",
+      "postTokenAmounts": [
+        "100574262653719",
+        "160133414",
+        "33693152927971"
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: Total token fees: 426698409",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 759385 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Record and calculate APR",
+        "Program log: doves ag price: 99985013, publish time: 1792090615",
+        "Program data: 7HaKWoutsVk+HiRzxzQGVOuHKQA1FRxAK9DjyXy0JEiG5yA0swtN/N7oCzQTotMQgGJrkmw4rzS+0YbbNo6Xfzq/S9VFRJptxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWFv48fCOXgvKeG+yn0Cy8wCh/y17/xJxm4zZ4Z2vS8N+KnmbhkAAAAA/ywTEwAAAACquVsGAAAAAPLdvgwAAAAAdiaPCQAAAAB8ty8DAAAAAHVTohwAAAAAIAMAAAAAAAAgAwAAAAAAAJyYyWoAAAAA8CCPfxgBAABldDGcGAEAAPkh0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 55865 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "outsider_same_receiver",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6034
+          }
+        ]
+      },
+      "unitsConsumed": 28713,
+      "postFeesReserves": null,
+      "postTokenAmounts": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: AnchorError thrown in programs/perpetuals/src/instructions/withdraw_fees2.rs:88. Error Code: InvalidKeeper. Error Number: 6034. Error Message: Invalid Keeper.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 28563 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1792"
+      ]
+    },
+    {
+      "name": "keeper_attacker_receiver",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "unitsConsumed": 27169,
+      "postFeesReserves": null,
+      "postTokenAmounts": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: AnchorError occurred. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 27019 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x7df"
+      ]
+    },
+    {
+      "name": "keeper_wrong_selected_oracle",
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6002
+          }
+        ]
+      },
+      "unitsConsumed": 46439,
+      "postFeesReserves": null,
+      "postTokenAmounts": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: Total token fees: 426698409",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 759380 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Record and calculate APR",
+        "Program log: AnchorError thrown in programs/perpetuals/src/state/oracle.rs:102. Error Code: InvalidOracleAccount. Error Number: 6002. Error Message: Invalid oracle account.",
+        "Program log: Left:",
+        "Program log: hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+        "Program log: Right:",
+        "Program log: 6Jp2xZUTWdDD2ZyUPRzeMdc6AFQ5K3pFgZxk2EijfjnM",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 46289 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1772"
+      ]
+    },
+    {
+      "name": "two_keeper_withdrawals_atomic",
+      "error": null,
+      "unitsConsumed": 103910,
+      "postFeesReserves": "0",
+      "postTokenAmounts": [
+        "100574262579166",
+        "160207967",
+        "33693152927971"
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: Total token fees: 426698409",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 759380 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Record and calculate APR",
+        "Program log: doves ag price: 99985013, publish time: 1792090615",
+        "Program data: 7HaKWoutsVk+HiRzxzQGVOuHKQA1FRxAK9DjyXy0JEiG5yA0swtN/N7oCzQTotMQgGJrkmw4rzS+0YbbNo6Xfzq/S9VFRJptxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWFv48fCOXgvKeG+yn0Cy8wCh/y17/xJxm4zZ4Z2vS8N+KnmbhkAAAAA/ywTEwAAAACquVsGAAAAANVqwwwAAAAAIJCSCQAAAAC12jADAAAAAB+9pRwAAAAAIAMAAAAAAAAgAwAAAAAAAJyYyWoAAAAA8CCPfxgBAAAP3jScGAEAAPoh0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 55870 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: Total token fees: 0",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 94 of 710930 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Record and calculate APR",
+        "Program log: doves ag price: 99985013, publish time: 1792090615",
+        "Program data: 7HaKWoutsVk+HiRzxzQGVOuHKQA1FRxAK9DjyXy0JEiG5yA0swtN/N7oCzQTotMQgGJrkmw4rzS+0YbbNo6Xfzq/S9VFRJptxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWFv48fCOXgvKeG+yn0Cy8wCh/y17/xJxm4zZ4Z2vS8N+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAMAAAAAAAAgAwAAAAAAAJyYyWoAAAAAD940nBgBAAAP3jScGAEAAPoh0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 47890 of 743980 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success"
+      ]
+    },
+    {
+      "name": "keeper_then_outsider_atomic_revert",
+      "error": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 6034
+          }
+        ]
+      },
+      "unitsConsumed": 84583,
+      "postFeesReserves": null,
+      "postTokenAmounts": [
+        null,
+        null,
+        null
+      ],
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: Total token fees: 426698409",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 759380 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Record and calculate APR",
+        "Program log: doves ag price: 99985013, publish time: 1792090615",
+        "Program data: 7HaKWoutsVk+HiRzxzQGVOuHKQA1FRxAK9DjyXy0JEiG5yA0swtN/N7oCzQTotMQgGJrkmw4rzS+0YbbNo6Xfzq/S9VFRJptxvp6877brTo9ZfNqq8l0MbG75MLS9uDkfKYCA0UvXWFv48fCOXgvKeG+yn0Cy8wCh/y17/xJxm4zZ4Z2vS8N+KnmbhkAAAAA/ywTEwAAAACquVsGAAAAANVqwwwAAAAAIJCSCQAAAAC12jADAAAAAB+9pRwAAAAAIAMAAAAAAAAgAwAAAAAAAJyYyWoAAAAA8CCPfxgBAAAP3jScGAEAAPoh0WoAAAAA",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 55870 of 799850 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu success",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu invoke [1]",
+        "Program log: Instruction: WithdrawFees2",
+        "Program log: Check permissions",
+        "Program log: AnchorError thrown in programs/perpetuals/src/instructions/withdraw_fees2.rs:88. Error Code: InvalidKeeper. Error Number: 6034. Error Message: Invalid Keeper.",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu consumed 28563 of 743980 compute units",
+        "Program PERPHjGBqRHArX4DySjwM6UJHiR3sWAatqfdBS2qQJu failed: custom program error: 0x1792"
+      ]
+    }
+  ]
+}

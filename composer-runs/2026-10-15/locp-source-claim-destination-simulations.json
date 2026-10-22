@@ -1,0 +1,136 @@
+{
+  "method": "simulateTransaction(sigVerify=false, replaceRecentBlockhash=true)",
+  "submittedTransactions": 0,
+  "caveat": "Authorized recipient signatures are unsigned counterfactual controls; no private keys used.",
+  "program": "LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn",
+  "binarySha256": "e0ace82e092741fe0dfe9e5c8ec45dfdbc642bfc510bb9e126f1fb8a6142ab92",
+  "escrow": "AHYBvim1ebpaTrKdhVg5svFTpuSrMCSF1D88K5F1r7pd",
+  "recipient": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz",
+  "creator": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+  "destination": "3BRayUFLQ61BoHQENu2LyamLFJboBS67WLvVQmPNSMZs",
+  "destinationOwner": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+  "destinationMint": "DrZ26cKJDksVRWib3DVVsjo9eeXccc7hKhDJviiYEEZY",
+  "preObservationSlot": 457349046,
+  "pre": {
+    "AHYBvim1ebpaTrKdhVg5svFTpuSrMCSF1D88K5F1r7pd": {
+      "totalClaimed": "0",
+      "recipient": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz"
+    },
+    "oSSQa2P45hUpCN3rJJVf1XCR6h1jRWdZx1mWbrRPsQo": "270000000000055",
+    "3BRayUFLQ61BoHQENu2LyamLFJboBS67WLvVQmPNSMZs": "0"
+  },
+  "tests": [
+    {
+      "label": "recipient_signed_creator_owned_destination_counterfactual",
+      "signer": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz",
+      "serializedBytes": 419,
+      "err": null,
+      "unitsConsumed": 24576,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 183283 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [2]",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 5035 of 180934 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 24576 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success"
+      ],
+      "post": {
+        "AHYBvim1ebpaTrKdhVg5svFTpuSrMCSF1D88K5F1r7pd": {
+          "totalClaimed": "1000000",
+          "recipient": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz"
+        },
+        "oSSQa2P45hUpCN3rJJVf1XCR6h1jRWdZx1mWbrRPsQo": "269999999000055",
+        "3BRayUFLQ61BoHQENu2LyamLFJboBS67WLvVQmPNSMZs": "1000000"
+      }
+    },
+    {
+      "label": "outsider_signed_creator_owned_destination",
+      "signer": "FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+      "serializedBytes": 419,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2001
+          }
+        ]
+      },
+      "unitsConsumed": 6352,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program log: AnchorError caused by account: escrow. Error Code: ConstraintHasOne. Error Number: 2001. Error Message: A has one constraint was violated.",
+        "Program log: Left:",
+        "Program log: 8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz",
+        "Program log: Right:",
+        "Program log: FTNTD1rkpBZxkBqVfG17VduezXfgtQ6R6VR8sr2CSgNR",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 6352 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x7d1"
+      ],
+      "post": null
+    },
+    {
+      "label": "recipient_signed_source_destination_alias",
+      "signer": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz",
+      "serializedBytes": 387,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6006
+          }
+        ]
+      },
+      "unitsConsumed": 10511,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program log: AnchorError caused by account: recipient_token. Error Code: InvalidRecipientTokenAccount. Error Number: 6006. Error Message: Invalid recipient token account.",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 10511 of 200000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn failed: custom program error: 0x1776"
+      ],
+      "post": null
+    },
+    {
+      "label": "recipient_signed_repeated_claims",
+      "signer": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz",
+      "serializedBytes": 448,
+      "err": null,
+      "unitsConsumed": 49152,
+      "logs": [
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 383283 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [2]",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 5035 of 380934 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 24576 of 400000 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [1]",
+        "Program log: Instruction: ClaimV2",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 358707 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn invoke [2]",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 5035 of 356358 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn consumed 24576 of 375424 compute units",
+        "Program LocpQgucEQHbqNABEYvBvwoxCPsSbG91A1QaQhQQqjn success"
+      ],
+      "post": {
+        "AHYBvim1ebpaTrKdhVg5svFTpuSrMCSF1D88K5F1r7pd": {
+          "totalClaimed": "2000000",
+          "recipient": "8XePxHs4ypF3e2NhonvFiyprb9fjEZnHQtyGLWCBoATz"
+        },
+        "oSSQa2P45hUpCN3rJJVf1XCR6h1jRWdZx1mWbrRPsQo": "269999998000055",
+        "3BRayUFLQ61BoHQENu2LyamLFJboBS67WLvVQmPNSMZs": "2000000"
+      }
+    }
+  ]
+}

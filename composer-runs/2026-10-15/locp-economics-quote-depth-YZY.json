@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-10-15T19:08:52.246Z",
+  "sourceSnapshotSlot": 457347567,
+  "sourceBlockTime": 1792091076,
+  "quoteApi": "https://lite-api.jup.ag/swap/v1/quote",
+  "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+  "slippageBps": 100,
+  "methodology": "Independent single-transaction exact-in, read-only aggregator quotes; not executable transaction simulations, nor estimates for orderly staged liquidation.",
+  "observations": [
+    {
+      "mint": "DrZ26cKJDksVRWib3DVVsjo9eeXccc7hKhDJviiYEEZY",
+      "symbol": "YZY",
+      "decimals": 6,
+      "vaultCount": 15,
+      "balanceRaw": "697023833333379",
+      "claimableRaw": "405357166666704",
+      "censusPriceUsd": 0.2907591930822241,
+      "censusMarkUsd": 202666087.33909193,
+      "quotes": [
+        {
+          "scenario": "mark_10000",
+          "requestedRaw": "34392721667",
+          "requestedTokens": 34392.721667,
+          "requestedCensusMarkUsd": 9999.999999798445,
+          "status": 200,
+          "contextSlot": 457348739,
+          "inAmount": "34392721667",
+          "outAmount": "9914056522",
+          "outputUsdc": 9914.056522,
+          "priceImpactPct": "0.0089950226817048569805403467",
+          "swapUsdValue": "9910.049772983209735762782",
+          "routes": [
+            {
+              "ammKey": "DQ9weJhfiU4iL5LUoeshDrm5KxDHCMiSbnnKJz7buMcf",
+              "label": "Meteora DLMM",
+              "percent": 100,
+              "inAmount": "34392721667",
+              "outAmount": "9914056522",
+              "updateContextSlot": "457348736"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_100000",
+          "requestedRaw": "343927216676",
+          "requestedTokens": 343927.216676,
+          "requestedCensusMarkUsd": 99999.999999729,
+          "status": 200,
+          "contextSlot": 457348740,
+          "inAmount": "343927216676",
+          "outAmount": "98195624015",
+          "outputUsdc": 98195.624015,
+          "priceImpactPct": "0.0184406157852723488290054234",
+          "swapUsdValue": "98155.938421206770695153965",
+          "routes": [
+            {
+              "ammKey": "DQ9weJhfiU4iL5LUoeshDrm5KxDHCMiSbnnKJz7buMcf",
+              "label": "Meteora DLMM",
+              "percent": 100,
+              "inAmount": "343927216676",
+              "outAmount": "98195624015",
+              "updateContextSlot": "457348736"
+            }
+          ]
+        },
+        {
+          "scenario": "mark_1000000",
+          "requestedRaw": "3439272166769",
+          "requestedTokens": 3439272.166769,
+          "requestedCensusMarkUsd": 999999.9999999068,
+          "status": 200,
+          "contextSlot": 457348741,
+          "inAmount": "3439272166769",
+          "outAmount": "881194922211",
+          "outputUsdc": 881194.922211,
+          "priceImpactPct": "0.1191612112122381759052179685",
+          "swapUsdValue": "880838.788787679832083428841",
+          "routes": [
+            {
+              "ammKey": "DQ9weJhfiU4iL5LUoeshDrm5KxDHCMiSbnnKJz7buMcf",
+              "label": "Meteora DLMM",
+              "percent": 100,
+              "inAmount": "3439272166769",
+              "outAmount": "881194922211",
+              "updateContextSlot": "457348736"
+            }
+          ]
+        },
+        {
+          "scenario": "full_scheduled_claimable",
+          "requestedRaw": "405357166666704",
+          "requestedTokens": 405357166.666704,
+          "requestedCensusMarkUsd": 117861322.69010748,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        },
+        {
+          "scenario": "full_vault_balance",
+          "requestedRaw": "697023833333379",
+          "requestedTokens": 697023833.333379,
+          "requestedCensusMarkUsd": 202666087.33909193,
+          "status": 400,
+          "error": "No routes found",
+          "errorCode": "NO_ROUTES_FOUND"
+        }
+      ]
+    }
+  ]
+}

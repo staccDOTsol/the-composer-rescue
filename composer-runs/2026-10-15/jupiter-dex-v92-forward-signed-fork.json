@@ -1,0 +1,547 @@
+{
+  "generatedAt": "2026-10-15T20:14:59.900Z",
+  "scope": "isolated Surfpool fork with current deployed programs; no mainnet send",
+  "fork": "http://127.0.0.1:9097",
+  "attacker": "63kuVfk7PS6iTLAvD8Cot1mLWfhBP6VE7JD2wggZUUhS",
+  "syntheticStartingJitoSOLraw": "10000000000000",
+  "syntheticStartingWSOLraw": "0",
+  "sourceTokenAccounts": [
+    "5JP5zgYCb9W37QQLgAHRHuinFLrKt87akDY1CgZoTPzr",
+    "6sga1yRArgQRqa8Darhm54EBromEpV3z8iDAvMTVYXB3"
+  ],
+  "target": {
+    "vaultId": 92,
+    "oracle": "TEqwo8FXBhiFtg24oQt4RiKXBzsX6PM48A5GB2o7fbF",
+    "dex": "Etb72AHGeCAcD72s3PVtzdQGnkYNd2ny4ULb6YgKi58"
+  },
+  "lender": {
+    "reserve": "EVbyPKrHG6WBfm4dLxLMJpUDY43cCAcHSpV3KYjKsktW",
+    "availableRaw": "721263424102624",
+    "flashFeeSf": "0"
+  },
+  "signatureVerification": true,
+  "v1Version": 1,
+  "liveSubmission": false,
+  "note": "Forward-only; no flash borrow or repayment; synthetic owned JitoSOL capital counted",
+  "watch": [
+    {
+      "label": "attacker",
+      "address": "63kuVfk7PS6iTLAvD8Cot1mLWfhBP6VE7JD2wggZUUhS"
+    },
+    {
+      "label": "attackerWSOL",
+      "address": "6rqUu2SAmukGkzAGRGq84WTr6wtSbABT1fwnGg2FSBDu"
+    },
+    {
+      "label": "attackerJitoSOL",
+      "address": "6vFWU41ju4Ndkv3v1jZnnw9mQtf8QwjUcr69W54QyAWG"
+    },
+    {
+      "label": "flashSupply",
+      "address": "6sga1yRArgQRqa8Darhm54EBromEpV3z8iDAvMTVYXB3"
+    },
+    {
+      "label": "flashFeeVault",
+      "address": "C2PyjpFRtbQjFjHNB3HDcoQoLP7VJ9NQn6NFJZMueWfB"
+    },
+    {
+      "label": "dexSupply0",
+      "address": "EybQbnWSA26LyCG3vL47wKVseiMgmG88swB35cwXcss7"
+    },
+    {
+      "label": "dexSupply1",
+      "address": "Edtk321YybmCMSAoM8dY8Neh9TvsfuDrNCWm9NihRMJa"
+    },
+    {
+      "label": "dex",
+      "address": "Etb72AHGeCAcD72s3PVtzdQGnkYNd2ny4ULb6YgKi58"
+    },
+    {
+      "label": "oracle",
+      "address": "TEqwo8FXBhiFtg24oQt4RiKXBzsX6PM48A5GB2o7fbF"
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "address": "CirunpL6HaQAARj6NneB3Nh8ukoXtJaMm8Q5itrqCtj5"
+    }
+  ],
+  "before": [
+    {
+      "label": "attacker",
+      "rawAmount": null,
+      "lamports": 20000000000
+    },
+    {
+      "label": "attackerWSOL",
+      "rawAmount": "0",
+      "lamports": 2039280
+    },
+    {
+      "label": "attackerJitoSOL",
+      "rawAmount": "10000000000000",
+      "lamports": 2039280
+    },
+    {
+      "label": "flashSupply",
+      "rawAmount": "721263426054773",
+      "lamports": 2039280
+    },
+    {
+      "label": "flashFeeVault",
+      "rawAmount": "329937352",
+      "lamports": 2039280
+    },
+    {
+      "label": "dexSupply0",
+      "rawAmount": null,
+      "lamports": 1753920
+    },
+    {
+      "label": "dexSupply1",
+      "rawAmount": null,
+      "lamports": 1753920
+    },
+    {
+      "label": "dex",
+      "rawAmount": null,
+      "lamports": 3180720
+    },
+    {
+      "label": "oracle",
+      "rawAmount": null,
+      "lamports": 2832720
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "rawAmount": null,
+      "lamports": 1385040
+    }
+  ],
+  "results": [
+    {
+      "amountRaw": "0",
+      "slot": 457365248,
+      "err": null,
+      "bytes": 456,
+      "addresses": 10,
+      "instructions": 1,
+      "requiredSignatures": 1,
+      "computeUnits": 57364,
+      "oracleReturns": [
+        {
+          "supplyX15": "2079419747206157",
+          "borrowX15": "2079419747206157"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2079419747206157",
+        "Program log: smart_col_exchange_rate: 2079419747206157",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 57364 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc DQRfozhjBwAAAAAAAAAAAA0EX6M4YwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "amountRaw": "1000000000",
+      "slot": 457365248,
+      "err": null,
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 166037,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        },
+        {
+          "supplyX15": "2079421030635324",
+          "borrowX15": "2079421030635324"
+        }
+      ],
+      "attackerUsdcPostRaw": "9999233911701",
+      "attackerWSOLPostRaw": "1000000000",
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program data: yvLkHCXCNCIFAABrlKktAAAAAADKmjsAAAAASv89aHM3JsuupcEU2EkRhQor+ui6bKS1lE30kCwXI00=",
+        "Program data: k/WGuEchdPYFAABK/z1oczcmy66lwRTYSRGFCiv66LpspLWUTfSQLBcjTUr/PWhzNybLrqXBFNhJEYUKK/roumyktZRN9JAsFyNNa5SpLQAAAAAAypo7AAAAAKGVAAAAAAAADgAw2asAAAAAAAAAAAAAAC9g6xVqAAAAAAAAAAAAAABODVIuuLgCAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 123783 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd a5SpLQAAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2079421030635324",
+        "Program log: smart_col_exchange_rate: 2079421030635324",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 42254 of 1276217 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc PJfe7zhjBwAAAAAAAAAAADyX3u84YwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ],
+      "attackerUsdcDeltaRaw": "-766088299",
+      "attackerWSOLDeltaRaw": "1000000000"
+    },
+    {
+      "amountRaw": "100000000000",
+      "slot": 457365248,
+      "err": null,
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 166430,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        },
+        {
+          "supplyX15": "2079571297606655",
+          "borrowX15": "2079571297606655"
+        }
+      ],
+      "attackerUsdcPostRaw": "9923379779616",
+      "attackerWSOLPostRaw": "100000000000",
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program data: yvLkHCXCNCIFAADgx+vWEQAAAADodkgXAAAASv89aHM3JsuupcEU2EkRhQor+ui6bKS1lE30kCwXI00=",
+        "Program data: k/WGuEchdPYFAABK/z1oczcmy66lwRTYSRGFCiv66LpspLWUTfSQLBcjTUr/PWhzNybLrqXBFNhJEYUKK/roumyktZRN9JAsFyNN4Mfr1hEAAAAA6HZIFwAAAOR0OgAAAAAADuJTzJQAAAAAAAAAAAAAANQbH797AAAAAAAAAAAAAADak4w57bgCAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 124174 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 4Mfr1hEAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2079571297606655",
+        "Program log: smart_col_exchange_rate: 2079571297606655",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 42256 of 1275826 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc /5t67FtjBwAAAAAAAAAAAP+beuxbYwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ],
+      "attackerUsdcDeltaRaw": "-76620220384",
+      "attackerWSOLDeltaRaw": "100000000000"
+    },
+    {
+      "amountRaw": "500000000000",
+      "slot": 457365248,
+      "err": null,
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 166418,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        },
+        {
+          "supplyX15": "2080646688144437",
+          "borrowX15": "2080646688144437"
+        }
+      ],
+      "attackerUsdcPostRaw": "9616668612909",
+      "attackerWSOLPostRaw": "500000000000",
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program data: yvLkHCXCNCIFAADTxlRAWQAAAACIUmp0AAAASv89aHM3JsuupcEU2EkRhQor+ui6bKS1lE30kCwXI00=",
+        "Program data: k/WGuEchdPYFAABK/z1oczcmy66lwRTYSRGFCiv66LpspLWUTfSQLBcjTUr/PWhzNybLrqXBFNhJEYUKK/roumyktZRN9JAsFyNN08ZUQFkAAAAAiFJqdAAAAGp1JAEAAAAADkJ4qjcAAAAAAAAAAAAAAKWaTSjDAAAAAAAAAAAAAABNANnIw7kCAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 124162 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 08ZUQFkAAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2080646688144437",
+        "Program log: smart_col_exchange_rate: 2080646688144437",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 42256 of 1275838 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc Nfy/TlZkBwAAAAAAAAAAADX8v05WZAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ],
+      "attackerUsdcDeltaRaw": "-383331387091",
+      "attackerWSOLDeltaRaw": "500000000000"
+    },
+    {
+      "amountRaw": "705532125581",
+      "slot": 457365248,
+      "err": null,
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 166424,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        },
+        {
+          "supplyX15": "2081491533669974",
+          "borrowX15": "2081491533669974"
+        }
+      ],
+      "attackerUsdcPostRaw": "9458927663633",
+      "attackerWSOLPostRaw": "705532125581",
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program data: yvLkHCXCNCIFAADvpWz6fQAAAI3h/USkAAAASv89aHM3JsuupcEU2EkRhQor+ui6bKS1lE30kCwXI00=",
+        "Program data: k/WGuEchdPYFAABK/z1oczcmy66lwRTYSRGFCiv66LpspLWUTfSQLBcjTUr/PWhzNybLrqXBFNhJEYUKK/roumyktZRN9JAsFyNN76Vs+n0AAACN4f1EpAAAADHOnAEAAAAAgejMzwcAAAAAAAAAAAAAAI9jR+LnAAAAAAAAAAAAAAAn1bMuMroCAAAAAAAAAAAA",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 124162 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd 76Vs+n0AAAA=",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd success",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2081491533669974",
+        "Program log: smart_col_exchange_rate: 2081491533669974",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 42262 of 1275838 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc VqZ3AxtlBwAAAAAAAAAAAFamdwMbZQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ],
+      "attackerUsdcDeltaRaw": "-541072336367",
+      "attackerWSOLDeltaRaw": "705532125581"
+    },
+    {
+      "amountRaw": "1000000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53061,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53061 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "2000000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53062,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53062 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "5000000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53061,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53061 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "6500000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53059,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53059 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "7000000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53061,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53061 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "10000000000000",
+      "slot": 457365248,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 991,
+      "addresses": 25,
+      "instructions": 2,
+      "requiredSignatures": 1,
+      "computeUnits": 53060,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "bda1fcef2bb802000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerWSOLPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 6922 of 1385839 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 53060 of 1400000 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd vaH87yu4AgAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

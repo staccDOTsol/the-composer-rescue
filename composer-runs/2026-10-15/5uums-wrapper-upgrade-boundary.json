@@ -1,0 +1,481 @@
+{
+  "at": "2026-10-15T19:09:10.401Z",
+  "wrapperProgram": "3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu",
+  "loaderProgram": "BPFLoaderUpgradeab1e11111111111111111111111",
+  "loaderInstruction": "SetAuthority (bincode variant 4)",
+  "loaderInstructionHex": "04000000",
+  "wrapperDataHex": "02a8f6914e88a1b0e210153ef763ae2b00c2b93d16c124d2c0537a10048000000400000004000000",
+  "before": {
+    "slot": 457348824,
+    "targets": [
+      {
+        "name": "bridge_program",
+        "program": "5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9",
+        "programData": "58cPagxAqtJzSnxi1yCWr9UVugj4jo25UX8eA5ctc1xY",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 45,
+        "tag": 3,
+        "upgradeSlot": 320435332,
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      },
+      {
+        "name": "wrapper_program",
+        "program": "3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu",
+        "programData": "CyXQ9V7xyAaXZSQXuqHHYgaRML6peJWtne5F2Cyav8D1",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 45,
+        "tag": 3,
+        "upgradeSlot": 275216054,
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      }
+    ]
+  },
+  "after": {
+    "slot": 457348831,
+    "targets": [
+      {
+        "name": "bridge_program",
+        "program": "5UuMSVm7pqAYc7E3mLnj6F3K28QD7BwgULXtKKh7tSf9",
+        "programData": "58cPagxAqtJzSnxi1yCWr9UVugj4jo25UX8eA5ctc1xY",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 45,
+        "tag": 3,
+        "upgradeSlot": 320435332,
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      },
+      {
+        "name": "wrapper_program",
+        "program": "3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu",
+        "programData": "CyXQ9V7xyAaXZSQXuqHHYgaRML6peJWtne5F2Cyav8D1",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 45,
+        "tag": 3,
+        "upgradeSlot": 275216054,
+        "upgradeAuthority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi"
+      }
+    ]
+  },
+  "noChainUpgradeAuthorityChange": true,
+  "results": [
+    {
+      "target": "bridge_program",
+      "label": "reference_A_B",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp"
+      ],
+      "compiledAccountIndices": [
+        0,
+        1,
+        3,
+        6,
+        2,
+        5,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 37137,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 37137 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "58cPagxAqtJzSnxi1yCWr9UVugj4jo25UX8eA5ctc1xY",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 818810,
+        "tag": 3,
+        "upgradeSlot": 320435332,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    },
+    {
+      "target": "bridge_program",
+      "label": "only_A_distinct_slots",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledAccountIndices": [
+        0,
+        5,
+        2,
+        6,
+        1,
+        4,
+        0
+      ],
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidArgument"
+        ]
+      },
+      "unitsConsumed": 26421,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 26421 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: invalid program argument"
+      ],
+      "innerInstructions": [],
+      "simulatedPostProgramData": null
+    },
+    {
+      "target": "bridge_program",
+      "label": "one_A_aliased_twice",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledAccountIndices": [
+        0,
+        0,
+        2,
+        5,
+        1,
+        4,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 37056,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 37056 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "58cPagxAqtJzSnxi1yCWr9UVugj4jo25UX8eA5ctc1xY",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 818810,
+        "tag": 3,
+        "upgradeSlot": 320435332,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    },
+    {
+      "target": "bridge_program",
+      "label": "one_B_aliased_twice",
+      "signerSlots": [
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp"
+      ],
+      "compiledAccountIndices": [
+        0,
+        0,
+        2,
+        5,
+        1,
+        4,
+        6
+      ],
+      "err": null,
+      "unitsConsumed": 37146,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 37146 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "58cPagxAqtJzSnxi1yCWr9UVugj4jo25UX8eA5ctc1xY",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 818810,
+        "tag": 3,
+        "upgradeSlot": 320435332,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    },
+    {
+      "target": "wrapper_program",
+      "label": "reference_A_B",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp"
+      ],
+      "compiledAccountIndices": [
+        0,
+        1,
+        3,
+        6,
+        2,
+        5,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 34116,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 34116 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "CyXQ9V7xyAaXZSQXuqHHYgaRML6peJWtne5F2Cyav8D1",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 63509,
+        "tag": 3,
+        "upgradeSlot": 275216054,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    },
+    {
+      "target": "wrapper_program",
+      "label": "only_A_distinct_slots",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledAccountIndices": [
+        0,
+        5,
+        2,
+        6,
+        1,
+        4,
+        0
+      ],
+      "err": {
+        "InstructionError": [
+          0,
+          "InvalidArgument"
+        ]
+      },
+      "unitsConsumed": 26421,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 26421 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu failed: invalid program argument"
+      ],
+      "innerInstructions": [],
+      "simulatedPostProgramData": null
+    },
+    {
+      "target": "wrapper_program",
+      "label": "one_A_aliased_twice",
+      "signerSlots": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      ],
+      "compiledAccountIndices": [
+        0,
+        0,
+        2,
+        5,
+        1,
+        4,
+        0
+      ],
+      "err": null,
+      "unitsConsumed": 34035,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 34035 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "CyXQ9V7xyAaXZSQXuqHHYgaRML6peJWtne5F2Cyav8D1",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 63509,
+        "tag": 3,
+        "upgradeSlot": 275216054,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    },
+    {
+      "target": "wrapper_program",
+      "label": "one_B_aliased_twice",
+      "signerSlots": [
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp",
+        "12eeLK7yJXpm7x7PUQVgReEeECm4Y4fNhzQhwbBMTXKn"
+      ],
+      "requiredSigners": [
+        "5XXejrbDVQifMfE4xbcFmBxSVndS1FYhmvoGFc78TMJp"
+      ],
+      "compiledAccountIndices": [
+        0,
+        0,
+        2,
+        5,
+        1,
+        4,
+        6
+      ],
+      "err": null,
+      "unitsConsumed": 34125,
+      "logs": [
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu invoke [1]",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 invoke [2]",
+        "New authority Some(FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N)",
+        "Program BPFLoaderUpgradeab1e11111111111111111111111 success",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu consumed 34125 of 200000 compute units",
+        "Program 3LWzkFMDYNaVMZfRLeMLifaAr8AHQYE5hgDT51Hj8Kpu success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "parsed": {
+                "info": {
+                  "account": "CyXQ9V7xyAaXZSQXuqHHYgaRML6peJWtne5F2Cyav8D1",
+                  "authority": "5okKWzQ6ox3p6qVCGe8b99n5QeecHkv2q5BKXMpNYKQi",
+                  "newAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+                },
+                "type": "setAuthority"
+              },
+              "program": "bpf-upgradeable-loader",
+              "programId": "BPFLoaderUpgradeab1e11111111111111111111111",
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "simulatedPostProgramData": {
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "length": 63509,
+        "tag": 3,
+        "upgradeSlot": 275216054,
+        "upgradeAuthority": "FppzwTMvRH9X6a3vRq6KnUYGtA6xGZUELS8yqsZJty6N"
+      }
+    }
+  ]
+}

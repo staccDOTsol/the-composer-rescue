@@ -1,0 +1,10 @@
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/release/deps/version_check-9464edcf09949a00.d: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/version.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/channel.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/date.rs
+
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/release/deps/libversion_check-9464edcf09949a00.rlib: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/version.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/channel.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/date.rs
+
+/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/kvault-mainnet-audit-20261015T1450EDT/build-target/release/deps/libversion_check-9464edcf09949a00.rmeta: /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/lib.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/version.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/channel.rs /Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/date.rs
+
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/lib.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/version.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/channel.rs:
+/Users/stacc/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/version_check-0.9.4/src/date.rs:

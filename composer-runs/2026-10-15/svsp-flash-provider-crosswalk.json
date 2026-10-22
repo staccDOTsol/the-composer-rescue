@@ -1,0 +1,2424 @@
+{
+  "schema": "svsp-flash-provider-crosswalk-v1",
+  "generatedAt": "2026-10-15T20:14:50.692Z",
+  "readOnly": true,
+  "transactionsBuilt": 0,
+  "simulations": 0,
+  "transactionsSubmitted": 0,
+  "transport": {
+    "endpointClass": "primary RPC_URL only (HEAVY_RPC_URL ignored)",
+    "commitment": "finalized",
+    "endpointRedacted": true
+  },
+  "target": {
+    "programId": "SVSPxpvHdN29nkVg9rPapPNDddN5DipNLRUFhyjFThE",
+    "poolCount": 57,
+    "uniqueMintCount": 57,
+    "activeOnrampPoolCount": 11,
+    "inputArtifact": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/svsp-live-finalized-evidence.json",
+    "inputArtifactSha256": "c07da88cce0bb9554687eef7155735d11c51ec514ad9776e818b68477c33ee6e"
+  },
+  "programIdentitySlot": 457367056,
+  "programIdentities": {
+    "save": {
+      "programId": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "klend": {
+      "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "project0": {
+      "programId": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "mango": {
+      "programId": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "jupiterMainLiquidity": {
+      "programId": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "jupiterMainFlash": {
+      "programId": "jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "jupiterIsolatedLiquidity": {
+      "programId": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    },
+    "jupiterIsolatedFlash": {
+      "programId": "jupKxkab7RTnQJ6wXStXg6WY4rcReV3maiUNwByciFF",
+      "exists": true,
+      "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+      "executable": true
+    }
+  },
+  "providers": {
+    "saveSolend": {
+      "programId": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo",
+      "reserveInventoryCount": 1829,
+      "inventorySlot": 457367056,
+      "targetReserveCount": 0,
+      "matches": [],
+      "semantics": {
+        "fee": "flash fee is a WAD rate; fee rounds up; u64::MAX disables flash loans",
+        "minimumSuccessfulPrincipalRaw": "3 (existing signed runtime control, not rerun here)",
+        "route": "single borrow plus indexed same-transaction repay; one flash borrow per transaction"
+      }
+    },
+    "kaminoLend": {
+      "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "reserveInventoryCount": 619,
+      "inventorySlot": 457367057,
+      "targetReserveCount": 0,
+      "matches": [],
+      "semantics": {
+        "fee": "flashLoanFeeSf / 2^60; u64::MAX disables flash loans",
+        "route": "one flash borrow per transaction plus indexed same-transaction repay"
+      }
+    },
+    "project0Marginfi": {
+      "programId": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "bankInventoryCount": 165,
+      "inventorySlot": 457367057,
+      "targetBankCount": 26,
+      "matches": [
+        {
+          "mint": "Akib1NYJzzh9HkiDH41S2LUefUmR1bKsk65xgqUcW5C5",
+          "pool": "9Y4irMvZAn49LVCxpQuQtrXDB7V8YxhtVV1XM9U1RESq",
+          "bank": "8F4DsU3NMFunUxBZkWrpYR8zwhAfoAt7QuiEPMtyhWvX",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "HHsfTiTF1TqJLCE91yya5rjJgEb82GgyVoNPGG2FhAV3",
+          "liquidityVaultAuthority": "Dg4PQCoMaLX48awdyNyPUnUDauehAkxSCXYukGiZKuVQ",
+          "vaultAmountRaw": "997459052",
+          "totalAssetsNativeFloorRaw": "997459052",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "3xjfK9C9YNcta8MvK1US4sQ3bc6DEjoJoR3qLExGf9xE",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "BADo3D6nMtGnsAaTv3iEes8mMcq92TuFoBWebFe8kzeA",
+          "pool": "AvS4oXtxWdrJGCJwDbcZ7DqpSqNQtKjyXnbkDbrSk6Fq",
+          "bank": "8g5qG6PVygcVSXV1cJnjXaD1yhrDwcWAMQCY2wR9VuAf",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "3MHksvvfP3UctfZF1EcrG3iHUU44g6jXTBMb2vFF2dwK",
+          "liquidityVaultAuthority": "4deoLML6b5ZrPdmfmt44VNkfZD4dsv9rUBBLnfSwjtTE",
+          "vaultAmountRaw": "68338804660",
+          "totalAssetsNativeFloorRaw": "68338804660",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "CooLbbZy5Xmdt7DiHPQ3ss2uRXawnTXXVgpMS8E8jDzr",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+          "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+          "bank": "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "7yjXeo9S9aBD7fLQTs8kSuv81iPydar8RDsMqQA6DXNS",
+          "liquidityVaultAuthority": "9tPKLywMcmnxa3H7VTkHfBW9NJ1jUQu11tMBejS157jr",
+          "vaultAmountRaw": "8050308",
+          "totalAssetsNativeFloorRaw": "8050308",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "5vmwd6JHDCmX9W2XT1n2QpvYGA2kk4Xf7qWSayDU6caT",
+          "pool": "A1iVXLExJsixNfCoQrGEb8UXjgLND1nr3JtbKBZUgyaY",
+          "bank": "3zk6EmXANYQK12bwy9dySRAM4cT2vT5cDcAB79j8G33B",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "8gLeTf2nnCYdAiiVMDfmnaLXD7AZE7MSkuUYQpFmsbKe",
+          "liquidityVaultAuthority": "ACmUD8NjLZ7ymLoB9W8Wjt3uG3YXr5nCcFHiYqejLAhk",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "HvsD9L5t62MGv3QBD2K7xjkipGYr9UZN7BtsW8NuSPpg",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+          "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+          "bank": "5CBocarwfJeWGNozGemWktRYSz6kPikRPdfH8ZHSFrsg",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "FaCAUpvebKoTfxSM6Li1ajydms6qKucfREKvVyzCKPTp",
+          "liquidityVaultAuthority": "8Didhgo8UZMfWPzheDR1JkbWuT3NZ6rxyeAQT3Eh3iZS",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "8zuMRTXThoPTTPLLvaiKiJshLLCqGMt9BdRjjCL19xBc",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "AQpQoJ3tJKGH9Yn8GSzoUsVcHPJjj3xYfQFp9XVr74F6",
+          "pool": "5ggDh4yt9qBrArSsMbLbj5wdpinfNN5Z9LGMRAGryh4o",
+          "bank": "E5hZu5QQ1pRmGvyS4JHGXVQwzdUPaYM4yEiNKr64YzyG",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "4ssXPiQqrs9zfuAs1GPaP5nrV1BQf1nihsXFcKa6dZKK",
+          "liquidityVaultAuthority": "DHcn8RZy55bkR6Fv8btmGc9UbMUXntuXeWnFUF1umuyE",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "nfGcSJkP35SkPa5475iBChmq1UNcj7JE1uQHrrasymm",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "6Mt7tBWLUJfDxqCFTsjoRXF9wD55g4Lhs5nAyYp244pX",
+          "pool": "8L6366uKkfVXfymWgbURNu2TxbxvacPDb2hR4YR8c39F",
+          "bank": "EPh2abWP8DusPH8myWnECAAeQUZgAz927aMbmwXt3eRY",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "GFWk4EEGSGx3kpaR5SuwerXJNXwDq8R1fnt8QPt7iuZA",
+          "liquidityVaultAuthority": "Dh9SD7abujGEfh3vXaJk1XoXjqr5w7TXCs6ZmnNzPsd6",
+          "vaultAmountRaw": "1841451715",
+          "totalAssetsNativeFloorRaw": "1841451715",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "mrgn2vsZ5EJ8YEfAMNPXmRux7th9cNfBasQ1JJvVwPn",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+          "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+          "bank": "2hs1pHAzDWGqnn1d8VQkc8bZRfQ45grYvzfau8dnWFUk",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "Gtgf4GMmNWFqz39bNpeaTpVe6FKikLUEVXkmhczWrqHn",
+          "liquidityVaultAuthority": "8syMj3rRDe13NP5hkopKFjoRW5nFGWBqfPwMGYJGw1Hn",
+          "vaultAmountRaw": "398418708",
+          "totalAssetsNativeFloorRaw": "398418708",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "2NxEEbhqqj1Qptq5LXLbDTP5tLa9f7PqkU8zNgxbGU9P",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "96rXgCFy1Er49169XoKHkeLiKC2k4bTy1641q1TVrMm2",
+          "pool": "AcYTFzeuaR4PZ2QoFQH8t5otN1sjobEzoakgLFJLQq7M",
+          "bank": "37tiA2NTF6YCt85XzCidPo9ZVpuqkkmfVJCYQ5Yx5Uhs",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "4nG7yN3FBph5A47jPGvQ4HRn57ukth2bLsUJpgsngEGZ",
+          "liquidityVaultAuthority": "2AZzjVjRTfXQmF6hHaKa31iCk6xveJfYjz92d2yQrq9f",
+          "vaultAmountRaw": "11997717120",
+          "totalAssetsNativeFloorRaw": "11997717120",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "SBLZib4npE7svxFA7AsD3ytdQAfYNb39c8zsU82AA2E",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "E7fosu1BW5ELQwDpipNK9TVSq9eRroPz9AhnnrfhNNYQ",
+          "pool": "FyvHDzS9j3WJKaDvbiWYQmegHdnxKJNCesc7oX1L93Ku",
+          "bank": "3DGvNzGY1QiabuUiuC8HwTZ58eZK6YtLknsvXksWzQap",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "5fSyS14nREynFwtv76W56yiJzvpK1w2S9APJpEEUvzf9",
+          "liquidityVaultAuthority": "E1vy2asTqdBTc3KD1aXNa59RQQgja5QHeQH9MsckufJ2",
+          "vaultAmountRaw": "855234250",
+          "totalAssetsNativeFloorRaw": "855234250",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "9M7oMo4oL6RDPG7WbAX3Zz4dPzbMgpiCzwrQPMwG4Wgq",
+          "pool": "E524AY3cdkmzFra5Sc2sr8ZYm1qeDMLk2MnY4fGEBq7S",
+          "bank": "3UrMZ26NRKu2y6c2dPE7gZVHwEmhpwKLcWACg3tjCVEt",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "6rm5XyyLuHtYpqfCuno8M4oSQ1J45TqunUTuheK7Njxw",
+          "liquidityVaultAuthority": "79vxwuPdhLPrT2CtFwvQDey32LdjFTpLQobULNq5hSdv",
+          "vaultAmountRaw": "1950036452",
+          "totalAssetsNativeFloorRaw": "1950036452",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "BNisp3omkr6Rg5nHESWafjUbeCpGPy6MYq1iRJRgSAsh",
+          "pool": "Eip8KPQ2KcPxUoHHroccZQed4Qaz6Eqr9wf1nUTrnJh4",
+          "bank": "3VCkXWAmE5DSwYRpqGFnkUz7vvD2RKbhFvrhzLuE8msu",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "EfL6qsvqvkpjvDc5d7VxEhLoUkAmUgKVfh6Q7S8nvKmi",
+          "liquidityVaultAuthority": "2sGbripDDDunRUPxbQwwPTqfxBWYhRitzV8r8fAYijZd",
+          "vaultAmountRaw": "32183277560267",
+          "totalAssetsNativeFloorRaw": "32183277560267",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "abc1zP7ihWsgQW8z5YmfQNqMckJE5Dfx8fwUNMNVNkY",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "77YLpVLQXr2KU66GM2JykbT9g5du7LarWgehbWD3CJaB",
+          "pool": "2A172EkPfeQchU4uKuTd3e6Mk2LqwsTZF6sALRCQbzZj",
+          "bank": "9dZiyG51FBR4BWpAs69XbDpr7GfVAEB1ZB89v38maV36",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "7nuBgqYgCMAndRLCkFkmvPYFRvVco664kCbmqu7JcwRA",
+          "liquidityVaultAuthority": "BxCX4LWLW8g6vY8wz7gEz3wJpASZmeA18drVoX5Bf7qo",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "Simpj3KyRQmpRkXuBvCQFS7DBBG6vqw93SkZb9UD1hp",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "TjA2rtxoUFzyPVAw35VQGEQnNXiwcmNjKSk29nmkq1P",
+          "pool": "CVvpff8ErCtPu1Z8wXX8K2TM6MmJ3xvcqAW48WZRn128",
+          "bank": "9ivswG37QpCUmkPkLMpRZT7PMyP64V9dDpZdteM254ec",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "HpvbY2AJn5VncmWGeeExJ2AVYqPGeMvpviGFX1aUTYHa",
+          "liquidityVaultAuthority": "FQhJZewwUuyRoXwkGQWMSfcJ4cF1xNxUpvsRKbMChBov",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "gaToR246dheK1DGAMEqxMdBJZwU4qFyt7DzhSwAHFWF",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "F1XPjtpsEy23Q7po4JkWjp1jkDZcvFYSrqD8TR1YL3EF",
+          "pool": "CrpYNnXiaRRe2tKmpAZQoZsB11DuXESDXKdJw9jnhRYM",
+          "bank": "A5e7UTE3g11ZfKgftqRCvxAgcDuFGyeDjMka96zJWSWe",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "4XDCg6nCWXMH1EESN7wGMpRqqoduzTuGNkNeptG3Jcm2",
+          "liquidityVaultAuthority": "9GyCmFoCP68rwSkPjQWJkn1Lc2ykCUdZVA3fMFG88bvK",
+          "vaultAmountRaw": "1145083",
+          "totalAssetsNativeFloorRaw": "1145083",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "3ZUQekqiZoybB57y49eqtvSaoonqDwuNbeqEGwN88JkQ",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+          "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+          "bank": "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "F9Xo4Nf9uCFZUskdzf9k3pFaf3jWuQD4NrYN9TBQhsVp",
+          "liquidityVaultAuthority": "GaLqWHadGmB6p4idBzUjog5QSxfkh4A5K6zHZwdvbcuJ",
+          "vaultAmountRaw": "5368574323",
+          "totalAssetsNativeFloorRaw": "5368574323",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+          "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+          "bank": "5q1wJkGqqRh6mSBtjG8sfjBsgJSGdA2QoXTWv4UQbHGk",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "83voyRm8pRoVB9YG2yZzWXVwnAxvuRHpP13JirBnifGd",
+          "liquidityVaultAuthority": "9ZoWUpuc7ACvxp9gEzxqWNX7pD5EzgyM5m3ifsHNGVX9",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "shft7Fry1js37Hm9wq4dfwcZSp2DyKszeWMvEpjYCQ1",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+          "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+          "bank": "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "2Tcqqdx22qm8hcM2RvTmtMMXQBrkvtCreWgJsYQoJ1dA",
+          "liquidityVaultAuthority": "DJa17hu5iWaMUkG6rVBxmc8aRetnDwiMabWWdx9GYbDb",
+          "vaultAmountRaw": "27717120",
+          "totalAssetsNativeFloorRaw": "27717120",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "DKPvRV4dxUejjGpr2XwFmzZbbbTD7vx9Jmt1kk43n4d5",
+          "pool": "GZcQzJ2Ai1gBvLk6Lr3Sc1sd3ik7RkcDEnvvpP4N8SHR",
+          "bank": "6wjAwhnxTMEzHk8NNHVXgkx1jSrb6TX1bC17j3S56FfB",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "9GDYr7Z6Gqb5UYwKcdKdW26E23QyBBx8oy13mp3dMV6G",
+          "liquidityVaultAuthority": "6c36tHpCTRtuRHPT9NZeMMrUYgwFgTNfb2E3vwXET37H",
+          "vaultAmountRaw": "53318160",
+          "totalAssetsNativeFloorRaw": "53318160",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "432SogPNunjZMneDV6goZ8ZcCQz282GxoSJ4rwqx95pT",
+          "pool": "FcQCjgQkzhxbd2WqoPsmL7paPjTtJBx1F45sTe4SNbJe",
+          "bank": "75UmeEMdqVnGn3JHx8yVZEn7viybJ73XYSjhYCYfyhp2",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "FAnDQueF57fH9NUkUqXS2xtLPBtwjV9y4oe9HDC6FfRo",
+          "liquidityVaultAuthority": "DUXnnvFQEdA9ZSqvnnJ5Fpf4tFohq5B8TLzEFcFPhJPP",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "zBH13AzXYCqHZKS8NGa4KR8zQhWiyvFdDY15nmfrHgS",
+          "pool": "DaaMMxBf3ebdVA3KHCWLovJzEVYawbQFrrj1Dzsnr38Y",
+          "bank": "7BHHMWw3P1AyebLhX9A8wnDeeGy8jgFXqqHuEZt7BVmW",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "5Por9gA43Pvh2zya8ePinDxYoFVpHDjhiGApZcmBiBBG",
+          "liquidityVaultAuthority": "7PLxUeyDKEqJH2p736GDEgwnzDaXQN1AGQJspmrnSPhe",
+          "vaultAmountRaw": "5997717120",
+          "totalAssetsNativeFloorRaw": "5997717120",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "CRpAn8E5k9G5VSRuzGfSyfL3Dhtq3phHZbfRwMQnCe2Z",
+          "pool": "8JDVKkCBTtd2Spzxu1nB5vgvTTBxiH9PnXUnuuXMtQmf",
+          "bank": "7jDJDLjjPZG3M2C8XAEJxDbvHz1e9c7zWzGX4itnKicR",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "AWunDjPRt7WUV4gaUG2vh9uVvD1TQ8Di1oqG4Gapic3J",
+          "liquidityVaultAuthority": "9yN9CTim9SvZHLLnd1sWTSg3pENMP1xwezNnMpP66RBZ",
+          "vaultAmountRaw": "8613155",
+          "totalAssetsNativeFloorRaw": "8613155",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "7K8DVxtNJGnMtUY1CQJT5jcs8sFGSZTDiG7kowvFpECh",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "FUyAyVbYrMfiaN1QEQYFZTuBNzW5EJf3jWzjjymGqKLv",
+          "pool": "5hBi3HTk3ZTCJ2XobTp7nZG8eJrXqEmoxVLA3AiEPYDG",
+          "bank": "BuCckNm1djpp3vZVhvh1CrrniirY6sr2hwUmeP5kTcGz",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "6kWjDRxSe4XM18gLLU13aUP5SLfPGwpPALWSHDT7GrhY",
+          "liquidityVaultAuthority": "GHCDQTsq52jHt9T1TzDdjSCCajtTo79kUNEjJPZQRUjP",
+          "vaultAmountRaw": "128306230",
+          "totalAssetsNativeFloorRaw": "128306230",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "3YEDiJ4r4xRGNhq6nudRnkwrdKHG7PAtDim24CjTMtBH",
+          "pool": "3h9FbVoHsKki4x3Vbx8erTgoty57oKHLRuYZrNKLrmXy",
+          "bank": "C96do7nkEaaFjHq8jHzPpyPTdJSea5xEGwxDzDSepCzf",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "3yy5qPaKFkkJx6wo2W3PqW26euaJcY88g18tVh99KHPq",
+          "liquidityVaultAuthority": "238oS4xHbLqDqesXM24Koe1DKhQPKKGfou1nGktyXPkr",
+          "vaultAmountRaw": "100997717120",
+          "totalAssetsNativeFloorRaw": "100997717120",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "voteRnv6PBzmiGP8NicWtQiqEJTwKKq2SxtqtdLUJjd",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+          "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+          "bank": "FZaHyfg9hmNMKpfUJ474wNKPaPdXMpnJouasKnndECiZ",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "BYYQNSUSyQyjT1qEdj5huFLo1xpAVNnbBmBf54WsvroR",
+          "liquidityVaultAuthority": "iC8afqXosq62Mr2kcAouqXTCS7AkviSve1HeRozvxb3",
+          "vaultAmountRaw": "0",
+          "totalAssetsNativeFloorRaw": "0",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        },
+        {
+          "mint": "Cq9S5UB9BviPn5yoGkEDk3m7neQag4KJnhPWGyuev9W8",
+          "pool": "Dskmef8JkvkauhZo7vmpFc7bdSY6rAHNswk2ra7BKtbg",
+          "bank": "G46aHuakgStymbE2WsLbja61mH5UXBPdSdpwf6Ci3saG",
+          "group": "4qp6Fx6tnZkY5Wropq9wUYgtFxXKwE6viZxFHg3rdAG8",
+          "liquidityVault": "22LC9j3n1npMwipmkNokqWzH6L5c1rzgtGBVQLQnFWy1",
+          "liquidityVaultAuthority": "HGc1McWoMaqY1bLF7mKRffqBLPCFAQZyZLWvxayCTgSu",
+          "vaultAmountRaw": "184757475853",
+          "totalAssetsNativeFloorRaw": "184757475853",
+          "totalLiabilitiesNativeFloorRaw": "0",
+          "borrowLimitRaw": "0",
+          "operationalState": "Operational",
+          "cbTier": 0,
+          "riskTier": "Collateral",
+          "assetTag": 2,
+          "oracleSetup": "StakedWithPythPush",
+          "integrationAccount1": "mnvkHm47ZmRKoSWuQZAfXLRiDPiKCq8PWkMWrp1Wwqe",
+          "protocolOriginationFeeI80F48Raw": "0",
+          "protocolOriginationFeeBps": "0",
+          "stateDerivedBorrowableUpperBoundRaw": "0",
+          "controlClassification": "not currently state-compatible",
+          "bankCrossCheckSlot": 457367062,
+          "vaultSlot": 457367063
+        }
+      ],
+      "semantics": {
+        "protocolFlashFee": "no separate flash-session fee; ordinary bank origination fee still applies per bank",
+        "route": "authority-owned Marginfi account; top-level start/end flash session; ordinary borrow/repay in between; end health must pass",
+        "limits": "bank operational state, physical vault, accounting utilization and active borrow limit; bank/group outflow rate limit is skipped for flashloan flows per pinned source"
+      }
+    },
+    "jupiterNativeFlash": {
+      "deployments": [
+        {
+          "label": "jupiterMain",
+          "liquidityProgram": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC",
+          "flashProgram": "jupgfSgfuAXv4B6R2Uxu85Z1qdzgju79s6MfZekN6XS",
+          "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+          "reserveInventoryCount": 47,
+          "borrowPositionInventoryCount": 163,
+          "reserveInventorySlot": 457367063,
+          "positionInventorySlot": 457367062,
+          "adminSlot": 457367064,
+          "adminState": {
+            "status": true,
+            "feeBps": 0,
+            "isFlashloanActive": false,
+            "activeFlashloanAmountRaw": "0",
+            "liquidityProgram": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC"
+          },
+          "targetReserveCount": 11,
+          "targetBoundPositionCount": 0,
+          "matches": [
+            {
+              "mint": "CiyQTfHJ9PbTwC7TGf4pXZk8szcWGJ8TeFhhCuUwybqi",
+              "pool": "2vFYPL64iubWGHNLmiSLRahNSExeH98ydGkfDuhogANu",
+              "reserve": "ytBBt4MSGhAEMUk71UQsHG5W6fM7cQ31PBgCdyHVsJE",
+              "vault": "9u1WSGcVhE6nB7oJjh7howhigJ7kPzVVYYAe4SGHKGVn",
+              "vaultAmountRaw": "0",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+              "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+              "reserve": "22ewUYwXHXTAdBeLFj532FXAPfAdwjZjwf93CkLdAhwn",
+              "vault": "HUSotoNUttKpWWNrwmQTnJVF28HuNF5UiQydj5B2gRm3",
+              "vaultAmountRaw": "12762718194",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "TjA2rtxoUFzyPVAw35VQGEQnNXiwcmNjKSk29nmkq1P",
+              "pool": "CVvpff8ErCtPu1Z8wXX8K2TM6MmJ3xvcqAW48WZRn128",
+              "reserve": "2dGHq2H4YF2Qa5mruMJDptwZRHV5uoWetEtQUkzECN9G",
+              "vault": "aeqHZu6wS36Agv6KdxD4js8A54tdmoYddDT5CDf3nfH",
+              "vaultAmountRaw": "96035459",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "38ZUTefZnKSUJU3wxpUe3xpiw2j5WQPnmzSTNbS1JqLA",
+              "pool": "6KyZ4p16cih53oE1zhzwum3aQNPjzBbCW6xieC5xtR6c",
+              "reserve": "4y2zYfJwPmSecoZeR6aibyCeTL2ziye7xkLYQCnVoL7V",
+              "vault": "7v1iXj8wciPANqqUonNVWinzJBfHNREGL7L4cLuSC7Fq",
+              "vaultAmountRaw": "31040127",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+              "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+              "reserve": "5LD3TWKKiuY1pzNUHV7FmrhfGqXBPL7vbgxQXfvvij8Q",
+              "vault": "BeybmnKZoGoa7QctcbevmK7TeFMtLtTreVVKYSpPU2py",
+              "vaultAmountRaw": "87717112",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+              "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+              "reserve": "66Pzudp4icvS34Sai81ZefMs1KS2jPwqwyWWjjzguFQY",
+              "vault": "BSNqr3dN2TKZ7EJ8xa9mDWZgEqBE76spziMGdGwxUxbK",
+              "vaultAmountRaw": "159404055573",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+              "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+              "reserve": "86eZ2ipEQvqzqG3S1wUAD7CaTRk28Xbt5JMGJr9WhKQ8",
+              "vault": "BoXtVK6oyWEEjCLoD17oTsBheUrV3Q1wzQXPgxFqxT6a",
+              "vaultAmountRaw": "128571258037",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "5FGcgMtpjZXvrSqrXu8ehE43MLrKQoxBs6JPgk164vBc",
+              "pool": "5MajYJn3isL5S5bZ1rnvjnMaq4UtbceoKtg52V2UHojo",
+              "reserve": "9L2xLfGDkCrWChGG8sSEEDV53ahmk86fcgKJS87JPjQj",
+              "vault": "D9V5i4PTNESjsX2QaLXb6w5kGFoVydiqfJp63iPFFQ2Q",
+              "vaultAmountRaw": "43890995",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+              "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+              "reserve": "9f9pXawhWV4gnDiWpeLTMahxYkM7E7XCk8ZFrqf1Tue3",
+              "vault": "Ages7oYwtPFWd8PVVgwVwB9pq8Jv4ykCUEAdifJQ6CNv",
+              "vaultAmountRaw": "1832439860653",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+              "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+              "reserve": "ErwRQSxtjgxCtWhK7VxB9zm438md24PhrJLP9MJcmBJz",
+              "vault": "63tUF2v3vryS8fSZRnyQVVvw1afbBqbdFdni7G71aYLN",
+              "vaultAmountRaw": "97717113",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            },
+            {
+              "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+              "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+              "reserve": "GQNC5TgNuUJwjqPpc5n7vmtQW1vxAJKMBwya241Si5Ms",
+              "vault": "8sUp9dn2tiHuy6QaNecTa9HE3eqgEpTVVCu3ebxgKvRu",
+              "vaultAmountRaw": "47933241",
+              "flashAdmin": "ALXWtv2P4GqH1B7Lq731joag52yRBRqmHV4naiXPTYWL",
+              "borrowPosition": null,
+              "positionAmountRaw": null,
+              "positionMaxDebtCeilingRaw": null,
+              "flashFeeBps": 0,
+              "stateDerivedBorrowableUpperBoundRaw": "0"
+            }
+          ]
+        },
+        {
+          "label": "jupiterIsolatedEthena",
+          "liquidityProgram": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS",
+          "flashProgram": "jupKxkab7RTnQJ6wXStXg6WY4rcReV3maiUNwByciFF",
+          "flashAdmin": "G1qKidJxv6dxBn7TDEx7KSbvovCJQkwzpXbAHQCZxhrn",
+          "reserveInventoryCount": 5,
+          "borrowPositionInventoryCount": 17,
+          "reserveInventorySlot": 457367064,
+          "positionInventorySlot": 457367064,
+          "adminSlot": 457367065,
+          "adminState": {
+            "status": true,
+            "feeBps": 0,
+            "isFlashloanActive": false,
+            "activeFlashloanAmountRaw": "0",
+            "liquidityProgram": "jup6QF1sNDGpkkcu6F4qaFHcRBmnSS1VgyB4uFbBvNS"
+          },
+          "targetReserveCount": 0,
+          "targetBoundPositionCount": 0,
+          "matches": []
+        }
+      ],
+      "mainLiquidityAuthority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+      "targetCustodySlot": 457367066,
+      "targetCustodyCount": 10,
+      "targetCustody": [
+        {
+          "tokenAccount": "8sUp9dn2tiHuy6QaNecTa9HE3eqgEpTVVCu3ebxgKvRu",
+          "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+          "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+          "amountRaw": "47933241",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "D9V5i4PTNESjsX2QaLXb6w5kGFoVydiqfJp63iPFFQ2Q",
+          "mint": "5FGcgMtpjZXvrSqrXu8ehE43MLrKQoxBs6JPgk164vBc",
+          "pool": "5MajYJn3isL5S5bZ1rnvjnMaq4UtbceoKtg52V2UHojo",
+          "amountRaw": "43890995",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "7v1iXj8wciPANqqUonNVWinzJBfHNREGL7L4cLuSC7Fq",
+          "mint": "38ZUTefZnKSUJU3wxpUe3xpiw2j5WQPnmzSTNbS1JqLA",
+          "pool": "6KyZ4p16cih53oE1zhzwum3aQNPjzBbCW6xieC5xtR6c",
+          "amountRaw": "31040127",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "HUSotoNUttKpWWNrwmQTnJVF28HuNF5UiQydj5B2gRm3",
+          "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+          "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+          "amountRaw": "12762718194",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "BSNqr3dN2TKZ7EJ8xa9mDWZgEqBE76spziMGdGwxUxbK",
+          "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+          "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+          "amountRaw": "159404055573",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "aeqHZu6wS36Agv6KdxD4js8A54tdmoYddDT5CDf3nfH",
+          "mint": "TjA2rtxoUFzyPVAw35VQGEQnNXiwcmNjKSk29nmkq1P",
+          "pool": "CVvpff8ErCtPu1Z8wXX8K2TM6MmJ3xvcqAW48WZRn128",
+          "amountRaw": "96035459",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "63tUF2v3vryS8fSZRnyQVVvw1afbBqbdFdni7G71aYLN",
+          "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+          "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+          "amountRaw": "97717113",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "BeybmnKZoGoa7QctcbevmK7TeFMtLtTreVVKYSpPU2py",
+          "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+          "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+          "amountRaw": "87717112",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "Ages7oYwtPFWd8PVVgwVwB9pq8Jv4ykCUEAdifJQ6CNv",
+          "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+          "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+          "amountRaw": "1832439860653",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        },
+        {
+          "tokenAccount": "BoXtVK6oyWEEjCLoD17oTsBheUrV3Q1wzQXPgxFqxT6a",
+          "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+          "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+          "amountRaw": "128571258037",
+          "configuredReserve": true,
+          "flashBoundPosition": false
+        }
+      ],
+      "sourceabilityRule": "custody alone is not native-flash capacity: a mint needs a TokenReserve plus a UserBorrowPosition bound to that deployment flash admin",
+      "semantics": {
+        "fee": "FlashloanAdmin fee in bps",
+        "minimumSuccessfulPrincipalRaw": "1000",
+        "route": "one active wrapper loan; exact later payback; configured reserve, active bound position, vault liquidity and max-debt-ceiling headroom required"
+      }
+    },
+    "mangoV4": {
+      "programId": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+      "bankInventoryCount": 80,
+      "inventorySlot": 457367066,
+      "targetBankCount": 0,
+      "matches": [],
+      "semantics": {
+        "evidence": "official workspace IDL exposes flashLoanBegin/flashLoanEnd(V2)",
+        "limitation": "no target Bank means no target-specific Mango capacity/fee decoding was necessary"
+      }
+    }
+  },
+  "summary": {
+    "stateCompatibleFlashCandidateMintCount": 0,
+    "sourceableMintCount": 0,
+    "sourceableMints": [],
+    "activeOnrampStateCompatibleFlashCandidateMintCount": 0,
+    "activeOnrampSourceableMintCount": 0,
+    "activeOnrampSourceableMints": [],
+    "poolMintCapacityAtLeastOneSolStakeSplitCount": 0,
+    "poolMintCapacityAtLeastOneSolStakeSplitPools": [],
+    "activeOnrampPoolMintCapacityAtLeastOneSolStakeSplitCount": 0,
+    "exactValidatorActiveStakeDirectProviderCount": 0,
+    "exactValidatorActiveStakeConclusion": "All enumerated provider primitives transfer SPL-token amounts, not ownership of native Stake-program accounts. No direct exact-validator active Stake-account flash route was identified. A sourceable SVSP pool mint may still be redeemed through SVSP into that pool validator stake, which is a separate protocol path.",
+    "flashRepaymentBlocker": "SVSP redemption burns the borrowed pool mint. A capacity-at-threshold row proves inventory and withdrawal sizing only, not a complete flash route: a same-transaction mechanism must restore the burned mint plus any provider fee before flash-session end."
+  },
+  "crosswalk": [
+    {
+      "pool": "29HkYUS72wz4QsiUfEs8FkwcWCcAMq3VL3eZPXBkGPK6",
+      "voteAccount": "8zuMRTXThoPTTPLLvaiKiJshLLCqGMt9BdRjjCL19xBc",
+      "canonicalStake": "JE7CsEaRLg9qe4Ny9j6DQeXKNA9xrpxRkXEE5y9JzVbb",
+      "mint": "BDsEuxFWznAP5cUCannnfjyjDtTwqN57CkGfDbjx2nNZ",
+      "mintSupplyRaw": "47933247",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1060346473",
+      "mainAvailableDelegatedStakeLamports": "60346473",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "45205269",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "45205269",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "5CBocarwfJeWGNozGemWktRYSz6kPikRPdfH8ZHSFrsg",
+            "vault": "FaCAUpvebKoTfxSM6Li1ajydms6qKucfREKvVyzCKPTp",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "8sUp9dn2tiHuy6QaNecTa9HE3eqgEpTVVCu3ebxgKvRu",
+            "amountRaw": "47933241",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "2A172EkPfeQchU4uKuTd3e6Mk2LqwsTZF6sALRCQbzZj",
+      "voteAccount": "Simpj3KyRQmpRkXuBvCQFS7DBBG6vqw93SkZb9UD1hp",
+      "canonicalStake": "CrRYEuNPYxF3xK1bzpZvxDEwptCP8PyrWsvqJWpDPLi",
+      "mint": "77YLpVLQXr2KU66GM2JykbT9g5du7LarWgehbWD3CJaB",
+      "mintSupplyRaw": "18554276",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1059284668",
+      "mainAvailableDelegatedStakeLamports": "59284668",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "17515855",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "17515855",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "9dZiyG51FBR4BWpAs69XbDpr7GfVAEB1ZB89v38maV36",
+            "vault": "7nuBgqYgCMAndRLCkFkmvPYFRvVco664kCbmqu7JcwRA",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "2PjGJrCm1iFMAoptiCaXVi4E1rTvBwr52UC8rAHWVcDp",
+      "voteAccount": "EtMSc3MvcDXUr6ChK5GxyFVwTxYA3zqP5XzjE9jwKvSV",
+      "canonicalStake": "AU1cDjuarkM2XfG3eFFBaDixXNvzku3cCgMymbqFe5kF",
+      "mint": "ENKFyZQZHzNNSxcKYoaVsNLi2xoGPoStZH4A9xxezjbC",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1001189468",
+      "mainAvailableDelegatedStakeLamports": "1189468",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "2vFYPL64iubWGHNLmiSLRahNSExeH98ydGkfDuhogANu",
+      "voteAccount": "4AUED4uj6nSTuANzaAUnGBPJQRmhpDYDwoWJNkoUUBBW",
+      "canonicalStake": "6Wfz16qZtH1MZ24FbiUZYrVqgLxWqGdEqVutdpt9FZ6C",
+      "mint": "CiyQTfHJ9PbTwC7TGf4pXZk8szcWGJ8TeFhhCuUwybqi",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1111558115",
+      "mainAvailableDelegatedStakeLamports": "111558115",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "3h9FbVoHsKki4x3Vbx8erTgoty57oKHLRuYZrNKLrmXy",
+      "voteAccount": "voteRnv6PBzmiGP8NicWtQiqEJTwKKq2SxtqtdLUJjd",
+      "canonicalStake": "DTGLFEHEN2exJgGpYk2YviPuoqYE6XNtR8uHjH7fu8P",
+      "mint": "3YEDiJ4r4xRGNhq6nudRnkwrdKHG7PAtDim24CjTMtBH",
+      "mintSupplyRaw": "100997717120",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "113206817820",
+      "mainAvailableDelegatedStakeLamports": "112206817820",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "892152249",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "892152250",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "C96do7nkEaaFjHq8jHzPpyPTdJSea5xEGwxDzDSepCzf",
+            "vault": "3yy5qPaKFkkJx6wo2W3PqW26euaJcY88g18tVh99KHPq",
+            "amountRaw": "100997717120"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "3hUjVomHeq35vvJPATfBRAvZ6LtGcgNmqey7CnA7ADGK",
+      "voteAccount": "J1to3PQfXidUUhprQWgdKkQAMWPJAEqSJ7amkBDE9qhF",
+      "canonicalStake": "6wfgduksraPdahRK57bZMobdcwNBV1njmj5NqkjhH1gG",
+      "mint": "6B8hZSupE5mcACmjzozP6C1DR2uaCCtmrGqcYWC6SBCc",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1075863894",
+      "mainAvailableDelegatedStakeLamports": "75863894",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "3nmtkpwsNZCzXW27uCpTrKwVWhtpZbSZb7UGD96VKVWt",
+      "voteAccount": "BT8LZUvQVwFHRGw2Dwv7UeqDUq7btfjegLpuz5bwgziD",
+      "canonicalStake": "cgguQ81cRw3LYawvDbqnNYoMK1JNJtb7Pw22aqSSEUQ",
+      "mint": "9YRS7Stf9dVibTT1M4uVEAuRMcoS4MH1QxqXy9Lssrab",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1080703263",
+      "mainAvailableDelegatedStakeLamports": "80703263",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "53ybt5QSkbuv5vMAFFsgGnY91YgrnD8DLW4Tt39ZUnYy",
+      "voteAccount": "2iWXwF2Q5W6o7yntV2mkbxncB4rYHnX61y3NU8a8EFMJ",
+      "canonicalStake": "AR17hy9FgdzgrfRAC5xCBknHdD55ArzKF6eJ63o8iGFQ",
+      "mint": "14Pets6QpE9iXKkXg8Ri4GcDazRMfWR3guM6LZXnFChc",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1109004099",
+      "mainAvailableDelegatedStakeLamports": "109004099",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "5ggDh4yt9qBrArSsMbLbj5wdpinfNN5Z9LGMRAGryh4o",
+      "voteAccount": "nfGcSJkP35SkPa5475iBChmq1UNcj7JE1uQHrrasymm",
+      "canonicalStake": "Dswm5Vdy5J1dnYCGKAgjAa6P7gUPKdZnDkfqLKPTp4PP",
+      "mint": "AQpQoJ3tJKGH9Yn8GSzoUsVcHPJjj3xYfQFp9XVr74F6",
+      "mintSupplyRaw": "73570134",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1093746262",
+      "mainAvailableDelegatedStakeLamports": "93746262",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "67264353",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "67264353",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "E5hZu5QQ1pRmGvyS4JHGXVQwzdUPaYM4yEiNKr64YzyG",
+            "vault": "4ssXPiQqrs9zfuAs1GPaP5nrV1BQf1nihsXFcKa6dZKK",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "5hBi3HTk3ZTCJ2XobTp7nZG8eJrXqEmoxVLA3AiEPYDG",
+      "voteAccount": "mrgn4t2JabSgvGnrCaHXMvz8ocr4F52scsxJnkQMQsQ",
+      "canonicalStake": "Hf66RxL5Ha8HvcJjYJRKYo3zLFsfyLqP8Xp9rwYhFTJG",
+      "mint": "FUyAyVbYrMfiaN1QEQYFZTuBNzW5EJf3jWzjjymGqKLv",
+      "mintSupplyRaw": "172434827",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1963886969",
+      "mainAvailableDelegatedStakeLamports": "963886969",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "87802827",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "87802827",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "BuCckNm1djpp3vZVhvh1CrrniirY6sr2hwUmeP5kTcGz",
+            "vault": "6kWjDRxSe4XM18gLLU13aUP5SLfPGwpPALWSHDT7GrhY",
+            "amountRaw": "128306230"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "5MajYJn3isL5S5bZ1rnvjnMaq4UtbceoKtg52V2UHojo",
+      "voteAccount": "5DutFKQ8qPmbjFEmp31QH9JDYJXvwh9pma8ap5Phxk6H",
+      "canonicalStake": "8SBJ7gigsyTixa27hdRCVCP4SDHrJDHdGSFwogGEkMNL",
+      "mint": "5FGcgMtpjZXvrSqrXu8ehE43MLrKQoxBs6JPgk164vBc",
+      "mintSupplyRaw": "436491547",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1504296728",
+      "mainAvailableDelegatedStakeLamports": "504296728",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "290163197",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "290163197",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "D9V5i4PTNESjsX2QaLXb6w5kGFoVydiqfJp63iPFFQ2Q",
+            "amountRaw": "43890995",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "5w6YprcmdNTYEF1pn4yWRXu7CqzniqAhyStmr38rbi9z",
+      "voteAccount": "FREEL1BCzmPpNneC7FHCtBqzeWYrHRbtisFvi4N8XUP9",
+      "canonicalStake": "Gar5UFbb1eDv4qcdwcL9QZoGNYbFZbV5F583viyh7vSM",
+      "mint": "AKFuMoM5rjSpQSL4p6TBoc7D4dmEem9QrHhuSDCBYyZ8",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1046856637",
+      "mainAvailableDelegatedStakeLamports": "46856637",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "6FWNbTgKyNnUfCT99MJa2xuEnXhy67toF9AV8dMdbDvm",
+      "voteAccount": "FrtCZRajYfrdoZarPxCsUB6f66ga5DPSXGz4F7VKyfKP",
+      "canonicalStake": "3roL66sLVsJmRZxWnqnS57tSGTEpy3DFU8r39MtXBrPs",
+      "mint": "HFTfTwK43aFMP5mL2sJLXMxsSJXLrbf6bw7wW6CegR9S",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1078167439",
+      "mainAvailableDelegatedStakeLamports": "78167439",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "6KyZ4p16cih53oE1zhzwum3aQNPjzBbCW6xieC5xtR6c",
+      "voteAccount": "Haz7b47sZBpxh9SwggGndN3fAyNQ1S949BPdxWXS3ab6",
+      "canonicalStake": "3hoeLpYL2bL91SrQHG8ciz3h6iMmZfkLx6j6P9TsZbWg",
+      "mint": "38ZUTefZnKSUJU3wxpUe3xpiw2j5WQPnmzSTNbS1JqLA",
+      "mintSupplyRaw": "31040128",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1193603574",
+      "mainAvailableDelegatedStakeLamports": "193603574",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "26005392",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "26005392",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "7v1iXj8wciPANqqUonNVWinzJBfHNREGL7L4cLuSC7Fq",
+            "amountRaw": "31040127",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "6UrvLRi8pfgdQyLiX9pFejrhjqBoCQrfJ7W65umhMhBs",
+      "voteAccount": "76DafWkJ6pGK2hoD41HjrM4xTBhfKqrDYDazv13n5ir1",
+      "canonicalStake": "2pAY1PsBqsyZc3DVv4D7z3w1XGnQs8FSLwi1wMYHHWVm",
+      "mint": "GT7n9uZbYzHv52YqDBowtZ5ZVW91umaBQTNPFQNeLUpR",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1108678272",
+      "mainAvailableDelegatedStakeLamports": "108678272",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "76bZpzHEad4UUmS1qX57oeb8eeGk3sku8t8WT3vPJ5To",
+      "voteAccount": "gangtRyGPTvYWb8K3xS2feJQaCks4iJ7rytFUPtVqSY",
+      "canonicalStake": "FFGfgLctyaDMXMiGywivnjZQPKqhTC3PnL9iaoA3RANU",
+      "mint": "6ZS7ZVDw91BVAC8gsz3SZBSeVeF2GtXtL2BHK31Kvyjm",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1109139923",
+      "mainAvailableDelegatedStakeLamports": "109139923",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "7br6p7ynCs5hkTzuDagM2xBedkxxCjY1Ey9xQuCiDiq1",
+      "voteAccount": "EfnywDKqArxK6N6FS9ctsuzNdxfx3pzfXEQE5EevQ1SV",
+      "canonicalStake": "9gdL72KiYvdMpx4cEWdMooHeqpeWM83Sga7YkYhrzrQx",
+      "mint": "FcXEwHku68ZquqtSj1eSWS1SVWkhAZSyb4usfpiuEJAL",
+      "mintSupplyRaw": "40266832",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1123558039",
+      "mainAvailableDelegatedStakeLamports": "123558039",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "35838676",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "35838676",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "7F6uwdMJS7DBuGDPYeJqRf8LqHYFLgBXtWWKbaGUAiqZ",
+      "voteAccount": "48oxpSHQkM4sdXUY9NQ8KnEtebzZbyk8uUT7JRdVQNuf",
+      "canonicalStake": "DULK7QMuM7X2BvtFN7jANi6gTDQRhTueZkkGfqSowe94",
+      "mint": "42m7Ygk5VxREdKfcFrsH1HnuoqCke8BcVcxNeywMCfp2",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1112946000",
+      "mainAvailableDelegatedStakeLamports": "112946000",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "7qNfyZk3iyxBJwmwAJmK1JeZjdRN86sR1TPmG3ZitRzg",
+      "voteAccount": "SLaYv7tCwetrFGbPCRnqpHswG5qqKino78EYpbGF7xY",
+      "canonicalStake": "B8bB3TsGMAHfsc4odYCk7RRSxUxgkERhBKyhYJtXvhm2",
+      "mint": "Vsw4JT33S7bLbhjySMMyrP3JKvTAcNi9WG5Doekrmgg",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1064420697",
+      "mainAvailableDelegatedStakeLamports": "64420697",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "8JDVKkCBTtd2Spzxu1nB5vgvTTBxiH9PnXUnuuXMtQmf",
+      "voteAccount": "7K8DVxtNJGnMtUY1CQJT5jcs8sFGSZTDiG7kowvFpECh",
+      "canonicalStake": "AF7cmo1z3vW2yJzzNrfcb632G9dSSNv7JC78HMuUFyVm",
+      "mint": "CRpAn8E5k9G5VSRuzGfSyfL3Dhtq3phHZbfRwMQnCe2Z",
+      "mintSupplyRaw": "27099433",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1075045884",
+      "mainAvailableDelegatedStakeLamports": "75045884",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "25207699",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "25207699",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "7jDJDLjjPZG3M2C8XAEJxDbvHz1e9c7zWzGX4itnKicR",
+            "vault": "AWunDjPRt7WUV4gaUG2vh9uVvD1TQ8Di1oqG4Gapic3J",
+            "amountRaw": "8613155"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "8L6366uKkfVXfymWgbURNu2TxbxvacPDb2hR4YR8c39F",
+      "voteAccount": "mrgn2vsZ5EJ8YEfAMNPXmRux7th9cNfBasQ1JJvVwPn",
+      "canonicalStake": "9L2dgazLPDxXpVZYeBa2JVCtXPzfYvHmm43fngVtf2Hh",
+      "mint": "6Mt7tBWLUJfDxqCFTsjoRXF9wD55g4Lhs5nAyYp244pX",
+      "mintSupplyRaw": "2402357545",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "3810122907",
+      "mainAvailableDelegatedStakeLamports": "2810122907",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "630519699",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "630519699",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "EPh2abWP8DusPH8myWnECAAeQUZgAz927aMbmwXt3eRY",
+            "vault": "GFWk4EEGSGx3kpaR5SuwerXJNXwDq8R1fnt8QPt7iuZA",
+            "amountRaw": "1841451715"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "9U9hSgmLnDeTduzzwgKf3CySN4zwMVtUqygUdnCaQkgx",
+      "voteAccount": "26RGqX3mezgYDxJnGh94gnMM4L2k9grH1eWcTSCHnaxR",
+      "canonicalStake": "6NGKJpa5zNnimpLJjWFeFXWHrMPZdANeULWWrvT68SV5",
+      "mint": "D6SY9rQaApwZL1geeB3XdkZggTwCxJEprc59sPy53i8G",
+      "mintSupplyRaw": "4976317846",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "6044454820",
+      "mainAvailableDelegatedStakeLamports": "5044454820",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "823286466",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "823286467",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "9Y4irMvZAn49LVCxpQuQtrXDB7V8YxhtVV1XM9U1RESq",
+      "voteAccount": "3xjfK9C9YNcta8MvK1US4sQ3bc6DEjoJoR3qLExGf9xE",
+      "canonicalStake": "64XSaWyEb6ZaWpr4fc2eeW4n5wjEc4EhrL9MGrEUJk8P",
+      "mint": "Akib1NYJzzh9HkiDH41S2LUefUmR1bKsk65xgqUcW5C5",
+      "mintSupplyRaw": "1088066240",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "2235995164",
+      "mainAvailableDelegatedStakeLamports": "1235995164",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "486613862",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "486613862",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "8F4DsU3NMFunUxBZkWrpYR8zwhAfoAt7QuiEPMtyhWvX",
+            "vault": "HHsfTiTF1TqJLCE91yya5rjJgEb82GgyVoNPGG2FhAV3",
+            "amountRaw": "997459052"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "A1iVXLExJsixNfCoQrGEb8UXjgLND1nr3JtbKBZUgyaY",
+      "voteAccount": "HvsD9L5t62MGv3QBD2K7xjkipGYr9UZN7BtsW8NuSPpg",
+      "canonicalStake": "DkTkvsy5jBMqNXXhqrHNZ5sJ1nvSMeyT6xtrMW4c7T74",
+      "mint": "5vmwd6JHDCmX9W2XT1n2QpvYGA2kk4Xf7qWSayDU6caT",
+      "mintSupplyRaw": "76279785",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1080553793",
+      "mainAvailableDelegatedStakeLamports": "80553793",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "70593233",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "70593233",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "3zk6EmXANYQK12bwy9dySRAM4cT2vT5cDcAB79j8G33B",
+            "vault": "8gLeTf2nnCYdAiiVMDfmnaLXD7AZE7MSkuUYQpFmsbKe",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "AcYTFzeuaR4PZ2QoFQH8t5otN1sjobEzoakgLFJLQq7M",
+      "voteAccount": "SBLZib4npE7svxFA7AsD3ytdQAfYNb39c8zsU82AA2E",
+      "canonicalStake": "9WQovhpKeQcdwCCCRDKmHfm9ARwJUAiiGWHZLr6o2gDS",
+      "mint": "96rXgCFy1Er49169XoKHkeLiKC2k4bTy1641q1TVrMm2",
+      "mintSupplyRaw": "11997717154",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "14448084175",
+      "mainAvailableDelegatedStakeLamports": "13448084175",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "830401942",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "830401943",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "37tiA2NTF6YCt85XzCidPo9ZVpuqkkmfVJCYQ5Yx5Uhs",
+            "vault": "4nG7yN3FBph5A47jPGvQ4HRn57ukth2bLsUJpgsngEGZ",
+            "amountRaw": "11997717120"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "AJuDKVWD9WmLbwyR69ydU6EixidNoMfdyteykbZLeJj2",
+      "voteAccount": "2NxEEbhqqj1Qptq5LXLbDTP5tLa9f7PqkU8zNgxbGU9P",
+      "canonicalStake": "D41RqNXhP2fM9mV9gV2D8GzscQ2kTwqoNwAc7qZubDjQ",
+      "mint": "9yQLxEzusZ7QiZNafDNdzbEaTCPuJToGjMhLRJtZbgsd",
+      "mintSupplyRaw": "13169247263",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "16667581125",
+      "mainAvailableDelegatedStakeLamports": "15667581125",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "790111485",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "790111486",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "2hs1pHAzDWGqnn1d8VQkc8bZRfQ45grYvzfau8dnWFUk",
+            "vault": "Gtgf4GMmNWFqz39bNpeaTpVe6FKikLUEVXkmhczWrqHn",
+            "amountRaw": "398418708"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "HUSotoNUttKpWWNrwmQTnJVF28HuNF5UiQydj5B2gRm3",
+            "amountRaw": "12762718194",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "AvS4oXtxWdrJGCJwDbcZ7DqpSqNQtKjyXnbkDbrSk6Fq",
+      "voteAccount": "CooLbbZy5Xmdt7DiHPQ3ss2uRXawnTXXVgpMS8E8jDzr",
+      "canonicalStake": "3e8RuaQMCPASZSMJAskHX6ZfuTtQ3JvoNPFoEvaVRn78",
+      "mint": "BADo3D6nMtGnsAaTv3iEes8mMcq92TuFoBWebFe8kzeA",
+      "mintSupplyRaw": "69506749476",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "158934438073",
+      "mainAvailableDelegatedStakeLamports": "157934438073",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "437329696",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "437329697",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "8g5qG6PVygcVSXV1cJnjXaD1yhrDwcWAMQCY2wR9VuAf",
+            "vault": "3MHksvvfP3UctfZF1EcrG3iHUU44g6jXTBMb2vFF2dwK",
+            "amountRaw": "68338804660"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "BATMoW8FMJio6H3nDTHhpkWBLdwVw3dWndVpNaAizNaP",
+      "voteAccount": "oRAnGeU5h8h2UkvbfnE5cjXnnAa4rBoaxmS4kbFymSe",
+      "canonicalStake": "BZXkvMnrNLgW2Npxt9MYRu8tLq2dCG6fHb5Dsnsg3E8M",
+      "mint": "9yF8pXctzicum2P73uuk4Dhqf2MVz6tzRAe8THGXCJcp",
+      "mintSupplyRaw": "15668238",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1076503762",
+      "mainAvailableDelegatedStakeLamports": "76503762",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "14554746",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "14554746",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "BnnjRBpecqkxGp276rNf6CP1x8cDb6CojjmeXd2WCwXu",
+      "voteAccount": "he1iusunGwqrNtafDtLdhsUQDFvo13z9sUa36PauBtk",
+      "canonicalStake": "BTST6Wy5XeDoM8UxSdGgqRkQXuae2i7jzF8CJpcr56v1",
+      "mint": "2k79y8CApbU9jAvWhLS2j6uRbaVjpLJTUzstBTho9vGq",
+      "mintSupplyRaw": "165141829641",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "185123975854",
+      "mainAvailableDelegatedStakeLamports": "184123975854",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "892060734",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "892060735",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "J9tksvZEDSwtNtZ6yxYjWDDkzhPbwDMnihU61NkFG9FE",
+            "vault": "F9Xo4Nf9uCFZUskdzf9k3pFaf3jWuQD4NrYN9TBQhsVp",
+            "amountRaw": "5368574323"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "BSNqr3dN2TKZ7EJ8xa9mDWZgEqBE76spziMGdGwxUxbK",
+            "amountRaw": "159404055573",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "BVKUnLaGXwbdhLPicdoFMdSgNVfSWXAU61r1nrWd3S6v",
+      "voteAccount": "EARNynHRWg6GfyJCmrrizcZxARB3HVzcaasvNa8kBS72",
+      "canonicalStake": "4DCdonPZ7azvQgrwE7tFyJfWJ3rwbjHkMCdjWvmpiobm",
+      "mint": "8fhkWcm2n28JuadzY7mRR8FFDZZfnaPfWgw7pLNVZCbE",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1106890283",
+      "mainAvailableDelegatedStakeLamports": "106890283",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "CC4kTvdMMsfFvXAHsT24DKxiBNhinJLxNi9FzFRxwByb",
+      "voteAccount": "Ac1beBKixfNdrTAac7GRaTsJTxLyvgGvJjvy4qQfvyfc",
+      "canonicalStake": "5VgDheqRCXJ4bfP2Kd73uzV2arWn3QpJdSVPJtvaLSER",
+      "mint": "DLTAbTL5NXhbqX6LX3ie3tf52pdtGpxe2DrZUr1RhgY6",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1098004250",
+      "mainAvailableDelegatedStakeLamports": "98004250",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "CrpYNnXiaRRe2tKmpAZQoZsB11DuXESDXKdJw9jnhRYM",
+      "voteAccount": "3ZUQekqiZoybB57y49eqtvSaoonqDwuNbeqEGwN88JkQ",
+      "canonicalStake": "58MAFsWx9xGthjJwMHsG5LeNDUYUK58GjRZLz1bgixvM",
+      "mint": "F1XPjtpsEy23Q7po4JkWjp1jkDZcvFYSrqD8TR1YL3EF",
+      "mintSupplyRaw": "1316972",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1377850931",
+      "mainAvailableDelegatedStakeLamports": "377850931",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "955817",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "955817",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "A5e7UTE3g11ZfKgftqRCvxAgcDuFGyeDjMka96zJWSWe",
+            "vault": "4XDCg6nCWXMH1EESN7wGMpRqqoduzTuGNkNeptG3Jcm2",
+            "amountRaw": "1145083"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "CVvpff8ErCtPu1Z8wXX8K2TM6MmJ3xvcqAW48WZRn128",
+      "voteAccount": "gaToR246dheK1DGAMEqxMdBJZwU4qFyt7DzhSwAHFWF",
+      "canonicalStake": "S8Vr9QcrLrhdcz1gEhxASnSD4efjLeMcNu7dm4MsHuK",
+      "mint": "TjA2rtxoUFzyPVAw35VQGEQnNXiwcmNjKSk29nmkq1P",
+      "mintSupplyRaw": "96062177",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1129545649",
+      "mainAvailableDelegatedStakeLamports": "129545649",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "85044972",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "85044972",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "9ivswG37QpCUmkPkLMpRZT7PMyP64V9dDpZdteM254ec",
+            "vault": "HpvbY2AJn5VncmWGeeExJ2AVYqPGeMvpviGFX1aUTYHa",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "aeqHZu6wS36Agv6KdxD4js8A54tdmoYddDT5CDf3nfH",
+            "amountRaw": "96035459",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "D4696t2yzWk575bfs21JTwiy87FBCiVZeKqRjXymCxWP",
+      "voteAccount": "7emL18Bnve7wbYE9Az7vYJjikxN6YPU81igf6rVU5FN8",
+      "canonicalStake": "BdGcv8yX5M3JpH2MoYDZYuDEwGAmn1dVwoFBmkAjmR3G",
+      "mint": "EQuMUgLZArKwWUk6uGPmTGYUgNbfgJrbBaNR7CQyZ5uf",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1113930432",
+      "mainAvailableDelegatedStakeLamports": "113930432",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "DaaMMxBf3ebdVA3KHCWLovJzEVYawbQFrrj1Dzsnr38Y",
+      "voteAccount": "8Pep3GmYiijRALqrMKpez92cxvF4YPTzoZg83uXh14pW",
+      "canonicalStake": "D8gMWSW9r7YPuCZoNHY2uzo5qTbrm1fFhXMLy1HeQNoT",
+      "mint": "zBH13AzXYCqHZKS8NGa4KR8zQhWiyvFdDY15nmfrHgS",
+      "mintSupplyRaw": "5997717120",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "7331914630",
+      "mainAvailableDelegatedStakeLamports": "6331914630",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "818028772",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "818028773",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "7BHHMWw3P1AyebLhX9A8wnDeeGy8jgFXqqHuEZt7BVmW",
+            "vault": "5Por9gA43Pvh2zya8ePinDxYoFVpHDjhiGApZcmBiBBG",
+            "amountRaw": "5997717120"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "DeHLgaQZfGodAek64x9bks1oMVBh59tTphrBqVKWsukR",
+      "voteAccount": "nymsndUdAZyUPpWYz5VEg8Ghj9cFvwTRgciLogpmYaQ",
+      "canonicalStake": "6WZuNeuyvjU9rcPjqH4JZqh2J9VATqg6KvAc6KRWyGpg",
+      "mint": "FWFeaqpkgDr3ejVSY3HjiUmUg3u9fcr5d66HvimnDLWE",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1105535876",
+      "mainAvailableDelegatedStakeLamports": "105535876",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "DqzpdEfrRQvKLAJxPrhgwZXX4ehbwGdUpdBUBy7mULZS",
+      "voteAccount": "oPaLTmyvoUhW26QCMwLA5JNUeBYy72PDpFoXQF8SeX4",
+      "canonicalStake": "9krFtFBs4n9HthMoTfEfKxL4mYn3nB6wWw59vVSVNsiS",
+      "mint": "C71A3W7g5XALUNwTDWTwHX3qhfypaYZ41aNZjBpcaC9D",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1115619800",
+      "mainAvailableDelegatedStakeLamports": "115619800",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "Dskmef8JkvkauhZo7vmpFc7bdSY6rAHNswk2ra7BKtbg",
+      "voteAccount": "mnvkHm47ZmRKoSWuQZAfXLRiDPiKCq8PWkMWrp1Wwqe",
+      "canonicalStake": "AywCwWkoM7aqG5vXXxuWKrWEacqAzdxNXLKKTYNif8ao",
+      "mint": "Cq9S5UB9BviPn5yoGkEDk3m7neQag4KJnhPWGyuev9W8",
+      "mintSupplyRaw": "184757475853",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "201768730686",
+      "mainAvailableDelegatedStakeLamports": "200768730686",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "915689341",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "915689342",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "G46aHuakgStymbE2WsLbja61mH5UXBPdSdpwf6Ci3saG",
+            "vault": "22LC9j3n1npMwipmkNokqWzH6L5c1rzgtGBVQLQnFWy1",
+            "amountRaw": "184757475853"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "E524AY3cdkmzFra5Sc2sr8ZYm1qeDMLk2MnY4fGEBq7S",
+      "voteAccount": "J2nUHEAgZFRyuJbFjdqPrAa9gyWDuc7hErtDQHPhsYRp",
+      "canonicalStake": "3QDbADbyxVdX2uz9qD2NF7A5Y2MkhSS7Nf4qDux6LoFC",
+      "mint": "9M7oMo4oL6RDPG7WbAX3Zz4dPzbMgpiCzwrQPMwG4Wgq",
+      "mintSupplyRaw": "2659776557",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "7010009300",
+      "mainAvailableDelegatedStakeLamports": "6010009300",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "379425539",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "379425540",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "3UrMZ26NRKu2y6c2dPE7gZVHwEmhpwKLcWACg3tjCVEt",
+            "vault": "6rm5XyyLuHtYpqfCuno8M4oSQ1J45TqunUTuheK7Njxw",
+            "amountRaw": "1950036452"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "EBoouYvD1zUdwPweqZLeimGdRJi8i8PyNxZfhDDrUY1v",
+      "voteAccount": "sTach38ebT8jnGH8i2D1g8NDAS6An19whVMnSSWPXt4",
+      "canonicalStake": "GJJAEyfQYgLG7TimWcpR5mEFAfZyjRKnj2LBerZY6P6G",
+      "mint": "AFDVYBqxADagPfN9DdbrNrf9zZqugub7CV4kUJEUrK6J",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1089359079",
+      "mainAvailableDelegatedStakeLamports": "89359079",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "Eip8KPQ2KcPxUoHHroccZQed4Qaz6Eqr9wf1nUTrnJh4",
+      "voteAccount": "abc1zP7ihWsgQW8z5YmfQNqMckJE5Dfx8fwUNMNVNkY",
+      "canonicalStake": "DsWBAjaADG52DS2Fi6vzoyNAGzbqNA9rNK53xqAHMjqT",
+      "mint": "BNisp3omkr6Rg5nHESWafjUbeCpGPy6MYq1iRJRgSAsh",
+      "mintSupplyRaw": "32183277560267",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "34276674246674",
+      "mainAvailableDelegatedStakeLamports": "34275674246674",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "938926494",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "938926495",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "3VCkXWAmE5DSwYRpqGFnkUz7vvD2RKbhFvrhzLuE8msu",
+            "vault": "EfL6qsvqvkpjvDc5d7VxEhLoUkAmUgKVfh6Q7S8nvKmi",
+            "amountRaw": "32183277560267"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "EkGT98qqUekZtpTeovhSMiVr5dpZ7uxzhy2NpSP1cTbX",
+      "voteAccount": "FACqsS19VScz8oo2YhdMg35EsAy6xsCZ9Y58eJXGv8QJ",
+      "canonicalStake": "8BnNPWxHfqPQfdH8akiLG24sNP7Hk5Qior17XkedqB6F",
+      "mint": "AH6fxpHS2gtMtJgBy8y8pEAPkqyop2pSugF6REs9NaTp",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1108984091",
+      "mainAvailableDelegatedStakeLamports": "108984091",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "ERopCT8C74dnpYyc9TJEjbYFXCDFdp81qZs8pwnDL2da",
+      "voteAccount": "DdCNGDpP7qMgoAy6paFzhhak2EeyCZcgjH7ak5u5v28m",
+      "canonicalStake": "9cVM7z5AwmH1Dd5aatYyUoGaus8RtM2r3jf557NCtfGB",
+      "mint": "PhxXAYTkFZS23ZWvFcz6H6Uq4VnVBMa6hniiAyudjaW",
+      "mintSupplyRaw": "97717114",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1139594984",
+      "mainAvailableDelegatedStakeLamports": "139594984",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "85747231",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "85747231",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "FZaHyfg9hmNMKpfUJ474wNKPaPdXMpnJouasKnndECiZ",
+            "vault": "BYYQNSUSyQyjT1qEdj5huFLo1xpAVNnbBmBf54WsvroR",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "63tUF2v3vryS8fSZRnyQVVvw1afbBqbdFdni7G71aYLN",
+            "amountRaw": "97717113",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "Ewgo2Qa57HyhHveBKRiH4MKNauuGrxQ5fQPCm7itsmHZ",
+      "voteAccount": "6JfBwvcz5QUKQJ37BMKTLrf968DDJBtwoZLw19aHwFtQ",
+      "canonicalStake": "AhsaMnU2Pk8FxFwNNb48qVAxdiYf4Qig7ita86WV3b3",
+      "mint": "8FqX86cQofBHReetZgxrxxvzN4iqMVsj2hbiv7pj2h73",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1059554444",
+      "mainAvailableDelegatedStakeLamports": "59554444",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "EX9cdHB6s6YfzXDkKVRzh15i5NL5AvPW6vXTL5eMcqu9",
+      "voteAccount": "shft7Fry1js37Hm9wq4dfwcZSp2DyKszeWMvEpjYCQ1",
+      "canonicalStake": "38KWgsh4yRrnZuKzfPUYveUWHQMw8aFN5YwnReTcDQnX",
+      "mint": "C1KwBJZNwUaodUcP5kXqD52NCuZzThNAG2cw3vt5H6iE",
+      "mintSupplyRaw": "97717114",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1136815440",
+      "mainAvailableDelegatedStakeLamports": "136815440",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "85956885",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "85956886",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "5q1wJkGqqRh6mSBtjG8sfjBsgJSGdA2QoXTWv4UQbHGk",
+            "vault": "83voyRm8pRoVB9YG2yZzWXVwnAxvuRHpP13JirBnifGd",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "BeybmnKZoGoa7QctcbevmK7TeFMtLtTreVVKYSpPU2py",
+            "amountRaw": "87717112",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "FcQCjgQkzhxbd2WqoPsmL7paPjTtJBx1F45sTe4SNbJe",
+      "voteAccount": "4m1PbxzwLdUnEwog3T9UKxgjktgriHgE1CfAhMqDw7Xx",
+      "canonicalStake": "CYUd2ehBbEJH4Ar54KuqUSDpnGzducAdd81wswVWPE5",
+      "mint": "432SogPNunjZMneDV6goZ8ZcCQz282GxoSJ4rwqx95pT",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1000850333",
+      "mainAvailableDelegatedStakeLamports": "850333",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "75UmeEMdqVnGn3JHx8yVZEn7viybJ73XYSjhYCYfyhp2",
+            "vault": "FAnDQueF57fH9NUkUqXS2xtLPBtwjV9y4oe9HDC6FfRo",
+            "amountRaw": "0"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "FoLxjn26C2EqQijHR1FPVxC8ofnyHYwR7VdyxHygLzLu",
+      "voteAccount": "Cue647T8jgwpRSDUb8ttTYx7NiEfJCRZNiiw1qmchXsG",
+      "canonicalStake": "9aiuNGWiDXhpuAeESFyn6xcFBc7g5W3uNMGMTcFRfxWL",
+      "mint": "EAR6LenhNstHxR9289rWakm82WgLJYvHD7NawfXtuyUx",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1028681982",
+      "mainAvailableDelegatedStakeLamports": "28681982",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "FyvHDzS9j3WJKaDvbiWYQmegHdnxKJNCesc7oX1L93Ku",
+      "voteAccount": "CcaHc2L43ZWjwCHART3oZoJvHLAe9hzT2DJNUpBzoTN1",
+      "canonicalStake": "2NT49m9PzNHStaCEewxjPwB8JTgmVotNwLxfCabgQiVx",
+      "mint": "E7fosu1BW5ELQwDpipNK9TVSq9eRroPz9AhnnrfhNNYQ",
+      "mintSupplyRaw": "1155234250",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "2495546320",
+      "mainAvailableDelegatedStakeLamports": "1495546320",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "462918377",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "462918377",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "3DGvNzGY1QiabuUiuC8HwTZ58eZK6YtLknsvXksWzQap",
+            "vault": "5fSyS14nREynFwtv76W56yiJzvpK1w2S9APJpEEUvzf9",
+            "amountRaw": "855234250"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "GarzsmM8cZ5ginjk4sMc7kkXXqobJeJ1QmT7vwG5iT1i",
+      "voteAccount": "FKsC411dik9ktS6xPADxs4Fk2SCENvAiuccQHLAPndvk",
+      "canonicalStake": "7hhbXZEaQNHzEBMxzumUb4uziRVCyUQwKpdu9nvYVEns",
+      "mint": "2pMCRTPxF355vC56r6mL8vfnqa24up5CfZmcX1HkFj7i",
+      "mintSupplyRaw": "1832467582803",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1937865881492",
+      "mainAvailableDelegatedStakeLamports": "1936865881492",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "945611149",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "945611150",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "62KsgJK5e1WM1uJ3KDgVdizHqLYfbMthNZLnJQRRJKRG",
+            "vault": "2Tcqqdx22qm8hcM2RvTmtMMXQBrkvtCreWgJsYQoJ1dA",
+            "amountRaw": "27717120"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "Ages7oYwtPFWd8PVVgwVwB9pq8Jv4ykCUEAdifJQ6CNv",
+            "amountRaw": "1832439860653",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "GhwHYdaCyVakxLiEzV5EvtWnhCr6omqQbaJMZsPNHH4W",
+      "voteAccount": "Va1idkzkB6LEmVFmxWbWU8Ao9qehC62Tjmf68L3uYKj",
+      "canonicalStake": "AjZxKzwAMaaCYteCyTERLkH1MKZwAc1jJsSEXqmb7jPz",
+      "mint": "AExKb8oJ6mGPYJUyfiX49DMMi226h2AnWeG1G6neQBEz",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1076486449",
+      "mainAvailableDelegatedStakeLamports": "76486449",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "GVk5pG62zvbyzQboo7FpkfZro1o6ZJwhRK6HwRELxpkZ",
+      "voteAccount": "FnAPJkzf19s87sm24Qhv6bHZMZvZ43gjNUBRgjwXpD4v",
+      "canonicalStake": "GTyBZHES1eG4huBFfoXRs9C28bPmZdCkX1a9UL9vtEsX",
+      "mint": "6q4kVnwUpkE3i7W32dqaX6V12pbsrCnMqZ7TWz9yp1m5",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1071189964",
+      "mainAvailableDelegatedStakeLamports": "71189964",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "GwxTbwXzqdZ55qakaNs92hFx8E5rM2euFxgXN37GtTMV",
+      "voteAccount": "mintrNtxN3PhAB45Pt41XqyKghTTpqcoBkQTZqh96iR",
+      "canonicalStake": "6TXuzDjw5SmEutusYxWGDoC22voTfusKRVB2vYLUA7bz",
+      "mint": "GxGmv7s7s2co3pLZukns946fr5zmR8c5buWRD9prGd6v",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1036264164",
+      "mainAvailableDelegatedStakeLamports": "36264164",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "GZcQzJ2Ai1gBvLk6Lr3Sc1sd3ik7RkcDEnvvpP4N8SHR",
+      "voteAccount": "3N7s9zXMZ4QqvHQR15t5GNHyqc89KduzMP7423eWiD5g",
+      "canonicalStake": "ENibGLNfca4QRBnWsQwERgV1FW5UgEpSSiZFnz3bHrM7",
+      "mint": "DKPvRV4dxUejjGpr2XwFmzZbbbTD7vx9Jmt1kk43n4d5",
+      "mintSupplyRaw": "53318160",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1161209500",
+      "mainAvailableDelegatedStakeLamports": "161209500",
+      "activeOnrampMergePrerequisite": true,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "45916056",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "45916056",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "6wjAwhnxTMEzHk8NNHVXgkx1jSrb6TX1bC17j3S56FfB",
+            "vault": "9GDYr7Z6Gqb5UYwKcdKdW26E23QyBBx8oy13mp3dMV6G",
+            "amountRaw": "53318160"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "H1F5CVVCqXVPHJrU45Ewbu227oBnJFfcm3mtpCYhpn6C",
+      "voteAccount": "mrgn6ETrBDM8mjjYN8rbVwFqVwF8z6rtmvGLbdGuVUU",
+      "canonicalStake": "Cg7ysyZzZibQ1hjy1TEuJcpQjPwfJGSiwj4R2cH8fqcB",
+      "mint": "A4B5MGQvcZCUqeiUEAB4ckZ2tvH2UmEg31vF7TiERDkH",
+      "mintSupplyRaw": "227210480",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1486651987",
+      "mainAvailableDelegatedStakeLamports": "486651987",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "152833671",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "152833671",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "HHZnib6n6X1fxa7UMV2zbzZGRNDZ7R1NaswjgRCFBxYD",
+      "voteAccount": "CatzoSMUkTRidT5DwBxAC2pEtnwMBTpkCepHkFgZDiqb",
+      "canonicalStake": "6Ff5x2bBDKXC3sdnMManfUjpKgtFSYTAGjfgEaW5CKrQ",
+      "mint": "98B1NMLYaNJQNxiQGr53vbjNFMNTYFmDqoCgj7qD9Vhm",
+      "mintSupplyRaw": "383062107240",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "492834859134",
+      "mainAvailableDelegatedStakeLamports": "491834859134",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "777262607",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "777262608",
+      "custody": {
+        "project0Vaults": [
+          {
+            "bank": "9QWUatjtJtc98yts4ufWnmNeaWQRmaaLjFwbK3iMdS47",
+            "vault": "7yjXeo9S9aBD7fLQTs8kSuv81iPydar8RDsMqQA6DXNS",
+            "amountRaw": "8050308"
+          }
+        ],
+        "jupiterMainLiquidityAuthority": [
+          {
+            "tokenAccount": "BoXtVK6oyWEEjCLoD17oTsBheUrV3Q1wzQXPgxFqxT6a",
+            "amountRaw": "128571258037",
+            "configuredReserve": true
+          }
+        ]
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "JBBhZteLavnhjrWnUoQn832wqEYysPx4YA95fWaQRYWm",
+      "voteAccount": "9jYFwBfbjYmvasFbJyES9apLJDTkwtbgSDRWanHEvcRw",
+      "canonicalStake": "4Y9ZQcoN5BgQfYVhBsnehFiKyq6puB8ivwfDiWYWi5Kr",
+      "mint": "Hj69K1WbnfZFipLbrzdxgGhDqCR47q48bN5nUHt6xQZo",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1107589918",
+      "mainAvailableDelegatedStakeLamports": "107589918",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    },
+    {
+      "pool": "mwKZWVaniQgNgEHuXtwULc4B2LqshQVb3rC7i4bUzxf",
+      "voteAccount": "D3QPJm7BDzzPeRG51YZSEz3LfV7GvFNu9NkcibzURxuj",
+      "canonicalStake": "DdF8JMk2mBx7LUCcKeVioQDgoQs7nWggWR3aENDz3jTy",
+      "mint": "8hXCCQmYFcDhU5Mkuvyixp2Q11sbyQComkceSSh3GY4a",
+      "mintSupplyRaw": "0",
+      "decimals": 9,
+      "canonicalDelegatedStakeLamports": "1041948909",
+      "mainAvailableDelegatedStakeLamports": "41948909",
+      "activeOnrampMergePrerequisite": false,
+      "minimumPoolTokensForAtLeastOneSolStakeRaw": "0",
+      "minimumPoolTokensForStrictlyMoreThanOneSolStakeRaw": "0",
+      "custody": {
+        "project0Vaults": [],
+        "jupiterMainLiquidityAuthority": []
+      },
+      "stateCompatibleFlashCandidates": [],
+      "actuallySourceableCandidates": []
+    }
+  ],
+  "observationSlots": {
+    "minimum": 457367056,
+    "maximum": 457367066,
+    "reads": [
+      {
+        "label": "programIdentities:0",
+        "slot": 457367056
+      },
+      {
+        "label": "save.reserveInventory",
+        "slot": 457367056
+      },
+      {
+        "label": "klend.reserveInventory",
+        "slot": 457367057
+      },
+      {
+        "label": "project0.bankInventory",
+        "slot": 457367057
+      },
+      {
+        "label": "project0.positiveBankCrossCheck:0",
+        "slot": 457367062
+      },
+      {
+        "label": "project0.positiveVaults:0",
+        "slot": 457367063
+      },
+      {
+        "label": "jupiterMain.reserveInventory",
+        "slot": 457367063
+      },
+      {
+        "label": "jupiterMain.borrowPositionInventory",
+        "slot": 457367062
+      },
+      {
+        "label": "jupiterMain.flashAdmin:0",
+        "slot": 457367064
+      },
+      {
+        "label": "jupiterMain.targetVaults:0",
+        "slot": 457367064
+      },
+      {
+        "label": "jupiterIsolatedEthena.reserveInventory",
+        "slot": 457367064
+      },
+      {
+        "label": "jupiterIsolatedEthena.borrowPositionInventory",
+        "slot": 457367064
+      },
+      {
+        "label": "jupiterIsolatedEthena.flashAdmin:0",
+        "slot": 457367065
+      },
+      {
+        "label": "jupiterMain.targetCustodyCrossCheck:0",
+        "slot": 457367066
+      },
+      {
+        "label": "mango.bankInventory",
+        "slot": 457367066
+      }
+    ]
+  },
+  "limitations": [
+    "State-derived upper bounds are not signed sigVerify:true simulations; this follow-up was explicitly read-only and did not construct or simulate transactions.",
+    "Project0 bounds assume an otherwise valid authority-owned Marginfi account and complete oracle/account list. They distinguish state compatibility from an executed route.",
+    "Jupiter main custody rows are real token balances controlled by its liquidity PDA, but are not borrowable unless a configured TokenReserve and flash-admin-bound UserBorrowPosition also exist.",
+    "No StakeHistory activation calculation was repeated here; the 11-pool subset is inherited from the pinned epoch-field prerequisite artifact."
+  ],
+  "reproducibility": {
+    "command": "node /Users/stacc/the-composer-rescue/composer-runs/2026-10-15/svsp-flash-provider-crosswalk.js",
+    "output": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/svsp-flash-provider-crosswalk.json",
+    "sourceFiles": [
+      "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/svsp-flash-provider-crosswalk.js",
+      "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/svsp-live-finalized-evidence.json",
+      "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/marginfi-source/fuzz/crucible/idls/marginfi_program.json",
+      "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/jup6qf-onchain-idl.json",
+      "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/jup6qf-onchain-flash-idl.json"
+    ]
+  }
+}

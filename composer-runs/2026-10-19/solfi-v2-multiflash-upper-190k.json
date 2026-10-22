@@ -1,0 +1,336 @@
+{
+  "generatedAtUtc": "2026-10-19T08:12:30.915Z",
+  "network": "private nested current fork",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "target": {
+    "program": "SV2EYYJyRz2YhfXwXnhNAevDEui5Q6yrfyo13WtupPF",
+    "pool": "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32"
+  },
+  "route": {
+    "inputRaw": "190000000000",
+    "solfiOutputRaw": "190176081180",
+    "independentExitInputRaw": "190157063571",
+    "independentExitOutputRaw": "189967293540",
+    "quotedResidualUsdtRaw": "19017609",
+    "grossQuotedStableDeltaRaw": "-13688851",
+    "forwardContextSlot": 458762416,
+    "exitContextSlot": 458762416,
+    "forward": [
+      {
+        "label": "SolFi V2",
+        "ammKey": "FkEB6uvyzuoaGpgs4yRtFtxC4WJxhejNFbUkj5R6wR32"
+      }
+    ],
+    "exit": [
+      {
+        "label": "Manifest",
+        "ammKey": "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ"
+      }
+    ]
+  },
+  "providers": {
+    "programs": {
+      "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "project0": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+      "save": "So1endDq2YkqhipRh3WViPa8hdiSpxWy6z3Z6tMCpAo"
+    },
+    "capacities": {
+      "saveAvailableRaw": "4986720479672",
+      "saveSupplyRaw": "4992286218652",
+      "klendAvailableRaw": "11298111570802",
+      "klendFlashFeeSf": "0",
+      "klendSupplyRaw": "11298111640807",
+      "project0VaultRaw": "391454647352"
+    }
+  },
+  "outsider": {
+    "publicKey": "6rAps43RANmUmEaBFJxtubgowSzvKXpfyNEi3ZE3xcpx",
+    "marginAccount": "EsYoxyXkC63W16qVMnHysKiaa2WTdWo85NmkrVk9i9yH",
+    "privateKeysPersisted": false,
+    "syntheticUsdcSeedRaw": "1000000000",
+    "syntheticUsdtSeedRaw": "1000000"
+  },
+  "feeBasis": {
+    "twoSignaturesLamports": "10000",
+    "usdcEquivalentRaw": "1055",
+    "klendFee": "exact zero",
+    "project0Fee": "exact zero",
+    "saveFee": "ceil(principal*4/10000)"
+  },
+  "cases": [
+    {
+      "label": "two_provider_190000usdc",
+      "providers": [
+        "klend",
+        "project0"
+      ],
+      "amounts": {
+        "klend": "95000000000",
+        "project0": "95000000000"
+      },
+      "routeInputRaw": "190000000000",
+      "expectedSaveFeeRaw": "0",
+      "err": {
+        "InstructionError": [
+          5,
+          {
+            "Custom": 6050
+          }
+        ]
+      },
+      "unitsConsumed": 99766,
+      "loadedAccountsDataSize": 1286977,
+      "envelope": {
+        "version": 1,
+        "bytes": 1680,
+        "addresses": 36,
+        "instructions": 13,
+        "writableAddresses": 19,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "6rAps43RANmUmEaBFJxtubgowSzvKXpfyNEi3ZE3xcpx",
+          "EsYoxyXkC63W16qVMnHysKiaa2WTdWo85NmkrVk9i9yH"
+        ],
+        "sigVerify": true,
+        "withinLimits": true,
+        "signedWireSha256": "b1bab4193bd5180483c8e0ce9232c524b6a32786220995f2d0264d3d384aa2b7",
+        "signedWirePersisted": false
+      },
+      "lenderChecks": {
+        "klendSupplyRestored": false,
+        "project0VaultRestored": false,
+        "saveSupplyRestored": true,
+        "saveFeePaid": true
+      },
+      "changes": {
+        "outsider": {
+          "tokenAmountRaw": null,
+          "lamports": "-20000000000"
+        },
+        "marginAccount": {
+          "tokenAmountRaw": null,
+          "lamports": "0"
+        },
+        "outsiderUsdc": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "outsiderUsdt": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "solfiUsdcVault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2271306"
+        },
+        "solfiUsdtVault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2243303"
+        },
+        "klendSupply": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "project0Vault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039384"
+        },
+        "saveSupply": {
+          "tokenAmountRaw": null,
+          "lamports": "-72042322"
+        },
+        "saveFee": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        }
+      },
+      "finalWalletStableDeltaRaw": "0",
+      "combinedWalletAndMarginLamportsDelta": "-20000000000",
+      "networkFeeUsdcEquivalentRaw": "1055",
+      "finalWalletEquityAfterNetworkFeeRaw": "-1055",
+      "solfiStableEquityDeltaRaw": "0",
+      "solfiParents": [],
+      "completeRepayment": false,
+      "logs": [
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: twV1aHrHRDMBVuMA8fnvvp3cKZu4RQmH937HB/zaPJgEfd4sOlWCNKHOGvAZXyh7OI7ej+oh7Ggl2nVVPOO+7AsHILxc9z1JKFbjAPH5776d3CmbuEUJh/d+xwf82jyYBH3eLDpVgjShORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmE=",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 6399 of 1400000 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1393601 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1389263 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 3765 of 1384925 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1338864 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 43519 of 1381160 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmEbrR36PLL4Xdf2pmepSE5oFsfHd+k0nVM8c0nc32/fisb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hcAYAAAAAAABUBPOjZjvjQAAAAAAAAAAA",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1304377 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 32BRCpxjGjsBVuMA8fnvvp3cKZu4RQmH937HB/zaPJgEfd4sOlWCNKHOGvAZXyh7OI7ej+oh7Ggl2nVVPOO+7AsHILxc9z1JKFbjAPH5776d3CmbuEUJh/d+xwf82jyYBH3eLDpVgjShORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmEbrR36PLL4Xdf2pmepSE5oFsfHd+k0nVM8c0nc32/fisb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAPZwHhYAAAAeAVbvhNWc6NPfDwAAAAAA",
+        "Program log: AnchorError occurred. Error Code: PythPushStalePrice. Error Number: 6050. Error Message: Pyth Push oracle: stale price.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 37407 of 1337641 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x17a2"
+      ],
+      "broadcast": false
+    },
+    {
+      "label": "three_provider_190000usdc",
+      "providers": [
+        "klend",
+        "project0",
+        "save"
+      ],
+      "amounts": {
+        "klend": "94500000000",
+        "project0": "94500000000",
+        "save": "1000000000"
+      },
+      "routeInputRaw": "190000000000",
+      "expectedSaveFeeRaw": "400000",
+      "err": {
+        "InstructionError": [
+          5,
+          {
+            "Custom": 6050
+          }
+        ]
+      },
+      "unitsConsumed": 101996,
+      "loadedAccountsDataSize": 1288252,
+      "envelope": {
+        "version": 1,
+        "bytes": 1915,
+        "addresses": 42,
+        "instructions": 15,
+        "writableAddresses": 23,
+        "requiredSignatures": 2,
+        "signerOrder": [
+          "6rAps43RANmUmEaBFJxtubgowSzvKXpfyNEi3ZE3xcpx",
+          "EsYoxyXkC63W16qVMnHysKiaa2WTdWo85NmkrVk9i9yH"
+        ],
+        "sigVerify": true,
+        "withinLimits": true,
+        "signedWireSha256": "b1279b80c0391ffaad557d32adc1f0f2f620555b7fee51491eabb457ce8b546b",
+        "signedWirePersisted": false
+      },
+      "lenderChecks": {
+        "klendSupplyRestored": false,
+        "project0VaultRestored": false,
+        "saveSupplyRestored": false,
+        "saveFeePaid": false
+      },
+      "changes": {
+        "outsider": {
+          "tokenAmountRaw": null,
+          "lamports": "-20000000000"
+        },
+        "marginAccount": {
+          "tokenAmountRaw": null,
+          "lamports": "0"
+        },
+        "outsiderUsdc": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "outsiderUsdt": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "solfiUsdcVault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2271306"
+        },
+        "solfiUsdtVault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2243303"
+        },
+        "klendSupply": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        },
+        "project0Vault": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039384"
+        },
+        "saveSupply": {
+          "tokenAmountRaw": null,
+          "lamports": "-72042322"
+        },
+        "saveFee": {
+          "tokenAmountRaw": null,
+          "lamports": "-2039280"
+        }
+      },
+      "finalWalletStableDeltaRaw": "0",
+      "combinedWalletAndMarginLamportsDelta": "-20000000000",
+      "networkFeeUsdcEquivalentRaw": "1055",
+      "finalWalletEquityAfterNetworkFeeRaw": "-1055",
+      "solfiStableEquityDeltaRaw": "0",
+      "solfiParents": [],
+      "completeRepayment": false,
+      "logs": [
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: MarginfiAccountInitialize",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program data: twV1aHrHRDMBVuMA8fnvvp3cKZu4RQmH937HB/zaPJgEfd4sOlWCNKHOGvAZXyh7OI7ej+oh7Ggl2nVVPOO+7AsHILxc9z1JKFbjAPH5776d3CmbuEUJh/d+xwf82jyYBH3eLDpVgjShORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmE=",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 6399 of 1400000 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1393601 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 4338 of 1389263 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 3765 of 1384925 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1336457 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 45926 of 1381160 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmEbrR36PLL4Xdf2pmepSE5oFsfHd+k0nVM8c0nc32/fisb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hcQYAAAAAAADCYMlwYz7jQAAAAAAAAAAA",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1302147 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 32BRCpxjGjsBVuMA8fnvvp3cKZu4RQmH937HB/zaPJgEfd4sOlWCNKHOGvAZXyh7OI7ej+oh7Ggl2nVVPOO+7AsHILxc9z1JKFbjAPH5776d3CmbuEUJh/d+xwf82jyYBH3eLDpVgjShORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmEbrR36PLL4Xdf2pmepSE5oFsfHd+k0nVM8c0nc32/fisb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hAJGjABYAAACtyNWqkh3WbnDKDwAAAAAA",
+        "Program log: AnchorError occurred. Error Code: PythPushStalePrice. Error Number: 6050. Error Message: Pyth Push oracle: stale price.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 37230 of 1335234 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x17a2"
+      ],
+      "broadcast": false
+    }
+  ],
+  "safety": {
+    "broadcast": false,
+    "sendTransactionPathPresent": false,
+    "signedWiresPersisted": false,
+    "forkMutation": "fresh outsider and its two token accounts only"
+  }
+}

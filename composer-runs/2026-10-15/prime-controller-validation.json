@@ -1,0 +1,534 @@
+{
+  "generatedAt": "2026-10-15T19:48:23.082Z",
+  "verdict": {
+    "reportableFinding": false,
+    "findingCount": 0,
+    "conclusion": "No outsider-accessible unauthorized positive net PRIME equity was demonstrated.",
+    "reportingRule": "Only positive outsider equity after every liability is a finding."
+  },
+  "observation": {
+    "stateSlots": {
+      "primary": 457353266,
+      "secondary": 457353266
+    },
+    "simulationPreSlot": 457353278,
+    "simulationSlots": [
+      457356779,
+      457356780,
+      457356781,
+      457356782,
+      457356783,
+      457356784,
+      457356785,
+      457356786,
+      457356787,
+      457356788,
+      457356789,
+      457356790,
+      457356791,
+      457356792,
+      457356793,
+      457356794
+    ],
+    "programId": "8eqh8wppT9c5rw4ERqNCffvU6cNFJWff9WmkcYtmGiqC",
+    "version": "1.6.2",
+    "currentBinaryMatchesOfficialRelease": true,
+    "sourceCommit": "9546a59bd0a3cee4ddc8ae4042da533e62225b78"
+  },
+  "custody": {
+    "primeMint": "3b8X44fLF9ooXaUm3hhSgjpmVs6rZZ3pPoGnGahc3Uu7",
+    "poolSigner": "AjKrG87tF3rFNvW1U4Ja8pZ8KsQ1LLiDjiF79G9xj3a7",
+    "vault": "4pQktybtQuVmqavFui8rmC21CtEEZxtgM9q3YGFNwPDd",
+    "vaultRaw": "9455415978148",
+    "vaultUi": "9455415.978148",
+    "vaultDelegate": null,
+    "vaultDelegatedAmountRaw": "0",
+    "vaultCloseAuthority": null
+  },
+  "klend": {
+    "reserve": "BUTND9T7Ux4KR8RAEgd4WoZwnP7xA279oA1y3iPVcvSh",
+    "availableRaw": "84772939811234",
+    "availableUi": "84772939.811234",
+    "flashFeeSf": "0",
+    "flashFeeExactZero": true
+  },
+  "exact4096Composition": {
+    "sequence": [
+      "KLend flash borrow",
+      "padding memo",
+      "SPL transfer into controller vault",
+      "controller release to receiver ATA",
+      "KLend full repay"
+    ],
+    "authorizedPositiveControl": {
+      "label": "controller_roundtrip_one_prime_control_v1_4096",
+      "v1Bytes": 4096,
+      "v0EquivalentBytes": 4083,
+      "paddingBytes": 2878,
+      "addressCount": 23,
+      "instructionCount": 5,
+      "requiredSignatures": 2,
+      "unitsConsumed": 1124645,
+      "deltas": {
+        "tokens": {
+          "outsiderToken": "0",
+          "klendSupply": "0",
+          "klendFeeVault": "0",
+          "controllerVault": "0"
+        },
+        "reserve": {
+          "availableRaw": "0",
+          "borrowedAmountSf": "0",
+          "protocolFeesSf": "0",
+          "referrerFeesSf": "0",
+          "pendingReferrerFeesSf": "0",
+          "collateralMintSupplyRaw": "0"
+        },
+        "mintSupplyRaw": "0",
+        "inboundRateTokensRaw": "192018686660"
+      },
+      "allAssetsDebtsSharesZero": true
+    },
+    "outsiderAttempt": {
+      "label": "controller_roundtrip_one_prime_outsider_authority_v1_4096",
+      "v1Bytes": 4096,
+      "requiredSignatures": 1,
+      "failure": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "customError": 2006,
+      "failureMeaning": "Anchor ConstraintSeeds on the OffRamp authority; transaction atomically rolls back."
+    }
+  },
+  "surfaces": {
+    "custodyExits": [
+      {
+        "name": "release_or_mint_tokens",
+        "direction": "vault outflow",
+        "control": "OffRamp signer PDA + router-owned allowed-OffRamp PDA + bound state/mint/signer/vault/chain/RMN/receiver ATA + source-pool/rate checks"
+      },
+      {
+        "name": "withdraw_liquidity",
+        "direction": "vault outflow",
+        "control": "configured rebalancer signer + can_accept_liquidity; live rebalancer is default and flag is false"
+      },
+      {
+        "name": "provide_liquidity",
+        "direction": "vault inflow",
+        "control": "same configured rebalancer signer + flag"
+      },
+      {
+        "name": "lock_or_burn_tokens",
+        "direction": "lock/event path, no vault outflow",
+        "control": "configured router onramp authority + bound state and chain configuration"
+      }
+    ],
+    "claimReceiptShareDebtAccounts": "absent from the 25-instruction on-chain IDL and reviewed state model",
+    "priceOracleOrderSurface": "not applicable: this lock/release program consumes no price, oracle, or order account",
+    "replayBoundary": "pool has no nonce; only authenticated OffRamp can call release, so cross-chain replay/order integrity is an OffRamp control"
+  },
+  "simulations": [
+    {
+      "label": "flash_pair_zero",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "flash_pair_one_raw",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "flash_pair_one_prime",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "flash_one_raw_no_repay",
+      "result": "atomic failure",
+      "customError": 6032,
+      "v1Bytes": 498,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "flash_one_prime_underpay",
+      "result": "atomic failure",
+      "customError": 6033,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "flash_one_prime_wrong_repay_index",
+      "result": "atomic failure",
+      "customError": 6033,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "flash_pair_near_available",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "flash_pair_exact_available",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "flash_pair_over_available",
+      "result": "atomic failure",
+      "customError": 6008,
+      "v1Bytes": 531,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_one_raw_control",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "controller_roundtrip_one_prime_control_v1_4096",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 4096,
+      "exact4096": true,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "controller_roundtrip_one_prime_outsider_authority_v1_4096",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 4096,
+      "exact4096": true,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_wrong_offramp_program",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 1086,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_allowed_offramp_substitution",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 1150,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_state_substitution",
+      "result": "atomic failure",
+      "customError": 3002,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_pool_signer_substitution",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 1150,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_pool_vault_substitution",
+      "result": "atomic failure",
+      "customError": 2012,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_receiver_account_mismatch",
+      "result": "atomic failure",
+      "customError": 2012,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_invalid_source_pool",
+      "result": "atomic failure",
+      "customError": 6007,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "controller_roundtrip_wrong_chain_selector",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 1182,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "release_zero_amount_control",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 875,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "release_u64_overflow_control",
+      "result": "atomic failure",
+      "customError": 6009,
+      "v1Bytes": 875,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "release_double_control_no_pool_nonce",
+      "result": "success",
+      "customError": null,
+      "v1Bytes": 1110,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": "0",
+      "controllerVaultDeltaRaw": "0",
+      "klendSupplyDeltaRaw": "0",
+      "klendFeeDeltaRaw": "0",
+      "reserveDebtDeltaSf": "0",
+      "collateralShareSupplyDeltaRaw": "0",
+      "mintSupplyDeltaRaw": "0"
+    },
+    {
+      "label": "release_double_outsider_authority",
+      "result": "atomic failure",
+      "customError": 2006,
+      "v1Bytes": 1014,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "withdraw_liquidity_outsider",
+      "result": "atomic failure",
+      "customError": 6002,
+      "v1Bytes": 397,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "withdraw_liquidity_configured_rebalancer_control",
+      "result": "atomic failure",
+      "customError": 6020,
+      "v1Bytes": 493,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    },
+    {
+      "label": "provide_liquidity_outsider",
+      "result": "atomic failure",
+      "customError": 6002,
+      "v1Bytes": 397,
+      "exact4096": false,
+      "outsiderTokenDeltaRaw": null,
+      "controllerVaultDeltaRaw": null,
+      "klendSupplyDeltaRaw": null,
+      "klendFeeDeltaRaw": null,
+      "reserveDebtDeltaSf": null,
+      "collateralShareSupplyDeltaRaw": null,
+      "mintSupplyDeltaRaw": null
+    }
+  ],
+  "assertions": {
+    "exactBinaryIdentity": true,
+    "allNamedSuccessCasesReconcileAssetsDebtsShares": true,
+    "missingRepayRejected": true,
+    "underpayRejected": true,
+    "wrongRepayIndexRejected": true,
+    "amountAboveLiquidityRejected": true,
+    "outsiderExact4096Rejected": true,
+    "accountAndPdaSubstitutionsRejected": true,
+    "u64OverflowRejected": true,
+    "outsiderLiquidityExitRejected": true,
+    "noPositiveOutsiderEquity": true
+  },
+  "limitations": [
+    "Read-only current-mainnet simulateTransaction only; no transaction was submitted.",
+    "`sigVerify:false` permits positive-control modeling of protocol PDAs; outsider failures are independently backed by current binary account constraints and exact matched source.",
+    "The registered security workspace covers a broad directory snapshot, but this report covers the user-requested executable, its exact source, live accounts, custody exits, and KLend composition only.",
+    "The user-supplied USD spot mark was not used in the exploitability decision and was not independently repriced."
+  ]
+}

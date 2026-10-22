@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-10-15T20:10:00Z",
+  "network": "solana-mainnet-beta-current-state",
+  "liveSubmission": false,
+  "finalDisposition": "no_validated_profitable_one_transaction_exit",
+  "validationRubric": {
+    "directProducerBinding": true,
+    "sameSlotVersusTwapDistinguished": true,
+    "orderingStalenessAndSourceBindingChecked": true,
+    "signedCurrentProgramForkReconciled": true,
+    "profitableConsumerIndependentExitAndRepayment": false
+  },
+  "scope": {
+    "program": "HFn8GnPADiny6XqUoWE8uRPPxb29ikn4yTuPa9MF2fWJ",
+    "mappingSnapshotSlot": 457351706,
+    "mappingAccounts": 5,
+    "ammEntries": 26,
+    "distinctPools": 25,
+    "orcaEntries": 16,
+    "raydiumClmmEntries": 10,
+    "meteoraDlmmEntries": 0,
+    "emaMinimumSampleSeconds": 30,
+    "emaWindowsSeconds": [3600, 28800, 86400, 604800],
+    "ordering": {
+      "allowedPriorPrograms": ["ComputeBudget111111111111111111111111111111"],
+      "priorNonComputeError": {
+        "code": 6014,
+        "name": "RefreshWithUnexpectedIxs"
+      },
+      "wrongSourceAccountError": {
+        "code": 6004,
+        "name": "UnexpectedAccount"
+      },
+      "flashBeforeRefreshSucceeded": false,
+      "refreshBeforeFlashPairSucceeded": true
+    },
+    "directConsumers": {
+      "klendReservesScanned": 619,
+      "klendScopeReferences": 535,
+      "klendDirectAmmChains": 1,
+      "directAmmConsumerMint": "CTALocKfjp97U1XS2yTMamt68d9vYcKeXV7L1GCnTcMT",
+      "directAmmConsumerAvailableRaw": "120487670088",
+      "directAmmConsumerPriceValidAfterRefresh": false,
+      "marginfiBanksScanned": 165,
+      "marginfiScopeReferences": 1,
+      "marginfiDirectAmmChains": 0
+    }
+  },
+  "jupiterDex": {
+    "program": "jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd",
+    "oracleProgram": "jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc",
+    "vaultProgram": "jupr81YtYssSyPt8jbnGuiWon5f6x9TcDEFxYe3Bdzi",
+    "directPathCount": 11,
+    "positionCount": 431,
+    "borrowingPositionCount": 112,
+    "readKind": "same-transaction DEX Liquidity position/reserve NAV; not TWAP",
+    "assetPaths": [
+      {"vaultId": 92, "assets": ["WSOL", "JitoSOL"], "sourceType": "DexSmartColPegOracle"},
+      {"vaultId": 95, "assets": ["USDG", "USDC"], "sourceType": "DexSmartColPegOracle"},
+      {"vaultId": 96, "assets": ["USDC", "USDT"], "sourceType": "DexSmartDebtPegOracle"},
+      {"vaultId": 98, "assets": ["USX", "USDC"], "sourceType": "DexSmartColPegOracle"},
+      {"vaultId": 103, "assets": ["sUSDai", "USDC"], "sourceType": "DexSmartColPegOracle"}
+    ],
+    "vault98ConsumerProof": {
+      "signatureVerification": false,
+      "wireBytes": 2232,
+      "accountCount": 53,
+      "instructionCount": 8,
+      "computeUnits": 592659,
+      "flashUsdcRaw": "1000000000000",
+      "poolSideDisplacementBps": 8874.8124,
+      "consumerBorrowRaw": "1000",
+      "maximumAddedCreditRaw": "139",
+      "minimumBorrowRaw": "1000",
+      "attackerLossUsdcRaw": "799486",
+      "profitable": false,
+      "reasonNotFinding": "sigVerify:false and negative economics; retained only as a consumer-reachability control"
+    },
+    "vault103SignedLead": {
+      "signatureVerification": true,
+      "scope": "current deployed programs on isolated mainnet fork",
+      "attackerOwnsSigningKey": true,
+      "vaultId": 103,
+      "poolA": "G41Dqz9A1v39TT2MryR5BkZU2a7UzfUkiRHyJGuRfeyF",
+      "poolAMints": [
+        "sUSDai6Y3GxysDEtA9BVcEFTaog6UZpYUVxJiMhAKYE",
+        "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      ],
+      "maximumSuccessfulTestAmountRaw": "2500000000000",
+      "wireBytes": 1389,
+      "accountCount": 33,
+      "instructionCount": 6,
+      "computeUnits": 384477,
+      "baselineOracleRateX15": "2002155642630428",
+      "distortedOracleRateX15": "2001601601810517",
+      "postUnwindOracleRateX15": "2002284136628110",
+      "attackerStartingUsdcRaw": "5000000000000",
+      "attackerEndingUsdcRaw": "4998883290823",
+      "attackerEndingSUSDaiRaw": "0",
+      "attackerUsdcLossRaw": "1116709177",
+      "lenderSupplyReconciled": true,
+      "lenderFeeVaultEndingRaw": "0",
+      "consumerActionIncluded": false,
+      "profitable": false
+    },
+    "vault103IndependentExit": {
+      "queryObservedAt": "2026-10-15T20:08:00Z",
+      "aggregator": "Jupiter lite quote API",
+      "excludedDexLabel": "JupLend AMM",
+      "poolB": "2JwiWq6zeBgooqKvLZSafEgB8QYuAEsfHxp253i6oJ8n",
+      "poolBLabel": "Whirlpool",
+      "quote1000SUSDai": {
+        "inputRaw": "1000000000",
+        "outputUsdcRaw": "1115758482",
+        "priceImpactPct": "0.0005856969852448299709228536"
+      },
+      "quote10000SUSDai": {
+        "inputRaw": "10000000000",
+        "errorCode": "NO_ROUTES_FOUND"
+      },
+      "fullCrossPoolTransactionBuilt": false,
+      "blocker": "independent exit depth demonstrated only at 1000 sUSDai and absent at 10000 sUSDai, versus 2500000 sUSDai-equivalent pool-A displacement; no consumer payout was available to offset this gap"
+    }
+  },
+  "otherDirectControls": {
+    "pyUsdKaminoLiquidity": {
+      "producer": "Orca PYUSD/USDC Whirlpool",
+      "consumer": "Kamino Liquidity deposit/withdraw and fee collection",
+      "readKind": "spot/NAV with Scope divergence guard; not TWAP",
+      "signedDualFlashWireBytes": 2238,
+      "signedDualFlashAccounts": 51,
+      "attackerSolLossLamports": "50071027",
+      "attackerUsdcLossRaw": "7351865",
+      "largeMoveGuardError": 6059,
+      "profitable": false
+    }
+  },
+  "untestedOrDeferred": [
+    "Signed consumer action plus independent pool-B exit for sUSDai vault 103",
+    "Independent exits for every one of the eleven Jupiter DEX paths",
+    "Multi-slot prepositioning, which is outside the requested one-transaction objective",
+    "Indirect Scope derived-entry chains not directly bound to an AMM entry"
+  ],
+  "inputSha256": {
+    "scope-amm-consumer-current-audit.md": "f250ce493a07efb4095125687fedf24423dd987c221872268774f121c69da79a",
+    "scope-live-mapping-census.json": "8a407642ae30ab24a6da77154e0bd0cbe016912011952779fec4ce8b3c588485",
+    "scope-live-ordering-replay.json": "e124570d0edf7d9243f657fab93ee3263ba84ca483cdd0a57069d62f683e18bc",
+    "scope-klend-flash-ordering-v1.json": "4ca4686a2b6f8fb0536aa0f24aaa17f451da4cec1d845aee3a11ad903c26d68d",
+    "jupiter-dex-path-liquidity.json": "d2f44e1344bed9e5068ebc741340ef00191b5399b509f7dc785895f181e636d3",
+    "jupiter-dex-vault-position-metrics.json": "5b8fa93cf56123650d77fecff5644579735831dbb12be3fa2937604fea8f3cee",
+    "jupiter-dex-peg-klend-v1.json": "ab4ef4b544da3f8f1406fe74e0cc18fbb095085e797c9f36616110b65947cfb3",
+    "jupiter-dex-v103-signed-fork.json": "15e75e219dde3737aa94b21f0f7036d4c73aa7453a3d644494abb6d04296a2da",
+    "outsider-atomic-amm-surface.md": "95018e9ae9421c47e5a667c1727e6ca0ec0f476b53ff8a44796d243dfa589b72"
+  }
+}

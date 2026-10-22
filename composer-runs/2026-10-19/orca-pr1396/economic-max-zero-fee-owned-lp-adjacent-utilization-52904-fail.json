@@ -1,0 +1,113 @@
+{
+  "schema": "orca-pr1396-economic-max-sweep/v1",
+  "execution": "signed v1 simulation on separate local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:63331",
+  "allocation": "zero-fee",
+  "providerMode": "klend-project0",
+  "preparedAtas": true,
+  "tickMode": "adjacent",
+  "syncedSaveState": null,
+  "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+  "rows": [
+    {
+      "inputLamports": "6271357260340",
+      "cushionLamports": "128427145206",
+      "allocation": "zero-fee",
+      "providerMode": "klend-project0",
+      "tickMode": "adjacent",
+      "setupSignature": "51hrd7GFL38mQo7UudstYU3nL5Q44Cr9PFXvWnjxzdxftHoYv2vxGaYHbQZADirqCCdGqdSmLVYJ9o3ZJoEzzcRS",
+      "positionSetupSignature": "61dmmB4B3Vx61WqGmPPru2kzT7bZZWmw1Jwp1qQVNm8XnsxvJKj6R2WhysZeQqZwWBbX94uhmmEP7Rvpivx58uwA",
+      "ledger": null,
+      "positionMint": "23TCZF4MHGhdYS5MrNBnfgG99yA37uGwHaXcQPRNm8gT",
+      "positionNftAta": "66PbSaZEHp5kHSUgdPG8C76cyyX8zqevTfSfGszXjicY",
+      "ownedPosition": "DQLtcLnhEBQEnRXwjbgmV4b1i8K6NMY1z9Ua3DkS7qB5",
+      "nftAmount": "1",
+      "liquidity": "10000000000",
+      "saveFeeLamports": "0",
+      "borrowedLamports": {
+        "save": "0",
+        "project0": "529040000000",
+        "klend": "5742317260340"
+      },
+      "actor": "4G6fWmr4qqHjhyxXVVco6oZUhBYpR24fw7oV4BQbvVAg",
+      "actorWsolAta": "3JZt65V5qKWD4FCGBxmh8w7oJRKm1hMidUwbnSzJh68v",
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6026
+          }
+        ]
+      },
+      "firstFailure": "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+      "whirlpoolSwaps": 0,
+      "whirlpoolUpdates": 0,
+      "whirlpoolIncreases": 0,
+      "whirlpoolDecreases": 0,
+      "whirlpoolCollects": 0,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "DQLtcLnhEBQEnRXwjbgmV4b1i8K6NMY1z9Ua3DkS7qB5": null,
+        "66PbSaZEHp5kHSUgdPG8C76cyyX8zqevTfSfGszXjicY": null,
+        "3JZt65V5qKWD4FCGBxmh8w7oJRKm1hMidUwbnSzJh68v": null,
+        "iS48JUREwQEEGJ5hxQVTFD2y2hKBiMyGfARnFLYQ7FV": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null,
+        "DW718KwF5d9URykynv8dcmHSQNXKTv7V5VxW5ozckbGS": null
+      },
+      "actorWsolBefore": "128427145206",
+      "actorWsolAfter": null,
+      "actorUsdcBefore": "0",
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "200489434800295",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "7641948459026",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "0",
+        "checkpointA": "0",
+        "feeOwedA": "0",
+        "checkpointB": "0",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 94322,
+      "wire": {
+        "version": 1,
+        "bytes": 1740,
+        "accounts": 31,
+        "instructions": 16,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "37779291254c651f06c1ee5708014749d461696757d7c042af8e3bf7d052e65c"
+      },
+      "logTail": [
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountStartFlashloan",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 3765 of 1393601 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1342435 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 48631 of 1389836 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+        "Program log: Instruction: LendingAccountBorrow",
+        "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABrAAAAAAAAAAEHrwBnBDqQAAAAAAAAAAA",
+        "Program log: assets: 98402324981251.69 liabs: 98402332109515.25",
+        "Program log: AnchorError thrown in programs/marginfi/src/state/bank.rs:455. Error Code: IllegalUtilizationRatio. Error Number: 6026. Error Message: Invalid bank utilization ratio.",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 35527 of 1341205 compute units",
+        "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA failed: custom program error: 0x178a"
+      ],
+      "pass": false
+    }
+  ]
+}

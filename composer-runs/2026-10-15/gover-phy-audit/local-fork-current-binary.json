@@ -1,0 +1,1235 @@
+{
+  "generatedAt": "2026-10-15T20:01:43.363Z",
+  "safety": {
+    "transport": "Surfpool current-mainnet fork only",
+    "rpcEndpoint": "http://127.0.0.1:8997",
+    "transactionMethod": "simulateTransaction only",
+    "mainnetTransactionsSubmitted": 0,
+    "attackerKey": "fresh local ephemeral keypair; only public key retained",
+    "syntheticStateMutation": true
+  },
+  "sourceSnapshotSlot": 457354754,
+  "binaryIdentity": {
+    "forkSlot": 457362030,
+    "programOwner": "BPFLoaderUpgradeab1e11111111111111111111111",
+    "programExecutable": true,
+    "programdataFullSha256": "4883f3d5a000a52c6e82cb903479c74809e014dd834761a66c4822bb121e781a",
+    "expectedProgramdataFullSha256": "4883f3d5a000a52c6e82cb903479c74809e014dd834761a66c4822bb121e781a",
+    "elfSha256": "68e0654bc6be35a99b244ddc6d6f37ee963671a375b503e87d27a61ed565dd03",
+    "expectedElfSha256": "68e0654bc6be35a99b244ddc6d6f37ee963671a375b503e87d27a61ed565dd03",
+    "exactCurrentBinaryMatch": true
+  },
+  "attackerPublicKey": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+  "targets": [
+    {
+      "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+      "vault": "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+      "amountRaw": "450000000000000000"
+    },
+    {
+      "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+      "vault": "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+      "amountRaw": "359127679505000000"
+    }
+  ],
+  "atomicFlashApplicability": {
+    "lenderRows": [
+      {
+        "role": "custody_PHY",
+        "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+        "klendMatchingReserves": 0,
+        "project0MatchingBanks": 0
+      },
+      {
+        "role": "community_governing_token",
+        "mint": "ibCiJd3QA5uDpbzcrSQqotpBfevosSXaWoFa6ak4Z8j",
+        "klendMatchingReserves": 0,
+        "project0MatchingBanks": 0
+      },
+      {
+        "role": "council_membership_token",
+        "mint": "7XenHd1YS1ae6BzUwEnDWiX1E3KR9aje5HcGdVJD4gPp",
+        "klendMatchingReserves": 0,
+        "project0MatchingBanks": 0
+      },
+      {
+        "role": "upgrade_controller_community_token",
+        "mint": "EtHceUV7nc19WpFvcc7aG7qiqnWwqaB6eAsKzbvV2YpC",
+        "klendMatchingReserves": 0,
+        "project0MatchingBanks": 0
+      },
+      {
+        "role": "upgrade_controller_council_membership_token",
+        "mint": "ACVqan3WMg6CuE99sn5bNsqpcywg88EhNBAjRftvy7hd",
+        "klendMatchingReserves": 0,
+        "project0MatchingBanks": 0
+      }
+    ],
+    "capitalSensitivity": {
+      "directTokenSpend": "not capital-sensitive; requires the existing token-account authority signature",
+      "executeStoredTransaction": "not capital-sensitive; requires a program-owned proposal/transaction pair in an executable state",
+      "createAndApproveNewProposal": "capital-sensitive only to the exact governing membership mint, not PHY or generic quote capital",
+      "upgradeControllerRetry": "not capital-sensitive; stored instruction requires a fixed external signer and has fixed accounts"
+    },
+    "governingSupplyBlockers": [
+      {
+        "role": "community_governing_token",
+        "mint": "ibCiJd3QA5uDpbzcrSQqotpBfevosSXaWoFa6ak4Z8j",
+        "supplyRaw": "0",
+        "entirePositiveSupplyAccountedFor": true,
+        "positiveAccounts": []
+      },
+      {
+        "role": "council_membership_token",
+        "mint": "7XenHd1YS1ae6BzUwEnDWiX1E3KR9aje5HcGdVJD4gPp",
+        "supplyRaw": "8",
+        "entirePositiveSupplyAccountedFor": true,
+        "positiveAccounts": [
+          {
+            "address": "CRJS6HHAmrtL8KjC5XPBn1oYgQdcQs5vCeKcPSBCDvYF",
+            "amountRaw": "8",
+            "owner": "DsWWtZrqXBcqTTPoEyFH793Euq82r95CuXWTwqo3JZur"
+          }
+        ]
+      },
+      {
+        "role": "upgrade_controller_community_token",
+        "mint": "EtHceUV7nc19WpFvcc7aG7qiqnWwqaB6eAsKzbvV2YpC",
+        "supplyRaw": "0",
+        "entirePositiveSupplyAccountedFor": true,
+        "positiveAccounts": []
+      },
+      {
+        "role": "upgrade_controller_council_membership_token",
+        "mint": "ACVqan3WMg6CuE99sn5bNsqpcywg88EhNBAjRftvy7hd",
+        "supplyRaw": "7",
+        "entirePositiveSupplyAccountedFor": true,
+        "positiveAccounts": [
+          {
+            "address": "8vnzBvoHLzWwGzTeHP78tXRAQLYsq5vpytFKnGrPszck",
+            "amountRaw": "7",
+            "owner": "2r7VSeKzyepHbdGUsZir94fpZgxBRG2xqgaMnbEALL6r"
+          }
+        ]
+      }
+    ],
+    "conclusion": "No live KLend reserve or Project0/marginfi bank exists for any of the five relevant mints. Both community mints have zero supply. All 8 target-realm council units and all 7 upgrade-controller council units are already in their respective realm holdings, accounting for 100% of each positive membership supply; therefore no AMM or additional flash provider can hold positive exact-mint inventory for a swap or loan. PHY is not a governing token. Unrelated flash capital cannot create a PDA, council, or fixed external signature.",
+    "fullRepaymentTested": false,
+    "reverseSwapTested": false,
+    "exactAvailableAndBoundaryTests": "not constructible: there is no reserve, bank, pool inventory, or other positive external token balance for either governing mint, so no provider account exists at which to test available-1/exact/available+1",
+    "triOrMaximumSourceCombination": "not constructible and cannot affect these authorization-gated actions; provider count for the required governing asset is zero",
+    "reasonNotTested": "No relevant same-mint lender route or governing-token route exists; fabricating a provider or wrapping the action with unrelated USDC/wSOL would not test an immediate live outsider path."
+  },
+  "guardsTested": [
+    "SPL Token owner signature",
+    "proposal final-state execution guard",
+    "proposal/transaction binding",
+    "governance-PDA invoke_signed positive control"
+  ],
+  "cases": [
+    {
+      "label": "target_1_direct_full_balance_transfer_without_pda_signature",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          "MissingRequiredSignature"
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 290,
+        "sha256": "98c8c548d9c2fd32428367373846a7d51b8fa8587cd0dd75e9c5b141bfb1344b",
+        "accountCount": 5,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+        "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 199,
+      "loadedAccountsDataSize": 602,
+      "logs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program log: Error: MissingRequiredSignature",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 199 of 1400000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: missing required signature for instruction"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_1_permissionless_execute_completed_transaction",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 524
+          }
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 514,
+        "sha256": "3bd446dc8c99a2c5ef97668fb39099f38c5a6bbc7263eb0e59dbdfb025f48316",
+        "accountCount": 12,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+        "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 11211,
+      "loadedAccountsDataSize": 106788,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program log: GOVERNANCE-ERROR: Invalid State: Can't execute transaction",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 11211 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw failed: custom program error: 0x20c"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_1_succeeded_zero_tx_proposal_with_foreign_transaction",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 510
+          }
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 514,
+        "sha256": "9757705a9df59e492b9947156e2eea1146957dd52611a3c36daa54a0dd8b184a",
+        "accountCount": 12,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+        "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 10877,
+      "loadedAccountsDataSize": 106778,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program log: GOVERNANCE-ERROR: Invalid Proposal for ProposalTransaction,",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 10877 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw failed: custom program error: 0x1fe"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_1_synthetic_authorized_state_positive_control_full_live_balance",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": null,
+      "message": {
+        "version": 1,
+        "serializedBytes": 382,
+        "sha256": "31fa7d454bffd87ee64135b0c82b9c534bf97ee8fa5e9a49976b414fbe6b19b6",
+        "accountCount": 8,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+        "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp",
+        "G5zTYYmtjMuossZZ2QUUKX11sMXXBJYLoJpYsDGKYvo7",
+        "2yh3srnymhEnfJt2aQ8FCuSBgpPzpq3BgnwEX3ZKSGdG"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4831080,
+          "dataLength": 823,
+          "dataSha256": "acbd9a250e240a91f8805b871209a197a63c2a6e0cad4bbce1775aff87ec40da"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "9518a48155fa45f77dd99836836e2ab4eae1e4fe64c9a231639a2cd6d27b664e"
+        }
+      ],
+      "simulatedPost": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "7fa0c76d100eeeb97a064bf7f043a80f7b245c001ea57cad30819863f4b59630"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "a29667063421778f4bce37a613c659fa2ad7a61b87709f13444cc7f69ff3c585"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4831080,
+          "dataLength": 823,
+          "dataSha256": "a9a0837e5203ae3080087b2e1f3dcce350140c4852330d9bf55daba92ec03007"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "85a491c1b568244fd48ccccb858f6f74d065e2b4a136d5225cb8d7f41acab8f6"
+        }
+      ],
+      "simulatedDeltaRaw": [
+        "-450000000000000000",
+        "450000000000000000",
+        null,
+        null
+      ],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4831080,
+          "dataLength": 823,
+          "dataSha256": "acbd9a250e240a91f8805b871209a197a63c2a6e0cad4bbce1775aff87ec40da"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "9518a48155fa45f77dd99836836e2ab4eae1e4fe64c9a231639a2cd6d27b664e"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 19937,
+      "loadedAccountsDataSize": 1801,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1384113 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 19937 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "parsed": {
+                "type": "transfer",
+                "info": {
+                  "source": "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+                  "destination": "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp",
+                  "amount": "450000000000000000",
+                  "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi"
+                }
+              },
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "syntheticFixture": {
+        "disclosure": "Synthetic Surfpool-only proposal and proposal-transaction state used as a positive control for the exact current deployed binary; not a live authorization claim.",
+        "proposal": {
+          "address": "G5zTYYmtjMuossZZ2QUUKX11sMXXBJYLoJpYsDGKYvo7",
+          "dataBase64": "DlGcIjArR8YQO8JWIBDONrNMaYxje2bC0NphclFJymxFYQBDxLal38Up6L3tAI3Y0mo/2gDi/bLx9SfzZ+0cln8D/uE4MHFi2QSglpEszl05Yi8ZNP0XlsJNcCzWoSW0wMIBAQABAAAABwAAAEFwcHJvdmUEAAAAAAAAAAEAAAEAAQABAAAAAAAAAAAAAADVVEFkAAAAAAHWVEFkAAAAAAHWVEFkAAAAAAEOkEsLAAAAAAEGZEFkAAAAAAAAAAEGAAAAAAAAAAABADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQAAAERBTyBUcmVhc3VyeSBBbGxvY2F0aW9uIFRyYW5zZmVyOiBQaGFzZSA0zQEAAFNVTU1BUlk6CgpUcmFuc2ZlciB0byBEQU8gdHJlYXN1cnkgJiBuZXcgd2FsbGV0IGNhdGVnb3J5LCAiRWNvU3lzdGVtIiAmIGl0cyBzdWItYWxsb2NhdGlvbiAiRGV2ZWxvcG1lbnQiIG9mIDQ1ME0gUEhZLgoKCkRFU0NSSVBUSU9OOgoKUGVyIGdlbmVzaXMgdG9rZW5vbWljcywgdGhlIGFsbG9jYXRpb24gb2YgNDUwTSBQSFkgZm9yIHdhcyBkZXNpZ25hdGVkIGZvciBsb25nIHRlcm0gZGV2ZWxvcG1lbnQgb2YgdGhlIFBoeXNpcyBlY29zeXN0ZW0uIFRoZSB0cmFuc2ZlciBvZiB0aGlzIGFsbG9jYXRpb24gZnJvbSBjZW50cmFsaXNlZCBzdG9yYWdlIHRvIERBTyBjb250cm9sIHNoYWxsIHRha2UgcGxhY2UgaW1tZWRpYXRlbHkgdXBvbiBwcm9wb3NhbCBhcHByb3ZhbC4KCgpHT0FMOgoKREFPIGFzc3VtaW5nIGNvbnRyb2wgb3ZlciB0cmVhc3VyeSBhbGxvY2F0aW9uLCAiRWNvU3lzdGVtOiBEZXZlbG9wbWVudCIuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+          "originalLength": 823,
+          "patchedSerializedLength": 785
+        },
+        "proposalTransaction": {
+          "address": "2yh3srnymhEnfJt2aQ8FCuSBgpPzpq3BgnwEX3ZKSGdG",
+          "dataBase64": "DeAmmD7IsA7Xb/fzeSI21E1BKzH3pBdNSBkL49ofYz4+AAAAAAAAAAEAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQMAAACjxtus5kY/A4kHU3rjG4Fzi3dpwBa2YuoYEq0BldEBJAABCSj6vYzKchJBjVruTBF4F1zraZfQILMsG9dbXffdl7sAAVGcIjArR8YQO8JWIBDONrNMaYxje2bC0NphclFJymxFAQAJAAAAAwAA7aSduD4GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+          "originalLength": 340,
+          "patchedSerializedLength": 205
+        },
+        "storedTransfer": {
+          "amountRaw": "450000000000000000",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "authorityRequiredAsSigner": true,
+          "destination": "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp",
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "source": "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM"
+        }
+      }
+    },
+    {
+      "label": "target_2_direct_full_balance_transfer_without_pda_signature",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          "MissingRequiredSignature"
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 290,
+        "sha256": "0c0df03d07e077385bfd7168ed3bf9df2b30e6e79a2e75f067297d1f29eac408",
+        "accountCount": 5,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+        "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 199,
+      "loadedAccountsDataSize": 602,
+      "logs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program log: Error: MissingRequiredSignature",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 199 of 1400000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: missing required signature for instruction"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_2_permissionless_execute_completed_transaction",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 524
+          }
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 514,
+        "sha256": "933adfc02776c6adda3182e17d800ce1b3c888a3846aa0237e85139480015068",
+        "accountCount": 12,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+        "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 11196,
+      "loadedAccountsDataSize": 106801,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program log: GOVERNANCE-ERROR: Invalid State: Can't execute transaction",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 11196 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw failed: custom program error: 0x20c"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_2_succeeded_zero_tx_proposal_with_foreign_transaction",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 510
+          }
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 514,
+        "sha256": "7e7dadd5b39948f12026f186e0b0ef534b4bea3aafab0343502250cfbed32e46",
+        "accountCount": 12,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+        "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 11038,
+      "loadedAccountsDataSize": 106911,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program log: GOVERNANCE-ERROR: Invalid Proposal for ProposalTransaction,",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 11038 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw failed: custom program error: 0x1fe"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "target_2_synthetic_authorized_state_positive_control_full_live_balance",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": null,
+      "message": {
+        "version": 1,
+        "serializedBytes": 382,
+        "sha256": "79c08698118e19ac1abccc26dbb0656e0be145dc3a35783761b827a0519145b7",
+        "accountCount": 8,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+        "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh",
+        "AsFXq3TDNn174eMfcQg8nmisMJeogmgWzFwJ1kY9x9zt",
+        "GGudseLF1TaepTx8PvTQybbowXb7QiE5Lzm6f6BiYVHh"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4897120,
+          "dataLength": 836,
+          "dataSha256": "ccf91d757bf4242a0d0e33cb1bf69343356e453f677f95a72912dc5601164379"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "9e359e38ef0a01437105ba631603447f9d4f2b8ca468ac372cef4ad56adb25fe"
+        }
+      ],
+      "simulatedPost": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "0f92b8ab09e566953909356f40e881d7e8d2dcce7b90ce7025d526a9663a3f58"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "44ae6ad944aa5cd831df0ad13c141804aadba9e25033cd6a233114b9c616a81f"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4897120,
+          "dataLength": 836,
+          "dataSha256": "25556fb9018db49b81476994cb3c8f9ce690a79b0645d49bac1077870ecdcf38"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "2e9d4ba39da4d94f796e02ed04a7b6e07f306ff3edc62850b77083397ed48bf7"
+        }
+      ],
+      "simulatedDeltaRaw": [
+        "-359127679505000000",
+        "359127679505000000",
+        null,
+        null
+      ],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 4897120,
+          "dataLength": 836,
+          "dataSha256": "ccf91d757bf4242a0d0e33cb1bf69343356e453f677f95a72912dc5601164379"
+        },
+        {
+          "owner": "GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw",
+          "lamports": 2377440,
+          "dataLength": 340,
+          "dataSha256": "9e359e38ef0a01437105ba631603447f9d4f2b8ca468ac372cef4ad56adb25fe"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 19922,
+      "loadedAccountsDataSize": 1814,
+      "logs": [
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw invoke [1]",
+        "Program log: VERSION:\"3.1.7\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1384128 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw consumed 19922 of 1400000 compute units",
+        "Program GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw success"
+      ],
+      "innerInstructions": [
+        {
+          "index": 0,
+          "instructions": [
+            {
+              "program": "spl-token",
+              "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+              "parsed": {
+                "type": "transfer",
+                "info": {
+                  "source": "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+                  "destination": "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh",
+                  "amount": "359127679505000000",
+                  "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR"
+                }
+              },
+              "stackHeight": 2
+            }
+          ]
+        }
+      ],
+      "syntheticFixture": {
+        "disclosure": "Synthetic Surfpool-only proposal and proposal-transaction state used as a positive control for the exact current deployed binary; not a live authorization claim.",
+        "proposal": {
+          "address": "AsFXq3TDNn174eMfcQg8nmisMJeogmgWzFwJ1kY9x9zt",
+          "dataBase64": "DhnJOuTApbTRncU9pUjQ5frTrS8nAjn+V96tpzp5AyCGYQBDxLal38Up6L3tAI3Y0mo/2gDi/bLx9SfzZ+0cln8D/uE4MHFi2QSglpEszl05Yi8ZNP0XlsJNcCzWoSW0wMIBAQABAAAABwAAAEFwcHJvdmUEAAAAAAAAAAEAAAEAAQABAAAAAAAAAAAAAAANj0JkAAAAAAEOj0JkAAAAAAEOj0JkAAAAAAEEJE4LAAAAAAE1lEJkAAAAAAAAAAEGAAAAAAAAAAABADwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKQAAAERBTyBUcmVhc3VyeSBBbGxvY2F0aW9uIFRyYW5zZmVyOiBQaGFzZSA42gEAAFNVTU1BUlk6CgpUcmFuc2ZlciB0byBEQU8gdHJlYXN1cnkgJiBuZXcgd2FsbGV0IGNhdGVnb3J5LCAiVGVhbSIgJiBzdWItYWxsb2NhdGlvbiwgIkNvbW11bml0eSIgb2YgMzU5MTI3Njc5LjUwNU0gUEhZLgoKREVTQ1JJUFRJT046CgpQZXIgZ2VuZXNpcyB0b2tlbm9taWNzLCB0aGUgYWxsb2NhdGlvbiBvZiAzNjBNIFBIWSAoMzU5MTI3Njc5LjUwNU0gY3VycmVudCkgd2FzIGRlc2lnbmF0ZWQgZm9yIGNvbW11bml0eSBkZXZlbG9wbWVudCBvZiB0aGUgUGh5c2lzIGVjb3N5c3RlbS4KClRoZSB0cmFuc2ZlciBvZiB0aGlzIGFsbG9jYXRpb24gZnJvbSBjZW50cmFsaXNlZCBzdG9yYWdlIHRvIERBTyBjb250cm9sIHNoYWxsIHRha2UgcGxhY2UgaW1tZWRpYXRlbHkgdXBvbiBwcm9wb3NhbCBhcHByb3ZhbC4KCkdPQUw6CgpEQU8gYXNzdW1pbmcgY29udHJvbCBvdmVyIHRyZWFzdXJ5IGFsbG9jYXRpb24sICJUZWFtOiBDb21tdW5pdHkiLgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+          "originalLength": 836,
+          "patchedSerializedLength": 798
+        },
+        "proposalTransaction": {
+          "address": "GGudseLF1TaepTx8PvTQybbowXb7QiE5Lzm6f6BiYVHh",
+          "dataBase64": "DZKYp1SwPmf/qxaHVzBYNrlKY+QlA5FSCfOrowMr64V1AAAAAAAAAAEAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQMAAAB1uCGHfov3lkxrdCSdfSs7wK1YwVdFuVLmsBsOCkw5hgABwBhaH0GYmUSW6TyadAdium48U7nIs7QI4NSuCOi2254AARnJOuTApbTRncU9pUjQ5frTrS8nAjn+V96tpzp5AyCGAQAJAAAAA0Dm58W44PsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+          "originalLength": 340,
+          "patchedSerializedLength": 205
+        },
+        "storedTransfer": {
+          "amountRaw": "359127679505000000",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "authorityRequiredAsSigner": true,
+          "destination": "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh",
+          "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "source": "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K"
+        }
+      }
+    },
+    {
+      "label": "both_vaults_direct_full_balance_transfers_one_atomic_v1",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          "MissingRequiredSignature"
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 402,
+        "sha256": "c489dc69c6ee7e95e4fe46a611e83bae421050e0132fa7b8294d02977cf1898e",
+        "accountCount": 8,
+        "instructionCount": 2,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "C2KKuAq4UaUFYtm3zcxZMSDUuSEfPSk4yLcq5XaBr4wM",
+        "ckut21Xhafmo74WPBBXHY6cRPXKpf7vhoh8FP35Fedp",
+        "8vXYj8B567R8Di7BUvquiGC7usyPMtL756xx6KERfW9K",
+        "DvrpGnZA5ZtG2s6GcfaNCqmo3WeKiTsNJpTJ3v4yovnh"
+      ],
+      "pre": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "6Va7K51FRbnPcYZTUwkoFfoYtnfh8qyJaZqT4W1GGxVi",
+          "amountRaw": "450000000000000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "e4bf89d23847934937ae2d2e8b461321685ed91136da86722bee991e67be3ae8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "2jfAMh48b37bBTKkoNwmvNZAqVQc1G7gh5vYv5FoWTUR",
+          "amountRaw": "359127679505000000",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "6593efe9e7287eecc488dfe4aa95545ae9170fcbc21562cddfe798d8105a3fc8"
+        },
+        {
+          "ownerProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "mint": "EswgBj2hZKdgovX2ihWSUDnuBg9VNbGmSGoH5yjNsPRa",
+          "authority": "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P",
+          "amountRaw": "0",
+          "delegateTag": 0,
+          "closeAuthorityTag": 0,
+          "dataSha256": "50801d4bfd8d943c1f59d28bb040e6e8e8b7ea0d2b9abdd80b5e17d6b020e393"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 199,
+      "loadedAccountsDataSize": 1168,
+      "logs": [
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [1]",
+        "Program log: Error: MissingRequiredSignature",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 199 of 1400000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: missing required signature for instruction"
+      ],
+      "innerInstructions": []
+    },
+    {
+      "label": "upgrade_controller_retryable_error_record_outsider_without_fixed_external_signer",
+      "forkBaselineSlot": 457362031,
+      "simulationSlot": 457362031,
+      "transactionError": {
+        "InstructionError": [
+          0,
+          "PrivilegeEscalation"
+        ]
+      },
+      "message": {
+        "version": 1,
+        "serializedBytes": 581,
+        "sha256": "b0b01dde774a869b5f8f5e1c665307f9a71c2df79911f04d4d742f161ff80f17",
+        "accountCount": 14,
+        "instructionCount": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "79MoJthRcpfBkKqFzSD3iRGarCZVJ4ovf2NcXBJNHf3P"
+        ],
+        "byteLimit": 4096,
+        "accountLimit": 64,
+        "withinLimits": true
+      },
+      "signaturesVerified": true,
+      "watched": [
+        "BZYjZ2ZbtAawP9WPt5yXszcoMWTvNFFX4AMbnDojtSGL",
+        "6rFUnQik5dhUsxJaxN2dKGJRD3cX8kQM3cyLD1kbaoCF",
+        "6cxVviQHwZd9119zbraPkohtJxNmsCrsGLA3qwohXzeW",
+        "4XT3sX2DC6LFYrE4iiK7DbXhMLciAfifxU3YUyMZccWP"
+      ],
+      "pre": [
+        {
+          "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+          "lamports": 6705747320,
+          "dataLength": 1319901,
+          "dataSha256": "4883f3d5a000a52c6e82cb903479c74809e014dd834761a66c4822bb121e781a"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 2533440,
+          "dataLength": 236,
+          "dataSha256": "c08c919e034520e6200e0f98c39154e7581eea9384d056988a17420f9529e7f4"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 3215520,
+          "dataLength": 334,
+          "dataSha256": "40add3653f880d01db43283789ffcc76aab3b19d5b25246f770be311ff645986"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 4029840,
+          "dataLength": 451,
+          "dataSha256": "6d45b42704b53146ec01215a8bb89a32fed3504b098984f7dd325bbf32b0d87e"
+        }
+      ],
+      "simulatedPost": [],
+      "simulatedDeltaRaw": [],
+      "localForkStateAfterSimulation": [
+        {
+          "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+          "lamports": 6705747320,
+          "dataLength": 1319901,
+          "dataSha256": "4883f3d5a000a52c6e82cb903479c74809e014dd834761a66c4822bb121e781a"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 2533440,
+          "dataLength": 236,
+          "dataSha256": "c08c919e034520e6200e0f98c39154e7581eea9384d056988a17420f9529e7f4"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 3215520,
+          "dataLength": 334,
+          "dataSha256": "40add3653f880d01db43283789ffcc76aab3b19d5b25246f770be311ff645986"
+        },
+        {
+          "owner": "GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf",
+          "lamports": 4029840,
+          "dataLength": 451,
+          "dataSha256": "6d45b42704b53146ec01215a8bb89a32fed3504b098984f7dd325bbf32b0d87e"
+        }
+      ],
+      "localForkSimulationRolledBack": true,
+      "unitsConsumed": 30589,
+      "loadedAccountsDataSize": 692956,
+      "logs": [
+        "Program GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf invoke [1]",
+        "Program log: VERSION:\"3.1.1\"",
+        "Program log: GOVERNANCE-INSTRUCTION: ExecuteTransaction",
+        "GJdRQcsyz49FMM4LvPqpaM2QA3yWFr8WamJ95hkwCBAh's signer privilege escalated",
+        "Program GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf consumed 30589 of 1400000 compute units",
+        "Program GoVERLMGbGF8kwAwhyNgF1BQ2uyQPawHCWbnFRmLZCf failed: Cross-program invocation with unauthorized signer or writable account"
+      ],
+      "innerInstructions": [],
+      "fixedStoredSigners": [
+        "GJdRQcsyz49FMM4LvPqpaM2QA3yWFr8WamJ95hkwCBAh",
+        "HF7gCq7BMB6cFfhharTGGm31sqDdpmvLTgF4WEoW8y9n",
+        "GJdRQcsyz49FMM4LvPqpaM2QA3yWFr8WamJ95hkwCBAh"
+      ],
+      "scopeAssessment": "Stored instruction adds a fixed council member; it neither references a selected PHY vault nor permits caller-selected accounts."
+    }
+  ]
+}

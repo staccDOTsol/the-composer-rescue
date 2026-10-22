@@ -1,0 +1,172 @@
+{
+  "schema": "orca-jupiter-atomic-boundary/v1",
+  "fork": "http://127.0.0.1:65331",
+  "mainnetSubmission": false,
+  "actor": "BSXm8sPGnVT6L2k4E56oHaZvejbri3cBv85336W6ZQYd",
+  "actorSeed": "orca-pr1396-jupiter-atomic-test-v1",
+  "pool": "C7AD8EHcbKvFL3zw2z4YKKn1ZMTCYqkThZGtY3hPajsd",
+  "slot": 458879388,
+  "quoteMtime": "2026-10-19T15:13:33.118Z",
+  "quote": {
+    "inAmount": "15568208",
+    "outAmount": "148602227",
+    "otherAmountThreshold": "147859216",
+    "routePlan": [
+      {
+        "percent": 100,
+        "bps": 10000,
+        "swapInfo": {
+          "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+          "label": "Kipseli",
+          "inputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "outputMint": "So11111111111111111111111111111111111111112",
+          "inAmount": "15568208",
+          "outAmount": "148602227"
+        }
+      }
+    ],
+    "transactionVersion": 1,
+    "excludedDexes": [
+      "Whirlpool",
+      "Orca V2"
+    ],
+    "routerProgram": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+    "routerAccounts": 26,
+    "routerDataBytes": 40
+  },
+  "initialActorWsolRaw": "200000000",
+  "flashRaw": {
+    "klend": "200000000",
+    "project0": "100000000",
+    "fees": "0"
+  },
+  "before": {
+    "pool": {
+      "liquidity": "607354963",
+      "tick": -27913,
+      "sqrtPriceX64": "4569289186316229615"
+    },
+    "vaultA": "612287",
+    "vaultB": "9375384212",
+    "actorWsol": "200000000",
+    "actorUsdc": "0"
+  },
+  "wire": {
+    "version": 1,
+    "bytes": 1757,
+    "accounts": 38,
+    "instructions": 10,
+    "requiredSignatures": 2,
+    "computeLimit": 1400000,
+    "sha256": "40b7491491f9710fa641fec2e26e863d6285a6ec9da9cecf6a347e3d05c8bcb8"
+  },
+  "indexes": {
+    "p0Start": 1,
+    "p0End": 9,
+    "klendBorrow": 2,
+    "klendRepay": 8,
+    "saveBorrow": null,
+    "saveRepay": null,
+    "whirlpool": [
+      4,
+      5
+    ]
+  },
+  "instructionPrograms": [
+    "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+    "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+    "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+    "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA"
+  ],
+  "simulation": {
+    "err": {
+      "InstructionError": [
+        6,
+        {
+          "Custom": 6001
+        }
+      ]
+    },
+    "unitsConsumed": 234170,
+    "completeRepayment": false,
+    "lenderVaultDeltas": {
+      "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+      "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+      "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+      "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+      "C7AD8EHcbKvFL3zw2z4YKKn1ZMTCYqkThZGtY3hPajsd": null,
+      "5ui3cgF3Hx5rGhFp4FAjhoqVQSfmZAFZ9KhdiWY8ewKu": null,
+      "5qCGEJ3711m5HDzdS82AcC7xnKNW293agPtYX8de7ERt": null,
+      "KATPoaM7vBxH7jBPsfgwM8v68soZ3eeZg7NAnccKykX": null,
+      "CBsfxSvqkA8u1KJkCzdmNd5cCb2ivybaqfUVAw76YQQV": null
+    },
+    "logs": [
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+      "Program log: Instruction: MarginfiAccountInitialize",
+      "Program 11111111111111111111111111111111 invoke [2]",
+      "Program 11111111111111111111111111111111 success",
+      "Program data: twV1aHrHRDMBmx8rx95lpFCJrnfE1pyl8y60gfF2kSCDB5Wl/hDMcRbSFj4bEqWu2jgaOfpctGIZoOArQLjLrRGTPd0l0bdDmJsfK8feZaRQia53xNacpfMutIHxdpEggweVpf4QzHEWORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmE=",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 6399 of 1400000 compute units",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+      "Program log: Instruction: LendingAccountStartFlashloan",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 3765 of 1393601 compute units",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+      "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+      "Program log: Instruction: FlashBorrowReserveLiquidity",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 112 of 1348925 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 42141 of 1389836 compute units",
+      "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA invoke [1]",
+      "Program log: Instruction: LendingAccountBorrow",
+      "Program data: aHW7nG+aaroAORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABygEAAAAAAAByA0nX2VkBQQAAAAAAAAAA",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1315529 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: 32BRCpxjGjsBmx8rx95lpFCJrnfE1pyl8y60gfF2kSCDB5Wl/hDMcRbSFj4bEqWu2jgaOfpctGIZoOArQLjLrRGTPd0l0bdDmJsfK8feZaRQia53xNacpfMutIHxdpEggweVpf4QzHEWORQvaC/YOISW7L1RBvFceUwkd0M4KPpmQtvr9yADSmGmV00l5I38MACvGayUU9HJ6EaCLxlpMXwmdddPYu+m8gabiFf+q4GE+2h/Y0YYwDXaxDncGus7VZig8AAAAAABAOH1BQAAAABUmrA8yWd/E9cEAAAAAAAA",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA consumed 61587 of 1347695 compute units",
+      "Program MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA success",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+      "Program log: Instruction: Swap",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1249801 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1247704 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: 4cpJr5MroJalBHQopnohchiHyzTCiIDHCRCeEdCx8rKSxvmquyKd6AHvm2lKTmBpPwAAAAAAAAAAgOuhPHbOdjwAAAAAAAAAAEBBvAcAAAAAVI9zAAAAAAAAAAAAAAAAAAAAAAAAAAAAs+YEAAAAAACrDAAAAAAAAA==",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 41109 of 1286108 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+      "Program log: Instruction: Swap",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 1219176 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1217079 compute units",
+      "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+      "Program data: 4cpJr5MroJalBHQopnohchiHyzTCiIDHCRCeEdCx8rKSxvmquyKd6AGA66E8ds52PAAAAAAAAAAAt/acRAXEWjkAAAAAAAAAAJwtBwkAAAAA/P15AAAAAAAAAAAAAAAAAAAAAAAAAAAAXrgFAAAAAADKDgAAAAAAAA==",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 30625 of 1244999 compute units",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 invoke [1]",
+      "Program log: Instruction: RouteV2",
+      "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU invoke [2]",
+      "Program log: Instruction: SwapV3",
+      "Program log: AnchorError thrown in src/instructions/swap_v3.rs:1995. Error Code: PriceExpired. Error Number: 6001. Error Message: The price was expired.",
+      "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU consumed 44598 of 1210428 compute units",
+      "Program 3TK9D8aoBFYjYZtKCjciPrVrRStsnvo7KmpcJqDavpaU failed: custom program error: 0x1771",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 consumed 48544 of 1214374 compute units",
+      "Program JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 failed: custom program error: 0x1771"
+    ],
+    "afterActorWsol": null,
+    "afterActorUsdc": null
+  }
+}

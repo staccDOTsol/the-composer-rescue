@@ -1,0 +1,114 @@
+{
+  "observedAt": "2026-10-19T07:01:21.955Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "method": "simulateTransaction",
+  "sigVerify": true,
+  "broadcast": false,
+  "rows": [
+    {
+      "name": "closed_correctBTC",
+      "oracle": "hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+      "position": "DfRowffc5W5zSdjAoEcoWuQjwgvXnqecyBMzPTYu9Qmy",
+      "slot": 458742695,
+      "error": null,
+      "units": 15801,
+      "wireBytes": 409,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success"
+      ]
+    },
+    {
+      "name": "closed_SOLoracle",
+      "oracle": "FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh",
+      "position": "DfRowffc5W5zSdjAoEcoWuQjwgvXnqecyBMzPTYu9Qmy",
+      "slot": 458742695,
+      "error": null,
+      "units": 15801,
+      "wireBytes": 409,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success"
+      ]
+    },
+    {
+      "name": "active_correctBTC",
+      "oracle": "hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+      "position": "9qBvkWum5thhXo5w6fZRTejFFk1DwkhUsnNndHdLpzZW",
+      "slot": 458742695,
+      "error": null,
+      "units": 39296,
+      "wireBytes": 409,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success"
+      ]
+    },
+    {
+      "name": "active_SOLoracle",
+      "oracle": "FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh",
+      "position": "9qBvkWum5thhXo5w6fZRTejFFk1DwkhUsnNndHdLpzZW",
+      "slot": 458742697,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "units": 16176,
+      "wireBytes": 409,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program log: AnchorError thrown in program/src/oracle.rs:19. Error Code: InvalidOracle. Error Number: 6013. Error Message: InvalidOracle.",
+        "Program log: Left:",
+        "Program log: FYq2BWQ1V5P1WFBqr3qB2Kb5yHVvSv7upzKodgQE5zXh",
+        "Program log: Right:",
+        "Program log: hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0x177d"
+      ]
+    },
+    {
+      "name": "active_ETHoracle",
+      "oracle": "AFZnHPzy4mvVCffrVwhewHbFc93uTHvDSFrVH7GtfXF1",
+      "position": "9qBvkWum5thhXo5w6fZRTejFFk1DwkhUsnNndHdLpzZW",
+      "slot": 458742697,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "units": 16176,
+      "wireBytes": 409,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program log: AnchorError thrown in program/src/oracle.rs:19. Error Code: InvalidOracle. Error Number: 6013. Error Message: InvalidOracle.",
+        "Program log: Left:",
+        "Program log: AFZnHPzy4mvVCffrVwhewHbFc93uTHvDSFrVH7GtfXF1",
+        "Program log: Right:",
+        "Program log: hUqAT1KQ7eW1i6Csp9CXYtpPfSAvi835V7wKi5fRfmC",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0x177d"
+      ]
+    },
+    {
+      "name": "active_wallet",
+      "oracle": "331nEBz4i3XjyaUHVyHnpw9xBoW7D6P1qMPnUPd76Mth",
+      "position": "9qBvkWum5thhXo5w6fZRTejFFk1DwkhUsnNndHdLpzZW",
+      "slot": 458742697,
+      "error": "BlockhashNotFound",
+      "units": 0,
+      "wireBytes": 377,
+      "logs": []
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "generatedAt": "2026-10-15T20:15:54.832Z",
+  "fork": "http://127.0.0.1:9051",
+  "safety": {
+    "mainnetTransactionsSubmitted": false,
+    "sendTransactionPathPresent": false,
+    "forkMutations": "fresh outsider lamports; two historical claim PDAs reset; two recipient ATAs topped up only to Surfpool 1.6.0 rent minimum (mainnet minimum is lower)"
+  },
+  "outsider": "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16",
+  "sourceCalls": [
+    {
+      "signature": "3ziipkssiTUxka7V5EjWNZ9Qt43eguAKMDeFEfp3UX3sWPQrwVyzMwgkRYZdJYaAr8cHEaEiSrPZzFjkm46myFaq",
+      "slot": 457327610
+    },
+    {
+      "signature": "4Q3BNv6C7tdKvjmv17ugyinU3sCihrfBuXdYkQVa58sGLjNGpEAA1UakziWgqGVr4W2USpxmuyrAsbAPWNqpYov7",
+      "slot": 457327610
+    }
+  ],
+  "envelopeLimits": {
+    "maximumBytes": 4096,
+    "maximumAddresses": 64,
+    "version": 1,
+    "sigVerify": true
+  },
+  "cases": [
+    {
+      "label": "current_claim_replay",
+      "metadata": {
+        "expected": "reject already consumed Wormhole claim"
+      },
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6021
+          }
+        ]
+      },
+      "unitsConsumed": 65363,
+      "logs": [
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: AnchorError thrown in programs/bridge/src/instructions/receive_render_v3.rs:229. Error Code: AlreadyRedeemed. Error Number: 6021. Error Message: AlreadyRedeemed.",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 65363 of 1400000 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d failed: custom program error: 0x1785"
+      ],
+      "wire": {
+        "version": 1,
+        "bytes": 1081,
+        "addresses": 28,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16"
+        ],
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "sha256": "cbe8e866ba681643c1efb4757e968cabc503fc05d066acdca6a528fcfbc0440f"
+      },
+      "deltas": {
+        "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra": null,
+        "FpAsmCQ7CVN3MGTme77se9zCGhPYGGVyT2SGozV77UGL": null,
+        "G6XcKZaHyfhRiVwP8MBj7nwmYTA7K633kbnazf8XArR8": null,
+        "6FsTfGV4xncUErCPfXFUQ6MFHH5itJyxCmj639WE6iUP": null
+      }
+    },
+    {
+      "label": "valid_verified_message_from_outsider_payer",
+      "metadata": {
+        "expected": "success, but credit only signed payload recipient"
+      },
+      "err": null,
+      "unitsConsumed": 186486,
+      "logs": [
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: user ETjC8E14xwqMZzjXGk2TWdaPo3cs7RyvjBRSLnqPRaY4 seq 696458 total_upgraded 18827270447632912 transfer amt 44750000000",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb invoke [2]",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 1236335 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb consumed 78354 of 1313136 compute units",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb success",
+        "Program data: GWvk8AjFinjIALzM7JGETQrLFhieErILCjesuLlXIZzEpqsrqdvrjYqgCgAAAAAAejTRagAAAACAz05rCgAAABASH39N40IAIgAAAAAAAAA=",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ invoke [2]",
+        "Program log: Instruction: TransferV0",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1218049 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ consumed 11934 of 1228531 compute units",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 186486 of 1400000 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d success"
+      ],
+      "wire": {
+        "version": 1,
+        "bytes": 1081,
+        "addresses": 28,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16"
+        ],
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "sha256": "6c8670c0f63dcaf818c7964838bd674f8511ba641ac4d9860d9aed6806c3a0d9"
+      },
+      "deltas": {
+        "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra": "-44750000000",
+        "FpAsmCQ7CVN3MGTme77se9zCGhPYGGVyT2SGozV77UGL": "44750000000",
+        "G6XcKZaHyfhRiVwP8MBj7nwmYTA7K633kbnazf8XArR8": null,
+        "6FsTfGV4xncUErCPfXFUQ6MFHH5itJyxCmj639WE6iUP": null
+      }
+    },
+    {
+      "label": "recipient_wallet_substitution",
+      "metadata": {
+        "expected": "reject recipient differing from signed payload"
+      },
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2015
+          }
+        ]
+      },
+      "unitsConsumed": 31326,
+      "logs": [
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: AnchorError caused by account: recipient_ata. Error Code: ConstraintTokenOwner. Error Number: 2015. Error Message: A token owner constraint was violated.",
+        "Program log: Left:",
+        "Program log: ETjC8E14xwqMZzjXGk2TWdaPo3cs7RyvjBRSLnqPRaY4",
+        "Program log: Right:",
+        "Program log: 7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 31326 of 1400000 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d failed: custom program error: 0x7df"
+      ],
+      "wire": {
+        "version": 1,
+        "bytes": 1049,
+        "addresses": 27,
+        "instructions": 1,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16"
+        ],
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "sha256": "6b6a83a8e4d458edae4de5a7d615252c1dd4fc6a2e89b0ae2dcdc9f38f82fce9"
+      },
+      "deltas": {
+        "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra": null,
+        "FpAsmCQ7CVN3MGTme77se9zCGhPYGGVyT2SGozV77UGL": null,
+        "G6XcKZaHyfhRiVwP8MBj7nwmYTA7K633kbnazf8XArR8": null,
+        "6FsTfGV4xncUErCPfXFUQ6MFHH5itJyxCmj639WE6iUP": null
+      }
+    },
+    {
+      "label": "duplicate_same_claim_atomic",
+      "metadata": {
+        "expected": "reject second redemption and roll back first"
+      },
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6021
+          }
+        ]
+      },
+      "unitsConsumed": 251849,
+      "logs": [
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: user ETjC8E14xwqMZzjXGk2TWdaPo3cs7RyvjBRSLnqPRaY4 seq 696458 total_upgraded 18827270447632912 transfer amt 44750000000",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb invoke [2]",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 1236335 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb consumed 78354 of 1313136 compute units",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb success",
+        "Program data: GWvk8AjFinjIALzM7JGETQrLFhieErILCjesuLlXIZzEpqsrqdvrjYqgCgAAAAAAejTRagAAAACAz05rCgAAABASH39N40IAIgAAAAAAAAA=",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ invoke [2]",
+        "Program log: Instruction: TransferV0",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1218049 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ consumed 11934 of 1228531 compute units",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 186486 of 1400000 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: AnchorError thrown in programs/bridge/src/instructions/receive_render_v3.rs:229. Error Code: AlreadyRedeemed. Error Number: 6021. Error Message: AlreadyRedeemed.",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 65363 of 1213514 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d failed: custom program error: 0x1785"
+      ],
+      "wire": {
+        "version": 1,
+        "bytes": 1152,
+        "addresses": 28,
+        "instructions": 2,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16"
+        ],
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "sha256": "6f19cf871402395ce7d1036d127d92df921f2a9263118cb1dcd26e76da8c556d"
+      },
+      "deltas": {
+        "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra": null,
+        "FpAsmCQ7CVN3MGTme77se9zCGhPYGGVyT2SGozV77UGL": null,
+        "G6XcKZaHyfhRiVwP8MBj7nwmYTA7K633kbnazf8XArR8": null,
+        "6FsTfGV4xncUErCPfXFUQ6MFHH5itJyxCmj639WE6iUP": null
+      }
+    },
+    {
+      "label": "two_independent_verified_claims_atomic",
+      "metadata": {
+        "expected": "success; each credit remains bound to its own signed recipient"
+      },
+      "err": null,
+      "unitsConsumed": 393972,
+      "logs": [
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: user ETjC8E14xwqMZzjXGk2TWdaPo3cs7RyvjBRSLnqPRaY4 seq 696458 total_upgraded 18827270447632912 transfer amt 44750000000",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb invoke [2]",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 1236335 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb consumed 78354 of 1313136 compute units",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb success",
+        "Program data: GWvk8AjFinjIALzM7JGETQrLFhieErILCjesuLlXIZzEpqsrqdvrjYqgCgAAAAAAejTRagAAAACAz05rCgAAABASH39N40IAIgAAAAAAAAA=",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ invoke [2]",
+        "Program log: Instruction: TransferV0",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1218049 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ consumed 11934 of 1228531 compute units",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 186486 of 1400000 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d invoke [1]",
+        "Program log: Instruction: ReceiveRenderV3",
+        "Program log: user ETjC8E14xwqMZzjXGk2TWdaPo3cs7RyvjBRSLnqPRaY4 seq 696457 total_upgraded 18827315197632912 transfer amt 40000000000",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb invoke [2]",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program 11111111111111111111111111111111 invoke [3]",
+        "Program 11111111111111111111111111111111 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 119 of 1028849 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb consumed 99354 of 1126650 compute units",
+        "Program wormDTUJ6AWPNvk59vGQbDvGJmqbDTdgWgAqcLBCgUb success",
+        "Program data: GWvk8AjFinjIALzM7JGETQrLFhieErILCjesuLlXIZzEpqsrqdvrjYmgCgAAAAAAejTRagAAAAAAkC9QCQAAAJDhbepX40IAIgAAAAAAAAA=",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ invoke [2]",
+        "Program log: Instruction: TransferV0",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [3]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 1010563 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ consumed 11934 of 1021045 compute units",
+        "Program circiqFCstNzaFBji1udQ6txgQBrn29pVSYHNJQo3wZ success",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d consumed 207486 of 1213514 compute units",
+        "Program brdgGYmhGdaAJmqLN9oSp4381Ywc51vUfzn9NaSZC1d success"
+      ],
+      "wire": {
+        "version": 1,
+        "bytes": 1216,
+        "addresses": 30,
+        "instructions": 2,
+        "requiredSignatures": 1,
+        "signerOrder": [
+          "7dX8qaCfTDNEiqE4Vfx11LdCvZaUiMHbEHXy2unsFL16"
+        ],
+        "sigVerify": true,
+        "replaceRecentBlockhash": false,
+        "sha256": "79596ab184287198c54e193e7a099279e54834ac6bf62d8e24e1d027cbd627ef"
+      },
+      "deltas": {
+        "5crgXHDPmJup446JZ8Qxyx4jjyZbdW8pUjYBpbuqs8Ra": "-84750000000",
+        "FpAsmCQ7CVN3MGTme77se9zCGhPYGGVyT2SGozV77UGL": "84750000000",
+        "G6XcKZaHyfhRiVwP8MBj7nwmYTA7K633kbnazf8XArR8": null,
+        "6FsTfGV4xncUErCPfXFUQ6MFHH5itJyxCmj639WE6iUP": null
+      }
+    }
+  ]
+}

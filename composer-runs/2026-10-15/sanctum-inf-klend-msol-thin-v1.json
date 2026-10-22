@@ -1,0 +1,5293 @@
+{
+  "generatedAt": "2026-10-15T19:18:49.920Z",
+  "safety": "read-only current-mainnet get* and simulateTransaction only; no send method",
+  "submittedTransactions": 0,
+  "funding": {
+    "program": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+    "reserve": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+    "market": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+    "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+    "supplyVault": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+    "feeVault": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+    "reserveAvailableRaw": "100000",
+    "flashLoanFeeSf": "0",
+    "flashLoanFeeScale": "2^60",
+    "configuredFeeRateIsExactlyZero": true
+  },
+  "target": {
+    "program": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+    "pool": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+    "mint": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+    "lstIndex": 17,
+    "thinMsolReserve": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax"
+  },
+  "actor": {
+    "owner": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+    "sourceMsolAccount": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+    "temporaryFlashAccount": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+    "infAta": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i"
+  },
+  "sources": {
+    "pricingControl": {
+      "signature": "HXSadNEozpG8rLntyt96MTmDRhypAur3JwTjijn27HfvCGuuts6WM8jhiZwC8xwAhbq4qy2wVDwGM2gnnXQstU3",
+      "slot": 457279748
+    },
+    "msolSync": {
+      "signature": "62zi5Gct98vw7ruL4k6J84b3etzE7w5Ns4GWRCaDeNfrY1uCuWX4ktUni11C7MDC11yk9Fcfcbb76fDfygRVbGzz",
+      "slot": 457329677
+    }
+  },
+  "quotes": [
+    {
+      "label": "authorized mSOL -> INF add quote 1",
+      "slot": 457351485,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 31
+          }
+        ]
+      },
+      "unitsConsumed": 52230,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "1fa17433f0897389a69cb0134b543f7f33438aa742c22bfe7ea57802c2d259a2",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP AQAAAAAAAAABAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AAAAAAAAAAA=",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx AAAAAAAAAAA=",
+        "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x1f"
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 2",
+      "slot": 457351486,
+      "err": null,
+      "unitsConsumed": 71320,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "30c7c0fa97d2ad836ccf05c53d4b8d8353568f4a9f10fd804be08592f1e86540",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035378",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-2",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "1",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "824",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "2",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110315",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "1",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "a847b3bd9edc775d7aa3f8bc393a7dbfe23a04f5976a4df05dc08e40b6f560f6",
+            "totalSolValueLamports": "1870227724854886",
+            "protocolFeeLamports": "12034706688",
+            "lastReleaseSlot": "457351486"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP AgAAAAAAAAACAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iQQAAAAAAACJBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iQQAAAAAAACJBAAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 3",
+      "slot": 457351487,
+      "err": null,
+      "unitsConsumed": 71322,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "89ad61380b09c183f4f71b048e4ac92d279c8f9edfa43a14fcc8f28ba937a1bf",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035377",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-3",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "2",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "825",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "3",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110316",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "2",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "e7a0e33a3c3d1d304801b44abc09684a66a34571ff68199f1407495d0961ff51",
+            "totalSolValueLamports": "1870227724854888",
+            "protocolFeeLamports": "12034731252",
+            "lastReleaseSlot": "457351487"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP BAAAAAAAAAAEAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AwAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iwQAAAAAAACLBAAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 4",
+      "slot": 457351487,
+      "err": null,
+      "unitsConsumed": 71322,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "2aa85479f989e02e5bf9a39fa9bc4a16412b8021be947b8a90922fea667488eb",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035376",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-4",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "3",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "826",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "4",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110317",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "3",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "9a0040ddd429bef283cf598bb560ade6aa66b2ce7845bc6563c4822c6dc1060e",
+            "totalSolValueLamports": "1870227724854889",
+            "protocolFeeLamports": "12034731252",
+            "lastReleaseSlot": "457351487"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP BQAAAAAAAAAFAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV BAAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jAQAAAAAAACMBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx jAQAAAAAAACMBAAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 10",
+      "slot": 457351488,
+      "err": null,
+      "unitsConsumed": 71389,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "52376a11c778828250ddbcebf0153717c7f1e8c4714f89dbd3c5fa5c0305ee02",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035370",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-10",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "9",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "832",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "10",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110323",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "9",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "ae8e88bb578f81da5ed17c0bc3aa00bc2f90c5a63e000671e7c75f75e4d66ebb",
+            "totalSolValueLamports": "1870227724854897",
+            "protocolFeeLamports": "12034755816",
+            "lastReleaseSlot": "457351488"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP DgAAAAAAAAAOAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV DQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lAQAAAAAAACUBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx lAQAAAAAAACUBAAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 100",
+      "slot": 457351489,
+      "err": null,
+      "unitsConsumed": 71357,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "2aa35d6f04efaae7a844d7add918e9c16f9e6620ecc440a569931dfd7823535a",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "96",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "922",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110410",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "96",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "923fb10afa4f850de3484397f2e86ff5632e0efa1683f513622d4db6b6c61e4f",
+            "totalSolValueLamports": "1870227724855025",
+            "protocolFeeLamports": "12034780380",
+            "lastReleaseSlot": "457351489"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jQAAAAAAAACNAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV jAAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FAUAAAAAAAAUBQAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FAUAAAAAAAAUBQAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 1000",
+      "slot": 457351490,
+      "err": null,
+      "unitsConsumed": 71439,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "4c5edff1f9d777fe9a589c462c4b5c22fce925a3a2730398c7e3de3a3640b589",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000034380",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-1000",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "963",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "1822",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "1000",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975111277",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "963",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "a295d70f3272c60fd23478907ae67f50f319c1d0e4a4f20e65d6ef73340b11cf",
+            "totalSolValueLamports": "1870227724856293",
+            "protocolFeeLamports": "12034804944",
+            "lastReleaseSlot": "457351490"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP ggUAAAAAAACCBQAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV egUAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP CAoAAAAAAAAICgAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx CAoAAAAAAAAICgAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 10000",
+      "slot": 457351491,
+      "err": null,
+      "unitsConsumed": 71841,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "531187bcda3272470940720685a39065318339e255d8d6f339bda19538ee5fb9",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000025380",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-10000",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "9626",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "10822",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "10000",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975119940",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "9626",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "cd5a6d786b8d11e07292bda354c8d1b90deaa7df9badad1c67cd5f18732191f0",
+            "totalSolValueLamports": "1870227724868978",
+            "protocolFeeLamports": "12034829507",
+            "lastReleaseSlot": "457351491"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP DjcAAAAAAAAONwAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV xzYAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lTsAAAAAAACVOwAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx lTsAAAAAAACVOwAAAAAAAA=="
+      ]
+    },
+    {
+      "label": "authorized mSOL -> INF add quote 99999",
+      "slot": 457351492,
+      "err": null,
+      "unitsConsumed": 72290,
+      "loadedAccountsDataSize": 3729234,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 777,
+        "wireSha256": "c4a3604a29719f1c4dd279d4aa4468509a3877963f28e3301e2d1123187faffe",
+        "requiredSignatures": 1,
+        "accountCount": 19,
+        "instructionCount": 2
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1635451628"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-1493440"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70000999935381",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-99999",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "96258",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100821",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "99999",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975206572",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "96258",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "c14c8f82996f4e831613695d314280e6f1476dadf94f6e641bcdf48bcbb317e1",
+            "totalSolValueLamports": "1870227724995825",
+            "protocolFeeLamports": "12034854071",
+            "lastReleaseSlot": "457351492"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA=="
+      ]
+    }
+  ],
+  "results": [
+    {
+      "label": "thin mSOL reserve flash round trip route 3 of 99999",
+      "slot": 457351494,
+      "err": {
+        "InstructionError": [
+          6,
+          {
+            "Custom": 31
+          }
+        ]
+      },
+      "unitsConsumed": 146592,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "versionPrefixHex": "81",
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "computeLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireBytes": 1321,
+        "wireSha256": "71c69cb0ae351fbda40ad0d0a66906293e1c00989e162d7c88c2e360483f0d01",
+        "unsignedSimulationWireBase64": "gQIAEAwAAADsvk4LXih/sou+C0qpg2tsO40O2QfFeqScfUDmeX13XggbBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcRM12rBkBeQmHIEQrx1RvoSC4x90Cfh7mWjhhqdL0rVxKp4jZCSnFc3E8kdrNgp4ptBbVKKIpzYslKZkDO5NwffR1eJn7i+26KHeKrNZ+Vo5zRwzOkLzVMrbLYYKXYogk6sIpLphjzwwyQ734ACPD1bh8uu4GSx2pVXDPEydfqbcdxJK8/QpV0zwQb7JAvCg+aaxKyDUdwMUoXKfSHp7NZxBXZUox/ugf3q+VJPcPjKAumdx0yGpF+VRk0R+ZXvrqoXH1eZDpSq6e4yNAuEmbuEBpjasiPUR6qaID/Ko0JUUY3YcqO3Fd7R1GA0P/W6SigQLjkCRyWJX+vHqceXITPT55yx0q28KA9ZULMFYWaEobgv72d3xvHfphBCfPgumGs40en8zqoT4alIH3HEa39H/yFoSOIHR4gc2tGVQaycRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkLYroHT3IsnUEU8tj3CgDGYAIze5v5DIc2V6bSAdtMgIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAgfJ+fclAXZDAvB0vwws40NjnZsdFr+YNyatCrAbJ0IZzXGoMoHSUGVHT1cXL5BAKgnSrComjgHa7YJ+NtegGMoBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAABHX+0dwP/zm78jexmql0f7VtSw3fIzohNDyULWThiD3Qtr1iYRNDqjcIh1s21SxqqxPfIvc/oRu3xSrMZWLcXK1Uo3vVwBuKue1qOQRFH7lVUa4ApTZDZDtjIH4h0PZ091EZsxdYB1huP0p+XND4kOlqdTsQ/Mx2gelHOgCDJw8QVF42W+8nGtdTUDZ1ZdpA2jNtwch5uxVIp6/MVaqTkeMlAo2HW9Mu/xsJHGPdsbjl6kXqgQDBAsgYaPQU6vGT4Mz7SAbxWjz5LCW/VMp8XSEAzLw8HGltb0E6BEd8Ni/jNF1MRz0npIxKEiktkepwsr9frg+BlhQWi9/+RHGKOWwFwVAAAAAAQLAjQADAIhAA4GAQAMBAoADwwQABMSFgATEhYADwwRAAABAAAAADi2FgAAAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQENEgSz3Egf/UBcahTmRfRiN+Hy8jGff8p8ep+/jFQMm5HEAAIAAwsMAQQNAQAMZAAAAAAAAAAJABARBQ0GAQcPDxIMh+c0pwc01MGfhgEAAAAAAAANAQIDCAwMCAkKFBUWFxgZGgMFEQAAAAMAAAAAAAAAAAAAAAAAAAAADQECAwgMDAgJChQVFhcYGRoEBREAAAACAAAAAAAAAAAAAAAAAAAAABARBQ0GAQcPDxIMuXUAy2D1tLqfhgEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8,
+        "accounts": [
+          {
+            "index": 0,
+            "address": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 1,
+            "address": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 2,
+            "address": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 3,
+            "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 4,
+            "address": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 5,
+            "address": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 6,
+            "address": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 7,
+            "address": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 8,
+            "address": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 9,
+            "address": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 10,
+            "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 11,
+            "address": "11111111111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 12,
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 13,
+            "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 14,
+            "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 15,
+            "address": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 16,
+            "address": "36cw2Nb1LsddEWboh8mUCs2T8vN8Pmja9Jfs2aYCYQVk",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 17,
+            "address": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 18,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 19,
+            "address": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 20,
+            "address": "mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 21,
+            "address": "FMbUjYFtqgm4Zfpg7MguZp33RQ3tvkd22NgaCCAs3M6E",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 22,
+            "address": "8szGkuLTAux9XMgZ2vtY39jVSowEcpBfFfD8hXSEqdGC",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 23,
+            "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 24,
+            "address": "4PQH9YmfuKrVyZaibkLYpJZPv2FPaybhq2GAuBcWMSBf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 25,
+            "address": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 26,
+            "address": "4T9YzXnmQFMyYi2nrxyXjhtUANavmCkxGCsU3GKaNjwT",
+            "signer": false,
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "index": 0,
+            "programIdIndex": 11,
+            "programId": "11111111111111111111111111111111",
+            "accountKeyIndexes": [
+              0,
+              1
+            ],
+            "dataHex": "0000000038b6160000000000a50000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a9"
+          },
+          {
+            "index": 1,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              1,
+              13
+            ],
+            "dataHex": "1204b3dc481ffd405c6a14e645f46237e1f2f2319f7fca7c7a9fbf8c540c9b91c4"
+          },
+          {
+            "index": 2,
+            "programIdIndex": 14,
+            "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "accountKeyIndexes": [
+              0,
+              2,
+              0,
+              3,
+              11,
+              12
+            ],
+            "dataHex": "01"
+          },
+          {
+            "index": 3,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              4,
+              13,
+              1,
+              0
+            ],
+            "dataHex": "0c640000000000000009"
+          },
+          {
+            "index": 4,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "87e734a70734d4c19f86010000000000"
+          },
+          {
+            "index": 5,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "03051100000003000000000000000000000000000000"
+          },
+          {
+            "index": 6,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002000000000000000000000000000000"
+          },
+          {
+            "index": 7,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "b97500cb60f5b4ba9f8601000000000004"
+          }
+        ]
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP BAAAAAAAAAAEAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AwAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP AAAAAAAAAAADAAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx AAAAAAAAAAADAAAAAAAAAA==",
+        "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x1f"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 4 of 99999",
+      "slot": 457351495,
+      "err": null,
+      "unitsConsumed": 187223,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "7d4fb10b5a21f44cff22d1f2a306c0effa371d3c1fe8f1ded05561e312370a47",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "97",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "96907c8e581ac2606e49617016f8ad34a6d5b4321109a2f9e7dce67eb1866382",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "825",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "3",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "59d26a8d5d775a95b8c9e262cb5700402e0ad0adf3d4950f1a2904b1be6c4d73",
+            "totalSolValueLamports": "1870227724854888",
+            "protocolFeeLamports": "12034927761",
+            "lastReleaseSlot": "457351495"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP BQAAAAAAAAAFAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV BAAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jAQAAAAAAACMBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx jAQAAAAAAACMBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jAQAAAAAAACMBAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV AwAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP AQAAAAAAAAAEAAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iwQAAAAAAACLBAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 10 of 99999",
+      "slot": 457351495,
+      "err": null,
+      "unitsConsumed": 187234,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "fbfb95faa10091796bc2cf03b632557024c3edc21b7796e1955c9739ca7587cf",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "97",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "96907c8e581ac2606e49617016f8ad34a6d5b4321109a2f9e7dce67eb1866382",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "825",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "3",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "59d26a8d5d775a95b8c9e262cb5700402e0ad0adf3d4950f1a2904b1be6c4d73",
+            "totalSolValueLamports": "1870227724854888",
+            "protocolFeeLamports": "12034927761",
+            "lastReleaseSlot": "457351495"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP DgAAAAAAAAAOAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV DQAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lAQAAAAAAACUBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx lAQAAAAAAACUBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lAQAAAAAAACUBAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV DAAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP BwAAAAAAAAAKAAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iwQAAAAAAACLBAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 100 of 99999",
+      "slot": 457351496,
+      "err": null,
+      "unitsConsumed": 187340,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "95ba80b18e4988a467f314137033b3989e36ea4bc0b12ee10c993a6bb5ba4731",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "97",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "8b780b823d4619f8e0fd622756585aeac441c9d10514e4f7d94c528868ed2dca",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "825",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "3",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "f10209d8a1e8a0bc13d0cf0500074d88796b8b1df4c2d5321eab69ce56ed3a50",
+            "totalSolValueLamports": "1870227724854888",
+            "protocolFeeLamports": "12034952324",
+            "lastReleaseSlot": "457351496"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jQAAAAAAAACNAAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV jAAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FAUAAAAAAAAUBQAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FAUAAAAAAAAUBQAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FAUAAAAAAAAUBQAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV igAAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP YQAAAAAAAABkAAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP iwQAAAAAAACLBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx iwQAAAAAAACLBAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 1000 of 99999",
+      "slot": 457351498,
+      "err": null,
+      "unitsConsumed": 187384,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "0ef6febc1b3a8d0bd2efb391e84feb1015728da41cb81b4f0c77363ab18f7f60",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "89",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "9d1cc706217554ff80b08a1001726d01ad625b71c2056c0caf698642767c570d",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "833",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "11",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "ebd8f4ff2d3b9b31958d25860cd8936bc5821b57534f6dbfb2cd5f38d3c5bfe0",
+            "totalSolValueLamports": "1870227724854899",
+            "protocolFeeLamports": "12035001450",
+            "lastReleaseSlot": "457351498"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP ggUAAAAAAACCBQAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV egUAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP CAoAAAAAAAAICgAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx CAoAAAAAAAAICgAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP CAoAAAAAAAAICgAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV dQUAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 3QMAAAAAAADhAwAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lgQAAAAAAACWBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx lgQAAAAAAACWBAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 10000 of 99999",
+      "slot": 457351499,
+      "err": null,
+      "unitsConsumed": 188730,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "e86763b2c1f91c2166f8ec178877041e1b4d1d53b8b6e2a51dc8fc12ad1e3417",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000035280",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-100",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "18",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "d3f7b1d294ec9dc767e973926e54236b95cf15e126d75da5eeb2295ee72c72ad",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "904",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "82",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "14f88c947df3903c551d59b16dcabff4caf6ab7612d36d717ddb97396ab6bf5a",
+            "totalSolValueLamports": "1870227724854999",
+            "protocolFeeLamports": "12035026013",
+            "lastReleaseSlot": "457351499"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP DjcAAAAAAAAONwAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV xzYAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lTsAAAAAAACVOwAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx lTsAAAAAAACVOwAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP lTsAAAAAAACVOwAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV nDYAAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP viYAAAAAAADBJgAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP +gQAAAAAAAD6BAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx +gQAAAAAAAD6BAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL reserve flash round trip route 99999 of 99999",
+      "slot": 457351500,
+      "err": null,
+      "unitsConsumed": 189409,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "versionPrefixHex": "81",
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "computeLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireBytes": 1321,
+        "wireSha256": "fec30a76b30addfe57d86287d48b73289ef63f61b6d6bb88c771d4f55fba7f41",
+        "unsignedSimulationWireBase64": "gQIAEAwAAAA5DTrGAlEQOuglDJ4MVSGeRbsfuuMoq8dnUUysiSxr+ggbBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcRM12rBkBeQmHIEQrx1RvoSC4x90Cfh7mWjhhqdL0rVxKp4jZCSnFc3E8kdrNgp4ptBbVKKIpzYslKZkDO5NwffR1eJn7i+26KHeKrNZ+Vo5zRwzOkLzVMrbLYYKXYogk6sIpLphjzwwyQ734ACPD1bh8uu4GSx2pVXDPEydfqbcdxJK8/QpV0zwQb7JAvCg+aaxKyDUdwMUoXKfSHp7NZxBXZUox/ugf3q+VJPcPjKAumdx0yGpF+VRk0R+ZXvrqoXH1eZDpSq6e4yNAuEmbuEBpjasiPUR6qaID/Ko0JUUY3YcqO3Fd7R1GA0P/W6SigQLjkCRyWJX+vHqceXITPT55yx0q28KA9ZULMFYWaEobgv72d3xvHfphBCfPgumGs40en8zqoT4alIH3HEa39H/yFoSOIHR4gc2tGVQaycRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkLYroHT3IsnUEU8tj3CgDGYAIze5v5DIc2V6bSAdtMgIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAgfJ+fclAXZDAvB0vwws40NjnZsdFr+YNyatCrAbJ0IZzXGoMoHSUGVHT1cXL5BAKgnSrComjgHa7YJ+NtegGMoBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAABHX+0dwP/zm78jexmql0f7VtSw3fIzohNDyULWThiD3Qtr1iYRNDqjcIh1s21SxqqxPfIvc/oRu3xSrMZWLcXK1Uo3vVwBuKue1qOQRFH7lVUa4ApTZDZDtjIH4h0PZ091EZsxdYB1huP0p+XND4kOlqdTsQ/Mx2gelHOgCDJw8QVF42W+8nGtdTUDZ1ZdpA2jNtwch5uxVIp6/MVaqTkeMlAo2HW9Mu/xsJHGPdsbjl6kXqgQDBAsgYaPQU6vGT4Mz7SAbxWjz5LCW/VMp8XSEAzLw8HGltb0E6BEd8Ni/jNF1MRz0npIxKEiktkepwsr9frg+BlhQWi9/+RHGKOWwFwVAAAAAAQLAjQADAIhAA4GAQAMBAoADwwQABMSFgATEhYADwwRAAABAAAAADi2FgAAAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQENEgSz3Egf/UBcahTmRfRiN+Hy8jGff8p8ep+/jFQMm5HEAAIAAwsMAQQNAQAM0AcAAAAAAAAJABARBQ0GAQcPDxIMh+c0pwc01MGfhgEAAAAAAAANAQIDCAwMCAkKFBUWFxgZGgMFEQAAAJ+GAQAAAAAAAAAAAAAAAAAADQECAwgMDAgJChQVFhcYGRoEBREAAAACeAEAAAAAAAAAAAAAAAAAABARBQ0GAQcPDxIMuXUAy2D1tLqfhgEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8,
+        "accounts": [
+          {
+            "index": 0,
+            "address": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 1,
+            "address": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 2,
+            "address": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 3,
+            "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 4,
+            "address": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 5,
+            "address": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 6,
+            "address": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 7,
+            "address": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 8,
+            "address": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 9,
+            "address": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 10,
+            "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 11,
+            "address": "11111111111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 12,
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 13,
+            "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 14,
+            "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 15,
+            "address": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 16,
+            "address": "36cw2Nb1LsddEWboh8mUCs2T8vN8Pmja9Jfs2aYCYQVk",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 17,
+            "address": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 18,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 19,
+            "address": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 20,
+            "address": "mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 21,
+            "address": "FMbUjYFtqgm4Zfpg7MguZp33RQ3tvkd22NgaCCAs3M6E",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 22,
+            "address": "8szGkuLTAux9XMgZ2vtY39jVSowEcpBfFfD8hXSEqdGC",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 23,
+            "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 24,
+            "address": "4PQH9YmfuKrVyZaibkLYpJZPv2FPaybhq2GAuBcWMSBf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 25,
+            "address": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 26,
+            "address": "4T9YzXnmQFMyYi2nrxyXjhtUANavmCkxGCsU3GKaNjwT",
+            "signer": false,
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "index": 0,
+            "programIdIndex": 11,
+            "programId": "11111111111111111111111111111111",
+            "accountKeyIndexes": [
+              0,
+              1
+            ],
+            "dataHex": "0000000038b6160000000000a50000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a9"
+          },
+          {
+            "index": 1,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              1,
+              13
+            ],
+            "dataHex": "1204b3dc481ffd405c6a14e645f46237e1f2f2319f7fca7c7a9fbf8c540c9b91c4"
+          },
+          {
+            "index": 2,
+            "programIdIndex": 14,
+            "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "accountKeyIndexes": [
+              0,
+              2,
+              0,
+              3,
+              11,
+              12
+            ],
+            "dataHex": "01"
+          },
+          {
+            "index": 3,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              4,
+              13,
+              1,
+              0
+            ],
+            "dataHex": "0cd00700000000000009"
+          },
+          {
+            "index": 4,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "87e734a70734d4c19f86010000000000"
+          },
+          {
+            "index": 5,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "0305110000009f860100000000000000000000000000"
+          },
+          {
+            "index": 6,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002780100000000000000000000000000"
+          },
+          {
+            "index": 7,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "b97500cb60f5b4ba9f8601000000000004"
+          }
+        ]
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000033380",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-2000",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "1200",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1968d04fadd7223f39a49f7429a84a094d24398a52ab19d649f82934e42c4276",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "1622",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "800",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "f5af325a4896f41d81fa433f06aca28964df6fce726231d39295e4903c4c3c7e",
+            "totalSolValueLamports": "1870227724856011",
+            "protocolFeeLamports": "12035050576",
+            "lastReleaseSlot": "457351500"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL exact spread buffer 800",
+      "slot": 457351500,
+      "err": null,
+      "unitsConsumed": 189409,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "versionPrefixHex": "81",
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "computeLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireBytes": 1321,
+        "wireSha256": "62830221052ac55536924d7ac0f9ea4bf5ea1e833b438107cf9d9a224ada742f",
+        "unsignedSimulationWireBase64": "gQIAEAwAAAA5DTrGAlEQOuglDJ4MVSGeRbsfuuMoq8dnUUysiSxr+ggbBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcRM12rBkBeQmHIEQrx1RvoSC4x90Cfh7mWjhhqdL0rVxKp4jZCSnFc3E8kdrNgp4ptBbVKKIpzYslKZkDO5NwffR1eJn7i+26KHeKrNZ+Vo5zRwzOkLzVMrbLYYKXYogk6sIpLphjzwwyQ734ACPD1bh8uu4GSx2pVXDPEydfqbcdxJK8/QpV0zwQb7JAvCg+aaxKyDUdwMUoXKfSHp7NZxBXZUox/ugf3q+VJPcPjKAumdx0yGpF+VRk0R+ZXvrqoXH1eZDpSq6e4yNAuEmbuEBpjasiPUR6qaID/Ko0JUUY3YcqO3Fd7R1GA0P/W6SigQLjkCRyWJX+vHqceXITPT55yx0q28KA9ZULMFYWaEobgv72d3xvHfphBCfPgumGs40en8zqoT4alIH3HEa39H/yFoSOIHR4gc2tGVQaycRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkLYroHT3IsnUEU8tj3CgDGYAIze5v5DIc2V6bSAdtMgIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAgfJ+fclAXZDAvB0vwws40NjnZsdFr+YNyatCrAbJ0IZzXGoMoHSUGVHT1cXL5BAKgnSrComjgHa7YJ+NtegGMoBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAABHX+0dwP/zm78jexmql0f7VtSw3fIzohNDyULWThiD3Qtr1iYRNDqjcIh1s21SxqqxPfIvc/oRu3xSrMZWLcXK1Uo3vVwBuKue1qOQRFH7lVUa4ApTZDZDtjIH4h0PZ091EZsxdYB1huP0p+XND4kOlqdTsQ/Mx2gelHOgCDJw8QVF42W+8nGtdTUDZ1ZdpA2jNtwch5uxVIp6/MVaqTkeMlAo2HW9Mu/xsJHGPdsbjl6kXqgQDBAsgYaPQU6vGT4Mz7SAbxWjz5LCW/VMp8XSEAzLw8HGltb0E6BEd8Ni/jNF1MRz0npIxKEiktkepwsr9frg+BlhQWi9/+RHGKOWwFwVAAAAAAQLAjQADAIhAA4GAQAMBAoADwwQABMSFgATEhYADwwRAAABAAAAADi2FgAAAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQENEgSz3Egf/UBcahTmRfRiN+Hy8jGff8p8ep+/jFQMm5HEAAIAAwsMAQQNAQAMIAMAAAAAAAAJABARBQ0GAQcPDxIMh+c0pwc01MGfhgEAAAAAAAANAQIDCAwMCAkKFBUWFxgZGgMFEQAAAJ+GAQAAAAAAAAAAAAAAAAAADQECAwgMDAgJChQVFhcYGRoEBREAAAACeAEAAAAAAAAAAAAAAAAAABARBQ0GAQcPDxIMuXUAy2D1tLqfhgEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8,
+        "accounts": [
+          {
+            "index": 0,
+            "address": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 1,
+            "address": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 2,
+            "address": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 3,
+            "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 4,
+            "address": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 5,
+            "address": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 6,
+            "address": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 7,
+            "address": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 8,
+            "address": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 9,
+            "address": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 10,
+            "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 11,
+            "address": "11111111111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 12,
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 13,
+            "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 14,
+            "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 15,
+            "address": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 16,
+            "address": "36cw2Nb1LsddEWboh8mUCs2T8vN8Pmja9Jfs2aYCYQVk",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 17,
+            "address": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 18,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 19,
+            "address": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 20,
+            "address": "mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 21,
+            "address": "FMbUjYFtqgm4Zfpg7MguZp33RQ3tvkd22NgaCCAs3M6E",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 22,
+            "address": "8szGkuLTAux9XMgZ2vtY39jVSowEcpBfFfD8hXSEqdGC",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 23,
+            "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 24,
+            "address": "4PQH9YmfuKrVyZaibkLYpJZPv2FPaybhq2GAuBcWMSBf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 25,
+            "address": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 26,
+            "address": "4T9YzXnmQFMyYi2nrxyXjhtUANavmCkxGCsU3GKaNjwT",
+            "signer": false,
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "index": 0,
+            "programIdIndex": 11,
+            "programId": "11111111111111111111111111111111",
+            "accountKeyIndexes": [
+              0,
+              1
+            ],
+            "dataHex": "0000000038b6160000000000a50000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a9"
+          },
+          {
+            "index": 1,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              1,
+              13
+            ],
+            "dataHex": "1204b3dc481ffd405c6a14e645f46237e1f2f2319f7fca7c7a9fbf8c540c9b91c4"
+          },
+          {
+            "index": 2,
+            "programIdIndex": 14,
+            "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "accountKeyIndexes": [
+              0,
+              2,
+              0,
+              3,
+              11,
+              12
+            ],
+            "dataHex": "01"
+          },
+          {
+            "index": 3,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              4,
+              13,
+              1,
+              0
+            ],
+            "dataHex": "0c200300000000000009"
+          },
+          {
+            "index": 4,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "87e734a70734d4c19f86010000000000"
+          },
+          {
+            "index": 5,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "0305110000009f860100000000000000000000000000"
+          },
+          {
+            "index": 6,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002780100000000000000000000000000"
+          },
+          {
+            "index": 7,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "b97500cb60f5b4ba9f8601000000000004"
+          }
+        ]
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000034580",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-800",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "1968d04fadd7223f39a49f7429a84a094d24398a52ab19d649f82934e42c4276",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "1622",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "800",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "f5af325a4896f41d81fa433f06aca28964df6fce726231d39295e4903c4c3c7e",
+            "totalSolValueLamports": "1870227724856011",
+            "protocolFeeLamports": "12035050576",
+            "lastReleaseSlot": "457351500"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL one-short spread buffer 799",
+      "slot": 457351501,
+      "err": {
+        "InstructionError": [
+          7,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 188236,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "b5c3b78deb322dee06509ab7241e844cd76cef1a134a190098540bdaa4bc1511",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "label": "thin mSOL sync before/between/after mint-burn",
+      "slot": 457351502,
+      "err": null,
+      "unitsConsumed": 246117,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "versionPrefixHex": "81",
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "computeLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireBytes": 1375,
+        "wireSha256": "8a5e37d080e0db52af8370125b9599155f80d72160e90fafac1652cfd53177ce",
+        "unsignedSimulationWireBase64": "gQIAEAwAAADUrwX1Qg0xMitJE1TD6TXpfrY902v26rTZIEvlE26vegsbBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcRM12rBkBeQmHIEQrx1RvoSC4x90Cfh7mWjhhqdL0rVxKp4jZCSnFc3E8kdrNgp4ptBbVKKIpzYslKZkDO5NwffR1eJn7i+26KHeKrNZ+Vo5zRwzOkLzVMrbLYYKXYogk6sIpLphjzwwyQ734ACPD1bh8uu4GSx2pVXDPEydfqbcdxJK8/QpV0zwQb7JAvCg+aaxKyDUdwMUoXKfSHp7NZxBXZUox/ugf3q+VJPcPjKAumdx0yGpF+VRk0R+ZXvrqoXH1eZDpSq6e4yNAuEmbuEBpjasiPUR6qaID/Ko0JUUY3YcqO3Fd7R1GA0P/W6SigQLjkCRyWJX+vHqceXITPT55yx0q28KA9ZULMFYWaEobgv72d3xvHfphBCfPgumGs40en8zqoT4alIH3HEa39H/yFoSOIHR4gc2tGVQaycRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkLYroHT3IsnUEU8tj3CgDGYAIze5v5DIc2V6bSAdtMgIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAgfJ+fclAXZDAvB0vwws40NjnZsdFr+YNyatCrAbJ0IZzXGoMoHSUGVHT1cXL5BAKgnSrComjgHa7YJ+NtegGMoBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAABHX+0dwP/zm78jexmql0f7VtSw3fIzohNDyULWThiD3Qtr1iYRNDqjcIh1s21SxqqxPfIvc/oRu3xSrMZWLcXK1Uo3vVwBuKue1qOQRFH7lVUa4ApTZDZDtjIH4h0PZ091EZsxdYB1huP0p+XND4kOlqdTsQ/Mx2gelHOgCDJw8QVF42W+8nGtdTUDZ1ZdpA2jNtwch5uxVIp6/MVaqTkeMlAo2HW9Mu/xsJHGPdsbjl6kXqgQDBAsgYaPQU6vGT4Mz7SAbxWjz5LCW/VMp8XSEAzLw8HGltb0E6BEd8Ni/jNF1MRz0npIxKEiktkepwsr9frg+BlhQWi9/+RHGKOWwFwVAAAAAAQLAjQADAIhAA4GAQAMBAoADwwQABMJBQATEhYAEwkFABMSFgATCQUADwwRAAABAAAAADi2FgAAAAAApQAAAAAAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQENEgSz3Egf/UBcahTmRfRiN+Hy8jGff8p8ep+/jFQMm5HEAAIAAwsMAQQNAQAMIAMAAAAAAAAJABARBQ0GAQcPDxIMh+c0pwc01MGfhgEAAAAAAA0ICQoUFRYXGAARAAAAAA0BAgMIDAwICQoUFRYXGBkaAwURAAAAn4YBAAAAAAAAAAAAAAAAAA0ICQoUFRYXGAARAAAAAA0BAgMIDAwICQoUFRYXGBkaBAURAAAAAngBAAAAAAAAAAAAAAAAAA0ICQoUFRYXGAARAAAAABARBQ0GAQcPDxIMuXUAy2D1tLqfhgEAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 11,
+        "accounts": [
+          {
+            "index": 0,
+            "address": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 1,
+            "address": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 2,
+            "address": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 3,
+            "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 4,
+            "address": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 5,
+            "address": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 6,
+            "address": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 7,
+            "address": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 8,
+            "address": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 9,
+            "address": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 10,
+            "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 11,
+            "address": "11111111111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 12,
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 13,
+            "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 14,
+            "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 15,
+            "address": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 16,
+            "address": "36cw2Nb1LsddEWboh8mUCs2T8vN8Pmja9Jfs2aYCYQVk",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 17,
+            "address": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 18,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 19,
+            "address": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 20,
+            "address": "mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 21,
+            "address": "FMbUjYFtqgm4Zfpg7MguZp33RQ3tvkd22NgaCCAs3M6E",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 22,
+            "address": "8szGkuLTAux9XMgZ2vtY39jVSowEcpBfFfD8hXSEqdGC",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 23,
+            "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 24,
+            "address": "4PQH9YmfuKrVyZaibkLYpJZPv2FPaybhq2GAuBcWMSBf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 25,
+            "address": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 26,
+            "address": "4T9YzXnmQFMyYi2nrxyXjhtUANavmCkxGCsU3GKaNjwT",
+            "signer": false,
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "index": 0,
+            "programIdIndex": 11,
+            "programId": "11111111111111111111111111111111",
+            "accountKeyIndexes": [
+              0,
+              1
+            ],
+            "dataHex": "0000000038b6160000000000a50000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a9"
+          },
+          {
+            "index": 1,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              1,
+              13
+            ],
+            "dataHex": "1204b3dc481ffd405c6a14e645f46237e1f2f2319f7fca7c7a9fbf8c540c9b91c4"
+          },
+          {
+            "index": 2,
+            "programIdIndex": 14,
+            "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "accountKeyIndexes": [
+              0,
+              2,
+              0,
+              3,
+              11,
+              12
+            ],
+            "dataHex": "01"
+          },
+          {
+            "index": 3,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              4,
+              13,
+              1,
+              0
+            ],
+            "dataHex": "0c200300000000000009"
+          },
+          {
+            "index": 4,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "87e734a70734d4c19f86010000000000"
+          },
+          {
+            "index": 5,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              13,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "dataHex": "0011000000"
+          },
+          {
+            "index": 6,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "0305110000009f860100000000000000000000000000"
+          },
+          {
+            "index": 7,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              13,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "dataHex": "0011000000"
+          },
+          {
+            "index": 8,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002780100000000000000000000000000"
+          },
+          {
+            "index": 9,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              13,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24
+            ],
+            "dataHex": "0011000000"
+          },
+          {
+            "index": 10,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "b97500cb60f5b4ba9f8601000000000004"
+          }
+        ]
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000034580",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-800",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "13362a72385418be40e7d84468bf16d3054022e2bdb698924e359fccb8ebf52a",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "1622",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "800",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "05b1d202f2643ec4a1ccd58549e7159f3ac8e36205a15c4c62c365c116a470e4",
+            "totalSolValueLamports": "1870227724856011",
+            "protocolFeeLamports": "12035099701",
+            "lastReleaseSlot": "457351502"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program log: Instruction: FlashRepayReserveLiquidity"
+      ]
+    },
+    {
+      "label": "thin mSOL repeated add/remove twice",
+      "slot": 457351503,
+      "err": null,
+      "unitsConsumed": 309423,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "versionPrefixHex": "81",
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "computeLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireBytes": 1409,
+        "wireSha256": "148eafb685e8f0d71fac78bde6c60feaa913bb2d49444fbe4b58765ec874472a",
+        "unsignedSimulationWireBase64": "gQIAEAwAAADUrwX1Qg0xMitJE1TD6TXpfrY902v26rTZIEvlE26vegobBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcRM12rBkBeQmHIEQrx1RvoSC4x90Cfh7mWjhhqdL0rVxKp4jZCSnFc3E8kdrNgp4ptBbVKKIpzYslKZkDO5NwffR1eJn7i+26KHeKrNZ+Vo5zRwzOkLzVMrbLYYKXYogk6sIpLphjzwwyQ734ACPD1bh8uu4GSx2pVXDPEydfqbcdxJK8/QpV0zwQb7JAvCg+aaxKyDUdwMUoXKfSHp7NZxBXZUox/ugf3q+VJPcPjKAumdx0yGpF+VRk0R+ZXvrqoXH1eZDpSq6e4yNAuEmbuEBpjasiPUR6qaID/Ko0JUUY3YcqO3Fd7R1GA0P/W6SigQLjkCRyWJX+vHqceXITPT55yx0q28KA9ZULMFYWaEobgv72d3xvHfphBCfPgumGs40en8zqoT4alIH3HEa39H/yFoSOIHR4gc2tGVQaycRQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKkLYroHT3IsnUEU8tj3CgDGYAIze5v5DIc2V6bSAdtMgIyXJY9OJInxuz0QKRSODYMLWhOZ2v8QhASOe9jb6fhZBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAgfJ+fclAXZDAvB0vwws40NjnZsdFr+YNyatCrAbJ0IZzXGoMoHSUGVHT1cXL5BAKgnSrComjgHa7YJ+NtegGMoBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAABHX+0dwP/zm78jexmql0f7VtSw3fIzohNDyULWThiD3Qtr1iYRNDqjcIh1s21SxqqxPfIvc/oRu3xSrMZWLcXK1Uo3vVwBuKue1qOQRFH7lVUa4ApTZDZDtjIH4h0PZ091EZsxdYB1huP0p+XND4kOlqdTsQ/Mx2gelHOgCDJw8QVF42W+8nGtdTUDZ1ZdpA2jNtwch5uxVIp6/MVaqTkeMlAo2HW9Mu/xsJHGPdsbjl6kXqgQDBAsgYaPQU6vGT4Mz7SAbxWjz5LCW/VMp8XSEAzLw8HGltb0E6BEd8Ni/jNF1MRz0npIxKEiktkepwsr9frg+BlhQWi9/+RHGKOWwFwVAAAAAAQLAjQADAIhAA4GAQAMBAoADwwQABMSFgATEhYAExIWABMSFgAPDBEAAAEAAAAAOLYWAAAAAAClAAAAAAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpAQ0SBLPcSB/9QFxqFOZF9GI34fLyMZ9/ynx6n7+MVAybkcQAAgADCwwBBA0BAAxABgAAAAAAAAkAEBEFDQYBBw8PEgyH5zSnBzTUwZ+GAQAAAAAAAA0BAgMIDAwICQoUFRYXGBkaAwURAAAAn4YBAAAAAAAAAAAAAAAAAAANAQIDCAwMCAkKFBUWFxgZGgQFEQAAAAJ4AQAAAAAAAAAAAAAAAAAADQECAwgMDAgJChQVFhcYGRoDBREAAACfhgEAAAAAAAAAAAAAAAAAAA0BAgMIDAwICQoUFRYXGBkaBAURAAAAAngBAAAAAAAAAAAAAAAAAAAQEQUNBgEHDw8SDLl1AMtg9bS6n4YBAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 10,
+        "accounts": [
+          {
+            "index": 0,
+            "address": "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 1,
+            "address": "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM",
+            "signer": true,
+            "writable": true
+          },
+          {
+            "index": 2,
+            "address": "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 3,
+            "address": "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 4,
+            "address": "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 5,
+            "address": "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 6,
+            "address": "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 7,
+            "address": "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 8,
+            "address": "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 9,
+            "address": "Gb7m4daakbVbrFLR33FKMDVMHAprRZ66CSYt4bpFwUgS",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 10,
+            "address": "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax",
+            "signer": false,
+            "writable": true
+          },
+          {
+            "index": 11,
+            "address": "11111111111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 12,
+            "address": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 13,
+            "address": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 14,
+            "address": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 15,
+            "address": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 16,
+            "address": "36cw2Nb1LsddEWboh8mUCs2T8vN8Pmja9Jfs2aYCYQVk",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 17,
+            "address": "4cvGzLUXHERzdyZt7inybCFDzooCNLHYEQD6GrmC8Fvf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 18,
+            "address": "Sysvar1nstructions1111111111111111111111111",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 19,
+            "address": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 20,
+            "address": "mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 21,
+            "address": "FMbUjYFtqgm4Zfpg7MguZp33RQ3tvkd22NgaCCAs3M6E",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 22,
+            "address": "8szGkuLTAux9XMgZ2vtY39jVSowEcpBfFfD8hXSEqdGC",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 23,
+            "address": "MarBmsSgKXdrN1egZf5sqe1TMai9K1rChYNDJgjq7aD",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 24,
+            "address": "4PQH9YmfuKrVyZaibkLYpJZPv2FPaybhq2GAuBcWMSBf",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 25,
+            "address": "s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV",
+            "signer": false,
+            "writable": false
+          },
+          {
+            "index": 26,
+            "address": "4T9YzXnmQFMyYi2nrxyXjhtUANavmCkxGCsU3GKaNjwT",
+            "signer": false,
+            "writable": false
+          }
+        ],
+        "instructions": [
+          {
+            "index": 0,
+            "programIdIndex": 11,
+            "programId": "11111111111111111111111111111111",
+            "accountKeyIndexes": [
+              0,
+              1
+            ],
+            "dataHex": "0000000038b6160000000000a50000000000000006ddf6e1d765a193d9cbe146ceeb79ac1cb485ed5f5b37913a8cf5857eff00a9"
+          },
+          {
+            "index": 1,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              1,
+              13
+            ],
+            "dataHex": "1204b3dc481ffd405c6a14e645f46237e1f2f2319f7fca7c7a9fbf8c540c9b91c4"
+          },
+          {
+            "index": 2,
+            "programIdIndex": 14,
+            "programId": "ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL",
+            "accountKeyIndexes": [
+              0,
+              2,
+              0,
+              3,
+              11,
+              12
+            ],
+            "dataHex": "01"
+          },
+          {
+            "index": 3,
+            "programIdIndex": 12,
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "accountKeyIndexes": [
+              4,
+              13,
+              1,
+              0
+            ],
+            "dataHex": "0c400600000000000009"
+          },
+          {
+            "index": 4,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "87e734a70734d4c19f86010000000000"
+          },
+          {
+            "index": 5,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "0305110000009f860100000000000000000000000000"
+          },
+          {
+            "index": 6,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002780100000000000000000000000000"
+          },
+          {
+            "index": 7,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "0305110000009f860100000000000000000000000000"
+          },
+          {
+            "index": 8,
+            "programIdIndex": 19,
+            "programId": "5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx",
+            "accountKeyIndexes": [
+              0,
+              13,
+              1,
+              2,
+              3,
+              8,
+              12,
+              12,
+              8,
+              9,
+              10,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26
+            ],
+            "dataHex": "04051100000002780100000000000000000000000000"
+          },
+          {
+            "index": 9,
+            "programIdIndex": 15,
+            "programId": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+            "accountKeyIndexes": [
+              0,
+              16,
+              17,
+              5,
+              13,
+              6,
+              1,
+              7,
+              15,
+              15,
+              18,
+              12
+            ],
+            "dataHex": "b97500cb60f5b4ba9f8601000000000004"
+          }
+        ]
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": {
+            "lamports": "1633958188"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "-2986880"
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "70001000033780",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "-1600",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": {
+            "rawAmount": "0",
+            "lamports": "1488440"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "0",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": {
+            "dataSha256": "0cf870c6a8c1e14604412fd54b6be9465804fdd0e199eb5b7c4a83c53890044a",
+            "lamports": "60913920"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": {
+            "rawAmount": "2422",
+            "lamports": "2039280"
+          },
+          "rawAmountDelta": "1600",
+          "rawSupplyDelta": null,
+          "lamportsDelta": "0"
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": "0",
+          "lamportsDelta": "0"
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": {
+            "dataSha256": "89f4aaaf524b96193c58158338af384a09dea0689ae1e03e4fb5821c3703a5a8",
+            "totalSolValueLamports": "1870227724857139",
+            "protocolFeeLamports": "12035124264",
+            "lastReleaseSlot": "457351503"
+          },
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP FCsCAAAAAAAUKwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP 7ggAAAAAAADuCAAAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP jSYCAAAAAACNJgIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV zCMCAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP ey8CAAAAAAB7LwIAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx ey8CAAAAAAB7LwIAAAAAAA==",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP ey8CAAAAAAB7LwIAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA=="
+      ]
+    },
+    {
+      "label": "thin mSOL remove-before-add ordering",
+      "slot": 457351504,
+      "err": {
+        "InstructionError": [
+          5,
+          {
+            "Custom": 22
+          }
+        ]
+      },
+      "unitsConsumed": 90953,
+      "loadedAccountsDataSize": 14229032,
+      "message": {
+        "version": 1,
+        "maxBytes": 4096,
+        "maxInlineAddresses": 64,
+        "wireBytes": 1321,
+        "wireSha256": "93ac7ed8ed2fa1948d2cb7c4def3609c51b1052698d38ae90f3f34d3e7798887",
+        "requiredSignatures": 2,
+        "accountCount": 27,
+        "instructionCount": 8
+      },
+      "state": {
+        "KMhcqNpDomyUVSK9WDr8uve29oeSoA4TZPGV34EA3JB": {
+          "label": "simulation authority wallet",
+          "kind": "system",
+          "before": {
+            "lamports": "1636945068"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CawhgG7R6EhPDZ9UCC74ea8fK2o5iA25QceAT9WqWmon": {
+          "label": "pre-existing mSOL buffer source",
+          "kind": "token",
+          "before": {
+            "rawAmount": "70001000035380",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "6AxW48d9hoRvf3T5aorqb3C4Rn7wzNK2pkxQ8CW1ZroM": {
+          "label": "new isolated mSOL flash destination and repay source",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "CUSvj3n23LJFzCRrW5qfYH5QEWoW1xita4w75jGXVj4i": {
+          "label": "INF share account",
+          "kind": "token",
+          "before": null,
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "NKh4Th5nJbHo3CGR39nwZhKQirbnNeMT1R2si7qcNKj": {
+          "label": "KLend mSOL supply vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "100000",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "2ZG6aimECpNLrQdE4GaUNcMcQWhCoouJJh7ewDs9kQMN": {
+          "label": "KLend mSOL fee vault",
+          "kind": "token",
+          "before": {
+            "rawAmount": "0",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "FpuQaFELdfNy5EETntTBrNAMbduRvrGz1oKJKN1NBSfr": {
+          "label": "KLend reserve state",
+          "kind": "raw",
+          "before": {
+            "dataSha256": "1f2790377a58b8e8f79b57bc6cb25fb5a183ed36ca06bb3dce8490bb4144efec",
+            "lamports": "60913920"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "4poUr2pTjTbBdbk9YvGcscQrJZrTutgGAPXGQnE1gpax": {
+          "label": "thin INF mSOL reserve",
+          "kind": "token",
+          "before": {
+            "rawAmount": "822",
+            "lamports": "2039280"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "5oVNBeEEQvYi1cX3ir8Dx5n1P7pdxydbGF2X4TxVusJm": {
+          "label": "INF share mint",
+          "kind": "mint",
+          "before": {
+            "rawSupply": "1283634975110314",
+            "lamports": "31489619"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        },
+        "AYhux5gJzCoeoc1PoJ1VxwPDe22RwcvpHviLDD1oCGvW": {
+          "label": "INF pool state",
+          "kind": "pool",
+          "before": {
+            "dataSha256": "2acc4f865305fcbf167db707652df32693452012f8a079d06ab305c7e2166f2f",
+            "totalSolValueLamports": "1870227724854883",
+            "protocolFeeLamports": "11976814752",
+            "lastReleaseSlot": "457349141"
+          },
+          "after": null,
+          "rawAmountDelta": null,
+          "rawSupplyDelta": null,
+          "lamportsDelta": null
+        }
+      },
+      "logs": [
+        "Program return: TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA pQAAAAAAAAA=",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP hgQAAAAAAACGBAAAAAAAAA==",
+        "Program return: s1b6NRXj6ygNu1QMKXh2H9LUR2aPApAAm1UQ2DjdhNV JyICAAAAAAA=",
+        "Program return: mare3SCyfZkAndpBRBeonETmkCCB3TJTTrz8ZN2dnhP f4MBAAAAAACCgwEAAAAAAA==",
+        "Program return: 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx f4MBAAAAAACCgwEAAAAAAA==",
+        "Program 5ocnV1qiCgaQR8Jb8xWnVbApfaygJ8tNoZfgPwsgx9kx failed: custom program error: 0x16"
+      ]
+    }
+  ]
+}

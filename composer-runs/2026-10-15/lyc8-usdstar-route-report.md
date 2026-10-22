@@ -1,0 +1,19 @@
+# LYC8 USD* bank holding: direct flash mint/burn gate
+
+Read-only Solana mainnet-beta check on 2026-10-15. The earlier top-holder mark of roughly $151,703 for this account was a sampled USD* spot mark, not an estimate of an outsider exit. No transaction was submitted and no wallet key was used because the selected USD* route failed at the account configuration gate before a credible full-repay candidate emerged.
+
+## Exact selected account
+
+At confirmed slot **457408651**, token account `C1Eht8rhJArzAVgQM6crTG6gCQ44yTfJZCVg1GWwWcG5` held **137,186.896099 USD***. Its SPL Token authority is off-curve, program-owned `9ZC4H7cb4hZREv1i97smRkgRppJd1PejmTMPgwmojxJe`; the account exactly derives as that authority's USD* ATA. The authority decodes with the saved on-chain IDL as a `YieldingBank`: base mint **USDC**, default redemption mint **USD***, manager `7BRfnipeeiDX1mP3247jFurAHQuiBXXBMqRqErKtyvTx`. Thus the selected USD* is a bank asset holding, not a public `Token` collateral reserve or a user-owned redemption receipt. Exact bank PDA seeds were not independently derived; the off-curve program-owned bank account and derived ATA/token authority establish the selected custody mapping.
+
+One post-deployment historical exemplar, [transaction `3o4iz…`](https://solscan.io/tx/3o4iz14i4puAyJRYfsDJ6bj15E3FbJVxiK4sPPAWmunt7yY43kSW7WbWaWiUh4Dm1dH9CmuhZHnbWL2TEs3AgkvF) at slot **457381784**, had the bank's configured manager as its sole signer, invoked `RebalanceYieldingBank`, and transferred **0.067812 USD*** into this vault. This demonstrates a manager-run bank flow, not an outsider payout. The program's sampled last deployment slot was **452716903**, earlier than the exemplar.
+
+## Public mint and burn mechanics
+
+The saved [on-chain IDL](lyc8-current.idl.json) defines public `mint_token` as a user's deposit of a `Token` state's configured collateral mint into that Token PDA's collateral ATA, minting its yToken to the user's ATA. `burn_token` has a **Sync** variant that burns the user's yToken and pays the same Token's collateral to the user's collateral ATA; a synchronous burn is therefore supported by the interface when collateral is available. Its **Async** variant creates a redemption request. The separate `process_async_burn` instruction requires a **manager signer**, an epoch/request, and FIFO processing; the IDL also exposes `set_redemption_epoch_status` and funding steps. An async request does not provide a same-transaction outsider payout.
+
+The four recently refreshed live `Token` states that hold shares in this bank use collateral mints `Xs8S1u…`, `Xsc9qv…`, `XsDoVf…`, and `A7bdiY…`; none uses USD*. Each has a **5 bps mint fee** and **20 bps burn fee** in its decoded state. A targeted current `getProgramAccounts` filter for the 7,176-byte `Token` layout, its discriminator, and the collateral-mint field at offset 152 returned **zero USD*-collateral Token accounts** at slot **457408652**. The same filter returned two accounts for the known `Xsc9qv…` collateral at slot **457408651**, including the expected live Token, so the offset/filter has a positive control.
+
+**Route decision:** a same-mint USD* flash cannot directly call `mint_token` against a currently configured USD* `Token`, and `burn_token Sync` for the sampled Tokens pays their configured non-USD* collateral, not the selected bank's USD*. Releasing or rebalancing that bank holding is a separate manager route. This is the first hard account/authorization gate for the proposed immediate USD* flash→mint→redeem route. No atomic flash packet was built; no claim is made about every Token, every future configuration, or untested account-substitution bugs. A 5+20 bps fee setting alone is not a full dynamic profitability proof.
+
+Evidence: [targeted live state and positive-control filter](lyc8-targeted-state.json), [historical transaction exemplar](lyc8-selected-bank-historical-exemplar.json), [read-only reproducer](lyc8-targeted-state.js).

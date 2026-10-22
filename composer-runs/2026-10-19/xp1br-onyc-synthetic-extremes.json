@@ -1,0 +1,2153 @@
+{
+  "generatedAt": "2026-10-19T09:13:41.429Z",
+  "safety": "Loopback current-mainnet-backed fork only; synthetic outsider ONyc seed is explicit and excluded from profit; all transactions are signed with sigVerify:true; nothing broadcast.",
+  "deploymentElfSha256": "a1f2fa4b17fc8fe8916b75af91e79bb13614b9913f641fc00dfa33e9228f33b3",
+  "baseline": {
+    "forkSlot": 458778401,
+    "syntheticOnycSeedRaw": "28801050362754991",
+    "principalVaultRaw": "28800730525787113",
+    "syMintSupplyRaw": "28800730525786742",
+    "rawBackingSurplus": "371",
+    "rateWord": "1157164052000"
+  },
+  "criteria": {
+    "syntheticPositiveIsOnlyMathematicalPrecursor": true,
+    "maxWireBytes": 4096,
+    "maxInlineAddresses": 64
+  },
+  "summary": {
+    "cases": 19,
+    "succeeded": 15,
+    "failed": 4,
+    "maximumWireBytes": 776,
+    "maximumInlineAddresses": 11,
+    "syntheticPositiveTokenEquityCases": [],
+    "feasibleValidatedFindingCount": 0
+  },
+  "cases": [
+    {
+      "name": "roundtrip_1",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "1",
+        "computedRedeemRaw": "0",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "ce4f27bf4bfde020cf77bcc42c9ab799db242918e81a6057a95d032466b410b0",
+      "err": null,
+      "unitsConsumed": 79841,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0,
+              "decimals": 9,
+              "amount": "0",
+              "uiAmountString": "0"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "0",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "0",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0,
+              "decimals": 9,
+              "amount": "0",
+              "uiAmountString": "0"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_2",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "2",
+        "computedRedeemRaw": "1",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "51119a1560f543470763fe677482c6c5c708dc6b54ee42387e7abce1c980c95a",
+      "err": null,
+      "unitsConsumed": 81947,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 1e-9,
+              "decimals": 9,
+              "amount": "1",
+              "uiAmountString": "0.000000001"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "1",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "1",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 1e-9,
+              "decimals": 9,
+              "amount": "1",
+              "uiAmountString": "0.000000001"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_3",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "3",
+        "computedRedeemRaw": "2",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "41bcada7374ec991843b7470e7b5591b4645342059cc33e95117874ad854cccd",
+      "err": null,
+      "unitsConsumed": 81947,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 2e-9,
+              "decimals": 9,
+              "amount": "2",
+              "uiAmountString": "0.000000002"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "2",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "2",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 2e-9,
+              "decimals": 9,
+              "amount": "2",
+              "uiAmountString": "0.000000002"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_999",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "999",
+        "computedRedeemRaw": "863",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "dc3968c47d5ccb56473d5e8694a44d7507403fc4ae9d7369897e8c817fcd8646",
+      "err": null,
+      "unitsConsumed": 81965,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 8.63e-7,
+              "decimals": 9,
+              "amount": "863",
+              "uiAmountString": "0.000000863"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "863",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "863",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 8.63e-7,
+              "decimals": 9,
+              "amount": "863",
+              "uiAmountString": "0.000000863"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_1000",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "1000",
+        "computedRedeemRaw": "864",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "131b5280c7d1c32e2070ce19c6abb4855c16e8881562ef3d9c08669dd9a1b183",
+      "err": null,
+      "unitsConsumed": 81967,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 8.64e-7,
+              "decimals": 9,
+              "amount": "864",
+              "uiAmountString": "0.000000864"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 8.64e-7,
+              "decimals": 9,
+              "amount": "864",
+              "uiAmountString": "0.000000864"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_1000000000",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "1000000000",
+        "computedRedeemRaw": "864181702",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "9156039c758786177da1a8ef19d4f2fb052fa0171b578e9fe36f96d53ae1487a",
+      "err": null,
+      "unitsConsumed": 83193,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.864181702,
+              "decimals": 9,
+              "amount": "864181702",
+              "uiAmountString": "0.864181702"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181702",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181702",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.864181702,
+              "decimals": 9,
+              "amount": "864181702",
+              "uiAmountString": "0.864181702"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_28801050362754",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "28801050362754",
+        "computedRedeemRaw": "24889340723102",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "c9171f74f7e31b0b3207b5ffdb68d0dff35ad95d48d1d8347ceb2859306152f2",
+      "err": null,
+      "unitsConsumed": 83509,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 24889.340723102,
+              "decimals": 9,
+              "amount": "24889340723102",
+              "uiAmountString": "24889.340723102"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "24889340723102",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "24889340723102",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 24889.340723102,
+              "decimals": 9,
+              "amount": "24889340723102",
+              "uiAmountString": "24889.340723102"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_288010503627549",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "288010503627549",
+        "computedRedeemRaw": "248893407231033",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "4c1a8701b0b766e16991c13a9b70431c2ecc379db3b3ff8820c79b36a7561518",
+      "err": null,
+      "unitsConsumed": 83588,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 248893.407231033,
+              "decimals": 9,
+              "amount": "248893407231033",
+              "uiAmountString": "248893.407231033"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "248893407231033",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "248893407231033",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 248893.407231033,
+              "decimals": 9,
+              "amount": "248893407231033",
+              "uiAmountString": "248893.407231033"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_2880105036275499",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "2880105036275499",
+        "computedRedeemRaw": "2488934072310344",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "cfbc80b6f6bc49551ef2ebdd9daeff6119e5d13b1df6c2566a1704a239f11ad1",
+      "err": null,
+      "unitsConsumed": 83974,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 2488934.072310344,
+              "decimals": 9,
+              "amount": "2488934072310344",
+              "uiAmountString": "2488934.072310344"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "2488934072310344",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "2488934072310344",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 2488934.072310344,
+              "decimals": 9,
+              "amount": "2488934072310344",
+              "uiAmountString": "2488934.072310344"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_28801050362754989",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "28801050362754989",
+        "computedRedeemRaw": "24889340723103442",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "0d4d86f1b464a8769739595a290b1d1b57476281ef4e03ca2ba189769cea199b",
+      "err": null,
+      "unitsConsumed": 83961,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 24889340.72310344,
+              "decimals": 9,
+              "amount": "24889340723103442",
+              "uiAmountString": "24889340.723103442"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "24889340723103442",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "24889340723103442",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 24889340.72310344,
+              "decimals": 9,
+              "amount": "24889340723103442",
+              "uiAmountString": "24889340.723103442"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_28801050362754990",
+      "classification": "synthetic-rounding-extreme",
+      "details": {
+        "requestedBaseRaw": "28801050362754990",
+        "computedRedeemRaw": "24889340723103442",
+        "rateWord": "1157164052000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "6e565c5cf445d81357f72bab80b8b026ce8269ae16d792bb104efb3b967c8b12",
+      "err": null,
+      "unitsConsumed": 83961,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 24889340.72310344,
+              "decimals": 9,
+              "amount": "24889340723103442",
+              "uiAmountString": "24889340.723103442"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "24889340723103442",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "24889340723103442",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 24889340.72310344,
+              "decimals": 9,
+              "amount": "24889340723103442",
+              "uiAmountString": "24889340.723103442"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_2_cycles_1000000",
+      "classification": "synthetic-rounding-repetition",
+      "details": {
+        "cycles": 2,
+        "requestedBaseRaw": "1000000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 512,
+      "addressCount": 10,
+      "wireSha256": "1bac3f0a73036f4fa97b229d79d892ddbc22190b82fafc2e62c921dcecefeb1c",
+      "err": null,
+      "unitsConsumed": 138757,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 4
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_4_cycles_1000000",
+      "classification": "synthetic-rounding-repetition",
+      "details": {
+        "cycles": 4,
+        "requestedBaseRaw": "1000000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 600,
+      "addressCount": 10,
+      "wireSha256": "7b6dfe327ba413a51a0a1d5f7e7ba43b33f974c75d1a977d731f2061bce070d3",
+      "err": null,
+      "unitsConsumed": 251827,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 8
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "roundtrip_8_cycles_1000000",
+      "classification": "synthetic-rounding-repetition",
+      "details": {
+        "cycles": 8,
+        "requestedBaseRaw": "1000000"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 776,
+      "addressCount": 10,
+      "wireSha256": "169e3855eb6ecaa9bb88b325faadb6d6bf961f583c477d897e75d46a6525d7f1",
+      "err": null,
+      "unitsConsumed": 477967,
+      "equity": {
+        "outsiderOnycDeltaRaw": "0",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "0",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 11
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program log: Instruction: Mint"
+      ]
+    },
+    {
+      "name": "protocol_sy_escrow_as_outsider_redeem_source",
+      "classification": "synthetic-authorization-probe",
+      "details": {},
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 500,
+      "addressCount": 11,
+      "wireSha256": "b82a8300bb0c7f94185c2500ca9fbed29c9d65b8c8f7fcc3d555d929cc89c7fe",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 4
+          }
+        ]
+      },
+      "unitsConsumed": 71343,
+      "equity": null,
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 1
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "5muRaHt3Zb2c1NK8T11ygTMUpf2sAhxQU6Z7Ayx2iCvU",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program log: Error: owner does not match",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x4",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy failed: custom program error: 0x4"
+      ]
+    },
+    {
+      "name": "principal_vault_as_outsider_mint_source",
+      "classification": "synthetic-authorization-probe",
+      "details": {},
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 414,
+      "addressCount": 9,
+      "wireSha256": "68dc89a943eb3e06f3340b41e88414f055f0eca0b5d100cc38f528c39fa1ce03",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 4
+          }
+        ]
+      },
+      "unitsConsumed": 40792,
+      "equity": null,
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": false,
+        "successLogCount": 0
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program log: Error: owner does not match",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x4",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy failed: custom program error: 0x4"
+      ]
+    },
+    {
+      "name": "principal_vault_as_redeem_destination",
+      "classification": "synthetic-alias-probe",
+      "details": {},
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "5bcb928a529dc0f75fedda1bc95a9798b55c24349c282cf8e6bc9bd7d58bc37f",
+      "err": null,
+      "unitsConsumed": 82113,
+      "equity": {
+        "outsiderOnycDeltaRaw": "-864181",
+        "outsiderSyDeltaRaw": "0",
+        "outsiderLamportsDelta": "-5000",
+        "vaultOnycDeltaRaw": "864181",
+        "syMintSupplyDeltaRaw": "0",
+        "syEscrowDeltaRaw": "0"
+      },
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 2
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864181",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success"
+      ]
+    },
+    {
+      "name": "redeem_one_more_than_fresh_shares",
+      "classification": "synthetic-share-liability-probe",
+      "details": {},
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 468,
+      "addressCount": 10,
+      "wireSha256": "122d0b1af16fbbd49f859ded5bc2175bd0db428aa39da809192daf1c0ae9c9d5",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "unitsConsumed": 71316,
+      "equity": null,
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": true,
+        "successLogCount": 1
+      },
+      "tokenCpis": [
+        {
+          "type": "transferChecked",
+          "info": {
+            "source": "BYoaVHhdBXpwdMWSjgefC9W8zsRmAt6dwxHg9cwQVLzY",
+            "mint": "5Y8NV33Vv7WbnLfq3zBcKSdYPrk7g2KoiQoe7M2tcxp5",
+            "destination": "2bBGqb9qY7e2q6pFDKdsHqDoQiGmaeDKktezXJ2AcGDo",
+            "tokenAmount": {
+              "uiAmount": 0.000864181,
+              "decimals": 9,
+              "amount": "864181",
+              "uiAmountString": "0.000864181"
+            },
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        },
+        {
+          "type": "mintTo",
+          "info": {
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "amount": "864181",
+            "mintAuthority": "BmLiVHRb9ppTrEA5jhTgNJ2WFtjUZEkfzJZGswEidxzu"
+          }
+        },
+        {
+          "type": "burn",
+          "info": {
+            "account": "2wVmoUDpetuqK39Av29KZDu1WVYcMm3Py6JHL418sZQv",
+            "mint": "G1qbuP11CdquJCzuDjruWqatQAHroajmxhLfeQVgHosF",
+            "amount": "864182",
+            "authority": "2yTQNt3qW51tnXkux7eHnPiRsV3Aetci7AvWVJtt8DFF"
+          }
+        }
+      ],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy success",
+        "Program log: Instruction: Redeem",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy failed: custom program error: 0x1"
+      ]
+    },
+    {
+      "name": "unrelated_rate_input_account",
+      "classification": "synthetic-rate-input-probe",
+      "details": {
+        "suppliedRateAccount": "3aUmJDNpMHjkxunQEkHTj2chzyryKoH2uQj6YACLD174",
+        "sourceMeta": "6XPT3FnRn3MBpBX3rAyBtd4AXBeGeCdChmTbfVPYnorN",
+        "sourceSymbol": "BulkSOL"
+      },
+      "liveSubmission": false,
+      "localForkOnly": true,
+      "syntheticOnycSeedRaw": "28801050362754991",
+      "syntheticSeedExcludedFromProfit": true,
+      "signatureVerification": true,
+      "txVersion": 1,
+      "sizeBytes": 446,
+      "addressCount": 10,
+      "wireSha256": "bd73ad19625fb7645984835abbdfb7246802fc7555ec576ddbd34d0aec20f7db",
+      "err": {
+        "InstructionError": [
+          0,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "unitsConsumed": 8575,
+      "equity": null,
+      "xpExecution": {
+        "mintLogged": true,
+        "redeemLogged": false,
+        "successLogCount": 0
+      },
+      "tokenCpis": [],
+      "trace": [
+        "Program log: Instruction: Mint",
+        "Program XP1BRLn8eCYSygrd8er5P4GKdzqKbC3DLoSsS5UYVZy failed: SBF program panicked"
+      ]
+    }
+  ]
+}

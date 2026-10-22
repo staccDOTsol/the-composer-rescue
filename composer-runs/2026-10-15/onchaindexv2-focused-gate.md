@@ -1,0 +1,11 @@
+# Onchain DEX V2 focused custody and outsider gate
+
+Observed 2026-10-15. Read-only mainnet evidence and one signed local Surfpool simulation. No mainnet transaction was submitted.
+
+`1qbkdrr3z4ryLA7pZykqxvxWPoeifcVKo6ZG9CfkvVE` is reachable through public routing. The bounded transfer census sampled 12 recent transactions (11 successful) with 22 transfers; its approximately $299 gross known-major transfer estimate is **flow**, not assets available to drain. In the current authority-account snapshot, sampled program-owned token authorities collectively held about 73,313.63 USDT, 12,902 USDC, and 8,466 USDS. These are distributed across distinct vault pairs; the sample is not an exhaustive program-wide custody total. See `arb-router-flow-census.json` and `arb-router-authority-balances-summary.json`.
+
+The selected USDT/USDC pool authority `9P3N4QxjMumpTNNdvaNNskXu2t7VHMMXtePQB72kkSAk` is owned by the 1qb program and is off curve. At local-fork slot 457380128, its USDT vault `PRYpoFwPHBcL82JGeqrU7czwmQiSHa9udbeTbtXLv7d` held 73,313.632531 USDT and its USDC vault `HkGq6HSQZeoah15RbyYK2YF6bfCkNmAK4F5VDxYMiwJv` held 4,338.979073 USDC. The selected source transaction is `3Tr8Zsi2YpJMkkmL36YxxEj8KFhor4mXc6kp9BDo2gobJsJBWpyhD7hYfz76FBjYTczVmcXLpaKYVvGsUJkxUF8t` at slot 457292199; its `Swap` instruction was an inner call.
+
+For one outsider gate test, a freshly generated signer replaced the historical swap payer and its own funded USDC and empty USDT token accounts replaced the historical user accounts. The current instruction data, program-owned state, and vault accounts were retained. The signed v1 transaction contained one instruction, 18 keys, 739 bytes, and used 61,516 compute units. `sigVerify:true` succeeded. It debited the outsider **892,432 raw USDC** and credited **893,142 raw USDT**; the program USDC vault gained 892,432 raw and its USDT vault lost 893,142 raw. At equal $1 stablecoin prices this is a 710-raw-unit ($0.000710) indicative difference, before fees and price verification. This demonstrates a publicly accessible, input-paid swap, **not an unauthorized drain**. No larger sizing, flash-loan composition, or broader 1qb handler audit was performed in this capped check.
+
+Machine-readable evidence: `onchaindexv2-single-outflow-template.json`, `onchaindexv2-signed-gate.json`.

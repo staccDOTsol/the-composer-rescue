@@ -1,0 +1,105 @@
+{
+  "historicalSlots": {
+    "deposit": 457249364,
+    "withdraw": 455849448
+  },
+  "trials": [
+    {
+      "name": "deposit_strategy_operator_control",
+      "err": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: DepositStrategy",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi success"
+      ],
+      "unitsConsumed": 34573
+    },
+    {
+      "name": "deposit_strategy_outsider",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: DepositStrategy",
+        "Program log: AnchorError caused by account: operator. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi failed: custom program error: 0x7d3"
+      ],
+      "unitsConsumed": 17659
+    },
+    {
+      "name": "deposit_strategy_wrong_vault_strategy",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2003
+          }
+        ]
+      },
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: DepositStrategy",
+        "Program log: AnchorError caused by account: collateral_vault. Error Code: ConstraintRaw. Error Number: 2003. Error Message: A raw constraint was violated.",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi failed: custom program error: 0x7d3"
+      ],
+      "unitsConsumed": 17616
+    },
+    {
+      "name": "withdraw_strategy_control_1usdc",
+      "err": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: WithdrawStrategy",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: Withdraw",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: Instruction: Operate",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jup3YeL8QhtSx1e253b2FDvsMNC87fDrgQZivbrndc9 success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi success"
+      ],
+      "unitsConsumed": 119527
+    },
+    {
+      "name": "direct_strategy_withdraw_owner_control",
+      "err": null,
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: WithdrawDirectlyFromStrategy",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi success"
+      ],
+      "unitsConsumed": 28958
+    },
+    {
+      "name": "direct_strategy_withdraw_outsider",
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6022
+          }
+        ]
+      },
+      "logs": [
+        "Program ComputeBudget111111111111111111111111111111 success",
+        "Program log: Instruction: WithdrawDirectlyFromStrategy",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program log: AnchorError thrown in programs/vault/src/instructions/deposit_withdraw_liquidity.rs:391. Error Code: InvalidLpOwner. Error Number: 6022. Error Message: User is not the owner of the LP token account.",
+        "Program 24Uqj9JCLxUeoC3hGfh5W3s9FM9uCHDS2SG3LYwBpyTi failed: custom program error: 0x1786"
+      ],
+      "unitsConsumed": 25447
+    }
+  ]
+}

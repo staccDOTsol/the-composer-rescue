@@ -1,0 +1,192 @@
+{
+  "file": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/skr-program-audit/withdraw-zero-pending-simulations.json",
+  "contextSlot": 457348306,
+  "before": {
+    "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": {
+      "address": "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "rawTokenAmount": "5077227891450824"
+    },
+    "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": {
+      "address": "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "rawTokenAmount": "2294670090"
+    },
+    "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": {
+      "address": "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn",
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "lamports": 2039280,
+      "dataLength": 165,
+      "rawTokenAmount": "135692423592"
+    },
+    "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": {
+      "address": "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d",
+      "owner": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+      "lamports": 2067120,
+      "dataLength": 169,
+      "userStakePending": "0",
+      "userStakeSharesLow64": "120505936642",
+      "userStakeTimestamp": "0"
+    },
+    "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": {
+      "address": "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw",
+      "owner": "SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ",
+      "lamports": 135101466,
+      "dataLength": 193,
+      "configTotalShares": "4377487266310971",
+      "configSharePrice": "1154206571",
+      "configCooldownSeconds": "172800",
+      "configLastVaultAmount": "5077227891450824"
+    }
+  },
+  "cases": [
+    {
+      "name": "valid_permissionless_withdraw_to_stored_user_ata",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6018
+          }
+        ]
+      },
+      "unitsConsumed": 18952,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/staking/src/instructions/withdraw.rs:56. Error Code: NotUnstaked. Error Number: 6018. Error Message: Stake not unstaked: stake has not been unstaked yet.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1782"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    },
+    {
+      "name": "redirect_destination_to_other_user_ata",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 7858,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: user_token_account. Error Code: Unauthorized. Error Number: 6007. Error Message: Unauthorized: only authority can perform this action.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1777"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    },
+    {
+      "name": "substitute_user_with_fee_payer",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 6356,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: user_stake. Error Code: Unauthorized. Error Number: 6007. Error Message: Unauthorized: only authority can perform this action.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1777"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    },
+    {
+      "name": "substitute_vault_with_user_ata",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6008
+          }
+        ]
+      },
+      "unitsConsumed": 7376,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: stake_vault. Error Code: InvalidVault. Error Number: 6008. Error Message: Invalid vault: incorrect vault account.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1778"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    },
+    {
+      "name": "alias_destination_with_vault",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "unitsConsumed": 7677,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: user_token_account. Error Code: Unauthorized. Error Number: 6007. Error Message: Unauthorized: only authority can perform this action.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1777"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    },
+    {
+      "name": "repeat_withdraw_in_same_transaction",
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6018
+          }
+        ]
+      },
+      "unitsConsumed": 18952,
+      "keyLogs": [
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/staking/src/instructions/withdraw.rs:56. Error Code: NotUnstaked. Error Number: 6018. Error Message: Stake not unstaked: stake has not been unstaked yet.",
+        "Program SKRskrmtL83pcL4YqLWt6iPefDqwXQWHSw9S9vz94BZ failed: custom program error: 0x1782"
+      ],
+      "after": {
+        "8isViKbwhuhFhsv2t8vaFL74pKCqaFPQXo1KkeQwZbB8": null,
+        "7iSVyJGRCqDD3R5aWr8zaExYBeLYwjuxnuKCb7gtiEGp": null,
+        "ErVcaaoQsJMuabLDpMAMgTSg1gNtd5oZWVqy9ozyeqYn": null,
+        "C6FMtGk7Eh33eTBqUeFiKmGsu1WFMN9T6WRukfyuQh5d": null,
+        "4HQy82s9CHTv1GsYKnANHMiHfhcqesYkK6sB3RDSYyqw": null
+      }
+    }
+  ]
+}

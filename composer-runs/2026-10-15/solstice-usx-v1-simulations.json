@@ -1,0 +1,3361 @@
+{
+  "generatedAt": "2026-10-15T19:52:19.035Z",
+  "rpcHost": "mainnet.helius-rpc.com",
+  "readOnly": true,
+  "liveSubmission": false,
+  "signerVerification": false,
+  "simulationModel": "Only the chosen outsider address is granted signer privilege. Victim/operator signatures are never granted. All v1 wires contain zero signatures and are passed only to simulateTransaction.",
+  "transactionVersion": 1,
+  "v1Limits": {
+    "wireBytes": 4096,
+    "staticAccountKeys": 64,
+    "addressLookupTables": false
+  },
+  "programIds": {
+    "solsticeYieldVault": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+    "klend": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD"
+  },
+  "currentSlot": 457360809,
+  "currentBlockTime": 1792093936,
+  "preContextSlot": 457360810,
+  "officialFrontendIdl": {
+    "fetchedAt": "2026-10-15T19:36:38.799Z",
+    "bundlePath": "/_next/static/chunks/6332-38fed9f713086f3a.js",
+    "bundleSha256": "b63127ea7d7b17adc64f1acded23ea0faf5c02a2a7d8faa3fb0de81c6c47a2ce",
+    "version": "1.1.0"
+  },
+  "klend": {
+    "reserve": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX",
+    "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+    "marketAuthority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+    "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+    "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+    "availableRaw": "2875264254873",
+    "flashLoanFeeSf": "0",
+    "feeClassification": "exact configured zero, not a positive fee rounded to zero",
+    "sourceTemplateSignature": "588vb6rp6QWDC1hAF2aZ9z3teLdMRrQRVy87RWwY6VijmSG9ZLRXAHdxicJZPG1mErYCcvRz43NmmWZyRjf6zZcd",
+    "sourceTemplateSlot": 457338071
+  },
+  "pdaProofs": [
+    {
+      "label": "controller",
+      "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+      "bump": 252,
+      "verified": true
+    },
+    {
+      "label": "vestingSchedule",
+      "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb",
+      "bump": 255,
+      "verified": true
+    },
+    {
+      "label": "yieldPool",
+      "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+      "bump": 255,
+      "verified": true
+    },
+    {
+      "label": "assetVault",
+      "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA",
+      "bump": 254,
+      "verified": true
+    },
+    {
+      "label": "shareMint",
+      "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+      "bump": 255,
+      "verified": true
+    },
+    {
+      "label": "outsiderCooldown",
+      "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ",
+      "bump": 254,
+      "verified": true
+    },
+    {
+      "label": "outsiderCooldownVault",
+      "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD",
+      "bump": 254,
+      "verified": true
+    },
+    {
+      "label": "largeClaimCooldown",
+      "address": "E9URmf61v9M6mCXRhRExzGrJnnmYvAFjoUaXwfEq6eRv",
+      "bump": 246,
+      "verified": true
+    },
+    {
+      "label": "largeClaimVault",
+      "address": "2QxQFy2foi3YLG6YJPdTa242FwNaXkXvHZBKr4FunDgC",
+      "bump": 254,
+      "verified": true
+    },
+    {
+      "label": "permissionedAccount",
+      "address": "5KzVcKDyzMFUh32tMESHjfA7vTALfDHbVxq9HbZd8rz",
+      "bump": 254,
+      "verified": true
+    }
+  ],
+  "before": {
+    "outsiderUsx": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+      "amountRaw": "0"
+    },
+    "outsiderEusx": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "b5107d9e81315479471094708cac97872f72a6a94fc55033bb270cdf6b52c571",
+      "mint": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+      "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+      "amountRaw": "0"
+    },
+    "assetVault": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "5783f39c5006eb5d1b8e506b059ecf6b0639b145f8d6f50c2273890102e11f18",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+      "amountRaw": "4828070180482"
+    },
+    "shareMint": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 82,
+      "dataSha256": "08884dbdbd5b20726b6dce867b1ea21d0d712d67a8a5e1002c3b366c36e30c1a",
+      "supplyRaw": "4597753720722",
+      "decimals": 6
+    },
+    "yieldPool": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 619,
+      "dataSha256": "b2fbde56258fe6d584cd3720f1f8cb984dfa304af954c5d5363247ae997fd085",
+      "bump": 255,
+      "assetMint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "assetMintDecimals": 6,
+      "assetVault": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA",
+      "assetVaultBump": 254,
+      "totalAssetsRaw": "4828070180482",
+      "sharesSupplyRaw": "4601908160146"
+    },
+    "vestingSchedule": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 161,
+      "dataSha256": "59b90abda5da75f50db65e6663a3099128a858341ec252408bf7fb500fa15721",
+      "bump": 255,
+      "vestingAmountRaw": "173619047",
+      "startTime": "1792083783",
+      "endTime": "1792112283"
+    },
+    "outsiderCooldown": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 217,
+      "dataSha256": "6ee6854ae738cd075bb58eb5440090fc87a30274d2b57b7dd24192f9af9f9d27",
+      "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+      "bump": 254,
+      "assetMint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "assetAmountRaw": "0",
+      "cooldownEnd": "0"
+    },
+    "outsiderCooldownVault": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "c8f8304e2bfcf88007d6015997cd0fc77f7ded0596a04103ffd6b5666f51e6c5",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ",
+      "amountRaw": "0"
+    },
+    "largeClaimCooldown": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 217,
+      "dataSha256": "46cde2884a421c9458fa27b640530a6355780b435a440d181941ef59da1e30f2",
+      "user": "A9aaMu2V64S8WNeNmiCz3ZpKrtSjaanpe2TuDVXurHY9",
+      "bump": 246,
+      "assetMint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "assetAmountRaw": "5203211433106",
+      "cooldownEnd": "1792591855"
+    },
+    "largeClaimVault": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "bd5d95df96a7a46d247a3a921726723aa7850fff19725cfbe89a17dbe73eed71",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "E9URmf61v9M6mCXRhRExzGrJnnmYvAFjoUaXwfEq6eRv",
+      "amountRaw": "5203211433106"
+    },
+    "klendReserve": {
+      "exists": true,
+      "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+      "dataLength": 8624,
+      "dataSha256": "b2d43078acc82ed4bbe130e54ec2c4d0a74038bc1f4247b0d00104427ea5588b",
+      "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+      "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+      "availableRaw": "2875264254873",
+      "flashLoanFeeSf": "0",
+      "status": 0,
+      "emergencyMode": 0
+    },
+    "klendSupply": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+      "amountRaw": "2875264254873"
+    },
+    "klendFeeVault": {
+      "exists": true,
+      "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+      "dataLength": 165,
+      "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+      "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+      "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+      "amountRaw": "0"
+    },
+    "permissionedAccount": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 138,
+      "dataSha256": "336048520f80ced50e2dd066c5f72dd8d66af60930a177cb5992d5a96d324405",
+      "bump": 254,
+      "canSendYield": true
+    },
+    "controller": {
+      "exists": true,
+      "owner": "eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3",
+      "dataLength": 252,
+      "dataSha256": "9e18921dbb4c3ea6c83a19b7e452971cf79ea7244be4a978b824d40d9262583c",
+      "authority": "CYr14TrXD5MAertRqcR58KirPz7XoHGZjfBsfn5M2voh",
+      "bump": 252,
+      "shareMint": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC",
+      "shareMintDecimals": 6,
+      "vestingPeriodSeconds": "28500",
+      "cooldownPeriodSeconds": "604800",
+      "hasProposedAuthority": false,
+      "isFrozen": false
+    }
+  },
+  "accountingObservation": {
+    "internalSharesSupplyRaw": "4601908160146",
+    "splMintSupplyRaw": "4597753720722",
+    "internalMinusMintSupplyRaw": "4154439424",
+    "interpretation": "The internal ledger exceeds live SPL mint supply. Direct SPL burns can reduce mint supply without invoking YieldVault, while YieldVault events decrement both. This is dilution/stranding, not a source of outsider claims."
+  },
+  "summary": {
+    "successfulFlashControls": 5,
+    "flashControlsRun": 5,
+    "successfulTargetTransactions": 0,
+    "positiveOutsiderEquityAfterDebtAndClaimsProven": false
+  },
+  "results": [
+    {
+      "label": "klend_flash_repay_control_1",
+      "metadata": {
+        "category": "flash-control",
+        "amountRaw": "1",
+        "expected": "success and exact full repayment"
+      },
+      "contextSlot": 457360810,
+      "err": null,
+      "error": {
+        "raw": null,
+        "failedLine": null
+      },
+      "unitsConsumed": 55205,
+      "loadedAccountsDataSize": 10609046,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "exists": true,
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "dataLength": 8624,
+          "dataSha256": "bf14a886277f69c9d71342560a03683fa245cd51412032becc24c5fa9c5a6485",
+          "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+          "availableRaw": "2875264254873",
+          "flashLoanFeeSf": "0",
+          "status": 0,
+          "emergencyMode": 0
+        },
+        "klendSupply": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "2875264254873"
+        },
+        "klendFeeVault": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "0"
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367644 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33579 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346032 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21626 of 1366421 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 531,
+        "messageBytes": 467,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 2,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "4a5275f93b27042625e0e3ec9bde873cb55c0621ed6d27eb44f0288e269ca08c",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgILcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3wSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQwQAAUMEQAABgcBCAIDBAUFCQqH5zSnBzTUwQEAAAAAAAAAAAYHAQgCAwQFBQkKuXUAy2D1tLoBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "economicReconciliation": {
+        "debtPrincipalRaw": "1",
+        "debtRepaidInFull": true,
+        "userUsxDeltaRaw": "0",
+        "klendSupplyDeltaRaw": "0",
+        "klendFeeVaultDeltaRaw": "0",
+        "outsiderNetAssetGainRaw": "0"
+      }
+    },
+    {
+      "label": "klend_flash_repay_control_2",
+      "metadata": {
+        "category": "flash-control",
+        "amountRaw": "2",
+        "expected": "success and exact full repayment"
+      },
+      "contextSlot": 457360810,
+      "err": null,
+      "error": {
+        "raw": null,
+        "failedLine": null
+      },
+      "unitsConsumed": 55205,
+      "loadedAccountsDataSize": 10609046,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "exists": true,
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "dataLength": 8624,
+          "dataSha256": "bf14a886277f69c9d71342560a03683fa245cd51412032becc24c5fa9c5a6485",
+          "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+          "availableRaw": "2875264254873",
+          "flashLoanFeeSf": "0",
+          "status": 0,
+          "emergencyMode": 0
+        },
+        "klendSupply": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "2875264254873"
+        },
+        "klendFeeVault": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "0"
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367644 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33579 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346032 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21626 of 1366421 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 531,
+        "messageBytes": 467,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 2,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "d482d173e7000925aeb0d983d6c58562fb75f9d0b3401200ff72bec7f0769174",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgILcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3wSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQwQAAUMEQAABgcBCAIDBAUFCQqH5zSnBzTUwQIAAAAAAAAAAAYHAQgCAwQFBQkKuXUAy2D1tLoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "economicReconciliation": {
+        "debtPrincipalRaw": "2",
+        "debtRepaidInFull": true,
+        "userUsxDeltaRaw": "0",
+        "klendSupplyDeltaRaw": "0",
+        "klendFeeVaultDeltaRaw": "0",
+        "outsiderNetAssetGainRaw": "0"
+      }
+    },
+    {
+      "label": "klend_flash_repay_control_10",
+      "metadata": {
+        "category": "flash-control",
+        "amountRaw": "10",
+        "expected": "success and exact full repayment"
+      },
+      "contextSlot": 457360810,
+      "err": null,
+      "error": {
+        "raw": null,
+        "failedLine": null
+      },
+      "unitsConsumed": 55204,
+      "loadedAccountsDataSize": 10609046,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "exists": true,
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "dataLength": 8624,
+          "dataSha256": "bf14a886277f69c9d71342560a03683fa245cd51412032becc24c5fa9c5a6485",
+          "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+          "availableRaw": "2875264254873",
+          "flashLoanFeeSf": "0",
+          "status": 0,
+          "emergencyMode": 0
+        },
+        "klendSupply": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "2875264254873"
+        },
+        "klendFeeVault": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "0"
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367644 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33579 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346033 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1366421 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 531,
+        "messageBytes": 467,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 2,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "1c1c15ad5f6de9a1977373e9c7cb6905322909be049b155452bbe7e63da41765",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgILcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3wSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQwQAAUMEQAABgcBCAIDBAUFCQqH5zSnBzTUwQoAAAAAAAAAAAYHAQgCAwQFBQkKuXUAy2D1tLoKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "economicReconciliation": {
+        "debtPrincipalRaw": "10",
+        "debtRepaidInFull": true,
+        "userUsxDeltaRaw": "0",
+        "klendSupplyDeltaRaw": "0",
+        "klendFeeVaultDeltaRaw": "0",
+        "outsiderNetAssetGainRaw": "0"
+      }
+    },
+    {
+      "label": "klend_flash_repay_control_2875264254872",
+      "metadata": {
+        "category": "flash-control",
+        "amountRaw": "2875264254872",
+        "expected": "success and exact full repayment"
+      },
+      "contextSlot": 457360811,
+      "err": null,
+      "error": {
+        "raw": null,
+        "failedLine": null
+      },
+      "unitsConsumed": 55207,
+      "loadedAccountsDataSize": 10609046,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "exists": true,
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "dataLength": 8624,
+          "dataSha256": "b2caa9c6f5d40eb3f2ba643e855986cdf5d83ae0e827dc0771b12eafb0da4075",
+          "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+          "availableRaw": "2875264254873",
+          "flashLoanFeeSf": "0",
+          "status": 0,
+          "emergencyMode": 0
+        },
+        "klendSupply": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "2875264254873"
+        },
+        "klendFeeVault": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "0"
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367643 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33580 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346030 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21627 of 1366420 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 531,
+        "messageBytes": 467,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 2,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "3b48aa30a566f1ae68721dc34bb781c39074afa0a9493cf9a4a892144633b645",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgILcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3wSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQwQAAUMEQAABgcBCAIDBAUFCQqH5zSnBzTUwZjDGnOdAgAAAAYHAQgCAwQFBQkKuXUAy2D1tLqYwxpznQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "economicReconciliation": {
+        "debtPrincipalRaw": "2875264254872",
+        "debtRepaidInFull": true,
+        "userUsxDeltaRaw": "0",
+        "klendSupplyDeltaRaw": "0",
+        "klendFeeVaultDeltaRaw": "0",
+        "outsiderNetAssetGainRaw": "0"
+      }
+    },
+    {
+      "label": "klend_flash_repay_control_2875264254873",
+      "metadata": {
+        "category": "flash-control",
+        "amountRaw": "2875264254873",
+        "expected": "success and exact full repayment"
+      },
+      "contextSlot": 457360811,
+      "err": null,
+      "error": {
+        "raw": null,
+        "failedLine": null
+      },
+      "unitsConsumed": 55207,
+      "loadedAccountsDataSize": 10609046,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "aaba2096a920e09f9b1d35ac08cb122506354cd88e0f108312d8215107ce5e40",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+          "amountRaw": "0"
+        },
+        "klendReserve": {
+          "exists": true,
+          "owner": "KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD",
+          "dataLength": 8624,
+          "dataSha256": "b2caa9c6f5d40eb3f2ba643e855986cdf5d83ae0e827dc0771b12eafb0da4075",
+          "market": "9Y7uwXgQ68mGqRtZfuFaP4hc4fxeJ7cE9zTtqTxVhfGU",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "supplyVault": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf",
+          "feeVault": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt",
+          "availableRaw": "2875264254873",
+          "flashLoanFeeSf": "0",
+          "status": 0,
+          "emergencyMode": 0
+        },
+        "klendSupply": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "6187d48da174d4015037fed0147593ae535537107b8e28fe5777678a38256b0d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "2875264254873"
+        },
+        "klendFeeVault": {
+          "exists": true,
+          "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "dataLength": 165,
+          "dataSha256": "b71173508fa9badaeafe6842ef51c21616ffca1e598bf5d2ddd4b61ebe3d070d",
+          "mint": "6FrrzDk5mQARGc1TDYoyVnSyRdds1t4PbtohCD6p3tgG",
+          "authority": "CzEcTo66owDYLH1ieFR64u4gV5YT3FSLEg8G61nAvuP1",
+          "amountRaw": "0"
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1367643 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 33580 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346030 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21627 of 1366420 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 531,
+        "messageBytes": 467,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 2,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "edce06a8174570289635053a899c318b9ae88604e67c2592f49a02ceebae1437",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgILcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3wSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQwQAAUMEQAABgcBCAIDBAUFCQqH5zSnBzTUwZnDGnOdAgAAAAYHAQgCAwQFBQkKuXUAy2D1tLqZwxpznQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "economicReconciliation": {
+        "debtPrincipalRaw": "2875264254873",
+        "debtRepaidInFull": true,
+        "userUsxDeltaRaw": "0",
+        "klendSupplyDeltaRaw": "0",
+        "klendFeeVaultDeltaRaw": "0",
+        "outsiderNetAssetGainRaw": "0"
+      }
+    },
+    {
+      "label": "outsider_substitutes_large_claim_pdas",
+      "metadata": {
+        "category": "account-substitution",
+        "expected": "PDA seed constraint rejects claim substitution"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 2006
+            }
+          ]
+        },
+        "customCode": 2006,
+        "idl": {
+          "code": 2006,
+          "name": "ConstraintSeeds",
+          "msg": "A seeds constraint was violated."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x7d6"
+      },
+      "unitsConsumed": 9252,
+      "loadedAccountsDataSize": 723499,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "largeClaimCooldown",
+          "address": "E9URmf61v9M6mCXRhRExzGrJnnmYvAFjoUaXwfEq6eRv"
+        },
+        {
+          "label": "largeClaimVault",
+          "address": "2QxQFy2foi3YLG6YJPdTa242FwNaXkXvHZBKr4FunDgC"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "largeClaimCooldown": {
+          "exists": false
+        },
+        "largeClaimVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: cooldown_escrow. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program log: Left:",
+        "Program log: E9URmf61v9M6mCXRhRExzGrJnnmYvAFjoUaXwfEq6eRv",
+        "Program log: Right:",
+        "Program log: EQzmeWjMZz3q5z5xR91aZZzpdGeL4bDFfNeQcmJv9rtW",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 9252 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x7d6"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 390,
+        "messageBytes": 326,
+        "staticAccountKeys": 8,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "66de1c6f6738a183e811d99bc5c8e4dcf2b20b16089f70a24a92b10b9e7b44ad",
+        "wireBase64": "gQEABAwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgEIcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRJrNe/2NqIqRIKQT281TxYTXFWbcfJt/5vJ+cr7cv2Q+sNTlqFeph5CqcgdGdEKE28VHCshmunGjmPYQG9XZdNBFP6wCZQuUiU5etsHJRXMVz7hnOX5mcuSz3Ma08p2sNkJmYRHdIOiI31Kei6MAPrb6JNut77VFrXtbsz2WVTDrBdiqVghaVT0zq5zAxuoMcCYE/QN6RGBoBKtm6noCKhkThjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBAgIAAAABQYBAgMHtxJGnJRtoSIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "large_claim_user_without_beneficiary_signature",
+      "metadata": {
+        "category": "signature-control",
+        "expected": "required beneficiary signer constraint rejects outsider"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "customCode": 3010,
+        "idl": {
+          "code": 3010,
+          "name": "AccountNotSigner",
+          "msg": "The given account did not sign."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0xbc2"
+      },
+      "unitsConsumed": 3924,
+      "loadedAccountsDataSize": 723563,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "largeClaimCooldown",
+          "address": "E9URmf61v9M6mCXRhRExzGrJnnmYvAFjoUaXwfEq6eRv"
+        },
+        {
+          "label": "largeClaimVault",
+          "address": "2QxQFy2foi3YLG6YJPdTa242FwNaXkXvHZBKr4FunDgC"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "largeClaimCooldown": {
+          "exists": false
+        },
+        "largeClaimVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError caused by account: user. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 3924 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0xbc2"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 422,
+        "messageBytes": 358,
+        "staticAccountKeys": 9,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "1a20104a91e94f74162d0d7d3a0fbea293fb0382e7004627f9c588e7144a10df",
+        "wireBase64": "gQEABQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgEJcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRJrNe/2NqIqRIKQT281TxYTXFWbcfJt/5vJ+cr7cv2Q+sNTlqFeph5CqcgdGdEKE28VHCshmunGjmPYQG9XZdNBFP6wCZQuUiU5etsHJRXMVz7hnOX5mcuSz3Ma08p2sNkJmYRHdIOiI31Kei6MAPrb6JNut77VFrXtbsz2WVTDrIfrytms4GVSV/dn6bQENSTKGUYLINBgmiIS+jkVvav2F2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGROGPHmH6win4qIP+JUDBBcyX+GQiZMrRfvRbUlTQKb8Qbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpwFwVAAAAAAQECAgABQAGBwECAwi3EkaclG2hIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      }
+    },
+    {
+      "label": "outsider_substitutes_other_users_share_account",
+      "metadata": {
+        "category": "account-substitution",
+        "expected": "token-owner constraint rejects another user share account"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6007
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6007
+            }
+          ]
+        },
+        "customCode": 6007,
+        "idl": {
+          "code": 6007,
+          "name": "InvalidOwner",
+          "msg": "The provided token account is not owner by the expected party."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x1777"
+      },
+      "unitsConsumed": 19581,
+      "loadedAccountsDataSize": 724867,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: AnchorError caused by account: user_shares. Error Code: InvalidOwner. Error Number: 6007. Error Message: The provided token account is not owner by the expected party..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19581 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x1777"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 563,
+        "messageBytes": 499,
+        "staticAccountKeys": 13,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "8cb39e9821930248b37b84f0b3026f18f2388db5ffd7b40eea47754e4ce1c76f",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgENcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIkjmjk30y0zV51rPL90CyYB8TA1NIMyZGMzBXpq/cItfBDWV+dF/SpRUkX4yKeXj51klv8JECO2UDWTvBqiikJFVT6k9OKtfOh1GcF+lCIJtaWqtsZ5lgc9wMrx9yEoX0bmX/0lPa/oN4LiC7f4qvN8JVjodZOi3lzywSRlIYvXDFFKfz4XFb382Q8Ypb5Gs7vbT+VKPhS4InfY6WNeRsmOoCHyWkznLUVNLpj6iYSjzo24sLeLxmta08fVMdNV9YJmYRHdIOiI31Kei6MAPrb6JNut77VFrXtbsz2WVTDrBdiqVghaVT0zq5zAxuoMcCYE/QN6RGBoBKtm6noCKhk0t8+ZrCAoVS8PiwxlogynsaTrhpFvSQgVEQLLCQYn/JOGPHmH6win4qIP+JUDBBcyX+GQiZMrRfvRbUlTQKb8Qbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAXBUAAAAABAcNEAAAAAgJAQIKAwQFBgsMZZsoFZ69OMsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      }
+    },
+    {
+      "label": "outsider_unlocks_with_zero_owned_shares",
+      "metadata": {
+        "category": "balance-control",
+        "expected": "insufficient share balance; no claim created"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 6015
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 6015
+            }
+          ]
+        },
+        "customCode": 6015,
+        "idl": {
+          "code": 6015,
+          "name": "InsufficientFunds",
+          "msg": "The balance of the provided account is not enough to fulfill the operation."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177f"
+      },
+      "unitsConsumed": 23306,
+      "loadedAccountsDataSize": 724867,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_amount.rs:10. Error Code: InsufficientFunds. Error Number: 6015. Error Message: The balance of the provided account is not enough to fulfill the operation..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 23306 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177f"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 563,
+        "messageBytes": 499,
+        "staticAccountKeys": 13,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "4237173a2c5b3b7da2e715754114bba8615d95d1fc5e6ed2cdebb378b1e01492",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgENcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIkjmjk30y0zV51rPL90CyYB8TA1NIMyZGMzBXpq/cItQJIYNy13vUo+bF4dxd5VyrQSe5myPNI2uaVzZtA0ee3FVT6k9OKtfOh1GcF+lCIJtaWqtsZ5lgc9wMrx9yEoX0bmX/0lPa/oN4LiC7f4qvN8JVjodZOi3lzywSRlIYvXDFFKfz4XFb382Q8Ypb5Gs7vbT+VKPhS4InfY6WNeRsmOoCHyWkznLUVNLpj6iYSjzo24sLeLxmta08fVMdNV9YJmYRHdIOiI31Kei6MAPrb6JNut77VFrXtbsz2WVTDrBdiqVghaVT0zq5zAxuoMcCYE/QN6RGBoBKtm6noCKhk0t8+ZrCAoVS8PiwxlogynsaTrhpFvSQgVEQLLCQYn/JOGPHmH6win4qIP+JUDBBcyX+GQiZMrRfvRbUlTQKb8Qbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAXBUAAAAABAcNEAAAAAgJAQIKAwQFBgsMZZsoFZ69OMsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      }
+    },
+    {
+      "label": "outsider_substitutes_legitimate_permission_record",
+      "metadata": {
+        "category": "permission-substitution",
+        "expected": "permission PDA seed binding rejects outsider"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 2006
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 2006
+            }
+          ]
+        },
+        "customCode": 2006,
+        "idl": {
+          "code": 2006,
+          "name": "ConstraintSeeds",
+          "msg": "A seeds constraint was violated."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x7d6"
+      },
+      "unitsConsumed": 7677,
+      "loadedAccountsDataSize": 724328,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "permissionedAccount",
+          "address": "5KzVcKDyzMFUh32tMESHjfA7vTALfDHbVxq9HbZd8rz"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "permissionedAccount": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: TransferInYield",
+        "Program log: AnchorError caused by account: permissioned_account. Error Code: ConstraintSeeds. Error Number: 2006. Error Message: A seeds constraint was violated.",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 7677 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x7d6"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 464,
+        "messageBytes": 400,
+        "staticAccountKeys": 10,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "c9e4102e8a3d18a31147134d9a50cef276dc5733f75c8c64f49bb1b876ed1a2c",
+        "wireBase64": "gQEABQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgEKcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8ms17/Y2oipEgpBPbzVPFhNcVZtx8m3/m8n5yvty/ZD6FVT6k9OKtfOh1GcF+lCIJtaWqtsZ5lgc9wMrx9yEoX0bmX/0lPa/oN4LiC7f4qvN8JVjodZOi3lzywSRlIYvXAmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsARvL9jok5mVVf0ssNkkYdbttL7Nf2bVyMPyMy6HCNC8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZE4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBt324ddloZPZy+FGzut5rBy0he1fWzeROoz1hX7/AKnAXBUAAAAABAUKEAAAAAYHAQIIAwQJKRj6Nh6HkTsBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      }
+    },
+    {
+      "label": "legitimate_harvester_without_harvester_signature",
+      "metadata": {
+        "category": "signature-control",
+        "expected": "harvester signer constraint rejects outsider payer"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3010
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            0,
+            {
+              "Custom": 3010
+            }
+          ]
+        },
+        "customCode": 3010,
+        "idl": {
+          "code": 3010,
+          "name": "AccountNotSigner",
+          "msg": "The given account did not sign."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0xbc2"
+      },
+      "unitsConsumed": 4456,
+      "loadedAccountsDataSize": 724636,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "permissionedAccount",
+          "address": "5KzVcKDyzMFUh32tMESHjfA7vTALfDHbVxq9HbZd8rz"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "assetVault": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "permissionedAccount": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: TransferInYield",
+        "Program log: AnchorError caused by account: harvester. Error Code: AccountNotSigner. Error Number: 3010. Error Message: The given account did not sign.",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 4456 of 1400000 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0xbc2"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 496,
+        "messageBytes": 432,
+        "staticAccountKeys": 11,
+        "requiredSignatures": 1,
+        "instructions": 1,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "67df9d6b98241a592282590f824e9d5ea6e08fa714aa88c91a4b5fdeb1a27218",
+        "wireBase64": "gQEABgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgELcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8tl6mn0A1Pa1TuwRXIzZXIB1Qb4C07L3yKUSmjnxEcO8FVT6k9OKtfOh1GcF+lCIJtaWqtsZ5lgc9wMrx9yEoX0bmX/0lPa/oN4LiC7f4qvN8JVjodZOi3lzywSRlIYvXAmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsssI8Q6NeLkd+4AtmZfw9gn/knZff/P10AZ8Xc6UaGl0BG8v2OiTmZVV/Syw2SRh1u20vs1/ZtXIw/IzLocI0LxdiqVghaVT0zq5zAxuoMcCYE/QN6RGBoBKtm6noCKhkThjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqcBcFQAAAAAEBQoQAAYABwgBAgkDBAopGPo2HoeROwEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+      }
+    },
+    {
+      "label": "flash_lock_then_repay_1",
+      "metadata": {
+        "category": "atomic-prefix",
+        "amountRaw": "1",
+        "expected": "repay fails because principal was locked; entire transaction rolls back"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6017
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            1,
+            {
+              "Custom": 6017
+            }
+          ]
+        },
+        "customCode": 6017,
+        "idl": {
+          "code": 6017,
+          "name": "ZeroShareAmount",
+          "msg": "Cannot mint zero share."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x1781"
+      },
+      "unitsConsumed": 50413,
+      "loadedAccountsDataSize": 11224299,
+      "events": [],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1366258 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34965 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program log: AnchorError thrown in programs/yield-vault/src/instructions/lock.rs:113. Error Code: ZeroShareAmount. Error Number: 6017. Error Message: Cannot mint zero share..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 15448 of 1365035 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x1781"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 786,
+        "messageBytes": 722,
+        "staticAccountKeys": 18,
+        "requiredSignatures": 1,
+        "instructions": 3,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "cb69d105a903569e6272be6387487c2f254085e76f57e8e39d7411d9868b0cfe",
+        "wireBase64": "gQEACQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgMScRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAiyGg2DE8pd2HWK/qKq00S4Z7QmLluabnkWDOLMrQ9qxH7WURg/f2bj25kV/yNeOGV30vsfiuL4CFE6Me5zz0W5Thjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EGp9UXGHvRZjXa1ARV/cLAwSTGjyFWdaXbustfCAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCZmER3SDoiN9SnoujAD62+iTbre+1Ra17W7M9llUw6wXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZNLfPmawgKFUvD4sMZaIMp7Gk64aRb0kIFRECywkGJ/ywFwVAAAAAAQJDBAADwsQAAkMEQAACgsBDAIDBAkJDQ6H5zSnBzTUwQEAAAAAAAAAAAAQEQUGDAcIAw4VE9Ar7T7/VwEAAAAAAAAAAAoLAQwCAwQJCQ0OuXUAy2D1tLoBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "flash_lock_then_repay_2",
+      "metadata": {
+        "category": "atomic-prefix",
+        "amountRaw": "2",
+        "expected": "repay fails because principal was locked; entire transaction rolls back"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "customCode": 1,
+        "idl": null,
+        "failedLine": "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      },
+      "unitsConsumed": 75192,
+      "loadedAccountsDataSize": 11224299,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2",
+            "share_amount": "1",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828070180484",
+            "shares_supply_after": "4601908160147"
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1366258 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34965 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1349238 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1346949 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRICAAAAAAAAAAEAAAAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAIR2aB9kBAAAAAAAAAAAAACT5hl3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1365035 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 192 of 1325000 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20581 of 1345389 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 786,
+        "messageBytes": 722,
+        "staticAccountKeys": 18,
+        "requiredSignatures": 1,
+        "instructions": 3,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "cb20f205426e126bd1fe5ed8df76e454654e624a3c819cfb2fc7641197991a4e",
+        "wireBase64": "gQEACQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgMScRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAiyGg2DE8pd2HWK/qKq00S4Z7QmLluabnkWDOLMrQ9qxH7WURg/f2bj25kV/yNeOGV30vsfiuL4CFE6Me5zz0W5Thjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EGp9UXGHvRZjXa1ARV/cLAwSTGjyFWdaXbustfCAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCZmER3SDoiN9SnoujAD62+iTbre+1Ra17W7M9llUw6wXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZNLfPmawgKFUvD4sMZaIMp7Gk64aRb0kIFRECywkGJ/ywFwVAAAAAAQJDBAADwsQAAkMEQAACgsBDAIDBAkJDQ6H5zSnBzTUwQIAAAAAAAAAAAAQEQUGDAcIAw4VE9Ar7T7/VwIAAAAAAAAAAAoLAQwCAwQJCQ0OuXUAy2D1tLoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "flash_lock_unlock_withdraw_repay_exact_2",
+      "metadata": {
+        "category": "atomic-target-exact",
+        "amountRaw": "2",
+        "shareAmountRaw": "1",
+        "expected": "cannot withdraw the newly created claim before seven-day cooldown; no commit or outsider gain"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            3,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "customCode": 6013,
+        "idl": {
+          "code": 6013,
+          "name": "CooldownNotEnded",
+          "msg": "The cooldown period is not ended yet."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      },
+      "unitsConsumed": 98755,
+      "loadedAccountsDataSize": 11224894,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2",
+            "share_amount": "1",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828070180484",
+            "shares_supply_after": "4601908160147"
+          }
+        },
+        {
+          "name": "UnlockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "1",
+            "share_amount": "1",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180484",
+            "shares_supply_before": "4601908160147",
+            "total_assets_after": "4828070180483",
+            "shares_supply_after": "4601908160146",
+            "cooldown_escrow_asset_amount": "1",
+            "cooldown_end": "1792180337",
+            "is_init_needed": false
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363558 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37665 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346538 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1344249 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRICAAAAAAAAAAEAAAAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAIR2aB9kBAAAAAAAAAAAAACT5hl3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1362335 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1318136 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1315830 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: aQHrkER7S3sXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIBAAAAAAAAAAEAAAAAAAAAC1qpBgAAAACEdmgfZAQAAAAAAAAAAAAAk+YZdy8EAAAAAAAAAAAAAIN2aB9kBAAAAAAAAAAAAACS5hl3LwQAAAAAAAAAAAAAAQAAAAAAAABxgNJqAAAAAAA=",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 28798 of 1342689 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_cooldown.rs:14. Error Code: CooldownNotEnded. Error Number: 6013. Error Message: The cooldown period is not ended yet..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 12646 of 1313891 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 935,
+        "messageBytes": 871,
+        "staticAccountKeys": 21,
+        "requiredSignatures": 1,
+        "instructions": 5,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "208f4622178f15ec1f39e484d16d168c34e8f569d540fa90ff455034bf16f2ef",
+        "wireBase64": "gQEACgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgUVcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cMUUp/PhcVvfzZDxilvkazu9tP5Uo+FLgid9jpY15GyY6gIfJaTOctRU0umPqJhKPOjbiwt4vGa1rTx9Ux01X1gSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsF2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGTS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFwVAAAAAAQLDBAAEQsQABENEAARCAgACwwRAAAMDQEOAgMECwsPEIfnNKcHNNTBAgAAAAAAAAAAABITBQYOBwgDEBUT0CvtPv9XAgAAAAAAAAAAABITBQYOBwgJChAUZZsoFZ69OMsBAAAAAAAAAAAAEg4DCQoQtxJGnJRtoSIADA0BDgIDBAsLDxC5dQDLYPW0ugIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "economicReconciliation": {
+        "flashDebtRaw": "2",
+        "mintedSharesRaw": "1",
+        "burnedSharesRaw": "1",
+        "residualSharesRaw": "0",
+        "cooldownClaimRaw": "1",
+        "residualSharesClaimValueRawAtUnlockPrice": "0",
+        "grossUserClaimsRaw": "1",
+        "grossClaimsMinusDebtRaw": "-1",
+        "immediatelyLiquidUsxRaw": "0",
+        "debtRepaidInFull": false,
+        "transactionCommitted": false,
+        "realizedOutsiderNetAssetGainRaw": "0",
+        "conclusion": "The same-transaction withdrawal is rejected; Solana rolls the entire transaction back. Even before rollback, the user has a time-locked own claim, not freely repayable USX."
+      }
+    },
+    {
+      "label": "flash_lock_then_repay_10",
+      "metadata": {
+        "category": "atomic-prefix",
+        "amountRaw": "10",
+        "expected": "repay fails because principal was locked; entire transaction rolls back"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "customCode": 1,
+        "idl": null,
+        "failedLine": "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      },
+      "unitsConsumed": 75191,
+      "loadedAccountsDataSize": 11224299,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "10",
+            "share_amount": "9",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828070180492",
+            "shares_supply_after": "4601908160155"
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1366258 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34965 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1349238 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1346949 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIKAAAAAAAAAAkAAAAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAIx2aB9kBAAAAAAAAAAAAACb5hl3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1365035 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 192 of 1325001 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20580 of 1345389 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 786,
+        "messageBytes": 722,
+        "staticAccountKeys": 18,
+        "requiredSignatures": 1,
+        "instructions": 3,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "6055f1a046a4b9d289ead2f146533528b048831836831bfac6637b937d5232a1",
+        "wireBase64": "gQEACQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgMScRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAiyGg2DE8pd2HWK/qKq00S4Z7QmLluabnkWDOLMrQ9qxH7WURg/f2bj25kV/yNeOGV30vsfiuL4CFE6Me5zz0W5Thjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EGp9UXGHvRZjXa1ARV/cLAwSTGjyFWdaXbustfCAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCZmER3SDoiN9SnoujAD62+iTbre+1Ra17W7M9llUw6wXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZNLfPmawgKFUvD4sMZaIMp7Gk64aRb0kIFRECywkGJ/ywFwVAAAAAAQJDBAADwsQAAkMEQAACgsBDAIDBAkJDQ6H5zSnBzTUwQoAAAAAAAAAAAAQEQUGDAcIAw4VE9Ar7T7/VwoAAAAAAAAAAAoLAQwCAwQJCQ0OuXUAy2D1tLoKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "flash_lock_unlock_withdraw_repay_exact_10",
+      "metadata": {
+        "category": "atomic-target-exact",
+        "amountRaw": "10",
+        "shareAmountRaw": "9",
+        "expected": "cannot withdraw the newly created claim before seven-day cooldown; no commit or outsider gain"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            3,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "customCode": 6013,
+        "idl": {
+          "code": 6013,
+          "name": "CooldownNotEnded",
+          "msg": "The cooldown period is not ended yet."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      },
+      "unitsConsumed": 98744,
+      "loadedAccountsDataSize": 11224894,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "10",
+            "share_amount": "9",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828070180492",
+            "shares_supply_after": "4601908160155"
+          }
+        },
+        {
+          "name": "UnlockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "9",
+            "share_amount": "9",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180492",
+            "shares_supply_before": "4601908160155",
+            "total_assets_after": "4828070180483",
+            "shares_supply_after": "4601908160146",
+            "cooldown_escrow_asset_amount": "9",
+            "cooldown_end": "1792180337",
+            "is_init_needed": false
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363558 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37665 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346538 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1344249 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIKAAAAAAAAAAkAAAAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAIx2aB9kBAAAAAAAAAAAAACb5hl3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1362335 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1318147 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1315841 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: aQHrkER7S3sXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRIJAAAAAAAAAAkAAAAAAAAAC1qpBgAAAACMdmgfZAQAAAAAAAAAAAAAm+YZdy8EAAAAAAAAAAAAAIN2aB9kBAAAAAAAAAAAAACS5hl3LwQAAAAAAAAAAAAACQAAAAAAAABxgNJqAAAAAAA=",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 28787 of 1342689 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_cooldown.rs:14. Error Code: CooldownNotEnded. Error Number: 6013. Error Message: The cooldown period is not ended yet..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 12646 of 1313902 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 935,
+        "messageBytes": 871,
+        "staticAccountKeys": 21,
+        "requiredSignatures": 1,
+        "instructions": 5,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "ea1ff7b62293adb7f90746723e2211c7a442b4b5317a09b9941ec6f041401a66",
+        "wireBase64": "gQEACgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgUVcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cMUUp/PhcVvfzZDxilvkazu9tP5Uo+FLgid9jpY15GyY6gIfJaTOctRU0umPqJhKPOjbiwt4vGa1rTx9Ux01X1gSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsF2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGTS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFwVAAAAAAQLDBAAEQsQABENEAARCAgACwwRAAAMDQEOAgMECwsPEIfnNKcHNNTBCgAAAAAAAAAAABITBQYOBwgDEBUT0CvtPv9XCgAAAAAAAAAAABITBQYOBwgJChAUZZsoFZ69OMsJAAAAAAAAAAAAEg4DCQoQtxJGnJRtoSIADA0BDgIDBAsLDxC5dQDLYPW0ugoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "economicReconciliation": {
+        "flashDebtRaw": "10",
+        "mintedSharesRaw": "9",
+        "burnedSharesRaw": "9",
+        "residualSharesRaw": "0",
+        "cooldownClaimRaw": "9",
+        "residualSharesClaimValueRawAtUnlockPrice": "0",
+        "grossUserClaimsRaw": "9",
+        "grossClaimsMinusDebtRaw": "-1",
+        "immediatelyLiquidUsxRaw": "0",
+        "debtRepaidInFull": false,
+        "transactionCommitted": false,
+        "realizedOutsiderNetAssetGainRaw": "0",
+        "conclusion": "The same-transaction withdrawal is rejected; Solana rolls the entire transaction back. Even before rollback, the user has a time-locked own claim, not freely repayable USX."
+      }
+    },
+    {
+      "label": "flash_lock_then_repay_1000000",
+      "metadata": {
+        "category": "atomic-prefix",
+        "amountRaw": "1000000",
+        "expected": "repay fails because principal was locked; entire transaction rolls back"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "customCode": 1,
+        "idl": null,
+        "failedLine": "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      },
+      "unitsConsumed": 75194,
+      "loadedAccountsDataSize": 11224299,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "1000000",
+            "share_amount": "953178",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828071180482",
+            "shares_supply_after": "4601909113324"
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1366257 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34966 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1349237 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1346948 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRJAQg8AAAAAAFqLDgAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAMK4dx9kBAAAAAAAAAAAAADscSh3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1365034 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 192 of 1324998 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20582 of 1345388 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 786,
+        "messageBytes": 722,
+        "staticAccountKeys": 18,
+        "requiredSignatures": 1,
+        "instructions": 3,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "9bd1837ba7ba147cc07c0032f501a629d3e3bae8dadef79d97e44e6b685da9e4",
+        "wireBase64": "gQEACQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgMScRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAiyGg2DE8pd2HWK/qKq00S4Z7QmLluabnkWDOLMrQ9qxH7WURg/f2bj25kV/yNeOGV30vsfiuL4CFE6Me5zz0W5Thjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EGp9UXGHvRZjXa1ARV/cLAwSTGjyFWdaXbustfCAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCZmER3SDoiN9SnoujAD62+iTbre+1Ra17W7M9llUw6wXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZNLfPmawgKFUvD4sMZaIMp7Gk64aRb0kIFRECywkGJ/ywFwVAAAAAAQJDBAADwsQAAkMEQAACgsBDAIDBAkJDQ6H5zSnBzTUwUBCDwAAAAAAAAAQEQUGDAcIAw4VE9Ar7T7/V0BCDwAAAAAAAAoLAQwCAwQJCQ0OuXUAy2D1tLpAQg8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "flash_lock_unlock_withdraw_repay_exact_1000000",
+      "metadata": {
+        "category": "atomic-target-exact",
+        "amountRaw": "1000000",
+        "shareAmountRaw": "953178",
+        "expected": "cannot withdraw the newly created claim before seven-day cooldown; no commit or outsider gain"
+      },
+      "contextSlot": 457360811,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            3,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "customCode": 6013,
+        "idl": {
+          "code": 6013,
+          "name": "CooldownNotEnded",
+          "msg": "The cooldown period is not ended yet."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      },
+      "unitsConsumed": 98745,
+      "loadedAccountsDataSize": 11224894,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "1000000",
+            "share_amount": "953178",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "4828071180482",
+            "shares_supply_after": "4601909113324"
+          }
+        },
+        {
+          "name": "UnlockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "999999",
+            "share_amount": "953178",
+            "unvested_amount": "111761931",
+            "total_assets_before": "4828071180482",
+            "shares_supply_before": "4601909113324",
+            "total_assets_after": "4828070180483",
+            "shares_supply_after": "4601908160146",
+            "cooldown_escrow_asset_amount": "999999",
+            "cooldown_end": "1792180337",
+            "is_init_needed": false
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363557 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37666 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346537 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1344248 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRJAQg8AAAAAAFqLDgAAAAAAC1qpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAAMK4dx9kBAAAAAAAAAAAAADscSh3LwQAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19646 of 1362334 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1318146 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1315840 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: aQHrkER7S3sXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRI/Qg8AAAAAAFqLDgAAAAAAC1qpBgAAAADCuHcfZAQAAAAAAAAAAAAA7HEody8EAAAAAAAAAAAAAIN2aB9kBAAAAAAAAAAAAACS5hl3LwQAAAAAAAAAAAAAP0IPAAAAAABxgNJqAAAAAAA=",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 28787 of 1342688 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_cooldown.rs:14. Error Code: CooldownNotEnded. Error Number: 6013. Error Message: The cooldown period is not ended yet..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 12646 of 1313901 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 935,
+        "messageBytes": 871,
+        "staticAccountKeys": 21,
+        "requiredSignatures": 1,
+        "instructions": 5,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "c63117a65b932177df61882065a92f9651e6d1c075f1709fdbc3d2c767a76958",
+        "wireBase64": "gQEACgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgUVcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cMUUp/PhcVvfzZDxilvkazu9tP5Uo+FLgid9jpY15GyY6gIfJaTOctRU0umPqJhKPOjbiwt4vGa1rTx9Ux01X1gSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsF2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGTS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFwVAAAAAAQLDBAAEQsQABENEAARCAgACwwRAAAMDQEOAgMECwsPEIfnNKcHNNTBQEIPAAAAAAAAABITBQYOBwgDEBUT0CvtPv9XQEIPAAAAAAAAABITBQYOBwgJChAUZZsoFZ69OMtaiw4AAAAAAAAAEg4DCQoQtxJGnJRtoSIADA0BDgIDBAsLDxC5dQDLYPW0ukBCDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "economicReconciliation": {
+        "flashDebtRaw": "1000000",
+        "mintedSharesRaw": "953178",
+        "burnedSharesRaw": "953178",
+        "residualSharesRaw": "0",
+        "cooldownClaimRaw": "999999",
+        "residualSharesClaimValueRawAtUnlockPrice": "0",
+        "grossUserClaimsRaw": "999999",
+        "grossClaimsMinusDebtRaw": "-1",
+        "immediatelyLiquidUsxRaw": "0",
+        "debtRepaidInFull": false,
+        "transactionCommitted": false,
+        "realizedOutsiderNetAssetGainRaw": "0",
+        "conclusion": "The same-transaction withdrawal is rejected; Solana rolls the entire transaction back. Even before rollback, the user has a time-locked own claim, not freely repayable USX."
+      }
+    },
+    {
+      "label": "flash_lock_then_repay_2875264254872",
+      "metadata": {
+        "category": "atomic-prefix",
+        "amountRaw": "2875264254872",
+        "expected": "repay fails because principal was locked; entire transaction rolls back"
+      },
+      "contextSlot": 457360816,
+      "err": {
+        "InstructionError": [
+          2,
+          {
+            "Custom": 1
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            2,
+            {
+              "Custom": 1
+            }
+          ]
+        },
+        "customCode": 1,
+        "idl": null,
+        "failedLine": "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      },
+      "unitsConsumed": 75527,
+      "loadedAccountsDataSize": 11224299,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2875264254872",
+            "share_amount": "2740641255221",
+            "unvested_amount": "111755839",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "7703334435354",
+            "shares_supply_after": "7342549415367"
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1366253 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 34970 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1348904 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1346615 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRKYwxpznQIAADXP8hp+AgAAP0KpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAABo6g5IBBwAAAAAAAAAAAADHtQySrQYAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19975 of 1365030 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program log: Error: insufficient funds",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 192 of 1324665 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA failed: custom program error: 0x1",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 20582 of 1345055 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD failed: custom program error: 0x1"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 786,
+        "messageBytes": 722,
+        "staticAccountKeys": 18,
+        "requiredSignatures": 1,
+        "instructions": 3,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "b35c0cae75cf398459b42f2810d1b8153192fd7d64b026b37a9024e50f786061",
+        "wireBase64": "gQEACQwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgMScRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cBLKssRJYzONoLEGLqHL/PfkRAnEvFa8Str5ps0NbAAiyGg2DE8pd2HWK/qKq00S4Z7QmLluabnkWDOLMrQ9qxH7WURg/f2bj25kV/yNeOGV30vsfiuL4CFE6Me5zz0W5Thjx5h+sIp+KiD/iVAwQXMl/hkImTK0X70W1JU0Cm/EGp9UXGHvRZjXa1ARV/cLAwSTGjyFWdaXbustfCAAAAAbd9uHXZaGT2cvhRs7reawctIXtX1s3kTqM9YV+/wCpCZmER3SDoiN9SnoujAD62+iTbre+1Ra17W7M9llUw6wXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZNLfPmawgKFUvD4sMZaIMp7Gk64aRb0kIFRECywkGJ/ywFwVAAAAAAQJDBAADwsQAAkMEQAACgsBDAIDBAkJDQ6H5zSnBzTUwZjDGnOdAgAAAAAQEQUGDAcIAw4VE9Ar7T7/V5jDGnOdAgAAAAoLAQwCAwQJCQ0OuXUAy2D1tLqYwxpznQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    {
+      "label": "flash_lock_unlock_withdraw_repay_exact_2875264254872",
+      "metadata": {
+        "category": "atomic-target-exact",
+        "amountRaw": "2875264254872",
+        "shareAmountRaw": "2740641255221",
+        "expected": "cannot withdraw the newly created claim before seven-day cooldown; no commit or outsider gain"
+      },
+      "contextSlot": 457360816,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            3,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "customCode": 6013,
+        "idl": {
+          "code": 6013,
+          "name": "CooldownNotEnded",
+          "msg": "The cooldown period is not ended yet."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      },
+      "unitsConsumed": 99406,
+      "loadedAccountsDataSize": 11224894,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2875264254872",
+            "share_amount": "2740641255221",
+            "unvested_amount": "111755839",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "7703334435354",
+            "shares_supply_after": "7342549415367"
+          }
+        },
+        {
+          "name": "UnlockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2875264254871",
+            "share_amount": "2740641255221",
+            "unvested_amount": "111755839",
+            "total_assets_before": "7703334435354",
+            "shares_supply_before": "7342549415367",
+            "total_assets_after": "4828070180483",
+            "shares_supply_after": "4601908160146",
+            "cooldown_escrow_asset_amount": "2875264254871",
+            "cooldown_end": "1792698738",
+            "is_init_needed": false
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363553 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37670 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346204 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1343915 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRKYwxpznQIAADXP8hp+AgAAP0KpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAABo6g5IBBwAAAAAAAAAAAADHtQySrQYAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19975 of 1362330 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1317483 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1315177 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: aQHrkER7S3sXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRKXwxpznQIAADXP8hp+AgAAP0KpBgAAAAAaOoOSAQcAAAAAAAAAAAAAx7UMkq0GAAAAAAAAAAAAAIN2aB9kBAAAAAAAAAAAAACS5hl3LwQAAAAAAAAAAAAAl8Mac50CAAByadpqAAAAAAA=",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 29115 of 1342355 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_cooldown.rs:14. Error Code: CooldownNotEnded. Error Number: 6013. Error Message: The cooldown period is not ended yet..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 12646 of 1313240 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 935,
+        "messageBytes": 871,
+        "staticAccountKeys": 21,
+        "requiredSignatures": 1,
+        "instructions": 5,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "f1f3bf8120db98522389d0f009644c71bf21d35fb5b8b795aa90dd3f0e56f3f1",
+        "wireBase64": "gQEACgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgUVcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cMUUp/PhcVvfzZDxilvkazu9tP5Uo+FLgid9jpY15GyY6gIfJaTOctRU0umPqJhKPOjbiwt4vGa1rTx9Ux01X1gSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsF2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGTS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFwVAAAAAAQLDBAAEQsQABENEAARCAgACwwRAAAMDQEOAgMECwsPEIfnNKcHNNTBmMMac50CAAAAABITBQYOBwgDEBUT0CvtPv9XmMMac50CAAAAABITBQYOBwgJChAUZZsoFZ69OMs1z/IafgIAAAAAEg4DCQoQtxJGnJRtoSIADA0BDgIDBAsLDxC5dQDLYPW0upjDGnOdAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "economicReconciliation": {
+        "flashDebtRaw": "2875264254872",
+        "mintedSharesRaw": "2740641255221",
+        "burnedSharesRaw": "2740641255221",
+        "residualSharesRaw": "0",
+        "cooldownClaimRaw": "2875264254871",
+        "residualSharesClaimValueRawAtUnlockPrice": "0",
+        "grossUserClaimsRaw": "2875264254871",
+        "grossClaimsMinusDebtRaw": "-1",
+        "immediatelyLiquidUsxRaw": "0",
+        "debtRepaidInFull": false,
+        "transactionCommitted": false,
+        "realizedOutsiderNetAssetGainRaw": "0",
+        "conclusion": "The same-transaction withdrawal is rejected; Solana rolls the entire transaction back. Even before rollback, the user has a time-locked own claim, not freely repayable USX."
+      }
+    },
+    {
+      "label": "flash_lock_unlock_withdraw_repay_conservative_2875264254872",
+      "metadata": {
+        "category": "atomic-target-near-available",
+        "amountRaw": "2875264254872",
+        "shareAmountRaw": "2740640255221",
+        "shareSafetyReductionRaw": "1000000",
+        "expected": "stress current liquidity while avoiding clock-sensitive one-unit overburn; cooldown still blocks unwind"
+      },
+      "contextSlot": 457360816,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6013
+          }
+        ]
+      },
+      "error": {
+        "raw": {
+          "InstructionError": [
+            3,
+            {
+              "Custom": 6013
+            }
+          ]
+        },
+        "customCode": 6013,
+        "idl": {
+          "code": 6013,
+          "name": "CooldownNotEnded",
+          "msg": "The cooldown period is not ended yet."
+        },
+        "failedLine": "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      },
+      "unitsConsumed": 99406,
+      "loadedAccountsDataSize": 11224894,
+      "events": [
+        {
+          "name": "LockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2875264254872",
+            "share_amount": "2740641255221",
+            "unvested_amount": "111755839",
+            "total_assets_before": "4828070180482",
+            "shares_supply_before": "4601908160146",
+            "total_assets_after": "7703334435354",
+            "shares_supply_after": "7342549415367"
+          }
+        },
+        {
+          "name": "UnlockEvent",
+          "fields": {
+            "controller": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM",
+            "yield_pool": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT",
+            "user": "8cMVF74wYeTpM1yi1tQSYYhTHsoFSbzpXvapFk9MGo6Z",
+            "asset_amount": "2875263205750",
+            "share_amount": "2740640255221",
+            "unvested_amount": "111755839",
+            "total_assets_before": "7703334435354",
+            "shares_supply_before": "7342549415367",
+            "total_assets_after": "4828071229604",
+            "shares_supply_after": "4601909160146",
+            "cooldown_escrow_asset_amount": "2875263205750",
+            "cooldown_end": "1792698738",
+            "is_init_needed": false
+          }
+        }
+      ],
+      "monitoredAccounts": [
+        {
+          "label": "outsiderUsx",
+          "address": "8DWKv6FnQmjjNZjWTfsLAi5SZCNjRqDrfXbFzMZneYLy"
+        },
+        {
+          "label": "outsiderEusx",
+          "address": "9upyfsTW9LMCSuworyLRQ6w9nzgD8BVeZxZDH3P5f5x"
+        },
+        {
+          "label": "assetVault",
+          "address": "2SGicAhchh23nsrtWrur7zPAdb4hHtnyThQVPfza8CHA"
+        },
+        {
+          "label": "shareMint",
+          "address": "3ThdFZQKM6kRyVGLG48kaPg5TRMhYMKY1iCRa9xop1WC"
+        },
+        {
+          "label": "yieldPool",
+          "address": "2rjmJdxZeBLKjUjKjrSdtSqshgXbLEcPbjiJZ2vLNcCT"
+        },
+        {
+          "label": "vestingSchedule",
+          "address": "FCA4A8W8qzcXGDyBaQ8fiSqr2VowSihiz2bJKN9LcLwb"
+        },
+        {
+          "label": "outsiderCooldown",
+          "address": "4KL9Uomii7BF2FfhBzrAoNsBMfPqq5qD2jecYcse1mYZ"
+        },
+        {
+          "label": "outsiderCooldownVault",
+          "address": "4wNKXYB1ESeD4kg2WvxomXaiu5BqYL2puaMAhomYcjaD"
+        },
+        {
+          "label": "klendReserve",
+          "address": "H2pmnDSjfxeQ8zUeyUohokegYbXZgkjH4kgmoQVybyAX"
+        },
+        {
+          "label": "klendSupply",
+          "address": "7Dow2t58RhFkqd1M2DLuZCaS5cGivXHC7WCDT632Nhsf"
+        },
+        {
+          "label": "klendFeeVault",
+          "address": "FzKdxfvcLVZvskpmWiLS6Z7bEKrJgCKRaLBvoYPMuMPt"
+        },
+        {
+          "label": "controller",
+          "address": "2aHdm37djj4c21ztMRBmmo4my6RtzN5Nn58Y39rpWbRM"
+        }
+      ],
+      "changes": {},
+      "after": {
+        "outsiderUsx": {
+          "exists": false
+        },
+        "outsiderEusx": {
+          "exists": false
+        },
+        "assetVault": {
+          "exists": false
+        },
+        "shareMint": {
+          "exists": false
+        },
+        "yieldPool": {
+          "exists": false
+        },
+        "vestingSchedule": {
+          "exists": false
+        },
+        "outsiderCooldown": {
+          "exists": false
+        },
+        "outsiderCooldownVault": {
+          "exists": false
+        },
+        "klendReserve": {
+          "exists": false
+        },
+        "klendSupply": {
+          "exists": false
+        },
+        "klendFeeVault": {
+          "exists": false
+        },
+        "controller": {
+          "exists": false
+        }
+      },
+      "logs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1363553 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 37670 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Lock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1346204 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 120 of 1343915 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: TCUGug4q/Q8XYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRKYwxpznQIAADXP8hp+AgAAP0KpBgAAAACCdmgfZAQAAAAAAAAAAAAAkuYZdy8EAAAAAAAAAAAAABo6g5IBBwAAAAAAAAAAAADHtQySrQYAAAAAAAAAAAAA",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 19975 of 1362330 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Unlock",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1317483 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 131 of 1315177 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: aQHrkER7S3sXYqlYIWlU9M6ucwMbqDHAmBP0DekRgaASrZup6AioZBuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9ccRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRJ2wQpznQIAAPWM4xp+AgAAP0KpBgAAAAAaOoOSAQcAAAAAAAAAAAAAx7UMkq0GAAAAAAAAAAAAAKR4eB9kBAAAAAAAAAAAAADSKCl3LwQAAAAAAAAAAAAAdsEKc50CAAByadpqAAAAAAA=",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 29115 of 1342355 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 success",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 invoke [1]",
+        "Program log: Instruction: Withdraw",
+        "Program log: AnchorError thrown in programs/yield-vault/src/utils/validate_cooldown.rs:14. Error Code: CooldownNotEnded. Error Number: 6013. Error Message: The cooldown period is not ended yet..",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 consumed 12646 of 1313240 compute units",
+        "Program eUSXyKoZ6aGejYVbnp3wtWQ1E8zuokLAJPecPxxtgG3 failed: custom program error: 0x177d"
+      ],
+      "message": {
+        "version": 1,
+        "wireBytes": 935,
+        "messageBytes": 871,
+        "staticAccountKeys": 21,
+        "requiredSignatures": 1,
+        "instructions": 5,
+        "computeUnitLimit": 1400000,
+        "loadedAccountsDataSizeLimit": 67108864,
+        "wireSha256": "ea7dec078e1d3e0587d43ecd32be2ba0aef63422066ebe64422840cdf6f5641c",
+        "wireBase64": "gQEACgwAAAD3/k1BoVYTmklgrAon3NfMEn3ibJYFtOgptSPXtCIBSgUVcRBNLUOoTXb+i4miSMQpyZiEEZq+qiPv2OSqk0todRLuMpZxuIxLQLpXckNcPpjHlawetA3WhjMAgDsr8GOtGFxuKDBtvGw87o6Q9VNsT/H55sEgOAVpH5iRYbsZk8TyazXv9jaiKkSCkE9vNU8WE1xVm3Hybf+byfnK+3L9kPressvY9KwriNTMOdwUQsS41VEYrvA/FvMoVFVEZequ3ySOaOTfTLTNXnWs8v3QLJgHxMDU0gzJkYzMFemr9wi1Akhg3LXe9Sj5sXh3F3lXKtBJ7mbI80ja5pXNm0DR57cVVPqT04q186HUZwX6UIgm1paq2xnmWBz3AyvH3IShfRuZf/SU9r+g3guILt/iq83wlWOh1k6LeXPLBJGUhi9cMUUp/PhcVvfzZDxilvkazu9tP5Uo+FLgid9jpY15GyY6gIfJaTOctRU0umPqJhKPOjbiwt4vGa1rTx9Ux01X1gSyrLESWMzjaCxBi6hy/z35EQJxLxWvEra+abNDWwAIshoNgxPKXdh1iv6iqtNEuGe0Ji5bmm55FgzizK0PasR+1lEYP39m49uZFf8jXjhld9L7H4ri+AhROjHuc89FuU4Y8eYfrCKfiog/4lQMEFzJf4ZCJkytF+9FtSVNApvxBqfVFxh70WY12tQEVf3CwMEkxo8hVnWl27rLXwgAAAAG3fbh12Whk9nL4UbO63msHLSF7V9bN5E6jPWFfv8AqQmZhEd0g6IjfUp6LowA+tvok263vtUWte1uzPZZVMOsF2KpWCFpVPTOrnMDG6gxwJgT9A3pEYGgEq2bqegIqGTS3z5msIChVLw+LDGWiDKexpOuGkW9JCBURAssJBif8gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwFwVAAAAAAQLDBAAEQsQABENEAARCAgACwwRAAAMDQEOAgMECwsPEIfnNKcHNNTBmMMac50CAAAAABITBQYOBwgDEBUT0CvtPv9XmMMac50CAAAAABITBQYOBwgJChAUZZsoFZ69OMv1jOMafgIAAAAAEg4DCQoQtxJGnJRtoSIADA0BDgIDBAsLDxC5dQDLYPW0upjDGnOdAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      },
+      "economicReconciliation": {
+        "flashDebtRaw": "2875264254872",
+        "mintedSharesRaw": "2740641255221",
+        "burnedSharesRaw": "2740640255221",
+        "residualSharesRaw": "1000000",
+        "cooldownClaimRaw": "2875263205750",
+        "residualSharesClaimValueRawAtUnlockPrice": "1049120",
+        "grossUserClaimsRaw": "2875264254870",
+        "grossClaimsMinusDebtRaw": "-2",
+        "immediatelyLiquidUsxRaw": "0",
+        "debtRepaidInFull": false,
+        "transactionCommitted": false,
+        "realizedOutsiderNetAssetGainRaw": "0",
+        "conclusion": "The same-transaction withdrawal is rejected; Solana rolls the entire transaction back. Even before rollback, the user has a time-locked own claim, not freely repayable USX."
+      }
+    }
+  ]
+}

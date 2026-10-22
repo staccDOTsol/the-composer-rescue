@@ -1,0 +1,1396 @@
+{
+  "generatedAt": "2026-10-15T20:05:42.250Z",
+  "scope": "isolated Surfpool fork with current deployed programs; no mainnet send",
+  "fork": "http://127.0.0.1:9097",
+  "attacker": "D2xmz7XHTcCBMf4fosmeUSSJNdJ8AGo93x9nx5kuY2jn",
+  "syntheticStartingUSDCraw": "5000000000000",
+  "syntheticStartingSUSDaiRaw": "0",
+  "sourceTokenAccounts": [
+    "X3MtceSSRBXYmhuD9j2u1WCbu6eV4romZF4S67VL9D1",
+    "GmyD7LwCfLmLtb653YRSZ5WYZ1NxGpaBJ19VtjqDjkYz"
+  ],
+  "target": {
+    "vaultId": 103,
+    "oracle": "Hf9Yw2a1EA9aTUbHS8N7AoyqXvWrRvsZqGJuC4YVeaXN",
+    "dex": "G41Dqz9A1v39TT2MryR5BkZU2a7UzfUkiRHyJGuRfeyF"
+  },
+  "lender": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "availableRaw": "8011084472352",
+    "flashFeeSf": "0"
+  },
+  "signatureVerification": true,
+  "v1Version": 1,
+  "liveSubmission": false,
+  "watch": [
+    {
+      "label": "attacker",
+      "address": "D2xmz7XHTcCBMf4fosmeUSSJNdJ8AGo93x9nx5kuY2jn"
+    },
+    {
+      "label": "attackerSUSDai",
+      "address": "CutwpmfSPB3nYm6XsuDXaf4ZWJKjU1fPLi8zr2DkWCXZ"
+    },
+    {
+      "label": "attackerUSDC",
+      "address": "2uFH2shFT54yBDF5d6W52QeDQDYvmBwEDShWxCpQhAp9"
+    },
+    {
+      "label": "flashSupply",
+      "address": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB"
+    },
+    {
+      "label": "flashFeeVault",
+      "address": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj"
+    },
+    {
+      "label": "dexSupply0",
+      "address": "EdRupWtgK6FRjTHCo2TgbjDUGe91oNQno1tG6Vj35fvW"
+    },
+    {
+      "label": "dexSupply1",
+      "address": "8qXBLcG7hm1NKeAxGbX7kxEy9HhevX4SN6yAmDduQNYk"
+    },
+    {
+      "label": "dex",
+      "address": "G41Dqz9A1v39TT2MryR5BkZU2a7UzfUkiRHyJGuRfeyF"
+    },
+    {
+      "label": "oracle",
+      "address": "Hf9Yw2a1EA9aTUbHS8N7AoyqXvWrRvsZqGJuC4YVeaXN"
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "address": "Kvvdt33shaPjMeWfhnxKgEP447zKN79YuhS5AvztEyP"
+    }
+  ],
+  "before": [
+    {
+      "label": "attacker",
+      "rawAmount": null,
+      "lamports": 20000000000
+    },
+    {
+      "label": "attackerSUSDai",
+      "rawAmount": "0",
+      "lamports": 1559560
+    },
+    {
+      "label": "attackerUSDC",
+      "rawAmount": "5000000000000",
+      "lamports": 1488440
+    },
+    {
+      "label": "flashSupply",
+      "rawAmount": "8011084542357",
+      "lamports": 2039280
+    },
+    {
+      "label": "flashFeeVault",
+      "rawAmount": "0",
+      "lamports": 2039280
+    },
+    {
+      "label": "dexSupply0",
+      "rawAmount": null,
+      "lamports": 1280160
+    },
+    {
+      "label": "dexSupply1",
+      "rawAmount": null,
+      "lamports": 1280160
+    },
+    {
+      "label": "dex",
+      "rawAmount": null,
+      "lamports": 2894181
+    },
+    {
+      "label": "oracle",
+      "rawAmount": null,
+      "lamports": 2067560
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "rawAmount": null,
+      "lamports": 1010920
+    }
+  ],
+  "results": [
+    {
+      "amountRaw": "0",
+      "slot": 457363860,
+      "err": null,
+      "bytes": 456,
+      "addresses": 10,
+      "instructions": 1,
+      "requiredSignatures": 1,
+      "computeUnits": 52285,
+      "oracleReturns": [
+        {
+          "supplyX15": "2002155642630428",
+          "borrowX15": "2002155642630428"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2002155642630428",
+        "Program log: smart_col_exchange_rate: 2002155642630428",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 52285 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc HDHdL/McBwAAAAAAAAAAABwx3S/zHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "amountRaw": "1000",
+      "slot": 457363860,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 383667,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155642629819",
+          "borrowX15": "2002155642629819"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155642630103",
+          "borrowX15": "2002155642630103"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999999999999",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002155642630103",
+        "Program log: smart_col_exchange_rate: 2002155642630103",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37179 of 1075137 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 1y/dL/McBwAAAAAAAAAAANcv3S/zHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1017570 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037958 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-1",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1000000",
+      "slot": 457363861,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 383765,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155642891661",
+          "borrowX15": "2002155642891661"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155643275097",
+          "borrowX15": "2002155643275097"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999999999552",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002155643275097",
+        "Program log: smart_col_exchange_rate: 2002155643275097",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37175 of 1075035 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc WQfnL/McBwAAAAAAAAAAAFkH5y/zHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1017472 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037860 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-448",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "100000000",
+      "slot": 457363861,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384981,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155610026072",
+          "borrowX15": "2002155610026072"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155648364101",
+          "borrowX15": "2002155648364101"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999999955329",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002155648364101",
+        "Program log: smart_col_exchange_rate: 2002155648364101",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37179 of 1073823 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc Ra40MPMcBwAAAAAAAAAAAEWuNDDzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016256 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1036644 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-44671",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1000000000",
+      "slot": 457363861,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 385069,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155311285913",
+          "borrowX15": "2002155311285913"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002155694628903",
+          "borrowX15": "2002155694628903"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999999553300",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002155694628903",
+        "Program log: smart_col_exchange_rate: 2002155694628903",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37183 of 1073739 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc J6D2MvMcBwAAAAAAAAAAACeg9jLzHAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016168 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1036556 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-446700",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "100000000000",
+      "slot": 457363861,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384457,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002122886230411",
+          "borrowX15": "2002122886230411"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002160783706795",
+          "borrowX15": "2002160783706795"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999955330217",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002160783706795",
+        "Program log: smart_col_exchange_rate: 2002160783706795",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37179 of 1074347 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc q8pLYvQcBwAAAAAAAAAAAKvKS2L0HAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016780 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037168 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-44669783",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "500000000000",
+      "slot": 457363861,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384476,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002000683159433",
+          "borrowX15": "2002000683159433"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002181344790031",
+          "borrowX15": "2002181344790031"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999776653748",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002181344790031",
+        "Program log: smart_col_exchange_rate: 2002181344790031",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37181 of 1074330 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc DwbVK/kcBwAAAAAAAAAAAA8G1Sv5HAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016761 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037149 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-223346252",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1000000000000",
+      "slot": 457363862,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384579,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001867790461352",
+          "borrowX15": "2001867790461352"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002207044488409",
+          "borrowX15": "2002207044488409"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999553312478",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002207044488409",
+        "Program log: smart_col_exchange_rate: 2002207044488409",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37179 of 1074225 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 2UynJ/8cBwAAAAAAAAAAANlMpyf/HAcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016658 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037046 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-446687522",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1500000000000",
+      "slot": 457363862,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384592,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001756973652002",
+          "borrowX15": "2001756973652002"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002232742743974",
+          "borrowX15": "2002232742743974"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999329973416",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002232742743974",
+        "Program log: smart_col_exchange_rate: 2002232742743974",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37187 of 1074220 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc po9jIwUdBwAAAAAAAAAAAKaPYyMFHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016645 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037033 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-670026584",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1800000000000",
+      "slot": 457363862,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384470,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001701083539774",
+          "borrowX15": "2001701083539774"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002248161181860",
+          "borrowX15": "2002248161181860"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999195969885",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002248161181860",
+        "Program log: smart_col_exchange_rate: 2002248161181860",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37183 of 1074338 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc pEBmuggdBwAAAAAAAAAAAKRAZroIHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016767 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037155 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-804030115",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "2000000000000",
+      "slot": 457363862,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384473,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001668241257949",
+          "borrowX15": "2001668241257949"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002258439982049",
+          "borrowX15": "2002258439982049"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999106633789",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002258439982049",
+        "Program log: smart_col_exchange_rate: 2002258439982049",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37181 of 1074333 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc 4UsQHwsdBwAAAAAAAAAAAOFLEB8LHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016764 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037152 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-893366211",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "2200000000000",
+      "slot": 457363862,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384502,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001638933847577",
+          "borrowX15": "2001638933847577"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002268718687840",
+          "borrowX15": "2002268718687840"
+        }
+      ],
+      "attackerUsdcPostRaw": "4999017297158",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002268718687840",
+        "Program log: smart_col_exchange_rate: 2002268718687840",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37181 of 1074304 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc YOa4gw0dBwAAAAAAAAAAAGDmuIMNHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016735 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037123 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-982702842",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "2500000000000",
+      "slot": 457363863,
+      "err": null,
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 384477,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001601601810517",
+          "borrowX15": "2001601601810517"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2002284136628110",
+          "borrowX15": "2002284136628110"
+        }
+      ],
+      "attackerUsdcPostRaw": "4998883290823",
+      "attackerSUSDaiPostRaw": "0",
+      "lenderPostRaw": "8011084542357",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2002284136628110",
+        "Program log: smart_col_exchange_rate: 2002284136628110",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 37183 of 1074331 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc jv+zGhEdBwAAAAAAAAAAAI7/sxoRHQcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1016760 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21625 of 1037148 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUsdcDeltaRaw": "-1116709177",
+      "attackerSUSDaiDeltaRaw": "0",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "3000000000000",
+      "slot": 457363863,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315903,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001557063845327",
+          "borrowX15": "2001557063845327"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DgF7+dLoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12835 of 1116989 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10716 of 1094813 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105698 of 1189795 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "3500000000000",
+      "slot": 457363863,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315899,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001534635902299",
+          "borrowX15": "2001534635902299"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DQG7T3S4DAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12836 of 1116994 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10716 of 1094817 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105700 of 1189801 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "3800000000000",
+      "slot": 457363863,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315906,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001531795501574",
+          "borrowX15": "2001531795501574"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DgERTtnQDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12834 of 1116987 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10718 of 1094812 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105707 of 1189801 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "4000000000000",
+      "slot": 457363863,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315910,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001534326526112",
+          "borrowX15": "2001534326526112"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DAH6oRqMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12836 of 1116984 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10717 of 1094807 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105704 of 1189794 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "4200000000000",
+      "slot": 457363864,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315911,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001540398482686",
+          "borrowX15": "2001540398482686"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DgLf91tEDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12834 of 1116982 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10718 of 1094807 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105702 of 1189791 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "4500000000000",
+      "slot": 457363864,
+      "err": {
+        "InstructionError": [
+          3,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 315921,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        },
+        {
+          "supplyX15": "2001556144858982",
+          "borrowX15": "2001556144858982"
+        },
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIgzuD6EcL7eJQVKYWCirah++YXHilmnx5a9ia6eWgK/DwI19rxcEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 12835 of 1116973 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC ABCl1OgAAAAAEKXU6AAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 10718 of 1094797 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 105711 of 1189790 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "5000000000000",
+      "slot": 457363864,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159549,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hniZvzhUFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NDTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19875 of 1280769 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC DTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11421 of 1251872 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118856 of 1359307 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "5500000000000",
+      "slot": 457363865,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159549,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hCSDrK5gFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NDTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19876 of 1280771 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC DTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11422 of 1251873 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118856 of 1359307 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "6000000000000",
+      "slot": 457363865,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159544,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11h51gBkhoGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NDTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19873 of 1280771 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC DTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11420 of 1251876 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118851 of 1359307 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "8000000000000",
+      "slot": 457363865,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159611,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hxsBxgCQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5NDTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19934 of 1280767 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC DTvrJfMAAAAujFXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11422 of 1251811 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118918 of 1359307 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "9000000000000",
+      "slot": 457363866,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159609,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hEJtdqykJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5N9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19936 of 1280771 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11422 of 1251813 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118917 of 1359308 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "9500000000000",
+      "slot": 457363866,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159609,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hrm7DTawJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5N9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19936 of 1280769 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11420 of 1251811 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118917 of 1359308 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "9800000000000",
+      "slot": 457363866,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6028
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 159610,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: Operate",
+        "Program data: tAhRRxOErQjfpEv2PKnxhELhxY2/rykdfTDvPLhHKCr+k5vKZu/zIsb6evO+2606PWXzaqvJdDGxu+TC0vbg5HymAgNFL11hVQdYs/oJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACyzOO8hCxm9JqlYsmTUDs3JM5AWUVyPtDVCR+0wtvuTbLM47yELGb0mqViyZNQOzckzkBZRXI+0NUJH7TC2+5N9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 19935 of 1280767 compute units",
+        "Program return: jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC 9ELrJfMAAAC9lVXY9gAAAA==",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC success",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC invoke [2]",
+        "Program log: Instruction: Operate",
+        "Program log: AnchorError occurred. Error Code: WithdrawalLimitReached. Error Number: 6028. Error Message: USER_MODULE_WITHDRAWAL_LIMIT_REACHED.",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC consumed 11420 of 1251810 compute units",
+        "Program jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC failed: custom program error: 0x178c",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 118918 of 1359308 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x178c"
+      ]
+    },
+    {
+      "amountRaw": "9874701308284",
+      "slot": 457363866,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6022
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 96764,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4657 of 1344754 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/dex/src/utils/helpers.rs:107. Error Code: DexTokenReservesTooLow. Error Number: 6022. Error Message: DEX_TOKEN_RESERVES_TOO_LOW.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 56072 of 1359308 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1786"
+      ]
+    },
+    {
+      "amountRaw": "9874701308285",
+      "slot": 457363866,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6022
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 96765,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4657 of 1344754 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: AnchorError thrown in programs/dex/src/utils/helpers.rs:107. Error Code: DexTokenReservesTooLow. Error Number: 6022. Error Message: DEX_TOKEN_RESERVES_TOO_LOW.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 56073 of 1359308 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1786"
+      ]
+    },
+    {
+      "amountRaw": "9874701308286",
+      "slot": 457363867,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1389,
+      "addresses": 33,
+      "instructions": 6,
+      "requiredSignatures": 1,
+      "computeUnits": 95379,
+      "oracleReturns": [
+        {
+          "otherOracleReturnHex": "c74387d1b1f903000000000000000000"
+        }
+      ],
+      "attackerUsdcPostRaw": null,
+      "attackerSUSDaiPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapOut",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [2]",
+        "Program log: Instruction: GetCenterPrice",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 4657 of 1344754 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:442",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 54687 of 1359308 compute units",
+        "Program return: jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd x0OH0bH5AwAAAAAAAAAAAA==",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

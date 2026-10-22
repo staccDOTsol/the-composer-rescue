@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-10-15T20:10:56.845Z",
+  "officialRepository": "https://github.com/orca-so/xorca",
+  "repositoryCheckout": {
+    "path": "/tmp/orca-xorca-source.YZrfjD",
+    "head": "05fe66b67c95271cb07aa42c83b9fdfd8a39b936",
+    "baseline": "9fa960c597069dbd25da9c7950d2b8a87e7acf0e",
+    "baselineSubject": "Update finalized mainnet addresses",
+    "baselineCommittedAt": "2025-09-29T13:10:54+01:00",
+    "programSourceDiffFromBaseline": "diff --git a/solana-program/src/util/math.rs b/solana-program/src/util/math.rs\nindex d110c2d..0b7cf6a 100644\n--- a/solana-program/src/util/math.rs\n+++ b/solana-program/src/util/math.rs\n@@ -9,6 +9,9 @@ pub fn convert_orca_to_xorca(\n     non_escrowed_orca_amount: u64,\n     xorca_supply: u64,\n ) -> Result<u64, ProgramError> {\n+    // Note: The following transaction sent 0.000_001 xORCA to the Incinerator.\n+    //       Therefore, the xORCA token supply can never become 0 again.\n+    //       https://solscan.io/tx/5bcCrmP9RySyHyoetvu9bTrihDFS9Mgv3S2fNDJtty2rR66Cm1z5SYp4ugXeZ5x9erDbAiuk4q6kASKLuQUBeUF8\n     if (xorca_supply == 0) || (non_escrowed_orca_amount == 0) {\n         return Ok(orca_amount_to_convert);\n     }",
+    "executableSourceChangeFromBaseline": false,
+    "diffInterpretation": "Only three explanatory comment lines were added to util/math.rs."
+  },
+  "identity": {
+    "declaredProgramIdMatches": true,
+    "program": "StaKE6XNKVVhG8Qu9hDJBqCW3eRe7MDGLz17nJZetLT",
+    "programData": "7TdF3aLJXvwo24azTD3vBTMzr5ScscQUdHzdfcf41kbD",
+    "deploymentSlot": "370039372",
+    "upgradeAuthority": "GwH3Hiv5mACLX3ufTw1pFsrhSPon5tdw252DBs4Rx4PV"
+  },
+  "liveElf": {
+    "path": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/orca-xorca-current.so",
+    "bytes": 102624,
+    "sha256": "44d5ac6e34b4584890c44d72ea3f9af5ab2f8fcf2874a5f3a78ab6bc264f786b",
+    "programDataElfOffset": 45,
+    "equalsRpcDumpHash": true
+  },
+  "officialBuildSpecification": {
+    "file": "/tmp/orca-xorca-source.YZrfjD/docker-compose.yml",
+    "image": "solanafoundation/solana-verifiable-build:2.2.1",
+    "command": "cargo build-sbf --verbose --force-tools-install"
+  },
+  "localBuild": {
+    "path": "/tmp/orca-xorca-build/xorca_staking_program.so",
+    "bytes": 101536,
+    "sha256": "b169a9e4c91ad030584ec7037bf1a2290102256d8dd200d2aef581525ea67c6f",
+    "solanaCargoBuildSbf": "3.1.10",
+    "platformTools": "v1.52",
+    "sbfRustc": "1.89.0",
+    "byteForByteMatchLive": false,
+    "caveat": "This build used the installed toolchain, not the repository-pinned linux/amd64 verifiable-build container. The Docker CLI was present but its daemon was unavailable, so no claim of byte-for-byte source verification is made."
+  },
+  "liveBehavioralAlignment": {
+    "instructionNamesFoundInElf": [
+      "Stake",
+      "Unstake",
+      "Withdraw",
+      "Initialize",
+      "Set"
+    ],
+    "instructionDiscriminators": {
+      "Stake": 0,
+      "Unstake": 1,
+      "Withdraw": 2,
+      "Initialize": 3,
+      "Set": 4
+    },
+    "stateLayoutBytes": 2048,
+    "pendingWithdrawLayoutBytes": 1024,
+    "virtualOrcaRaw": "100",
+    "virtualXorcaRaw": "100",
+    "currentSignedV1SimulationArtifact": "/Users/stacc/the-composer-rescue/composer-runs/2026-10-15/orca-xorca-v1-simulations.json"
+  },
+  "priorAudit": {
+    "path": "/tmp/orca-xorca-source.YZrfjD/.audits/2025-09-24.pdf",
+    "auditor": "Sec3",
+    "auditedInitialCommit": "8affaea",
+    "relevantFindings": [
+      {
+        "id": "H-01",
+        "topic": "vault inflation",
+        "disposition": "fixed",
+        "fixCommits": [
+          "a6bf7cb",
+          "7ab1114"
+        ]
+      },
+      {
+        "id": "L-02",
+        "topic": "state validation",
+        "disposition": "fixed",
+        "fixCommits": [
+          "c18bd89"
+        ]
+      },
+      {
+        "id": "L-03",
+        "topic": "initialize signer/deployer restriction",
+        "disposition": "fixed",
+        "fixCommits": [
+          "dfe2152",
+          "4134804"
+        ]
+      },
+      {
+        "id": "L-04",
+        "topic": "pre-funded pending-withdraw PDA denial of service",
+        "disposition": "fixed",
+        "fixCommits": [
+          "b78f3c4"
+        ]
+      },
+      {
+        "id": "L-01",
+        "topic": "pre-created state PDA",
+        "disposition": "acknowledged deployment-only"
+      }
+    ],
+    "economicsInAuditScope": false
+  },
+  "conclusion": "Official source logic is stable from the finalized mainnet-address baseline and aligns with live identity/layout/behavior, but the current ELF is not formally reproducibly matched in this environment."
+}

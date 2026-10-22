@@ -1,0 +1,412 @@
+{
+  "observedAtUtc": "2026-10-15T22:36:12.840Z",
+  "source": "Jupiter Lite direct quote API",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "targetGoonfiAmmKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+  "method": "Exact-input direct GoonFi V2 quote only when route ammKey equals target, chained with a direct quote excluding GoonFi V2; both route orders.",
+  "limitations": "Quotes at nearby slots are not one atomic executable packet; no lender, fee, slippage, or route authorization modeled.",
+  "noMainnetTransaction": true,
+  "rows": [
+    {
+      "usdc": 100,
+      "direction": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "944609354",
+        "contextSlot": 457406260,
+        "error": null,
+        "priceImpactPct": "0.0001685727321073139017933442",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "944609354",
+        "outAmount": "99986938",
+        "contextSlot": 457406260,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "Aquifer",
+            "ammKey": "CNC5TaeNQEoSPfQKZ7GgfM4R8WYAJRKRSHFCHkf2H7ko",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "valid": true,
+      "netUsdcRaw": "-13062"
+    },
+    {
+      "usdc": 100,
+      "direction": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000",
+        "outAmount": "944742172",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0.0000279901622391068050613849",
+        "route": [
+          {
+            "label": "Quantum",
+            "ammKey": "2SixkjMjaLqXcEEJZfeth7qjH711R2uvp6TrUaHNMB65",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "944742172",
+        "outAmount": "100000658",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "valid": true,
+      "netUsdcRaw": "658"
+    },
+    {
+      "usdc": 1000,
+      "direction": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "9445904650",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0.000188565987255264961515445",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "9445904650",
+        "outAmount": "999831969",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "Aquifer",
+            "ammKey": "CNC5TaeNQEoSPfQKZ7GgfM4R8WYAJRKRSHFCHkf2H7ko",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "valid": true,
+      "netUsdcRaw": "-168031"
+    },
+    {
+      "usdc": 1000,
+      "direction": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "1000000000",
+        "outAmount": "9447180839",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0.0000534864579312747293396387",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "9447180839",
+        "outAmount": "999961409",
+        "contextSlot": 457406261,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "valid": true,
+      "netUsdcRaw": "-38591"
+    },
+    {
+      "usdc": 10000,
+      "direction": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "94448449530",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0.0003007306995244072884482155",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "94448449530",
+        "outAmount": "9997262207",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "BisonFi",
+            "ammKey": "8FnX3xo2yYw3EUE6w3nQA4GfXGS9wpK6oj3veJpbFzLo",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "valid": true,
+      "netUsdcRaw": "-2737793"
+    },
+    {
+      "usdc": 10000,
+      "direction": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "10000000000",
+        "outAmount": "94472525117",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0.0000459001877304035772503581",
+        "route": [
+          {
+            "label": "Kipseli",
+            "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "94472525117",
+        "outAmount": "9998896763",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "valid": true,
+      "netUsdcRaw": "-1103237"
+    },
+    {
+      "usdc": 100000,
+      "direction": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000000",
+        "outAmount": "944181464728",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0.0012974928474676845881442198",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "944181464728",
+        "outAmount": "99924056033",
+        "contextSlot": 457406262,
+        "error": null,
+        "priceImpactPct": "0",
+        "route": [
+          {
+            "label": "Kipseli",
+            "ammKey": "7yD7gfXv49SFxhx9uTc11dEd7Nj98rGWeYMdZJgheZbG",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "valid": true,
+      "netUsdcRaw": "-75943967"
+    },
+    {
+      "usdc": 100000,
+      "direction": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "100000000000",
+        "outAmount": "944502070000",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.0009583744672472470180301243",
+        "route": [
+          {
+            "label": "Scorch",
+            "ammKey": "FnhxUP3dcQbypCUmGWw55ijxPBxifPT558UQSCYDfcCU",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "944502070000",
+        "outAmount": "99933484487",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.0004638232056507120786298399",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "valid": true,
+      "netUsdcRaw": "-66515513"
+    },
+    {
+      "usdc": 250000,
+      "direction": "goonfi-first",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "250000000000",
+        "outAmount": "2359467897707",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.000958191204534850248115672",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "2359467897707",
+        "outAmount": "249650186553",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.0004414856110946293191982594",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "valid": true,
+      "netUsdcRaw": "-349813447"
+    },
+    {
+      "usdc": 250000,
+      "direction": "goonfi-second",
+      "first": {
+        "httpStatus": 200,
+        "inAmount": "250000000000",
+        "outAmount": "2360811875451",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.0003891264769954444229116007",
+        "route": [
+          {
+            "label": "TesseraV",
+            "ammKey": "FLckHLGMJy5gEoXWwcE68Nprde1D4araK4TGLw4pQq2n",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "independent"
+      },
+      "second": {
+        "httpStatus": 200,
+        "inAmount": "2360811875451",
+        "outAmount": "249532665449",
+        "contextSlot": 457406263,
+        "error": null,
+        "priceImpactPct": "0.0014807879407991360836336464",
+        "route": [
+          {
+            "label": "GoonFi V2",
+            "ammKey": "GMCJvYGf5Ex2ARiMquaBDqU6iKM8uiEQkB8jCnoNfHpC",
+            "percent": 100
+          }
+        ],
+        "targetMatched": true,
+        "side": "goonfi"
+      },
+      "valid": true,
+      "netUsdcRaw": "-467334551"
+    }
+  ]
+}

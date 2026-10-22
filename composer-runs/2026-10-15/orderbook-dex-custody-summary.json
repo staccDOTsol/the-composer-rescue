@@ -1,0 +1,4515 @@
+{
+  "timestamp": "2026-10-15T19:18:08.899Z",
+  "slots": {
+    "fluxStart": 457347298,
+    "currentStart": 457350706,
+    "currentEnd": 457351315,
+    "fluxEnd": 457347858
+  },
+  "denominator": {
+    "mainExchangeDeployments": 8,
+    "supportPrograms": 1,
+    "completedMainExchangeDeployments": 8,
+    "completedSupportPrograms": 1,
+    "stateDiscoveryDeployments": 6,
+    "officialRegistryDeployments": 2,
+    "legacyRegistryMarkets": 186,
+    "names": [
+      {
+        "name": "Phoenix Perpetuals",
+        "program": "EtrnLzgbS7nMMy5fbD42kXiUzGg8XQzJ972Xtk1cjWih",
+        "status": "completed"
+      },
+      {
+        "name": "Ember (Phoenix Perps backing)",
+        "program": "EMBERpYNE6ehWmXymZZS2skiFmCa9V5dp14e1iduM5qy",
+        "status": "completed"
+      },
+      {
+        "name": "OpenBook v2",
+        "program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+        "status": "completed"
+      },
+      {
+        "name": "Phoenix Legacy",
+        "program": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+        "status": "completed"
+      },
+      {
+        "name": "Manifest",
+        "program": "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms",
+        "status": "completed"
+      },
+      {
+        "name": "Mango v4",
+        "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+        "status": "completed"
+      },
+      {
+        "name": "Mango v3 legacy",
+        "program": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+        "status": "completed"
+      },
+      {
+        "name": "OpenBook v1",
+        "program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+        "status": "completed"
+      },
+      {
+        "name": "Serum DEX v3 legacy",
+        "program": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+        "status": "completed"
+      }
+    ],
+    "exhaustiveAllSolanaPrograms": false
+  },
+  "coverageDefinition": "Eight named material orderbook/exchange deployments selected from official first-party repositories, plus one Phoenix backing program; not all deployed Solana programs. Six exchange deployments used state-account discovery, two legacy deployments used every address in their official first-party market registries, and the backing program used its canonical state.",
+  "overlapWarning": "Phoenix Perpetuals PhUsd is a claim on the separate Ember USDC backing vault; do not add both rows.",
+  "results": [
+    {
+      "name": "Phoenix Perpetuals",
+      "program": "EtrnLzgbS7nMMy5fbD42kXiUzGg8XQzJ972Xtk1cjWih",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {},
+      "summary": {
+        "referencedVaultRows": 1,
+        "verifiedNonzeroVaults": 1,
+        "pricedVaults": 0,
+        "unpricedVaults": 1,
+        "pricedGrossUsd": 0,
+        "verifiedUniqueVaults": 1,
+        "pricedUniqueGrossUsd": 0
+      },
+      "topPricedUniqueVaults": [],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "2zskx2iyCvb6Stg7RBZkt1f6MrF4dpYtMG3yMvKwqtUZ",
+          "kind": "global-quote-vault",
+          "vault": "csZXgw2G58hbiWc9ndxaxrQVYVvqdXgQzYLuznEzHJu",
+          "mint": "PhUsd11YkbjSaWjFncfAAmatntsjx3MgDR9B6g1ks3A",
+          "rawAmount": "22628166330587",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "globalStatePdaMatches": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Ember (Phoenix Perps backing)",
+      "program": "EMBERpYNE6ehWmXymZZS2skiFmCa9V5dp14e1iduM5qy",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {},
+      "summary": {
+        "referencedVaultRows": 1,
+        "verifiedNonzeroVaults": 1,
+        "pricedVaults": 1,
+        "unpricedVaults": 0,
+        "pricedGrossUsd": 22619769.218349453,
+        "verifiedUniqueVaults": 1,
+        "pricedUniqueGrossUsd": 22619769.218349453
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "6ur7v6AXNpnHeEb6xuk7PyezvZ1i5GrgYyWZkNCpzbRz",
+          "kind": "USDC-backing-vault",
+          "vault": "FKcEb4TdPDTRuMnQDpSEPQBcrm15S73xiUD6Qf8ZLUkq",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "22628175290280",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 22628175.29028,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 22619769.218349453,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "statePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsStatePda": true,
+            "tokenMintIsUSDC": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": []
+    },
+    {
+      "name": "OpenBook v2",
+      "program": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "discovery": {
+          "fluxCount": 283,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 283
+        }
+      },
+      "stateAccountsDecoded": 283,
+      "summary": {
+        "referencedVaultRows": 566,
+        "verifiedNonzeroVaults": 314,
+        "pricedVaults": 245,
+        "unpricedVaults": 69,
+        "pricedGrossUsd": 163228.82432036282,
+        "verifiedUniqueVaults": 314,
+        "pricedUniqueGrossUsd": 163228.82432036282
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "iscXZbk8NZdrA1WhMcM1gHvdMoawJprYDgWzkZVtg4e",
+          "kind": "base",
+          "vault": "3LK8L59reibPdGKmaBx3wmgrkRM53PrVP8Uuv7WTehCy",
+          "mint": "J9BcrQfX4p9D1bvLzRNCbMDv8f44a9LFdeqNE4Yk2WMD",
+          "rawAmount": "24468200000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 24468.2,
+            "symbol": "ISC",
+            "usdPrice": 2.1589715094640565,
+            "usdValue": 52826.14668786843,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "iscXZbk8NZdrA1WhMcM1gHvdMoawJprYDgWzkZVtg4e",
+          "kind": "quote",
+          "vault": "7PCuUcwky2u1FBrWBG9jqvoREEzr2KZHtsPeQ3KPZbkw",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "51201295074",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 51201.295074,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 51182.274460812776,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "44yiceSCYefxLtxEZhgAsA4g9RpW7xViERJqrrTxoC1P",
+          "kind": "quote",
+          "vault": "G8XzG7ViGRTTVRYw4NKP55WMtk4DmzMCR6BdyfMKSWF3",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "31121145036",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 31121.145036,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 31109.58393660168,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DanuHzzd5CMjbQUHa7wBF8BKBCBm1ki1MQSZPtT52Vwn",
+          "kind": "quote",
+          "vault": "9oeUAs9drYPHmp6dhiQNFF2fYvRoTM4hC6CxzmJwnfbD",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "4572572090",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 4572.57209,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 4570.873439118827,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "CFSMrBssNG8Ud1edW59jNLnq2cwrQ9uY5cM3wXmqRJj3",
+          "kind": "quote",
+          "vault": "EA3Qa1WUxuY2BZo6b2Dy3ZxGiK3qS5hkeSwbCzUNomBm",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "3915252528",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3915.252528,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 3913.7980627612246,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "44yiceSCYefxLtxEZhgAsA4g9RpW7xViERJqrrTxoC1P",
+          "kind": "base",
+          "vault": "HcD8Nji1e29eTSZekjv9WXRnzACUF8W8NDUZxb2xfc2J",
+          "mint": "METADDFL6wWMWEoKTFJwcThTbUmtarRJZjRpzUvkxhr",
+          "rawAmount": "487200000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.4872,
+            "symbol": "META",
+            "usdPrice": 5042.178905918404,
+            "usdValue": 2456.5495629634465,
+            "priceTimestamp": 1792080487
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9YgiooLnCqFYuom7dc4T5ZbpLmpZsdAZkTMEYLVyrjoW",
+          "kind": "quote",
+          "vault": "BovKBA6UbyuDDwEJp8WpxxVieF2SCCJWDeNZRyqzunFK",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1602000033",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1602.000033,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 1601.4049108862023,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "D3gZwng2MgZGjktYcKpbR8Bz8653i4qCgzHCf5E4TcZb",
+          "kind": "quote",
+          "vault": "HE3w6Tw6Z8ZqpfscqmDeA9U7Xoo6zRgNWGKaFwjRfBJZ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1499744033",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1499.744033,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 1499.1868976562491,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "BAErrhZEbaukcCVt68gAxrn1BECF4ufc8ZEv97eZazbZ",
+          "kind": "base",
+          "vault": "Ec6TpYcc6waVDQnpU5F4LMVzd5hNRBmKiwyM487xX78P",
+          "mint": "2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv",
+          "rawAmount": "154938000662",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 154938.000662,
+            "symbol": "Pudgy Penguins",
+            "usdPrice": 0.007615992612727192,
+            "usdValue": 1180.006668472513,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4G9zdGpZgZVYPQTcVyseteF5uASKyz5wCJzshZHZcZsW",
+          "kind": "quote",
+          "vault": "GRMKLboYiXgNBD2Z8yBxAm5hHeyyvAwJY3CXDEnbLMYs",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "761251715",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 761.251715,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 760.9689199185826,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "CFSMrBssNG8Ud1edW59jNLnq2cwrQ9uY5cM3wXmqRJj3",
+          "kind": "base",
+          "vault": "D4eZbLyKTtCk8jjbrkqTU2vADKUdGJLj1y4matSdeYW5",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "6450000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 6.45,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 683.6290543942199,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "BU3EaRVo9WN44muCBy3mwkCQ4uYQWiuqay1whEmeSXK3",
+          "kind": "quote",
+          "vault": "KcEoDPJS9MosRkAaddP7H72kCLQqLcKRMjWkWGEYSEx",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "596260852",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 596.260852,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 596.039348871843,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "46N1yP8WuDgkB9NsyuAgPRRvHYtA4CaQ7Jn8dFuFzRup",
+          "kind": "quote",
+          "vault": "3QaqBuvsWtfTRq5eSsjQHh9PbKvZ6osx5V9LE318HAxP",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "590395020",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 590.39502,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 590.1756959519099,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "CwGmEwYFo7u5D7vghGwtcCbRToWosytaZa3Ys3JAto6J",
+          "kind": "quote",
+          "vault": "7fRfXgLcTPcPmAUego4Q8PkwKaXC9iskmaZuf9SkPcqv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "583104016",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 583.104016,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 582.887400464783,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "ECWHdhxPX2Vx299xvB1Dd5aTegGJmFcXWhrESftsKkRc",
+          "kind": "quote",
+          "vault": "Cb6wY5fpawswXhSS5hqCE3xW3Qw2GjA7soxjLNnarvCd",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "518796412",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 518.796412,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 518.6036859007615,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6NtxTCJuhNixA5Z2MBT4mrCuBk7qLQ69htcCNfySdu7J",
+          "kind": "base",
+          "vault": "HAuS72CVBSAYMh4ycmwM1es6m2xcb1c2nJ4VgK7T1ifZ",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "rawAmount": "3614600000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3.6146,
+            "symbol": "JITOSOL",
+            "usdPrice": 138.10846541650855,
+            "usdValue": 499.2068590945118,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5gpzdCYkb9UkQGzdaFF5r6nDrb3Akhh67J7DAXF3mett",
+          "kind": "base",
+          "vault": "7MWF2fnk3aYTznKqsQtmwMxDt6JjHBV72HCC45cffhta",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "18680000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.1868,
+            "symbol": "WETH",
+            "usdPrice": 2447.215701520096,
+            "usdValue": 457.1398930439539,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HPGeZAXNNPzex7QnHP2ZCgyny13BqkNkRg6Lc49PJpdm",
+          "kind": "base",
+          "vault": "GVYEoR1ZbtJUaPQzDEujLX1TznRxNCpiE3JoVZKqmzVE",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "3985000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3.985,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 422.3661677148785,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AFgkED1FUVfBe2trPUDqSqK9QKd4stJrfzq5q1RwAFTa",
+          "kind": "quote",
+          "vault": "A7ejkY7zKexq6hAFten4VHkwRQeHMfJYcRMxC17BLxQE",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "394950087",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 394.950087,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 394.8033681948949,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3XDUhcP9qKQFjyHhYeoGU8ssHmQ7zfKpVbg5GuaHJoLD",
+          "kind": "quote",
+          "vault": "BoFpWrMfVmvoyqDbShfSmJt4FTtD1s5jxmPFZD9h4tgK",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "393280814",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 393.280814,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 393.1347153080384,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9k3qgPSgYEpzPtBdfg2K4gdTe9iaK7GKS3z7vU5SoJ8n",
+          "kind": "quote",
+          "vault": "GDTfwvug6KzgoFkTEb2T1XvNu5FqZB2LEqgzcRXamxD",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "338049102",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 338.049102,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 337.9235211685359,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5h4DTiBqZctQWq7xc3H2t8qRdGcFNQNk1DstVNnbJvXs",
+          "kind": "base",
+          "vault": "HqmR9ogeRKTh7tPc2XE9dTBQSgopTJ1Lz6rZeMdg4yor",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "3110000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3.11,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 329.6257921187634,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HeGr5aWeEmWipHh4QSqjbzTCExnqPa9NTZTso3cM16vm",
+          "kind": "base",
+          "vault": "3ZLpXTMSA9bVzvSMDVaNWY9Bz8Q9kpEf2PCkNBM8ZUMa",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "2934000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2.934,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 310.97172799885914,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2bncYT3dPYTJea4RdgTGcsZgoxD1n8QFX2Rka1EXpxwN",
+          "kind": "quote",
+          "vault": "21w4RXS8r7QM2mszg7wMrW8BXWVrtkuF2sGvz8gRBu7a",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "304135450",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 304.13545,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 304.02246764784246,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HeGr5aWeEmWipHh4QSqjbzTCExnqPa9NTZTso3cM16vm",
+          "kind": "quote",
+          "vault": "2U6gEtfGWQvLoojJFuvDxrhfNMPCFEjCqDJD6jkZn66J",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "288047405",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 288.047405,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 287.9403991466877,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "E54qnMNxfSieWsusLYoHXELjjyF29nbUN21Zwdct7cYc",
+          "kind": "base",
+          "vault": "HMevy6KXA1BzLkM4ztd7ZKDge29CQWzv9fKDk4sfsjWv",
+          "mint": "BANXbTpN8U2cU41FjPxe2Ti37PiT5cCxLUKDQZuJeMMR",
+          "rawAmount": "20498430000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3k9bwZrFgmWVNoAp5fXWcuYrNwewPpdcj6vgQVWB3UA5",
+          "kind": "base",
+          "vault": "DQSmizNiST1EnnEKK19KHDkwFGgFrmULmyn5QakstA1Q",
+          "mint": "GWQpRtHNjaBYHFqLWpLXv1dVJjkbQAyLLQpWUfun8Kgj",
+          "rawAmount": "1033836480000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9k3qgPSgYEpzPtBdfg2K4gdTe9iaK7GKS3z7vU5SoJ8n",
+          "kind": "base",
+          "vault": "BYYEQ2gKR5egzC6BBWar4sHNXWbup3NLyrNN1savkjZE",
+          "mint": "GHvFFSZ9BctWsEc5nujR1MTmmJWY7tgQz2AXE6WVFtGN",
+          "rawAmount": "881829000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DanuHzzd5CMjbQUHa7wBF8BKBCBm1ki1MQSZPtT52Vwn",
+          "kind": "base",
+          "vault": "Eadxmy9RY29Jkher7TDWaA5aBSJe7KRBsUUrStsUBCY",
+          "mint": "6VdVk3ngmTDBrZDgHCWE3U1VmKFmFTh5mnN43LJQeE9U",
+          "rawAmount": "432873177000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FVFHCiKDPCo93cHvesM7MUX3gP9Ljh8Pgm5nBKhrMj8w",
+          "kind": "base",
+          "vault": "An7oCmbVHkoZz4LX8WZDzrxU9SusaTBSRXMvU8UTqowY",
+          "mint": "6VdVk3ngmTDBrZDgHCWE3U1VmKFmFTh5mnN43LJQeE9U",
+          "rawAmount": "89999986000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3QRAgy7nmSCktrmbMNx237hG1ayLoVoYt16VD3HXvQXG",
+          "kind": "base",
+          "vault": "CWP38qJtcxCPGU6cr8iHhVaFNKCK4oRXK9di8ZByJetV",
+          "mint": "H6JtPso9FsoWj2ni6XzhT4dhQxADxkRsHT6GfVfwdGQP",
+          "rawAmount": "70179762000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "GMi4xhczSbgnfcT1T7zUFqkVmCdVihaofwTWJqEtp7Xs",
+          "kind": "base",
+          "vault": "Gee6QexPTthgyytEnzxynqG1iNnydCpr6hvW5JShkQGn",
+          "mint": "GWQpRtHNjaBYHFqLWpLXv1dVJjkbQAyLLQpWUfun8Kgj",
+          "rawAmount": "42000000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "GQZiTksezgLcE9MybArVA3yHxjeJEiiipworAMnUd63m",
+          "kind": "base",
+          "vault": "EyjXTwpvNQjF1xhTN9Y93y2embSwjRAFxrTE7BZNyUDs",
+          "mint": "5VsPJ2EG7jjo3k2LPzQVriENKKQkNUTzujEzuaj4Aisf",
+          "rawAmount": "3479761200000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2tFpR37MJYM5V84xX85zfEG5qpvWPJpk7pTxUzjK9EG7",
+          "kind": "base",
+          "vault": "3vaZXn9B6AAvWR5tj8QC5i7eiBszYPpPnmHHBxAk9sUN",
+          "mint": "6VdVk3ngmTDBrZDgHCWE3U1VmKFmFTh5mnN43LJQeE9U",
+          "rawAmount": "1000000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "G9bJCPTrAo6wgoqLoPujYWTHARwhiN39rxbBTX3vajco",
+          "kind": "base",
+          "vault": "AwxRypq1AEdwnyriuLbjT5LDGRsG98qRqXs8pSdpYdEg",
+          "mint": "6VdVk3ngmTDBrZDgHCWE3U1VmKFmFTh5mnN43LJQeE9U",
+          "rawAmount": "305000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "authorityPdaMatches": true,
+            "vaultIsAuthorityAta": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Phoenix Legacy",
+      "program": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "discovery": {
+          "fluxCount": 361,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 361
+        }
+      },
+      "stateAccountsDecoded": 252,
+      "summary": {
+        "referencedVaultRows": 504,
+        "verifiedNonzeroVaults": 366,
+        "pricedVaults": 308,
+        "unpricedVaults": 58,
+        "pricedGrossUsd": 1255926.1010741892,
+        "verifiedUniqueVaults": 366,
+        "pricedUniqueGrossUsd": 1255926.1010741892
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "4DoNfFBfF7UokCC2FQzriy7yHK6DY6NVdYpuekQ5pRgg",
+          "kind": "quote",
+          "vault": "3HSYXeGc3LjEPCuzoNDjQN37F1ebsSiR4CqXVqQCdekZ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "308121032706",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 308121.032706,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 308006.56976186007,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4DoNfFBfF7UokCC2FQzriy7yHK6DY6NVdYpuekQ5pRgg",
+          "kind": "base",
+          "vault": "8g4Z9d6PqGkgH31tMW6FwxGhwYJrXpxZHQrkikpLJKrG",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "2872085000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2872.085,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 304409.419021678,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Ew3vFDdtdGrknJAVVfraxCA37uNJtimXYPY4QjnfhFHH",
+          "kind": "base",
+          "vault": "67yGLFnfA5EnGF3AwzShcfh8VbEujMG63QLeKt1kj23M",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "2120310000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 21.2031,
+            "symbol": "WETH",
+            "usdPrice": 2447.215701520096,
+            "usdValue": 51888.559240900744,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2pspvjWWaf3dNgt3jsgSzFCNvMGPb7t8FrEYvLGjvcCe",
+          "kind": "base",
+          "vault": "4BjxyW2GTD1qBwUk96mAR7dV1A3Pq51hPx78WLqrXegX",
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "rawAmount": "166442580000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 166442.58,
+            "symbol": "jup",
+            "usdPrice": 0.3116389238353698,
+            "usdValue": 51869.986511582436,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FZRgpfpvicJ3p23DfmZuvUgcQZBHJsWScTf2N2jK8dy6",
+          "kind": "base",
+          "vault": "9Zdp9hUEfJ6wD4UbVrTKTbMhXtTzLqsvmAQrNzMCdNAF",
+          "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+          "rawAmount": "227215200000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 227.2152,
+            "symbol": "msol",
+            "usdPrice": 149.34512438999445,
+            "usdValue": 33933.48230729747,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "GBMoNx84HsFdVK63t8BZuDgyZhSBaeKWB4pHHpoeRM9z",
+          "kind": "quote",
+          "vault": "5vkFwKVxAmZWgQ2b4xYJBdBzjkFvPxSCTdLeEs48BsGf",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "31983807683",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 31983.807683,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 31971.92611568195,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6BVnCYbEQZXkDZuQyaKTQMPs4HjpKcd7poMxKnRNEX32",
+          "kind": "quote",
+          "vault": "2vfxhTAgQYJTojyRELrUEdcP2Frshb4L43rYooR1sZtJ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "31842690087",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 31842.690087,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 31830.860943027954,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6BVnCYbEQZXkDZuQyaKTQMPs4HjpKcd7poMxKnRNEX32",
+          "kind": "base",
+          "vault": "DNkx5wNGDkLyDk37HtEdocxayyes9K7dWtg4XsFkuiUV",
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "rawAmount": "36919400",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.369194,
+            "symbol": "WBTC",
+            "usdPrice": 82189.13518129036,
+            "usdValue": 30343.735574121314,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8BV6rrWsUabnTDA3dE6A69oUDJAj3hMhtBHTJyXB7czp",
+          "kind": "quote",
+          "vault": "2YUpvqq6Epf45RW7p7jqzoj6GAwjNZ7msHyH6uB8qELz",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "29443340876",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 29443.340876,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 29432.40305895977,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Ge1Vb599LquMJziLbLTF5aR4icq8MZQxpmgNywvdPqjL",
+          "kind": "base",
+          "vault": "H6McDaSNQfVQemkMWgv3UX9wcpByafjHsLHuy8HLb2n8",
+          "mint": "JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+          "rawAmount": "84872193105",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 84872.193105,
+            "symbol": "jup",
+            "usdPrice": 0.3116389238353698,
+            "usdValue": 26449.47892278989,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3J9LfemPBLowAJgpG3YdYPB9n6pUk7HEjwgS6Y5ToSFg",
+          "kind": "base",
+          "vault": "J2KSG4ivZF9JV65acoZjucJ8AzYjZBD217x9hmqxDjzB",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "242411000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 242.411,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 25692.89964414841,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Ew3vFDdtdGrknJAVVfraxCA37uNJtimXYPY4QjnfhFHH",
+          "kind": "quote",
+          "vault": "irWZsBWNZ8jbGncWgn7i4mu7bzXKKyW4QPsphtbosGQ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "25257297171",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 25257.297171,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 25247.914414588267,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2t9TBYyUyovhHQq434uAiBxW6DmJCg7w4xdDoSK6LRjP",
+          "kind": "quote",
+          "vault": "AzPnm9Vm4TZxYG2XEqspncfNzv9dxG9qKy2d4yqToVUi",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "223357395078",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 223.357395078,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 23673.42709908982,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3J9LfemPBLowAJgpG3YdYPB9n6pUk7HEjwgS6Y5ToSFg",
+          "kind": "quote",
+          "vault": "24zGAjrXuLmwadUVgMFtjwL27hywYMCzi2X2euoQYxtV",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "22482848071",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 22482.848071,
+            "symbol": "usdt",
+            "usdPrice": 0.9991697101099837,
+            "usdValue": 22464.180789547878,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "BRLLmdtPGuuFn3BU6orYw4KHaohAEptBToi3dwRUnHQZ",
+          "kind": "quote",
+          "vault": "3LACH1LTqL8dRfcEmPsnkQ6518zRbFcGkDcsf6nDrZCN",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "21829292717",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 21829.292717,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 21821.18341952382,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2pspvjWWaf3dNgt3jsgSzFCNvMGPb7t8FrEYvLGjvcCe",
+          "kind": "quote",
+          "vault": "GMhgQMusBo8AVCAbJJSD2vmGYN9MtZPg1cRRFfgZ74je",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "18528947931",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 18528.947931,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 18522.064668558054,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4sjqq7MqcvJCWT4qAspjSnLETMvKzC8NfvsrvvoBMQzM",
+          "kind": "base",
+          "vault": "9pSZckVgBGCnAWSCFTfGUXdD6UBFUtPoKZHrvgxUudYq",
+          "mint": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+          "rawAmount": "19384300",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.193843,
+            "symbol": "CBBTC",
+            "usdPrice": 82401.09551587941,
+            "usdValue": 15972.875558084612,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4sjqq7MqcvJCWT4qAspjSnLETMvKzC8NfvsrvvoBMQzM",
+          "kind": "quote",
+          "vault": "98mYbA7Jx9Yuq2W2ip2ZWJPaitKmhKpKW2oGhaxy2zQg",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "13901632522",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 13901.632522,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 13896.468246868095,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6ojSigXF7nDPyhFRgmn3V9ywhYseKF9J32ZrranMGVSX",
+          "kind": "quote",
+          "vault": "H6Vb6qdn4pfg1tmqXhVK8WQocsfeUWRhTNZFMjeypsRE",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "13418743815",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 13418.743815,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 13413.75892672335,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8dFTCTAbtGuHsdDL8WEPrTU6pXFDrU1QSjBTutw8fwZk",
+          "kind": "quote",
+          "vault": "DtzHsnok88Hh2zEh9uKZXdgkYvsMF2Q7xTYAzcRSDt4c",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "13282606408",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 13282.606408,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 13277.672092994108,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AbJCZ9TAJiby5AY3cHcXS2gUdENC6mtsm6m7XpC2ZMvE",
+          "kind": "quote",
+          "vault": "FYgSJ1AxY8Ax2Pczj5mQKuH36Y2eKjrvko7rdyoyXtpx",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "13022248980",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 13022.24898,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 13017.411384382187,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2t9TBYyUyovhHQq434uAiBxW6DmJCg7w4xdDoSK6LRjP",
+          "kind": "base",
+          "vault": "51LAUnnqk8PTPribSTRb5rmF867dz5mEQbpxfk13Nu1C",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "rawAmount": "90703500000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 90.7035,
+            "symbol": "JITOSOL",
+            "usdPrice": 138.10846541650855,
+            "usdValue": 12526.921192906284,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Ge1Vb599LquMJziLbLTF5aR4icq8MZQxpmgNywvdPqjL",
+          "kind": "quote",
+          "vault": "CqasYB61M5B5Vwb2KbvcF3WAqQmbV6vtTsaM7e4stvkC",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "107834295316",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 107.834295316,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 11429.249199712269,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FicF181nDsEcasznMTPp9aLa5Rbpdtd11GtSEa1UUWzx",
+          "kind": "quote",
+          "vault": "DBo9bdufoB8z4FNdNnU8u33SHWNvDa6jFqKcX7NLqTB2",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "96800753653",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 96.800753653,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 10259.815144875693,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2sTMN9A1D1qeZLF95XQgJCUPiKe5DiV52jLfZGqMP46m",
+          "kind": "quote",
+          "vault": "HtpqaSCF8X7gYWHY9e5CGYkggZBkNdtZpUDsEvRuPBqV",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "8309473587",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 8309.473587,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 8306.38672596144,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "14CAwu3LiBBk5fcHGdTsFyVxDwvpgFiSfDwgPJxECcE5",
+          "kind": "quote",
+          "vault": "G44KkGtNz6b3BcBtjdqVvXNFZoi6m1rsLma1FQNd9iaV",
+          "mint": "5zUmtDCDeR17UYjvKKqvYp3S9pqcZA69cDoYPtojseJ4",
+          "rawAmount": "26636492856",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "14CAwu3LiBBk5fcHGdTsFyVxDwvpgFiSfDwgPJxECcE5",
+          "kind": "base",
+          "vault": "DR85CeL6u7jep8X5SPkJjwsrzcSc5eJ3csukEyXHsKuo",
+          "mint": "7Z6Kczxo8ViRpfnsVvVaATB5fQ8bN2CQpxP8DHfd1vz5",
+          "rawAmount": "1000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "bwwzqUPVD9GXQjSLicPAtuPwatGgwSk8iCZbXTmTdoh",
+          "kind": "base",
+          "vault": "87oj52KBn2TPG9Zk9iR7qJymVFQHybZMuiuX8738Qtkn",
+          "mint": "SPeCNAt85P4JecF4AxSeaAdoVbAcLZbNAPmX2JnVfis",
+          "rawAmount": "155664",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Dqa8prdagXCvghsffwhHxK6i4ikHUc6pkp7EHzwV5Gpu",
+          "kind": "base",
+          "vault": "5YsvNC9qhwRENBcUNxMpeBPtBPvTiXBhuFaibref7ZCy",
+          "mint": "woodN5KSiHEAhaCrZVh3vScGta7u6r5Vp3UbqDFuD4e",
+          "rawAmount": "17957",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "EBnChvEcfiPRfLC3mFvfdc8DHVXpkeSttQ7nsZJjZ2m",
+          "kind": "base",
+          "vault": "DBbdAJCRoXmrN1MyBL1o11LdvpnjLyp2nKnfaeDK5V71",
+          "mint": "Meta1cQ29N8S4cSwJScHZYtXV6J5Cy55oEA8vRVhh8K",
+          "rawAmount": "17757",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "CJic1HjY8CV6NU7kSiaDxeJwVsrPiQ2B964CxpxoUUg1",
+          "kind": "base",
+          "vault": "8sgc7sdqjX1ygKAUDgnZC5RLqniqrKZWWWdxLULpKtwM",
+          "mint": "FireKR7LgjyzjsLnxaNZwa7dnJncDSidD4cXGhTGz2eU",
+          "rawAmount": "14536",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "7kiGuRq1g6nUc91jkSwBy662tJaq255uKMrVA9arC5XE",
+          "kind": "base",
+          "vault": "f7ekjS1UGSahztQZM6PbgQkEr76KgZHvF5QqTYyTBwH",
+          "mint": "WATErpZ2ZBjgAxyttoEjckuTuCe9pEckSabCeENLTYq",
+          "rawAmount": "11086",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "74S7uN2byxPhz8p78aVGZSWCUA43pTWr3aTR7qsqNVJU",
+          "kind": "base",
+          "vault": "G9KEbivT5CeLyXGgurapyPTxJzRCDNHNDaKrpzLr8UGK",
+          "mint": "HgDQRcG8NRbjU4Lnm9KvLZxxUzhCTdroyEQQou2mzXas",
+          "rawAmount": "10000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "f84MxMhjYZujRHg8qdK3h3PdQCH2mVw6MbN9RPt4De2",
+          "kind": "base",
+          "vault": "6AVt1zw3SEVL5uM3EbTYNuJbNjh3tAXgVXBnpXt7Z9pr",
+          "mint": "EaRtHRxHp1ftdfnJFds9UrCDNaSGxhdnRUucevNr1DzA",
+          "rawAmount": "9438",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "45gNMPQ4RjapCtRPnvZfqKbzUL3nVUHxyrKADGK8Ca7G",
+          "kind": "base",
+          "vault": "CxCSRYLAVmqWWbEr3K4c7PQbGxJ5ZUydHfjua7hPWLYw",
+          "mint": "seeD3ySNdK1kM9phjJrvYQ2csmUwCxYwV7n1z6U5rwz",
+          "rawAmount": "1269",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Manifest",
+      "program": "MNFSTqtC93rEfYHB6hF82sKdZpUDFWkViLByLd1k1Ms",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "marketDiscovery": {
+          "fluxCount": 4016,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 4016
+        },
+        "globalDiscovery": {
+          "fluxCount": 563,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 563
+        }
+      },
+      "summary": {
+        "referencedVaultRows": 8595,
+        "verifiedNonzeroVaults": 2560,
+        "pricedVaults": 2072,
+        "unpricedVaults": 488,
+        "pricedGrossUsd": 17680400.054148458,
+        "verifiedUniqueVaults": 2560,
+        "pricedUniqueGrossUsd": 17680400.054148458
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "4SMRzaLXsuvTi2B5cSVs4LuCUUqQhB2uByTWUvbixjfF",
+          "kind": "global",
+          "vault": "6KzHa7L1MDTkaUb4qGiJqMvnmAy1qztGDeLvSHdS9ooU",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1865258693571",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1865258.693571,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 1864565.7742990702,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "7mR36vj6pvg1U1cRatvUbLG57yqsd1ojLbrgxb6azaQ1",
+          "kind": "global",
+          "vault": "E1mBVQyt7BHK8SaBSfME7usYxx94T4DtHEjbUpEBhZx",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "17130250025634",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 17130.250025634,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 1815618.081637323,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 253
+          }
+        },
+        {
+          "state": "GVJfHJsvrsWZmVj2JVQ3KyY1n7azyi8Z2FdBPxucUe58",
+          "kind": "market-base",
+          "vault": "DXK4yMpigbTSqv33nJk1tJucXB4E3rDmTXn3yZmiFAXt",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "rawAmount": "1340625005828",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "valuation": {
+            "amount": 1340625.005828,
+            "symbol": "pyusd",
+            "usdPrice": 0.9997766623870173,
+            "usdValue": 1340325.5938392933,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "GVJfHJsvrsWZmVj2JVQ3KyY1n7azyi8Z2FdBPxucUe58",
+          "kind": "market-quote",
+          "vault": "3iCcc5iXwqtnZeJ3x5aui6j4SCAGSXwz6fDYjr2nueVA",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1286066855463",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1286066.855463,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 1285589.0984032357,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "7SanaZyHJVdcr56szAJb1Vezsi491bqs4sU8bLLef1YG",
+          "kind": "market-base",
+          "vault": "8oJ3E12XfwVDnSrjVF7XrFNL1eYvdaNunrqJPutkZVpg",
+          "mint": "bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1",
+          "rawAmount": "6434035576122",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 6434.035576122,
+            "symbol": "bSOL",
+            "usdPrice": 139.69909819979057,
+            "usdValue": 898828.9677696134,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "5Ycu1FCKX7TTWmScXvzGkYCpJxQw8s2FYMQa9V4K86F1",
+          "kind": "global",
+          "vault": "CG8vBSopUJE3SvW3bNaerqj2rrtBX2U13AeB1tHTvcrM",
+          "mint": "2b1kV6DkPAnxd5ixfnxCpjxmKwqjjaYmCZfHsFu24GXo",
+          "rawAmount": "809102520981",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "valuation": {
+            "amount": 809102.520981,
+            "symbol": "pyusd",
+            "usdPrice": 0.9997766623870173,
+            "usdValue": 808921.8179553059,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ",
+          "kind": "market-quote",
+          "vault": "FGQoLafigpyVb7mLa6pvsDDpDaEE3JetrzQoAggTo3n7",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "716664244237",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 716664.244237,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 716398.0128193172,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "4DPHPUgFos8vuNLS7ZtdAb5pmTCwehSvzgLLJg7DMHm6",
+          "kind": "global",
+          "vault": "EoxgGKhzvfdH73RyqGR9ocUzuc6mcMERZHYjYi2c9enj",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "rawAmount": "5120267284412",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 5120.267284412,
+            "symbol": "JITOSOL",
+            "usdPrice": 138.10846541650855,
+            "usdValue": 707152.2571724948,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "EXMcKF76kmBUH8xZ5fi1jv3ezh3eVQCeL4rQbpjCRxvF",
+          "kind": "market-base",
+          "vault": "2ovNVDzhRTXyijrs38rbhEyw7XDPvRXHHr7hvPDv5aRs",
+          "mint": "2u1tszSeqZ3qBWF3uNGPFc8TzMk2tdiwknnRMWGWjGWH",
+          "rawAmount": "680410578334",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "valuation": {
+            "amount": 680410.578334,
+            "symbol": "USDG",
+            "usdPrice": 0.9999994047676036,
+            "usdValue": 680410.1733315809,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 253
+          }
+        },
+        {
+          "state": "EXMcKF76kmBUH8xZ5fi1jv3ezh3eVQCeL4rQbpjCRxvF",
+          "kind": "market-quote",
+          "vault": "JAVj73fdncxHNkJpH5KZ5fdU5cCNnMwxtEEvjCwt3BEn",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "658722999227",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 658722.999227,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 658478.2922259815,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 253
+          }
+        },
+        {
+          "state": "8sjV1AqBFvFuADBCQHhotaRq5DFFYSjjg1jMyVWMqXvZ",
+          "kind": "market-base",
+          "vault": "CNRQ2Q5YURFcQrATzYeKUWgKUoBDfqzkDrRWf21UXCVo",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "646121236250",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 646121.23625,
+            "symbol": "usdt",
+            "usdPrice": 0.9991697101099837,
+            "usdValue": 645584.7683198167,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "CGA7cpvuPUm232ydGxcQCjbadgZNBsboSVjG9pNryqeZ",
+          "kind": "market-base",
+          "vault": "41n8tm7RdixmULrztdDg6jEpqnHFQCgjQyA9DK2G39aT",
+          "mint": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof",
+          "rawAmount": "24384714231061",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 243847.14231061,
+            "symbol": "render",
+            "usdPrice": 1.9826543325947523,
+            "usdValue": 483464.5931929801,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+          "kind": "market-base",
+          "vault": "4ThJXdq1ga5aaZSXRa9gDgEBwkj7iG2tJxJ3XXC2K23u",
+          "mint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+          "rawAmount": "3487414165303",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3487.414165303,
+            "symbol": "JITOSOL",
+            "usdPrice": 138.10846541650855,
+            "usdValue": 481641.41864179145,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "9VaVgdReZVxmEZLv9kqorjcS2hyGMAU77wEMFu3G7FiL",
+          "kind": "market-quote",
+          "vault": "DUJ6GqqnusjP4ajzbDUx2veRkeXfNVnjh5vAQ1P5fuix",
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "rawAmount": "541811319",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 5.41811319,
+            "symbol": "WBTC",
+            "usdPrice": 82189.13518129036,
+            "usdValue": 445310.0374004423,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "7ecvmhGKVcK4SgxeGQJG6yVwVAhbQxLrBuaMoUmpRZ6i",
+          "kind": "market-quote",
+          "vault": "GkXG58JMDWCfoAorj8uCJcKj748uqV7tfYaV67mSW5LH",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "3819785189270",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3819.78518927,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 404855.2150278599,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 249
+          }
+        },
+        {
+          "state": "E1XDrrALLZJuzicaw7xBfQeSsFCWsZ6tY3dthWuB7GiU",
+          "kind": "market-base",
+          "vault": "2foKAwvuvKfHjuVK6NjFG94cCTPCYWxbKRDjva9CtiJj",
+          "mint": "CASHx9KJUStyftLFWGvEVf59SGeG9sh5FfcnZMVPCASH",
+          "rawAmount": "317732939385",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "valuation": {
+            "amount": 317732.939385,
+            "symbol": "CASH",
+            "usdPrice": 0.9988577268889681,
+            "usdValue": 317370.00159185135,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "3iqCGFyyef6gSwwsTpzxozx91ifC9wNaWP8msYoGjKTa",
+          "kind": "market-quote",
+          "vault": "Hb2kuMpymroDp2PcKrdGK8rJ6BJpG8dxxbBpaVf9g13F",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "308279468217",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 308279.468217,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 308164.94641613454,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "GK5m9ybGK925TywvTTKCUi6GNsu1z2Dcsv4hGFXBNjAD",
+          "kind": "global",
+          "vault": "ABxyTXDqwLQadkZ9qbcHiTctE76Hd4ykTbCtHtbe7DfV",
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "rawAmount": "284456598",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2.84456598,
+            "symbol": "WBTC",
+            "usdPrice": 82189.13518129036,
+            "usdValue": 233792.4178623197,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "GNEfQwwo4EmES1D1rVLbbitciSefB54vPYKnNbE7hujW",
+          "kind": "market-quote",
+          "vault": "4kHsJQtpJjfD2k6RdS7MDUideWswyiytEvkdnfUrt2e1",
+          "mint": "METAwkXcqyXKy1AtsSgJ8JiUHwGCafnZL38n3vYmeta",
+          "rawAmount": "41975017961",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 41975.017961,
+            "symbol": "META",
+            "usdPrice": 5.173673703362175,
+            "usdValue": 217165.04662298065,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "CGA7cpvuPUm232ydGxcQCjbadgZNBsboSVjG9pNryqeZ",
+          "kind": "market-quote",
+          "vault": "4TCLXyN3u7HS9GwjGTdKHfwiUMJmkyU3U2oVWo7YjXaL",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "201615120337",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 201615.120337,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 201540.2229499108,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "4ba9bguTo7HbXFopJHaNMh8iAyApFpyQPgoufj3cSnyt",
+          "kind": "market-base",
+          "vault": "BkmQoLwdoseDsHZxSFo76XSGnyMixy6iUtMEHVzMuNP9",
+          "mint": "USD1ttGY1N17NEEHLmELoaybftRBUSErhqYiQzvEmuB",
+          "rawAmount": "157843851061",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 157843.851061,
+            "symbol": "USD1",
+            "usdPrice": 0.9993253376059296,
+            "usdValue": 157737.35975055388,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "AxSHFMAZbY3gEcKzzmweFZHxCAxCFtZruRDdS1WouLDL",
+          "kind": "market-base",
+          "vault": "3wyaMbE5af1pDHpKfgQQDt4ojqdNhmnHWByhcKzDGEcd",
+          "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+          "rawAmount": "981456312026",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 981.456312026,
+            "symbol": "msol",
+            "usdPrice": 149.34512438999445,
+            "usdValue": 146575.71500286818,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "4ba9bguTo7HbXFopJHaNMh8iAyApFpyQPgoufj3cSnyt",
+          "kind": "market-quote",
+          "vault": "BDVsoFu2GrvXG8HRjfp8aCyphSmEhb9Sm92siVSb6VES",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "129494405531",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 129494.405531,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 129446.30004862977,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "7WrxM7FsYjQKkmGjp2Hji8zMRRFcUed8KCNPWkcPvayT",
+          "kind": "market-base",
+          "vault": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+          "mint": "8nnaeWCw8mUypcGAgbmSuzAT85uWx4UN12adDrMhXrGF",
+          "rawAmount": "28494309103663",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "valuation": {
+            "amount": 28494309.103663,
+            "symbol": "HOTBOT",
+            "usdPrice": 0.004445385212436932,
+            "usdValue": 126668.18032803056,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "7A2he8uMY9HTmnd47JwFs1CC2iKL19g6GEFmiwFYuUGC",
+          "kind": "market-quote",
+          "vault": "PdhTzcRW3Diet84waDStNqhg63bbasbmp2Cik3prLAR",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "126583432917",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 126583.432917,
+            "symbol": "usdt",
+            "usdPrice": 0.9991697101099837,
+            "usdValue": 126478.33197240546,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "D6msaJsB85o6C5RgKHTcYMWPPXUfZJFy8b4m8YZMXaKT",
+          "kind": "market-quote",
+          "vault": "DGr2BsGMTfvECDQAcKiyhL4eT2ZFfzcF5fDyqUSP6yER",
+          "mint": "Cig2Wa3MB1meTGVBdsB9gTstcixwDYn5LLzf3AqwChCi",
+          "rawAmount": "3008749941833486080",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "4bWvNbsSYna6jxReQtDgqKHz6yB8ubj1CqwZJaBRJ1av",
+          "kind": "market-base",
+          "vault": "AjgGCkWRRtWhpNnkaV45nNrwPD9Cx4Sw5aVzA7BqM6Yg",
+          "mint": "Gyn3r5fg4uovCHWQHjmcW8s69PpvKDoH1eCTpCjFSgkK",
+          "rawAmount": "251532402904618092",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "HGQCcuUEJsTEdaFWePxwUD54bDhhb9AkpKdY1xmzs3bY",
+          "kind": "market-base",
+          "vault": "AGPGZEuhdwkwHbKibzNi6CUBz5L2hmLoE6CdfAYHv1CC",
+          "mint": "GkdbD4KjQgBgpsyoK71kLan2AVXTDckGLFsyYmyD5JTM",
+          "rawAmount": "72194589434501855",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "4DS3jufVNQfzr1dLNbj4JPz6dhAsg1ztt6wrMWCxxykJ",
+          "kind": "market-quote",
+          "vault": "FQGtwjtxb7sz39b7iW88hhb9DBXRytZgGT14JmdVJesh",
+          "mint": "H9zjWPeophWMXSiZVKehTAudWKYiSLaBhnHT92DkwBWX",
+          "rawAmount": "62007667171119649",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "GQHqLzX8swBiTyREF57PGs4vq59obuRPdtGrY4gChHfB",
+          "kind": "market-base",
+          "vault": "EqVvjc3mMpYdBD1mN8KRzLnoWk12nsnACCBHfCkzKK5Y",
+          "mint": "RDCTkphuEEddPMEDB8CBZuSCvTLZjaTw4PkvnxGTieR",
+          "rawAmount": "37261735697887599",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 253
+          }
+        },
+        {
+          "state": "BBh1v6nPcTKufDN1CHKzh3urYMTTH59U6uCu4u5CNjJ6",
+          "kind": "market-base",
+          "vault": "Di1xXShGmiY37WKdWSKSe5iUfDEjLS2BNRTFweB51wX7",
+          "mint": "G7nrTJD4m843a6SByvumFJiJQzQ2u8A7fZZnC1greh1J",
+          "rawAmount": "34941386202521735",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 252
+          }
+        },
+        {
+          "state": "DSHw2iKoYLyaMCJj1bsvPGhJi3iwP7JsS39aPaQ9j3mU",
+          "kind": "market-base",
+          "vault": "8RAgnHdCNSVba6VxmgyrCBUjMd9NWZCedozzoMXnDxFr",
+          "mint": "5WoBtTgowT4EwvrTzRTdxATGiyJYmxViLHGBTiPuntD",
+          "rawAmount": "28000000000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 255
+          }
+        },
+        {
+          "state": "67wHCXT6poijodPBaAYHGc9jSAgty6rmiwY9cBhCbpc1",
+          "kind": "market-quote",
+          "vault": "8vbJQQDfe4dDYEgEP8FJv5die5B3r3f2hcNLW3gYe1xF",
+          "mint": "7wNovYLM2rhoZiKxewHr92RG8gNHNTmg8kMxAVUNb4Pb",
+          "rawAmount": "15295178221916056",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "C1E1UWW7eSoRsrSaaapLboiyUrP8EfkhzLuiPb2VaGWe",
+          "kind": "market-quote",
+          "vault": "GKUmAtT8VZF2UTLFfpXWgooQ3Z1WShmxHr5y39FNPgGy",
+          "mint": "stonksUpymwbn1rBBpZmd1u92ydJ2asGw1y7capGMzW",
+          "rawAmount": "8605864711884590",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        },
+        {
+          "state": "34N6ygJfo1ZUm1ZEf4qm7cx7ioseNdwECEqMnWiuhnim",
+          "kind": "market-base",
+          "vault": "DTPUmmXSzkRSrmKog5VMkBVpeqsNbgtwcd6AZoh4tZ5U",
+          "mint": "BHXCk481LykgGKd2TZ3q3ehzsc77NvK2rscYLRF9jKAc",
+          "rawAmount": "4400000000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "globalStatePdaMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsVaultPda": true,
+            "tokenMintMatches": true,
+            "bumpObserved": 254
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mango v4",
+      "program": "4MangoMjqJ2firMokCjjGgoK8d4MXcrgL7XJaL3w6fVg",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "bankDiscovery": {
+          "fluxCount": 80,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 80
+        },
+        "groupDiscovery": {
+          "fluxCount": 8,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 8
+        }
+      },
+      "summary": {
+        "referencedVaultRows": 88,
+        "verifiedNonzeroVaults": 17,
+        "pricedVaults": 17,
+        "unpricedVaults": 0,
+        "pricedGrossUsd": 14782.637872701425,
+        "verifiedUniqueVaults": 17,
+        "pricedUniqueGrossUsd": 14782.637872701425
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "J6MsZiJUU6bjKSCkbfQsiHkd8gvJoddG2hsdSFsZQEZV",
+          "kind": "bank",
+          "vault": "BWt1ABFexE3gEKRFGZmMo2DFLgAU8SUJc4NZi1t3jvUP",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "13693701120",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 13693.70112,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 13688.614088671426,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8BnaycizsBbwUN6RuXd6UjiEfiBRTzFxY8dTSR4wrhpL",
+          "kind": "bank",
+          "vault": "5cCHRPq5VbR69W6U6uVVU1N6gZfTbiVpxoHnsUiPL48d",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "914554269",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 914.554269,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 914.2145240196389,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FqEhSJSP3ao8RwRSekaAQ9sNQBSANhfb6EPtxQBByyh5",
+          "kind": "bank",
+          "vault": "6NfwhGjfrE4dp7XFut2kYcUQsH4P4AJVSoe9cLVM2z43",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "1222773193",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1.222773193,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 129.60050878592108,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AW6BM2paRj7BhK26rLhTNeDT73YRdB1Eg78xNmd9WPJC",
+          "kind": "bank",
+          "vault": "FrF4Vj2q7wexCPTZzK1FGiqmDiyiwr98irvx5McGYybe",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "150300000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.1503,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 15.930146802395543,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "ENxFoUCt5h7NeVpMfsUUtGbzFyw5WVSeJ2rzLUA7PjFJ",
+          "kind": "bank",
+          "vault": "E9jrLgnnXGQiFnePam3aSChZ6e6cKQaMuqX82bG4QfAi",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "10000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 10,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 9.996285130452318,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5TX5f6UA4vEyHmxrfhAQzubB9so6k6ojmYCcyYTzN1qK",
+          "kind": "bank",
+          "vault": "6wx48PJ5d2h3PCAxUxnSpbkJQAyNssyzHYoMboVGR4zQ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "5995000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 5.995,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 5.9927729357061645,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8jvvoranvt9sUsbUZtb65Mrn7JTfkxsGmkL6zVoDGGqd",
+          "kind": "bank",
+          "vault": "ESm5JEwwKUEHMfos263v5bvb96dhZ6T6fysjqKi5u4zN",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "5000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 5,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 4.998142565226159,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8qWXeq6XDsJyAkQbGKikvkPDKBcAk7sCzryyWXfYQWNH",
+          "kind": "bank",
+          "vault": "BpXcTJHFqGjs4E82wGAez8FAq1FQiRg2dea6DyEryDGY",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "30000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.03,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 3.179670020438232,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "BXMgtNFW8w7H34MZaeavD45obZdLw2RA9A65LoifbMMg",
+          "kind": "bank",
+          "vault": "28Lmf7GZpVUmKGTenR7xzxo488yHUFaXLvvS37ZshHYE",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "100000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.001,
+            "symbol": "WETH",
+            "usdPrice": 2447.215701520096,
+            "usdValue": 2.447215701520096,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5h2KcPQQijX1RR35yhBJPDzvrsLd4sUcTtXUq3PhVhY9",
+          "kind": "bank",
+          "vault": "5U2Vzi7Lwvyzw7hoHKpAZUD2SPfmsYfydRZrejmquso2",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "91010",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.0009101,
+            "symbol": "WETH",
+            "usdPrice": 2447.215701520096,
+            "usdValue": 2.2272110099534395,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AagN1f1wWpVusZJdMQR3ui4xLKPXfCvQvRY5epP43Cos",
+          "kind": "bank",
+          "vault": "BPPrfKVvJcCXY6bzdtP3sfBeKxpGMCe8tn2bPffXTdCd",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "20000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.02,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 2.1197800136254883,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5covW85GcCq3kHCJtcKCKYyQoxZLnHiz3zw5TEZEYgKj",
+          "kind": "bank",
+          "vault": "GqEejRjBRnZTZg417SUmSwpJ4nhTK5E8Ey8JeVPd3cY5",
+          "mint": "MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
+          "rawAmount": "60018139",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 60.018139,
+            "symbol": "MNGO",
+            "usdPrice": 0.032304167595366806,
+            "usdValue": 1.9388360210180207,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3k87hyqCaFR2G4SVwsLNMyPmR1mFN6uo7dUytzKQYu9d",
+          "kind": "bank",
+          "vault": "4hgruY5SXYRHSrJFBjX4DFf39ef2wgYGGasjrUtwS9S1",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "1214428",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1.214428,
+            "symbol": "usdt",
+            "usdPrice": 0.9991697101099837,
+            "usdValue": 1.2134196727094473,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8gabXzwdPn5TvtuQvysh3CxVbjfNY3TZd5XEG5qnueUm",
+          "kind": "bank",
+          "vault": "iAHbTAWfvM269DnnzzQgMocMZLV8PnUoNF7g33i95dR",
+          "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+          "rawAmount": "201",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.00000201,
+            "symbol": "WBTC",
+            "usdPrice": 82189.13518129036,
+            "usdValue": 0.1652001617143936,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AL2BeApHWeHdzERdiCy13ZrmPXaiBWG8s11deHrZPuSt",
+          "kind": "bank",
+          "vault": "Do9Xu1dvgZukExvRLHsnH8cHzjMrhrGxY81ukEudm4XX",
+          "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+          "rawAmount": "474",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 4.74e-7,
+            "symbol": "msol",
+            "usdPrice": 149.34512438999445,
+            "usdValue": 0.00007078958896085737,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2AyZpjYWZf42ui1wzWJ642KWMCCY5YEU9GnKRWzQHLYW",
+          "kind": "bank",
+          "vault": "Dq2eptabWaGfFm6QezfX9BzfTuWA58jXhwXMHUnfuUe8",
+          "mint": "EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o",
+          "rawAmount": "31",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3.1e-7,
+            "symbol": "DAI",
+            "usdPrice": 1.0000346630088675,
+            "usdValue": 3.100107455327489e-7,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "CwyxwCugWhWDMZTo2xCjVr3CqjLorpBMpqHKZCLYpPod",
+          "kind": "bank",
+          "vault": "4P4pgJC7omZWRL4qmngUMW3ETTr2yLXhgaoAPpSp8TWG",
+          "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "rawAmount": "2911",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.02911,
+            "symbol": "bonk",
+            "usdPrice": 0.0000030945776193682414,
+            "usdValue": 9.008315449980951e-8,
+            "priceTimestamp": 1792091525
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "stateReferenceMatches": true,
+            "vaultPdaMatches": true,
+            "tokenAuthorityIsGroupPda": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": []
+    },
+    {
+      "name": "Mango v3 legacy",
+      "program": "mv3ekLzLbnVPNxjSKvqBpU3ZeZXPQdEC3bp5MDEBG68",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "groupDiscovery": {
+          "fluxCount": 5,
+          "currentDiscoveryCount": null,
+          "discoveryBound": "Flux getProgramAccounts only; every discovered address was re-read from the current endpoint, but accounts created after the Flux snapshot can be absent.",
+          "unionCount": 5
+        }
+      },
+      "reachableRootBanks": 34,
+      "reachableNodeBanks": 34,
+      "summary": {
+        "referencedVaultRows": 52,
+        "verifiedNonzeroVaults": 8,
+        "pricedVaults": 7,
+        "unpricedVaults": 1,
+        "pricedGrossUsd": 102.31204474367915,
+        "verifiedUniqueVaults": 7,
+        "pricedUniqueGrossUsd": 102.30820593469441
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "FjuAJu9xyRuUNc6HanXnMRjVp5XtRJpVcJVJSkgKW3X7",
+          "kind": "node-bank",
+          "vault": "4Qq9gvYvoC6wHgWsXGQx67RyAuvg7tYRuP8tDVcadVY9",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "98692861",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 98.692861,
+            "symbol": "usdc",
+            "usdPrice": 0.9996285130452318,
+            "usdValue": 98.65619788960974,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "JCeqLe1DzZWNvHzinkw8YPQugcBVkzYUQRPQeFs4uda3",
+          "kind": "node-bank",
+          "vault": "FKGGNWhjB1qzvWZpkWQAvpGQXCboSCwgFWh438tPFcJr",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "2003861",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2.003861,
+            "symbol": "usdt",
+            "usdPrice": 0.9991697101099837,
+            "usdValue": 2.0021972144707023,
+            "priceTimestamp": 1792091805
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "94jt4wrfbz1HmVde4tfbxH2w9MzLGJjEtMH8nmP1TBWz",
+          "kind": "node-bank",
+          "vault": "3ci8Efirapk7dC4QN2Xj2CmPp5LqwskiuWJL5ykqZLdH",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "10000002",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.010000002,
+            "symbol": "SOL",
+            "usdPrice": 105.9890006812744,
+            "usdValue": 1.0598902187907453,
+            "priceTimestamp": 1792091823
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "EeDeGMfcnmsP4DWocb886PftdDPXdumzgNXHuC1g9wrQ",
+          "kind": "node-bank",
+          "vault": "B2QExwXytEASS5y2BqAA6eztrgRZDwYXHBpLi1cy2DxD",
+          "mint": "MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
+          "rawAmount": "18103714",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 18.103714,
+            "symbol": "MNGO",
+            "usdPrice": 0.032304167595366806,
+            "usdValue": 0.5848254111545884,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4yJ2Vx3kZnmHTNCrHzdoj5nCwriF2kVhfKNvqC6gU8tr",
+          "kind": "srm",
+          "vault": "23ysNQD4rvpH2eVELrC5rytUPbtJg2QkvyAvp2gikgRQ",
+          "mint": "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
+          "rawAmount": "703231",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.703231,
+            "symbol": "srm",
+            "usdPrice": 0.0054588164980593845,
+            "usdValue": 0.0038388089847467993,
+            "priceTimestamp": 1792090375
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4XsibW55BnLcPRZfhbDDKJnt8MvBsRnQUf9WswKajLFu",
+          "kind": "node-bank",
+          "vault": "34e6a9XhgdfhRGN8BFgCPn4DNaaETPrE68LfajbAC4K3",
+          "mint": "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
+          "rawAmount": "25",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.000025,
+            "symbol": "BTC",
+            "usdPrice": 50.25566735530448,
+            "usdValue": 0.0012563916838826121,
+            "priceTimestamp": 1792080487
+          },
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "98pjRuQjK3qA6gXts96PqZT4Ze5QmnCmt3QYjhbUSPue",
+          "kind": "msrm",
+          "vault": "HiB9JtxgnA7G29EWVcPFhXbLCTaPitdVJKgD3BhH6TJj",
+          "mint": "MSRMcoVyrFxnSgo5uXwone5SKcGhT1KEJMFEkMEWf9L",
+          "rawAmount": "1",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwnedByProgram": true,
+            "reachableFromGroup": true,
+            "stateReferenceMatches": true,
+            "storedSignerMatchesDerived": true,
+            "tokenAuthorityMatchesGroupSigner": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "OpenBook v1",
+      "program": "srmqPvymJeFKQ4zGQed1GFppgkRHL9kaELCbyksJtPX",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "officialRegistry": {
+          "url": "https://raw.githubusercontent.com/openbook-dex/resources/main/markets.json",
+          "entries": 18,
+          "deprecatedEntries": 0,
+          "currentDecodedMarkets": 18,
+          "unavailable": []
+        }
+      },
+      "summary": {
+        "referencedVaultRows": 36,
+        "verifiedNonzeroVaults": 32,
+        "pricedVaults": 31,
+        "unpricedVaults": 1,
+        "pricedGrossUsd": 607992.5291869106,
+        "verifiedUniqueVaults": 32,
+        "pricedUniqueGrossUsd": 607992.5291869106
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "8BnEgHoWFysVcuFFX7QztDmzuH8r5ZFvyP3sYwn1XTh6",
+          "market": "SOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "6A5NHCj1yF6urc9wZNe6Bcjj4LVszQNj5DwAWG97yzMu",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "442559502818",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 442559.502818,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 442389.08910096396,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Hs97TCZeuYiJxooo3U73qEHXg3dKpRL4uYKYRryEK9CF",
+          "market": "BONK/SOL",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "8KftabityJoWgvUb6wwAPZww8mYmLq8WTMuQGGPoGiKM",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "514934376331",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 514.934376331,
+            "symbol": "SOL",
+            "usdPrice": 105.9081483392861,
+            "usdValue": 54535.74631346131,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "BbJgE7HZMaDp5NTYvRh5jZSkQPVDTU8ubPFtpogUkEj4",
+          "market": "ETH/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "2HjmKdfj5bs6uzGDH6tjRZejHfwkzZrX59UskYbZtpJV",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "35003777106",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 35003.777106,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 34990.29841278711,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9Lyhks5bQQxb9EyyX55NtgKQzpM4WK7JCmeaWuQ5MoXD",
+          "market": "mSOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "FxBmYB5gdcDGag6992QkB1beMQajWiEhoRsaDYo3oGjm",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "27011375846",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 27011.375846,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 27000.974738508547,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8BnEgHoWFysVcuFFX7QztDmzuH8r5ZFvyP3sYwn1XTh6",
+          "market": "SOL/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "CKxTHwM9fPMRRvZmFnFoqKNd9pQR21c5Aq9bh5h9oghX",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "207641936710",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 207.64193671,
+            "symbol": "SOL",
+            "usdPrice": 105.9081483392861,
+            "usdValue": 21990.973034539336,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DZjbn4XC8qoHKikZqzmhemykVzmossoayV9ffbsUqxVj",
+          "market": "RAY/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "EBGFfeQ5dVwW4HxtShVbh8aCh2fKJ1r2qXBoa6teUve6",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "11259144282",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 11259.144282,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 11254.808791256895,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8PhnCfgqpgFM7ZJvttGdBVMXHuU4Q23ACxCvWkbs1M71",
+          "market": "BONK/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "D9dojzvwJGs4q3Cx8ytvD8kWVVZszoVKvPZEZ5D8PV1Y",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "6992054900",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 6992.0549,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 6989.362511614615,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FZxi3yWkE5mMjyaZj6utmYL54QQYfMCKMcLaQZq4UwnA",
+          "market": "ETH/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "6N4p6Uo4QsFTXCra8Y8suVqCaNSNhTyvEMVJE9ARd1JK",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "2645718325",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2645.718325,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 2644.69955421071,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "B2na8Awyd7cpC59iEU43FagJAPLigr3AP3s38KM982bu",
+          "market": "USDT/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "8iofzoHaVY2PjqjZmq7jrF3N3eQVLBxzMwSCKMXc5zny",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1477310726",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1477.310726,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 1476.7418668738671,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3NnxQvDcZXputNMxaxsGvqiKpqgPfSYXpNigZNFcknmD",
+          "market": "MNGO/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "4pQHik1oQgYJwNRjyzNgTJcxR7Z3BgHPcmj9Gp3gVZyA",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "1252119216",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1252.119216,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 1251.6370700096595,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3vtRgLDesutQdwotnoUuSMuKKj8YJAE85s938mGKfxXZ",
+          "market": "scnSOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "ESH9W66Ca8HoVNPFdbHCUucLuCKGhvp8rSfWpkRVHYZd",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "571794373",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 571.794373,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 571.5741955913967,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2AdaV97p6SfkuMQJdu8DHhBhmJe7oWdvbm52MJfYQmfA",
+          "market": "SOL/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "9aoqhYjXBqWsTVCEjwtxrotx6sVPGVLmbpVSpSRzTv54",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "551239251",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 551.239251,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 550.7772369835516,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9Lyhks5bQQxb9EyyX55NtgKQzpM4WK7JCmeaWuQ5MoXD",
+          "market": "mSOL/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "9LBLMC54awCpsufBA9jm5mbwQbprNqLkSJxnpU7phXsm",
+          "mint": "mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So",
+          "rawAmount": "3606000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 3.606,
+            "symbol": "msol",
+            "usdPrice": 149.75403972735316,
+            "usdValue": 540.0130672568355,
+            "priceTimestamp": 1792092188
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8PhnCfgqpgFM7ZJvttGdBVMXHuU4Q23ACxCvWkbs1M71",
+          "market": "BONK/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "A9yRKSx8SyqNdCtCMUgr6wDXUs1JmVFkVno6FcscSD6m",
+          "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "rawAmount": "11242000200000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 112420002,
+            "symbol": "bonk",
+            "usdPrice": 0.000003105669508845119,
+            "usdValue": 349.1393723957073,
+            "priceTimestamp": 1792092418
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3NnxQvDcZXputNMxaxsGvqiKpqgPfSYXpNigZNFcknmD",
+          "market": "MNGO/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "6pr2nSMUg7Bet39jztkKJ1WtX1AV27vpzzLbWa4Tdrrc",
+          "mint": "MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac",
+          "rawAmount": "9130000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 9130,
+            "symbol": "MNGO",
+            "usdPrice": 0.03230540086145038,
+            "usdValue": 294.948309865042,
+            "priceTimestamp": 1792092188
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "FZxi3yWkE5mMjyaZj6utmYL54QQYfMCKMcLaQZq4UwnA",
+          "market": "ETH/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "AW9cs18vGQnNitjHpBRFAJCFomncMGkB3qpzVqcSPZzz",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "11520000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 0.1152,
+            "symbol": "WETH",
+            "usdPrice": 2456.590103473452,
+            "usdValue": 282.99917992014167,
+            "priceTimestamp": 1792092188
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "AYhLYoDr6QCtVb5n1M5hsWLG74oB8VEz378brxGTnjjn",
+          "market": "mSOL/SOL",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "4NQihzqeiK7bXVufn27E9UdMruVHZsBE1JWk1CKebePD",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "1508994379",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1.508994379,
+            "symbol": "SOL",
+            "usdPrice": 105.9081483392861,
+            "usdValue": 159.81480053428092,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DZjbn4XC8qoHKikZqzmhemykVzmossoayV9ffbsUqxVj",
+          "market": "RAY/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "7ssdQJxVAEBSigoJovgHcchwcEQFPPtYbyzLHDHEewKM",
+          "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "rawAmount": "79800000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 79.8,
+            "symbol": "ray",
+            "usdPrice": 1.852667456566023,
+            "usdValue": 147.84286303396863,
+            "priceTimestamp": 1792092418
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "GpHbiJJ9VHiuHVXeoet121Utrbm1CSNNzYrBKB8Xz2oz",
+          "market": "RAY/USDT",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "kh2FSFa3JQn858KwM4NFjJVokQgtEpnqUyrz62QTMN6",
+          "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "rawAmount": "77000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 77,
+            "symbol": "ray",
+            "usdPrice": 1.852667456566023,
+            "usdValue": 142.65539415558376,
+            "priceTimestamp": 1792092418
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "iufycE4CrRMVHkgym27q28SEyCZ3ZHsN3rLxbPXA7m2",
+          "market": "WOOF/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "64sufnxpK9GLSe2eNWGKMkEDFqNKvwY2Qs7uEGcZzCaa",
+          "mint": "9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE",
+          "rawAmount": "8670315000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 8670315,
+            "symbol": "WOOF",
+            "usdPrice": 0.000012863328201310488,
+            "usdValue": 111.52910745374534,
+            "priceTimestamp": 1792080487
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HTHMfoxePjcXFhrV74pfCUNoWGe374ecFwiDjPGTkzHr",
+          "market": "SLND/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "2MFz69jbfMrFaq8oRGg1zUT8zPvFNFBTR1SFXJG9K6XS",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "74733813",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 74.733813,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 74.70503570162428,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "iufycE4CrRMVHkgym27q28SEyCZ3ZHsN3rLxbPXA7m2",
+          "market": "WOOF/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "2aCA9jMzgHcfte4wbFjFoxQ3uqHtSSXU6ec4d9t8AFVv",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "49185278",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 49.185278,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 49.166338521818965,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Hs97TCZeuYiJxooo3U73qEHXg3dKpRL4uYKYRryEK9CF",
+          "market": "BONK/SOL",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "AVnL1McPPrn1dZyHGThwXzwYaHBp6sxB44vXoETPqH45",
+          "mint": "DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263",
+          "rawAmount": "1413400100000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 14134001,
+            "symbol": "bonk",
+            "usdPrice": 0.000003105669508845119,
+            "usdValue": 43.895535943686426,
+            "priceTimestamp": 1792092418
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "JCKa72xFYGWBEVJZ7AKZ2ofugWPBfrrouQviaGaohi3R",
+          "market": "stSOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "BExFcur6aLQBLhtbngfs37yxvNad3N5u1Kg3pWzSeuNn",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "43100595",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 43.100595,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 43.083998513982536,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "GpHbiJJ9VHiuHVXeoet121Utrbm1CSNNzYrBKB8Xz2oz",
+          "market": "RAY/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "JBnZwmn4V8wVHLWzHGeiKZ41icPf6d64cdfHBBaba1w3",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "38675376",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 38.675376,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 38.642960736081484,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "HE1nibjUq5cTi6Zer5679od58PDAjtPAjTetUuV5XMPn",
+          "market": "MOLA/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "AXLyNfNfbJPh4rS39efMHWi3GhiBCtZ4BPK7qz5Uhcqu",
+          "mint": "AMdnw9H5DFtQwZowVFr4kUgSXJzLokKSinvgGiUoLSps",
+          "rawAmount": "9862531200000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "Serum DEX v3 legacy",
+      "program": "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin",
+      "status": "completed",
+      "blocker": null,
+      "discovery": {
+        "officialRegistry": {
+          "url": "https://raw.githubusercontent.com/project-serum/serum-ts/master/packages/serum/src/markets.json",
+          "entries": 168,
+          "deprecatedEntries": 29,
+          "currentDecodedMarkets": 168,
+          "unavailable": []
+        }
+      },
+      "summary": {
+        "referencedVaultRows": 336,
+        "verifiedNonzeroVaults": 270,
+        "pricedVaults": 248,
+        "unpricedVaults": 22,
+        "pricedGrossUsd": 10601566.80155203,
+        "verifiedUniqueVaults": 270,
+        "pricedUniqueGrossUsd": 10601566.80155203
+      },
+      "topPricedUniqueVaults": [
+        {
+          "state": "9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT",
+          "market": "SOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "8CFo8bL8mZQK8abbFyypFMwEDd8tVJjHTTojMLgQTUSZ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "2546686686864",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 2546686.686864,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 2545706.049589981,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT",
+          "market": "SOL/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "36c6YqAwyGKQG66XEp2dJc5JqjaBNv7sVghEtJv4c7u6",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "20285100161330",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 20285.10016133,
+            "symbol": "SOL",
+            "usdPrice": 105.9081483392861,
+            "usdValue": 2148357.396963414,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8Gmi2HhZmwQPVdCwzS7CM66MGstMXPcTVHA7jF19cLZz",
+          "market": "ETH/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "8cCoWNtgCL7pMapGZ6XQ6NSyD1KC9cosUEs4QgeVq49d",
+          "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
+          "rawAmount": "82269410327",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 822.69410327,
+            "symbol": "WETH",
+            "usdPrice": 2456.590103473452,
+            "usdValue": 2021022.1922790483,
+            "priceTimestamp": 1792092188
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HXBi8YBwbh4TXF6PjVw81m8Z3Cc4WBofvauj5SBFdgUs",
+          "market": "SBR/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "4YqAGXQEQTQbn4uKX981yCiSjUuYPV8aCajc9qQh3QPy",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "541667005617",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 541667.005617,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 541458.4291719453,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "A8YFbxQYFVqKZaoYJLLUVcQiWP7G2MeEgW5wsAQgMvFw",
+          "market": "BTC/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "7sP9fug8rqZFLbXoEj8DETF81KasaRA1fr6jQb6ScKc5",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "334233464639",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 334233.464639,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 334104.76337577036,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2xiv8A5xrJ7RnGdxXB42uFEkYHJjszEhaJyKKt4WaLep",
+          "market": "RAY/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "22jHt5WmosAykp3LPGSAKgY45p7VGh4DFWSwp21SWBVe",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "329249628382",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 329249.628382,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 329122.8462145219,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HWHvQhFmJB3NUcu1aihKmrKegfVxBEHzwVX6yZCKEsi1",
+          "market": "SOL/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "EJwyNJJPbHH4pboWQf1NxegoypuY48umbfkhyfPew4E",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "294908465940",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 294908.46594,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 294661.29224076436,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6oGsL2puUgySccKzn9XA9afqF217LfxP5ocq4B3LWsjy",
+          "market": "MSOL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "6w5hF2hceQRZbaxjPJutiWSPAFWDkp3YbY2Aq3RpCSKe",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "194261503038",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 194261.503038,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 194186.69993333516,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DYfigimKWc5VhavR4moPBibx9sMcWYVSjVdWvPztBPTa",
+          "market": "DXL/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "5Y65XyuJemmRU7G1AQQTvWKSge8WDVYhb2knd7htJHoh",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "193892297568",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 193892.297568,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 193817.63663105748,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HWHvQhFmJB3NUcu1aihKmrKegfVxBEHzwVX6yZCKEsi1",
+          "market": "SOL/USDT",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "29cTsXahEoEBwbHwVc59jToybFpagbBMV6Lh45pWEmiK",
+          "mint": "So11111111111111111111111111111111111111112",
+          "rawAmount": "1671500000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 1671.5,
+            "symbol": "SOL",
+            "usdPrice": 105.9081483392861,
+            "usdValue": 177025.46994911673,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "8Gmi2HhZmwQPVdCwzS7CM66MGstMXPcTVHA7jF19cLZz",
+          "market": "ETH/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "C7KrymKrLWhCsSjFaUquXU3SYRmgYLRmMjQ4dyQeFiGE",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "143818925760",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 143818.92576,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 143763.54627416178,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4",
+          "market": "BTC/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "BD8QnhY2T96h6KwyJoCT9abMcPBkiaFuBNK9h6FUNX2M",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "137574672449",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 137574.672449,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 137459.36602467622,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "ByRys5tuUWDgL73G8JBAEfkdFf8JWBzPBDHsBVQ5vbQA",
+          "market": "SRM/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "hUgoKy5wjeFbZrXDW4ecr42T4F5Z1Tos31g68s5EHbP",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "127232783762",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 127232.783762,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 127183.79100176854,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS",
+          "market": "USDT/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "9FLih4qwFMjdqRAGmHeCxa64CgjP1GtcgKJgHHgz44ar",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "118124217490",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 118124.21749,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 118078.73211041541,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "7MpMwArporUHEGW7quUpkPZp5L5cHPs9eKUfKCdaPHq2",
+          "market": "xCOPE/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "FCqm5xfy8ZvMxifVFfSz9Gxv1CTRABVMyLXuJrWvzAq7",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "90107956695",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 90107.956695,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 90073.25936789,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "Di66GTLsV64JgCCYGVcY21RZ173BHkjJVgPyezNN7P1K",
+          "market": "ATLAS/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "5Wu76Qx7EoiR79zVVV49cZDYZ5csZaKFiHKYtCjF9FNU",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "87027070718",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 87027.070718,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 86993.55972906094,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6fc7v3PmjZG9Lk2XTot6BywGyYLkBQuzuFKd4FpCsPxk",
+          "market": "COPE/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "EFdqJhawpCReiK2DcrbbUUWWc6cd8mqgZm5MSbQ3TR33",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "77908537320",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 77908.53732,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 77878.53754968889,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "teE55QrL4a4QSfydR9dnHF97jgCfptpuigbb53Lo95g",
+          "market": "RAY/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "5AXZV7XfR7Ctr6yjQ9m9dbgycKeUXWnWqHwBTZT6mqC7",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "66409552940",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 66409.55294,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 66353.89263600552,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "HxFLKUAmAMLz1jtT3hbvCMELwH5H9tpM2QugP8sKyfhW",
+          "market": "POLIS/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "ArUDWPwzGQFfa7t7nSdkp1Dj6tYA3icXEq8K7goz9WoG",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "56207319825",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 56207.319825,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 56185.676411549335,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "ch7kmPrtoQUSEPBggcNAvLGiMQkJagVwd3gDYfd8m7Q",
+          "market": "ETH/USDT",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "67fDzSS1pCHXyVaQNV526oGgJbAfPbsUu7VoD76weQiM",
+          "mint": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+          "rawAmount": "53897240460",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 53897.24046,
+            "symbol": "usdt",
+            "usdPrice": 0.9991618629921396,
+            "usdValue": 53852.067188148925,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "3d4rzwpy9iGdCZvgxcu7B1YocYffVLsQXPXkBZKt2zLc",
+          "market": "MNGO/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "9UB1NhGeDuV1apHdtK5LeAEjP7kZFH8vVYGdh2yGFRi8",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "52482073957",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 52482.073957,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 52461.86500149498,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4tSvZvnbyzHXLMTiFonMyxZoHmFqau1XArcRCVHLZ5gX",
+          "market": "soETH/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "EsDTx47jjFACkBhy48Go2W7AQPk4UxtT4765f3tpK21a",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "52264815622",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 52264.815622,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 52244.690324850955,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "A1Q9iJDVVS8Wsswr9ajeZugmj64bQVCYLZQLra2TMBMo",
+          "market": "soSUSHI/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "2UN8qfXzoUDAxZMX1KqKut93frkt5hFREL8xcw6Hgtsg",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "51299703707",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 51299.703707,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 51279.9500396719,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "G4LcexdCzzJUKZfqyVDQFzpkjhB1JoCNL8Kooxi9nJz5",
+          "market": "MER/USDC",
+          "deprecated": false,
+          "kind": "quote",
+          "vault": "DovDds7NEzFn493DJ2yKBRgqsYgDXg6z38pUGXe1AAWQ",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "rawAmount": "50330945303",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 50330.945303,
+            "symbol": "usdc",
+            "usdPrice": 0.9996149360347006,
+            "usdValue": 50311.564669624364,
+            "priceTimestamp": 1792092659
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2xiv8A5xrJ7RnGdxXB42uFEkYHJjszEhaJyKKt4WaLep",
+          "market": "RAY/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "GGcdamvNDYFhAXr93DWyJ8QmwawUHLCyRqWL3KngtLRa",
+          "mint": "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+          "rawAmount": "25003724105",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": {
+            "amount": 25003.724105,
+            "symbol": "ray",
+            "usdPrice": 1.852667456566023,
+            "usdValue": 46323.58594228891,
+            "priceTimestamp": 1792092418
+          },
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ],
+      "topUnpricedUniqueVaults": [
+        {
+          "state": "Cud48DK2qoxsWNzQeTL5D8sAiHsGwG8Ev1VMNcYLayxt",
+          "market": "FAB/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "71E7dr2Rodeneu6wPn8oofCpLQJjfDHr6r76HGCDv491",
+          "mint": "EdAhkbj5nF9sRM7XN7ewuW8C9XEUMs8P7cnoQ57SYE96",
+          "rawAmount": "28435513800000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6pQMoHDC2o8eeFxyTKtfnsr8d48hKFWsRpLHAqVHH2ZP",
+          "market": "JET/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "ARxrXhztC2oN9mHAFZhJkHpPnzu82CMvnYBN4aYxJdQR",
+          "mint": "JET6zMJWkCN9tpRT2v2jfAmm5VnQFDpUBCyaKojmGtz",
+          "rawAmount": "10483000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "5FpKCWYXgHWZ9CdDMHjwxAfqxJLdw2PRXuAmtECkzADk",
+          "market": "renDOGE/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "5UbUbaVLXnZq1eibQSUxdsk6Lp38bgdTjbjQPssXGgwW",
+          "mint": "ArUkYE2XDKzqy77PRRGjo4wREWwqk6RXTfM9NeqzPvjU",
+          "rawAmount": "705000000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "G4LcexdCzzJUKZfqyVDQFzpkjhB1JoCNL8Kooxi9nJz5",
+          "market": "MER/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "4ctYuY4ZvCVRvF22QDw8LzUis9yrnupoLQNXxmZy1BGm",
+          "mint": "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K",
+          "rawAmount": "69598459557",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "4xyWjQ74Eifq17vbue5Ut9xfFNfuVB116tZLEpiZuAn8",
+          "market": "soLUA/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "ASztG6ecUjr11ieCpbHSdApsNvYr1m24R6gueLEUWTmS",
+          "mint": "EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX",
+          "rawAmount": "32460000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "F1T7b6pnR8Pge3qmfNUfW6ZipRDiGpMww6TKTrRU4NiL",
+          "market": "soUBXT/USDT",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "98537dK23H5t1RxjtHWGDYy7hNkTiejETNpuxRMtGcjX",
+          "mint": "873KLxCbz7s9Kc4ZzgYRtNmhfkQrhfyWGZJBmyCbC3ei",
+          "rawAmount": "20459000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2wteg25ch227n4Rh1CN4WNrDZXBpRBpWJ48mEC2K7f4r",
+          "market": "FTT/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "3JTjTByokXo9VinZmWdSUwgCayr6UpGsd4KGSVDQFbxK",
+          "mint": "EzfgjvkSwthhgHaceR3LnKXUoRkP6NUhfghdaHAj1tUv",
+          "rawAmount": "18987000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "2wr3Ab29KNwGhtzr5HaPCyfU1qGJzTUAN4amCLZWaD1H",
+          "market": "soUBXT/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "Hz4sxELQ8JmTbJsaty5q8dqPHw3AfnVSmrUR5BsyjYFd",
+          "mint": "873KLxCbz7s9Kc4ZzgYRtNmhfkQrhfyWGZJBmyCbC3ei",
+          "rawAmount": "17365000000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "6V6y6QFi17QZC9qNRpVp7SaPiHpCTp2skbRQkUyZZXPW",
+          "market": "CYS/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "4PfqVvYg6tshSnMBMrXUwzYdS9gZvoxWFwGeLEx6BKow",
+          "mint": "BRLsMczKuaR5w9vSubF4j8HwEGGprVAyyVgS4EX7DKEg",
+          "rawAmount": "13260712000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        },
+        {
+          "state": "DPfj2jYwPaezkCmUNm5SSYfkrkz8WFqwGLcxDDUsN3gA",
+          "market": "SNY/USDC",
+          "deprecated": false,
+          "kind": "base",
+          "vault": "CddTJJj2tDWUk6Kteh3KSBJJh4HvkoWMXcQjZuXaaAzP",
+          "mint": "4dmKkXNHdgYsXqBHCuMikNQWwVomZURhYvkkX5c4pQ7y",
+          "rawAmount": "11838450000",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "valuation": null,
+          "proof": {
+            "stateOwner": true,
+            "ownAddressMatches": true,
+            "signerPdaDerived": true,
+            "tokenAuthorityMatches": true,
+            "tokenMintMatches": true
+          }
+        }
+      ]
+    }
+  ]
+}

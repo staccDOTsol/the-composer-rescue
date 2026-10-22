@@ -1,0 +1,480 @@
+{
+  "generatedAt": "2026-10-15T20:41:11.430Z",
+  "scope": "isolated Surfpool fork with current deployed programs; no mainnet send",
+  "fork": "http://127.0.0.1:9297",
+  "attacker": "8bjwPzdTZLnehcvvtua6k4VL8WR1rTvnb9cT9VZvSsyh",
+  "syntheticStartingUSDGraw": "0",
+  "syntheticStartingUSDCraw": "5000000000000",
+  "sourceTokenAccounts": [
+    "E1prFSvCtp5ze1hAegjdtN3kQWVoRuSGWLoc8Vj9h4nm",
+    "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB"
+  ],
+  "target": {
+    "vaultId": 95,
+    "oracle": "9JfwVjFMDpSVSKWt9sGXkPEsGKCLNtYo6YWvs9BAvs9h",
+    "dex": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy"
+  },
+  "lender": {
+    "reserve": "AYL4LMc4ZCVyq3Z7XPJGWDM4H9PiWjqXAAuuHBEGVR2Z",
+    "availableRaw": "8229043891243",
+    "flashFeeSf": "0"
+  },
+  "signatureVerification": true,
+  "v1Version": 1,
+  "liveSubmission": false,
+  "watch": [
+    {
+      "label": "attacker",
+      "address": "8bjwPzdTZLnehcvvtua6k4VL8WR1rTvnb9cT9VZvSsyh"
+    },
+    {
+      "label": "attackerUSDG",
+      "address": "4fyDeAv2tNr5o4AxGuvkbZ2pAPhKYVXoYxthaQr3Nrb6"
+    },
+    {
+      "label": "attackerUSDC",
+      "address": "3YyTqWR73phspgU6RJzMUoenP339BATwkvfE7nwnCpeR"
+    },
+    {
+      "label": "flashSupply",
+      "address": "8BkQTZsT8ssKMU643De4iiV5Wf3pENdUFTsdtHPueKjB"
+    },
+    {
+      "label": "flashFeeVault",
+      "address": "5iLRav31Y7DJwM6bZ7s92jqvV3zd1wZMcp4mYeKXh8cj"
+    },
+    {
+      "label": "dexSupply0",
+      "address": "5nWhfcZipZ6acCn3JjnkYyLM1ZwfvkLNcMFrxJNX13bq"
+    },
+    {
+      "label": "dexSupply1",
+      "address": "J8WWASwhyLzEwRjJjrTwtnJLv6PQw1r9cvMGskqV8Gcn"
+    },
+    {
+      "label": "dex",
+      "address": "AH9SPk4p2BJJA4WdgJsagpd1D4sAnwL2Tj2gUSM5rYqy"
+    },
+    {
+      "label": "oracle",
+      "address": "9JfwVjFMDpSVSKWt9sGXkPEsGKCLNtYo6YWvs9BAvs9h"
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "address": "44LQTsYEozMwkwXpMi9EjJocwyd25dqnkdHTeZ4Sd8DR"
+    }
+  ],
+  "before": [
+    {
+      "label": "attacker",
+      "rawAmount": null,
+      "lamports": 20000000000
+    },
+    {
+      "label": "attackerUSDG",
+      "rawAmount": "0",
+      "lamports": 2192400
+    },
+    {
+      "label": "attackerUSDC",
+      "rawAmount": "5000000000000",
+      "lamports": 2039281
+    },
+    {
+      "label": "flashSupply",
+      "rawAmount": "8229043961248",
+      "lamports": 2039280
+    },
+    {
+      "label": "flashFeeVault",
+      "rawAmount": "0",
+      "lamports": 2039280
+    },
+    {
+      "label": "dexSupply0",
+      "rawAmount": null,
+      "lamports": 1753920
+    },
+    {
+      "label": "dexSupply1",
+      "rawAmount": null,
+      "lamports": 1753920
+    },
+    {
+      "label": "dex",
+      "rawAmount": null,
+      "lamports": 3180720
+    },
+    {
+      "label": "oracle",
+      "rawAmount": null,
+      "lamports": 2832720
+    },
+    {
+      "label": "largestBorrowingPosition",
+      "rawAmount": null,
+      "lamports": 1010920
+    }
+  ],
+  "results": [
+    {
+      "amountRaw": "0",
+      "slot": 457373637,
+      "err": null,
+      "bytes": 423,
+      "addresses": 9,
+      "instructions": 1,
+      "requiredSignatures": 1,
+      "computeUnits": 63467,
+      "oracleReturns": [
+        {
+          "supplyX15": "2016878917420337",
+          "borrowX15": "2016878917420337"
+        }
+      ],
+      "attackerUSDTPostRaw": null,
+      "attackerUSDCPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc invoke [1]",
+        "Program log: Instruction: GetBothExchangeRate",
+        "Program log: smart_col_exchange_rate: 2016878917420337",
+        "Program log: smart_col_exchange_rate: 2016878917420337",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 63467 of 1400000 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc MYVtN1cqBwAAAAAAAAAAADGFbTdXKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success"
+      ]
+    },
+    {
+      "amountRaw": "1000",
+      "slot": 457373638,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 225990,
+      "oracleReturns": [
+        {
+          "supplyX15": "2016878917420337",
+          "borrowX15": "2016878917420337"
+        }
+      ],
+      "attackerUSDTPostRaw": "4999999999000",
+      "attackerUSDCPostRaw": "999",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2016878917420337",
+        "Program log: smart_col_exchange_rate: 2016878917420337",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33263 of 1228895 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc MYVtN1cqBwAAAAAAAAAAADGFbTdXKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1175247 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21622 of 1195632 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-1000",
+      "attackerUSDCDeltaRaw": "999",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1000000",
+      "slot": 457373638,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 225720,
+      "oracleReturns": [
+        {
+          "supplyX15": "2016878920921219",
+          "borrowX15": "2016878920921219"
+        }
+      ],
+      "attackerUSDTPostRaw": "4999999000000",
+      "attackerUSDCPostRaw": "999895",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2016878920921219",
+        "Program log: smart_col_exchange_rate: 2016878920921219",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32995 of 1228897 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc g/CiN1cqBwAAAAAAAAAAAIPwojdXKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1175517 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21622 of 1195902 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-1000000",
+      "attackerUSDCDeltaRaw": "999895",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "1000000000",
+      "slot": 457373639,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 226485,
+      "oracleReturns": [
+        {
+          "supplyX15": "2016885233361968",
+          "borrowX15": "2016885233361968"
+        }
+      ],
+      "attackerUSDTPostRaw": "4999000000000",
+      "attackerUSDCPostRaw": "999830750",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2016885233361968",
+        "Program log: smart_col_exchange_rate: 2016885233361968",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 32997 of 1228136 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc MCTjr1gqBwAAAAAAAAAAADAk469YKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1174752 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1195139 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-1000000000",
+      "attackerUSDCDeltaRaw": "999830750",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "5000000000",
+      "slot": 457373639,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 226765,
+      "oracleReturns": [
+        {
+          "supplyX15": "2016967462083783",
+          "borrowX15": "2016967462083783"
+        }
+      ],
+      "attackerUSDTPostRaw": "4995000000000",
+      "attackerUSDCPostRaw": "4997851710",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2016967462083783",
+        "Program log: smart_col_exchange_rate: 2016967462083783",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33019 of 1227878 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc x9wZ1WsqBwAAAAAAAAAAAMfcGdVrKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1174472 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1194859 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-5000000000",
+      "attackerUSDCDeltaRaw": "4997851710",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "10000000000",
+      "slot": 457373640,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 226886,
+      "oracleReturns": [
+        {
+          "supplyX15": "2017198366841030",
+          "borrowX15": "2017198366841030"
+        }
+      ],
+      "attackerUSDTPostRaw": "4990000000000",
+      "attackerUSDCPostRaw": "9992450216",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2017198366841030",
+        "Program log: smart_col_exchange_rate: 2017198366841030",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33001 of 1227739 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc xtgYmKEqBwAAAAAAAAAAAMbYGJihKgcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1174351 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1194738 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-10000000000",
+      "attackerUSDCDeltaRaw": "9992450216",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "20000000000",
+      "slot": 457373640,
+      "err": null,
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 227223,
+      "oracleReturns": [
+        {
+          "supplyX15": "2018086711462042",
+          "borrowX15": "2018086711462042"
+        }
+      ],
+      "attackerUSDTPostRaw": "4980000000000",
+      "attackerUSDCPostRaw": "19971900314",
+      "lenderPostRaw": "8229043961248",
+      "feeVaultPostRaw": "0",
+      "lastLogs": [
+        "Program log: smart_col_exchange_rate: 2018086711462042",
+        "Program log: smart_col_exchange_rate: 2018086711462042",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc consumed 33241 of 1227642 compute units",
+        "Program return: jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc mgiQbXArBwAAAAAAAAAAAJoIkG1wKwcAAAAAAAAAAAA=",
+        "Program jupnw4B6Eqs7ft6rxpzYLJZYSnrpRgPcr589n5Kv4oc success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD invoke [1]",
+        "Program log: Instruction: FlashRepayReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1174014 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 21624 of 1194401 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success"
+      ],
+      "attackerUSDTDeltaRaw": "-20000000000",
+      "attackerUSDCDeltaRaw": "19971900314",
+      "lenderDeltaRaw": "0"
+    },
+    {
+      "amountRaw": "40000000000",
+      "slot": 457373640,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 88356,
+      "oracleReturns": [],
+      "attackerUSDTPostRaw": null,
+      "attackerUSDCPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1364262 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 36961 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:166",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 51395 of 1363039 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "80000000000",
+      "slot": 457373641,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 88252,
+      "oracleReturns": [],
+      "attackerUSDTPostRaw": null,
+      "attackerUSDCPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1364264 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 36959 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:166",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 51293 of 1363041 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    },
+    {
+      "amountRaw": "100000000000",
+      "slot": 457373641,
+      "err": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 6000
+          }
+        ]
+      },
+      "bytes": 1245,
+      "addresses": 31,
+      "instructions": 4,
+      "requiredSignatures": 1,
+      "computeUnits": 88250,
+      "oracleReturns": [],
+      "attackerUSDTPostRaw": null,
+      "attackerUSDCPostRaw": null,
+      "lenderPostRaw": null,
+      "feeVaultPostRaw": null,
+      "lastLogs": [
+        "Program log: Instruction: FlashBorrowReserveLiquidity",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 1364264 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD consumed 36959 of 1400000 compute units",
+        "Program KLend2g3cP87fffoy8q1mQqGKjrxjC8boSyAYavgmjD success",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd invoke [1]",
+        "Program log: Instruction: SwapIn",
+        "Program log: Math error thrown at programs/dex/src/utils/swap.rs:166",
+        "Program log: AnchorError occurred. Error Code: LibraryMathError. Error Number: 6000. Error Message: LIBRARY_MATH_ERROR.",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd consumed 51291 of 1363041 compute units",
+        "Program jupZ4m2GqUCJ5iueMfzQf8khFfH31d4XAQt3RzCT9Vd failed: custom program error: 0x1770"
+      ]
+    }
+  ]
+}

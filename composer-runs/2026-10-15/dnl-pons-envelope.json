@@ -1,0 +1,104 @@
+{
+  "generatedAt": "2026-10-19T06:47:05.203Z",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "network": "mainnet-beta",
+  "quote": {
+    "first": {
+      "contextSlot": 458738711,
+      "inAmount": "1000000000",
+      "outAmount": "377509121942",
+      "threshold": "375621576333",
+      "route": [
+        {
+          "label": "Denali",
+          "ammKey": "J5vnfreibQsJrdFoj8DQTpBKNf6p2BGzzTjUZHDyXraj",
+          "inAmount": "1000000000",
+          "outAmount": "377509121942"
+        }
+      ]
+    },
+    "exit": {
+      "contextSlot": 458738718,
+      "inAmount": "377509121942",
+      "outAmount": "981776975",
+      "threshold": "976868091",
+      "route": [
+        {
+          "label": "Raydium CLMM",
+          "ammKey": "6ZT7FrLvBMVEc5ZQLNBNxPyevGE4VyDbu5NVx1tcfhNm",
+          "inAmount": "377509121942",
+          "outAmount": "981776975"
+        }
+      ]
+    },
+    "grossDeltaRaw": "-18223025"
+  },
+  "builds": {
+    "first": {
+      "status": 200,
+      "error": null,
+      "setupCount": 1,
+      "otherCount": 0,
+      "swapAccountCount": 28,
+      "cleanupCount": 0
+    },
+    "exit": {
+      "status": 200,
+      "error": null,
+      "setupCount": 1,
+      "otherCount": 0,
+      "swapAccountCount": 27,
+      "cleanupCount": 0
+    }
+  },
+  "noSigningKeyLoaded": true,
+  "noSimulation": true,
+  "noSubmission": true,
+  "userAtas": {
+    "slot": 458738734,
+    "usdc": "BgfAes9oQmYS6sa2LefzNwdkAA1mwTq9iDZxVDhaxKDZ",
+    "usdcExists": true,
+    "pons": "6JZmJ7EU4gDkfv9u7AvZFbT5xjP7R16ZvPz2QokBqdu4",
+    "ponsExists": false
+  },
+  "envelope": {
+    "instructionCount": 6,
+    "addressCount": 39,
+    "writableCount": 20,
+    "requiredSignatures": 1,
+    "wireBytes": 1585,
+    "v0Bytes": 1569,
+    "borrowIndex": 2,
+    "limitBytes": 4096,
+    "limitAccounts": 64,
+    "includesSetupCount": 2,
+    "firstRestCount": 1,
+    "exitRestCount": 1,
+    "underLimits": true,
+    "withPonsAtaClose": {
+      "instructionCount": 7,
+      "addressCount": 39,
+      "wireBytes": 1593,
+      "underLimits": true,
+      "conditionalOnZeroPonsDust": true
+    }
+  },
+  "feeEconomics": {
+    "solPriceQuote": {
+      "slot": 458738773,
+      "oneSolUsdcRaw": "105820070",
+      "route": [
+        "Kipseli"
+      ]
+    },
+    "baseSignatureFeeLamports": 5000,
+    "priorityFeeLamports": 0,
+    "baseFeeUsdcRawCeiling": "530",
+    "oneTokenAtaRentLamports": 1488440,
+    "ataRentUsdcRawCeiling": "157507",
+    "quotedGrossDeltaUsdcRaw": "-18223025",
+    "postBaseFeeUpperBoundUsdcRaw": "-18223555",
+    "cashDeltaIfAtaRentRemainsLockedUsdcRaw": "-18381062",
+    "note": "Swap fees are included in quote output. The base-fee result is an optimistic upper bound; slippage and any landing priority fee worsen it. ATA rent is refundable if zero dust permits closing."
+  }
+}

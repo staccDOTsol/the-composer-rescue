@@ -1,0 +1,977 @@
+{
+  "generatedAt": "2026-10-15T20:13:41.103Z",
+  "rpc": "http://127.0.0.1:9057",
+  "inputs": {
+    "usdgoMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+    "usdcMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "targetDexAuthority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z"
+  },
+  "methodology": [
+    "Enumerate the 20 largest USDGO accounts from the prior current-mainnet authority census.",
+    "For every distinct authority, enumerate both legacy SPL and Token-2022 token accounts and identify authorities holding nonzero USDGO and USDC inventories.",
+    "Query Jupiter v6 at sizes 1, 100, 1k, 10k, 100k, and 1m USDGO both normally and with every JupLend AMM route excluded.",
+    "A same-authority inventory is only an exit candidate, not proof of a permissionless swap surface; absence of an aggregator route is counterevidence, not a proof that no unpublished venue exists."
+  ],
+  "observationSlot": 457365321,
+  "usdgoLargestAccountCountCovered": 20,
+  "authorities": [
+    {
+      "authority": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "9NFWUPiguX3x3CbCHxcdMr2vVcdtppuygstgR2jeab1d",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "5PAhQiYdLBd6SVdjzBQDxUAEFyDdF5ExNPQfcscnPRj5",
+          "rawAmount": "439776518056191",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 439583776.1661572,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 36
+    },
+    {
+      "authority": "8ZPaybdHeNwpoxmU1ALcbLoE3eK443Jq4emk82VCscag",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "BhMEtwnqFx5Zhd3eLNkexJJDqDz6kY42YL1hA8Jvoiqz",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "8ZPaybdHeNwpoxmU1ALcbLoE3eK443Jq4emk82VCscag",
+          "rawAmount": "389234621933592",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 389064031.15937406,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 2
+    },
+    {
+      "authority": "EPxGiguU5j5tKFnMQpzMrzczEQ5NRtLWrpG9fADvtadX",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "FWcuuDr5jq9XaFbNabS22yMdPs6rChBMMCfHtFg82fb6",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "EPxGiguU5j5tKFnMQpzMrzczEQ5NRtLWrpG9fADvtadX",
+          "rawAmount": "219538768557343",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 219442550.7843376,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 19
+    },
+    {
+      "authority": "FTAfm7jKGmX9cKtyBVJXLJB5pnovHmuo6W2RLJ2b9mig",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "2K3BezEnVouvCquqFhnsPaFa7Qbep2ZVVzJ68H3RtSgs",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "FTAfm7jKGmX9cKtyBVJXLJB5pnovHmuo6W2RLJ2b9mig",
+          "rawAmount": "133000000000000",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 132941709.77684802,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "58cdtU3CgTw1n4yHYzWXjmU7wBgujXvtxJaNwJYhJBLW",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "DzHd4DaquXD7ZHo8e6kEjLVgwXoReHdYpJw5ycsKPPDw",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "58cdtU3CgTw1n4yHYzWXjmU7wBgujXvtxJaNwJYhJBLW",
+          "rawAmount": "10145335000000",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 10140888.580142094,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "94i35mzdbAHW9v6ikG8aD9dAVDQMtrorpB54yerZotpj",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "5hLFQyp54cdLwMLanSqgzAUgCMPhtj9nTW5tHNMY9yYB",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "94i35mzdbAHW9v6ikG8aD9dAVDQMtrorpB54yerZotpj",
+          "rawAmount": "7825147266667",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 7821717.720949924,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "Eqv6sRKH6f69rPVBAHrefoBVxJcThsx5Hkx45UTUwsKZ",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "DX9JFnrZRqeHYzh6UvT9cBCzZUY8JGvK77F2Zx5ToVh3",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "Eqv6sRKH6f69rPVBAHrefoBVxJcThsx5Hkx45UTUwsKZ",
+          "rawAmount": "7325844631213",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 7322633.916037586,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "Bok48fKSkBVt77H7TetKzFUvC2AyrpZpd3Mir96N9F3f",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "8WZ3FixQY5HWFxhAEqnLe4UggtuhUv1qgJJP49rW2Dky",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "Bok48fKSkBVt77H7TetKzFUvC2AyrpZpd3Mir96N9F3f",
+          "rawAmount": "5542287615600",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 5539858.58415725,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "BmKu74RdFaCp7zUaDXUM7NZPPaf6gtsErJXhfT5QqJwS",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "9jqas8gQqdUb7XmRoZUpx3ChR2oLrzQypqcUxNSfBhDm",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "BmKu74RdFaCp7zUaDXUM7NZPPaf6gtsErJXhfT5QqJwS",
+          "rawAmount": "5405713152273",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 5403343.97764186,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "C7xPKScguNywdVDGGbzQeHqnngCeVsZwT9bJmHbV2wrv",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "FeukPPH7HUMMTatKkPPKSMPhND81d2Cyh36poM3fk3Ba",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "C7xPKScguNywdVDGGbzQeHqnngCeVsZwT9bJmHbV2wrv",
+          "rawAmount": "5240931510000",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 5238634.554607201,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "GG6TrCpuicspBuNHCECjpoVyDS2GM6Ywchv4EW17i9Ab",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "3yi2YdowJ1jKvehyQQKv34sjUcZWBCnEwYHtNH7NkHKy",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "GG6TrCpuicspBuNHCECjpoVyDS2GM6Ywchv4EW17i9Ab",
+          "rawAmount": "5116698379036",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 5114455.871590019,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "62hrwrM9GujCNoYCtbAS8qTmyo4SGshFyC3sKvJF1D4L",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "E3naG5Zhkz2KoAJkmSqrcerwmaERJAL8FNvzHQynPsGK",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "62hrwrM9GujCNoYCtbAS8qTmyo4SGshFyC3sKvJF1D4L",
+          "rawAmount": "4327077660000",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 4325181.221485734,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+      "authorityState": {
+        "onCurve": false,
+        "directExecutableOwner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC"
+      },
+      "isTargetDexAuthority": true,
+      "usdgo": [
+        {
+          "address": "EA4wj2Bw792ngZJTgU1T5Qggjfm6p1b1Lq8xS1D6KMRt",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+          "rawAmount": "3985420061683",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 3983673.3622487905,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [
+        {
+          "address": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+          "rawAmount": "33483993185884",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "symbol": "USDC",
+          "decimals": 6,
+          "tags": [
+            "community",
+            "moonshot-verified",
+            "strict",
+            "verified",
+            "stable"
+          ],
+          "usdPrice": 0.9995930298143889,
+          "usdValue": 33470366.19896214,
+          "largestAccountsSlot": 457338864,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": false
+        }
+      ],
+      "nonzeroTokenAccountCount": 26
+    },
+    {
+      "authority": "3btHFvErK81JkhNQxzkYRDagYrGaERHvhn41pGiVjWHk",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "B3Gg4abLpPgewaFMwjnqiCWnJBZqR2PqvYaPzaHzEU89",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "3btHFvErK81JkhNQxzkYRDagYrGaERHvhn41pGiVjWHk",
+          "rawAmount": "3820262364619",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 3818588.0492375507,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "CxLFGe1qxSFf1SaqCfNvDWWXuFfXSsy8aKQwrW6tEosv",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "ASTyfSima4LLAdDgoFGkgqoKowG1LZFDr9fAQrg7iaJZ",
+          "rawAmount": "2682228106810",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 2681052.5603822516,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 205
+    },
+    {
+      "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "Ax84eKqgp6eUEeX2imnCbUQx9EqaJf5jyqZH4Btc8umB",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+          "rawAmount": "2519560829656",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 2518456.5757988147,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [
+        {
+          "address": "8g1gYt8tFYP8Yo4Wvz1VpUsfouH1kL79wxeiRvyB4hND",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+          "rawAmount": "161562377900945",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "symbol": "USDC",
+          "decimals": 6,
+          "tags": [
+            "community",
+            "moonshot-verified",
+            "strict",
+            "verified",
+            "stable"
+          ],
+          "usdPrice": 0.9995930298143889,
+          "usdValue": 161496626.8300229,
+          "largestAccountsSlot": 457338864,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": false
+        }
+      ],
+      "nonzeroTokenAccountCount": 1234
+    },
+    {
+      "authority": "DQhFz9zxytn7GcmjWPt8aEgo3zvK2uG1SeE9dWjqastJ",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "2QcahPjVnxMvRPmmcJuocCJr2Zu8c3NdksRZfRYvfNm1",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "DQhFz9zxytn7GcmjWPt8aEgo3zvK2uG1SeE9dWjqastJ",
+          "rawAmount": "2002996987816",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 2002119.129610041,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "45R4S2Hc62tRRbgZhkgPC4fdn5f3h5Zj7oCA93yA5En6",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "8ou7pPA8htWRW1vVsXF3iR12ddR1yvMxRyEjVUHbv5mz",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "45R4S2Hc62tRRbgZhkgPC4fdn5f3h5Zj7oCA93yA5En6",
+          "rawAmount": "1874475096648",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 1873653.5660338914,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "GZGTiGshYWH7nhDfB5BYzCkB25xPf45MnkuaMPzpHTpo",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "aKPgt9Rhw6TYostArkvNatUdmSJfrmaKS93wqTH5Cjw",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "GZGTiGshYWH7nhDfB5BYzCkB25xPf45MnkuaMPzpHTpo",
+          "rawAmount": "1769735276703",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 1768959.6506563914,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 1
+    },
+    {
+      "authority": "A77HErqtfN1hLLpvZ9pCtu66FEtM8BveoaKbbMoZ4RiR",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "7ciosKuARjStVinGVwm8d5729npWX2uUiojW77CXSyYp",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "A77HErqtfN1hLLpvZ9pCtu66FEtM8BveoaKbbMoZ4RiR",
+          "rawAmount": "1444589031400",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 1443955.9079638855,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [],
+      "nonzeroTokenAccountCount": 43
+    }
+  ],
+  "sameAuthorityPairs": [
+    {
+      "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+      "authorityState": {
+        "onCurve": false,
+        "directExecutableOwner": "jupeiUmn818Jg1ekPURTpr4mFo29p46vygyykFJ3wZC"
+      },
+      "isTargetDexAuthority": true,
+      "usdgo": [
+        {
+          "address": "EA4wj2Bw792ngZJTgU1T5Qggjfm6p1b1Lq8xS1D6KMRt",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+          "rawAmount": "3985420061683",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 3983673.3622487905,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [
+        {
+          "address": "BmkUoKMFYBxNSzWXyUjyMJjMAaVz4d8ZnxwwmhDCUXFB",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "7s1da8DduuBFqGra5bJBjpnvL5E9mGzCuMk1Qkh4or2Z",
+          "rawAmount": "33483993185884",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "symbol": "USDC",
+          "decimals": 6,
+          "tags": [
+            "community",
+            "moonshot-verified",
+            "strict",
+            "verified",
+            "stable"
+          ],
+          "usdPrice": 0.9995930298143889,
+          "usdValue": 33470366.19896214,
+          "largestAccountsSlot": 457338864,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": false
+        }
+      ],
+      "nonzeroTokenAccountCount": 26
+    },
+    {
+      "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+      "authorityState": {
+        "onCurve": true,
+        "directExecutableOwner": null
+      },
+      "isTargetDexAuthority": false,
+      "usdgo": [
+        {
+          "address": "Ax84eKqgp6eUEeX2imnCbUQx9EqaJf5jyqZH4Btc8umB",
+          "mint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+          "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+          "rawAmount": "2519560829656",
+          "tokenProgram": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "symbol": "USDGO",
+          "decimals": 6,
+          "tags": [
+            "verified",
+            "token-2022"
+          ],
+          "usdPrice": 0.9995617276454738,
+          "usdValue": 2518456.5757988147,
+          "largestAccountsSlot": 457338905,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": true
+        }
+      ],
+      "usdc": [
+        {
+          "address": "8g1gYt8tFYP8Yo4Wvz1VpUsfouH1kL79wxeiRvyB4hND",
+          "mint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+          "authority": "6LY1JzAFVZsP2a2xKrtU6znQMQ5h4i7tocWdgrkZzkzF",
+          "rawAmount": "161562377900945",
+          "tokenProgram": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "symbol": "USDC",
+          "decimals": 6,
+          "tags": [
+            "community",
+            "moonshot-verified",
+            "strict",
+            "verified",
+            "stable"
+          ],
+          "usdPrice": 0.9995930298143889,
+          "usdValue": 161496626.8300229,
+          "largestAccountsSlot": 457338864,
+          "mintMatches": true,
+          "tokenProgramMatches": true,
+          "largestAmountMatches": false
+        }
+      ],
+      "nonzeroTokenAccountCount": 1234
+    }
+  ],
+  "quoteTests": [
+    {
+      "amountRaw": "1000000",
+      "normal": {
+        "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+        "inAmount": "1000000",
+        "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "outAmount": "999913",
+        "otherAmountThreshold": "989914",
+        "swapMode": "ExactIn",
+        "slippageBps": 100,
+        "platformFee": null,
+        "priceImpactPct": "0",
+        "routePlan": [
+          {
+            "swapInfo": {
+              "ammKey": "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8",
+              "label": "JupLend AMM",
+              "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "inAmount": "1000000",
+              "outAmount": "999913",
+              "updateContextSlot": "457366742"
+            },
+            "percent": 100,
+            "bps": null
+          }
+        ],
+        "contextSlot": 457366778,
+        "timeTaken": 0.000121428,
+        "swapUsdValue": "0.999556433459404118808",
+        "mostReliableAmmsQuoteReport": {
+          "info": {
+            "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "Not used RG: FullLiquidIntermediate, contains ALT: true",
+            "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8": "999913"
+          }
+        },
+        "longtailMarketQuoteReport": null,
+        "useIncurredSlippageForQuoting": null,
+        "useRewards": null,
+        "otherRoutePlans": null,
+        "loadedLongtailToken": false,
+        "instructionVersion": null,
+        "transactionVersion": 0
+      },
+      "excludingAllJupLendAmm": {
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      }
+    },
+    {
+      "amountRaw": "100000000",
+      "normal": {
+        "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+        "inAmount": "100000000",
+        "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "outAmount": "99991349",
+        "otherAmountThreshold": "98991436",
+        "swapMode": "ExactIn",
+        "slippageBps": 100,
+        "platformFee": null,
+        "priceImpactPct": "0",
+        "routePlan": [
+          {
+            "swapInfo": {
+              "ammKey": "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8",
+              "label": "JupLend AMM",
+              "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "inAmount": "100000000",
+              "outAmount": "99991349",
+              "updateContextSlot": "457366742"
+            },
+            "percent": 100,
+            "bps": null
+          }
+        ],
+        "contextSlot": 457366778,
+        "timeTaken": 0.000113251,
+        "swapUsdValue": "99.955692328467131216184",
+        "mostReliableAmmsQuoteReport": {
+          "info": {
+            "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8": "99991349",
+            "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "Not used RG: FullLiquidIntermediate, contains ALT: true"
+          }
+        },
+        "longtailMarketQuoteReport": null,
+        "useIncurredSlippageForQuoting": null,
+        "useRewards": null,
+        "otherRoutePlans": null,
+        "loadedLongtailToken": false,
+        "instructionVersion": null,
+        "transactionVersion": 0
+      },
+      "excludingAllJupLendAmm": {
+        "error": "No routes found",
+        "errorCode": "NO_ROUTES_FOUND"
+      }
+    },
+    {
+      "amountRaw": "1000000000",
+      "normal": {
+        "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+        "inAmount": "1000000000",
+        "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "outAmount": "999913156",
+        "otherAmountThreshold": "989914025",
+        "swapMode": "ExactIn",
+        "slippageBps": 100,
+        "platformFee": null,
+        "priceImpactPct": "0",
+        "routePlan": [
+          {
+            "swapInfo": {
+              "ammKey": "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8",
+              "label": "JupLend AMM",
+              "inputMint": "72puLt71H93Z9CzHuBRTwFpL4TG3WZUhnoCC7p8gxigu",
+              "outputMint": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+              "inAmount": "1000000000",
+              "outAmount": "999913156",
+              "updateContextSlot": "457366742"
+            },
+            "percent": 100,
+            "bps": null
+          }
+        ],
+        "contextSlot": 457366778,
+        "timeTaken": 0.000114312,
+        "swapUsdValue": "999.556589403774898732896",
+        "mostReliableAmmsQuoteReport": {
+          "info": {
+            "B5UUGqshnzEp5XzkbnMn64rpJy5WMFJFU2JP8zd1yBX8": "999913156",
+            "BZtgQEyS6eXUXicYPHecYQ7PybqodXQMvkjUbP4R8mUU": "Not used RG: FullLiquidIntermediate, contains ALT: true"
+          }
+        },
+        "longtailMarketQuoteReport": null,
+        "useIncurredSlippageForQuoting": null,
+        "useRewards": null,
+        "otherRoutePlans": null,
+        "loadedLongtailToken": false,
+        "instructionVersion": null,
+        "transactionVersion": 0
+      },
+      "excludingAllJupLendAmm": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      }
+    },
+    {
+      "amountRaw": "10000000000",
+      "normal": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      },
+      "excludingAllJupLendAmm": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      }
+    },
+    {
+      "amountRaw": "100000000000",
+      "normal": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      },
+      "excludingAllJupLendAmm": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      }
+    },
+    {
+      "amountRaw": "1000000000000",
+      "normal": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      },
+      "excludingAllJupLendAmm": {
+        "code": 429,
+        "message": "[API Gateway] Too many requests"
+      }
+    }
+  ]
+}

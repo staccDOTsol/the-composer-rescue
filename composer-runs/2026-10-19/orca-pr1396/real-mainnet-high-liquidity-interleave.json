@@ -1,0 +1,176 @@
+{
+  "schema": "orca-pr1396-real-existing-high-liquidity-pool/v1",
+  "execution": "local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:60889",
+  "pool": "478r35b8cKMuj3HzxkwqWsx8vBfFLP5YhbkUEsWt2jfo",
+  "position": "6K8ebAAheXRCfzSZo8zsdoaGJe2KzjTK8UPnci6Lrgm",
+  "actor": "8UgCzJmuenRPUAWZ5qUEC6Zvh3DQWqvAGRYK3vwwaCe3",
+  "swapDirection": "B-to-A",
+  "swapInputRawB": "20000",
+  "mode": "interleave",
+  "rounds": 2,
+  "localSeeding": "actor system account; actor A ATA zero; actor USDC ATA 50,000 raw; absent oracle PDA zero-lamport",
+  "accounts": {
+    "tickArray": "AfMLL9typAKkWaqheJynjsCXRp5wEsXeBXKB9bknSPy4",
+    "oracle": "5RAHACFcj74d5arfrst4DJXkexwMumFcRjVWnu5N2F57",
+    "actorA": "2aGWFgdxMdC3mSUYrhxVmBy7eVepJLof1eqGMDcDGxL4",
+    "actorB": "BrvRvk9b7C5LmLXBkAA7FD4YvJTNwdhYyBvNqvvPkQah"
+  },
+  "initial": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94674",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "0",
+    "positionCheckpointB": "0",
+    "positionFeeOwedA": "0",
+    "positionFeeOwedB": "0",
+    "vaultA": "40000000002065863",
+    "vaultB": "158970",
+    "actorA": "0",
+    "actorB": "50000"
+  },
+  "baseline": {
+    "label": "baseline permissionless update",
+    "simulationError": null,
+    "simulationUnits": 9742,
+    "simulationWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9742 of 200000 compute units"
+    ],
+    "signature": "DDHKwHHQMgcpFbbYHpU9EqeHruuCzbEHKmEWAQYvFSKpnzLBvawohWD9T5TjgiAM2Vf4XyUvkZbApixRP3sWdoe",
+    "transactionError": null,
+    "transactionUnits": 9742,
+    "transactionSlot": 458871954,
+    "transactionWhirlpoolLogs": [
+      "Program log: Instruction: UpdateFeesAndRewards",
+      "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 9742 of 200000 compute units"
+    ]
+  },
+  "afterBaseline": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94674",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "4951618",
+    "positionCheckpointB": "94674",
+    "positionFeeOwedA": "4949703",
+    "positionFeeOwedB": "94637",
+    "vaultA": "40000000002065863",
+    "vaultB": "158970",
+    "actorA": "0",
+    "actorB": "50000"
+  },
+  "steps": [
+    {
+      "transaction": {
+        "label": "real swap 1 then outsider update",
+        "simulationError": null,
+        "simulationUnits": 36791,
+        "simulationWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27815 of 400000 compute units",
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8976 of 372185 compute units"
+        ],
+        "signature": "5Y36goMS97DhDA7Xt6NP2JrUgrJwVvae6NieYm8MHrAos36ZCf4yicPVBBXuGi69MVQUoRr4RJoj5L76PYxnuPbh",
+        "transactionError": null,
+        "transactionUnits": 36791,
+        "transactionSlot": 458871954,
+        "transactionWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27815 of 400000 compute units",
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8976 of 372185 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "tick": -39573,
+        "feeRate": 100,
+        "feeGrowthGlobalA": "4951618",
+        "feeGrowthGlobalB": "94676",
+        "positionLiquidity": "18439611894805844217",
+        "positionLower": -39573,
+        "positionUpper": -39567,
+        "positionCheckpointA": "4951618",
+        "positionCheckpointB": "94676",
+        "positionFeeOwedA": "4949703",
+        "positionFeeOwedB": "94638",
+        "vaultA": "40000000001019896",
+        "vaultB": "178970",
+        "actorA": "1045967",
+        "actorB": "30000"
+      }
+    },
+    {
+      "transaction": {
+        "label": "real swap 2 then outsider update",
+        "simulationError": null,
+        "simulationUnits": 36939,
+        "simulationWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27813 of 199851 compute units",
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8976 of 172038 compute units"
+        ],
+        "signature": "eGthE4NaCwPDhPwJ5XeVAqAYFi1sJifESa7RdjbrkUo9x1myjDDkW6LqBBcydNFjHgt6kPDGA1VJ7G66YDeEKLM",
+        "transactionError": null,
+        "transactionUnits": 36939,
+        "transactionSlot": 458871954,
+        "transactionWhirlpoolLogs": [
+          "Program log: Instruction: Swap",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 27813 of 199851 compute units",
+          "Program log: Instruction: UpdateFeesAndRewards",
+          "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8976 of 172038 compute units"
+        ]
+      },
+      "state": {
+        "poolLiquidity": "18439611894805844217",
+        "tick": -39573,
+        "feeRate": 100,
+        "feeGrowthGlobalA": "4951618",
+        "feeGrowthGlobalB": "94678",
+        "positionLiquidity": "18439611894805844217",
+        "positionLower": -39573,
+        "positionUpper": -39567,
+        "positionCheckpointA": "4951618",
+        "positionCheckpointB": "94678",
+        "positionFeeOwedA": "4949703",
+        "positionFeeOwedB": "94639",
+        "vaultA": "39999999999973929",
+        "vaultB": "198970",
+        "actorA": "2091934",
+        "actorB": "10000"
+      }
+    }
+  ],
+  "finalUpdate": null,
+  "after": {
+    "poolLiquidity": "18439611894805844217",
+    "tick": -39573,
+    "feeRate": 100,
+    "feeGrowthGlobalA": "4951618",
+    "feeGrowthGlobalB": "94678",
+    "positionLiquidity": "18439611894805844217",
+    "positionLower": -39573,
+    "positionUpper": -39567,
+    "positionCheckpointA": "4951618",
+    "positionCheckpointB": "94678",
+    "positionFeeOwedA": "4949703",
+    "positionFeeOwedB": "94639",
+    "vaultA": "39999999999973929",
+    "vaultB": "198970",
+    "actorA": "2091934",
+    "actorB": "10000"
+  }
+}

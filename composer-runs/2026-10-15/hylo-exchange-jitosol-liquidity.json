@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-10-15T19:38:21.081Z",
+  "transport": "read-only current-mainnet account reads; no signing, simulation, or submission",
+  "rpcEndpointRedacted": true,
+  "noTransactionsSubmitted": true,
+  "observations": {
+    "poolAccountSlot": 457356938,
+    "liquidityAccountsSlot": 457356939,
+    "epoch": 1058
+  },
+  "addresses": {
+    "stakePool": "Jito4APyf642JPZPx3hGc6WWJ8zPKtRbRs4P815Awbb",
+    "stakePoolProgram": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+    "reserveStake": "BgKUXdS29YcHCFrPm5M8oLHiTzZaMDjsebggjoaQ6KFL",
+    "poolMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "expectedJitosolMint": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "hyloJitosolVault": "2Y3TLkdGoJwbdizxqrZmQwNLYJyGKTgzC4tbetbkvQ43"
+  },
+  "identityChecks": {
+    "poolOwner": "SPoo1Ku8WFXoNDMHPsrGSTSG1Y47rzgn41SLUNakuHy",
+    "poolOwnerMatchesPublishedSplStakePoolProgram": true,
+    "poolMintMatchesJitosol": true,
+    "tokenMintSupplyMatchesPoolState": true,
+    "poolLastUpdateEpoch": "1058",
+    "currentEpoch": "1058",
+    "poolUpdatedThisEpoch": true
+  },
+  "backing": {
+    "totalLamportsRaw": "10478732138756046",
+    "totalSol": "10478732.138756046",
+    "poolTokenSupplyRaw": "8020932970859628",
+    "poolTokenSupplyJitosol": "8020932.970859628",
+    "jitosolSolRateNumerator": "10478732138756046",
+    "jitosolSolRateDenominator": "8020932970859628"
+  },
+  "directSolLiquidity": {
+    "reserveAccountLamportsRaw": "8065833552708",
+    "reserveRentExemptRaw": "1666240",
+    "splMinimumReserveLamportsConstantRaw": "0",
+    "immediatelyWithdrawableSolRawBeforePoolFee": "8065831886468",
+    "immediatelyWithdrawableSolBeforePoolFee": "8065.831886468",
+    "jitosolEquivalentRawBeforePoolFee": "6173981361380",
+    "jitosolEquivalentBeforePoolFee": "6173.98136138",
+    "solWithdrawalFee": {
+      "numerator": "1",
+      "denominator": "1000"
+    },
+    "solWithdrawAuthorityConfigured": false,
+    "solWithdrawAuthority": null,
+    "scopeNote": "Direct SOL withdrawal is reserve-limited; SPL withdraw-stake can instead return a stake account from validator inventory."
+  },
+  "hyloVault": {
+    "jitosolRaw": "230893431670961",
+    "jitosol": "230893.431670961",
+    "nominalBackingSolRawBeforePoolFee": "301644513408627",
+    "nominalBackingSolBeforePoolFee": "301644.513408627",
+    "immediateReserveCoverageBpsBeforePoolFee": "267",
+    "immediateReserveCanCoverFullHyloVaultBeforePoolFee": false
+  },
+  "accountDataSha256": {
+    "stakePool": "8c4aa82e27dec61f60c026ea8b3f80c7ca01efc95c0cad898a9599517abfd5c2",
+    "reserveStake": "a60a15f610a908fd6e7b05299dac1ac525d022866722dc2f27f5a5ded4d12c04",
+    "poolMint": "c67f0b870affded264d4b6c57adb070d254ad8c3e090b8d1d392298ad6d3d9f2",
+    "hyloVault": "808446bf2e7667b50839022d78370752d47f59fefd2e7c1618c94442aeff1fdc"
+  },
+  "methodology": {
+    "reserveFormula": "reserve account lamports - rent-exempt reserve - SPL MINIMUM_RESERVE_LAMPORTS (0)",
+    "nominalBackingFormula": "floor(JitoSOL raw * pool total_lamports / pool_token_supply)",
+    "primaryReferences": [
+      "https://github.com/jito-foundation/jito-omnidocs/blob/master/jitosol/jitosol-liquid-staking/security/deployed-programs/index.md",
+      "https://docs.rs/spl-stake-pool/latest/src/spl_stake_pool/lib.rs.html",
+      "https://docs.rs/crate/spl-stake-pool/latest/source/src/processor.rs"
+    ]
+  }
+}

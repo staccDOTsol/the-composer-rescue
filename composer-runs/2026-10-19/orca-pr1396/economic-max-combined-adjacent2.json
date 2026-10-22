@@ -1,0 +1,187 @@
+{
+  "schema": "orca-pr1396-economic-max-sweep/v1",
+  "execution": "signed v1 simulation on separate local mainnet-backed Surfpool fork",
+  "mainnetSubmission": false,
+  "fork": "http://127.0.0.1:56899",
+  "allocation": "save",
+  "tickMode": "adjacent2",
+  "syncedSaveState": {
+    "source": "http://127.0.0.1:48899",
+    "addresses": [
+      "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv",
+      "8PbodeaosQP19SjYFx855UMqWxH2HynZLdBXmsrbac36",
+      "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7",
+      "4UpD2fh7xH3VP9QQaXtsS1YY3bxzWhtfpks7FatyKvdY"
+    ]
+  },
+  "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+  "position": "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw",
+  "rows": [
+    {
+      "inputLamports": "25000000000000",
+      "cushionLamports": "500000010000",
+      "allocation": "save",
+      "tickMode": "adjacent2",
+      "saveFeeLamports": "9999560000",
+      "borrowedLamports": {
+        "save": "24998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "5K3Np962wnxAffcgULxzgv3GngCPt5rdTpdZQJ1qVTPZ",
+      "actorWsolAta": "Gq6HuYGWxfokJkQR8Mw4SCfD55F7ont4LM3AHRn16kj4",
+      "err": {
+        "InstructionError": [
+          11,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "Gq6HuYGWxfokJkQR8Mw4SCfD55F7ont4LM3AHRn16kj4": null,
+        "5pKhpTxccZnNfGVwaeWfE3XtEUDiJ8NoqUVT1523kKFZ": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1864,
+        "accounts": 39,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "37c79563a74cda09afb067bc59aa3b726a5cdfefef4be3f6d8316fa6f5298ab7"
+      },
+      "logTail": [
+        "Program log: Instruction: Swap",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 448717 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 446620 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 4cpJr5MroJayNpDX0HWNHV2LiVDOx6m018ea6P+1xroNvWKhmDeTWwFkUXY16k5uUgAAAAAAAAAArqyqTZTnvVAAAAAAAAAAAACQHsS8FgAAucB131ECAAAAAAAAAAAAAAAAAAAAAAAAXnePBgIAAADVbHxNAAAAAA==",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 764885 of 1208800 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 443915 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: Swap",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 435083 of 435083 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    },
+    {
+      "inputLamports": "30000000000000",
+      "cushionLamports": "600000010000",
+      "allocation": "save",
+      "tickMode": "adjacent2",
+      "saveFeeLamports": "11999560000",
+      "borrowedLamports": {
+        "save": "29998900000000",
+        "project0": "100000000",
+        "klend": "1000000000"
+      },
+      "actor": "7VU2EydfB5abauSrRgoK4hK14PHE863AnmmzvtfDjgrJ",
+      "actorWsolAta": "5A2miTw2xsbHRp5E6QYdyxTUfHrTWEyygkg7Gosg1thj",
+      "err": {
+        "InstructionError": [
+          11,
+          "ProgramFailedToComplete"
+        ]
+      },
+      "firstFailure": "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: exceeded CUs meter at BPF instruction",
+      "whirlpoolSwaps": 2,
+      "whirlpoolUpdates": 1,
+      "completeRepayment": false,
+      "lenderVaultDeltas": {
+        "8UviNr47S8eL6J3WfDxMRa3hvLta1VDJwNWqsDgtN3Cv": null,
+        "3SdrFTt4Ye5yppzpT9axNMj8W1x71nDYXdjv7vDuBpnR": null,
+        "2eicbpitfJXDwqCuFAmPgDP7t2oUotnAzbGzRKLMgSLe": null,
+        "5wo1tFpi4HaVKnemqaXeQnBEpezrJXcXvuztYaPhvgC7": null,
+        "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE": null,
+        "JDwC8tY9MPWnkevbCGFFVbodJAi7Bx55M6qwgqau4yaw": null,
+        "5A2miTw2xsbHRp5E6QYdyxTUfHrTWEyygkg7Gosg1thj": null,
+        "CmLuzTk29uvKSZ81ywguZN7DWE7biprfquS9GVqfCmcM": null,
+        "EUuUbDcafPrmVTD5M6qoJAoyyNbihBhugADAxRMn5he9": null,
+        "2WLWEuKDgkDUccTpbwYp1GToYktiSB1cXvreHUwiSUVP": null
+      },
+      "actorWsolBefore": null,
+      "actorWsolAfter": null,
+      "actorUsdcBefore": null,
+      "actorUsdcAfter": null,
+      "poolWsolBefore": "209767081032176",
+      "poolWsolAfter": null,
+      "poolUsdcBefore": "6680702669061",
+      "poolUsdcAfter": null,
+      "positionBefore": {
+        "liquidity": "2471395",
+        "checkpointA": "5983312058639905315",
+        "feeOwedA": "0",
+        "checkpointB": "721819915939940961",
+        "feeOwedB": "0"
+      },
+      "positionAfter": null,
+      "unitsConsumed": 1400000,
+      "wire": {
+        "version": 1,
+        "bytes": 1864,
+        "accounts": 39,
+        "instructions": 19,
+        "requiredSignatures": 2,
+        "computeLimit": 1400000,
+        "sha256": "921e8c2e87d3c82c8d6e597711db3eb4de161bab255ad246727298089f911eb6"
+      },
+      "logTail": [
+        "Program log: Instruction: Swap",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 83 of 64663 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 76 of 62566 compute units",
+        "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+        "Program data: 4cpJr5MroJayNpDX0HWNHV2LiVDOx6m018ea6P+1xroNvWKhmDeTWwFkUXY16k5uUgAAAAAAAAAAVK/RiVkv4U8AAAAAAAAAAADgV+tIGwAA1xgSccQCAAAAAAAAAAAAAAAAAAAAAAAAksJFbgIAAAC+tftcAAAAAA==",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 1148939 of 1208800 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: UpdateFeesAndRewards",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 8832 of 59861 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc success",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc invoke [1]",
+        "Program log: Instruction: Swap",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc consumed 51029 of 51029 compute units",
+        "Program whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc failed: exceeded CUs meter at BPF instruction"
+      ],
+      "pass": false
+    }
+  ]
+}

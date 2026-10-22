@@ -1,0 +1,190 @@
+{
+  "observedAt": "2026-10-19T06:56:01.491Z",
+  "network": "mainnet-beta",
+  "genesis": "5eykt4UsFv8P8NJdTREpY1vzqKqZKvdpKuc147dw2N9d",
+  "method": "simulateTransaction",
+  "sigVerify": true,
+  "broadcast": false,
+  "probes": [
+    {
+      "name": "process_payout_no_accounts",
+      "accountCount": 0,
+      "wireBytes": 177,
+      "slot": 458741216,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3005
+          }
+        ]
+      },
+      "units": 1637,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: ProcessPayout",
+        "Program log: AnchorError caused by account: pool. Error Code: AccountNotEnoughKeys. Error Number: 3005. Error Message: Not enough account keys given to the instruction.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbbd"
+      ]
+    },
+    {
+      "name": "process_payout_pool_3H7",
+      "accountCount": 1,
+      "wireBytes": 210,
+      "slot": 458741218,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3002
+          }
+        ]
+      },
+      "units": 2273,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: ProcessPayout",
+        "Program log: AnchorError caused by account: pool. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "name": "process_payout_pool_BXQQ",
+      "accountCount": 1,
+      "wireBytes": 210,
+      "slot": 458741219,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3002
+          }
+        ]
+      },
+      "units": 2273,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: ProcessPayout",
+        "Program log: AnchorError caused by account: pool. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbba"
+      ]
+    },
+    {
+      "name": "process_payout_pool_6gZ",
+      "accountCount": 1,
+      "wireBytes": 210,
+      "slot": 458741219,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 3005
+          }
+        ]
+      },
+      "units": 2132,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: ProcessPayout",
+        "Program log: AnchorError caused by account: claim. Error Code: AccountNotEnoughKeys. Error Number: 3005. Error Message: Not enough account keys given to the instruction.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbbd"
+      ]
+    },
+    {
+      "name": "withdraw_fees_no_accounts",
+      "accountCount": 0,
+      "wireBytes": 177,
+      "slot": 458741220,
+      "error": {
+        "InstructionError": [
+          0,
+          {
+            "Custom": 102
+          }
+        ]
+      },
+      "units": 1712,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: WithdrawFees",
+        "Program log: AnchorError occurred. Error Code: InstructionDidNotDeserialize. Error Number: 102. Error Message: The program could not deserialize the given instruction.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0x66"
+      ]
+    },
+    {
+      "name": "liquidate_current_position",
+      "steps": [
+        "liquidate_position"
+      ],
+      "wireBytes": 409,
+      "slot": 458741221,
+      "error": null,
+      "units": 15801,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success"
+      ],
+      "postAccountData": [
+        "BJaaczbbaUjB5RbDP5R79yvmNNRmvUDnen7iKRA1MAJUbFk4qS1JWk5ppvMFXR6ktfluRXU/U50VMrf0dTwH5OzxCa8dAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "qryP5HpA99AMXWKUHsyS/Dgdm7da1vQYnCWjrdYqx4AZVT0eDyIWJJxew3lnzKJiM36rypCRG6OrONlU1kVoRyHDtXjtNnYwNmSGal+7EJEBAAAAAAAAAAAAAAAAAAAAAMDBkRUeGSYBq73VagAAAAD8AAAAAAAA"
+      ],
+      "reconciliation": {
+        "4JC3vamWCnD4WwmJQyykBmXHbXjPyH9LiW6tEtniMvZP": {
+          "liveSha256": "0d2b56c5fb22c9f9980834e6ec295d7fae4bd774aaeaad3c03c7298a50ea1c88",
+          "simPostSha256": "409f8d66e36cac730d793f025cabafb84836d345e5b80fdd612e13d27e06f3e2",
+          "same": false
+        },
+        "DfRowffc5W5zSdjAoEcoWuQjwgvXnqecyBMzPTYu9Qmy": {
+          "liveSha256": "4d95ada132a818ce0e18112f5b76a907d551c6aae2d1e107059c14363c3e8ed5",
+          "simPostSha256": "4d95ada132a818ce0e18112f5b76a907d551c6aae2d1e107059c14363c3e8ed5",
+          "same": true
+        }
+      }
+    },
+    {
+      "name": "liquidate_then_payout_wrong_claim",
+      "steps": [
+        "liquidate_position",
+        "process_payout_fake_claim"
+      ],
+      "wireBytes": 422,
+      "slot": 458741221,
+      "error": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 3002
+          }
+        ]
+      },
+      "units": 18535,
+      "logs": [
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: LiquidatePosition",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA success",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA invoke [1]",
+        "Program log: Instruction: ProcessPayout",
+        "Program log: AnchorError caused by account: claim. Error Code: AccountDiscriminatorMismatch. Error Number: 3002. Error Message: Account discriminator did not match what was expected.",
+        "Program yoLovHV5eT4DNPMG2Bu1NLmq8nVygEAPrNT1Rx6vWFA failed: custom program error: 0xbba"
+      ],
+      "postAccountData": [
+        null,
+        null
+      ],
+      "reconciliation": {
+        "4JC3vamWCnD4WwmJQyykBmXHbXjPyH9LiW6tEtniMvZP": {
+          "liveSha256": "0d2b56c5fb22c9f9980834e6ec295d7fae4bd774aaeaad3c03c7298a50ea1c88",
+          "simPostSha256": null,
+          "same": null
+        },
+        "DfRowffc5W5zSdjAoEcoWuQjwgvXnqecyBMzPTYu9Qmy": {
+          "liveSha256": "4d95ada132a818ce0e18112f5b76a907d551c6aae2d1e107059c14363c3e8ed5",
+          "simPostSha256": null,
+          "same": null
+        }
+      }
+    }
+  ],
+  "liveRecheckSlot": 458741265
+}
